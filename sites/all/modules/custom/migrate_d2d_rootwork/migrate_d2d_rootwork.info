@@ -1,0 +1,9 @@
+name = "Rootwork migration"
+description = "Migrate Rootwork content from old D6 site to D7"
+package = "Migration"
+core = 7.x
+
+dependencies[] = migrate
+dependencies[] = migrate_d2d
+
+files[] = node.inc
