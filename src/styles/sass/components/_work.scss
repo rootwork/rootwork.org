@@ -1,0 +1,142 @@
+.section-work {
+  overflow-x: hidden;
+}
+
+/* Hackey-type CSS as a jQuery Alternative for when the browser does not have jQuery enabled. */
+.noscript {
+  display: none; }
+
+#proj-1:checked ~ .work-belt .work-wrap .work-container noscript #content-proj-1 {
+  display: block; }
+
+#proj-2:checked ~ .work-belt .work-wrap .work-container noscript #content-proj-2 {
+  display: block; }
+
+#proj-3:checked ~ .work-belt .work-wrap .work-container noscript #content-proj-3 {
+  display: block; }
+
+#proj-4:checked ~ .work-belt .work-wrap .work-container noscript #content-proj-4 {
+  display: block; }
+
+#proj-5:checked ~ .work-belt .work-wrap .work-container noscript #content-proj-5 {
+  display: block; }
+
+#proj-6:checked ~ .work-belt .work-wrap .work-container noscript #content-proj-6 {
+  display: block; }
+
+#proj-7:checked ~ .work-belt .work-wrap .work-container noscript #content-proj-7 {
+  display: block; }
+
+#proj-8:checked ~ .work-belt .work-wrap .work-container noscript #content-proj-8 {
+  display: block; }
+
+.return {
+  display: none; }
+
+.trigger {
+  display: none; }
+  .trigger:checked ~ .work-belt {
+    left: -100%; }
+    .trigger:checked ~ .work-belt .work-wrap .work-container {
+      display: block; }
+
+/* End of gross / hackey CSS */
+.work-belt {
+  width: 200%;
+  position: relative;
+  left: 0%;
+  -webkit-transition: all, 800ms;
+  -moz-transition: all, 800ms;
+  transition: all, 800ms; }
+  .work-belt.slided {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    -moz-transform: translate3d(-50%, 0, 0);
+    -ms-transform: translate3d(-50%, 0, 0);
+    -o-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0); }
+
+.thumb-wrap, .work-wrap {
+  width: 50%;
+  float: left; }
+
+.thumb-container {
+  display: block;
+  max-width: 960px;
+  margin: 0px auto; }
+  .thumb-container:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .thumb-container label {
+    position: relative;
+    display: block;
+    float: left;
+    width: 25%;
+    cursor: pointer; }
+    .thumb-container label .thumb-unit {
+      display: block;
+      overflow: hidden; }
+      .thumb-container label .thumb-unit img {
+        display: block;
+        max-width: 100%; }
+    @media screen and (max-width: 760px) {
+      .thumb-container label {
+        width: 50%; } }
+    .thumb-container label .thumb-overlay {
+      position: absolute;
+      box-align: center;
+      align-items: center;
+      box-pack: center;
+      justify-content: space-around;
+      -ms-flex-pack: center;
+      display: flex;
+      background: rgba($green, 0.9);
+      text-align: center; }
+      .thumb-container label .thumb-overlay strong {
+        display: block;
+        padding: 0 9%;
+        color: white;
+        font-weight: 300;
+        font-size: 24px;
+        text-transform: uppercase;
+        line-height: 1.2; }
+    .thumb-container label:hover {
+      z-index: 2; }
+
+.work-container {
+  max-width: 600px;
+  margin: 0px auto;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  display: none; }
+  .work-container h4, .work-container noscript h4 {
+    color: #c99065;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 1.2;
+    margin: 0 0 20px; }
+  .work-container img {
+    max-width: 100%;
+    margin-bottom: 20px; }
+  .work-container .work-return {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    top: -4px;
+    left: -60px; }
+    .work-container .work-return path {
+      fill: rgba(0, 0, 0, 0.4); }
+    .work-container .work-return:hover {
+      opacity: 1; }
+
+@media (max-width: 740px) {
+  .work-container .work-return {
+    left: 0px; }
+  .work-container h4 {
+    margin-left: 60px; } }

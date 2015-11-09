@@ -1,0 +1,44 @@
+// Icons on the home page (SVG)
+
+.icon {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  margin: 10px 9%;
+  background: $color-tertiary;
+  background-position: 50% 50%;
+  border-radius: 50%;
+
+  @include mq(mediumish) {
+    display: inherit;
+    margin: 0;
+  }
+
+  path {
+    fill: $color-secondary;
+  }
+}
+
+.icon--pencil {
+  box-ordinal-group: 1;
+  order: 1;
+  background-image: url("../img/pencil.svg");
+}
+
+.icon--bulb {
+  box-ordinal-group: 2;
+  order: 2;
+  background-image: url("../img/bulb.svg");
+}
+
+.icon--tactics {
+  box-ordinal-group: 4;
+  order: 4;
+  background-image: url("../img/tactics.svg");
+}
+
+.icon--heart {
+  box-ordinal-group: 5;
+  order: 5;
+  background-image: url("../img/heart.svg");
+}

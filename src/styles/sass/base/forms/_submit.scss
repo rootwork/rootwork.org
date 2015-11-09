@@ -1,0 +1,15 @@
+form .submit-wrap {
+  text-align: right;
+}
+
+form [type="submit"] {
+  background: $color-primary;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  width: 33%;
+
+  &:hover {
+    background: $color-secondary;
+  }
+}
