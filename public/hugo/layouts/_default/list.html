@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+
+    {{ partial "header_internal.html"  . }}
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 text-center">
+			<h3>Posts</h3>
+	    </div>
+    </div>
+	<div class="row">
+		<div class="col-md-12">
+			<ul>
+			    {{ range .Data.Pages }}
+			        {{ .Render "post-title"}}
+			    {{ end }}
+		    </ul>
+	    </div>
+    </div>
+	<div class="row">
+		<div class="col-md-12">
+			<hr>
+		</div>
+	</div>
+</div>
+
+    {{ partial "footer_internal.html"  . }}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="{{ .Site.BaseURL }}js/functions.js"></script>
+  </body>
+</html>
