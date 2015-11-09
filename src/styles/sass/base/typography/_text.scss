@@ -1,0 +1,72 @@
+/*  Typography presets
+ * ------------------------------------  */
+%header {
+  color: $dkgrey;
+  font-weight: bold;
+}
+
+h1 {
+  @extend %header;
+  font-size: 68px;
+  line-height: 1.05;
+  letter-spacing: -1px;
+}
+
+h2 {
+  @extend %header;
+  font-size: 42px;
+  line-height: 1.14;
+}
+
+h3 {
+  @extend %header;
+  font-size: 22px;
+  line-height: 1.38;
+  background-color: $color-primary;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px 0;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px rgba($black, 0.5);
+  @include card(1);
+  @include underline;
+}
+
+@media screen and (max-width: 480px) {
+  h3 {
+    padding: 50px 0 50px;
+  }
+}
+
+h4 {
+  @extend %header;
+  font-size: 22px;
+  line-height: 1.38;
+}
+
+h5,
+h6 {
+  @extend %header;
+}
+
+small {
+  font-size: 10px;
+  line-height: 1.2; }
+
+p {
+  margin: 0 0 20px 0; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: bold; }
+
+header nav a,
+header .kicker,
+footer .lockup .content-wrap a {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
