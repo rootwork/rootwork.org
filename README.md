@@ -1,8 +1,10 @@
 Rootwork.org
 ============
 Rootwork is created with the static site generator [Hugo](http://gohugo.io) and
-[Gulp](http://gulpjs.com) as the task runner. Its backend is a fork of
-[Hugulp](https://github.com/jbrodriguez/hugulp). Its README follows.
+[Gulp](http://gulpjs.com) as the task runner. Hugo is installed locally via
+Homebrew. Rootwork's backend is a fork of
+[Hugulp](https://github.com/jbrodriguez/hugulp) from the Jun 19, 2015 commit.
+Hugulp's README follows.
 
 hugulp
 ======
