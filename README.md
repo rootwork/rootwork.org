@@ -12,15 +12,13 @@ hugulp
 hugulp is a starter project for [Hugo](http://gohugo.io) + [Gulp](http://gulpjs.com).
 
 It combines Hugo's fast static site generation with Gulp's flexibility to manage an asset pipeline and control the build process.
-
 Read [this article](http://jbrodriguez.io/mobile-friendly-website-2/), for additional context.
-
 Includes the following tools, tasks and workflows:
 
 - [BrowserSync](http://www.browsersync.io/)
 - [SASS](http://sass-lang.com/) (super fast libsass)
 - [autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer)
-- [MinifyCss](https://github.com/jonathanepollack/gulp-minify-css)
+- [ClearCss](https://github.com/scniro/gulp-clean-css)
 - [Javascript Lint](https://github.com/spalger/gulp-jshint)
 - [Uglify](https://github.com/terinjokes/gulp-uglify)
 - [Image optimization](https://github.com/sindresorhus/gulp-imagemin) (only [changed images](https://github.com/sindresorhus/gulp-changed))
@@ -50,6 +48,7 @@ $ npm install
 
 This runs through all dependencies listed in `package.json` and downloads them to a `node_modules` folder in your project directory.
 
+This will also install a copy of gulp locally (rather than globally), which is [generally preferable](http://jondavidjohn.com/keeping-it-local-with-npm-scripts/)
 ## Run gulp
 Run the `default` gulp task with
 
