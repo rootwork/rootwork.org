@@ -33,7 +33,7 @@
     "node-sass": "^3.4.2",
     "path": "^0.12.7",
     "require-dir": "^0.3.0",
-    "rev-del": "^1.0.5"
+    "rev-del": "^1.0.5",
     "stream-browserify": "^2.0.1"
   }
 }
