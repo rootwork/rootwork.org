@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var mainBowerFiles = require('main-bower-files');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
-var minifycss = require('gulp-minify-css');
+var cleanCSS = require('gulp-clean-css');
 var cssGlobbing = require('gulp-css-globbing');
 var notify = require("gulp-notify");
 
@@ -21,6 +21,6 @@ gulp.task('styles', function() {
           }
         }))
         .pipe(autoprefixer('last 2 version'))
-        .pipe(minifycss({advanced:false}))
+        .pipe(cleanCSS({advanced:false}))
         .pipe(gulp.dest('staging/css'));
 });
