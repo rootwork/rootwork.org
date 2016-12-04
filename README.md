@@ -3,7 +3,7 @@ Rootwork.org
 Rootwork is created with the static site generator [Hugo](http://gohugo.io) and
 [Gulp](http://gulpjs.com) as the task runner. Hugo is installed locally via
 Homebrew. Rootwork's backend is a fork of
-[Hugulp](https://github.com/jbrodriguez/hugulp) from the Jun 19, 2015 commit.
+[Hugulp](https://github.com/jbrodriguez/hugulp) from the Jun 8, 2016 commit.
 Hugulp's README follows.
 
 hugulp
@@ -11,9 +11,15 @@ hugulp
 
 hugulp is a starter project for [Hugo](http://gohugo.io) + [Gulp](http://gulpjs.com).
 
-It combines Hugo's fast static site generation with Gulp's flexibility to manage an asset pipeline and control the build process.
-Read [this article](http://jbrodriguez.io/mobile-friendly-website-2/), for additional context.
-Includes the following tools, tasks and workflows:
+It combines Hugo's fast static site generation with Gulp's flexibility to coordinate related tasks.
+
+The main idea is to recreate the famous [Ruby on Rails Asset Pipeline](http://guides.rubyonrails.org/asset_pipeline.html), which minifies, concatenates and fingerprints the assets used in your website.
+
+This leads to less and smaller network requests to your page, improving overall user experience.
+
+Read [this blog post](http://jbrodriguez.io/mobile-friendly-website-2/) and [this article](https://medium.com/@juanbrodriguez/hugulp-a-hugo-gulp-toolchain-94f72ccc3577) for additional context.
+
+This project includes the following tools, tasks and workflows:
 
 - [BrowserSync](http://www.browsersync.io/)
 - [SASS](http://sass-lang.com/) (super fast libsass)
@@ -49,6 +55,7 @@ $ npm install
 This runs through all dependencies listed in `package.json` and downloads them to a `node_modules` folder in your project directory.
 
 This will also install a copy of gulp locally (rather than globally), which is [generally preferable](http://jondavidjohn.com/keeping-it-local-with-npm-scripts/)
+
 ## Run gulp
 Run the `default` gulp task with
 
@@ -59,7 +66,8 @@ $ gulp
 It will do the following:
 - The **styles**, **scripts** and **images** tasks get executed first to do the heavy lifting of compressing images and minifying css/js files.
 - The **revision** task runs next to fingerprint the optimized assets.
-- Then the **hugo:all** task is invoked to generate the static site<br>
+- Then the **hugo:all** task is invoked to generate the static site
+
 hugo will run as if invoked like this:
 ```
 $ hugo --config=./hugo/config.yaml -s ./hugo -d ./public --buildDrafts=true --verbose=true --baseUrl="http://localhost:3000/"
