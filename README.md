@@ -1,98 +1,123 @@
-Rootwork.org
-============
-Rootwork is created with the static site generator [Hugo](http://gohugo.io) and
-[Gulp](http://gulpjs.com) as the task runner. Hugo is installed locally via
-Homebrew. Rootwork's backend is a fork of
-[Hugulp](https://github.com/jbrodriguez/hugulp) from the Jun 8, 2016 commit.
-Hugulp's README follows.
+# Rootwork.org
 
-hugulp
-======
+Rootwork is created with the static site generator [Hugo](http://gohugo.io) with [Gulp](http://gulpjs.com) and [Webpack](https://webpack.js.org/) as the task runner. Hugo is installed locally via Homebrew. Rootwork's backend is a fork of [Victor Hugo](https://github.com/netlify/victor-hugo) from the Nov. 7, 2017 commit.
 
-hugulp is a starter project for [Hugo](http://gohugo.io) + [Gulp](http://gulpjs.com).
+Victor Hugo's README follows.
 
-It combines Hugo's fast static site generation with Gulp's flexibility to coordinate related tasks.
+# Victor Hugo
 
-The main idea is to recreate the famous [Ruby on Rails Asset Pipeline](http://guides.rubyonrails.org/asset_pipeline.html), which minifies, concatenates and fingerprints the assets used in your website.
+**A Hugo boilerplate for creating truly epic websites**
 
-This leads to less and smaller network requests to your page, improving overall user experience.
+This is a boilerplate for using [Hugo](https://gohugo.io/) as a static site generator and [Gulp](https://gulpjs.com/) + [Webpack](https://webpack.js.org/) as your asset pipeline.
 
-Read [this blog post](http://jbrodriguez.io/mobile-friendly-website-2/) and [this article](https://medium.com/@juanbrodriguez/hugulp-a-hugo-gulp-toolchain-94f72ccc3577) for additional context.
+Victor Hugo setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
 
-This project includes the following tools, tasks and workflows:
+This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
 
-- [BrowserSync](http://www.browsersync.io/)
-- [SASS](http://sass-lang.com/) (super fast libsass)
-- [autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer)
-- [ClearCss](https://github.com/scniro/gulp-clean-css)
-- [Javascript Lint](https://github.com/spalger/gulp-jshint)
-- [Uglify](https://github.com/terinjokes/gulp-uglify)
-- [Image optimization](https://github.com/sindresorhus/gulp-imagemin) (only [changed images](https://github.com/sindresorhus/gulp-changed))
-- Asset Fingerprinting using [gulp-rev](https://github.com/sindresorhus/gulp-rev) and [gulp-rev-replace](https://github.com/jamesknelson/gulp-rev-replace)
+## Usage
 
+### Prerequisites
 
-## Install Hugo
-[Follow the instructions](http://gohugo.io/#action).
+You need to have the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) versions installed in order to use Victor Hugo.
 
-If Hugo is already installed, copy the folders in its current location to the hugo folder of this project.
+Next step, clone this repository and run:
 
-Also, copy the following folders:
-- hugo/static/img to src/img
-- hugo/static/css to src/styles
-- hugo/static/js to src/scripts
-- any svg files to src/svg
-
-## Install Node
-[Follow the instructions](https://nodejs.org)
-
-If Node is already installed, no further action is required.
-
-## Install npm dependencies
-```
-$ npm install
+```bash
+npm install
 ```
 
-This runs through all dependencies listed in `package.json` and downloads them to a `node_modules` folder in your project directory.
+This will take some time and will install all packages necessary to run Victor Hugo and it's tasks.
 
-This will also install a copy of gulp locally (rather than globally), which is [generally preferable](http://jondavidjohn.com/keeping-it-local-with-npm-scripts/)
+### Development
 
-## Run gulp
-Run the `default` gulp task with
+While developing your website, use:
 
-```
-$ gulp
-```
-
-It will do the following:
-- The **styles**, **scripts** and **images** tasks get executed first to do the heavy lifting of compressing images and minifying css/js files.
-- The **revision** task runs next to fingerprint the optimized assets.
-- Then the **hugo:all** task is invoked to generate the static site
-
-hugo will run as if invoked like this:
-```
-$ hugo --config=./hugo/config.yaml -s ./hugo -d ./public --buildDrafts=true --verbose=true --baseUrl="http://localhost:3000/"
+```bash
+npm start
 ```
 
-- The **reference:all** task replaces all asset ocurrences with their fingerprinted versions
-- Finally, the browser is reloaded so that you can very quickly check the changes you made
+or
 
-## Publish step
-There's also a `publish` task you can run:
-
-```
-$ gulp publish
+```bash
+gulp server
 ```
 
-It will perform all the steps above, but Hugo will be run with as follows:
+Then visit http://localhost:3000/ *- or a new browser windows popped-up already -* to preview your new website. BrowserSync will automatically reload the CSS or refresh the whole page, when stylesheets or content changes.
+
+### Static build
+
+To build a static version of the website inside the `/dist` folder, run:
+
+```bash
+npm run build
 ```
-$ hugo --config=./hugo/config.yaml -s ./hugo -d ./public"
+
+To get a preview of posts or articles not yet published, run:
+
+```bash
+npm run build-preview
 ```
 
-## PR
-For changes, send a PR.
+See [package.json](https://github.com/atomtigerzoo/victor-hugo/blob/readme-updates/package.json#L7) or the included gulp file for all tasks.
+
+## Structure
+
+```
+|--site                // Everything in here will be built with hugo
+|  |--content          // Pages and collections - ask if you need extra pages
+|  |--data             // YAML data files with any data for use in examples
+|  |--layouts          // This is where all templates go
+|  |  |--partials      // This is where includes live
+|  |  |--index.html    // The index page
+|  |--static           // Files in here ends up in the public folder
+|--src                 // Files that will pass through the asset pipeline
+|  |--css              // CSS files in the root of this folder will end up in /css/...
+|  |--js               // app.js will be compiled to /app.js with babel
+```
+
+## Basic Concepts
+
+You can read more about Hugo's template language in their documentation here:
+
+https://gohugo.io/templates/overview/
+
+The most useful page there is the one about the available functions:
+
+https://gohugo.io/templates/functions/
+
+For assets that are completely static and don't need to go through the asset pipeline,
+use the `site/static` folder. Images, font-files, etc, all go there.
+
+Files in the static folder ends up in the web root. So a file called `site/static/favicon.ico`
+will end up being available as `/favicon.ico` and so on...
+
+The `src/js/app.js` file is the entrypoint for webpack and will be built to `/dist/app.js`.
+
+You can use **ES6** and use both relative imports or import libraries from npm.
+
+Any CSS file directly under the `src/css/` folder will get compiled with [PostCSS Next](http://cssnext.io/)
+to `/dist/css/{filename}.css`. Import statements will be resolved as part of the build
+
+## Environment variables
+
+To seperate the development and production *- aka build -* stages, all gulp tasks run with a node environment variable named either `development` or `production`.
+
+You can access the environment variable inside the theme files with `getenv "NODE_ENV"`. See the following example for a conditional statement:
+
+    {{ if eq (getenv "NODE_ENV") "development" }}You're in development!{{ end }}
+
+All tasks starting with *build* set the environment variable to `production` - the other will set it to `development`.
+
+## Deploying to Netlify
+
+- Push your clone to your own GitHub repository.
+- [Create a new site on Netlify](https://app.netlify.com/start) and link the repository.
+
+Now Netlify will build and deploy your site whenever you push to git.
+
+You can also click this button:
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/victor-hugo)
 
 
-## Share
-Made by [Juan B. Rodriguez](http://jbrodriguez.io), with a MIT License.
-
-Please [share the article or leave your comments](http://jbrodriguez.io/mobile-friendly-website-2/).
+## Enjoy!! 😸

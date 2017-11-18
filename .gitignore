@@ -1,10 +1,2 @@
-.DS_Store
-public
-
-# node
-node_modules
-npm-debug.log
-
-# bower
-bower_components
-src/vendor
+node_modules/
+dist/
