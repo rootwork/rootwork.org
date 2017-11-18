@@ -1,8 +1,8 @@
 {
-  "name": "victor-hugo",
+  "name": "rootwork",
   "version": "1.0.0",
-  "description": "Victor Hugo is a Hugo boilerplate for creating truly epic websites!",
-  "repository": "netlify/victor-hugo",
+  "description": "Publishing system for Rootwork.org",
+  "repository": "rootwork/rootwork",
   "main": "index.js",
   "scripts": {
     "hugo": "gulp hugo",
@@ -11,8 +11,8 @@
     "start": "gulp server",
     "lint": "eslint src"
   },
-  "author": "",
-  "license": "MIT",
+  "author": "Ivan Boothe",
+  "license": "GPL-3.0+",
   "dependencies": {
     "ajv": "^5.3.0",
     "autoprefixer": "^7.1.6",
