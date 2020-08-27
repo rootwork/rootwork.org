@@ -393,6 +393,12 @@ th {
 tr:nth-child(even) td {
     background: #f5f6f7;
 }
+a.share img {
+    display: inline;
+    width: 2em;
+    clear: right;
+    margin-right: 0.5em;
+}
 footer {
     padding: 2em 0;
     margin: 2em 0 0 0;

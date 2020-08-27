@@ -12,6 +12,10 @@ theme = "aether-custom" # Forked from https://github.com/josephhutch/aether
   # homeimg = "Path, within the 'assets' folder, of the image used for the home button at the bottom of each post - optional"
   # bgimg = "Path, within the 'assets' folder, of the image used for the page background - optional"
   rssinmenu = "true"
+  twitterHandle = "rootwork"
+  shareOnLinkedIn = true
+  shareOnTwitter = true
+
 
 [markup]
   [markup.highlight] # https://gohugo.io/getting-started/configuration-markup#highlight
