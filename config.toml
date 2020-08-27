@@ -16,10 +16,12 @@ theme = "aether-custom" # Forked from https://github.com/josephhutch/aether
   shareOnLinkedIn = true
   shareOnTwitter = true
 
-
 [markup]
   [markup.highlight] # https://gohugo.io/getting-started/configuration-markup#highlight
     style = "monokai" # https://xyproto.github.io/splash/docs/all.html
+
+[frontmatter] # https://codeincomplete.com/articles/building-a-website-with-hugo-and-netlify/
+  lastmod = ["lastmod", ":git"]
 
 # 
 # DEPRECIATED
