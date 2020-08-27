@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rootwork.org</title>
+    <link>/</link>
+    <description>Recent content on Rootwork.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Aug 2020 21:25:59 +0000</lastBuildDate>
+    
+        <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Posts</title>
+      <link>/post/</link>
+      <pubDate>Thu, 27 Aug 2020 21:25:59 +0000</pubDate>
+      
+      <guid>/post/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

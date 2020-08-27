@@ -1,6 +1,6 @@
 # Rootwork.org
 
-Rootwork is created with the static site generator [Hugo](http://gohugo.io) with [Gulp](http://gulpjs.com) and [Webpack](https://webpack.js.org/) for the build process. Rootwork's backend is a fork of [Victor Hugo](https://github.com/netlify/victor-hugo) from the Nov. 7, 2017 commit.
+Rootwork is created with the static site generator [Hugo](http://gohugo.io) using a modified version of the [Aether](https://github.com/josephhutch/aether) theme.
 
 ## License
 

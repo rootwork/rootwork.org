@@ -1,0 +1,28 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories - Rootwork.org</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on Rootwork.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Aug 2020 21:25:59 +0000</lastBuildDate>
+    
+        <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>fruit</title>
+      <link>/categories/fruit/</link>
+      <pubDate>Thu, 27 Aug 2020 21:25:59 +0000</pubDate>
+      
+      <guid>/categories/fruit/</guid>
+      <description></description>
+    </item><item>
+      <title>vegetables</title>
+      <link>/categories/vegetables/</link>
+      <pubDate>Thu, 27 Aug 2020 21:25:59 +0000</pubDate>
+      
+      <guid>/categories/vegetables/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
