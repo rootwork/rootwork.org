@@ -4,7 +4,7 @@ languageLang = "en"
 title = "Rootwork.org"
 # googleAnalytics = ""
 # disqusShortname = "rootwork"
-theme = "aether" # https://github.com/josephhutch/aether
+theme = "aether-custom" # Forked from https://github.com/josephhutch/aether
 
 [params]
   brand = "Rootwork.org"
