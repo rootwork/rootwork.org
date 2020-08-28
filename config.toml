@@ -5,6 +5,15 @@ title = "Rootwork.org"
 # googleAnalytics = ""
 # disqusShortname = "rootwork"
 theme = "aether-custom" # Forked from https://github.com/josephhutch/aether
+enableGitInfo = true
+enableRobotsTXT = true
+
+[frontmatter] # https://codeincomplete.com/articles/building-a-website-with-hugo-and-netlify/
+  lastmod = ["lastmod",":git","date"] # allow explicit lastmod to take priority over git inferred value
+
+[markup]
+  [markup.highlight] # https://gohugo.io/getting-started/configuration-markup#highlight
+    style = "monokai" # https://xyproto.github.io/splash/docs/all.html
 
 [params]
   brand = "Rootwork.org"
@@ -15,13 +24,6 @@ theme = "aether-custom" # Forked from https://github.com/josephhutch/aether
   twitterHandle = "rootwork"
   shareOnLinkedIn = true
   shareOnTwitter = true
-
-[markup]
-  [markup.highlight] # https://gohugo.io/getting-started/configuration-markup#highlight
-    style = "monokai" # https://xyproto.github.io/splash/docs/all.html
-
-[frontmatter] # https://codeincomplete.com/articles/building-a-website-with-hugo-and-netlify/
-  lastmod = ["lastmod", ":git"]
 
 # 
 # DEPRECIATED

@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Greetings &middot; Rootwork.org</title>
-  <meta name="description" content="My first post" />
+  <title>Posts &middot; Rootwork.org</title>
+  <meta name="description" content="" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   
@@ -13,11 +13,12 @@
   
   
   <link href="/css/concated.min.css" rel="stylesheet">
+  <link rel="alternate" type="application/rss+xml" href="/posts/index.xml" title="Rootwork.org" />
   
   
 </head>
 
-  <body class="single-body">
+  <body class="list-body">
     <nav class="nav-bar side-padding">
   <h1 class="nav-header"><a href="/" class="nav-text">Rootwork.org</a></h1>
   <div class="hamburger-menu">
@@ -37,39 +38,28 @@
   </div>
 </nav>
 
-    <main class="content side-text-padding">
-      <article class="post ">
-        <header class="post-header">
-          <h1 class="post-title">Greetings</h1>
-          <p class="post-date">Posted <time datetime="2020-08-27">Aug 27, 2020</time></p>
-        </header>
+    <main class="card-container side-gutter">
+      <header class="list-header">
+        <h1 class="list-header-title">Posts</h1>
         
-        
-        <p>Hello!</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">title</span>&gt;Some sample HTML&lt;/<span style="color:#f92672">title</span>&gt;
-</code></pre></div><p>Cool beans.</p>
-<h2 id="some-structure">Some structure</h2>
-<p>lipsum</p>
-<h3 id="subheading">Subheading</h3>
-<p>Woo.</p>
-
-        
-
-  <a class="share twitter" href="https://twitter.com/intent/tweet?text=Greetings - My%20first%20post&url=%2fpost%2fhello%2f&hashtags=fruit%2cvegetables&via=rootwork" target="_blank" rel="noopener noreferrer" style="display: inline-block; width: 48px; height: 48px; background: url(/img/twitter-share.png) no-repeat center/contain;" title="Share on Twitter"></a>
-
-
-  <a class="share linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=%2fpost%2fhello%2f&title=Greetings&summary=My%20first%20post&source=Rootwork.org" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" style="display: inline-block; width: 48px; height: 48px; background: url(/img/linkedin-share.png) no-repeat center/contain;" title="Share on LinkedIn"></a>
-
-      </article>
+      </header>
       
-    </main>
-    <nav class="end-nav side-padding">
+      
       
       <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="/" class="card home-card" style="background-image: url( /img/grey-cloud.jpg )" rel="bookmark" >
-  Home
+  href="/posts/hello/" class="card blog-card" rel="bookmark" >
+  
+  <article class="card-body">
+    <h2 class="card-title">Greetings</h2>
+    <p class="card-text">My first post</p>
+    <div class="card-subtext muted-text">
+      <p>Posted <time datetime="2020-08-27">Aug 27, 2020</time></p>
+      <p>#Fruit #Vegetables </p>
+    </div>
+  </article>
 </a>
-    </nav>
+    </main>
+    
     <footer>
 	<a href="https://twitter.com/rootwork?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @rootwork</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </footer>
