@@ -17,10 +17,11 @@ enableRobotsTXT = true
 
 [params]
   brand = "Rootwork.org"
+  author = "Ivan Boothe"
   description = "Ivan Boothe develops digital strategy for nonprofits and social change."
   # homeimg = "Path, within the 'assets' folder, of the image used for the home button at the bottom of each post - optional"
   # bgimg = "Path, within the 'assets' folder, of the image used for the page background - optional"
-  rssinmenu = "true"
+  rssinmenu = true
   twitterHandle = "rootwork"
   shareOnLinkedIn = true
   shareOnTwitter = true

@@ -1,0 +1,24 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Devsigner - Rootwork.org</title>
+    <link>/categories/devsigner/</link>
+    <description>Recent content in Devsigner on Rootwork.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Apr 2014 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="/categories/devsigner/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Join me at the Devsigner conference in Portland this May: Designers and developers join forces!</title>
+      <link>/posts/2014/04/join-me-devsigner-conference-portland-may-designers-developers-join-forces/</link>
+      <pubDate>Tue, 29 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2014/04/join-me-devsigner-conference-portland-may-designers-developers-join-forces/</guid>
+      <description>Devsigner is celebrating the cross-overs, the multi-disciplinarians, the coders who paint and the designers who send pull requests &amp;mdash; and those who want to develop some new left-right brain skills.
+We&amp;rsquo;re looking for folks to break out of their familiar meetup silos and apply their knowledge across the crafts of development and design.
+Join me at Devsigner in Portland, Oregon, May 23-25!
+Tickets are now on sale, and session submissions are open until this Friday, May 2!</description>
+    </item>
+  </channel>
+</rss>
