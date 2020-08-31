@@ -4,7 +4,7 @@ languageLang = "en"
 title = "Rootwork.org"
 # googleAnalytics = ""
 # disqusShortname = "rootwork"
-theme = "aether-custom" # Forked from https://github.com/josephhutch/aether
+theme = "soil" # Forked from https://github.com/josephhutch/aether
 enableGitInfo = true
 enableRobotsTXT = true
 

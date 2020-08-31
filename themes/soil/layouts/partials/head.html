@@ -26,8 +26,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   {{ $mainStyleOptions := (dict "targetPath" "css/styles.css" "outputStyle" "compressed" "enableSourceMap" true) }}
   {{ $mainStyle := resources.Get "sass/style.scss" | resources.ToCSS $mainStyleOptions | resources.Fingerprint "sha512" }}
-  {{ $fontStyle := resources.Get "css/latolatinfonts.css" }}
-  {{ $style := slice $fontStyle $mainStyle | resources.Concat "css/concated.css" | minify }}
+  {{ $style := slice $mainStyle | resources.Concat "css/concated.css" | minify }}
   <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
   {{ range .AlternativeOutputFormats -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
