@@ -2,7 +2,50 @@
 // Layout
 //
 
-#page {
-  // Keeps menu from spilling out the side and causing scroll bars.
+body {
+  margin: 0;
+  padding: 0 0 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.no-scroll {
   overflow: hidden;
+  position: fixed;
+}
+
+.clear {
+  clear: both;
+}
+
+.content {
+  padding: 2em 0;
+  margin-bottom: 2em;
+  width: 100%;
+  max-width: 52rem;
+}
+
+.side-gutter {
+  margin-left: 1.2rem !important;
+  margin-right: 1.2rem !important;
+}
+
+.side-padding {
+  padding-left: 1.2rem !important;
+  padding-right: 1.2rem !important;
+  box-sizing: border-box !important;
+}
+
+.side-text-padding {
+  padding-left: 1.2rem !important;
+  padding-right: 1.2rem !important;
+  box-sizing: border-box !important;
+}
+
+footer {
+  padding: 2em 0;
+  margin: 2em 0 0 0;
 }

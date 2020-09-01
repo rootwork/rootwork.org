@@ -1,0 +1,25 @@
+//
+// HTML data tables
+//
+
+table {
+  color: #141823;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 1.5em 0;
+}
+
+td,
+th {
+  padding: 0.5em 1em;
+  border: thin solid #D1D1D1
+}
+
+th {
+  font-family: 'LatoLatinWebHeavy';
+  font-weight: normal;
+}
+
+tr:nth-child(even) td {
+  background: #f5f6f7;
+}

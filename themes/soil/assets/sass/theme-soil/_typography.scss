@@ -2,9 +2,99 @@
 // Typography
 //
 
+// Theme font stacks, overriding the default ones in _init.scss.
+
+$lato:            LatoLatinWeb, Avenir, HelveticaNeue-Light, "Helvetica Neue Light",
+                  "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+$lato-bold:       LatoLatinWebHeavy, Avenir, HelveticaNeue, "Helvetica Neue",
+                  Arial, Helvetica, "Numbus Sans L", sans-serif;
+$lato-light:      LatoLatinWebHairline, Avenir, HelveticaNeue, "Helvetica Neue",
+                  Arial, Helvetica, "Numbus Sans L", sans-serif;
+
+$base-font-family: $lato; // The font family set on the html element.
+$font-body:        $lato;
+
+// Styles
+
+html {
+	font-family: $base-font-family;
+}
+
 body {
-  font-family: $lato;
+  font-family: $font-body;
   font-size: 1.1em;
-  background-color: $page-bg-color;
   color: $body-text-color;
+  word-break: break-word;
+}
+
+p {
+  margin: 1.5em 0;
+}
+
+b,
+strong {
+  font-family: $lato-bold;
+  font-weight: normal;
+}
+
+.dropcase > p:first-of-type::first-letter {
+  float: left;
+  font-size: 3em;
+  line-height: 1;
+  margin: 0.05em 0.15em -0.1em 0;
+  /* initial-letter: 2; Maybe someday*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.5em 0 -0.5em 0;
+}
+
+h1, h2 {
+  clear: both;
+}
+
+blockquote {
+  border-left: 0.3em solid #D1D1D1;
+  margin: 1.5em 0.8em;
+  padding: .5em 0.5em;
+  font-style: italic;
+}
+
+blockquote p {
+  display: inline;
+}
+
+ul,
+ol {
+  padding-left: 1.6em; 
+}
+
+li ul, li ol {
+  padding-left: 1em;
+}
+
+li > p {
+  margin: 0;
+}
+
+code {
+  font-size: 1.1rem;
+  font-family: monospace;
+  padding: .2em .5em;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  background-color: #f5f6f7;
+}
+
+pre > code {
+  margin: 1.5em 0;
+  display: block;
+  padding: 0.5em;
+  word-break: normal;
+  overflow-x: auto;
+  color: black;
+}
+
+.highlight > pre {
+  background-color: unset !important;
 }
