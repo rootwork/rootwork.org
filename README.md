@@ -5,6 +5,7 @@ Rootwork is created with the static site generator [Hugo](http://gohugo.io). Thi
 ## Usage
 
 `git pull`
+
 `hugo -D`
 
 The static site is rendered in the `public` directory.
