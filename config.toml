@@ -1,64 +1,63 @@
-baseURL = "/"
-languageCode = "en-us"
-languageLang = "en"
-title = "Rootwork.org"
-# googleAnalytics = ""
-# disqusShortname = "rootwork"
-theme = "soil" # Forked from https://github.com/josephhutch/aether
-enableGitInfo = true
-enableRobotsTXT = true
-
-[frontmatter] # https://codeincomplete.com/articles/building-a-website-with-hugo-and-netlify/
-  lastmod = ["lastmod",":git","date"] # allow explicit lastmod to take priority over git inferred value
+# set `baseurl` to your root domain
+# if you set it to "/" share icons won't work properly on production
+baseurl = "https://nosnakes.net/"  # Include trailing slash
+title = "Clarity"
+author = "Jane Doe"
+copyright = "Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved."
+# canonifyurls = true
+paginate = 10
+theme = "hugo-clarity"
 
 [markup]
-  [markup.highlight] # https://gohugo.io/getting-started/configuration-markup#highlight
-    style = "monokai" # https://xyproto.github.io/splash/docs/all.html
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = "--"
+    lineNoStart = 1
+    lineNos = true # always set to true # else line numbers won't show at all! even when you toggle them on in the UI
+    lineNumbersInTable = false
+    noClasses = false
+    # style = "monokai"
+    tabWidth = 2
+  [markup.goldmark.renderer]
+    hardWraps = false
+    unsafe = false # change to true to enable inclusion of rawHTML and math functions
+    xhtml = false
 
 [params]
-  brand = "Rootwork.org"
-  author = "Ivan Boothe"
-  description = "Ivan Boothe develops digital strategy for nonprofits and social change."
-  # homeimg = "Path, within the 'assets' folder, of the image used for the home button at the bottom of each post - optional"
-  # bgimg = "Path, within the 'assets' folder, of the image used for the page background - optional"
-  rssinmenu = true
-  twitterHandle = "rootwork"
-  shareOnLinkedIn = true
-  shareOnTwitter = true
+author = "Jane Doe"
+twitter = "@janedoe"
+largeTwitterCard = false # set to true if you want to show a large twitter card image. The default is a small twitter card image
+introDescription = "Technologist, perpetual student, teacher, continual incremental improvement."
 
-# 
-# DEPRECIATED
-# -----------
-# The params below this line are not actually being used; they're just for reference.
-#
+# Google analytics Id
+ga_analytics = "XXXXXXXXXX"
 
-  # Header and navigation
-  [params.header]
-    title = "Ivan Boothe"
-    shortBio = "Digital strategy for social change"
+# limit the number of taxonomies links shown on the sidebar of each page by default.
+numberOfTagsShown = 14 # Applies for all other default & custom taxonomies. e.g categories, brands see https://gohugo.io/content-management/taxonomies#what-is-a-taxonomy
 
-  # About section
-  [params.about]
-    title = "About me"
-    bio = "**Ivan Boothe is a digital strategist grounded in social justice movements.**<br /><br />He specializes in Drupal, front-end development, social media strategy and online communications. His technical skills are firmly rooted in his background in on-the-ground social change and academic work in social movement history."
+# will be used on share >> twitter, facebook, linkedin
+fallBackOgImage = "images/thumbnail.png" 
 
-  # Contact secion
-  [params.contact]
-    title = "Contact"
+# sets the maximum number of lines per codeblock. The codeblock will however be scrollable and expandable.
+codeMaxLines = 7
 
-    # The following social network icons are available:
-    # 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin'
-    # 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
-    [[params.contact.social]]
-      icon = "twitter"
-      link = "//twitter.com/rootwork"
+# disable showing line numbers by default. Switch to `true` if you'd rather have them on.
+codeLineNumbers = false 
 
-    [[params.contact.social]]
-      icon = "github"
-      link = "//github.com/rootwork"
 
-    [[params.contact.social]]
-      icon = "linkedin"
-      link = "//www.linkedin.com/in/ivanboothe"
+# directory(s) where your articles are located
+mainSections = ["post"] # see config details here https://gohugo.io/functions/where/#mainsections
 
-copyright = "Content licensed under [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Feel free to use or republish with credit! Image: Flickr user [Michar](https://www.flickr.com/photos/michar/2497651920/) (Creative Commons)."
+# center logo on navbar
+centerLogo = false # Set to "true" for centering or "false" for left aligned.
+
+logo = "logos/logo.png"
+
+# Label Non inline images on an article body
+figurePositionShow = false # toggle on or off globally
+# you can toggle this behaviour on or off on per page using the same variable inside your articles frontmatter
+figurePositionLabel = "Figure" # the text before image number e.g Figure 1.0
+
+# Set the collapsed mobile navigation to either appear from the left or the right
+mobileNavigation = "left" # if you prefer right change to 'right'
