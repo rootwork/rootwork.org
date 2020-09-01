@@ -17,6 +17,7 @@
         {{- end }}
         <header class="post-header">
           <h1 class="post-title">{{ .Title }}</h1>
+          {{ if (isset .Params "categories") }}<p class="post-categories">{{ range .Params.categories }}<span class="category">#{{ . }}</span> {{ end }}</p>{{ end }}
           {{ if isset .Params "date" }}<p class="post-date">Posted by  <a href="/connect" title="Contact {{ .Site.Params.author }}">{{ .Site.Params.author }}</a> on <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time></p>{{ end }}
         </header>
         {{ if .Params.toc -}}
