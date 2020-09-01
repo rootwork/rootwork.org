@@ -1,7 +1,8 @@
 # Compiled site
 public/
 
-# Sass caches
+# Caches
+resources/_gen/
 .sass-cache
 
 # Folder view configuration files
