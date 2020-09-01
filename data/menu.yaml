@@ -7,8 +7,10 @@
 - name: Links
   submenu:
     - name: LinkedIn
-      link: https://www.linkedin.com/
+      link: https://www.linkedin.com/in/ivanboothe
     - name: Twitter
-      link: https://twitter.com/
+      link: https://twitter.com/rootwork
+    - name: GitHub
+      link: https://github.com/rootwork
 - name: About
   link: about/
