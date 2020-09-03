@@ -1,0 +1,4 @@
+[submodule "themes/hugo-clarity"]
+	path = themes/hugo-clarity
+	url = git@github.com:rootwork/hugo-clarity.git
+	branch = git-trackable-overrides
