@@ -4,12 +4,18 @@ Rootwork is created with the static site generator [Hugo](http://gohugo.io) usin
 
 ## Usage
 
-Clone this repo.
+### Installation
 
-### Installing Hugo
+Hugo:
 
 * On systems (e.g. Ubuntu) with Snap already installed, run `snap install hugo --channel=extended`
 * Otherwise, get the `hugo_extended_VERSION_OS-64bit.*` [package from GitHub releases](https://github.com/gohugoio/hugo/releases) (on Debian-based Linux systems, ignore the alert that [an older package is available in the channel](https://gohugo.io/getting-started/installing#debian-and-ubuntu))
+
+This repo:
+
+* `git clone git@github.com:rootwork/rootwork.org.git`
+* `cd rootwork.org`
+* `git submodule update --init --recursive`
 
 ### Developing
 
