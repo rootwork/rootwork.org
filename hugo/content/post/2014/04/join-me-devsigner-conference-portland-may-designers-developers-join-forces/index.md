@@ -21,9 +21,9 @@ tags:
 
 We're looking for folks to break out of their familiar meetup silos and apply their knowledge across the crafts of development and design.
 
-[**Join me at Devsigner in Portland, Oregon, May 23-25!**](http://devsignercon.com/)
+[**Join me at Devsigner in Portland, Oregon, May 23-25!**](https://web.archive.org/web/20140719090242/http://devsignercon.com/)
 
-Tickets are [now on sale](http://devsignercon.com/devsigner-2014), and [session submissions are open](http://devsignercon.com/) until this Friday, May 2!
+Tickets are [now on sale](https://web.archive.org/web/20140719090242/http://devsignercon.com/), and [session submissions are open](https://web.archive.org/web/20140719090242/http://devsignercon.com/) until this Friday, May 2!
 
 <!-- < smallimg src="devsignerlogo.png" alt="Devsigner: Portland, OR, May 23--25" smartfloat="right" > -->
 
@@ -35,7 +35,7 @@ Tickets are [now on sale](http://devsignercon.com/devsigner-2014), and [session 
 *   why bad user experience is a bug
 *   what web technologies can learn from analog design
 *   iterative design in open-source communities
-*   your great idea --- [submit a session](http://devsignercon.com/ "Submit your session!") now!
+*   your great idea --- [submit a session](https://web.archive.org/web/20140719090242/http://devsignercon.com/ "Submit your session!") now!
 
 ### We're going to mix it up with a variety of session formats:
 
@@ -53,6 +53,6 @@ We're also kicking off the event with a keynote presentation from a surprise gue
 *   artists who are tired of ugly or unusable websites
 *   branding experts who want to tell developers a story about the cobbler's children
 *   Sass/Puppet/Angular/Grunt/Node evangelists who want to spread the good word
-*   [you](http://devsignercon.com/devsigner-2014 "Register Today!")!
+*   [you](https://web.archive.org/web/20140719090242/http://devsignercon.com/ "Register Today!")!
 
 I hope to see you there!
