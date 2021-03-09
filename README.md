@@ -19,7 +19,7 @@ notes to myself because I forget things.
 
 * Get the `hugo_extended_VERSION_OS-64bit.*` [package from GitHub
 releases](https://github.com/gohugoio/hugo/releases) (e.g.
-`hugo_0.81.0_Linux-64bit.deb`). On Debian-based Linux systems, ignore the alert
+`hugo_extended_0.81.0_Linux-64bit.deb`). On Debian-based Linux systems, ignore the alert
 that [an older package is available in the
 channel](https://gohugo.io/getting-started/installing#debian-and-ubuntu).
 * Install the package, which will place it in `/usr/local/bin/hugo`.
