@@ -7,15 +7,13 @@ customizations.
 This repository contains the backend code used to generate the site files, and
 notes to myself because I forget things.
 
-## Usage
+## Installation
 
-### Installation
-
-#### Go
+### Go
 
 * [Follow the instructions](https://golang.org/doc/install)
 
-#### Hugo
+### Hugo
 
 * Get the `hugo_extended_VERSION_OS-64bit.*` [package from GitHub
 releases](https://github.com/gohugoio/hugo/releases) (e.g.
@@ -24,44 +22,53 @@ that [an older package is available in the
 channel](https://gohugo.io/getting-started/installing#debian-and-ubuntu).
 * Install the package, which will place it in `/usr/local/bin/hugo`.
 
-#### This repo
+### This repo
 
 * `git clone git@github.com:rootwork/rootwork.org.git`
 * `cd rootwork.org`
 * `git submodule update --init --recursive`
 
-### Updating
+## Updating
 
-#### Go
+### Go
 
 * Check version: `go version`
 * [Remove old version and install new
 version](https://gist.github.com/nikhita/432436d570b89cab172dcf2894465753)
 
-#### Hugo
+### Hugo
 
 * Check version: `hugo version`
 * `sudo rm -rf /usr/local/bin/hugo`
 * Reinstall following the instructions above.
 
-#### This repo
+### This repo
 
 * `cd rootwork.org`
-* `git pull -r origin && git submodule update --init --recursive`
+* `git pull -r origin`
 
-### Developing
+## Local development
 
-@TODO
+* `hugo server`
+* Point a web browser to [http://localhost:1313/](http://localhost:1313/)
 
-### Generating the site for production
+### Editing the theme
+
+Customizing a theme is done by [overriding theme
+files](https://gohugobrasil.netlify.app/themes/customizing/). Don't edit the
+files in `themes` directly, as they're stored with git submodules.
+
+Use `git submodule update --init --recursive` to update theme source files, but
+note there's no real guarantee this won't break things.
+
+## Generating the site for production
 
 `hugo -D`
 
 The static site is rendered in the `public` directory.
 
-### Editing the theme
-
-@TODO
+Note that this is excluded from the repo in `.gitignore`, so this is just to see
+what it will look like. Use a GitHub Action to generate the site online.
 
 ## License
 
