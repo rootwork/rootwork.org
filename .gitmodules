@@ -1,6 +1,3 @@
-[submodule "hugo/themes/hugo-notepadium"]
-	path = hugo/themes/hugo-notepadium
-	url = https://github.com/cntrump/hugo-notepadium.git
 [submodule "hugo/themes/hugo-clarity"]
 	path = hugo/themes/hugo-clarity
 	url = https://github.com/chipzoller/hugo-clarity
