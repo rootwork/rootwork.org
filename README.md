@@ -10,20 +10,19 @@ notes to myself because I forget things.
   this section. -->
 
 <!--ts-->
-   * [Rootwork.org](#rootworkorg)
-      * [Local development](#local-development)
-         * [Editing the theme](#editing-the-theme)
-      * [Generating the site for production](#generating-the-site-for-production)
-      * [Fresh installation](#fresh-installation)
-         * [Go](#go)
-         * [Hugo](#hugo)
-         * [This repo](#this-repo)
-      * [Updating dependencies](#updating-dependencies)
-         * [Go](#go-1)
-         * [Hugo](#hugo-1)
-      * [License](#license)
+   * [Local development](#local-development)
+      * [Editing the theme](#editing-the-theme)
+   * [Generating the site for production](#generating-the-site-for-production)
+   * [Fresh installation](#fresh-installation)
+      * [Go](#go)
+      * [Hugo](#hugo)
+      * [This repo](#this-repo)
+   * [Updating dependencies](#updating-dependencies)
+      * [Go](#go-1)
+      * [Hugo](#hugo-1)
+   * [License](#license)
 
-<!-- Added by: runner, at: Tue Mar  9 23:38:40 UTC 2021 -->
+<!-- Added by: runner, at: Tue Mar  9 23:40:41 UTC 2021 -->
 
 <!--te-->
 
