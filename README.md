@@ -1,5 +1,12 @@
 # Rootwork.org
 
+<!-- The following section, from "ts" to "te", is an automatically-generated
+  table of contents, updated whenever this file changes. Do not edit within
+  this section. -->
+
+<!--ts-->
+<!--te-->
+
 Rootwork is created with the static site generator [Hugo](http://gohugo.io)
 using the [Hugo Clarity](https://github.com/chipzoller/hugo-clarity) theme with
 customizations.
