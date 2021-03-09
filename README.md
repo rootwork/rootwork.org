@@ -65,7 +65,7 @@ The static site is rendered in the `public` directory.
 
 ## License
 
-The content of the site, located in the `content` directory **only**, is
+The content of the site, located in the `hugo/content` directory **only**, is
 licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0
 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
