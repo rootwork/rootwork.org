@@ -28,4 +28,4 @@ jobs:
           # Choose whether to include files with no URLs in the output
           print_all: false
           # A comma separated patterns to exclude during URL checks
-          exclude_patterns: http://www.w3.org,http://schema.org/,http://purl.org,http://ogp.me,http://rdfs.org,http://xmlns.com
+          exclude_patterns: http://www.w3.org,http://schema.org/,http://purl.org,http://ogp.me,http://rdfs.org,http://xmlns.com,http://localhost:1313/
