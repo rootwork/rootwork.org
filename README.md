@@ -7,46 +7,6 @@ customizations.
 This repository contains the backend code used to generate the site files, and
 notes to myself because I forget things.
 
-## Installation
-
-### Go
-
-* [Follow the instructions](https://golang.org/doc/install)
-
-### Hugo
-
-* Get the `hugo_extended_VERSION_OS-64bit.*` [package from GitHub
-releases](https://github.com/gohugoio/hugo/releases) (e.g.
-`hugo_extended_0.81.0_Linux-64bit.deb`). On Debian-based Linux systems, ignore the alert
-that [an older package is available in the
-channel](https://gohugo.io/getting-started/installing#debian-and-ubuntu).
-* Install the package, which will place it in `/usr/local/bin/hugo`.
-
-### This repo
-
-* `git clone git@github.com:rootwork/rootwork.org.git`
-* `cd rootwork.org`
-* `git submodule update --init --recursive`
-
-## Updating
-
-### Go
-
-* Check version: `go version`
-* [Remove old version and install new
-version](https://gist.github.com/nikhita/432436d570b89cab172dcf2894465753)
-
-### Hugo
-
-* Check version: `hugo version`
-* `sudo rm -rf /usr/local/bin/hugo`
-* Reinstall following the instructions above.
-
-### This repo
-
-* `cd rootwork.org`
-* `git pull -r origin`
-
 ## Local development
 
 * `hugo server`
@@ -69,6 +29,41 @@ The static site is rendered in the `public` directory.
 
 Note that this is excluded from the repo in `.gitignore`, so this is just to see
 what it will look like. Use a GitHub Action to generate the site online.
+
+## Fresh installation
+
+### Go
+
+* [Follow the instructions](https://golang.org/doc/install)
+
+### Hugo
+
+* Get the `hugo_extended_VERSION_OS-64bit.*` [package from GitHub
+releases](https://github.com/gohugoio/hugo/releases) (e.g.
+`hugo_extended_0.81.0_Linux-64bit.deb`). On Debian-based Linux systems, ignore
+the alert that [an older package is available in the
+channel](https://gohugo.io/getting-started/installing#debian-and-ubuntu).
+* Install the package, which will place it in `/usr/local/bin/hugo`.
+
+### This repo
+
+* `git clone git@github.com:rootwork/rootwork.org.git`
+* `cd rootwork.org`
+* `git submodule update --init --recursive`
+
+## Updating dependencies
+
+### Go
+
+* Check version: `go version`
+* [Remove old version and install new
+version](https://gist.github.com/nikhita/432436d570b89cab172dcf2894465753)
+
+### Hugo
+
+* Check version: `hugo version`
+* `sudo rm -rf /usr/local/bin/hugo`
+* Reinstall following the instructions above.
 
 ## License
 
