@@ -1,21 +1,26 @@
 # Rootwork.org
 
-Rootwork is created with the static site generator [Hugo](http://gohugo.io) using the [Hugo Clarity](https://github.com/chipzoller/hugo-clarity) theme with customizations. This repository contains the backend code used to generate the site files.
+Rootwork is created with the static site generator [Hugo](http://gohugo.io)
+using the [Hugo Clarity](https://github.com/chipzoller/hugo-clarity) theme with
+customizations.
+
+This repository contains the backend code used to generate the site files, and
+notes to myself because I forget things.
 
 ## Usage
 
 ### Installation
 
-Go:
+#### Go
 
 * [Follow the instructions](https://golang.org/doc/install)
 
-Hugo:
+#### Hugo
 
 * Get the `hugo_extended_VERSION_OS-64bit.*` [package from GitHub releases](https://github.com/gohugoio/hugo/releases) (e.g. `hugo_0.81.0_Linux-64bit.deb`). On Debian-based Linux systems, ignore the alert that [an older package is available in the channel](https://gohugo.io/getting-started/installing#debian-and-ubuntu).
 * Install the package, which will place it in `/usr/local/bin/hugo`.
 
-This repo:
+#### This repo
 
 * `git clone git@github.com:rootwork/rootwork.org.git`
 * `cd rootwork.org`
@@ -23,18 +28,18 @@ This repo:
 
 ### Updating
 
-Go:
+#### Go
 
 * Check version: `go version`
 * [Remove old version and install new version](https://gist.github.com/nikhita/432436d570b89cab172dcf2894465753)
 
-Hugo:
+#### Hugo
 
 * Check version: `hugo version`
 * `sudo rm -rf /usr/local/bin/hugo`
 * Reinstall following the instructions above.
 
-This repo:
+#### This repo
 
 * `cd rootwork.org`
 * `git pull -r origin && git submodule update --init --recursive`
