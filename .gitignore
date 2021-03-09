@@ -1,8 +1,8 @@
 # Hugo compiled site
-public/
+hugo/public/
 
 # Hugo caches
-resources/_gen/
+hugo/resources/_gen/
 
 # Trash
 $RECYCLE.BIN/
