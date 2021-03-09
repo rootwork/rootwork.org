@@ -1,18 +1,53 @@
-# Compiled site
+# Hugo compiled site
 public/
 
-# Caches
+# Hugo caches
 resources/_gen/
-.sass-cache
+
+# Trash
+$RECYCLE.BIN/
+.Trashes
+Network Trash Folder
+.Trash-*
+.nfs*
+
+# Temporary files
+.TemporaryItems
+Temporary Items
+.fuse_hidden*
+*~
+*.swp
+*.swo
 
 # Folder view configuration files
 .DS_Store
+.AppleDouble
+.LSOverride
 Desktop.ini
+.directory
 
 # Thumbnail cache files
 ._*
 Thumbs.db
+ehthumbs.db
 
-# Files that might appear on external disks
+# Folder view configuration files
+.DS_Store
+.AppleDouble
+.LSOverride
+Desktop.ini
+.AppleDesktop
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
 .Spotlight-V100
-.Trashes
+.VolumeIcon.icns
+.AppleDB
+.apdisk
+
+# Sass caches and maps
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
