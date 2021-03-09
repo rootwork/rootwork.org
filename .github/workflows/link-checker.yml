@@ -17,10 +17,10 @@ jobs:
         with:
           fetch-depth: 1
       - name: Report broken links
-        uses: urlstechie/urlchecker-action@0.2.2
+        uses: urlstechie/urlchecker-action@master
         with:
           # A comma-separated list of file types to cover in the URL checks
-          # file_types:
+          file_types: md,toml,yml,scss
           # The timeout seconds to provide to requests, defaults to 5 seconds
           timeout: 30
           # How many times to retry a failed request (each is logged, defaults to 1)
