@@ -7,7 +7,9 @@ theme = "hugo-clarity"
 
 canonifyurls = true
 paginate = 10
-enableRobotsTXT = true
+
+# Copyright is also set in params; included here for future compatibility.
+copyright = "Content licensed under <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'>Creative Commons BY-NC-SA 4.0</a>. Feel free to use or republish with credit!"
 
 DefaultContentLanguage = "en"
 # [languages]
@@ -15,6 +17,16 @@ DefaultContentLanguage = "en"
 
 # [menus]
 # config/_default/menus/menu.xx.toml
+
+# SEO settings
+enableRobotsTXT = true
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+
+# [permalinks]
+#   posts = "/:year/:month/:slug/"
+#   page = "/:slug/"
 
 [taxonomies]
 category = "categories"
