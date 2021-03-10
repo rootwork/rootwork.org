@@ -1,5 +1,64 @@
 // Add custom styles here. To override variables, use _override.scss
 
+// MIXINS //
+
+@mixin is-on {
+  &:hover,
+  &:active,
+  &:focus {
+    @content;
+  }
+}
+
+// TYPOGRAPHY //
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
+}
+
+// NAVIGATION //
+
+.nav_header {
+  margin-top: 0.5rem;
+}
+
+.nav {
+  border-bottom: 5px var(--translucent-light) solid;
+}
+
+.nav_brand {
+  min-height: 62px;
+
+  img {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.nav_body {
+  padding-left: 200px;
+}
+
+.nav_parent {
+  margin: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+// SOCIAL //
+
+.follow a {
+  opacity: 0.8;
+
+  @include is-on {
+    opacity: 1;
+  }
+}
+
+// TAXONOMY //
+
 .post_tag--cat {
 	font-weight: 500;
   background-color: var(--translucent);

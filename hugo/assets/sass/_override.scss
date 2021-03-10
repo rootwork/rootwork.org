@@ -6,4 +6,34 @@ $bg: #002714;
 html {
   --theme: #00b877;
   --bg: #002714;
+
+  .color {
+    &_choice {
+      &::after {
+        background-image: url("#{$icons}sun.svg");
+      }
+    }
+  }
+
+  &[data-mode="dim"] {
+    .color {
+      &_choice {
+        &::after {
+          background-image: url("#{$icons}moon.svg");
+        }
+      }
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    &:not([data-mode="lit"]) {
+      .color {
+        &_choice {
+          &::after {
+            background-image: url("#{$icons}moon.svg");
+          }
+        }
+      }
+    }
+  }
 }
