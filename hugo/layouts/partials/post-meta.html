@@ -16,7 +16,7 @@ Inserting CATEGORIES section and separating out TAGS section.
   {{- with .Params.categories -}}
   {{- range . }}
   {{- $tag := . | urlize }}
-  <a href = '{{ absURL (printf "categories/%s" $tag) }}' class = 'post_tag--cat post_tag button button_translucent'>
+  <a href = '{{ absURL (printf "categories/%s" $tag) }}' title="{{ humanize . }}" class = 'post_tag--cat post_tag button button_translucent'>
     {{- . }}
   </a>
   {{- end }}
@@ -26,7 +26,7 @@ Inserting CATEGORIES section and separating out TAGS section.
   {{- with .Params.tags -}}
     {{- range . }}
       {{- $tag := urlize . }}
-      <a href='{{ absLangURL (printf "tags/%s" $tag) }}' title="{{ . }}" class="post_tag button button_translucent">
+      <a href='{{ absLangURL (printf "tags/%s" $tag) }}' title="{{ humanize . }}" class="post_tag button button_translucent">
         {{- . }}
       </a>
     {{- end }}
