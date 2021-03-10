@@ -12,6 +12,7 @@ notes to myself because I forget things.
 <!--ts-->
    * [Local development](#local-development)
       * [Editing the theme](#editing-the-theme)
+         * [Updating the theme](#updating-the-theme)
    * [Generating the site for production](#generating-the-site-for-production)
    * [Fresh installation](#fresh-installation)
       * [Go](#go)
@@ -22,7 +23,7 @@ notes to myself because I forget things.
       * [Hugo](#hugo-1)
    * [License](#license)
 
-<!-- Added by: runner, at: Tue Mar  9 23:40:41 UTC 2021 -->
+<!-- Added by: runner, at: Wed Mar 10 00:02:02 UTC 2021 -->
 
 <!--te-->
 
