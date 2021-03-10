@@ -37,8 +37,18 @@ Customizing a theme is done by [overriding theme
 files](https://gohugobrasil.netlify.app/themes/customizing/). Don't edit the
 files in `themes` directly, as they're stored with git submodules.
 
-Use `git submodule update --init --recursive` to update theme source files, but
-note there's no real guarantee this won't break things.
+Add notes at the top of any overridden files using Go comments (`{{/* */}}`) to
+note what has been changed -- this vastly eases integrating new changes to the
+overridden files from upstream.
+
+Sass can be overridden more directly using the `_custom.scss` file within
+`assets`. Use the theme's `_variables.scss` file to see the original values for
+and change things like colors and sizes.
+
+### Updating the theme
+
+Use `git submodule update --init --recursive` to pull in new changes, but note
+there's no real guarantee this won't break things.
 
 # Generating the site for production
 
