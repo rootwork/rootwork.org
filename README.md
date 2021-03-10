@@ -42,9 +42,8 @@ Add notes at the top of any overridden files using Go comments (`{{/* */}}`) to
 note what has been changed -- this vastly eases integrating new changes to the
 overridden files from upstream.
 
-Sass can be overridden more directly using the `_custom.scss` file within
-`assets`. Use the theme's `_variables.scss` file to see the original values for
-and change things like colors and sizes.
+Custom styles can be added using the `_custom.scss` file within `assets`. Use
+`_override.scss` to change the theme's variables located in `_variables.sass`.
 
 ### Updating the theme
 
