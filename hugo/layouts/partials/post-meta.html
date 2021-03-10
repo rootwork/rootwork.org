@@ -1,28 +1,34 @@
-<div class = 'post_meta'>
-  <svg class="icon">
-    <use xlink:href="#calendar"></use>
-  </svg>
-  <span class="post_date">
-    {{ .Date.Format "Jan 2, 2006" -}}
-  </span>
+{{/*
 
-  {{/* Categories */}}
-    {{- with .Params.categories -}}
-    {{- range . }}
-    {{- $tag := . | urlize }}
-    <a href = '{{ absURL (printf "categories/%s" $tag) }}' class = 'post_tag--cat post_tag button button_translucent'>
-      {{- . }}
-    </a>
-    {{- end }}
-    {{- end }}
+Inserting CATEGORIES section and separating out TAGS section.
 
-  {{/* Tags */}}
-    {{- with .Params.tags -}}
+*/}}
+<div class="post_meta">
+
+  {{ if ( ne .Params.showDate false ) }}
+    {{ partial "sprite" (dict "icon" "calendar") }}
+    <span class="post_date">
+      {{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) -}}
+    </span>
+  {{- end }}
+
+  {{/* CATEGORIES */}}
+  {{- with .Params.categories -}}
+  {{- range . }}
+  {{- $tag := . | urlize }}
+  <a href = '{{ absURL (printf "categories/%s" $tag) }}' class = 'post_tag--cat post_tag button button_translucent'>
+    {{- . }}
+  </a>
+  {{- end }}
+  {{- end }}
+
+  {{/* TAGS */}}
+  {{- with .Params.tags -}}
     {{- range . }}
-    {{- $tag := . | urlize }}
-    <a href = '{{ absURL (printf "tags/%s" $tag) }}' class = 'post_tag button button_translucent'>
-      {{- . }}
-    </a>
+      {{- $tag := urlize . }}
+      <a href='{{ absLangURL (printf "tags/%s" $tag) }}' title="{{ . }}" class="post_tag button button_translucent">
+        {{- . }}
+      </a>
     {{- end }}
-    {{- end }}
+  {{- end }}
 </div>
