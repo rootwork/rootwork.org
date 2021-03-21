@@ -47,6 +47,10 @@ h3 {
   border-bottom-right-radius: 0;
 }
 
+.nav_item {
+  padding: 1.5rem 1rem 0.5rem;
+}
+
 // SOCIAL //
 
 .follow a {
@@ -55,12 +59,4 @@ h3 {
   @include is-on {
     opacity: 1;
   }
-}
-
-// TAXONOMY //
-
-.post_tag--cat {
-	font-weight: 500;
-  background-color: var(--translucent);
-  border-color: var(--theme);
 }

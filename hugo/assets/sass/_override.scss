@@ -6,6 +6,8 @@ $bg: #002714;
 html {
   --theme: #00b877;
   --bg: #002714;
+  --bgdark: #003825;
+  --font: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
   .color {
     &_choice {
@@ -15,7 +17,35 @@ html {
     }
   }
 
+  .nav_brand img {
+    mix-blend-mode: screen;
+  }
+
+  .button {
+    font-weight: bold;
+  }
+
+  .post_tag {
+    font-weight: normal;
+  }
+
+  .post_tag--cat {
+    font-weight: bold;
+    background-color: var(--light);
+    border-color: var(--theme);
+  }
+
   &[data-mode="dim"] {
+    --light: hsla(0,0%,100%,0.91);
+
+    .nav_header {
+      background-color: var(--bgdark);
+    }
+
+    .nav_brand img {
+      mix-blend-mode: normal;
+    }
+
     .color {
       &_choice {
         &::after {
@@ -23,16 +53,32 @@ html {
         }
       }
     }
+
+    .post_tag--cat {
+      background-color: var(--translucent);
+    }
   }
 
   @media (prefers-color-scheme: dark) {
     &:not([data-mode="lit"]) {
+      .nav_header {
+        background-color: var(--bgdark);
+      }
+
+      .nav_brand img {
+        mix-blend-mode: normal;
+      }
+
       .color {
         &_choice {
           &::after {
             background-image: url("#{$icons}moon.svg");
           }
         }
+      }
+
+      .post_tag--cat {
+        background-color: var(--translucent);
       }
     }
   }
