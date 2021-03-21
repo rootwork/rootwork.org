@@ -1,9 +1,0 @@
-- item: "github"
-  url: "https://github.com/rootwork"
-- item: "twitter"
-  url: "https://twitter.com/rootwork"
-- item: "linkedin"
-  url: "https://www.linkedin.com/in/ivanboothe"
-- item: "rss"
-  url: "index.xml"
-  internal:  true
