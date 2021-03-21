@@ -32,6 +32,16 @@ notes to myself because I forget things.
 * `hugo server`
 * Point a web browser to [http://localhost:1313/](http://localhost:1313/)
 
+## Editing site variables
+
+You can find text strings and other variables in four places:
+
+* `hugo/config.toml` (site configuration)
+* `hugo/configTaxo.toml` (for taxonomy and, confusingly, embedded social media
+settings)
+* `hugo/i18n/en.toml` (translatable strings)
+* `hugo/config/_default/menus/menu.en.toml` (menus)
+
 ## Editing the theme
 
 Customizing a theme is done by [overriding theme
