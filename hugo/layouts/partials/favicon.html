@@ -1,0 +1,16 @@
+{{/*
+
+Setting favicon code to match the site theme.
+
+*/}}
+<link rel="apple-touch-icon" sizes="180x180" href='{{ absURL "icons/apple-touch-icon.png" }}'>
+<link rel="icon" type="image/png" sizes="32x32" href='{{ absURL "icons/favicon-32x32.png" }}'>
+<link rel="icon" type="image/png" sizes="16x16" href='{{ absURL "icons/favicon-16x16.png" }}'>
+<link rel="manifest" href='{{ absURL "icons/site.webmanifest" }}'>
+<link rel="mask-icon" href='{{ absURL "safari-pinned-tab.svg" }}' color="#5bbad5">
+<link rel="shortcut icon" href='{{ absURL "icons/favicon.ico" }}'>
+<meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}">
+<meta name="application-name" content="{{ .Site.Title }}">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-config" content='{{ absURL "icons/browserconfig.xml" }}'>
+<meta name="theme-color" content="#ffffff">
