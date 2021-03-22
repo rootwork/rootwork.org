@@ -1,0 +1,17 @@
+@mixin is-on {
+  &:hover,
+  &:active,
+  &:focus {
+    @content;
+  }
+}
+
+@mixin darkmode {
+  html[data-mode="dim"] & {
+    @content;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    @content;
+  }
+}

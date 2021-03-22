@@ -1,85 +1,51 @@
 // Override variables here. To add custom CSS, use _custom.scss
 
-$theme: #00b877;
-$bg: #002714;
+@import 'rootwork_mixins';
+@import 'fonts';
+@import 'rootwork_variables';
 
-html {
-  --theme: #00b877;
-  --bg: #002714;
-  --bgdark: #003825;
-  --font: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
-  .color {
-    &_choice {
-      &::after {
-        background-image: url("#{$icons}sun.svg");
+.color {
+  &_choice {
+    &::after {
+      background-image: url("#{$icons}sun.svg");
+
+      @include darkmode {
+        background-image: url("#{$icons}moon.svg");
       }
     }
   }
+}
 
-  .nav_brand img {
-    mix-blend-mode: screen;
+.nav_header {
+  @include darkmode {
+    background-color: var(--bgdark);
   }
+}
 
-  .button {
-    font-weight: bold;
+.nav_brand img {
+  mix-blend-mode: screen;
+
+  @include darkmode {
+    mix-blend-mode: normal;
   }
+}
 
-  .post_tag {
-    font-weight: normal;
-  }
+.button {
+  font-weight: bold;
+}
 
-  .post_tag--cat {
-    font-weight: bold;
-    background-color: var(--light);
+.post_tag {
+  font-weight: normal;
+}
+
+.post_tag--cat {
+  font-weight: bold;
+  background-color: var(--light);
+  border-color: var(--theme);
+
+  @include darkmode {
+    background-color: var(--translucent);
     border-color: var(--theme);
-  }
-
-  &[data-mode="dim"] {
-    --light: hsla(0,0%,100%,0.91);
-
-    .nav_header {
-      background-color: var(--bgdark);
-    }
-
-    .nav_brand img {
-      mix-blend-mode: normal;
-    }
-
-    .color {
-      &_choice {
-        &::after {
-          background-image: url("#{$icons}moon.svg");
-        }
-      }
-    }
-
-    .post_tag--cat {
-      background-color: var(--translucent);
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    &:not([data-mode="lit"]) {
-      .nav_header {
-        background-color: var(--bgdark);
-      }
-
-      .nav_brand img {
-        mix-blend-mode: normal;
-      }
-
-      .color {
-        &_choice {
-          &::after {
-            background-image: url("#{$icons}moon.svg");
-          }
-        }
-      }
-
-      .post_tag--cat {
-        background-color: var(--translucent);
-      }
-    }
   }
 }

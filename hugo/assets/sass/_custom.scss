@@ -1,14 +1,7 @@
 // Add custom styles here. To override variables, use _override.scss
 
-// MIXINS //
-
-@mixin is-on {
-  &:hover,
-  &:active,
-  &:focus {
-    @content;
-  }
-}
+@import 'rootwork_mixins';
+@import 'rootwork_variables';
 
 // TYPOGRAPHY //
 
@@ -58,5 +51,24 @@ h3 {
 
   @include is-on {
     opacity: 1;
+  }
+}
+
+// POST CONTENT
+
+.post_body {
+
+  a {
+    font-weight: bold;
+
+    @include is-on {
+      border-bottom: 1px var(--themedark) dotted;
+      color: var(--themedark);
+
+      @include darkmode {
+        border-bottom-color: var(--light);
+        color: var(--light);
+      }
+    }
   }
 }
