@@ -30,21 +30,23 @@
   }
 }
 
-.button {
+.button.button {
+  padding-top: 0.55rem;
   font-weight: bold;
 }
 
-.post_tag {
+.post_tag.post_tag {
+  padding-top: 0.35rem;
   font-weight: normal;
-}
 
-.post_tag--cat {
-  font-weight: bold;
-  background-color: var(--light);
-  border-color: var(--theme);
-
-  @include darkmode {
-    background-color: var(--translucent);
+  &.post_tag--cat {
+    font-weight: bold;
+    background-color: var(--light);
     border-color: var(--theme);
+
+    @include darkmode {
+      background-color: var(--translucent);
+      border-color: var(--theme);
+    }
   }
 }

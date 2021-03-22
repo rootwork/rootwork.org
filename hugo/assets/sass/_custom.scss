@@ -5,6 +5,10 @@
 
 // TYPOGRAPHY //
 
+body {
+  line-height: 1;
+}
+
 h1,
 h2,
 h3 {
@@ -57,6 +61,7 @@ h3 {
 // POST CONTENT
 
 .post_body {
+  line-height: 1.5;
 
   a {
     font-weight: bold;
