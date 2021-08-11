@@ -4,7 +4,7 @@ $theme: #00b877;
 $bg: #002714;
 $brown: #80502c;
 $themelight: rgba($theme, 0.15); // corresponds to setting in parent theme
-$thememed: rgba($theme, 0.5); // corresponds to setting in parent theme
+$thememed: lighten($theme, 3%);
 
 html {
   --theme: #00b877;

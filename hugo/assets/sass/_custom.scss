@@ -88,3 +88,15 @@ h3 {
     }
   }
 }
+
+// FOOTER
+
+.footer_inner {
+  a {
+    font-weight: 700;
+  }
+
+  .year {
+    margin-left: -0.25rem; // kerning!
+  }
+}
