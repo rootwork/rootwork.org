@@ -3,6 +3,8 @@
 $theme: #00b877;
 $bg: #002714;
 $brown: #80502c;
+$themelight: rgba($theme, 0.15); // corresponds to setting in parent theme
+$thememed: rgba($theme, 0.5); // corresponds to setting in parent theme
 
 html {
   --theme: #00b877;
@@ -12,11 +14,7 @@ html {
   --brown: #80502c;
   --font: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
-  &[data-mode="dim"] {
-    --light: hsla(0,0%,100%,0.91);
-  }
-
-  @media (prefers-color-scheme: dark) {
+  @include darkmode {
     --light: hsla(0,0%,100%,0.91);
   }
 }

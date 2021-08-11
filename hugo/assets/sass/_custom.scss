@@ -18,11 +18,10 @@ h3 {
 // NAVIGATION //
 
 .nav_header {
-  margin-top: 0.5rem;
+  background-color: $thememed;
 }
 
 .nav {
-  border-bottom: 5px var(--translucent-light) solid;
 }
 
 .nav_brand {
@@ -30,7 +29,20 @@ h3 {
 
   img {
     position: absolute;
-    top: 0;
+    top: 0.25rem;
+    mix-blend-mode: normal;
+
+    @include is-on {
+      mix-blend-mode: multiply;
+    }
+
+    @include darkmode {
+      mix-blend-mode: normal;
+
+      @include is-on {
+        mix-blend-mode: screen;
+      }
+    }
   }
 }
 
@@ -40,12 +52,11 @@ h3 {
 
 .nav_parent {
   margin: 0;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  border-radius: 0;
 }
 
 .nav_item {
-  padding: 1.5rem 1rem 0.5rem;
+  padding: 0.5rem 1rem;
 }
 
 // SOCIAL //

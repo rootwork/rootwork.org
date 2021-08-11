@@ -29,6 +29,22 @@
   }
 }
 
+// div around menu items
+.nav_parent.nav_parent {
+  @include is-on {
+    background-color: var(--theme);
+    text-shadow: 0px 0px 2px $haze;
+  }
+}
+
+.nav_active.nav_active {
+  background-color: rgba(0,0,0,0.05);
+
+  @include darkmode {
+    background-color: rgba(255,255,255,0.15);
+  }
+}
+
 .button.button {
   padding-top: 0.55rem;
   font-weight: bold;
