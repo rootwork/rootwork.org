@@ -2,12 +2,14 @@
 
 $theme: #00b877;
 $bg: #002714;
+$brown: #80502c;
 
 html {
   --theme: #00b877;
   --themedark: #008544;
   --bg: #002714;
   --bgdark: #003825;
+  --brown: #80502c;
   --font: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
   &[data-mode="dim"] {

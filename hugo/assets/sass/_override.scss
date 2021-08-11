@@ -35,7 +35,7 @@
 }
 
 .post_tag.post_tag {
-  padding-top: 0.35rem;
+  padding-top: 0.25rem;
   font-weight: normal;
 
   &.post_tag--cat {
@@ -48,4 +48,13 @@
       border-color: var(--theme);
     }
   }
+
+  & .button_tally {
+    padding: 0.2rem 0.75rem;
+  }
+}
+
+.to_top.to_top,
+.to_top.to_top.ios.ios {
+  background-color: var(--themedark);
 }
