@@ -18,7 +18,8 @@ html {
   --bgdark: #003825;
   --brown: #80502c;
   --dark: #333;
-  --translucent-light: rgba(255,255,255,0.25);
+  --translucent-lighter: rgba(255,255,255,0.25);
+  --shade: rgba(0,0,0,0.25);
   --font: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
   @include darkmode {

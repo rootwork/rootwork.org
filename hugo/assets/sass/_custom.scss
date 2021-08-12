@@ -158,6 +158,54 @@ h3 {
   }
 }
 
+// CODE HIGHLIGHTING
+
+code.noClass {
+  margin: 0 0.1rem;
+  padding: 0 0.05rem;
+  --inlineColor: var(--light);
+  background-color: var(--translucent-lighter);
+
+  pre &,
+  .highlight &,
+  .highlight_wrap & {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
+.cp, .cpf {
+  color: lighten(#cd2828, 20%);
+}
+
+.p {
+  color: #6ab825;
+}
+
+// DATA TABLES
+
+th {
+  text-align: left;
+}
+
+// SELDOM-USED HTML
+
+kbd {
+  margin: 0 0.1rem;
+  padding: 0 0.25rem;
+  border-radius: 0.25rem;
+  background-color: var(--translucent-lighter);
+}
+
+mark {
+  margin: 0 0.1rem;
+  padding: 0 0.25rem;
+  border-radius: 0.25rem;
+  background-color: $theme;
+  color: var(--light);
+}
+
 // SIDEBAR
 
 .sidebar_inner li .nav-link {
