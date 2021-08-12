@@ -19,6 +19,15 @@ h3 {
 
 .nav_header {
   background-color: $thememed;
+  border-bottom: $logo-descender-height white solid;
+
+  @media screen and (min-width: $single-column-breakpoint) {
+    border-bottom: none;
+  }
+
+  @include darkmode {
+    border-bottom-color: $bg;
+  }
 }
 
 .nav {
@@ -29,7 +38,7 @@ h3 {
 
   img {
     position: absolute;
-    top: 0.25rem;
+    top: 0.15rem;
     mix-blend-mode: normal;
 
     @include is-on {
@@ -69,9 +78,26 @@ h3 {
   }
 }
 
+// PAGE WRAPPER
+
+.content {
+  padding-top: $logo-height;
+
+  @media screen and (min-width: $single-column-breakpoint) {
+    padding-top: 5rem;
+  }
+}
+
 // POST CONTENT
 
-.post_body {
+.post_content { // includes title, byline, featured image, etc.
+
+  @media screen and (min-width: $single-column-breakpoint) {
+    margin-left: $logo-descender-width;
+  }
+}
+
+.post_body { // body text only
   line-height: 1.5;
 
   a {

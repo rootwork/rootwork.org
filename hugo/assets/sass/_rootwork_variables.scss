@@ -6,6 +6,11 @@ $brown: #80502c;
 $themelight: rgba($theme, 0.15); // corresponds to setting in parent theme
 $thememed: lighten($theme, 3%);
 
+$logo-width: 200px;
+$logo-height: 125px;
+$logo-descender-width: 75px;
+$logo-descender-height: 75px;
+
 html {
   --theme: #00b877;
   --themedark: #008544;
