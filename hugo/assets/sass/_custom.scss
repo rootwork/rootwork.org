@@ -92,12 +92,50 @@ h3 {
   }
 }
 
+// POST EXCERPTS
+
+.excerpt {
+  .excerpt_footer {
+    p {
+      line-height: 1.2;
+
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
 // POST CONTENT
 
 .post_content { // includes title, byline, featured image, etc.
 
   @media screen and (min-width: $single-column-breakpoint) {
     margin-left: $logo-descender-width;
+  }
+
+  .post_meta {
+    margin: 2rem -0.5rem;
+  }
+}
+
+.post_meta {
+  margin: 0 -0.5rem;
+}
+
+.post_share {
+  margin: 0 0 1rem;
+
+  a {
+    opacity: 0.8;
+
+    &:first-child {
+      padding-left: 0.6rem;
+    }
+
+    @include is-on {
+      opacity: 1;
+    }
   }
 }
 

@@ -68,15 +68,38 @@
     background-color: var(--light);
     border-color: var(--theme);
 
+    @include is-on {
+      color: var(--themedark)
+    }
+
     @include darkmode {
       background-color: var(--translucent);
       border-color: var(--theme);
+
+      @include is-on {
+        color: $haze
+      }
     }
   }
 
   & .button_tally {
     padding: 0.2rem 0.75rem;
   }
+}
+
+.sidebar_inner.sidebar_inner::before,
+html[data-mode="dim"].sidebar_inner.sidebar_inner::before {
+  content: '';
+  padding: 0.5px;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, var(--theme), var(--light));
+  position: absolute;
+  left: -2rem;
+}
+
+.sidebar_description.sidebar_description {
+  line-height: 1.2;
 }
 
 .to_top.to_top,
