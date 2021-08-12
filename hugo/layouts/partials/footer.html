@@ -3,7 +3,7 @@
 FROM:
     <img src='{{ absURL (default "icons/apple-touch-icon.png" $s.footerLogo) }}' class="icon icon_2 transparent" alt="{{ $t }}">
 TO:
-    <img src='{{ absURL (default "icons/android-chrome-192x192.png" $s.footerLogo) }}' class="icon icon_2 transparent" alt="{{ $t }}">
+    <a href="/"><img src='{{ absURL (default "icons/android-chrome-192x192.png" $s.footerLogo) }}' class="icon icon_2 transparent" alt="{{ $t }}"></a>
 
 FROM:
     <p>{{ T "copyright" }}{{ with $s.since }}&nbsp;{{ . }}-{{ end }}&nbsp;<span class="year"></span>&nbsp;{{ upper $t }}. {{ T "all_rights" }}</p>
@@ -18,7 +18,7 @@ TO:
 {{- end }}
 <footer class="footer">
   <div class="footer_inner wrap pale">
-    <img src='{{ absURL (default "icons/android-chrome-192x192.png" $s.footerLogo) }}' class="icon icon_2 transparent" alt="{{ $t }}">
+    <a href="/"><img src='{{ absURL (default "icons/android-chrome-192x192.png" $s.footerLogo) }}' class="icon icon_2 transparent" alt="{{ $t }}"></a>
     <p>{{ T "copyright" }}{{ with $s.since }}&nbsp;{{ . }}&#8211;{{ end }}&nbsp;<span class="year"></span>&nbsp;<a href="/">{{ $t }}</a>. {{ T "all_rights" }}</p>
     {{- partial "top" .}}
   </div>
