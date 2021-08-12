@@ -158,6 +158,14 @@ h3 {
   }
 }
 
+// SIDEBAR
+
+.sidebar_inner li .nav-link {
+  @include is-on {
+    text-shadow: 0px 0px 1px var(--text);
+  }
+}
+
 // FOOTER
 
 .footer_inner {
