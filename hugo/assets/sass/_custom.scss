@@ -76,6 +76,10 @@ h3 {
   @include is-on {
     opacity: 1;
   }
+
+  .jsopen & {
+    opacity: 1;
+  }
 }
 
 // PAGE WRAPPER

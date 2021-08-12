@@ -19,6 +19,15 @@
   @include darkmode {
     background-color: var(--bgdark);
   }
+
+  .jsopen.jsopen & {
+    background-color: var(--bg);
+    border-bottom-color: #b2b2b2;
+  }
+
+  html[data-mode="dim"].jsopen & {
+    border-bottom-color: var(--bg);
+  }
 }
 
 .nav_brand img {
@@ -74,3 +83,4 @@
 .to_top.to_top.ios.ios {
   background-color: var(--themedark);
 }
+
