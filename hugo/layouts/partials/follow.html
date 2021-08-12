@@ -1,0 +1,29 @@
+{{/*
+
+Defining $title based on .Name, and adding it to the <a> element.
+
+*/}}
+{{- $base := absURL "" }}
+{{- $items := .Site.Data.social }}
+{{- $social := .Site.Menus.social }}
+{{- with $social }}
+  {{- $items = . }}
+{{- end }}
+<div class='follow'>
+  {{- range $items }}
+  {{- $url := .URL }}
+  {{- $label := lower .Name }}
+  {{- $title := humanize .Name }}
+  {{- if eq $social nil }}
+    {{ $url = .url }}
+    {{ $label = lower .item }}
+  {{- end }}
+  {{- if and (eq (hasPrefix $url $base) false) (eq (hasPrefix $url "http") false) }}
+    {{ $url = absLangURL $url }}
+  {{- end }}
+  <a href="{{ $url }}" title="{{ $title }}">
+    {{ partial "sprite" (dict "icon" $label) }}
+  </a>
+  {{- end }}
+  {{- partial "mode" . }}
+</div>

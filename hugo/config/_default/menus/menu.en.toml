@@ -40,16 +40,22 @@
   weight = 2
   url = "https://gitlab.com/rootwork"
 [[social]]
-  name = "twitter"
+  name = "drupal"
+  type = "social"
   weight = 3
+  url = "https://www.drupal.org/u/rootwork"
+  title = "Drupal"
+[[social]]
+  name = "twitter"
+  weight = 4
   url = "https://twitter.com/rootwork"
 [[social]]
   name = "linkedin"
-  weight = 4
+  weight = 5
   url = "https://www.linkedin.com/in/ivanboothe"
 [[social]]
   name = "rss"
-  weight = 5
+  weight = 6
   url = "index.xml"
 
 # other supported social links
