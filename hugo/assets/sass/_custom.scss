@@ -163,15 +163,25 @@ h3 {
 code.noClass {
   margin: 0 0.1rem;
   padding: 0 0.05rem;
-  --inlineColor: var(--light);
-  background-color: var(--translucent-lighter);
+  --inlineColor: var(--dark);
+  background-color: var(--shade);
+
+  @include darkmode {
+    --inlineColor: var(--light);
+    background-color: var(--translucent-lighter);
+  }
 
   pre &,
   .highlight &,
   .highlight_wrap & {
     margin: 0;
     padding: 0;
+    --inlineColor: var(--light);
     background-color: transparent;
+
+    @include darkmode {
+      background-color: transparent;
+    }
   }
 }
 
@@ -195,7 +205,13 @@ kbd {
   margin: 0 0.1rem;
   padding: 0 0.25rem;
   border-radius: 0.25rem;
-  background-color: var(--translucent-lighter);
+  background-color: var(--shade);
+  color: var(--dark);
+
+  @include darkmode {
+    background-color: var(--translucent-lighter);
+    color: var(--light);
+  }
 }
 
 mark {
