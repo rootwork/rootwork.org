@@ -120,8 +120,11 @@ h3 {
   }
 
   .post_meta {
-    margin: 2rem -0.5rem;
+    margin: 2rem -0.5rem 0;
   }
+}
+
+.post_title {
 }
 
 .post_meta {
@@ -130,7 +133,7 @@ h3 {
 
 .post_share {
   display: block;
-  margin: 0 0 1rem;
+  margin: 1rem 0 1rem;
 
   a {
     opacity: 0.8;
@@ -143,6 +146,10 @@ h3 {
       opacity: 1;
     }
   }
+}
+
+.post_tag {
+  margin-top: 0;
 }
 
 .post_body { // body text only
@@ -160,6 +167,10 @@ h3 {
         color: var(--light);
       }
     }
+  }
+
+  strong {
+    font-weight: bold;
   }
 }
 

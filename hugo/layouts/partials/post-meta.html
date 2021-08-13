@@ -1,34 +1,38 @@
 {{/*
 
+Only displaying wrapper div if showDate or showShare is true.
+
 Inserting CATEGORIES section and separating out TAGS section.
 
 */}}
-<div class="post_meta">
+{{ if or ( ne .Params.showDate false ) ( ne .Params.showShare false ) }}
+  <div class="post_meta">
 
-  {{ if ( ne .Params.showDate false ) }}
-    {{ partial "sprite" (dict "icon" "calendar") }}
-    <span class="post_date">
-      {{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) -}}
-    </span>
-  {{- end }}
-
-  {{/* CATEGORIES */}}
-  {{- with .Params.categories -}}
-  {{- range . }}
-  {{- $tag := . | urlize }}
-  <a href = '{{ absURL (printf "categories/%s" $tag) }}' title="{{ humanize . }}" class = 'post_tag--cat post_tag button button_translucent'>
-    {{- . }}
-  </a>
-  {{- end }}
-  {{- end }}
-
-  {{/* TAGS */}}
-  {{- with .Params.tags -}}
-    {{- range . }}
-      {{- $tag := urlize . }}
-      <a href='{{ absLangURL (printf "tags/%s" $tag) }}' title="{{ humanize . }}" class="post_tag button button_translucent">
-        {{- . }}
-      </a>
+    {{ if ( ne .Params.showDate false ) }}
+      {{ partial "sprite" (dict "icon" "calendar") }}
+      <span class="post_date">
+        {{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) -}}
+      </span>
     {{- end }}
-  {{- end }}
-</div>
+
+    {{/* CATEGORIES */}}
+    {{- with .Params.categories -}}
+    {{- range . }}
+    {{- $tag := . | urlize }}
+    <a href = '{{ absURL (printf "categories/%s" $tag) }}' title="{{ humanize . }}" class = 'post_tag--cat post_tag button button_translucent'>
+      {{- . }}
+    </a>
+    {{- end }}
+    {{- end }}
+
+    {{/* TAGS */}}
+    {{- with .Params.tags -}}
+      {{- range . }}
+        {{- $tag := urlize . }}
+        <a href='{{ absLangURL (printf "tags/%s" $tag) }}' title="{{ humanize . }}" class="post_tag button button_translucent">
+          {{- . }}
+        </a>
+      {{- end }}
+    {{- end }}
+  </div>
+{{- end }}
