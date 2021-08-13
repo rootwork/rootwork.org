@@ -33,7 +33,7 @@ h3 {
 .nav {
   @media screen and (min-width: $single-column-breakpoint) {
     @include darkmode {
-      border-bottom: 10px var(--bg) solid;
+      border-bottom: 1px var(--bg) solid;
     }
   }
 }
@@ -122,6 +122,10 @@ h3 {
   .post_meta {
     margin: 2rem -0.5rem 0;
   }
+
+  .image-scale {
+    background-color: var(--shadedark);
+  }
 }
 
 .post_title {
@@ -129,6 +133,14 @@ h3 {
 
 .post_meta {
   margin: 0 -0.5rem;
+
+  > .icon {
+    margin-top: 0.25rem;
+  }
+}
+
+.post_date {
+  margin-top: 0.25rem;
 }
 
 .post_share {
@@ -171,6 +183,13 @@ h3 {
 
   strong {
     font-weight: bold;
+  }
+
+  figure > img {
+    margin-bottom: 0;
+  }
+
+  .img_alt {
   }
 }
 
@@ -240,9 +259,13 @@ mark {
 
 // SIDEBAR
 
-.sidebar_inner li .nav-link {
-  @include is-on {
-    text-shadow: 0px 0px 1px var(--text);
+.sidebar_inner li {
+  line-height: 1.35;
+
+  .nav-link {
+    @include is-on {
+      text-shadow: 0px 0px 1px var(--text);
+    }
   }
 }
 

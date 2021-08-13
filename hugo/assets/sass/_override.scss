@@ -74,6 +74,7 @@
 }
 
 .post_tag.post_tag {
+  margin-top: 0.25rem;
   padding-top: 0.25rem;
   font-weight: normal;
 
@@ -97,6 +98,7 @@
   }
 
   & .button_tally {
+    margin-left: 0.5rem;
     padding: 0.2rem 0.75rem;
   }
 }
@@ -113,7 +115,7 @@ html[data-mode="dim"].sidebar_inner.sidebar_inner::before {
 }
 
 .sidebar_description.sidebar_description {
-  line-height: 1.2;
+  line-height: 1.35;
 }
 
 .to_top.to_top,
