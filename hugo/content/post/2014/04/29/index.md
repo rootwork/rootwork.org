@@ -1,13 +1,14 @@
 ---
 title: "Join me at the Devsigner conference in Portland this May: Designers and developers join forces!"
-date: 2014-04-29
+date: "2014-04-29"
 <!-- description: -->
+slug: "join-me-devsigner-conference-portland-may-designers-developers-join-forces"
 featured: true # Sets if post is a featured post, making appear on the home page side bar.
 draft: false # Sets whether to render this page. Draft of true will not be rendered.
 toc: false # Controls if a table of contents should be generated for first-level links automatically.
 # menu: main
-featureImage: "/images/devsignerslide1.jpg" # Sets featured image on blog post.
-thumbnail: "/images/path/thumbnail.png" # Sets thumbnail image appearing inside card on homepage.
+featureImage: "./devsignerslide1.jpg" # Sets featured image on blog post.
+thumbnail: "./devsignerslide1.jpg" # Sets thumbnail image appearing inside card on homepage.
 shareImage: "/images/path/share.png" # Designate a separate image for social media sharing.
 categories:
   - Frontend Development
