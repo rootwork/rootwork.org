@@ -1,15 +1,18 @@
 ---
 title: "Join me at the Devsigner conference in Portland this May: Designers and developers join forces!"
 date: "2014-04-29"
-<!-- description: -->
+
 slug: "join-me-devsigner-conference-portland-may-designers-developers-join-forces"
-featured: true # Sets if post is a featured post, making appear on the home page side bar.
-draft: false # Sets whether to render this page. Draft of true will not be rendered.
-toc: false # Controls if a table of contents should be generated for first-level links automatically.
+draft: false
+featured: true
+toc: false
+
 # menu: main
-featureImage: "./devsignerslide1.jpg" # Sets featured image on blog post.
-thumbnail: "./devsignerslide1.jpg" # Sets thumbnail image appearing inside card on homepage.
-shareImage: "/images/path/share.png" # Designate a separate image for social media sharing.
+
+featureImage: "./devsignerslide1.jpg"
+thumbnail: "./devsignerslide1.jpg"
+shareImage: "/images/path/share.png"
+
 categories:
   - Frontend Development
   - Planet Drupal
@@ -19,6 +22,8 @@ tags:
 ---
 
 **Devsigner is celebrating the cross-overs, the multi-disciplinarians, the coders who paint and the designers who send pull requests --- and those who want to develop some new left-right brain skills.**
+
+![devsigner](./devsignerslide1.jpg)
 
 We're looking for folks to break out of their familiar meetup silos and apply their knowledge across the crafts of development and design.
 
