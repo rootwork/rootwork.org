@@ -19,7 +19,7 @@ TO:
 <footer class="footer">
   <div class="footer_inner wrap pale">
     <a href="/"><img src='{{ absURL (default "icons/android-chrome-192x192.png" $s.footerLogo) }}' class="icon icon_2 transparent" alt="{{ $t }}"></a>
-    <p>{{ T "copyright" }}{{ with $s.since }}&nbsp;{{ . }}&#8211;{{ end }}&nbsp;<span class="year"></span>&nbsp;<a href="/">{{ $t }}</a>. {{ T "all_rights" }}</p>
+    <p>{{ T "copyright" }}{{ with $s.since }}&nbsp;{{ . }}&#8211;{{ end }}&nbsp;<span class="year"></span>&nbsp;<a href="/">{{ $t }}</a>. {{ T "all_rights" }}<br /><a href="/privacy" title="View privacy policy">Privacy policy</a></p>
     {{- partial "top" .}}
   </div>
 </footer>
