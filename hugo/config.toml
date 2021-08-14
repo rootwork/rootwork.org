@@ -108,7 +108,7 @@ mobileNavigation = "right" # if you prefer right change to 'right'
 enforceDarkMode = true
 
 # customize footer icon. see issue https://github.com/chipzoller/hugo-clarity/issues/77
-# footerLogo = "icons/copy.svg"
+footerLogo = "images/android-chrome-512x512.png"
 
 # Text for the languages menu.
 languageMenuName = "🌐"

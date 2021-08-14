@@ -10,8 +10,8 @@ toc: false
 # menu: main
 
 featureImage: "./devsignerslide1.jpg"
-thumbnail: "./devsignerslide1.jpg"
-shareImage: "/images/path/share.png"
+# thumbnail: "./devsignerslide1.jpg"
+# shareImage: "/images/path/share.png"
 
 categories:
   - Frontend Development

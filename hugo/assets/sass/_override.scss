@@ -6,10 +6,10 @@
 .color {
   &_choice {
     &::after {
-      background-image: url("#{$icons}sun.svg");
+      background-image: url("#{$images}sun.svg");
 
       @include darkmode {
-        background-image: url("#{$icons}moon.svg");
+        background-image: url("#{$images}moon.svg");
       }
     }
   }
@@ -114,7 +114,7 @@ html[data-mode="dim"].sidebar_inner.sidebar_inner::before {
   left: -2rem;
 }
 
-.sidebar_description.sidebar_description {
+.author_bio.author_bio {
   line-height: 1.35;
 }
 
