@@ -58,8 +58,9 @@ Custom styles can be added using the `_custom.scss` file within `assets`. Use
 
 ### Updating the theme
 
-Use `git submodule update --init --recursive` to pull in new changes, but note
-there's no real guarantee this won't break things.
+Use `git submodule foreach git pull origin master` to pull in upstream changes.
+If that errors, you can also try `git submodule update --init --recursive`. Note
+that there's no real guarantee this won't break things in the theme!
 
 # Generating the site for production
 
