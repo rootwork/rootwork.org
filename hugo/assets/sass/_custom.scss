@@ -120,7 +120,15 @@ h3 {
   }
 
   .post_meta {
-    margin: 2rem -0.5rem 0;
+    margin: 1rem 0 1rem;
+    padding: 1rem 0.5rem;
+    background-color: var(--post-bg);
+    width: 100%;
+
+    @media screen and (min-width: $single-column-breakpoint) {
+      margin: 2rem 0 1rem;
+      padding: 1.5rem;
+    }
   }
 
   .image_featured { // Featured images that are too small for full width should be left-aligned, not centered.
@@ -139,6 +147,7 @@ h3 {
 .post_meta {
   margin: 0 -0.5rem;
 
+
   > .icon {
     margin-top: 0.25rem;
   }
@@ -148,9 +157,14 @@ h3 {
   margin-top: 0.25rem;
 }
 
+.post_time {
+  margin: 0.5rem 1rem;
+  font-size: 0.8rem;
+}
+
 .post_share {
   display: block;
-  margin: 1rem 0 1rem;
+  margin: 1rem 0.5rem 0;
 
   a {
     opacity: 0.8;
@@ -190,11 +204,16 @@ h3 {
     font-weight: bold;
   }
 
+  img {
+    margin-bottom: 0;
+  }
+
   figure > img {
     margin-bottom: 0;
   }
 
   .img_alt {
+    padding-bottom: 0;
   }
 }
 
@@ -275,6 +294,10 @@ mark {
 }
 
 // FOOTER
+
+.footer {
+  padding-top: 0;
+}
 
 .footer_inner {
   a {

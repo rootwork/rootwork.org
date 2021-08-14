@@ -1,38 +1,58 @@
 {{/*
 
-Only displaying wrapper div if showDate or showShare is true.
-
 Inserting CATEGORIES section and separating out TAGS section.
 
+Removing 'writeSeparator' = true
+
 */}}
-{{ if or ( ne .Params.showDate false ) ( ne .Params.showShare false ) }}
+{{- $showShare := ne (.Param "showshare") false }}
+{{- $showDate := ne (.Param "showdate") false }}
+{{- $showReadTime := ne (.Param "showreadtime") false }}
+{{- $showPostMeta := or ($showShare) ($showDate) ($showReadTime) (isset .Params "tags") }}
+{{- $scratch := newScratch }}
+{{- $scratch.Set "writeSeparator" false }}
+{{- if $showPostMeta }}
   <div class="post_meta">
+{{- end }}
+  {{- if $showDate }}
+    <span>{{ partial "sprite" (dict "icon" "calendar") }}</span>
+    <span class="post_date">
+      {{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) -}}
+    </span>
+  {{- end }}
+  {{- if $showReadTime }}
+    <span class="post_time">{{ if ($scratch.Get "writeSeparator") }} · {{ end }}{{ T "reading_time" . }}</span>
+  {{- end }}
 
-    {{ if ( ne .Params.showDate false ) }}
-      {{ partial "sprite" (dict "icon" "calendar") }}
-      <span class="post_date">
-        {{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) -}}
-      </span>
-    {{- end }}
-
-    {{/* CATEGORIES */}}
-    {{- with .Params.categories -}}
-    {{- range . }}
-    {{- $tag := . | urlize }}
-    <a href = '{{ absURL (printf "categories/%s" $tag) }}' title="{{ humanize . }}" class = 'post_tag--cat post_tag button button_translucent'>
-      {{- . }}
-    </a>
-    {{- end }}
-    {{- end }}
-
-    {{/* TAGS */}}
-    {{- with .Params.tags -}}
+  {{/* CATEGORIES */}}
+  {{- with .Params.categories -}}
+    <span>
+      {{- if ($scratch.Get "writeSeparator") }}&nbsp;· {{ end }}
       {{- range . }}
-        {{- $tag := urlize . }}
+        {{- $tag := urlize . -}}
+        <a href='{{ absLangURL (printf "categories/%s" $tag) }}' title="{{ humanize . }}" class="post_tag--cat post_tag button button_translucent">
+          {{- . }}
+        </a>
+      {{- end }}
+    </span>
+  {{- end }}
+
+  {{/* TAGS */}}
+  {{- with .Params.tags -}}
+    <span>
+      {{- if ($scratch.Get "writeSeparator") }}&nbsp;· {{ end }}
+      {{- range . }}
+        {{- $tag := urlize . -}}
         <a href='{{ absLangURL (printf "tags/%s" $tag) }}' title="{{ humanize . }}" class="post_tag button button_translucent">
           {{- . }}
         </a>
       {{- end }}
-    {{- end }}
+    </span>
+  {{- end }}
+
+  {{- if $showShare }}
+    <span class="page_only">{{ if ($scratch.Get "writeSeparator") }}&nbsp;·{{ end }}{{ partial "share" . }}</span>
+  {{- end }}
+{{- if $showPostMeta }}
   </div>
 {{- end }}

@@ -5,8 +5,7 @@
 2. Adding preload tag for font (bold only):
 <link rel="preload" href="/fonts/source-sans-pro-v14-latin-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
-*/}}{{- $s := .Site.Params }}{{- $p := .Params }}<!DOCTYPE html>
-<html lang="{{ .Lang }}" data-figures="{{ $p.figurePositionShow }}"{{ if .IsPage }} class="page"{{ end }}{{ if .IsHome }} class="home"{{ end }}{{ with $s.enforceLightMode }} data-mode="lit"{{ end }}{{ with $s.enforceDarkMode }} data-mode="dim"{{ end }}>
+*/}}{{- $s := .Site.Params }}{{- $p := .Params }}<!DOCTYPE html><html lang="{{ .Lang }}" data-figures="{{ $p.figurePositionShow }}"{{ if .IsPage }} class="page"{{ end }}{{ if .IsHome }} class="home"{{ end }}{{ with $s.enforceLightMode }} data-mode="lit"{{ end }}{{ with $s.enforceDarkMode }} data-mode="dim"{{ end }}>
   <head>
     {{- partial "head" . }}
     {{- partial "fonts" . }}
@@ -46,7 +45,7 @@
     <link rel="stylesheet" type="text/css" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous">
     {{- with $s.customCSS }}
     {{- range . -}}
-	  <link rel="stylesheet" href="{{ relURL . }}">
+    <link rel="stylesheet" href="{{ relURL . }}">
     {{- end }}
     {{- end }}
     {{ partial "hooks/head-end.html" . }}
@@ -74,14 +73,14 @@
     <main>
       {{- block "main" . }}{{ end }}
     </main>
-    {{- partial "icons" }}
-    {{- partial "footer" . }}
+    {{- partialCached "icons" . }}
+    {{- partialCached "footer" . }}
     <script type="text/javascript" src="{{ $bundle.Permalink }}" integrity="{{ $bundle.Data.Integrity }}" crossorigin="anonymous"></script>
     {{- with $s.customJS }}
     {{- range . -}}
     <script type="text/javascript" src="{{ relURL . }}" ></script>
     {{- end }}
     {{- end }}
-    {{ partial "hooks/body-end.html" . }}
+    {{ partialCached "hooks/body-end.html" . }}
   </body>
 </html>

@@ -25,5 +25,5 @@ Defining $title based on .Name, and adding it to the <a> element.
     {{ partial "sprite" (dict "icon" $label) }}
   </a>
   {{- end }}
-  {{- partial "mode" . }}
+  {{- partialCached "mode" . }}
 </div>

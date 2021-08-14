@@ -23,15 +23,13 @@ tags:
 
 **Devsigner is celebrating the cross-overs, the multi-disciplinarians, the coders who paint and the designers who send pull requests --- and those who want to develop some new left-right brain skills.**
 
-![devsigner](./devsignerslide1.jpg)
-
 We're looking for folks to break out of their familiar meetup silos and apply their knowledge across the crafts of development and design.
 
 [**Join me at Devsigner in Portland, Oregon, May 23-25!**](https://web.archive.org/web/20140719090242/http://devsignercon.com/)
 
 Tickets are [now on sale](https://web.archive.org/web/20140719090242/http://devsignercon.com/), and [session submissions are open](https://web.archive.org/web/20140719090242/http://devsignercon.com/) until this Friday, May 2!
 
-<!-- < smallimg src="devsignerlogo.png" alt="Devsigner: Portland, OR, May 23--25" smartfloat="right" > -->
+![Devsigner: Portland, OR, May 23--25](./devsigner2014logo.png)
 
 ### Sessions will include things like:
 
