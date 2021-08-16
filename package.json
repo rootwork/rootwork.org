@@ -4,7 +4,7 @@
   "description": "https://rootwork.org",
   "main": "hugo/README.md",
   "scripts": {
-    "new": "cd hugo && hugo new --kind blog blog/$(date \"+%Y\")/$(date \"+%m\")/$(date \"+%d\")/index.md && cd ..",
+    "new": "cd hugo && hugo new --kind blog blog/$(date \"+%Y\")/$(date \"+%m\")/$(date \"+%d\") && cd ..",
     "prod": "cd hugo && rm -rf public && hugo && cd .."
   },
   "repository": {

@@ -2,8 +2,7 @@
 title: '{{ replace .Name "-" " " | title }}'
 author: 'Ivan Boothe'
 date: '{{ .Date | dateFormat "2006-01-02" }}'
-year: '{{ .Date | dateFormat "2006" }}'
-month: '{{ .Date | dateFormat "2006-01" }}'
+# lastmod: '{{ .Date | dateFormat "2006-01-02" }}' # Appends 'edited on' to the publish date
 
 slug: '{{ .Name }}'
 # aliases:
@@ -21,9 +20,9 @@ showShare: true
 
 # menu: main
 
-featureImage: '/images/path/file.jpg' # Top image on post.
-thumbnail: '/images/path/thumbnail.png' # Image in lists of posts.
-# shareImage: '/images/path/share.png' # For SEO and social media snippets.
+featureImage: './feature.jpg' # Top image on post.
+thumbnail: './thumbnail.jpg' # Image in lists of posts.
+# shareImage: './share.jpg' # For SEO and social media snippets.
 
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
@@ -35,6 +34,10 @@ tags:
   - Drupal
 keywords: # For SEO
   - Drupal
+
+# Archive categories (auto-generated)
+year: '{{ .Date | dateFormat "2006" }}'
+month: '{{ .Date | dateFormat "2006-01" }}'
 
 ---
 
