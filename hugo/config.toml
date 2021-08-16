@@ -25,6 +25,10 @@ enableRobotsTXT = true
 #   posts = "/:year/:month/:slug/"
 #   page = "/:slug/"
 
+timeout = 30000
+enableInlineShortcodes = true
+footnoteReturnLinkContents = "^"
+
 [taxonomies]
 category = "categories"
 tag = "tags"
@@ -143,8 +147,9 @@ websiteDomain = "rootwork.org" # domain name of your website, most cases same as
 # See https://gohugo.io/about/hugo-and-gdpr/
 
 [privacy]
+
 [privacy.disqus]
-disable = false
+disable = true
 
 [privacy.googleAnalytics]
 anonymizeIP = true
@@ -160,6 +165,7 @@ simple = true
 disable = false
 enableDNT = true
 simple = true
+disableInlineCSS = true
 
 [privacy.vimeo]
 disable = false
