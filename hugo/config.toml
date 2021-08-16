@@ -5,7 +5,7 @@ languageCode = "en-us"
 title = "Rootwork.org"
 theme = "hugo-clarity"
 
-canonifyurls = true
+canonifyurls = false # See https://gohugo.io/content-management/urls/#canonicalization
 paginate = 10
 
 DefaultContentLanguage = "en"
