@@ -4,7 +4,10 @@ author: "Ivan Boothe"
 date: "{{ .Date }}"
 
 slug: "{{ replace .Name "-" " " | title }}"
-description: "Article description." # For SEO and social media snippets.
+# aliases:
+#   -
+description: "Post description." # For SEO and social media snippets.
+summary: "Post summary." # For the post in lists.
 
 draft: true
 featured: true
@@ -27,6 +30,8 @@ figurePositionShow: true # Override global value for showing the figure label.
 categories:
   - Planet Drupal
 tags:
+  - Drupal
+keywords: # For SEO
   - Drupal
 
 ---
