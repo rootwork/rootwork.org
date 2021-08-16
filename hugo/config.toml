@@ -21,18 +21,19 @@ enableRobotsTXT = true
   changefreq = "weekly"
   priority = 0.5
 
-# [permalinks]
-#   posts = "/:year/:month/:slug/"
-#   page = "/:slug/"
-
-timeout = 30000
-enableInlineShortcodes = true
-footnoteReturnLinkContents = "^"
+[permalinks]
+  posts = "/:year/:month/:slug/"
+  page = "/:slug/"
+  timeout = 30000
+  enableInlineShortcodes = true
+  footnoteReturnLinkContents = "^"
 
 [taxonomies]
-category = "categories"
-tag = "tags"
-series = "series"
+  category = "categories"
+  tag = "tags"
+  series = "series"
+  # year = "year"
+  # month = "month"
 
 [markup]
   [markup.goldmark]
