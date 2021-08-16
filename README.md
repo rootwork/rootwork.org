@@ -62,14 +62,19 @@ Use `git submodule foreach git pull origin master` to pull in upstream changes.
 If that errors, you can also try `git submodule update --init --recursive`. Note
 that there's no real guarantee this won't break things in the theme!
 
+# Creating a new post
+
+`npm run new`
+
+This generates a new post with a folder location of the current date, and auto-creates a bunch of data within the post. It's much easier than running `hugo new ...`.
+
 # Generating the site for production
 
-`hugo -D`
+`npm run prod`
 
-The static site is rendered in the `public` directory.
+This removes the `public` directory, if it exists, to ensure that no outdated files are present. Then it recreates the static site in the `public` directory.
 
-Note that this is excluded from the repo in `.gitignore`, so this is just to see
-what it will look like. Use a GitHub Action to generate the site online.
+Note that the `public` directory is excluded from the repo in `.gitignore`, so this command should be run from a GitHub Action to generate the site online.
 
 # Fresh installation
 

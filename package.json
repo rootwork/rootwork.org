@@ -1,0 +1,20 @@
+{
+  "name": "rootwork.org",
+  "version": "1.0.0",
+  "description": "https://rootwork.org",
+  "main": "hugo/README.md",
+  "scripts": {
+    "new": "cd hugo && hugo new --kind blog blog/$(date \"+%Y\")/$(date \"+%m\")/$(date \"+%d\")/index.md && cd ..",
+    "prod": "cd hugo && rm -rf public && hugo && cd .."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rootwork/rootwork.org.git"
+  },
+  "author": "Ivan Boothe",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/rootwork/rootwork.org/issues"
+  },
+  "homepage": "https://github.com/rootwork/rootwork.org#readme"
+}
