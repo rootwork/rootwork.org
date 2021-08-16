@@ -6,10 +6,10 @@
 .color {
   &_choice {
     &::after {
-      background-image: url("#{$images}sun.svg");
+      background-image: url("/icons/sun.svg");
 
       @include darkmode {
-        background-image: url("#{$images}moon.svg");
+        background-image: url("/icons/moon.svg");
       }
     }
   }
