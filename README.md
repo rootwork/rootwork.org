@@ -68,7 +68,7 @@ that there's no real guarantee this won't break things in the theme!
 
 `npm run n`
 
-This generates a new post with a folder location of the current date, and auto-creates a bunch of data within the post. It's much easier than running `hugo new ...`.
+This will ask you for the title of the post and its date (defaults to today), then open the Markdown file in Sublime. For our purposes it is more convenient than using `hugo new ...`.
 
 # Generating the site for production
 
