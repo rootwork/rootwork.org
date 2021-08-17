@@ -1,21 +1,16 @@
 #!/bin/bash
 
 # Ansi color code variables
-red="\e[0;91m"
 blue="\e[0;94m"
-expand_bg="\e[K"
 blue_bg="\e[0;104m${expand_bg}"
-red_bg="\e[0;101m${expand_bg}"
-green_bg="\e[0;102m${expand_bg}"
 green="\e[0;92m"
-white="\e[0;97m"
-bold="\e[1m"
-uline="\e[4m"
 reset="\e[0m"
 
 echo -e "\n${blue_bg}${reset}"
 echo -e "${blue} Creating new blog post... ${reset}"
 echo -e "${blue_bg}${reset}\n"
+echo -e "${green}What is the title of your blog post?${reset}"
+read post_title
 cd './hugo'
-hugo new --kind blog blog/$(date +%Y)/$(date +%m)/$(date +%d)
+hugo new --kind blog blog/$(date +%Y)/$(date +%m)/$(date +%d)/index.md "$post_title"
 cd './'
