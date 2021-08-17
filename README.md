@@ -14,6 +14,7 @@ notes to myself because I forget things.
    * [Editing site variables](#editing-site-variables)
    * [Editing the theme](#editing-the-theme)
       * [Updating the theme](#updating-the-theme)
+* [Creating a new post](#creating-a-new-post)
 * [Generating the site for production](#generating-the-site-for-production)
 * [Fresh installation](#fresh-installation)
    * [Go](#go)
@@ -24,7 +25,7 @@ notes to myself because I forget things.
    * [Hugo](#hugo-1)
 * [License](#license)
 
-<!-- Added by: runner, at: Sat Aug 14 00:26:44 UTC 2021 -->
+<!-- Added by: runner, at: Tue Aug 17 00:22:38 UTC 2021 -->
 
 <!--te-->
 
