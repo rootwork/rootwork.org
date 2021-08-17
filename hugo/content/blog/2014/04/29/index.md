@@ -1,8 +1,8 @@
 ---
 title: 'Join me at the Devsigner conference in Portland this May: Designers and developers join forces!'
 author: 'Ivan Boothe'
-date: '2021-08-16'
-# lastmod: '2021-08-16' # Appends 'edited on' to the publish date
+date: '2014-04-29'
+# lastmod: '2014-04-29' # Appends 'edited on' to the publish date
 
 slug: 'join-me-devsigner-conference-portland-may-designers-developers-join-forces'
 # aliases:
@@ -39,8 +39,8 @@ keywords: # For SEO
   - frontend development
 
 # Archive taxonomy terms (auto-generated)
-year: '2021'
-month: '2021-08'
+year: '2014'
+month: '2014-04'
 
 ---
 
