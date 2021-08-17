@@ -4,8 +4,9 @@
   "description": "https://rootwork.org",
   "main": "hugo/README.md",
   "scripts": {
-    "new": "cd hugo && hugo new --kind blog blog/$(date \"+%Y\")/$(date \"+%m\")/$(date \"+%d\") && cd ..",
-    "prod": "cd hugo && rm -rf public && hugo && cd .."
+    "n": "./scripts/new_blog_post.sh",
+    "p": "./scripts/production_build.sh",
+    "s": "./scripts/server_start.sh"
   },
   "repository": {
     "type": "git",

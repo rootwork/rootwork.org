@@ -31,8 +31,8 @@ notes to myself because I forget things.
 
 # Local development
 
-* `hugo server`
-* Point a web browser to [http://localhost:1313/](http://localhost:1313/)
+* `npm run s`
+* The web browser will automatically open to [http://localhost:1313/](http://localhost:1313/); hit refresh to load the site.
 
 ## Editing site variables
 
@@ -65,13 +65,13 @@ that there's no real guarantee this won't break things in the theme!
 
 # Creating a new post
 
-`npm run new`
+`npm run n`
 
 This generates a new post with a folder location of the current date, and auto-creates a bunch of data within the post. It's much easier than running `hugo new ...`.
 
 # Generating the site for production
 
-`npm run prod`
+`npm run p`
 
 This removes the `public` directory, if it exists, to ensure that no outdated files are present. Then it recreates the static site in the `public` directory.
 
