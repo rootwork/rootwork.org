@@ -18,5 +18,5 @@ echo -e "${green} Running web server with drafts enabled... ${reset}"
 echo -e "${green_bg}${reset}\n"
 cd './hugo'
 xdg-open http://localhost:1313/
-hugo server -D
+hugo server --buildDrafts
 cd './'
