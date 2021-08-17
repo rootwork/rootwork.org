@@ -10,7 +10,7 @@ slug: '{{ .Name }}'
 description: 'Post description.' # For SEO and social media snippets.
 summary: 'Post summary.' # For the post in lists.
 
-draft: true
+draft: true # Change to 'false' to publish this post.
 featured: true
 toc: false
 
@@ -40,5 +40,4 @@ year: '{{ .Date | dateFormat "2006" }}'
 month: '{{ .Date | dateFormat "2006-01" }}'
 
 ---
-
 
