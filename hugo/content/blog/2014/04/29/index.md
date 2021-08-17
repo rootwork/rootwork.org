@@ -1,17 +1,32 @@
 ---
-title: "Join me at the Devsigner conference in Portland this May: Designers and developers join forces!"
-date: "2014-04-29"
+title: 'Join me at the Devsigner conference in Portland this May: Designers and developers join forces!'
+author: 'Ivan Boothe'
+date: '2021-08-16'
+# lastmod: '2021-08-16' # Appends 'edited on' to the publish date
 
-slug: "join-me-devsigner-conference-portland-may-designers-developers-join-forces"
+slug: 'join-me-devsigner-conference-portland-may-designers-developers-join-forces'
+# aliases:
+#   -
+description: 'Devsigner is celebrating the cross-overs, the multi-disciplinarians, the coders who paint and the designers who send pull requests --- and those who want to develop some new left-right brain skills.' # For SEO and social media snippets.
+summary: 'Devsigner is celebrating the cross-overs, the multi-disciplinarians, the coders who paint and the designers who send pull requests --- and those who want to develop some new left-right brain skills.' # For the post in lists.
+
 draft: false
 featured: true
 toc: false
 
+showDate: true
+showReadTime: true
+showShare: true
+
 # menu: main
 
-featureImage: "./devsignerslide1.jpg"
-# thumbnail: "./devsignerslide1.jpg"
-# shareImage: "/images/path/share.png"
+featureImage: './devsignerslide1.jpg' # Top image on post.
+# thumbnail: './devsignerslide1.jpg' # Image in lists of posts.
+# shareImage: './share.jpg' # For SEO and social media snippets.
+
+codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
+codeLineNumbers: false # Override global value for showing of line numbers within code block.
+figurePositionShow: true # Override global value for showing the figure label.
 
 categories:
   - Frontend Development
@@ -19,6 +34,14 @@ categories:
 tags:
   - Devsigner
   - Drupal
+keywords: # For SEO
+  - Drupal
+  - frontend development
+
+# Archive taxonomy terms (auto-generated)
+year: '2021'
+month: '2021-08'
+
 ---
 
 **Devsigner is celebrating the cross-overs, the multi-disciplinarians, the coders who paint and the designers who send pull requests --- and those who want to develop some new left-right brain skills.**

@@ -35,10 +35,10 @@ tags:
 keywords: # For SEO
   - Drupal
 
-# Archive categories (auto-generated)
+# Archive taxonomy terms (auto-generated)
 year: '{{ .Date | dateFormat "2006" }}'
 month: '{{ .Date | dateFormat "2006-01" }}'
 
 ---
 
-**Insert Lead paragraph here.**
+

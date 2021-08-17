@@ -15,6 +15,10 @@ h3 {
   font-weight: 800;
 }
 
+.list_title { // Page titles, when they appear on a list (like archives)
+  // grid-column-end: span 2;
+}
+
 // NAVIGATION //
 
 .nav_header {
@@ -113,12 +117,16 @@ h3 {
 
 // POST CONTENT
 
-.post_content { // includes title, byline, featured image, etc.
+.post_content,
+.posts {
+  margin-top: 0;
 
   @media screen and (min-width: $single-column-breakpoint) {
     margin-left: $logo-descender-width;
   }
+}
 
+.post_content { // includes title, byline, featured image, etc.
   .post_meta {
     margin: 1rem 0 1rem;
     padding: 1rem 0.5rem;

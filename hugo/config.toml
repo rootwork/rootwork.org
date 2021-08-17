@@ -32,8 +32,8 @@ enableRobotsTXT = true
   category = "categories"
   tag = "tags"
   series = "series"
-  # year = "year"
-  # month = "month"
+  year = "year"
+  month = "month"
 
 [markup]
   [markup.goldmark]

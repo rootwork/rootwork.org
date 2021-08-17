@@ -1,0 +1,21 @@
+{{/*
+
+Adding the page (list) title.
+
+*/}}
+{{ $pages := .Pages }}
+{{ if .IsHome }}
+  {{ $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{ end }}
+<div class="grid-inverse wrap content">
+  <ul class="posts" id="posts">
+    <h1 class="list_title">{{ .Title }}</h1>
+    {{- range (.Paginate $pages).Pages }}
+      {{ partial "excerpt" . }}
+    {{- end }}
+    <li>
+      {{- template "_internal/pagination.html" . }}
+    </li>
+  </ul>
+  {{- partial "sidebar" . }}
+</div>
