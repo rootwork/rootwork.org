@@ -1,0 +1,34 @@
+# set `baseurl` to your root domain
+# if you set it to "/" share icons won't work properly on production
+baseurl = "https://rootwork.org/"  # Include trailing slash
+title = "Rootwork.org"
+author = "Ivan Boothe" # Also set in [params.author]; defined here for safety
+
+theme = "hugo-clarity"
+
+DefaultContentLanguage = "en"
+# [languages]
+# config/_default/languages.toml
+
+paginate = 10
+canonifyurls = false # See https://gohugo.io/content-management/urls/#canonicalization
+
+# SEO settings
+enableRobotsTXT = true
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+
+# [menus]
+# config/_default/menus/menu.xx.toml
+
+[permalinks]
+  posts = "/:year/:month/:slug/"
+  page = "/:slug/"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+year = "year"
+month = "month"
