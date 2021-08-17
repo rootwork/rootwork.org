@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # Ansi color code variables
-green_bg="\e[0;102m${expand_bg}"
 green="\e[0;92m"
+expand_bg="\e[K"
+green_bg="\e[0;102m${expand_bg}"
 reset="\e[0m"
 
 echo -e "\n${green_bg}${reset}"

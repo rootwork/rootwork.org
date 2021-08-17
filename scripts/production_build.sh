@@ -2,6 +2,7 @@
 
 # Ansi color code variables
 red="\e[0;91m"
+expand_bg="\e[K"
 red_bg="\e[0;101m${expand_bg}"
 reset="\e[0m"
 
