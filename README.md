@@ -38,11 +38,12 @@ notes to myself because I forget things.
 
 You can find text strings and other variables in four places:
 
-* `hugo/config.toml` (site configuration)
-* `hugo/configTaxo.toml` (for taxonomy and, confusingly, embedded social media
-settings)
-* `hugo/i18n/en.toml` (translatable strings)
+* `hugo/config/_default/config.toml` (main configuration)
+* `hugo/i18n/en.toml` (translatable strings, such as the copyright)
 * `hugo/config/_default/menus/menu.en.toml` (menus)
+* `hugo/config/_default/configTaxo.toml` (embedded social media settings)
+* `hugo/config/_default/markup.toml` (settings for Hugo's markup highlighter)
+* `hugo/config/_default/params.toml` (other site parameters used in the theme)
 
 ## Editing the theme
 
