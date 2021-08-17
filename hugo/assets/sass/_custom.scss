@@ -307,6 +307,33 @@ mark {
   }
 }
 
+// AUTHOR BIO/INTRO
+
+.author_header > img {
+  border-radius: 3rem; // size of the image
+}
+
+.home_bio {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  grid-gap: 1rem;
+  margin: 1rem 0 2rem;
+
+  img {
+    border-radius: 8rem; // size of the image
+    margin: 0;
+  }
+
+  h1 {
+    margin: 0 0 0.5rem;
+  }
+
+  .button {
+    margin-top: 0.2rem;
+    padding: 0.1rem 0.5rem;
+  }
+}
+
 // FOOTER
 
 .footer {

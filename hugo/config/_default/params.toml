@@ -86,7 +86,7 @@ iconsDir = "icons/" # without a leading forward slash
 
 [author] # also see author setting in config.toml
 name = "Ivan Boothe"
-# photo = "images/jane-doe.png" #include this if you would like to show the author photo on the sidebar
+photo = "images/ivan.jpg" #include this if you would like to show the author photo on the sidebar
 
 [plausible_analytics]
 enable = false # to enable plausible analytics set to true.
