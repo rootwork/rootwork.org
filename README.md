@@ -122,13 +122,24 @@ version](https://gist.github.com/nikhita/432436d570b89cab172dcf2894465753)
 - `sudo rm -rf /usr/local/bin/hugo`
 - Reinstall following the instructions above.
 
-# License
+# Licenses
 
-The content of the site, located in the `hugo/content` directory **only**, is
-licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0
-International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+The content of the site, contained in the Markdown files in the `hugo/content`
+directory and its subdirectories **only**, is [licensed](hugo/content/LICENSE)
+under the
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+Images or other media in these directories may have different copyright and
+licensing statuses.
 
-The source code used to format and display that content is licensed under the
+Hugo itself is licensed as
+[Apache v2.0](https://github.com/gohugoio/hugo/blob/master/LICENSE).
+
+The theme Rootwork.org uses, Hugo Clarity, is licensed under the
+[MIT license](https://github.com/chipzoller/hugo-clarity/blob/master/LICENSE.md).
+
+Modifications to the theme, as well as the files in the `scripts` directory,
+are licensed under the
 [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.txt), as
-noted in the
+noted in the general project
 [LICENSE](https://github.com/rootwork/rootwork.org/blob/master/LICENSE) file.
