@@ -31,19 +31,34 @@ notes to myself because I forget things.
 
 # Local development
 
-* `npm run s`
-* The web browser will automatically open to [http://localhost:1313/](http://localhost:1313/); hit refresh to load the site.
+- `npm run s`
+- The web browser will automatically open to [http://localhost:1313/](http://localhost:1313/); hit refresh to load the site.
+
+## Creating a new post
+
+`npm run n`
+
+This script will:
+
+- Ask you for a title
+- Ask you for a date (defaults to today)
+- Create an appropriate slug
+- Create [taxonomy year and month files](https://www.jayeless.net/2021/04/taxonomies-archive-hugo.html), if necessary (cf. https://github.com/gohugoio/hugo/issues/448 )
+- Create the necessary Markdown file, with sane defaults, at the appropriate directory/file location
+- Open the file in Sublime
+
+It does much more than just `hugo new ...`.
 
 ## Editing site variables
 
-You can find text strings and other variables in four places:
+You can find text strings and other variables in several places:
 
-* `hugo/config/_default/config.toml` (main configuration)
-* `hugo/i18n/en.toml` (translatable strings, such as the copyright)
-* `hugo/config/_default/menus/menu.en.toml` (menus)
-* `hugo/config/_default/configTaxo.toml` (embedded social media settings)
-* `hugo/config/_default/markup.toml` (settings for Hugo's markup highlighter)
-* `hugo/config/_default/params.toml` (other site parameters used in the theme)
+- `hugo/config/_default/config.toml` (main configuration)
+- `hugo/i18n/en.toml` (translatable strings, such as the copyright)
+- `hugo/config/_default/menus/menu.en.toml` (menus)
+- `hugo/config/_default/configTaxo.toml` (embedded social media settings)
+- `hugo/config/_default/markup.toml` (settings for Hugo's markup highlighter)
+- `hugo/config/_default/params.toml` (other site parameters used in the theme)
 
 ## Editing the theme
 
@@ -64,12 +79,6 @@ Use `git submodule foreach git pull origin master` to pull in upstream changes.
 If that errors, you can also try `git submodule update --init --recursive`. Note
 that there's no real guarantee this won't break things in the theme!
 
-# Creating a new post
-
-`npm run n`
-
-This will ask you for the title of the post and its date (defaults to today), then open the Markdown file in Sublime. For our purposes it is more convenient than using `hugo new ...`.
-
 # Generating the site for production
 
 `npm run p`
@@ -82,36 +91,36 @@ Note that the `public` directory is excluded from the repo in `.gitignore`, so t
 
 ## Go
 
-* [Follow the instructions](https://golang.org/doc/install)
+- [Follow the instructions](https://golang.org/doc/install)
 
 ## Hugo
 
-* Get the `hugo_extended_VERSION_OS-64bit.*` [package from GitHub
+- Get the `hugo_extended_VERSION_OS-64bit.*` [package from GitHub
 releases](https://github.com/gohugoio/hugo/releases) (e.g.
 `hugo_extended_0.81.0_Linux-64bit.deb`). On Debian-based Linux systems, ignore
 the alert that [an older package is available in the
 channel](https://gohugo.io/getting-started/installing#debian-and-ubuntu).
-* Install the package, which will place it in `/usr/local/bin/hugo`.
+- Install the package, which will place it in `/usr/local/bin/hugo`.
 
 ## This repo
 
-* `git clone git@github.com:rootwork/rootwork.org.git`
-* `cd rootwork.org`
-* `git submodule update --init --recursive`
+- `git clone git@github.com:rootwork/rootwork.org.git`
+- `cd rootwork.org`
+- `git submodule update --init --recursive`
 
 # Updating dependencies
 
 ## Go
 
-* Check version: `go version`
-* [Remove old version and install new
+- Check version: `go version`
+- [Remove old version and install new
 version](https://gist.github.com/nikhita/432436d570b89cab172dcf2894465753)
 
 ## Hugo
 
-* Check version: `hugo version`
-* `sudo rm -rf /usr/local/bin/hugo`
-* Reinstall following the instructions above.
+- Check version: `hugo version`
+- `sudo rm -rf /usr/local/bin/hugo`
+- Reinstall following the instructions above.
 
 # License
 
