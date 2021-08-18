@@ -78,7 +78,7 @@ main () {
     # Set the title, slug, date and taxonomy-dates.
     tmp_file="/tmp/${USER}_hugo_post"
     \cp -f ${fullpath} ${tmp_file}
-    \sed -r -e 's/^(\s*title: ).*/\1'"'${title}'"'/' \
+    \sed -r -e 's/^(\s*title: ).*/\1'"${title}"'/' \
     -e 's/^(\s*slug: ).*/\1'"'${slug}' # Recommended length is 3 to 5 words."'/' \
     -e 's/^(\s*date: ).*/\1'"'${date_year}-${date_month}-${date_day}'"'/' \
     -e 's/^(\s*year: ).*/\1'"'${date_year}'"'/' \
@@ -93,8 +93,8 @@ main () {
       mkdir ${yearpath}
       cat << EOF > ${yearpath}/_index.md
 ---
-title: "Archives: ${date_year}"
-url: "/blog/${date_year}/"
+title: 'Archives: ${date_year}'
+url: '/blog/${date_year}/'
 ---
 EOF
       echo "Created taxonomy page for ${date_year}"
@@ -105,8 +105,8 @@ EOF
       mkdir ${monthpath}
       cat << EOF > ${monthpath}/_index.md
 ---
-title: "Archives: ${prettymonth} ${date_year}"
-url: "/blog/${date_year}/${date_month}"
+title: 'Archives: ${prettymonth} ${date_year}'
+url: '/blog/${date_year}/${date_month}'
 ---
 EOF
       echo "Created taxonomy page for ${date_year}-${date_month}"

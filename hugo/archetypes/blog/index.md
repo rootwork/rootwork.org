@@ -1,10 +1,10 @@
 ---
-title: '{{ replace .Name "-" " " | title }}'
-author: 'Ivan Boothe'
-date: '{{ .Date | dateFormat "2006-01-02" }}'
-# lastmod: '{{ .Date | dateFormat "2006-01-02" }}' # Appends 'edited on' to the publish date
+title: {{ replace .Name "-" " " | title }}
+author: Ivan Boothe
+date: {{ .Date | dateFormat "2006-01-02" }}
+# lastmod: {{ .Date | dateFormat "2006-01-02" }} # Appends 'edited on' to the publish date
 
-slug: '{{ .Name }}' # Recommended length is 3 to 5 words.
+slug: {{ .Name }} # Recommended length is 3 to 5 words.
 # aliases:
 #   -
 description: 'Post description.' # For SEO and social media snippets.
@@ -36,8 +36,8 @@ keywords: # For SEO
   - Drupal
 
 # Archive taxonomy terms (auto-generated)
-year: '{{ .Date | dateFormat "2006" }}'
-month: '{{ .Date | dateFormat "2006-01" }}'
+year: {{ .Date | dateFormat "2006" }}
+month: {{ .Date | dateFormat "2006-01" }}
 
 ---
 

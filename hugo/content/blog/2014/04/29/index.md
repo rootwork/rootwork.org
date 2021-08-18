@@ -1,6 +1,6 @@
 ---
-title: 'Join me at the Devsigner conference in Portland this May: Designers and developers join forces!'
-author: 'Ivan Boothe'
+title: Join me at the Devsigner conference in Portland this May: Designers and developers join forces!
+author: Ivan Boothe
 date: '2014-04-29'
 # lastmod: '2014-04-29' # Appends 'edited on' to the publish date
 

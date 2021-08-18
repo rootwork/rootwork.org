@@ -1,10 +1,10 @@
 ---
-draft: true
 author: Hugo Authors
-title: Math Typesetting
-date: 2019-03-08
+date: '2019-03-05'
 description: A brief guide to setup KaTeX
+draft: true
 math: true
+title: Math Typesetting
 ---
 
 Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.

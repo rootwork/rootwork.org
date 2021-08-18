@@ -1,11 +1,22 @@
 ---
-title: "Privacy policy"
-description: "Rootwork.org privacy and security"
-date: "2021-08-12"
-aliases: ["privacy"]
-author: "Ivan Boothe"
-showShare: false
+title: Privacy policy
+author: Ivan Boothe
+date: '2021-08-12'
+# lastmod: '2014-04-29' # Appends 'edited on' to the publish date
+
+slug: 'privacy'
+# aliases:
+#   -
+description: 'Rootwork.org privacy and security' # For SEO and social media snippets.
+
+draft: false
+featured: false
+toc: false
+
 showDate: false
+showReadTime: true
+showShare: false
+
 ---
 
 **Effective Date: Aug. 1, 2021**
