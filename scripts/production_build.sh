@@ -11,5 +11,5 @@ echo -e "${red} Exporting static site for production... ${reset}"
 echo -e "${red_bg}${reset}\n"
 cd './hugo'
 rm -rf public
-hugo
+hugo --gc --minify
 cd './'
