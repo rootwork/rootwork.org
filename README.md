@@ -23,9 +23,9 @@ notes to myself because I forget things.
 * [Updating dependencies](#updating-dependencies)
    * [Go](#go-1)
    * [Hugo](#hugo-1)
-* [License](#license)
+* [Licenses](#licenses)
 
-<!-- Added by: runner, at: Wed Aug 18 23:02:16 UTC 2021 -->
+<!-- Added by: runner, at: Wed Aug 18 23:13:16 UTC 2021 -->
 
 <!--te-->
 
