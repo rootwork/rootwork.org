@@ -1,15 +1,31 @@
 #!/bin/bash
 
 # Ansi color code variables
-red="\e[0;91m"
+blue="\e[0;94m"
+green="\e[0;92m"
 expand_bg="\e[K"
-red_bg="\e[0;101m${expand_bg}"
+blue_bg="\e[0;104m${expand_bg}"
 reset="\e[0m"
 
-echo -e "\n${red_bg}${reset}"
-echo -e "${red} Exporting static site for production... ${reset}"
-echo -e "${red_bg}${reset}\n"
+here=$(pwd) # Home directory
+vars="--gc"
+minify=""
+
+echo -e "\n${blue_bg}${reset}"
+echo -e "${blue}Exporting static site for production...${reset}"
+echo -e "${blue_bg}${reset}\n"
+echo -e "${green}Minify HTML? (return for yes)${reset}"
+read minify
+
+# By default, we want it minified. If user enters anything other than a
+# return, don't include it. If you came here wanting to fine-tune how the
+# minification in Hugo happens, see
+# https://gohugo.io/getting-started/configuration/#configure-minify
+if [ -z "$minify" ]; then
+  vars="$vars --minify"
+fi
+
 cd './hugo'
 rm -rf public
-hugo --gc --minify
-cd './'
+hugo ${vars}
+cd ${here}
