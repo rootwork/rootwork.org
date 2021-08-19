@@ -92,10 +92,9 @@ files are present, and then the static site is re-generated in `public`.
 Note that `public` is excluded from the repo in `.gitignore`, so this command
 should be run from a GitHub Action to generate the site online.
 
-By default, Hugo's minification is turned on. Note that this can be
-[fine-tuned in configuration](https://gohugo.io/getting-started/configuration/#configure-minify)
-
-If you wish to disable it completely, use `npm run p -- -m` instead.
+By default, Hugo's minification is turned on. This can be
+[fine-tuned in configuration](https://gohugo.io/getting-started/configuration/#configure-minify). If you wish to disable it completely, use
+`npm run p -- -m` instead.
 
 # Fresh installation
 
