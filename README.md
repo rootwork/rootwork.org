@@ -1,9 +1,10 @@
 Rootwork is created with the static site generator [Hugo](http://gohugo.io)
 using the [Hugo Clarity](https://github.com/chipzoller/hugo-clarity) theme with
-customizations.
-
-This repository contains the backend code used to generate the site files, and
-notes to myself because I forget things.
+customizations. I also have some Bash scripts (that I usually run with `npm`
+out of habit, but could be run directly) to
+[create a post](#creating-a-new-post), [start the server](#local-development)
+and
+[generate a production copy of the site](#generating-the-site-for-production).
 
 <!-- The following section, from "ts" to "te", is an automatically-generated
   table of contents, updated whenever this file changes. Do not edit within
@@ -31,15 +32,16 @@ notes to myself because I forget things.
 
 # Local development
 
-- `npm run s`
-- The web browser will automatically open to [http://localhost:1313/](http://localhost:1313/); hit refresh to load the site.
+`npm run s` or `./scripts/server_start.sh`
+
+The web browser will automatically open to [http://localhost:1313/](http://localhost:1313/); hit refresh to load the site.
 
 By default Hugo will run with fastRender **on** and buildDrafts **off**. You can
 use the flags `-s` and `-d` to change this. For details, run `npm run s -- -h`.
 
 ## Creating a new post
 
-`npm run n`
+`npm run n` or `./scripts/new_blog_post.sh`
 
 This script will:
 
@@ -84,7 +86,7 @@ that there's no real guarantee this won't break things in the theme!
 
 # Generating the site for production
 
-`npm run p`
+`npm run p` or `./scripts/production_build.sh`
 
 The `public` directory, if it exists, is removed to ensure that no outdated
 files are present, and then the static site is re-generated in `public`.
