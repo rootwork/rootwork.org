@@ -12,9 +12,8 @@ expand_bg="\e[K"
 blue_bg="\e[0;104m${expand_bg}"
 reset="\e[0m"
 
-# Home directory
+here=$(pwd) # Home directory
 title=""
-here=$(pwd)
 
 echo -e "\n${blue_bg}${reset}"
 echo -e "${blue} Creating new blog post... ${reset}"
