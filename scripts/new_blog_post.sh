@@ -42,82 +42,82 @@ fi
 echo -e "\n${green}Creating '$title' on ${date_year}-${date_month}-${date_day}...${reset}"
 
 main () {
-    # Remove leading and trailing whitespace from ${title}
-    title=$(echo "${title}" | \sed -r -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')
+  # Remove leading and trailing whitespace from ${title}
+  title=$(echo "${title}" | \sed -r -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')
 
-    # Using ${title}
-    #  - Replace '&' with 'and', '.' with 'dot', and apostrophes with nothing.
-    #  - Then lower-case the whole title.
-    #  - Then remove common words that don't help with SEO in URLs (stop words).
-    #  - Then replace all characters except a-z, 0-9 and '-' with spaces.
-    #  - Then remove leading/trailing spaces if any.
-    #  - Then replace one or more spaces with a single hyphen.
-    # For example, converts 'This, That \& Other!' to 'this-that-and-other.md'
-    # (Note that we need to escape & with \ above, in the shell.)
-    slug=$(echo "${title}" \
-      | \sed -r -e 's/&/ and /g' \
-      -e 's/\./ dot /g' \
-      -e "s/'//g" \
-      -e 's/./\L\0/g' \
-      -e "s/\<a\>//g;s/\<an\>//g;s/\<and\>//g;s/\<at\>//g;s/\<in\>//g;s/\<of\>//g;s/\<on\>//g;s/\<or\>//g;s/\<the\>//g;s/\<to\>//g" \
-      -e 's/[^a-z0-9-]/ /g' \
-      -e 's/^[[:space:]]*//g' \
-      -e 's/[[:space:]]*$//g' \
-      -e 's/[[:space:]]+/-/g');
+  # Using ${title}
+  #  - Replace '&' with 'and', '.' with 'dot', and apostrophes with nothing.
+  #  - Then lower-case the whole title.
+  #  - Then remove common words that don't help with SEO in URLs (stop words).
+  #  - Then replace all characters except a-z, 0-9 and '-' with spaces.
+  #  - Then remove leading/trailing spaces if any.
+  #  - Then replace one or more spaces with a single hyphen.
+  # For example, converts 'This, That \& Other!' to 'this-that-and-other.md'
+  # (Note that we need to escape & with \ above, in the shell.)
+  slug=$(echo "${title}" \
+    | \sed -r -e 's/&/ and /g' \
+    -e 's/\./ dot /g' \
+    -e "s/'//g" \
+    -e 's/./\L\0/g' \
+    -e "s/\<a\>//g;s/\<an\>//g;s/\<and\>//g;s/\<at\>//g;s/\<in\>//g;s/\<of\>//g;s/\<on\>//g;s/\<or\>//g;s/\<the\>//g;s/\<to\>//g" \
+    -e 's/[^a-z0-9-]/ /g' \
+    -e 's/^[[:space:]]*//g' \
+    -e 's/[[:space:]]*$//g' \
+    -e 's/[[:space:]]+/-/g');
 
-    # Set paths
-    path="blog/${date_year}/${date_month}/${date_day}"
-    fullpath="content/${path}/index.md"
+  # Set paths
+  path="blog/${date_year}/${date_month}/${date_day}"
+  fullpath="content/${path}/index.md"
 
-    # Create the new post
-    # Need to first cd to the hugo blog root dir
-    cd './hugo'
-    hugo new "${path}"
+  # Create the new post
+  # Need to first cd to the hugo blog root dir
+  cd './hugo'
+  hugo new "${path}"
 
-    # Set the title, slug, date and taxonomy-dates.
-    tmp_file="/tmp/${USER}_hugo_post"
-    \cp -f ${fullpath} ${tmp_file}
-    \sed -r -e 's/^(\s*title: ).*/\1'"${title}"'/' \
-    -e 's/^(\s*slug: ).*/\1'"'${slug}' # Recommended length is 3 to 5 words."'/' \
-    -e 's/^(\s*date: ).*/\1'"'${date_year}-${date_month}-${date_day}'"'/' \
-    -e 's/^(\s*year: ).*/\1'"'${date_year}'"'/' \
-    -e 's/^(\s*month: ).*/\1'"'${date_year}-${date_month}'"'/' \
-    ${tmp_file} > ${fullpath}
-    \rm -f ${tmp_file}
+  # Set the title, slug, date and taxonomy-dates.
+  tmp_file="/tmp/${USER}_hugo_post"
+  \cp -f ${fullpath} ${tmp_file}
+  \sed -r -e 's/^(\s*title: ).*/\1'"${title}"'/' \
+  -e 's/^(\s*slug: ).*/\1'"'${slug}' # Recommended length is 3 to 5 words."'/' \
+  -e 's/^(\s*date: ).*/\1'"'${date_year}-${date_month}-${date_day}'"'/' \
+  -e 's/^(\s*year: ).*/\1'"'${date_year}'"'/' \
+  -e 's/^(\s*month: ).*/\1'"'${date_year}-${date_month}'"'/' \
+  ${tmp_file} > ${fullpath}
+  \rm -f ${tmp_file}
 
-    # Create year and month taxonomy pages for this date, if they don't already
-    # exist.
-    yearpath="content/year/${date_year}"
-    if [ ! -d "$yearpath" ]; then
-      mkdir ${yearpath}
-      cat << EOF > ${yearpath}/_index.md
+  # Create year and month taxonomy pages for this date, if they don't already
+  # exist.
+  yearpath="content/year/${date_year}"
+  if [ ! -d "$yearpath" ]; then
+    mkdir ${yearpath}
+    cat << EOF > ${yearpath}/_index.md
 ---
 title: 'Archives: ${date_year}'
 url: '/blog/${date_year}/'
 ---
 EOF
-      echo "Created taxonomy page for ${date_year}"
-    fi
-    monthpath="content/month/${date_year}-${date_month}"
-    if [ ! -d "$monthpath" ]; then
-      prettymonth=$(date -d "$date" +'%B')
-      mkdir ${monthpath}
-      cat << EOF > ${monthpath}/_index.md
+    echo "Created taxonomy page for ${date_year}"
+  fi
+  monthpath="content/month/${date_year}-${date_month}"
+  if [ ! -d "$monthpath" ]; then
+    prettymonth=$(date -d "$date" +'%B')
+    mkdir ${monthpath}
+    cat << EOF > ${monthpath}/_index.md
 ---
 title: 'Archives: ${prettymonth} ${date_year}'
 url: '/blog/${date_year}/${date_month}'
 ---
 EOF
-      echo "Created taxonomy page for ${date_year}-${date_month}"
-    fi
+    echo "Created taxonomy page for ${date_year}-${date_month}"
+  fi
 
-    # Open the file in Sublime with cursor placed on the last line
-    last_line=$(wc -l ${fullpath} | awk '{ print $1 }')
-    open_file_cmd="subl ${fullpath}:${last_line}"
-    eval "${open_file_cmd}"
+  # Open the file in Sublime with cursor placed on the last line
+  last_line=$(wc -l ${fullpath} | awk '{ print $1 }')
+  open_file_cmd="subl ${fullpath}:${last_line}"
+  eval "${open_file_cmd}"
 
-    # Go back to the directory from where you launched this script
-    cd ${here}
-  }
+  # Go back to the directory from where you launched this script
+  cd ${here}
+}
 
-  main
+main
