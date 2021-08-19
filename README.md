@@ -34,6 +34,9 @@ notes to myself because I forget things.
 - `npm run s`
 - The web browser will automatically open to [http://localhost:1313/](http://localhost:1313/); hit refresh to load the site.
 
+By default Hugo will run with fastRender **on** and buildDrafts **off**. You can
+use the flags `-s` and `-d` to change this. For details, run `npm run s -- -h`.
+
 ## Creating a new post
 
 `npm run n`
@@ -83,9 +86,16 @@ that there's no real guarantee this won't break things in the theme!
 
 `npm run p`
 
-This removes the `public` directory, if it exists, to ensure that no outdated files are present. Then it recreates the static site in the `public` directory.
+The `public` directory, if it exists, is removed to ensure that no outdated
+files are present, and then the static site is re-generated in `public`.
 
-Note that the `public` directory is excluded from the repo in `.gitignore`, so this command should be run from a GitHub Action to generate the site online.
+Note that `public` is excluded from the repo in `.gitignore`, so this command
+should be run from a GitHub Action to generate the site online.
+
+By default, Hugo's minification is turned on. Note that this can be
+[fine-tuned in configuration](https://gohugo.io/getting-started/configuration/#configure-minify)
+
+If you wish to disable it completely, use `npm run p -- -m` instead.
 
 # Fresh installation
 
