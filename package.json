@@ -2,7 +2,7 @@
   "name": "rootwork.org",
   "version": "1.0.0",
   "description": "https://rootwork.org",
-  "main": "hugo/README.md",
+  "main": "README.md",
   "scripts": {
     "n": "./scripts/new_blog_post.sh",
     "p": "./scripts/production_build.sh",
