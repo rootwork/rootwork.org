@@ -77,7 +77,7 @@ main () {
   # Set the title, slug, date and taxonomy-dates.
   tmp_file="/tmp/${USER}_hugo_post"
   \cp -f ${fullpath} ${tmp_file}
-  \sed -r -e 's/^(\s*title: ).*/\1'"${title}"'/' \
+  \sed -r -e 's/^(\s*title: ).*/\1'"'${title}'"'/' \
   -e 's/^(\s*slug: ).*/\1'"'${slug}' # Recommended length is 3 to 5 words."'/' \
   -e 's/^(\s*date: ).*/\1'"'${date_year}-${date_month}-${date_day}'"'/' \
   -e 's/^(\s*year: ).*/\1'"'${date_year}'"'/' \
