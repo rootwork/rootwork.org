@@ -21,7 +21,7 @@ Defining $title based on .Name, and adding it to the <a> element.
   {{- if and (eq (hasPrefix $url $base) false) (eq (hasPrefix $url "http") false) }}
     {{ $url = absLangURL $url }}
   {{- end }}
-  <a href="{{ $url }}" title="{{ $title }}">
+  <a href="{{ $url }}" title="{{ $title }}" rel="me">
     {{ partial "sprite" (dict "icon" $label) }}
   </a>
   {{- end }}
