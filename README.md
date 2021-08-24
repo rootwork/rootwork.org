@@ -54,6 +54,11 @@ This script will:
 
 It does much more than just `hugo new ...`.
 
+For images, the theme will automatically offer `.webp` and `.avif` options if they are present, but you must create them yourself with:
+
+`npx avif`
+`cwebp <filename>.<ext> -o <filename>.webp`
+
 ## Editing site variables
 
 You can find text strings and other variables in several places:

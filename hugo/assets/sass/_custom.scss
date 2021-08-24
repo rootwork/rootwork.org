@@ -147,6 +147,21 @@ h3 {
   .image-scale {
     background-color: var(--shadedark);
   }
+
+  .img--figure {
+    margin-top: 0;
+    line-height: 1;
+  }
+
+  picture > figcaption {
+    font-size: 0.9rem;
+    font-style: italic;
+    opacity: 0.75;
+  }
+
+  .img_alt {
+    display: none;
+  }
 }
 
 .post_title {
