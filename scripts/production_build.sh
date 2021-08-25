@@ -7,6 +7,11 @@ blue_bg="\e[0;104m${expand_bg}"
 reset="\e[0m"
 
 here=$(pwd) # Home directory
+
+# Optimize images
+npm run i
+
+# Export site
 notice="Exporting static site for production"
 vars="--gc"
 
