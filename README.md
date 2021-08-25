@@ -54,11 +54,6 @@ This script will:
 
 It does much more than just `hugo new ...`.
 
-For images, the theme will automatically offer `.webp` and `.avif` options if they are present, but you must create them yourself with:
-
-`npx avif`
-`cwebp <filename>.<ext> -o <filename>.webp`
-
 ## Editing site variables
 
 You can find text strings and other variables in several places:
@@ -93,8 +88,10 @@ that there's no real guarantee this won't break things in the theme!
 
 `npm run p` or `./scripts/production_build.sh`
 
-The `public` directory, if it exists, is removed to ensure that no outdated
-files are present, and then the static site is re-generated in `public`.
+All content images will be optimized, and modern `.webp` and `.avif` images will be created.
+
+The `public` directory, if it exists, will be removed to ensure that no outdated
+files are present, and then the static site will be re-generated in `public`.
 
 Note that `public` is excluded from the repo in `.gitignore`, so this command
 should be run from a GitHub Action to generate the site online.
