@@ -40,7 +40,5 @@ for f in ./hugo/content/**/*.{webp,gif}; do
   fi
 done
 
-# grep -P '\K[^\/]*\.avif')
-
 echo -e "${reset}"
 echo -e "${green}                               ...done.${reset}\n"
