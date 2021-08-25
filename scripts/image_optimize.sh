@@ -14,6 +14,8 @@ echo -e "${blue}"
 
 # Optimize png, jpg
 # 'mogrify' is imagemagick
+# Settings: Strip metadata, apply default optimization, and for any image larger
+# than 1000 pixels in width, size down to 1000px.
 for f in ./hugo/content/**/*.{jpg,jpeg,png,gif}; do
   if [ -e "$f" ] ; then
     mogrify -strip -thumbnail '1000>' "$f";
@@ -30,11 +32,11 @@ echo -e "${blue}"
 # Create webp from jpeg and png files; gif files are likely to be larger in webp.
 # https://developers.google.com/speed/webp/docs/cwebp
 for f in ./hugo/content/**/*.{jpg,jpeg,png}; do
-  webp="${f%.*}.webp"
+  newfile="${f%.*}.webp"
   if [ -e "$f" ] ; then
-    if [ ! -e "${webp}" ]; then # Create only if file doesn't exist.
-      cwebp -quiet "$f" -o "${webp}";
-      echo -e "${webp}";
+    if [ ! -e "${newfile}" ]; then # Create only if file doesn't exist.
+      cwebp -quiet "$f" -o "${newfile}";
+      echo -e "${newfile}";
     fi
   fi
 done
@@ -42,12 +44,12 @@ done
 # Create avif from webp files, and any gif files.
 # https://github.com/lovell/avif-cli
 for f in ./hugo/content/**/*.{webp,gif}; do
-  avif="${f%.*}.avif"
+  newfile="${f%.*}.avif"
   if [ -e "$f" ] ; then
-    if [ ! -e "${avif}" ]; then # Create only if file doesn't exist.
+    if [ ! -e "${newfile}" ]; then # Create only if file doesn't exist.
       dir="$(dirname "${f}")"
       npx avif --input="$f" --output="$dir"
-      echo -e "${avif}";
+      echo -e "${newfile}";
     fi
   fi
 done
