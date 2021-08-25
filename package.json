@@ -4,6 +4,7 @@
   "description": "https://rootwork.org",
   "main": "README.md",
   "scripts": {
+    "i": "./scripts/image_optimize.sh",
     "n": "./scripts/new_blog_post.sh",
     "p": "./scripts/production_build.sh",
     "s": "./scripts/server_start.sh"
