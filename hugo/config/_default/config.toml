@@ -4,7 +4,7 @@ baseurl = "https://rootwork.org/"  # Include trailing slash
 title = "Rootwork.org"
 author = "Ivan Boothe" # Also set in [params.author]; defined here for safety
 
-theme = "hugo-clarity"
+theme = "rootwork-hugo-clarity"
 
 DefaultContentLanguage = "en"
 # [languages]
