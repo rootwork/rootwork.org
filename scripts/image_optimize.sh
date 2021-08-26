@@ -12,7 +12,7 @@ reset="\e[0m"
 echo -e "\n${green}Optimizing images in content...${reset}"
 echo -e "${blue}"
 
-# Optimize png, jpg
+# Optimize png, jpg, gif
 # 'mogrify' is imagemagick
 # Settings: Strip metadata, apply default optimization, and for any image larger
 # than 1000 pixels in width, size down to 1000px.
