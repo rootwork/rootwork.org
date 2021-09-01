@@ -3,6 +3,28 @@
 @import 'rootwork_mixins';
 @import 'rootwork_variables';
 
+// HIDING THINGS //
+
+.hidden-all { // Removes from the DOM
+  @include hidden-all;
+}
+
+.hidden-invisible { // Retains the space of the element; good for transitions
+  @include hidden-invisible;
+}
+
+.hidden-offscreen { // Moves visible element off-screen; good for transitions
+  @include hidden-offscreen;
+}
+
+.hidden-visually { // Hides from sighted users, but present in markup for assistive technology
+  @include hidden-visually;
+}
+
+.hidden-screenreader { // Visible to sighted users, but hidden from assistive technology (e.g. decoration)
+  // Use aria-hidden="true" on the element.
+}
+
 // TYPOGRAPHY //
 
 body {
