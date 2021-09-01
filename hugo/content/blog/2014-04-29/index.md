@@ -20,9 +20,11 @@ showShare: true
 
 # menu: main
 
-featureImage: './devsignerslide1.jpg' # Top image on post.
-# thumbnail: './devsignerslide1.jpg' # Image in lists of posts.
-# shareImage: './share.jpg' # For SEO and social media snippets.
+featureImage: 'devsignerslide1.jpg' # Top image on post.
+# featureImageAlt: 'Description of image' # Alternative text for featured image.
+# featureImageCap: 'This is the featured image.' # Caption (optional).
+# thumbnail: 'thumbnail.jpg' # Image in lists of posts.
+# shareImage: 'share.jpg' # For SEO and social media snippets.
 
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
@@ -52,7 +54,7 @@ We're looking for folks to break out of their familiar meetup silos and apply th
 
 Tickets are [now on sale](https://web.archive.org/web/20140719090242/http://devsignercon.com/), and [session submissions are open](https://web.archive.org/web/20140719090242/http://devsignercon.com/) until this Friday, May 2!
 
-![Devsigner: Portland, OR, May 23--25](devsigner2014logo.png "the title")
+![Devsigner: Portland, OR, May 23--25](devsigner2014logo.png)
 
 ### Sessions will include things like:
 
