@@ -23,7 +23,7 @@ enableRobotsTXT = true
 # config/_default/menus/menu.xx.toml
 
 [permalinks]
-  posts = "/:year/:month/:slug/"
+  blog = "/blog/:year/:month/:slug/"
   page = "/:slug/"
 
 [taxonomies]
