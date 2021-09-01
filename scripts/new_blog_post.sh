@@ -66,7 +66,7 @@ main () {
     -e 's/[[:space:]]+/-/g');
 
   # Set paths
-  path="blog/${date_year}/${date_month}/${date_day}"
+  path="blog/${date_year}-${date_month}-${date_day}"
   fullpath="content/${path}/index.md"
 
   # Create the new post
