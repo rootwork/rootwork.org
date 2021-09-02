@@ -3,18 +3,6 @@
 @import 'rootwork_mixins';
 @import 'rootwork_variables';
 
-.color {
-  &_choice {
-    &::after {
-      background-image: url("/icons/sun.svg");
-
-      @include darkmode {
-        background-image: url("/icons/moon.svg");
-      }
-    }
-  }
-}
-
 .nav_header {
   @include darkmode {
     background-color: var(--bgdark);
@@ -57,6 +45,14 @@
 .color_choice.color_choice {
   background-color: var(--translucent-lighter);
   box-shadow: none;
+
+  &::after {
+    background-image: url("/icons/sun.svg");
+
+    @include darkmode {
+      background-image: url("/icons/moon.svg");
+    }
+  }
 }
 
 .button.button {

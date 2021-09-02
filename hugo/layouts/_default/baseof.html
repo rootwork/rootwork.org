@@ -5,7 +5,9 @@
 2. Adding preload tag for font (bold only):
 <link rel="preload" href="/fonts/source-sans-pro-v14-latin-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
-*/}}{{- $s := .Site.Params }}{{- $p := .Params }}<!DOCTYPE html><html lang="{{ .Lang }}" data-figures="{{ $p.figurePositionShow }}"{{ if .IsPage }} class="page"{{ end }}{{ if .IsHome }} class="home"{{ end }}{{ with $s.enforceLightMode }} data-mode="lit"{{ end }}{{ with $s.enforceDarkMode }} data-mode="dim"{{ end }}>
+3. Adding default `no-js` tag on <html>
+
+*/}}{{- $s := .Site.Params }}{{- $p := .Params }}<!DOCTYPE html><html lang="{{ .Lang }}" data-figures="{{ $p.figurePositionShow }}"{{ if .IsPage }} class="no-js page"{{ end }}{{ if .IsHome }} class="no-js home"{{ end }}{{ with $s.enforceLightMode }} data-mode="lit"{{ end }}{{ with $s.enforceDarkMode }} data-mode="dim"{{ end }}>
   <head>
     {{- partial "head" . }}
     {{- partial "fonts" . }}

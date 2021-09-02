@@ -1,9 +1,11 @@
 {{/*
 
-Adding 'title' attribute to checkbox.
+Rewriting to make more accessible.
 
 */}}
-<!-- toggle dark mode -->
 <div class="color_mode">
-  <input type="checkbox" class="color_choice" id="mode" title="Switch display mode">
+  <label class="color_mode-toggle" for="color-scheme-toggle-element" data-tip="Day/Night">
+    <span class="hidden-visually">Toggle between nighttime and daytime mode</span>
+    <input type="checkbox" role="switch" class="color_choice" id="mode">
+  </label>
 </div>

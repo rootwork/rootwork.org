@@ -113,6 +113,33 @@ h3 {
   }
 }
 
+// LIGHT MODE SWITCHER
+
+.color_mode {
+  position: relative;
+}
+
+.color_mode-toggle {
+  user-select: none;
+  cursor: pointer
+}
+
+html.no-js .color_mode {
+  display: none !important
+}
+
+.color_mode-toggle:hover::after,
+.color_mode-toggle:focus-within::after {
+  content: attr(data-tip);
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  right: 0;
+  padding: 0.25rem;
+  color: var(--haze);
+  background: var(--shadedark);
+  border-radius: 3px
+}
+
 // PAGE WRAPPER
 
 .content {
