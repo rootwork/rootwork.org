@@ -67,20 +67,58 @@ h3 {
 .nav_brand {
   min-height: 62px;
 
-  img {
+  &::after {
+    position: relative;
+    display: block;
+    content: '';
+    top: 40px;
+    margin-left: 40px;
+    width: 155px;
+    height: 3px;
+    background-color: transparent;
+  }
+
+  @include is-on {
+    &::after {
+      background-color: black;
+    }
+  }
+
+  @include darkmode {
+    @include is-on {
+      &::after {
+        background-color: white;
+      }
+    }
+  }
+
+  .logo {
     position: absolute;
     top: 0.15rem;
     mix-blend-mode: normal;
 
+    #logo_roots-1 { fill: var(--logo-roots) }
+    #logo_roots-2 { fill: var(--logo-roots) }
+    #logo_word-root { fill: var(--logo-word-root) }
+    #logo_word-work { fill: var(--logo-word-work) }
+    #logo_stem { fill: var(--logo-stem) }
+    #logo_leaf { fill: var(--logo-leaf) }
+
     @include is-on {
-      mix-blend-mode: multiply;
+      --logo-roots: #000;
+      --logo-word-root: #000;
+      --logo-word-work: #cf04b7;
+      --logo-stem: #cf04b7;
+      --logo-leaf: #fff;
     }
 
     @include darkmode {
-      mix-blend-mode: normal;
-
       @include is-on {
-        mix-blend-mode: screen;
+        --logo-roots: #0f0;
+        --logo-word-root: #0f0;
+        --logo-word-work: #fff;
+        --logo-stem: #fff;
+        --logo-leaf: #cf04b7;
       }
     }
   }
