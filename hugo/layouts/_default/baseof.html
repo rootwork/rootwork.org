@@ -7,9 +7,12 @@
 
 3. Adding default `no-js` tag on <html>
 
+4. Adding `strict-origin-when-cross-origin` referrer policy.
+
 */}}{{- $s := .Site.Params }}{{- $p := .Params }}<!DOCTYPE html><html lang="{{ .Lang }}" data-figures="{{ $p.figurePositionShow }}"{{ if .IsPage }} class="no-js page"{{ end }}{{ if .IsHome }} class="no-js home"{{ end }}{{ with $s.enforceLightMode }} data-mode="lit"{{ end }}{{ with $s.enforceDarkMode }} data-mode="dim"{{ end }}>
   <head>
     {{- partial "head" . }}
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     {{- partial "fonts" . }}
     <!-- styles definition-->
     {{- $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed" "enableSourceMap" "true") -}}
