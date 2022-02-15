@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Month on Rootwork.org</title>
+    <link>https://rootwork.org/month/</link>
+    <description>Recent content in Month on Rootwork.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 29 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://rootwork.org/month/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
