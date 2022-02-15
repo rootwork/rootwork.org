@@ -2,82 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://rootwork.github.io/rootwork.org/</loc>
+    <loc>/</loc>
     <lastmod>2021-08-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://rootwork.github.io/rootwork.org/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2021-08-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://rootwork.github.io/rootwork.org/privacy/</loc>
+    <loc>/privacy/</loc>
     <lastmod>2021-08-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://rootwork.github.io/rootwork.org/blog/</loc>
+    <loc>/blog/</loc>
     <lastmod>2021-08-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://rootwork.github.io/rootwork.org/blog/2014/</loc>
+    <loc>/blog/2014/</loc>
     <lastmod>2014-04-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://rootwork.github.io/rootwork.org/blog/2014/04/</loc>
+    <loc>/blog/2014/04/</loc>
     <lastmod>2014-04-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://rootwork.github.io/rootwork.org/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2014-04-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://rootwork.github.io/rootwork.org/tags/devsigner/</loc>
+    <loc>/tags/devsigner/</loc>
     <lastmod>2014-04-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://rootwork.github.io/rootwork.org/tags/drupal/</loc>
+    <loc>/tags/drupal/</loc>
     <lastmod>2014-04-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://rootwork.github.io/rootwork.org/categories/frontend-development/</loc>
+    <loc>/categories/frontend-development/</loc>
     <lastmod>2014-04-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://rootwork.github.io/rootwork.org/blog/2014/04/join-me-devsigner-conference-portland-may-designers-developers-join-forces/</loc>
+    <loc>/blog/2014/04/join-me-devsigner-conference-portland-may-designers-developers-join-forces/</loc>
     <lastmod>2014-04-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://rootwork.github.io/rootwork.org/month/</loc>
+    <loc>/month/</loc>
     <lastmod>2014-04-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://rootwork.github.io/rootwork.org/categories/planet-drupal/</loc>
+    <loc>/categories/planet-drupal/</loc>
     <lastmod>2014-04-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://rootwork.github.io/rootwork.org/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2014-04-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://rootwork.github.io/rootwork.org/year/</loc>
+    <loc>/year/</loc>
     <lastmod>2014-04-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://rootwork.github.io/rootwork.org/series/</loc>
+    <loc>/series/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
