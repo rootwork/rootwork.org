@@ -88,9 +88,7 @@ Custom styles can be added using the `_custom.scss` file within `assets`. Use
 
 ### Updating the theme
 
-Use `git submodule foreach git pull origin master` to pull in upstream changes.
-If that errors, you can also try `git submodule update --init --recursive`. Note
-that there's no real guarantee this won't break things in the theme!
+See [updating dependencies](https://github.com/rootwork/rootwork.org#updating-dependencies).
 
 # Generating the site for production
 
@@ -146,6 +144,11 @@ version](https://gist.github.com/nikhita/432436d570b89cab172dcf2894465753)
 - Check version: `hugo version`
 - `sudo rm -rf /usr/local/bin/hugo`
 - Reinstall following the instructions above.
+
+## Theme
+
+Use `git submodule foreach git pull origin master` and/or `git submodule foreach git pull origin main` as necessary to pull in upstream changes. Note
+that there's no real guarantee this won't break things in the theme!
 
 # Licenses
 
