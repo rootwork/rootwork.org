@@ -6,7 +6,6 @@ footnoteReturnLinkContents = "^"
 
 [privacy.disqus]
 disable = true
-disable = true
 
 [privacy.googleAnalytics]
 anonymizeIP = true
