@@ -7,16 +7,38 @@
     "i": "./scripts/image_optimize.sh",
     "n": "./scripts/new_blog_post.sh",
     "p": "./scripts/production_build.sh",
-    "s": "./scripts/server_start.sh"
+    "s": "./scripts/server_start.sh",
+    "start": "npm run s",
+    "prod": "npm run p",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "npx prettier -w .",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rootwork/rootwork.org.git"
   },
   "author": "Ivan Boothe",
-  "license": "GPL-3.0-or-later",
+  "license": "AGPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/rootwork/rootwork.org/issues"
   },
-  "homepage": "https://github.com/rootwork/rootwork.org#readme"
+  "homepage": "https://github.com/rootwork/rootwork.org#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/register": "^7.16.9",
+    "babel": "^6.23.0",
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^7.0.4",
+    "prettier": "^2.5.1",
+    "pretty-quick": "^3.1.3"
+  }
 }
