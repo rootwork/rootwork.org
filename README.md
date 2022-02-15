@@ -21,8 +21,8 @@ and
 * [Local development](#local-development)
    * [Creating a new post](#creating-a-new-post)
    * [Editing site variables](#editing-site-variables)
+   * [Hugo modules](#hugo-modules)
    * [Editing the theme](#editing-the-theme)
-      * [Updating the theme](#updating-the-theme)
 * [Generating the site for production](#generating-the-site-for-production)
 * [Fresh installation](#fresh-installation)
    * [Go](#go)
@@ -32,10 +32,9 @@ and
 * [Updating dependencies](#updating-dependencies)
    * [Go](#go-1)
    * [Hugo](#hugo-1)
-   * [Theme](#theme)
 * [Licenses](#licenses)
 
-<!-- Added by: runner, at: Tue Feb 15 05:09:17 UTC 2022 -->
+<!-- Added by: runner, at: Tue Feb 15 05:30:41 UTC 2022 -->
 
 <!--te-->
 
