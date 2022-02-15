@@ -27,6 +27,6 @@ jobs:
       env:
         REPO: self
         BRANCH: gh-pages # Branch name where you want to push the built site.
-        FOLDER: hugo/public # Directory where the site is built.
+        FOLDER: ./hugo/public # Directory where the site is built.
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Automatically generated.
         MESSAGE: 'Build: ({sha}) {msg}' # The commit message.
