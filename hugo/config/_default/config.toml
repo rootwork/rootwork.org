@@ -4,7 +4,10 @@ baseurl = "/" # Include trailing slash
 title = "Rootwork.org"
 author = "Ivan Boothe" # Also set in [params.author]; defined here for safety
 
-theme = "hugo-clarity"
+[module]
+  [[module.imports]]
+    # project theme
+    path = "github.com/chipzoller/hugo-clarity"
 
 DefaultContentLanguage = "en"
 # [languages]
