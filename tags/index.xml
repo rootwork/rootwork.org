@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Rootwork.org</title>
-    <link>https://rootwork.org/tags/</link>
+    <link>https://rootwork.github.io/rootwork.org/tags/</link>
     <description>Recent content in Tags on Rootwork.org</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 29 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://rootwork.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://rootwork.github.io/rootwork.org/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
