@@ -28,12 +28,13 @@ and
    * [Go](#go)
    * [Hugo](#hugo)
    * [This repo](#this-repo)
+   * [Node/npm](#nodenpm)
 * [Updating dependencies](#updating-dependencies)
    * [Go](#go-1)
    * [Hugo](#hugo-1)
 * [Licenses](#licenses)
 
-<!-- Added by: runner, at: Tue Feb 15 03:24:30 UTC 2022 -->
+<!-- Added by: runner, at: Tue Feb 15 03:42:35 UTC 2022 -->
 
 <!--te-->
 
