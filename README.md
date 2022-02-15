@@ -153,6 +153,6 @@ The theme Rootwork.org uses, Hugo Clarity, is licensed under the
 
 Modifications to the theme, as well as the files in the `scripts` directory,
 are licensed under the
-[GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.txt), as
+[GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.txt), as
 noted in the general project
 [LICENSE](https://github.com/rootwork/rootwork.org/blob/master/LICENSE) file.
