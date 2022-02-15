@@ -15,6 +15,7 @@ Currently [Rootwork.org](https://rootwork.org) has a [temporary landing page](ht
   this section. -->
 
 <!--ts-->
+* [Rootwork.org publishing system](#rootworkorg-publishing-system)
 * [Local development](#local-development)
    * [Creating a new post](#creating-a-new-post)
    * [Editing site variables](#editing-site-variables)
@@ -30,7 +31,7 @@ Currently [Rootwork.org](https://rootwork.org) has a [temporary landing page](ht
    * [Hugo](#hugo-1)
 * [Licenses](#licenses)
 
-<!-- Added by: runner, at: Tue Feb 15 03:07:08 UTC 2022 -->
+<!-- Added by: runner, at: Tue Feb 15 03:22:23 UTC 2022 -->
 
 <!--te-->
 
