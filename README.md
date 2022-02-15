@@ -74,11 +74,20 @@ You can find text strings and other variables in several places:
 - `hugo/config/_default/markup.toml` (settings for Hugo's markup highlighter)
 - `hugo/config/_default/params.toml` (other site parameters used in the theme)
 
+## Hugo modules
+
+The site imports components like the theme as [Hugo modules](https://gohugo.io/hugo-modules/) rather than as git submodules (as in the past). More information about this approach:
+
+- [Master Hugo Modules: Managing Themes as Modules](https://www.hugofordevelopers.com/articles/master-hugo-modules-managing-themes-as-modules/)
+- [How to add a theme using modules (for beginners)](https://discourse.gohugo.io/t/how-to-add-a-theme-using-modules-for-beginners/20665)
+- [Hugo modules for “dummies”](https://discourse.gohugo.io/t/hugo-modules-for-dummies/20758)
+
+The `go.mod` file is in the `hugo` directory of the repository, and modules are loaded in `hugo/config/_default/config.toml`.
+
 ## Editing the theme
 
 Customizing a theme is done by [overriding theme
-files](https://gohugobrasil.netlify.app/themes/customizing/). Don't edit the
-files in `themes` directly, as they're stored with git submodules.
+files](https://gohugobrasil.netlify.app/themes/customizing/). Because themes are loaded dynamically using Hugo modules, go to the themes' original repos to see what files to override and their initial content.
 
 Add notes at the top of any overridden files using Go comments (`{{/* */}}`) to
 note what has been changed -- this vastly eases integrating new changes to the
@@ -86,10 +95,6 @@ overridden files from upstream.
 
 Custom styles can be added using the `_custom.scss` file within `assets`. Use
 `_override.scss` to change the theme's variables located in `_variables.sass`.
-
-### Updating the theme
-
-See [updating dependencies](https://github.com/rootwork/rootwork.org#updating-dependencies).
 
 # Generating the site for production
 
@@ -126,7 +131,6 @@ channel](https://gohugo.io/getting-started/installing#debian-and-ubuntu).
 
 - `git clone git@github.com:rootwork/rootwork.org.git`
 - `cd rootwork.org`
-- `git submodule update --init --recursive`
 
 ## Node/npm
 
@@ -145,11 +149,6 @@ version](https://gist.github.com/nikhita/432436d570b89cab172dcf2894465753)
 - Check version: `hugo version`
 - `sudo rm -rf /usr/local/bin/hugo`
 - Reinstall following the instructions above.
-
-## Theme
-
-Use `git submodule foreach git pull origin master` and/or `git submodule foreach git pull origin main` as necessary to pull in upstream changes. Note
-that there's no real guarantee this won't break things in the theme!
 
 # Licenses
 
