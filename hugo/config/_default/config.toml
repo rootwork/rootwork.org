@@ -1,10 +1,10 @@
 # set `baseurl` to your root domain
 # if you set it to "/" share icons won't work properly on production
-baseurl = "/"  # Include trailing slash
+baseurl = "/" # Include trailing slash
 title = "Rootwork.org"
 author = "Ivan Boothe" # Also set in [params.author]; defined here for safety
 
-theme = "rootwork-hugo-clarity"
+theme = "hugo-clarity"
 
 DefaultContentLanguage = "en"
 # [languages]
