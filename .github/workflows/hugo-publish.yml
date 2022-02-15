@@ -22,8 +22,11 @@ jobs:
           hugo-version: 'latest'
     - name: Build
       run: npm run p
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./hugo/public
+    - name: Publish to the GitHub Pages branch
+      uses: s0/git-publish-subdir-action@develop
+      env:
+        REPO: self
+        BRANCH: gh-pages # Branch name where you want to push the built site.
+        FOLDER: hugo/public # Directory where the site is built.
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Automatically generated.
+        MESSAGE: 'Build: ({sha}) {msg}' # The commit message.
