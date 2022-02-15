@@ -24,7 +24,7 @@ jobs:
       run: |
         npm run p
         ls
-        cd hugo/public
+        cd hugo
         ls
     # - name: Publish to the GitHub Pages branch
     #   uses: s0/git-publish-subdir-action@develop
