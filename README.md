@@ -18,25 +18,24 @@ of habit, but could be run directly) to [create a post](#creating-a-new-post),
   this section. -->
 
 <!--ts-->
+* [Rootwork.org publishing system](#rootworkorg-publishing-system)
+* [Local development](#local-development)
+   * [Creating a new post](#creating-a-new-post)
+   * [Editing site variables](#editing-site-variables)
+   * [Hugo modules](#hugo-modules)
+   * [Editing the theme](#editing-the-theme)
+* [Generating the site for production](#generating-the-site-for-production)
+* [Fresh installation](#fresh-installation)
+   * [Go](#go)
+   * [Hugo](#hugo)
+   * [This repo](#this-repo)
+   * [Node/npm](#nodenpm)
+* [Updating dependencies](#updating-dependencies)
+   * [Go](#go-1)
+   * [Hugo](#hugo-1)
+* [Licenses](#licenses)
 
-- [Rootwork.org publishing system](#rootworkorg-publishing-system)
-- [Local development](#local-development)
-  - [Creating a new post](#creating-a-new-post)
-  - [Editing site variables](#editing-site-variables)
-  - [Hugo modules](#hugo-modules)
-  - [Editing the theme](#editing-the-theme)
-- [Generating the site for production](#generating-the-site-for-production)
-- [Fresh installation](#fresh-installation)
-  - [Go](#go)
-  - [Hugo](#hugo)
-  - [This repo](#this-repo)
-  - [Node/npm](#nodenpm)
-- [Updating dependencies](#updating-dependencies)
-  - [Go](#go-1)
-  - [Hugo](#hugo-1)
-- [Licenses](#licenses)
-
-<!-- Added by: runner, at: Tue Feb 15 05:30:41 UTC 2022 -->
+<!-- Added by: runner, at: Tue Feb 15 06:04:30 UTC 2022 -->
 
 <!--te-->
 
