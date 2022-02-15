@@ -128,6 +128,10 @@ channel](https://gohugo.io/getting-started/installing#debian-and-ubuntu).
 - `cd rootwork.org`
 - `git submodule update --init --recursive`
 
+## Node/npm
+
+At the moment we're really only using npm to kick off Bash scripts, so no installation (beyond having Node and npm installed) is necessary.
+
 # Updating dependencies
 
 ## Go
