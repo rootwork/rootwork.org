@@ -32,9 +32,10 @@ and
 * [Updating dependencies](#updating-dependencies)
    * [Go](#go-1)
    * [Hugo](#hugo-1)
+   * [Theme](#theme)
 * [Licenses](#licenses)
 
-<!-- Added by: runner, at: Tue Feb 15 03:42:35 UTC 2022 -->
+<!-- Added by: runner, at: Tue Feb 15 05:09:17 UTC 2022 -->
 
 <!--te-->
 
