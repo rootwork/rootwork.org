@@ -6,6 +6,10 @@ out of habit, but could be run directly) to
 and
 [generate a production copy of the site](#generating-the-site-for-production).
 
+# Rootwork.org publishing system
+
+Currently [Rootwork.org](https://rootwork.org) has a [temporary landing page](https://github.com/rootwork/rootwork_landing); this publishing system will replace it once it's ready.
+
 <!-- The following section, from "ts" to "te", is an automatically-generated
   table of contents, updated whenever this file changes. Do not edit within
   this section. -->
