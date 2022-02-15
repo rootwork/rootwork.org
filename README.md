@@ -1,15 +1,16 @@
 # Rootwork.org publishing system
 
-Currently [Rootwork.org](https://rootwork.org) has a [temporary landing page](https://github.com/rootwork/rootwork_landing); this publishing system will replace it once it's ready.
+Currently [Rootwork.org](https://rootwork.org) has a
+[temporary landing page](https://github.com/rootwork/rootwork_landing); this
+publishing system will replace it once it's ready.
 
 ---
 
 Rootwork is created with the static site generator [Hugo](http://gohugo.io)
 using the [Hugo Clarity](https://github.com/chipzoller/hugo-clarity) theme with
-customizations. I also have some Bash scripts (that I usually run with `npm`
-out of habit, but could be run directly) to
-[create a post](#creating-a-new-post), [start the server](#local-development)
-and
+customizations. I also have some Bash scripts (that I usually run with `npm` out
+of habit, but could be run directly) to [create a post](#creating-a-new-post),
+[start the server](#local-development) and
 [generate a production copy of the site](#generating-the-site-for-production).
 
 <!-- The following section, from "ts" to "te", is an automatically-generated
@@ -17,22 +18,23 @@ and
   this section. -->
 
 <!--ts-->
-* [Rootwork.org publishing system](#rootworkorg-publishing-system)
-* [Local development](#local-development)
-   * [Creating a new post](#creating-a-new-post)
-   * [Editing site variables](#editing-site-variables)
-   * [Hugo modules](#hugo-modules)
-   * [Editing the theme](#editing-the-theme)
-* [Generating the site for production](#generating-the-site-for-production)
-* [Fresh installation](#fresh-installation)
-   * [Go](#go)
-   * [Hugo](#hugo)
-   * [This repo](#this-repo)
-   * [Node/npm](#nodenpm)
-* [Updating dependencies](#updating-dependencies)
-   * [Go](#go-1)
-   * [Hugo](#hugo-1)
-* [Licenses](#licenses)
+
+- [Rootwork.org publishing system](#rootworkorg-publishing-system)
+- [Local development](#local-development)
+  - [Creating a new post](#creating-a-new-post)
+  - [Editing site variables](#editing-site-variables)
+  - [Hugo modules](#hugo-modules)
+  - [Editing the theme](#editing-the-theme)
+- [Generating the site for production](#generating-the-site-for-production)
+- [Fresh installation](#fresh-installation)
+  - [Go](#go)
+  - [Hugo](#hugo)
+  - [This repo](#this-repo)
+  - [Node/npm](#nodenpm)
+- [Updating dependencies](#updating-dependencies)
+  - [Go](#go-1)
+  - [Hugo](#hugo-1)
+- [Licenses](#licenses)
 
 <!-- Added by: runner, at: Tue Feb 15 05:30:41 UTC 2022 -->
 
@@ -42,7 +44,8 @@ and
 
 `npm run s` or `./scripts/server_start.sh`
 
-The web browser will automatically open to [http://localhost:1313/](http://localhost:1313/); hit refresh to load the site.
+The web browser will automatically open to
+[http://localhost:1313/](http://localhost:1313/); hit refresh to load the site.
 
 By default Hugo will run with fastRender **on** and buildDrafts **off**. You can
 use the flags `-s` and `-d` to change this. For details, run `npm run s -- -h`.
@@ -56,8 +59,11 @@ This script will:
 - Ask you for a title
 - Ask you for a date (defaults to today)
 - Create an appropriate slug
-- Create [taxonomy year and month files](https://www.jayeless.net/2021/04/taxonomies-archive-hugo.html), if necessary (cf. https://github.com/gohugoio/hugo/issues/448 )
-- Create the necessary Markdown file, with sane defaults, at the appropriate directory/file location
+- Create
+  [taxonomy year and month files](https://www.jayeless.net/2021/04/taxonomies-archive-hugo.html),
+  if necessary (cf. https://github.com/gohugoio/hugo/issues/448 )
+- Create the necessary Markdown file, with sane defaults, at the appropriate
+  directory/file location
 - Open the file in Sublime
 
 It does much more than just `hugo new ...`.
@@ -75,18 +81,23 @@ You can find text strings and other variables in several places:
 
 ## Hugo modules
 
-The site imports components like the theme as [Hugo modules](https://gohugo.io/hugo-modules/) rather than as git submodules (as in the past). More information about this approach:
+The site imports components like the theme as
+[Hugo modules](https://gohugo.io/hugo-modules/) rather than as git submodules
+(as in the past). More information about this approach:
 
 - [Master Hugo Modules: Managing Themes as Modules](https://www.hugofordevelopers.com/articles/master-hugo-modules-managing-themes-as-modules/)
 - [How to add a theme using modules (for beginners)](https://discourse.gohugo.io/t/how-to-add-a-theme-using-modules-for-beginners/20665)
 - [Hugo modules for “dummies”](https://discourse.gohugo.io/t/hugo-modules-for-dummies/20758)
 
-The `go.mod` file is in the `hugo` directory of the repository, and modules are loaded in `hugo/config/_default/config.toml`.
+The `go.mod` file is in the `hugo` directory of the repository, and modules are
+loaded in `hugo/config/_default/config.toml`.
 
 ## Editing the theme
 
-Customizing a theme is done by [overriding theme
-files](https://gohugobrasil.netlify.app/themes/customizing/). Because themes are loaded dynamically using Hugo modules, go to the themes' original repos to see what files to override and their initial content.
+Customizing a theme is done by
+[overriding theme files](https://gohugobrasil.netlify.app/themes/customizing/).
+Because themes are loaded dynamically using Hugo modules, go to the themes'
+original repos to see what files to override and their initial content.
 
 Add notes at the top of any overridden files using Go comments (`{{/* */}}`) to
 note what has been changed -- this vastly eases integrating new changes to the
@@ -99,7 +110,8 @@ Custom styles can be added using the `_custom.scss` file within `assets`. Use
 
 `npm run p` or `./scripts/production_build.sh`
 
-All content images will be optimized, and modern `.webp` and `.avif` images will be created.
+All content images will be optimized, and modern `.webp` and `.avif` images will
+be created.
 
 The `public` directory, if it exists, will be removed to ensure that no outdated
 files are present, and then the static site will be re-generated in `public`.
@@ -108,8 +120,8 @@ Note that `public` is excluded from the repo in `.gitignore`, so this command
 should be run from a GitHub Action to generate the site online.
 
 By default, Hugo's minification is turned on. This can be
-[fine-tuned in configuration](https://gohugo.io/getting-started/configuration/#configure-minify). If you wish to disable it completely, use
-`npm run p -- -m` instead.
+[fine-tuned in configuration](https://gohugo.io/getting-started/configuration/#configure-minify).
+If you wish to disable it completely, use `npm run p -- -m` instead.
 
 # Fresh installation
 
@@ -119,11 +131,11 @@ By default, Hugo's minification is turned on. This can be
 
 ## Hugo
 
-- Get the `hugo_extended_VERSION_OS-64bit.*` [package from GitHub
-releases](https://github.com/gohugoio/hugo/releases) (e.g.
-`hugo_extended_0.81.0_Linux-64bit.deb`). On Debian-based Linux systems, ignore
-the alert that [an older package is available in the
-channel](https://gohugo.io/getting-started/installing#debian-and-ubuntu).
+- Get the `hugo_extended_VERSION_OS-64bit.*`
+  [package from GitHub releases](https://github.com/gohugoio/hugo/releases)
+  (e.g. `hugo_extended_0.81.0_Linux-64bit.deb`). On Debian-based Linux systems,
+  ignore the alert that
+  [an older package is available in the channel](https://gohugo.io/getting-started/installing#debian-and-ubuntu).
 - Install the package, which will place it in `/usr/local/bin/hugo`.
 
 ## This repo
@@ -133,15 +145,16 @@ channel](https://gohugo.io/getting-started/installing#debian-and-ubuntu).
 
 ## Node/npm
 
-At the moment we're really only using npm to kick off Bash scripts, so no installation (beyond having Node and npm installed) is necessary.
+`npm i`
+
+Tested with Node 16.x and npm 8.x.
 
 # Updating dependencies
 
 ## Go
 
 - Check version: `go version`
-- [Remove old version and install new
-version](https://gist.github.com/nikhita/432436d570b89cab172dcf2894465753)
+- [Remove old version and install new version](https://gist.github.com/nikhita/432436d570b89cab172dcf2894465753)
 
 ## Hugo
 
@@ -154,8 +167,7 @@ version](https://gist.github.com/nikhita/432436d570b89cab172dcf2894465753)
 The content of the site, contained in the Markdown files in the `hugo/content`
 directory and its subdirectories **only**, is [licensed](hugo/content/LICENSE)
 under the
-[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
-License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 Images or other media in these directories may have different copyright and
 licensing statuses.
 
@@ -165,8 +177,8 @@ Hugo itself is licensed as
 The theme Rootwork.org uses, Hugo Clarity, is licensed under the
 [MIT license](https://github.com/chipzoller/hugo-clarity/blob/master/LICENSE.md).
 
-Modifications to the theme, as well as the files in the `scripts` directory,
-are licensed under the
-[GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.txt), as
-noted in the general project
+Modifications to the theme, as well as the files in the `scripts` directory, are
+licensed under the
+[GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.txt),
+as noted in the general project
 [LICENSE](https://github.com/rootwork/rootwork.org/blob/master/LICENSE) file.
