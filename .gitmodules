@@ -1,6 +1,0 @@
-[submodule "hugo/themes/hugo-clarity"]
-	path = hugo/themes/hugo-clarity
-	url = https://github.com/chipzoller/hugo-clarity
-[submodule "hugo/themes/rootwork-hugo-clarity"]
-	path = hugo/themes/rootwork-hugo-clarity
-	url = https://github.com/rootwork/hugo-clarity.git
