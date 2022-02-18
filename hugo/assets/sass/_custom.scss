@@ -5,23 +5,28 @@
 
 // HIDING THINGS //
 
-.hidden-all { // Removes from the DOM
+.hidden-all {
+  // Removes from the DOM
   @include hidden-all;
 }
 
-.hidden-invisible { // Retains the space of the element; good for transitions
+.hidden-invisible {
+  // Retains the space of the element; good for transitions
   @include hidden-invisible;
 }
 
-.hidden-offscreen { // Moves visible element off-screen; good for transitions
+.hidden-offscreen {
+  // Moves visible element off-screen; good for transitions
   @include hidden-offscreen;
 }
 
-.hidden-visually { // Hides from sighted users, but present in markup for assistive technology
+.hidden-visually {
+  // Hides from sighted users, but present in markup for assistive technology
   @include hidden-visually;
 }
 
-.hidden-screenreader { // Visible to sighted users, but hidden from assistive technology (e.g. decoration)
+.hidden-screenreader {
+  // Visible to sighted users, but hidden from assistive technology (e.g. decoration)
   // Use aria-hidden="true" on the element.
 }
 
@@ -37,7 +42,8 @@ h3 {
   font-weight: 800;
 }
 
-.list_title { // Page titles, when they appear on a list (like archives)
+.list_title {
+  // Page titles, when they appear on a list (like archives)
   // grid-column-end: span 2;
 }
 
@@ -76,18 +82,20 @@ h3 {
     width: 155px;
     height: 3px;
     background-color: transparent;
+    transition: background-color;
+    transition-duration: 500ms;
   }
 
   @include is-on {
     &::after {
-      background-color: black;
+      background-color: rgba(black, 0.75);
     }
   }
 
   @include darkmode {
     @include is-on {
       &::after {
-        background-color: white;
+        background-color: rgba(white, 0.75);
       }
     }
   }
@@ -97,28 +105,36 @@ h3 {
     top: 0.15rem;
     mix-blend-mode: normal;
 
-    #logo_roots-1 { fill: var(--logo-roots) }
-    #logo_roots-2 { fill: var(--logo-roots) }
-    #logo_word-root { fill: var(--logo-word-root) }
-    #logo_word-work { fill: var(--logo-word-work) }
-    #logo_stem { fill: var(--logo-stem) }
-    #logo_leaf { fill: var(--logo-leaf) }
+    #logo_roots-1 {
+      fill: var(--logo-roots);
+    }
+    #logo_roots-2 {
+      fill: var(--logo-roots);
+    }
+    #logo_word-root {
+      fill: var(--logo-word-root);
+    }
+    #logo_word-work {
+      fill: var(--logo-word-work);
+    }
+    #logo_stem {
+      fill: var(--logo-stem);
+    }
+    #logo_leaf {
+      fill: var(--logo-leaf);
+    }
 
     @include is-on {
-      --logo-roots: #000;
-      --logo-word-root: #000;
-      --logo-word-work: #cf04b7;
-      --logo-stem: #cf04b7;
-      --logo-leaf: #fff;
+      #logo_full {
+        filter: url(#glow);
+      }
     }
 
     @include darkmode {
       @include is-on {
-        --logo-roots: #0f0;
-        --logo-word-root: #0f0;
-        --logo-word-work: #fff;
-        --logo-stem: #fff;
-        --logo-leaf: #cf04b7;
+        #logo_full {
+          filter: url(#glow);
+        }
       }
     }
   }
@@ -159,11 +175,11 @@ h3 {
 
 .color_mode-toggle {
   user-select: none;
-  cursor: pointer
+  cursor: pointer;
 }
 
 html.no-js .color_mode {
-  display: none !important
+  display: none !important;
 }
 
 .color_mode-toggle:hover::after,
@@ -175,7 +191,7 @@ html.no-js .color_mode {
   padding: 0.25rem;
   color: var(--haze);
   background: var(--shadedark);
-  border-radius: 3px
+  border-radius: 3px;
 }
 
 // PAGE WRAPPER
@@ -213,7 +229,8 @@ html.no-js .color_mode {
   }
 }
 
-.post_content { // includes title, byline, featured image, etc.
+.post_content {
+  // includes title, byline, featured image, etc.
   .post_meta {
     margin: 1rem 0 1rem;
     padding: 1rem 0.5rem;
@@ -226,7 +243,8 @@ html.no-js .color_mode {
     }
   }
 
-  .image_featured { // Featured images that are too small for full width should be left-aligned, not centered.
+  .image_featured {
+    // Featured images that are too small for full width should be left-aligned, not centered.
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
@@ -246,7 +264,6 @@ html.no-js .color_mode {
 
 .post_meta {
   margin: 0 -0.5rem;
-
 
   > .icon {
     margin-top: 0.25rem;
@@ -289,7 +306,8 @@ html.no-js .color_mode {
   margin-top: 0;
 }
 
-.post_body { // body text only
+.post_body {
+  // body text only
   line-height: 1.5;
 
   a {
@@ -350,7 +368,8 @@ code.noClass {
   }
 }
 
-.cp, .cpf {
+.cp,
+.cpf {
   color: lighten(#cd2828, 20%);
 }
 
