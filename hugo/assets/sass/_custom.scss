@@ -41,6 +41,13 @@ h3 {
   // grid-column-end: span 2;
 }
 
+// LINKS //
+
+a {
+  transition: color background-color opacity text-decoration border-bottom-width;
+  transition-duration: 500ms;
+}
+
 // NAVIGATION //
 
 .nav_header {
