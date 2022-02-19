@@ -126,7 +126,7 @@ h3 {
       transition-timing-function: ease-in-out;
     }
   
-    &:hover {
+    @include is-on {
       .roots {
         transform: scale3d(1, 1.25, 1) rotate(0.0001deg);
       }
@@ -166,7 +166,7 @@ h3 {
       }
   
       #logo_line {
-        fill: var(--pale-green);
+        fill: $thememed;
         width: 162px;
       }
     }
