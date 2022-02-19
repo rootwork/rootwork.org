@@ -11,23 +11,33 @@ $logo-height: 125px;
 $logo-descender-width: 75px;
 $logo-descender-height: 75px;
 
+$color: ( 
+  brown: #80311a,
+  dark-brown: #5e1b07,
+  green: #04800e,
+  light-green: #4a0,
+  pale-green: #afa,
+);
+
+:root {
+  --brown: #{map-get($color, brown)};
+  --dark-brown: #{map-get($color, dark-brown)};
+  --green: #{map-get($color, green)};
+  --light-green: #{map-get($color, light-green)};
+  --pale-green: #{map-get($color, pale-green)};
+}
+
 html {
   --theme: #00b877;
   --themedark: #008544;
   --bg: #002714;
   --bgdark: #003825;
-  --brown: #80502c;
   --dark: #333;
   --translucent-lighter: rgba(255,255,255,0.25);
   --shade: rgba(0,0,0,0.25);
   --shadedark: rgba(0,0,0,0.8);
   --post-bg: var(--haze);
   --choice-bg: var(--light);
-  --logo-roots: #80311a;
-  --logo-word-root: #80311a;
-  --logo-word-work: #04800e;
-  --logo-stem: #04800e;
-  --logo-leaf: #04800e;
   --font: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
   @include darkmode {

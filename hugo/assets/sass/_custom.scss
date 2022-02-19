@@ -67,61 +67,110 @@ h3 {
 .nav_brand {
   min-height: 62px;
 
-  &::after {
-    position: relative;
-    display: block;
-    content: '';
-    top: 40px;
-    margin-left: 40px;
-    width: 155px;
-    height: 3px;
-    background-color: transparent;
-  }
-
-  @include is-on {
-    &::after {
-      background-color: black;
-    }
-  }
-
-  @include darkmode {
-    @include is-on {
-      &::after {
-        background-color: white;
-      }
-    }
-  }
-
   .logo {
     position: absolute;
-    top: 0.15rem;
-    mix-blend-mode: normal;
-
-    #logo_roots-1 { fill: var(--logo-roots) }
-    #logo_roots-2 { fill: var(--logo-roots) }
-    #logo_word-root { fill: var(--logo-word-root) }
-    #logo_word-work { fill: var(--logo-word-work) }
-    #logo_stem { fill: var(--logo-stem) }
-    #logo_leaf { fill: var(--logo-leaf) }
-
-    @include is-on {
-      --logo-roots: #000;
-      --logo-word-root: #000;
-      --logo-word-work: #cf04b7;
-      --logo-stem: #cf04b7;
-      --logo-leaf: #fff;
+    top: 0.5rem;
+    overflow: visible;
+  
+    #logo_roots-1 {
+      fill: var(--brown);
     }
-
-    @include darkmode {
-      @include is-on {
-        --logo-roots: #0f0;
-        --logo-word-root: #0f0;
-        --logo-word-work: #fff;
-        --logo-stem: #fff;
-        --logo-leaf: #cf04b7;
+  
+    #logo_roots-2,
+    #logo_roots-3 {
+      fill: transparent;
+    }
+  
+    #logo_word-root {
+      fill: var(--brown);
+    }
+  
+    #logo_word-work {
+      fill: var(--green);
+    }
+  
+    #logo_stem {
+      fill: var(--green);
+    }
+  
+    .leaf {
+      fill: var(--light-green);
+    }
+  
+    .roots {
+      transition: transform fill;
+      transform-origin: 50% 50%;
+      transition-duration: 750ms;
+    }
+  
+    #logo_roots {
+      fill: var(--brown);
+    }
+  
+    #logo_roots-low,
+    #logo_roots-low-2 {
+      fill: transparent;
+    }
+  
+    .leaf {
+      padding-top: 25px;
+      transition: transform fill;
+      transform-origin: 50% 15%;
+      transition-duration: 750ms;
+    }
+  
+    #logo_line {
+      width: 0;
+      transition: fill width;
+      transition-duration: 500ms;
+      transition-timing-function: ease-in-out;
+    }
+  
+    &:hover {
+      .roots {
+        transform: scale3d(1, 1.25, 1) rotate(0.0001deg);
+      }
+  
+      #logo_roots-low,
+      #logo_roots-low-2 {
+        fill: var(--dark-brown);
+      }
+  
+      #logo_roots-low-2 {
+        transform: skewX(-3deg);
+      }
+  
+      #logo_leaf {
+        fill: yellow;
+        transform: scale(0.6) rotate(-30deg);
+      }
+  
+      #logo_leaf-2 {
+        fill: yellow;
+        transform: scale(0.6) translate(5px, -5px) rotate(2.5deg);
+      }
+  
+      #logo_leaf-3 {
+        fill: deepPink;
+        transform: scale(0.8) rotate(-17.5deg);
+      }
+  
+      #logo_leaf-4 {
+        fill: deepPink;
+        transform: rotate(10deg);
+      }
+  
+      #logo_leaf-5 {
+        fill: deepPink;
+        transform: scaleX(-1) translate(-8px, 3px) rotate(-40deg);
+      }
+  
+      #logo_line {
+        fill: var(--pale-green);
+        width: 162px;
       }
     }
-  }
+  }  
 }
 
 .nav_body {
