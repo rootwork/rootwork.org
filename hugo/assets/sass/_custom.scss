@@ -197,9 +197,13 @@ a {
 
 .follow a {
   opacity: 0.8;
+  transition: transform;
+  transition-duration: 1s;
 
   @include is-on {
     opacity: 1;
+    transform-origin: 50% 50%;
+    transform: rotate(360deg);
   }
 
   .jsopen & {
