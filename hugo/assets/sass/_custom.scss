@@ -47,6 +47,13 @@ h3 {
   // grid-column-end: span 2;
 }
 
+// LINKS //
+
+a {
+  transition: color background-color opacity text-decoration border-bottom-width;
+  transition-duration: 500ms;
+}
+
 // NAVIGATION //
 
 .nav_header {
@@ -73,68 +80,107 @@ h3 {
 .nav_brand {
   min-height: 62px;
 
-  &::after {
-    position: relative;
-    display: block;
-    content: '';
-    top: 40px;
-    margin-left: 40px;
-    width: 155px;
-    height: 3px;
-    background-color: transparent;
-    transition: background-color;
-    transition-duration: 500ms;
-  }
-
-  @include is-on {
-    &::after {
-      background-color: rgba(black, 0.75);
-    }
-  }
-
-  @include darkmode {
-    @include is-on {
-      &::after {
-        background-color: rgba(white, 0.75);
-      }
-    }
-  }
-
   .logo {
     position: absolute;
-    top: 0.15rem;
-    mix-blend-mode: normal;
+    top: 0.5rem;
+    overflow: visible;
 
     #logo_roots-1 {
-      fill: var(--logo-roots);
+      fill: var(--brown);
     }
-    #logo_roots-2 {
-      fill: var(--logo-roots);
+
+    #logo_roots-2,
+    #logo_roots-3 {
+      fill: transparent;
     }
+
     #logo_word-root {
-      fill: var(--logo-word-root);
+      fill: var(--brown);
     }
+
     #logo_word-work {
-      fill: var(--logo-word-work);
+      fill: var(--green);
     }
+
     #logo_stem {
-      fill: var(--logo-stem);
+      fill: var(--green);
     }
-    #logo_leaf {
-      fill: var(--logo-leaf);
+
+    .leaf {
+      fill: var(--light-green);
+    }
+
+    .roots {
+      transition: transform fill;
+      transform-origin: 50% 50%;
+      transition-duration: 750ms;
+    }
+
+    #logo_roots {
+      fill: var(--brown);
+    }
+
+    #logo_roots-low,
+    #logo_roots-low-2 {
+      fill: transparent;
+    }
+
+    .leaf {
+      padding-top: 25px;
+      transition: transform fill;
+      transform-origin: 50% 15%;
+      transition-duration: 750ms;
+    }
+
+    #logo_line {
+      width: 0;
+      transition: fill width;
+      transition-duration: 500ms;
+      transition-timing-function: ease-in-out;
     }
 
     @include is-on {
-      #logo_full {
-        filter: url(#glow);
+      .roots {
+        transform: scale3d(1, 1.25, 1) rotate(0.0001deg);
       }
-    }
 
-    @include darkmode {
-      @include is-on {
-        #logo_full {
-          filter: url(#glow);
-        }
+      #logo_roots-low,
+      #logo_roots-low-2 {
+        fill: var(--dark-brown);
+      }
+
+      #logo_roots-low-2 {
+        transform: skewX(-3deg);
+      }
+
+      #logo_leaf {
+        fill: yellow;
+        transform: scale(0.5) translate(2px, -7px) rotate(-30deg);
+      }
+
+      #logo_leaf-2 {
+        fill: yellow;
+        transform: scale(0.6) translate(5px, -5px) rotate(2.5deg);
+      }
+
+      #logo_leaf-3 {
+        fill: deepPink;
+        transform: scale(0.8) rotate(-17.5deg);
+      }
+
+      #logo_leaf-4 {
+        fill: deepPink;
+        transform: rotate(10deg);
+      }
+
+      #logo_leaf-5 {
+        fill: deepPink;
+        transform: scaleX(-1) translate(-8px, 3px) rotate(-40deg);
+      }
+
+      #logo_line {
+        fill: $thememed;
+        width: 162px;
       }
     }
   }
@@ -155,15 +201,29 @@ h3 {
 
 // SOCIAL //
 
-.follow a {
-  opacity: 0.8;
+.follow {
+  a {
+    opacity: 0.8;
+    transition: opacity;
+    transition-duration: 500ms;
 
-  @include is-on {
-    opacity: 1;
-  }
+    svg {
+      transition: transform;
+      transition-duration: 1s;
+    }
 
-  .jsopen & {
-    opacity: 1;
+    @include is-on {
+      opacity: 1;
+
+      svg {
+        transform-origin: 50% 50%;
+        transform: rotate(360deg);
+      }
+    }
+
+    .jsopen & {
+      opacity: 1;
+    }
   }
 }
 
@@ -287,7 +347,8 @@ html.no-js .color_mode {
 
 .post_share {
   display: block;
-  margin: 1rem 0.5rem 0.5rem;
+  margin: 1rem 1rem 0.5rem;
+  font-size: 1rem;
 
   a {
     opacity: 0.8;
@@ -338,6 +399,30 @@ html.no-js .color_mode {
 
   .img_alt {
     padding-bottom: 0;
+  }
+
+  .link_owner {
+    // When subheading links are clicked, we slide them down below the fixed header.
+    // https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-top
+    scroll-margin-top: 4rem;
+
+    // Labeling automated subheading links
+    .link.icon {
+      display: initial;
+      color: inherit;
+
+      &::after {
+        content: 'Permalink';
+        position: relative;
+        top: -0.15rem;
+        display: inline-block;
+        padding-left: 0.1rem;
+        line-height: 1;
+        font-size: 0.7rem;
+        font-weight: normal;
+        text-transform: uppercase;
+      }
+    }
   }
 }
 
