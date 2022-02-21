@@ -392,6 +392,24 @@ html.no-js .color_mode {
   .img_alt {
     padding-bottom: 0;
   }
+
+  // Automated subheading links
+  .link_owner .link.icon {
+    display: initial;
+    color: inherit;
+
+    &::after {
+      content: 'Permalink';
+      position: relative;
+      top: -0.15rem;
+      display: inline-block;
+      padding-left: 0.1rem;
+      line-height: 1;
+      font-size: 0.7rem;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+  }
 }
 
 // CODE HIGHLIGHTING
