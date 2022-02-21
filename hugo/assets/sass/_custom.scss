@@ -345,9 +345,14 @@ html.no-js .color_mode {
   font-size: 0.8rem;
 }
 
+.post_categories,
+.post_tags {
+  margin-right: 1rem;
+}
+
 .post_share {
   display: block;
-  margin: 1rem 1rem 0.5rem;
+  margin: 1rem 1rem 0.5rem 0;
   font-size: 1rem;
 
   a {
