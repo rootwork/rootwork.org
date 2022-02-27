@@ -100,10 +100,6 @@ a {
       fill: var(--green);
     }
   
-    .leaf {
-      fill: var(--light-green);
-    }
-  
     .roots {
       transition: transform fill;
       transform-origin: 50% 50%;
@@ -120,31 +116,39 @@ a {
     }
   
     .leaf {
+      fill: var(--light-green);
       padding-top: 25px;
       transition: transform fill;
       transform-origin: 50% 15%;
-      transition-duration: 750ms;
+      @media (prefers-reduced-motion: no-preference) {
+        transition-duration: 750ms;
+      }
     }
   
     #logo_line {
       width: 0;
       transition: fill width;
-      transition-duration: 500ms;
       transition-timing-function: ease-in-out;
+  
+      @media (prefers-reduced-motion: no-preference) {
+        transition-duration: 500ms;
+      }
     }
   
     @include is-on {
-      .roots {
-        transform: scale3d(1, 1.25, 1) rotate(0.0001deg);
-      }
+      @media (prefers-reduced-motion: no-preference) {
+        .roots {
+          transform: scale3d(1, 1.25, 1) rotate(0.0001deg);
+        }
   
-      #logo_roots-low,
-      #logo_roots-low-2 {
-        fill: var(--dark-brown);
-      }
+        #logo_roots-low,
+        #logo_roots-low-2 {
+          fill: var(--dark-brown);
+        }
   
-      #logo_roots-low-2 {
-        transform: skewX(-3deg);
+        #logo_roots-low-2 {
+          transform: skewX(-3deg);
+        }
       }
   
       #logo_leaf {
@@ -209,9 +213,11 @@ a {
     @include is-on {
       opacity: 1;
 
-      svg {
-        transform-origin: 50% 50%;
-        transform: rotate(360deg);
+      @media (prefers-reduced-motion: no-preference) {
+        svg {
+          transform-origin: 50% 50%;
+          transform: rotate(360deg);
+        }
       }
     }
   
