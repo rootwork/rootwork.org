@@ -2,7 +2,7 @@
 
 Adding the site params variable.
 
-Defining some extra content when this is the home page, including a modified version of the intro-description/author-bio from the sidebar.
+Defining some extra content when this is the home page, including a modified version of the intro-description/author-bio from the sidebar, with a SVG filter.
 
 Adding the page (list) title when this is not the home page.
 
@@ -10,30 +10,36 @@ Adding the page (list) title when this is not the home page.
 {{ $s := .Site.Params }}
 {{ $pages := .Pages }}
 {{ if .IsHome }}
-  {{ $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{ $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{ end }}
 <div class="grid-inverse wrap content">
   <ul class="posts" id="posts">
     {{ if .IsHome }}
-      <div class="home_bio">
-        {{- $author := $s.Author  }}
-        <a href='{{ absLangURL (default "about/" $s.introURL) }}'><img src="{{ absURL $author.photo }}" alt="{{ $author.name }} photo"></a>
-        <div>
-          <h1>Hi, I&#8217;m {{ $author.name }}</h1>
-          <div class="author_bio">
-            {{ markdownify $s.IntroDescription }}
-            {{- if ( ne $s.introURL false ) }}
-              {{- $r := T "read_more" }}
-              <a href='{{ absLangURL (default "about/" $s.introURL) }}' class="button button_translucent" role="button" title='{{ $r }}'>{{ $r }}</a>
-            {{- end }}
-          </div>
+    <div class="home_bio">
+      {{- $author := $s.Author  }}
+      <a href='{{ absLangURL (default "about/" $s.introURL) }}'><span class="img_wrap"><svg width="0" height="0" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <clipPath id="blob" clipPathUnits="objectBoundingBox">
+            <path />
+          </clipPath>
+        </defs>
+      </svg><img src="{{ absURL $author.photo }}" alt="{{ $author.name }} photo"></span></a>
+      <div>
+        <h1>Hello, I&#8217;m {{ $author.name }}</h1>
+        <div class="author_bio">
+          {{ markdownify $s.IntroDescription }}
+          {{- if ( ne $s.introURL false ) }}
+          {{- $r := T "read_more" }}
+          <a href='{{ absLangURL (default "about/" $s.introURL) }}' class="button button_translucent" role="button" title='{{ $r }}'>{{ $r }}</a>
+          {{- end }}
         </div>
       </div>
+    </div>
     {{ else }}
-      <h1 class="list_title">{{ .Title }}</h1>
+    <h1 class="list_title">{{ .Title }}</h1>
     {{ end }}
     {{- range (.Paginate $pages).Pages }}
-      {{ partial "excerpt" . }}
+    {{ partial "excerpt" . }}
     {{- end }}
     <li>
       {{- template "_internal/pagination.html" . }}
