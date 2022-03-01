@@ -1,16 +1,20 @@
+// Hide for all devices
 @mixin hidden-all {
   display: none;
 }
 
+// Make invisible (element still has dimension)
 @mixin hidden-invisible {
   visibility: hidden;
 }
 
+// Remove from screen
 @mixin hidden-offscreen {
   left: -100vw;
   position: absolute;
 }
 
+// Hide visually, but allow screen readers to process
 @mixin hidden-visually {
   &:not(:focus):not(:active) {
     clip: rect(0 0 0 0);
@@ -23,6 +27,7 @@
   }
 }
 
+// When element is "on": Use in place of `&:hover` and the like
 @mixin is-on {
   &:hover,
   &:active,
@@ -31,6 +36,10 @@
   }
 }
 
+// Apply styles only when dark mode is set. Can be used inside an element block
+// (wrapping only certain styles) or to wrap an entire element block. Note that
+// if no preference is indicated and the user has not toggled dark mode on the
+// site, the interface defaults to light mode.
 @mixin darkmode {
   html[data-mode='dim'] & {
     @content;

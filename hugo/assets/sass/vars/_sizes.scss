@@ -1,0 +1,13 @@
+// SIZES
+
+:root {
+  --logo-width: 250px;
+  --logo-height: 125px;
+  --logo-descender-width: 75px;
+  --logo-descender-height: 75px;
+
+  --image-size: 128px; // Default image size
+  --image-top-pad: calc(var(--imageSize) * 0.1015625);
+  --image-left-pad: calc(var(--imageSize) * 0.03125);
+  --image-on-border: 0.025rem;
+}

@@ -1,7 +1,10 @@
 // Add custom styles here. To override variables, use _override.scss
 
-@import 'base/mixins';
-@import 'base/vars';
+@use 'base/mixins';
+@use 'vars/colors';
+@use 'vars/sizes';
+@use 'vars/fonts';
+@use 'vars/paths';
 
 // HIDING THINGS //
 
@@ -57,15 +60,15 @@ a {
 // NAVIGATION //
 
 .nav_header {
-  background-color: $thememed;
-  border-bottom: $logo-descender-height white solid;
+  background-color: var(--medium-theme);
+  border-bottom: var(--logo-descender-height) white solid;
 
   @media screen and (min-width: $single-column-breakpoint) {
     border-bottom: none;
   }
 
   @include darkmode {
-    border-bottom-color: $bg;
+    border-bottom-color: var(--bg);
   }
 }
 
@@ -184,7 +187,7 @@ a {
       }
 
       #logo_line {
-        fill: $thememed;
+        fill: var(--medium-theme);
         width: 162px;
       }
     }
@@ -264,7 +267,7 @@ html.no-js .color_mode {
 // PAGE WRAPPER
 
 .content {
-  padding-top: $logo-height;
+  padding-top: var(--logo-height);
 
   @media screen and (min-width: $single-column-breakpoint) {
     padding-top: 5rem;
@@ -298,7 +301,7 @@ html.no-js .color_mode {
   margin-top: 0;
 
   @media screen and (min-width: $single-column-breakpoint) {
-    margin-left: $logo-descender-width;
+    margin-left: var(--logo-descender-width);
   }
 }
 
@@ -505,7 +508,7 @@ mark {
   margin: 0 0.1rem;
   padding: 0 0.25rem;
   border-radius: 0.25rem;
-  background-color: $theme;
+  background-color: var(--theme);
   color: var(--light);
 }
 
@@ -563,7 +566,7 @@ mark {
   .button {
     margin-top: 0.2rem;
     padding: 0.1rem 0.5rem;
-    border: 2px $bg solid;
+    border: 2px var(--bg) solid;
   }
 
   .img_wrap {
@@ -590,22 +593,24 @@ mark {
     }
 
     img {
-      margin: calc(var(--imageTopPad) * -1) 0 0 calc(var(--imageLeftPad) * -1);
-      padding: var(--imageTopPad) 0 0 var(--imageLeftPad);
-      max-width: var(--imageSize);
+      --image-size: 128px;
+      margin: calc(var(--image-top-pad) * -1) 0 0
+        calc(var(--image-left-pad) * -1);
+      padding: var(--image-top-pad) 0 0 var(--image-left-pad);
+      max-width: var(--image-size);
       clip-path: url(#blob);
     }
   }
 
   @include is-on {
     .img_wrap {
-      $b: var(--imageHoverBorder);
-      $bn: calc(var(--imageHoverBorder) * -1);
-      $b2: calc(var(--imageHoverBorder) * 15);
-      $bc: lighten(map-get($color, bg), 75%);
-      $bc2: lighten(map-get($color, bg), 25%);
-      $bc3: lighten(map-get($color, bg), 15%);
-      $bc4: lighten(map-get($color, bg), 5%);
+      $b: var(--image-on-border);
+      $bn: calc(var(--image-on-border) * -1);
+      $b2: calc(var(--image-on-border) * 15);
+      $bc: lighten(#002714, 75%);
+      $bc2: lighten(#002714, 25%);
+      $bc3: lighten(#002714, 15%);
+      $bc4: lighten(#002714, 5%);
 
       filter: drop-shadow($b 0 0 $bc) drop-shadow($bn 0 0 $bc)
         drop-shadow(0 $b 0 $bc) drop-shadow(0 $bn 0 $bc)
