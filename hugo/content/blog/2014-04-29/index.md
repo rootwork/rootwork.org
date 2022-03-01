@@ -67,7 +67,7 @@ and
 [session submissions are open](https://web.archive.org/web/20140719090242/http://devsignercon.com/)
 until this Friday, May 2!
 
-![Devsigner: Portland, OR, May 23--25](devsigner2014logo.png)
+![Devsigner logo](devsigner2014logo.png 'Devsigner: Portland, OR, May 23-25')
 
 ### Sessions will include things like:
 

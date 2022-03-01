@@ -106,10 +106,6 @@ a {
       fill: var(--green);
     }
 
-    .leaf {
-      fill: var(--light-green);
-    }
-
     .roots {
       transition: transform fill;
       transform-origin: 50% 50%;
@@ -126,31 +122,40 @@ a {
     }
 
     .leaf {
+      fill: var(--light-green);
       padding-top: 25px;
       transition: transform fill;
       transform-origin: 50% 15%;
-      transition-duration: 750ms;
+
+      @media (prefers-reduced-motion: no-preference) {
+        transition-duration: 750ms;
+      }
     }
 
     #logo_line {
       width: 0;
       transition: fill width;
-      transition-duration: 500ms;
       transition-timing-function: ease-in-out;
+
+      @media (prefers-reduced-motion: no-preference) {
+        transition-duration: 500ms;
+      }
     }
 
     @include is-on {
-      .roots {
-        transform: scale3d(1, 1.25, 1) rotate(0.0001deg);
-      }
+      @media (prefers-reduced-motion: no-preference) {
+        .roots {
+          transform: scale3d(1, 1.25, 1) rotate(0.0001deg);
+        }
 
-      #logo_roots-low,
-      #logo_roots-low-2 {
-        fill: var(--dark-brown);
-      }
+        #logo_roots-low,
+        #logo_roots-low-2 {
+          fill: var(--dark-brown);
+        }
 
-      #logo_roots-low-2 {
-        transform: skewX(-3deg);
+        #logo_roots-low-2 {
+          transform: skewX(-3deg);
+        }
       }
 
       #logo_leaf {
@@ -215,9 +220,11 @@ a {
     @include is-on {
       opacity: 1;
 
-      svg {
-        transform-origin: 50% 50%;
-        transform: rotate(360deg);
+      @media (prefers-reduced-motion: no-preference) {
+        svg {
+          transform-origin: 50% 50%;
+          transform: rotate(360deg);
+        }
       }
     }
 
@@ -526,18 +533,110 @@ mark {
   grid-gap: 1rem;
   margin: 1rem 0 2rem;
 
-  img {
-    border-radius: 8rem; // size of the image
-    margin: 0;
-  }
-
   h1 {
+    position: relative;
     margin: 0 0 0.5rem;
+
+    &::before {
+      z-index: -1;
+      position: absolute;
+      bottom: 0;
+      left: -5rem;
+      display: block;
+      content: '';
+      width: 0;
+      height: 2px;
+      background-color: var(--theme);
+      transition-delay: 500ms;
+      transition-timing-function: ease-in-out;
+
+      @include darkmode {
+        background-color: var(--light);
+      }
+
+      @media (prefers-reduced-motion: no-preference) {
+        transition-duration: 750ms;
+      }
+    }
   }
 
   .button {
     margin-top: 0.2rem;
     padding: 0.1rem 0.5rem;
+    border: 2px $bg solid;
+  }
+
+  .img_wrap {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    transition-delay: 500ms;
+
+    @media (prefers-reduced-motion: no-preference) {
+      transition-duration: 750ms;
+    }
+
+    #blob {
+      path {
+        d: var(--path1);
+        transition-timing-function: ease-in-out;
+
+        @media (prefers-reduced-motion: no-preference) {
+          transition: 750ms;
+        }
+      }
+    }
+
+    img {
+      margin: calc(var(--imageTopPad) * -1) 0 0 calc(var(--imageLeftPad) * -1);
+      padding: var(--imageTopPad) 0 0 var(--imageLeftPad);
+      max-width: var(--imageSize);
+      clip-path: url(#blob);
+    }
+  }
+
+  @include is-on {
+    .img_wrap {
+      $b: var(--imageHoverBorder);
+      $bn: calc(var(--imageHoverBorder) * -1);
+      $b2: calc(var(--imageHoverBorder) * 15);
+      $bc: lighten(map-get($color, bg), 75%);
+      $bc2: lighten(map-get($color, bg), 25%);
+      $bc3: lighten(map-get($color, bg), 15%);
+      $bc4: lighten(map-get($color, bg), 5%);
+
+      filter: drop-shadow($b 0 0 $bc) drop-shadow($bn 0 0 $bc)
+        drop-shadow(0 $b 0 $bc) drop-shadow(0 $bn 0 $bc)
+        drop-shadow($b $b 0 $bc) drop-shadow($bn $bn 0 $bc)
+        drop-shadow($b $bn 0 $bc) drop-shadow($bn $b 0 $bc)
+        drop-shadow(0 $b2 0 $bc2) drop-shadow(0 $b2 0 $bc3)
+        drop-shadow(0 $b2 0 $bc4);
+      transition-delay: 350ms;
+
+      @media (prefers-reduced-motion: no-preference) {
+        transition-duration: 1s;
+      }
+
+      #blob {
+        path {
+          d: var(--path2);
+        }
+      }
+    }
+
+    h1::before {
+      width: calc(100% + 5rem);
+    }
+
+    .button {
+      border-color: var(--theme);
+
+      @include darkmode {
+        border-color: var(--light);
+      }
+    }
   }
 }
 
