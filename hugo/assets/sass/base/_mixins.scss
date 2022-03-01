@@ -32,7 +32,7 @@
 }
 
 @mixin darkmode {
-  html[data-mode="dim"] & {
+  html[data-mode='dim'] & {
     @content;
   }
 
