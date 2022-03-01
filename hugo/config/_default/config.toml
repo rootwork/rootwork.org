@@ -6,8 +6,7 @@ author = "Ivan Boothe" # Also set in [params.author]; defined here for safety
 
 [module]
   [[module.imports]]
-    # project theme
-    path = "github.com/chipzoller/hugo-clarity"
+    path = "github.com/chipzoller/hugo-clarity" # Project theme
 
 DefaultContentLanguage = "en"
 # [languages]
