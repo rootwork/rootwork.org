@@ -1,0 +1,40 @@
+// Motion mixin: Ensure any motion is gated behind prefers-reduced-motion: no-preference
+// and optionally provide a secondary value for prefers-reduced-motion: reduce
+// https://codepen.io/rootwork/pen/zYPbpMx?editors=1100
+
+@mixin motion($property, $motion-value, $no-motion-value: $motion-value) {
+  @at-root {
+    @media (prefers-reduced-motion: no-preference) {
+      & {
+        #{$property}: $motion-value;
+      }
+    }
+    @if $no-motion-value != $motion-value {
+        @media (prefers-reduced-motion: reduce) {
+          & {
+            #{$property}: $no-motion-value;
+          }
+        }
+    }
+  }
+}
+
+// No-motion mixin: Does the reverse of the motion mixin.
+// https://codepen.io/rootwork/pen/zYPbpMx?editors=1100
+
+@mixin no-motion($property, $no-motion-value, $motion-value: $no-motion-value) {
+  @at-root {
+    @media (prefers-reduced-motion: reduce) {
+      & {
+        #{$property}: $no-motion-value;
+      }
+    }
+    @if $motion-value != $no-motion-value {
+        @media (prefers-reduced-motion: no-preference) {
+          & {
+            #{$property}: $motion-value;
+          }
+        }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.footer {
+  padding-top: 0;
+}
+
+.footer_inner {
+  p {
+    line-height: 1.333;
+  }
+
+  a {
+    font-weight: 700;
+  }
+
+  .year {
+    margin-left: -0.3rem; // kerning!
+  }
+}

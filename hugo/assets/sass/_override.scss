@@ -6,6 +6,7 @@
 @import 'base/hiding';
 @import 'base/is-on';
 @import 'base/darkmode';
+@import 'base/motion';
 
 @import 'vars/colors';
 @import 'vars/sizes';
@@ -13,3 +14,5 @@
 @import 'vars/paths';
 
 @import 'components/all';
+@import 'components/author';
+@import 'components/footer';
