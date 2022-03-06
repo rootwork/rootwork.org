@@ -1,0 +1,8 @@
+// Is-On: Use in place of `&:hover` and the like (when element is "on")
+@mixin is-on {
+  &:hover,
+  &:active,
+  &:focus {
+    @content;
+  }
+}

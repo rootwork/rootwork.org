@@ -1,0 +1,50 @@
+// All hidden: Removes from the DOM.
+
+@mixin hidden-all {
+  display: none;
+}
+
+.hidden-all {
+  @include hidden-all;
+}
+
+// Invisible: Retains the space of the element; good for transitions.
+
+@mixin hidden-invisible {
+  visibility: hidden;
+}
+
+.hidden-invisible {
+  @include hidden-invisible;
+}
+
+// Offscreen: Moves visible element off-screen; good for transitions
+
+@mixin hidden-offscreen {
+  position: absolute;
+  left: -100vw;
+}
+
+.hidden-offscreen {
+  @include hidden-offscreen;
+}
+
+// Hidden visually: Hides from sighted users, but present in markup for assistive technology
+
+@mixin hidden-visually {
+  &:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+}
+
+.hidden-visually {
+  @include hidden-visually;
+}
+
+// To hide from screenreaders only (e.g. decoration) use `aria-hidden="true"` on the element.

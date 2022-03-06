@@ -1,0 +1,15 @@
+// Dark mode
+//
+// Apply styles only when dark mode is set. Can be used inside an element block
+// (wrapping only certain styles) or to wrap an entire element block. Note that
+// if no preference is indicated and the user has not toggled dark mode on the
+// site, the interface defaults to light mode.
+@mixin darkmode {
+  html[data-mode='dim'] & {
+    @content;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    @content;
+  }
+}
