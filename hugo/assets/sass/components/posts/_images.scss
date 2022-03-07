@@ -1,0 +1,19 @@
+// Images appearing within posts.
+
+.image_featured {
+  width: 100%;
+}
+
+.post_body {
+  img {
+    margin-bottom: 0;
+  }
+
+  figure > img {
+    margin-bottom: 0;
+  }
+
+  .img_alt {
+    padding-bottom: 0;
+  }
+}

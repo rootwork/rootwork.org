@@ -86,10 +86,7 @@
         drop-shadow(0 $b2 0 $bc2) drop-shadow(0 $b2 0 $bc3)
         drop-shadow(0 $b2 0 $bc4);
       transition-delay: 350ms;
-
-      @media (prefers-reduced-motion: no-preference) {
-        transition-duration: 1s;
-      }
+      @include motion(transition-duration, 1s);
 
       #blob {
         path {

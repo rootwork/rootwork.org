@@ -1,0 +1,51 @@
+// CODE HIGHLIGHTING
+
+code.noClass {
+  margin: 0 0.1rem;
+  padding: 0 0.05rem;
+  --inlineColor: var(--dark);
+  background-color: var(--shade);
+
+  @include darkmode {
+    --inlineColor: var(--light);
+    background-color: var(--translucent-lighter);
+  }
+
+  pre &,
+  .highlight &,
+  .highlight_wrap & {
+    margin: 0;
+    padding: 0;
+    --inlineColor: var(--light);
+    background-color: transparent;
+
+    @include darkmode {
+      background-color: transparent;
+    }
+  }
+}
+
+.highlight {
+  scrollbar-color: var(--medium-green) var(--dark-green);
+  scrollbar-width: thin;
+
+  @include darkmode {
+    scrollbar-color: var(--light) var(--medium-green);
+  }
+
+  code,
+  .hljs {
+    color: var(--white);
+  }
+
+  .cp,
+  .cpf {
+    color: lighten(#cd2828, 20%);
+  }
+
+  .p,
+  .nt,
+  .hljs-string {
+    color: var(--medium-green);
+  }
+}

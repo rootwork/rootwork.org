@@ -1,0 +1,49 @@
+// Styles for elements appearing within a post's body.
+
+.post_body {
+  // body text only
+  line-height: 1.5;
+
+  a {
+    font-weight: bold;
+
+    @include is-on {
+      border-bottom: 1px var(--themedark) dotted;
+      color: var(--themedark);
+
+      @include darkmode {
+        border-bottom-color: var(--light);
+        color: var(--light);
+      }
+    }
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  kbd {
+    margin: 0 0.1rem;
+    padding: 0 0.25rem;
+    border-radius: 0.25rem;
+    background-color: var(--shade);
+    color: var(--dark);
+
+    @include darkmode {
+      background-color: var(--translucent-lighter);
+      color: var(--light);
+    }
+  }
+
+  mark {
+    margin: 0 0.1rem;
+    padding: 0 0.25rem;
+    border-radius: 0.25rem;
+    background-color: var(--theme);
+    color: var(--light);
+  }
+}
