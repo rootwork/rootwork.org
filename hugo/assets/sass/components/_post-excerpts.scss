@@ -1,0 +1,19 @@
+// Post excerpts are portions of posts that appear in lists
+
+.excerpt {
+  .excerpt_header {
+    .post_link {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .excerpt_footer {
+    p {
+      line-height: 1.5;
+
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+}
