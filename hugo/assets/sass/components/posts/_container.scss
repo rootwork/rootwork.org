@@ -1,0 +1,8 @@
+.post_content,
+.posts {
+  margin-top: 0;
+
+  @media screen and (min-width: $single-column-breakpoint) {
+    margin-left: var(--logo-descender-width);
+  }
+}

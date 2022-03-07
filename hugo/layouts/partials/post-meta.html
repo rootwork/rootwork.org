@@ -15,7 +15,7 @@
 {{- if $showPostMeta }}
   <div class="post_meta">
     {{- if $showDate }}
-      <span>{{ partial "sprite" (dict "icon" "calendar") }}</span>
+      <span class="post_date_icon">{{ partial "sprite" (dict "icon" "calendar") }}</span>
       <span class="post_date">
         {{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) -}}
         {{ if ne $lastmod $date }}

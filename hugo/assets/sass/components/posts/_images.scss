@@ -1,19 +1,32 @@
 // Images appearing within posts.
 
-.image_featured {
-  width: 100%;
-}
-
-.post_body {
-  img {
-    margin-bottom: 0;
+.post_content {
+  .image_featured {
+    // Featured images that are too small for full width should be left-aligned, not centered.
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
-  figure > img {
-    margin-bottom: 0;
+  .image-scale {
+    background-color: var(--shadedark);
   }
 
-  .img_alt {
-    padding-bottom: 0;
+  .image_figure {
+    margin-top: 0;
+    line-height: 1;
+  }
+
+  .post_body {
+    img {
+      margin-bottom: 0;
+    }
+
+    figure > img {
+      margin-bottom: 0;
+    }
+
+    .img_alt {
+      padding-bottom: 0;
+    }
   }
 }

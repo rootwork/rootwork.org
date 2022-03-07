@@ -1,0 +1,62 @@
+// Post meta includes:
+// - date icon (calendar)
+// - posted-on date
+// - edited-on date
+// - readtime
+// - categories
+// - tags
+// - share links
+
+.post_content .post_meta {
+  margin: 0 -0.5rem;
+  padding: 1rem 0.5rem;
+  background-color: var(--post-bg);
+  width: 100%;
+
+  @media screen and (min-width: $single-column-breakpoint) {
+    margin: 2rem 0 1rem;
+    padding: 1.5rem;
+  }
+
+  .post_date_icon {
+    margin-top: 0.25rem;
+  }
+
+  .post_date__edit {
+    margin: 0.75rem 0 0 0.5rem;
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+
+  .post_time {
+    margin: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .post_categories,
+  .post_tags {
+    margin-right: 1rem;
+  }
+
+  .post_tag {
+    margin-top: 0;
+  }
+
+  .post_share {
+    display: block;
+    margin: 1rem 1rem 0.5rem 0;
+    font-size: 1rem;
+
+    a {
+      opacity: 0.8;
+
+      &:first-child {
+        padding-left: 0.6rem;
+      }
+
+      @include is-on {
+        opacity: 1;
+      }
+    }
+  }
+}
