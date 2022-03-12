@@ -1,0 +1,37 @@
+// LIGHT MODE SWITCHER
+
+.color_mode {
+  position: relative;
+}
+
+.color_mode-toggle {
+  user-select: none;
+  cursor: pointer;
+}
+
+html.no-js .color_mode {
+  display: none !important;
+}
+
+.color_mode-toggle {
+  padding: 0.2rem 0.4rem 0;
+  height: 32px;
+  background-color: var(--translucent-green);
+  border-radius: 1rem;
+
+  @include darkmode {
+    background-color: var(--dark-green);
+  }
+}
+
+.color_mode-toggle:hover::after,
+.color_mode-toggle:focus-within::after {
+  content: attr(data-tip);
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  right: 0;
+  padding: 0.1rem 0.5rem;
+  color: var(--haze);
+  background-color: var(--shadedark);
+  border-radius: 0.25rem;
+}
