@@ -32,7 +32,7 @@
     .roots {
       transition: transform fill;
       transform-origin: 50% 50%;
-      transition-duration: 750ms;
+      @include motion(transition-duration, 750ms);
     }
 
     #logo_roots {
@@ -49,36 +49,28 @@
       padding-top: 25px;
       transition: transform fill;
       transform-origin: 50% 15%;
-
-      @media (prefers-reduced-motion: no-preference) {
-        transition-duration: 750ms;
-      }
+      @include motion(transition-duration, 750ms);
     }
 
     #logo_line {
       width: 0;
       transition: fill width;
       transition-timing-function: ease-in-out;
-
-      @media (prefers-reduced-motion: no-preference) {
-        transition-duration: 500ms;
-      }
+      @include motion(transition-duration, 500ms);
     }
 
     @include is-on {
-      @media (prefers-reduced-motion: no-preference) {
-        .roots {
-          transform: scale3d(1, 1.25, 1) rotate(0.0001deg);
-        }
+      .roots {
+        @include motion(transform, scale3d(1, 1.25, 1) rotate(0.0001deg));
+      }
 
-        #logo_roots-low,
-        #logo_roots-low-2 {
-          fill: var(--dark-brown);
-        }
+      #logo_roots-low,
+      #logo_roots-low-2 {
+        @include motion(fill, var(--dark-brown));
+      }
 
-        #logo_roots-low-2 {
-          transform: skewX(-3deg);
-        }
+      #logo_roots-low-2 {
+        @include motion(transform, skewX(-3deg));
       }
 
       #logo_leaf {

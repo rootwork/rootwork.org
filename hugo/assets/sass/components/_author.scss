@@ -26,8 +26,8 @@
       width: 0;
       height: 2px;
       background-color: var(--theme);
-      transition-delay: 500ms;
       transition-timing-function: ease-in-out;
+      @include motion(transition-delay, 500ms);
       @include motion(transition-duration, 750ms);
 
       @include darkmode {
@@ -61,7 +61,7 @@
     margin: 0;
     padding: 0;
     overflow: visible;
-    transition-delay: 500ms;
+    @include motion(transition-delay, 500ms);
     @include motion(transition-duration, 750ms);
 
     #blob {
@@ -98,7 +98,7 @@
         drop-shadow($b $bn 0 $bc) drop-shadow($bn $b 0 $bc)
         drop-shadow(0 $b2 0 $bc2) drop-shadow(0 $b2 0 $bc3)
         drop-shadow(0 $b2 0 $bc4);
-      transition-delay: 350ms;
+      @include motion(transition-delay, 350ms);
       @include motion(transition-duration, 1s);
 
       #blob {
