@@ -21,6 +21,9 @@ enableRobotsTXT = true
   changefreq = "weekly"
   priority = 0.5
 
+# Emoji
+enableEmoji = true
+
 # [menus]
 # config/_default/menus/menu.xx.toml
 
