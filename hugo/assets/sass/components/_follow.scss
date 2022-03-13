@@ -1,0 +1,27 @@
+// SOCIAL-FOLLOW ICONS IN NAVIGATION BAR
+
+.follow {
+  a {
+    opacity: 0.8;
+    transition: opacity;
+    transition-duration: 500ms;
+
+    svg {
+      transition: transform;
+      @include motion(transition-duration, 1s);
+    }
+
+    @include is-on {
+      opacity: 1;
+
+      svg {
+        transform-origin: 50% 50%;
+        @include motion(transform, rotate(360deg));
+      }
+    }
+
+    .jsopen & {
+      opacity: 1;
+    }
+  }
+}

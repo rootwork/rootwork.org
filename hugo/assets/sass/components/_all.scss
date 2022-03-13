@@ -27,7 +27,11 @@
 }
 
 .nav_active.nav_active {
-  @include switch(background-color, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.15));
+  @include switch(
+    background-color,
+    rgba(0, 0, 0, 0.75),
+    rgba(255, 255, 255, 0.15)
+  );
 }
 
 .color_choice.color_choice {
@@ -35,7 +39,11 @@
   box-shadow: none;
 
   &::after {
-    @include switch(background-image, url('/icons/sun.svg'), url('/icons/moon.svg'));
+    @include switch(
+      background-image,
+      url('/icons/sun.svg'),
+      url('/icons/moon.svg')
+    );
   }
 }
 
@@ -163,36 +171,6 @@ a {
 
 .nav_item {
   padding: 0.5rem 1rem;
-}
-
-// SOCIAL //
-
-.follow {
-  a {
-    opacity: 0.8;
-    transition: opacity;
-    transition-duration: 500ms;
-
-    svg {
-      transition: transform;
-      transition-duration: 1s;
-    }
-
-    @include is-on {
-      opacity: 1;
-
-      @media (prefers-reduced-motion: no-preference) {
-        svg {
-          transform-origin: 50% 50%;
-          transform: rotate(360deg);
-        }
-      }
-    }
-
-    .jsopen & {
-      opacity: 1;
-    }
-  }
 }
 
 // PAGE WRAPPER
