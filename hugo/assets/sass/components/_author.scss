@@ -113,11 +113,7 @@
     }
 
     .button {
-      border-color: var(--theme);
-
-      @include darkmode {
-        border-color: var(--light);
-      }
+      @include switch(border-color, var(--theme), var(--light));
     }
   }
 }

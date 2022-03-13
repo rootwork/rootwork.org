@@ -27,11 +27,7 @@
 }
 
 .nav_active.nav_active {
-  background-color: rgba(0, 0, 0, 0.05);
-
-  @include darkmode {
-    background-color: rgba(255, 255, 255, 0.15);
-  }
+  @include switch(background-color, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0.15));
 }
 
 .color_choice.color_choice {
@@ -39,11 +35,7 @@
   box-shadow: none;
 
   &::after {
-    background-image: url('/icons/sun.svg');
-
-    @include darkmode {
-      background-image: url('/icons/moon.svg');
-    }
+    @include switch(background-image, url('/icons/sun.svg'), url('/icons/moon.svg'));
   }
 }
 
@@ -143,14 +135,12 @@ a {
 
 .nav_header {
   background-color: var(--medium-theme);
-  border-bottom: var(--logo-descender-height) white solid;
+  border-bottom-width: var(--logo-descender-height);
+  border-bottom-style: solid;
+  @include switch(border-bottom-color, var(--white), var(--bg));
 
   @media screen and (min-width: $single-column-breakpoint) {
     border-bottom: none;
-  }
-
-  @include darkmode {
-    border-bottom-color: var(--bg);
   }
 }
 

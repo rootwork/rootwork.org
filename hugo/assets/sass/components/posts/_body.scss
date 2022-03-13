@@ -8,13 +8,10 @@
     font-weight: bold;
 
     @include is-on {
-      border-bottom: 1px var(--themedark) dotted;
-      color: var(--themedark);
-
-      @include darkmode {
-        border-bottom-color: var(--light);
-        color: var(--light);
-      }
+      border-bottom-width: 1px;
+      border-bottom-style: dotted;
+      @include switch(border-bottom-color, var(--themedark), var(--light));
+      @include switch(color, var(--themedark), var(--light));
     }
   }
 
@@ -30,13 +27,8 @@
     margin: 0 0.1rem;
     padding: 0 0.25rem;
     border-radius: 0.25rem;
-    background-color: var(--shade);
-    color: var(--dark);
-
-    @include darkmode {
-      background-color: var(--translucent-lighter);
-      color: var(--light);
-    }
+    @include switch(background-color, var(--shade), var(--translucent-lighter));
+    @include switch(color, var(--dark), var(--light));
   }
 
   mark {

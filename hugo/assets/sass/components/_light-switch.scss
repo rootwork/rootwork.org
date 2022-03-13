@@ -16,12 +16,8 @@ html.no-js .color_mode {
 .color_mode-toggle {
   padding: 0.2rem 0.4rem 0;
   height: 32px;
-  background-color: var(--translucent-green);
   border-radius: 1rem;
-
-  @include darkmode {
-    background-color: var(--dark-green);
-  }
+  @include switch(background-color, var(--translucent-green), var(--dark-green));
 }
 
 .color_mode-toggle:hover::after,

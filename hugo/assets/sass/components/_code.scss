@@ -3,13 +3,8 @@
 code.noClass {
   margin: 0 0.1rem;
   padding: 0 0.05rem;
-  --inlineColor: var(--dark);
-  background-color: var(--shade);
-
-  @include darkmode {
-    --inlineColor: var(--light);
-    background-color: var(--translucent-lighter);
-  }
+  @include switch(--inlineColor, var(--dark), var(--light));
+  @include switch(background-color, var(--shade), var(--translucent-lighter));
 
   pre &,
   .highlight &,
@@ -17,21 +12,13 @@ code.noClass {
     margin: 0;
     padding: 0;
     --inlineColor: var(--light);
-    background-color: transparent;
-
-    @include darkmode {
-      background-color: transparent;
-    }
+    @include switch(background-color, transparent, transparent);
   }
 }
 
 .highlight {
-  scrollbar-color: var(--medium-green) var(--dark-green);
   scrollbar-width: thin;
-
-  @include darkmode {
-    scrollbar-color: var(--light) var(--medium-green);
-  }
+  @include switch(scrollbar-color, var(--medium-green) var(--dark-green), var(--light) var(--medium-green));
 
   code,
   .hljs {

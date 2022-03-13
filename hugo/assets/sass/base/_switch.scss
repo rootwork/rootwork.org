@@ -1,0 +1,21 @@
+// Switch properties for color modes: Light, dark, and other
+
+@mixin switch($property, $light-value, $dark-value: $light-value, $other-value: $dark-value) {
+  #{$property}: $light-value;
+
+  @if $dark-value != $light-value {
+    html[data-mode='dim'] & {
+      #{$property}: $dark-value;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      #{$property}: $dark-value;
+    }
+  }
+
+  @if $other-value != $dark-value {
+    html[data-mode='other'] & {
+      #{$property}: $other-value;
+    }
+  }
+}
