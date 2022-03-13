@@ -15,15 +15,19 @@
 @import 'vars/paths';
 
 @import 'components/all';
-@import 'components/light-switch';
-@import 'components/logo';
+
+@import 'components/nav/light-switch';
+@import 'components/nav/logo';
+@import 'components/nav/follow';
+
 @import 'components/author';
-@import 'components/follow';
+
 @import 'components/posts/container';
 @import 'components/posts/meta';
 @import 'components/posts/body';
 @import 'components/posts/images';
 @import 'components/posts/heading-links';
+
 @import 'components/post-excerpts';
 @import 'components/code';
 @import 'components/footer';
