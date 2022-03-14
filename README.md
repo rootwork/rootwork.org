@@ -99,8 +99,7 @@ Add notes at the top of any overridden files using Go comments (`{{/* */}}`) to
 note what has been changed -- this vastly eases integrating new changes to the
 overridden files from upstream.
 
-Custom styles can be added using the `_custom.scss` file within `assets`. Use
-`_override.scss` to change the theme's variables located in `_variables.sass`.
+For styles, we use `assets/sass/_override.sccs` to load our own component styles, which override parent theme styles as necessary. We could use `_custom.scss` for components that have nothing to override, but in practice this just makes things more confusing; it's easier to simply import everything as an override.
 
 # Generating the site for production
 
@@ -157,6 +156,13 @@ Tested with Node 16.x and npm 8.x.
 - Check version: `hugo version`
 - `sudo rm -rf /usr/local/bin/hugo`
 - Reinstall following the instructions above.
+
+## Hugo modules
+
+- Update all modules: `hugo mod get -u`
+- Update all modules recursively: `hugo mod get -u ./...`
+- Update a single module: `hugo mod get -u <repo_path>`
+- Update a single module to a specific version (tag [must use semver](https://go.dev/doc/modules/version-numbers)): `hugo mod get <repo_path>@<git_tag>`
 
 # Licenses
 
