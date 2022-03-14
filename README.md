@@ -18,23 +18,24 @@ of habit, but could be run directly) to [create a post](#creating-a-new-post),
   this section. -->
 
 <!--ts-->
-* [Rootwork.org publishing system](#rootworkorg-publishing-system)
-* [Local development](#local-development)
-   * [Creating a new post](#creating-a-new-post)
-   * [Editing site variables](#editing-site-variables)
-   * [Hugo modules](#hugo-modules)
-   * [Editing the theme](#editing-the-theme)
-* [Generating the site for production](#generating-the-site-for-production)
-* [Fresh installation](#fresh-installation)
-   * [Go](#go)
-   * [Hugo](#hugo)
-   * [This repo](#this-repo)
-   * [Node/npm](#nodenpm)
-* [Updating dependencies](#updating-dependencies)
-   * [Go](#go-1)
-   * [Hugo](#hugo-1)
-   * [Hugo modules](#hugo-modules-1)
-* [Licenses](#licenses)
+
+- [Rootwork.org publishing system](#rootworkorg-publishing-system)
+- [Local development](#local-development)
+  - [Creating a new post](#creating-a-new-post)
+  - [Editing site variables](#editing-site-variables)
+  - [Hugo modules](#hugo-modules)
+  - [Editing the theme](#editing-the-theme)
+- [Generating the site for production](#generating-the-site-for-production)
+- [Fresh installation](#fresh-installation)
+  - [Go](#go)
+  - [Hugo](#hugo)
+  - [This repo](#this-repo)
+  - [Node/npm](#nodenpm)
+- [Updating dependencies](#updating-dependencies)
+  - [Go](#go-1)
+  - [Hugo](#hugo-1)
+  - [Hugo modules](#hugo-modules-1)
+- [Licenses](#licenses)
 
 <!-- Added by: runner, at: Mon Mar 14 00:51:07 UTC 2022 -->
 
@@ -100,7 +101,11 @@ Add notes at the top of any overridden files using Go comments (`{{/* */}}`) to
 note what has been changed -- this vastly eases integrating new changes to the
 overridden files from upstream.
 
-For styles, we use `assets/sass/_override.sccs` to load our own component styles, which override parent theme styles as necessary. We could use `_custom.scss` for components that have nothing to override, but in practice this just makes things more confusing; it's easier to simply import everything as an override.
+For styles, we use `assets/sass/_override.sccs` to load our own component
+styles, which override parent theme styles as necessary. We could use
+`_custom.scss` for components that have nothing to override, but in practice
+this just makes things more confusing; it's easier to simply import everything
+as an override.
 
 # Generating the site for production
 
@@ -163,7 +168,9 @@ Tested with Node 16.x and npm 8.x.
 - Update all modules: `hugo mod get -u`
 - Update all modules recursively: `hugo mod get -u ./...`
 - Update a single module: `hugo mod get -u <repo_path>`
-- Update a single module to a specific version (tag [must use semver](https://go.dev/doc/modules/version-numbers)): `hugo mod get <repo_path>@<git_tag>`
+- Update a single module to a specific version (tag
+  [must use semver](https://go.dev/doc/modules/version-numbers)):
+  `hugo mod get <repo_path>@<git_tag>`
 
 # Licenses
 
