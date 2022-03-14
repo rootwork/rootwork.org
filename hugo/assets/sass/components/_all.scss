@@ -27,15 +27,3 @@ h3 {
     padding-top: 5rem;
   }
 }
-
-// SIDEBAR
-
-.sidebar_inner li {
-  line-height: 1.35;
-
-  .nav-link {
-    @include is-on {
-      text-shadow: 0px 0px 1px var(--text);
-    }
-  }
-}
