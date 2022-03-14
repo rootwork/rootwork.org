@@ -33,9 +33,10 @@ of habit, but could be run directly) to [create a post](#creating-a-new-post),
 * [Updating dependencies](#updating-dependencies)
    * [Go](#go-1)
    * [Hugo](#hugo-1)
+   * [Hugo modules](#hugo-modules-1)
 * [Licenses](#licenses)
 
-<!-- Added by: runner, at: Mon Mar 14 00:45:29 UTC 2022 -->
+<!-- Added by: runner, at: Mon Mar 14 00:51:07 UTC 2022 -->
 
 <!--te-->
 
