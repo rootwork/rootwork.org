@@ -1,0 +1,22 @@
+// SIDEBAR
+
+.sidebar {
+  .sidebar_inner {
+    &::before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -2rem;
+      width: 1px;
+      padding: 0;
+      background: linear-gradient(to bottom, var(--theme), var(--white));
+
+      @include darkmode {
+        display: block;
+        background: linear-gradient(to bottom, var(--theme), var(--bg));
+      }
+    }
+  }
+}

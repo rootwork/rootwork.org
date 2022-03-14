@@ -1,17 +1,6 @@
 // This file will eventually cease to exist. All styles have been dumped in here and slowly will
 // be extracted into separate component files.
 
-.sidebar_inner.sidebar_inner::before,
-html[data-mode='dim'].sidebar_inner.sidebar_inner::before {
-  content: '';
-  padding: 0.5px;
-  top: 0;
-  bottom: 0;
-  background: linear-gradient(to bottom, var(--theme), var(--light));
-  position: absolute;
-  left: -2rem;
-}
-
 .to_top.to_top,
 .to_top.to_top.ios.ios {
   background-color: var(--themedark);
