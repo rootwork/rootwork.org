@@ -15,7 +15,7 @@
 @import 'vars/fonts';
 @import 'vars/paths';
 
-@import 'components/all';
+@import 'components/page-wrapper';
 
 @import 'components/nav/container';
 @import 'components/nav/menu';
@@ -23,6 +23,7 @@
 @import 'components/nav/logo';
 @import 'components/nav/follow';
 
+@import 'components/main-wrapper';
 @import 'components/author';
 @import 'components/links';
 
@@ -36,6 +37,8 @@
 @import 'components/sidebar';
 @import 'components/tags';
 @import 'components/code';
+@import 'components/list-title';
+
 @import 'components/footer/container';
 @import 'components/footer/to-top';
 @import 'components/footer/inner';

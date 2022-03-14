@@ -1,0 +1,15 @@
+// <main> element, which wraps the primary content of the page
+
+.content {
+  padding-top: var(--logo-height);
+
+  @include bp(sm) {
+    padding-top: 5rem;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-weight: 800;
+  }
+}
