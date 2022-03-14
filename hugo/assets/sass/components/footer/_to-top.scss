@@ -3,4 +3,17 @@
 .footer .to_top,
 .footer .to_top.ios {
   background-color: var(--bright-green);
+
+  svg.icon {
+    opacity: 1;
+    @include switch(fill, var(--white), var(--dark-green));
+    transition: fill;
+    @include motion(transition-duration, 500ms);
+  }
+
+  @include is-on {
+    svg.icon {
+      @include switch(fill, var(--dark-green), var(--light));
+    }
+  }
 }
