@@ -18,22 +18,23 @@ of habit, but could be run directly) to [create a post](#creating-a-new-post),
   this section. -->
 
 <!--ts-->
-* [Rootwork.org publishing system](#rootworkorg-publishing-system)
-* [Local development](#local-development)
-   * [Creating a new post](#creating-a-new-post)
-   * [Editing site variables](#editing-site-variables)
-   * [Hugo modules](#hugo-modules)
-   * [Editing the theme](#editing-the-theme)
-* [Generating the site for production](#generating-the-site-for-production)
-* [Fresh installation](#fresh-installation)
-   * [Go](#go)
-   * [Hugo](#hugo)
-   * [This repo](#this-repo)
-   * [Node/npm](#nodenpm)
-* [Updating dependencies](#updating-dependencies)
-   * [Go](#go-1)
-   * [Hugo](#hugo-1)
-* [Licenses](#licenses)
+
+- [Rootwork.org publishing system](#rootworkorg-publishing-system)
+- [Local development](#local-development)
+  - [Creating a new post](#creating-a-new-post)
+  - [Editing site variables](#editing-site-variables)
+  - [Hugo modules](#hugo-modules)
+  - [Editing the theme](#editing-the-theme)
+- [Generating the site for production](#generating-the-site-for-production)
+- [Fresh installation](#fresh-installation)
+  - [Go](#go)
+  - [Hugo](#hugo)
+  - [This repo](#this-repo)
+  - [Node/npm](#nodenpm)
+- [Updating dependencies](#updating-dependencies)
+  - [Go](#go-1)
+  - [Hugo](#hugo-1)
+- [Licenses](#licenses)
 
 <!-- Added by: runner, at: Tue Feb 15 06:04:30 UTC 2022 -->
 
@@ -82,11 +83,8 @@ You can find text strings and other variables in several places:
 
 The site imports components like the theme as
 [Hugo modules](https://gohugo.io/hugo-modules/) rather than as git submodules
-(as in the past). More information about this approach:
-
-- [Master Hugo Modules: Managing Themes as Modules](https://www.hugofordevelopers.com/articles/master-hugo-modules-managing-themes-as-modules/)
-- [How to add a theme using modules (for beginners)](https://discourse.gohugo.io/t/how-to-add-a-theme-using-modules-for-beginners/20665)
-- [Hugo modules for “dummies”](https://discourse.gohugo.io/t/hugo-modules-for-dummies/20758)
+(as in the past).
+[More information about this approach.](https://github.com/rootwork/hugo-module-site)
 
 The `go.mod` file is in the `hugo` directory of the repository, and modules are
 loaded in `hugo/config/_default/config.toml`.
