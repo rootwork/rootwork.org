@@ -1,0 +1,14 @@
+// Breakpoints
+//
+// Apply styles at a particular breakpoint and above (mobile-first). Breakpoints
+// inherited from the parent theme.
+
+@mixin bp($breakpoint) {
+  @if $breakpoint = 'sm' {
+    @media screen and (min-width: $single-column-breakpoint) {
+      & {
+        @content;
+      }
+    }
+  }
+}
