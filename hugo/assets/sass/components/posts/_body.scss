@@ -6,6 +6,7 @@
 
   a {
     font-weight: bold;
+    border-bottom: 1px currentColor dotted;
 
     @include is-on {
       border-bottom-width: 1px;

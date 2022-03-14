@@ -10,6 +10,7 @@
     .link.icon {
       display: initial;
       color: inherit;
+      border-bottom: none;
 
       &::after {
         content: 'Permalink';
