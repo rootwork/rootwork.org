@@ -1,19 +1,6 @@
 // This file will eventually cease to exist. All styles have been dumped in here and slowly will
 // be extracted into separate component files.
 
-.color_choice.color_choice {
-  background-color: var(--translucent-lighter);
-  box-shadow: none;
-
-  &::after {
-    @include switch(
-      background-image,
-      url('/icons/sun.svg'),
-      url('/icons/moon.svg')
-    );
-  }
-}
-
 .button.button {
   padding-top: 0.55rem;
   font-weight: bold;
