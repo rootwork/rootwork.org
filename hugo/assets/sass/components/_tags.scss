@@ -1,0 +1,26 @@
+// Styles for all tag-like objects, which include both Hugo categories and Hugo tags.
+
+.post_categories,
+.post_tags {
+  .post_tag.button {
+    margin-top: 0.25rem;
+    padding-top: 0.25rem;
+    font-weight: normal;
+  }
+}
+
+.post_categories .post_tag--cat.button {
+  font-weight: bold;
+  @include switch(background-color, var(--light), var(--translucent));
+  @include switch(border-color, var(--theme), var(--theme));
+
+  @include is-on {
+    @include switch(color, var(--themedark), var(--hazy-white));
+  }
+}
+
+// Tags in the sidebar
+.tags_nav .post_tag .button_tally {
+  margin-left: 0.5rem;
+  padding: 0.2rem 0.75rem;
+}

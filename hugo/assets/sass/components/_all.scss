@@ -1,41 +1,6 @@
 // This file will eventually cease to exist. All styles have been dumped in here and slowly will
 // be extracted into separate component files.
 
-.button.button {
-  padding-top: 0.55rem;
-  font-weight: bold;
-}
-
-.post_tag.post_tag {
-  margin-top: 0.25rem;
-  padding-top: 0.25rem;
-  font-weight: normal;
-
-  &.post_tag--cat {
-    font-weight: bold;
-    background-color: var(--light);
-    border-color: var(--theme);
-
-    @include is-on {
-      color: var(--themedark);
-    }
-
-    @include darkmode {
-      background-color: var(--translucent);
-      border-color: var(--theme);
-
-      @include is-on {
-        color: var(--hazy-white);
-      }
-    }
-  }
-
-  & .button_tally {
-    margin-left: 0.5rem;
-    padding: 0.2rem 0.75rem;
-  }
-}
-
 .sidebar_inner.sidebar_inner::before,
 html[data-mode='dim'].sidebar_inner.sidebar_inner::before {
   content: '';

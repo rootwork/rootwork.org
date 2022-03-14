@@ -43,6 +43,7 @@
   .button {
     margin-top: 0.2rem;
     padding: 0.1rem 0.5rem;
+    font-weight: bold;
     border: 2px var(--bright-green) solid;
 
     @include is-on {
