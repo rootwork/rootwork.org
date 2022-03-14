@@ -1,39 +1,6 @@
 // This file will eventually cease to exist. All styles have been dumped in here and slowly will
 // be extracted into separate component files.
 
-.nav_header {
-  @include darkmode {
-    background-color: var(--translucent-light);
-  }
-
-  .jsopen.jsopen & {
-    background-color: var(--bg);
-    border-bottom-color: #b2b2b2;
-  }
-
-  html[data-mode='dim'].jsopen & {
-    border-bottom-color: var(--bg);
-  }
-}
-
-// div around menu items
-.nav_parent.nav_parent {
-  @include is-on {
-    background-color: var(--theme);
-    text-shadow: 0px 0px 1px var(--hazy-white);
-    transition: background-color text-shadow;
-    transition-duration: 500ms;
-  }
-}
-
-.nav_active.nav_active {
-  @include switch(
-    background-color,
-    rgba(0, 0, 0, 0.75),
-    rgba(255, 255, 255, 0.15)
-  );
-}
-
 .color_choice.color_choice {
   background-color: var(--translucent-lighter);
   box-shadow: none;
@@ -133,40 +100,6 @@ h3 {
 a {
   transition: color background-color opacity text-decoration border-bottom-width;
   @include motion(transition-duration, 500ms);
-}
-
-// NAVIGATION //
-
-.nav_header {
-  background-color: var(--medium-theme);
-  border-bottom-width: var(--logo-descender-height);
-  border-bottom-style: solid;
-  @include switch(border-bottom-color, var(--white), var(--bg));
-
-  @media screen and (min-width: $single-column-breakpoint) {
-    border-bottom: none;
-  }
-}
-
-.nav {
-  @media screen and (min-width: $single-column-breakpoint) {
-    @include darkmode {
-      border-bottom: 1px var(--bg) solid;
-    }
-  }
-}
-
-.nav_body {
-  padding-left: 200px;
-}
-
-.nav_parent {
-  margin: 0;
-  border-radius: 0;
-}
-
-.nav_item {
-  padding: 0.5rem 1rem;
 }
 
 // PAGE WRAPPER

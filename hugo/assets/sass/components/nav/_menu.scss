@@ -1,0 +1,32 @@
+// NAVIGATION MENU
+
+.nav_header { // header wrapper provided for specificity
+
+  .nav_body { // navigation menu wrapper
+    padding-left: var(--logo-width);
+  }
+
+  .nav_parent { // navigation menu items
+    margin: 0;
+    border-radius: 0;
+
+    @include is-on {
+      background-color: var(--theme);
+      text-shadow: 0px 0px 1px var(--hazy-white);
+      transition: background-color text-shadow;
+      @include motion(transition-duration, 500ms);
+    }
+
+    &.nav_active {
+      @include switch(
+        background-color,
+        rgba(0, 0, 0, 0.75),
+        rgba(255, 255, 255, 0.15)
+      );
+    }
+  }
+
+  .nav_item { // navigation menu links
+    padding: 0.5rem 1rem;
+  }
+}

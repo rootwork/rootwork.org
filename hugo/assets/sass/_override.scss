@@ -4,6 +4,7 @@
 // need to use @import rather than Sass's newer @use syntax.
 
 @import 'base/hiding';
+@import 'base/breakpoints';
 @import 'base/is-on';
 @import 'base/switch';
 @import 'base/darkmode';
@@ -16,6 +17,8 @@
 
 @import 'components/all';
 
+@import 'components/nav/container';
+@import 'components/nav/menu';
 @import 'components/nav/light-switch';
 @import 'components/nav/logo';
 @import 'components/nav/follow';

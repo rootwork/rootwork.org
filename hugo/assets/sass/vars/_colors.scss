@@ -31,6 +31,7 @@ $color: (
 
 $derivedColor: (
   medium-green: lighten(map-get($color, bright-green), 3%),
+  hazy-green: lighten(map-get($color, dark-green), 3%),
   translucent-green: rgba(map-get($color, bright-green), 0.15),
 );
 // $bc: lighten(map-get($color, bg), 75%);
@@ -47,6 +48,7 @@ $derivedColor: (
   --green: #{map-get($color, green)};
   --bright-green: #{map-get($color, bright-green)};
   --dark-green: #{map-get($color, dark-green)};
+  --hazy-green: #{map-get($derivedColor, hazy-green)};
   --medium-green: #{map-get($derivedColor, medium-green)};
   --light-green: #{map-get($color, light-green)};
   --pale-green: #{map-get($color, pale-green)};
