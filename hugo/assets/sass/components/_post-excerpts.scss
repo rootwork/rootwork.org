@@ -8,12 +8,18 @@
   }
 
   .excerpt_footer {
+    padding-bottom: 1.333rem;
+
     p {
       line-height: 1.5;
 
       &:first-child {
         padding-top: 0;
       }
+    }
+
+    .excerpt_more {
+      margin-top: -0.5rem;
     }
   }
 }
