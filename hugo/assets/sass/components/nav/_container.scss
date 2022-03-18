@@ -1,7 +1,7 @@
 // NAVIGATION CONTAINER
 
-.nav_header { // <header> element
-  @include switch(background-color, var(--dark-green), var(--hazy-green));
+header.nav_header {
+  @include switch(background-color, var(--bright-green), var(--hazy-green));
   @include switch(border-bottom-color, var(--white), var(--bg));
   border-bottom-width: 0.2rem;
   border-bottom-style: solid;
