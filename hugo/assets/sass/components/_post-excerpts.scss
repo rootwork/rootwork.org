@@ -22,6 +22,13 @@
     .excerpt_more {
       margin-top: -0.5rem;
       font-weight: bold;
+      background-color: darken(map-get($color, bright-green), 12%);
+      border-color: darken(map-get($color, bright-green), 12%);
+
+      @include is-on {
+        background-color: darken(map-get($color, bright-green), 20%);
+        border-color: darken(map-get($color, bright-green), 20%);
+      }
     }
   }
 }
