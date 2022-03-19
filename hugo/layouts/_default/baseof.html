@@ -90,6 +90,10 @@
         <link rel="stylesheet" href="{{ relURL . }}" />
       {{- end }}
     {{- end }}
+
+    <!-- JSON-LD schema (SEO) -->
+    {{ partial "site_schema.html" . }}
+
     {{ partial "hooks/head-end.html" . }}
   </head>
   {{- $maxCodeLines := 100 }}
