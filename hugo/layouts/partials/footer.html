@@ -1,7 +1,11 @@
-{{/* FROM:
+{{/*
+
+FROM:
   <img src='{{ absURL (default $defaultFooterLogo $s.footerLogo)
 }}'
-class="icon icon_2 transparent" alt="{{ $t }}"> TO:
+class="icon icon_2 transparent" alt="{{ $t }}">
+
+TO:
 <a href="/"
   ><img
     src="{{ absURL (default $defaultFooterLogo $s.footerLogo) }}"
@@ -16,6 +20,7 @@ FROM:
   ></span
   >&nbsp;{{ upper $t }}. {{ T "all_rights" }}
 </p>
+
 TO:
 <p>
   {{ T "copyright" }}{{ with $s.since }}&nbsp;{{ . }}&#8211;{{ end }}&nbsp;<span
@@ -25,6 +30,8 @@ TO:
     >Privacy policy</a
   >
 </p>
+
+- Adding h-card (indieweb)
 
 */}}{{- $s := .Site.Params }}
 {{ $t := .Site.Title }}
@@ -50,7 +57,8 @@ TO:
         href="https://github.com/rootwork/rootwork.org#licenses"
         target="_blank"
         >see the repo</a
-      >.<br /><a href="/privacy">Privacy policy</a>
+      >.<br />
+      <a href="/privacy">Privacy policy</a>
     </p>
     {{- partialCached "top" . }}
   </div>

@@ -12,9 +12,10 @@
 <div class="grid-inverse wrap content">
   <ul class="posts" id="posts">
     {{ if .IsHome }}
-      <div class="home_bio">
+      <div class="home_bio h-card vcard">
         {{- $author := $s.Author }}
-        <a href="{{ absLangURL (default "about/" $s.introURL) }}"
+        <a href="{{ .Site.BaseURL }}"
+        class="p-name u-url url author metatag" rel="me"
           ><span class="img_wrap"
             ><svg
               width="0"
@@ -28,6 +29,7 @@
                 </clipPath>
               </defs></svg
             ><img
+              class="u-photo"
               src="{{ absURL $author.photo }}"
               alt="{{ $author.name }} photo" /></span
         ></a>
