@@ -3,18 +3,18 @@ document.documentElement.classList.remove('no-js')
 
 // Get current weather
 function getWeather() {
-  const json_url = 'https://wttr.in/Portland?u&format=j1'
+  const json_url = 'https://wttr.in/Portland?format=j1'
   let xhr = new XMLHttpRequest()
   xhr.open('GET', json_url, false)
   xhr.send(null)
 
   let weatherJSON = JSON.parse(xhr.responseText)
+  let weatherCurrent = weatherJSON.current_condition[0]
 
-  let weatherDesc =
-    weatherJSON.current_condition[0].weatherDesc[0].value.toLowerCase()
-  let weatherTemp = weatherJSON.current_condition[0].temp_F
-  let weatherWindDir = weatherJSON.current_condition[0].winddir16Point
-  let weatherWindSpeed = weatherJSON.current_condition[0].windspeedMiles
+  let weatherDesc = weatherCurrent.weatherDesc[0].value.toLowerCase()
+  let weatherTemp = weatherCurrent.temp_F
+  let weatherWindDir = weatherCurrent.winddir16Point
+  let weatherWindSpeed = weatherCurrent.windspeedMiles
 
   let weather =
     weatherDesc +
