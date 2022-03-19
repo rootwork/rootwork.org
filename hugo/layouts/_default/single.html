@@ -3,6 +3,7 @@
 
   1. article class h-entry
   2. h1 class p-name and itemprops
+  3. post_body e-content and itemprop
 */}}
 {{- define "main" }}
 {{- $s := .Site.Params }}
@@ -31,7 +32,7 @@
       {{ .TableOfContents }}
     </div>
     {{ end }}
-    <div class="post_body">
+    <div class="post_body e-content" itemprop="articleBody">
       {{- .Content }}
     </div>
 

@@ -16,6 +16,7 @@
 {{- $scratch.Set "writeSeparator" false }}
 {{- if $showPostMeta }}
   <div class="post_meta">
+    <span class="post_byline">By <span class="p-author">{{ .Params.author | default .Site.Author.name }}</span></span>
     {{- if $showDate }}
       <span class="post_date_icon">{{ partial "sprite" (dict "icon" "calendar") }}</span>
       <a class="u-url" href="{{ .Permalink }}" title="Permalink">

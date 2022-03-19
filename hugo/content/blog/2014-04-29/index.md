@@ -4,7 +4,7 @@ title:
   developers join forces!'
 author: Ivan Boothe
 date: '2014-04-29'
-lastmod: '2014-04-30' # Appends 'edited on' to the publish date
+# lastmod: '2014-04-30' # Appends 'edited on' to the publish date
 
 slug: 'join-me-devsigner-conference-portland-may-designers-developers-join-forces'
 # aliases:
