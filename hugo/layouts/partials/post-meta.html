@@ -1,5 +1,7 @@
 {{/* Adding lastmod and date variables and markup to show a last-edited date.
 
+  Wrapping date in permalink, microformat class, and time element (for indieweb).
+
   Inserting CATEGORIES section and separating out TAGS section.
 
   Removing 'writeSeparator' = true
@@ -16,15 +18,21 @@
   <div class="post_meta">
     {{- if $showDate }}
       <span class="post_date_icon">{{ partial "sprite" (dict "icon" "calendar") }}</span>
-      <span class="post_date">
-        {{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) -}}
-        {{ if ne $lastmod $date }}
-          <span class="post_date__edit"
-            >&nbsp;Edited on
-            {{ .Lastmod.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) }}&nbsp;</span
-          >
-        {{ end }}
-      </span>
+      <a class="u-url" href="{{ .Permalink }}" title="Permalink">
+        <span class="post_date">
+          <time class="dt-published">
+            {{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) -}}
+          </time>
+          {{ if ne $lastmod $date }}
+          </span></a>
+            <span class="post_date__edit"
+              >&nbsp;Edited on
+              {{ .Lastmod.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) }}&nbsp;</span
+            >
+          {{ else }}
+        </span>
+      </a>
+      {{ end }}
     {{- end }}
     {{- if $showReadTime }}
       <span class="post_time"
