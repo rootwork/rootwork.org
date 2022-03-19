@@ -6,6 +6,8 @@
   3. Adding default `no-js` tag on <html>
 
   4. Adding `strict-origin-when-cross-origin` referrer policy.
+
+  5. Adding indieauth endpoint.
 */}}{{- $s := .Site.Params }}{{- $p := .Params }}<!DOCTYPE html>
 <html
   lang="{{ .Lang }}"
@@ -24,7 +26,6 @@
     {{- $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed" "enableSourceMap" "true") -}}
     {{ $mainSassFile :=  "sass/main.sass" }}
     {{- $styles := resources.Get $mainSassFile | resources.ExecuteAsTemplate $mainSassFile . | resources.ToCSS $options | resources.Fingerprint "sha512" }}
-
 
     <!-- scripts definition -->
     {{- $highlightPath := "js/highlight.js" }}
@@ -50,6 +51,8 @@
 
     {{- $bundle := slice $highlight $variables $functions $code $main $custom | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint "sha512" -}}
 
+    <!-- indieauth endpoint -->
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
 
     <!-- preload assets declaration -->
     <link
