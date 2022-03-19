@@ -15,14 +15,14 @@ DefaultContentLanguage = "en"
 paginate = 10
 canonifyurls = false # See https://gohugo.io/content-management/urls/#canonicalization
 
+# Emoji
+enableEmoji = true
+
 # SEO settings
 enableRobotsTXT = true
 [sitemap]
   changefreq = "weekly"
   priority = 0.5
-
-# Emoji
-enableEmoji = true
 
 # [menus]
 # config/_default/menus/menu.xx.toml
