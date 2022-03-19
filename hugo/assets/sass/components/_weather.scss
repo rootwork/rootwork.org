@@ -1,0 +1,18 @@
+.weather {
+  padding: 0 1rem;
+  min-height: 3.75rem;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  border-radius: 0.5rem;
+  @include switch(background-color, var(--bright-light), var(--shade));
+
+  // Remove when Javascript doesn't load
+  .no-js & {
+    @include hidden-all;
+  }
+
+  a {
+    border-bottom: 1px dotted currentColor;
+  }
+}
