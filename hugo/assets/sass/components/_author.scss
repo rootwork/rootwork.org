@@ -89,20 +89,47 @@
 
   @include is-on {
     .img_wrap {
-      $b: var(--image-on-border);
-      $bn: calc(var(--image-on-border) * -1);
-      $b2: calc(var(--image-on-border) * 15);
-      $bc: lighten(#002714, 75%);
-      $bc2: lighten(#002714, 25%);
-      $bc3: lighten(#002714, 15%);
-      $bc4: lighten(#002714, 5%);
+      $width: var(--image-on-border);
+      $width2: calc(var(--image-on-border) * 15);
+      $widthNeg: calc(var(--image-on-border) * -1);
 
-      filter: drop-shadow($b 0 0 $bc) drop-shadow($bn 0 0 $bc)
-        drop-shadow(0 $b 0 $bc) drop-shadow(0 $bn 0 $bc)
-        drop-shadow($b $b 0 $bc) drop-shadow($bn $bn 0 $bc)
-        drop-shadow($b $bn 0 $bc) drop-shadow($bn $b 0 $bc)
-        drop-shadow(0 $b2 0 $bc2) drop-shadow(0 $b2 0 $bc3)
-        drop-shadow(0 $b2 0 $bc4);
+      $colorLt1: map-get($color, bright-green);
+      $colorLt2: lighten(map-get($color, bright-green), 35%);
+      $colorLt3: lighten(map-get($color, bright-green), 45%);
+      $colorLt4: lighten(map-get($color, bright-green), 55%);
+
+      $colorDk1: lighten(map-get($color, dark-green), 75%);
+      $colorDk2: lighten(map-get($color, dark-green), 25%);
+      $colorDk3: lighten(map-get($color, dark-green), 15%);
+      $colorDk4: lighten(map-get($color, dark-green), 5%);
+
+      @include switch(
+        filter,
+        // Light mode
+        drop-shadow($width 0 0 $colorLt1)
+        drop-shadow($widthNeg 0 0 $colorLt1)
+        drop-shadow(0 $width 0 $colorLt1)
+        drop-shadow(0 $widthNeg 0 $colorLt1)
+        drop-shadow($width $width 0 $colorLt1)
+        drop-shadow($widthNeg $widthNeg 0 $colorLt1)
+        drop-shadow($width $widthNeg 0 $colorLt1)
+        drop-shadow($widthNeg $width 0 $colorLt1)
+        drop-shadow(0 $width2 0 $colorLt2)
+        drop-shadow(0 $width2 0 $colorLt3)
+        drop-shadow(0 $width2 0 $colorLt4),
+        // Dark mode
+        drop-shadow($width 0 0 $colorDk1)
+        drop-shadow($widthNeg 0 0 $colorDk1)
+        drop-shadow(0 $width 0 $colorDk1)
+        drop-shadow(0 $widthNeg 0 $colorDk1)
+        drop-shadow($width $width 0 $colorDk1)
+        drop-shadow($widthNeg $widthNeg 0 $colorDk1)
+        drop-shadow($width $widthNeg 0 $colorDk1)
+        drop-shadow($widthNeg $width 0 $colorDk1)
+        drop-shadow(0 $width2 0 $colorDk2)
+        drop-shadow(0 $width2 0 $colorDk3)
+        drop-shadow(0 $width2 0 $colorDk4)
+      );
       @include motion(transition-delay, 350ms);
       @include motion(transition-duration, 1s);
 
