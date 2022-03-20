@@ -31,7 +31,6 @@
     gap: 0.5rem 0;
     align-items: center;
     margin-bottom: 0;
-    height: 2rem;
   }
 
   .post_byline {
@@ -63,14 +62,26 @@
 
   .post_categories,
   .post_tags {
-    margin: 0 0.5rem 0;
+    justify-content: center;
+    margin: 0;
+    gap: 0;
 
     .post_tag {
-      margin-top: 0;
+      margin: 0.5rem 1rem;
+      gap: 0;
+
+      &:first-of-type {
+        margin-top: 1rem;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
     }
   }
 
   .post_share {
+    margin-top: 1rem;
 
     > a {
       display: inline-block;
