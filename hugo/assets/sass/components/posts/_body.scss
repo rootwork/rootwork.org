@@ -4,7 +4,7 @@
   // body text only
   line-height: 1.5;
 
-  a:not(.icon) {
+  a:not(.icon, .footnote-backref) {
     font-weight: bold;
     border-bottom: 1px currentColor dotted;
     @include switch(--bg-h, 50%, 100%);
@@ -18,6 +18,22 @@
       background-position-x: left;
       @include switch(color, var(--dark-green), var(--dark-green));
       @include switch(border-bottom-color, var(--themedark), var(--light));
+    }
+  }
+
+  a.footnote-backref {
+    padding: 0.125rem 0.3333rem;
+    @include switch(color, var(--white), var(--bright-green));
+    @include switch(background-color, var(--bright-green), var(--dark-shade));
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    @include switch(border-color, var(--bright-green), var(--white));
+
+    @include is-on {
+      @include switch(background-color, var(--dark-green), var(--white));
+      @include switch(color, var(--white), var(--dark-green));
+      @include switch(border-color, var(--dark-green), var(--white));
     }
   }
 
