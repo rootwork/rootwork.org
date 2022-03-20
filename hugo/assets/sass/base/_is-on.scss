@@ -2,7 +2,7 @@
 @mixin is-on {
   &:hover,
   &:active,
-  &:focus {
+  &:focus-visible {
     @content;
   }
 }
