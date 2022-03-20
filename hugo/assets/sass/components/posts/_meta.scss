@@ -9,22 +9,29 @@
 
 .post_content .post_meta {
   width: 100%;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
   margin: 1rem 0;
-  padding: 0;
-  background-color: var(--post-bg);
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1;
+  @include switch(background-color, var(--white), var(--post-bg));
 
   @media screen and (min-width: $single-column-breakpoint) {
     margin: 1rem 0;
-    padding: 0;
+    padding: 1rem;
+    justify-content: flex-start;
   }
 
   > span,
+  > .page_only,
   > a {
-    display: inline-block;
+    display: inline-flex;
+    flex-flow: row wrap;
+    gap: 0.5rem 0;
+    align-items: center;
     margin-bottom: 0;
-    min-height: 2rem;
-    line-height: 1;
+    height: 2rem;
   }
 
   .post_byline {
@@ -36,11 +43,12 @@
     }
   }
 
-  .post_date_icon {
-  }
-
   .post_date {
-    margin: 0 0 -1px;
+    margin: 0;
+
+    time {
+      margin: 0;
+    }
   }
 
   .post_date__edit {
@@ -50,8 +58,7 @@
   }
 
   .post_time {
-    margin: 0 0 0 0.5rem;
-    // font-size: 0.8rem;
+    margin: 0 0 0 1rem;
   }
 
   .post_categories,
@@ -64,9 +71,6 @@
   }
 
   .post_share {
-    display: block;
-    margin: 0 0 -0.25rem;
-    font-size: 1rem;
 
     > a {
       display: inline-block;
