@@ -4,25 +4,21 @@
   // body text only
   line-height: 1.5;
 
-  a {
+  a:not(.icon) {
     font-weight: bold;
     border-bottom: 1px currentColor dotted;
-    background: linear-gradient(0deg, var(--bright-green), var(--pale-green)) no-repeat right bottom / 0 var(--bg-h);
-    transition: background-size 500ms, color 750ms;
-    --bg-h: 100%;
+    @include switch(--bg-h, 50%, 100%);
+    @include switch(--bg-ct, var(--light), var(--light));
+    @include switch(--bg-cb, var(--pale-green), var(--light));
+    background: linear-gradient(0deg, var(--bg-cb), var(--bg-ct)) no-repeat right bottom / 0 var(--bg-h);
+    @include motion(transition, background-size 600ms, color 750ms);
 
     @include is-on {
-      color: var(--dark-green) !important;
       background-size: 100% var(--bg-h);
       background-position-x: left;
+      @include switch(color, var(--dark-green), var(--dark-green));
+      @include switch(border-bottom-color, var(--themedark), var(--light));
     }
-
-    // @include is-on {
-    //   border-bottom-width: 1px;
-    //   border-bottom-style: dotted;
-    //   @include switch(border-bottom-color, var(--themedark), var(--light));
-    //   @include switch(color, var(--themedark), var(--light));
-    // }
   }
 
   strong {
