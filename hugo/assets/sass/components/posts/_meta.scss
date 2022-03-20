@@ -51,9 +51,17 @@
   }
 
   .post_date__edit {
-    margin: 0;
+    flex-basis: 100%;
+    justify-content: center;
+    margin: 0.25rem 0 0.5rem 0.25rem;
     font-size: 0.8rem;
     font-style: italic;
+
+    @include bp(sm) {
+      flex-basis: auto;
+      justify-content: flex-start;
+      margin: 0 0 0 0.5rem;
+    }
   }
 
   .post_time {
