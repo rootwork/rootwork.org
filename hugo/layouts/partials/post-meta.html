@@ -19,19 +19,17 @@
     <span class="post_byline">By <span class="p-author">{{ .Params.author | default .Site.Author.name }}</span></span>
     {{- if $showDate }}
       <span class="post_date_icon">{{ partial "sprite" (dict "icon" "calendar") }}</span>
-      <a class="u-url" href="{{ .Permalink }}" title="Permalink">
-        <span class="post_date">
+      <a class="post_date u-url" href="{{ .Permalink }}" title="Permalink">
           <time class="dt-published">
             {{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) -}}
           </time>
           {{ if ne $lastmod $date }}
-          </span></a>
+          </a>
             <span class="post_date__edit"
               >&nbsp;Edited on
               {{ .Lastmod.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) }}&nbsp;</span
             >
           {{ else }}
-        </span>
       </a>
       {{ end }}
     {{- end }}
