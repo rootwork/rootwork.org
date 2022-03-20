@@ -6,6 +6,10 @@
       margin: 0 0 1rem;
       padding-top: 0;
     }
+
+    .post_byline {
+      @include hidden-visually;
+    }
   }
 
   .excerpt_footer {
