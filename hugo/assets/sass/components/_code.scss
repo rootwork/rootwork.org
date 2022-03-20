@@ -1,9 +1,9 @@
 // CODE HIGHLIGHTING
 
-code.noClass {
+.post_body code.noClass {
   margin: 0 0.1rem;
   padding: 0 0.05rem;
-  @include switch(--inlineColor, var(--dark), var(--light));
+  @include switch(--inlineColor, var(--black), var(--light));
   @include switch(background-color, var(--shade), var(--translucent-lighter));
 
   pre &,
@@ -13,6 +13,21 @@ code.noClass {
     padding: 0;
     --inlineColor: var(--light);
     @include switch(background-color, transparent, transparent);
+  }
+}
+
+.highlight_wrap {
+  .panel_box {
+    margin-right: 1rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+
+    a {
+      border-bottom: none;
+    }
+
+    svg {
+      fill: var(--white);
+    }
   }
 }
 
