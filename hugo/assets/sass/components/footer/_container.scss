@@ -1,3 +1,4 @@
 .footer.footer {
   padding-top: 0;
+  @include switch(background-color, var(--haze), var(--shade));
 }
