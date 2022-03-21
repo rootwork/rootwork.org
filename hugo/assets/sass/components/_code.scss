@@ -1,18 +1,38 @@
 // CODE HIGHLIGHTING
 
-.post_body code.noClass {
+%standard-code {
+  margin: 0;
+  padding: 0;
+  font-size: 1.15rem;
+  --inlineColor: var(--light);
+  @include switch(background-color, transparent, transparent);
+}
+
+.highlight,
+.highlight_wrap {
+  @extend %standard-code;
+}
+
+code,
+code.noClass {
   margin: 0 0.1rem;
   padding: 0 0.05rem;
   @include switch(--inlineColor, var(--black), var(--light));
-  @include switch(background-color, var(--shade), var(--translucent-lighter));
+  @include switch(background-color, var(--shade), var(--shade));
 
   pre &,
   .highlight &,
   .highlight_wrap & {
-    margin: 0;
-    padding: 0;
-    --inlineColor: var(--light);
-    @include switch(background-color, transparent, transparent);
+    @extend %standard-code;
+  }
+
+  // Inline code
+  p &,
+  td & {
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    --inlineColor: var(--black);
+    @include switch(background-color, var(--shade), var(--dark-shade));
   }
 }
 

@@ -1,10 +1,10 @@
 // Styles for elements appearing within a post's body.
 
 .post_body {
-  // body text only
+  font-size: 1.3333rem;
   line-height: 1.5;
 
-  a:not(.icon, .footnote-backref) {
+  a:not(.icon, .footnote-ref, .footnote-backref) {
     font-weight: bold;
     border-bottom: 1px currentColor dotted;
     @include switch(--bg-h, 50%, 100%);
@@ -18,6 +18,16 @@
       background-position-x: left;
       @include switch(color, var(--dark-green), var(--dark-green));
       @include switch(border-bottom-color, var(--themedark), var(--light));
+    }
+  }
+
+  a.footnote-ref {
+    padding: 0 0.1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+
+    @include is-on {
+      @include switch(color, var(--dark-green), var(--light));
     }
   }
 

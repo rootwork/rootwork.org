@@ -2,12 +2,14 @@
 
 .sidebar {
   .sidebar_inner {
-.author_bio {
-  line-height: 1.25;
-}
+    .author_bio {
+      font-size: 1.2rem;
+      line-height: 1.3333;
+    }
 
     li {
-      line-height: 1.35;
+      font-size: 1.2rem;
+      line-height: 1.3333;
 
       .nav-link {
         @include is-on {
