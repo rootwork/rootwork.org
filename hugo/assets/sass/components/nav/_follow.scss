@@ -6,6 +6,17 @@
     transition: opacity;
     transition-duration: 500ms;
 
+    .icon {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    // RSS is a little too big
+    &:last-of-type .icon {
+      width: 1.15rem;
+      height: 1.15rem;
+    }
+
     svg {
       transition: transform;
       @include motion(transition-duration, 1s);

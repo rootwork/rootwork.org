@@ -2,6 +2,7 @@
 
 .color_mode {
   position: relative;
+  top: -0.3333rem;
 
   html.no-js & {
     @include hidden-all;
@@ -15,7 +16,7 @@
     border-radius: 1rem;
     @include switch(
       background-color,
-      var(--translucent-green),
+      var(--light),
       var(--dark-green)
     );
 
@@ -37,6 +38,9 @@
     box-shadow: none;
 
     &::after {
+      width: 1.5rem;
+      height: 1.5rem;
+
       @include switch(
         background-image,
         url('/icons/sun.svg'),
