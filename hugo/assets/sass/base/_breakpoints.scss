@@ -4,8 +4,17 @@
 // inherited from the parent theme.
 
 @mixin bp($breakpoint) {
+
   @if $breakpoint = 'sm' {
     @media screen and (min-width: $single-column-breakpoint) {
+      & {
+        @content;
+      }
+    }
+  }
+
+  @if $breakpoint = 'md' {
+    @media screen and (max-width: $mobile-menu-breakpoint) {
       & {
         @content;
       }
