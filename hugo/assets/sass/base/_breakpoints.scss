@@ -1,7 +1,9 @@
 // Breakpoints
 //
-// Apply styles at a particular breakpoint and above (mobile-first). Breakpoints
-// inherited from the parent theme.
+// Apply styles at a particular breakpoint and above (mobile-first).
+
+$single-column-breakpoint: 42rem;
+$mobile-menu-breakpoint: 55rem;
 
 @mixin bp($breakpoint) {
 
