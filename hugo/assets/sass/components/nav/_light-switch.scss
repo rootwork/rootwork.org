@@ -4,6 +4,10 @@
   position: relative;
   top: -0.3333rem;
 
+  .nav_body_right & {
+    top: -0.15rem;
+  }
+
   html.no-js & {
     @include hidden-all;
   }
@@ -19,6 +23,17 @@
       var(--light),
       var(--dark-green)
     );
+
+    .nav_body_right & {
+      margin-left: 0.1rem;
+      padding: 0.2rem 0.15rem 0;
+      height: auto;
+      @include switch(
+      background-color,
+        var(--light),
+        var(--dark-shade)
+      );
+    }
 
     &:hover::after,
     &:focus-within::after {
@@ -40,6 +55,11 @@
     &::after {
       width: 1.5rem;
       height: 1.5rem;
+
+      .nav_body_right & {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
 
       @include switch(
         background-image,
