@@ -32,6 +32,8 @@ code.noClass {
     padding: 0.2rem;
     border-radius: 0.2rem;
     font-size: 1.1rem;
+    line-break: normal;
+    word-break: normal;
     --inlineColor: var(--black);
     @include switch(background-color, var(--translucent-green), var(--dark-shade));
   }
