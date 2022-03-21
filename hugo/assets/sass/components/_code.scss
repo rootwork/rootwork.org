@@ -3,7 +3,7 @@
 %standard-code {
   margin: 0;
   padding: 0;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   --inlineColor: var(--light);
   @include switch(background-color, transparent, transparent);
 }
@@ -31,8 +31,9 @@ code.noClass {
   td & {
     padding: 0.2rem;
     border-radius: 0.2rem;
+    font-size: 1.1rem;
     --inlineColor: var(--black);
-    @include switch(background-color, var(--shade), var(--dark-shade));
+    @include switch(background-color, var(--translucent-green), var(--dark-shade));
   }
 }
 
