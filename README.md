@@ -62,6 +62,8 @@ use the flags `-s` and `-d` to change this. For details, run `npm run s -- -h`.
 
 `npm run n` or `./scripts/new_blog_post.sh`
 
+Set your preferred text editor at the top of the script.
+
 This script will:
 
 - Ask you for a title
@@ -72,7 +74,7 @@ This script will:
   if necessary (cf. https://github.com/gohugoio/hugo/issues/448 )
 - Create the necessary Markdown file, with sane defaults, at the appropriate
   directory/file location
-- Open the file in Sublime
+- Open the file in your text editor
 
 It does much more than just `hugo new ...`.
 
