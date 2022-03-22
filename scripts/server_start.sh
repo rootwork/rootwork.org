@@ -1,5 +1,23 @@
 #!/bin/bash
 
+######################
+# USER CONFIGURATION #
+######################
+
+# Platform-specific command for opening a browser window
+# Linux: xdg-open
+# Mac: open
+# Windows: start (or `powershell.exe -c start` outside of shell)
+open_browser=xdg-open
+
+# URL and port settings
+url="http://localhost"
+port="1313"
+
+##########
+# SCRIPT #
+##########
+
 # Ansi color code variables
 green="\e[0;92m"
 blue="\e[0;94m"
@@ -9,8 +27,7 @@ red_bg="\e[0;101m${expand_bg}"
 reset="\e[0m"
 
 # Help text
-show_help()
-{
+show_help() {
   echo -e "${blue}
   Usage: ${green}npm run s [--] [-d] [-s] [-h]${blue}
 
@@ -27,7 +44,16 @@ show_help()
   exit 0
 }
 
+# Open command
+open=$(command -v ${open_browser})
+if [[ ! $open ]]; then
+  echo -e "${red_bg}Error: '${open_browser}' is not installed. Check line 11 of ${0##*/}. Aborting.${reset}\n" >&2
+  exit 1
+fi
+
+# Default variables
 notice="Running web server"
+vars="--baseURL ${url} --port ${port}"
 
 while getopts "dsh" flag; do
   case "$flag" in
@@ -54,7 +80,9 @@ notice="$notice..."
 echo -e "\n${green_bg}${reset}"
 echo -e "${green} ${notice} ${reset}"
 echo -e "${green_bg}${reset}\n"
-cd './hugo'
-xdg-open http://localhost:1313/
-hugo server ${vars}
+cd './hugo' || exit
+hugo server ${vars} &
+HUGO_PID=$!
+sleep 1s && "$open" "${url}:${port}"
 cd './'
+wait "$HUGO_PID"
