@@ -1,12 +1,9 @@
 // LIGHT MODE SWITCHER
 
+// General styles come first; for clarity mobile menu overrides are all together at the bottom.
 .color_mode {
   position: relative;
   top: -0.3333rem;
-
-  .nav_body_right & {
-    top: -0.15rem;
-  }
 
   html.no-js & {
     @include hidden-all;
@@ -21,19 +18,8 @@
     @include switch(
       background-color,
       var(--light),
-      var(--dark-green)
+      var(--dark-shade)
     );
-
-    .nav_body_right & {
-      margin-left: 0.1rem;
-      padding: 0.2rem 0.15rem 0;
-      height: auto;
-      @include switch(
-      background-color,
-        var(--light),
-        var(--dark-shade)
-      );
-    }
 
     &:hover::after,
     &:focus-within::after {
@@ -43,7 +29,7 @@
       right: 0;
       padding: 0.1rem 0.5rem;
       color: var(--haze);
-      background-color: var(--shadedark);
+      background-color: var(--dark-shade);
       border-radius: 0.25rem;
     }
   }
@@ -56,16 +42,33 @@
       width: 1.5rem;
       height: 1.5rem;
 
-      .nav_body_right & {
-        width: 1.2rem;
-        height: 1.2rem;
-      }
-
       @include switch(
         background-image,
         url('/icons/sun.svg'),
         url('/icons/moon.svg')
       );
     }
+  }
+}
+
+.jsopen {
+  .color_mode {
+    top: -0.15rem;
+  }
+
+  .color_mode-toggle {
+    margin-left: 0.1rem;
+    padding: 0.2rem 0.15rem 0;
+    height: auto;
+    @include switch(
+    background-color,
+      var(--light),
+      var(--dark-shade)
+    );
+  }
+
+  .color_choice::after {
+    width: 1.2rem;
+    height: 1.2rem;
   }
 }
