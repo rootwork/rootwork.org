@@ -16,6 +16,8 @@ and
 [generate a production copy of the site](#generating-the-site-for-production).
 They are user-configurable and meant to be easy to fork. [Take a look!](scripts)
 
+---
+
 <!-- The following section, from "ts" to "te", is an automatically-generated
   table of contents, updated whenever this file changes. Do not edit within
   this section. -->
@@ -42,6 +44,8 @@ They are user-configurable and meant to be easy to fork. [Take a look!](scripts)
 <!-- Added by: runner, at: Tue Mar 22 23:24:51 UTC 2022 -->
 
 <!--te-->
+
+---
 
 # Local development
 
@@ -121,7 +125,9 @@ as an override.
 
 All content images will be optimized, and modern `.webp` and `.avif` images will
 be created. See [`scripts/image_optimize.sh`](scripts/image_optimize.sh) for the
-details.
+details. Requires [Imagemagick](https://imagemagick.org/) (which you likely have
+already), [cwebp](https://developers.google.com/speed/webp/docs/cwebp) and
+[avif-cli](https://github.com/lovell/avif-cli).
 
 The `public` directory, if it exists, will be removed to ensure that no outdated
 files are present, and then the static site will be re-generated in `public`.
