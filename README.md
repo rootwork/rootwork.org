@@ -121,7 +121,8 @@ as an override.
 `npm run p` or `./scripts/production_build.sh`
 
 All content images will be optimized, and modern `.webp` and `.avif` images will
-be created.
+be created. See [`scripts/image_optimize.sh`](scripts/image_optimize.sh) for the
+details.
 
 The `public` directory, if it exists, will be removed to ensure that no outdated
 files are present, and then the static site will be re-generated in `public`.
