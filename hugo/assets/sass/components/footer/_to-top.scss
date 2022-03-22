@@ -3,6 +3,9 @@
 .footer .to_top,
 .footer .to_top.ios {
   background-color: var(--bright-green);
+  border-width: 2px;
+  border-style: solid;
+  @include switch(border-color, var(--white), var(--dark-green));
 
   svg.icon {
     opacity: 1;
