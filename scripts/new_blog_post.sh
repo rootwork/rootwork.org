@@ -93,26 +93,26 @@ main() {
 
   # Create the new post
   # Need to first cd to the hugo blog root dir
-  cd './hugo'
+  cd './hugo' || exit
   hugo new "${path}"
 
   # Set the title, slug, date and taxonomy-dates.
   tmp_file="/tmp/${USER}_hugo_post"
-  \cp -f ${fullpath} ${tmp_file}
+  \cp -f "$fullpath" "$tmp_file"
   \sed -r -e 's/^(\s*title: ).*/\1'"'${title}'"'/' \
     -e 's/^(\s*slug: ).*/\1'"'${slug}' # Recommended length is 3 to 5 words."'/' \
     -e 's/^(\s*date: ).*/\1'"'${date_year}-${date_month}-${date_day}'"'/' \
     -e 's/^(\s*year: ).*/\1'"'${date_year}'"'/' \
     -e 's/^(\s*month: ).*/\1'"'${date_year}-${date_month}'"'/' \
-    ${tmp_file} >${fullpath}
-  \rm -f ${tmp_file}
+    "$tmp_file" >"$fullpath"
+  \rm -f "$tmp_file"
 
   # Create year and month taxonomy pages for this date, if they don't already
   # exist.
   yearpath="content/year/${date_year}"
   if [ ! -d "$yearpath" ]; then
-    mkdir ${yearpath}
-    cat <<EOF >${yearpath}/_index.md
+    mkdir "$yearpath"
+    cat <<EOF >"${yearpath}/_index.md"
 ---
 title: 'Archives: ${date_year}'
 url: '/blog/${date_year}/'
@@ -123,8 +123,8 @@ EOF
   monthpath="content/month/${date_year}-${date_month}"
   if [ ! -d "$monthpath" ]; then
     prettymonth=$(date -d "$date" +'%B')
-    mkdir ${monthpath}
-    cat <<EOF >${monthpath}/_index.md
+    mkdir "$monthpath"
+    cat <<EOF >"${monthpath}/_index.md"
 ---
 title: 'Archives: ${prettymonth} ${date_year}'
 url: '/blog/${date_year}/${date_month}'
