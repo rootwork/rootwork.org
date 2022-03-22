@@ -19,20 +19,21 @@ open_at_end=true
 # SCRIPT #
 ##########
 
-# Open command
-open=$(command -v ${open_editor})
-if [[ ! $open ]]; then
-  echo -e "${red_bg}Error: '${open_editor}' is not installed. Check line 9 of ${0##*/}. Aborting.${reset}\n" >&2
-  exit 1
-fi
-
 # Ansi color code variables
 green="\e[0;92m"
 blue="\e[0;94m"
 red_bg="\e[0;101m${expand_bg}"
 expand_bg="\e[K"
 blue_bg="\e[0;104m${expand_bg}"
+red_bg="\e[0;101m${expand_bg}"
 reset="\e[0m"
+
+# Open command
+open=$(command -v ${open_editor})
+if [[ ! $open ]]; then
+  echo -e "${red_bg}Error: '${open_editor}' is not installed. Check line 9 of ${0##*/}. Aborting.${reset}\n" >&2
+  exit 1
+fi
 
 here=$(pwd) # Home directory
 title=""
