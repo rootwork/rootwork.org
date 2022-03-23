@@ -23,6 +23,7 @@ shopt -s globstar # ** matches multiple directory levels
 # Ansi color code variables
 green="\e[0;92m"
 blue="\e[0;94m"
+expand_bg="\e[K"
 red_bg="\e[0;101m${expand_bg}"
 reset="\e[0m"
 
