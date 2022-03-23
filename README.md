@@ -23,23 +23,24 @@ They are user-configurable and meant to be easy to fork. [Take a look!](scripts)
   this section. -->
 
 <!--ts-->
-* [Rootwork.org publishing system](#rootworkorg-publishing-system)
-* [Local development](#local-development)
-   * [Creating a new post](#creating-a-new-post)
-   * [Editing site variables](#editing-site-variables)
-   * [Hugo modules](#hugo-modules)
-   * [Editing the theme](#editing-the-theme)
-* [Generating the site for production](#generating-the-site-for-production)
-* [Fresh installation](#fresh-installation)
-   * [Go](#go)
-   * [Hugo](#hugo)
-   * [This repo](#this-repo)
-   * [Node/npm](#nodenpm)
-* [Updating dependencies](#updating-dependencies)
-   * [Go](#go-1)
-   * [Hugo](#hugo-1)
-   * [Hugo modules](#hugo-modules-1)
-* [Licenses](#licenses)
+
+- [Rootwork.org publishing system](#rootworkorg-publishing-system)
+- [Local development](#local-development)
+  - [Creating a new post](#creating-a-new-post)
+  - [Editing site variables](#editing-site-variables)
+  - [Hugo modules](#hugo-modules)
+  - [Editing the theme](#editing-the-theme)
+- [Generating the site for production](#generating-the-site-for-production)
+- [Fresh installation](#fresh-installation)
+  - [Go](#go)
+  - [Hugo](#hugo)
+  - [This repo](#this-repo)
+  - [Node/npm](#nodenpm)
+- [Updating dependencies](#updating-dependencies)
+  - [Go](#go-1)
+  - [Hugo](#hugo-1)
+  - [Hugo modules](#hugo-modules-1)
+- [Licenses](#licenses)
 
 <!-- Added by: runner, at: Tue Mar 22 23:45:24 UTC 2022 -->
 
@@ -123,10 +124,12 @@ as an override.
 
 `npm run p` or `./scripts/production_build.sh`
 
-All content images will be optimized, and modern `.webp` and `.avif` images will
-be created. See [`scripts/image_optimize.sh`](scripts/image_optimize.sh) for the
-details. Requires [Imagemagick](https://imagemagick.org/) (which you likely have
-already), [cwebp](https://developers.google.com/speed/webp/docs/cwebp) and
+All content images will be optimized, and modern
+[WebP](https://en.wikipedia.org/wiki/WebP) and
+[AVIF](https://en.wikipedia.org/wiki/AVIF) images will be created. See
+[`scripts/image_optimize.sh`](scripts/image_optimize.sh) for the details.
+Requires [Imagemagick](https://imagemagick.org/),
+[cwebp](https://developers.google.com/speed/webp/docs/cwebp) and
 [avif-cli](https://github.com/lovell/avif-cli).
 
 The `public` directory, if it exists, will be removed to ensure that no outdated

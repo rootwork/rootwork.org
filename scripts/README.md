@@ -47,15 +47,16 @@ It does much more than just `hugo new ...`.
 
 [`image_optimize.sh`](image_optimize.sh)
 
-Images will be optimized, and modern `.webp` and `.avif` images will be created.
-
-Requires [Imagemagick](https://imagemagick.org/) (which you likely have
-already), [cwebp](https://developers.google.com/speed/webp/docs/cwebp) and
-[avif-cli](https://github.com/lovell/avif-cli).
-
-I use Hugo
+Set the path to your content images (if using
 [Page Bundles](https://gohugo.io/content-management/page-bundles/#leaf-bundles),
-so this script only looks for images within the `content/` directory.
+it's `content/`) at the top of the script, and enable or disable the following
+actions:
+
+- Optimize images with [Imagemagick](https://imagemagick.org/).
+- Create [WebP](https://en.wikipedia.org/wiki/WebP) versions of images with
+  [cwebp](https://developers.google.com/speed/webp/docs/cwebp)
+- Create [AVIF](https://en.wikipedia.org/wiki/AVIF) versions of images with
+  [avif-cli](https://github.com/lovell/avif-cli)
 
 This script is called as part of the production build script (below).
 
