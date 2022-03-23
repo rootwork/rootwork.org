@@ -8,7 +8,7 @@
 path="./hugo/content" # No trailing slash
 
 # Opt-in to individual actions
-optimize_images=true       # Requires Imagemagick https://imagemagick.org/
+optimize_images=true       # Requires Imagemagick v7+ https://imagemagick.org/
 optimize_images_scale=true # Whether to scale images to a maximum width of 1000px
 create_webp=true           # Requires cwebp https://developers.google.com/speed/webp/docs/cwebp
 create_avif=true           # Requires avif-cli https://github.com/lovell/avif-cli
@@ -29,10 +29,9 @@ reset="\e[0m"
 
 if [[ $optimize_images = "true" ]]; then
   # Optimize png, jpg, gif
-  # 'mogrify' is imagemagick
 
-  mogrify=$(command -v mogrify)
-  if [[ ! $mogrify ]]; then
+  magick=$(command -v magick)
+  if [[ ! $magick ]]; then
     echo -e "${red_bg}Error: Imagemagick is not installed. Aborting.${reset}\n" >&2
     exit 1
   fi
@@ -42,9 +41,9 @@ if [[ $optimize_images = "true" ]]; then
   for f in "$path"/**/*.{jpg,jpeg,png,gif}; do
     if [ -e "$f" ]; then
       if [[ $optimize_images_scale = "true" ]]; then
-        "$mogrify" -strip -thumbnail '1000>' "$f"
+        "$magick" mogrify -strip -thumbnail '1000>' "$f"
       else
-        "$mogrify" -strip "$f"
+        "$magick" mogrify -strip "$f"
       fi
       echo -e "${blue}${f}${reset}"
     fi
