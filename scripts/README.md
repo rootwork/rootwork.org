@@ -53,6 +53,7 @@ it's `content/`) at the top of the script, and enable or disable the following
 actions:
 
 - Optimize images with [Imagemagick](https://imagemagick.org/).
+- Scale large images down to 1000 pixels wide.
 - Create [WebP](https://en.wikipedia.org/wiki/WebP) versions of images with
   [cwebp](https://developers.google.com/speed/webp/docs/cwebp)
 - Create [AVIF](https://en.wikipedia.org/wiki/AVIF) versions of images with
