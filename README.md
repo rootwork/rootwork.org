@@ -124,8 +124,8 @@ as an override.
 `npm run p` or `./scripts/production_build.sh`
 
 Set the path to your Hugo and `public` directories at the top of the script, and
-enable or disable running the [image script](image_optimize.sh) as part of this
-build. (See
+enable or disable running the [image script](scripts/image_optimize.sh) as part
+of this build. (See
 [information about the image script](scripts#generate-optimized-and-modern-images)
 for details.)
 
