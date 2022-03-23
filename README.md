@@ -10,11 +10,12 @@ Rootwork is created with the static site generator [Hugo](http://gohugo.io)
 using the [Hugo Clarity](https://github.com/chipzoller/hugo-clarity) theme with
 customizations.
 
-Also included in this repo are some Bash scripts to
+**Also included in this repo are some Bash scripts for Hugo to
 [create a post](#creating-a-new-post), [start the server](#local-development)
 and
 [generate a production copy of the site](#generating-the-site-for-production).
-They are user-configurable and meant to be easy to fork. [Take a look!](scripts)
+They are user-configurable and meant to be easy to fork.
+[Take a look!](scripts)**
 
 ---
 
@@ -23,24 +24,25 @@ They are user-configurable and meant to be easy to fork. [Take a look!](scripts)
   this section. -->
 
 <!--ts-->
-* [Rootwork.org publishing system](#rootworkorg-publishing-system)
-* [Local development](#local-development)
-   * [Creating a new post](#creating-a-new-post)
-   * [Editing site variables](#editing-site-variables)
-   * [Hugo modules](#hugo-modules)
-   * [Editing the theme](#editing-the-theme)
-* [Generating the site for production](#generating-the-site-for-production)
-* [Fresh installation](#fresh-installation)
-   * [Go](#go)
-   * [Hugo](#hugo)
-   * [This repo](#this-repo)
-   * [Node/npm](#nodenpm)
-* [Updating dependencies](#updating-dependencies)
-   * [Go](#go-1)
-   * [Hugo](#hugo-1)
-   * [Hugo modules](#hugo-modules-1)
-   * [Node modules](#node-modules)
-* [Licenses](#licenses)
+
+- [Rootwork.org publishing system](#rootworkorg-publishing-system)
+- [Local development](#local-development)
+  - [Creating a new post](#creating-a-new-post)
+  - [Editing site variables](#editing-site-variables)
+  - [Hugo modules](#hugo-modules)
+  - [Editing the theme](#editing-the-theme)
+- [Generating the site for production](#generating-the-site-for-production)
+- [Fresh installation](#fresh-installation)
+  - [Go](#go)
+  - [Hugo](#hugo)
+  - [This repo](#this-repo)
+  - [Node/npm](#nodenpm)
+- [Updating dependencies](#updating-dependencies)
+  - [Go](#go-1)
+  - [Hugo](#hugo-1)
+  - [Hugo modules](#hugo-modules-1)
+  - [Node modules](#node-modules)
+- [Licenses](#licenses)
 
 <!-- Added by: runner, at: Wed Mar 23 20:56:47 UTC 2022 -->
 
