@@ -23,23 +23,24 @@ They are user-configurable and meant to be easy to fork. [Take a look!](scripts)
   this section. -->
 
 <!--ts-->
-* [Rootwork.org publishing system](#rootworkorg-publishing-system)
-* [Local development](#local-development)
-   * [Creating a new post](#creating-a-new-post)
-   * [Editing site variables](#editing-site-variables)
-   * [Hugo modules](#hugo-modules)
-   * [Editing the theme](#editing-the-theme)
-* [Generating the site for production](#generating-the-site-for-production)
-* [Fresh installation](#fresh-installation)
-   * [Go](#go)
-   * [Hugo](#hugo)
-   * [This repo](#this-repo)
-   * [Node/npm](#nodenpm)
-* [Updating dependencies](#updating-dependencies)
-   * [Go](#go-1)
-   * [Hugo](#hugo-1)
-   * [Hugo modules](#hugo-modules-1)
-* [Licenses](#licenses)
+
+- [Rootwork.org publishing system](#rootworkorg-publishing-system)
+- [Local development](#local-development)
+  - [Creating a new post](#creating-a-new-post)
+  - [Editing site variables](#editing-site-variables)
+  - [Hugo modules](#hugo-modules)
+  - [Editing the theme](#editing-the-theme)
+- [Generating the site for production](#generating-the-site-for-production)
+- [Fresh installation](#fresh-installation)
+  - [Go](#go)
+  - [Hugo](#hugo)
+  - [This repo](#this-repo)
+  - [Node/npm](#nodenpm)
+- [Updating dependencies](#updating-dependencies)
+  - [Go](#go-1)
+  - [Hugo](#hugo-1)
+  - [Hugo modules](#hugo-modules-1)
+- [Licenses](#licenses)
 
 <!-- Added by: runner, at: Wed Mar 23 19:54:35 UTC 2022 -->
 
@@ -123,23 +124,22 @@ as an override.
 
 `npm run p` or `./scripts/production_build.sh`
 
-All content images will be optimized, and modern
-[WebP](https://en.wikipedia.org/wiki/WebP) and
-[AVIF](https://en.wikipedia.org/wiki/AVIF) images will be created. See
-[`scripts/image_optimize.sh`](scripts/image_optimize.sh) for the details.
-Requires [Imagemagick](https://imagemagick.org/),
-[cwebp](https://developers.google.com/speed/webp/docs/cwebp) and
-[avif-cli](https://github.com/lovell/avif-cli).
+Set the path to your Hugo and `public` directories at the top of the script, and
+enable or disable running the [image script](image_optimize.sh) as part of this
+build. (See
+[information about the image script](scripts#generate-optimized-and-modern-images)
+for details.)
 
 The `public` directory, if it exists, will be removed to ensure that no outdated
-files are present, and then the static site will be re-generated in `public`.
+files are present.
+
+The site will then be re-generated in `public`, with minification turned on. You
+can
+[fine tune this in your site configuration](https://gohugo.io/getting-started/configuration/#configure-minify)
+or disable it completely with the `-m` flag.
 
 Note that `public` is excluded from the repo in `.gitignore`, so this command
-should be run from a GitHub Action to generate the site online.
-
-By default, Hugo's minification is turned on. This can be
-[fine-tuned in configuration](https://gohugo.io/getting-started/configuration/#configure-minify).
-If you wish to disable it completely, use `npm run p -- -m` instead.
+should be run from a GitHub Action or other CI to build the site.
 
 # Fresh installation
 
