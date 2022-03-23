@@ -42,9 +42,9 @@ if [[ $optimize_images = "true" ]]; then
   for f in "$path"/**/*.{jpg,jpeg,png,gif}; do
     if [ -e "$f" ]; then
       if [[ $optimize_images_scale = "true" ]]; then
-        $mogrify -strip -thumbnail '1000>' "$f"
+        "$mogrify" -strip -thumbnail '1000>' "$f"
       else
-        $mogrify -strip "$f"
+        "$mogrify" -strip "$f"
       fi
       echo -e "${blue}${f}${reset}"
     fi
@@ -70,7 +70,7 @@ if [[ $create_webp = "true" ]] || [[ $create_avif = "true" ]]; then
       newfile="${f%.*}.webp"
       if [ -e "$f" ]; then
         if [ ! -e "${newfile}" ]; then # Create only if file doesn't exist
-          $cwebp -quiet "$f" -o "${newfile}"
+          "$cwebp" -quiet "$f" -o "${newfile}"
           echo -e "${blue}${newfile}${reset}"
         fi
       fi
@@ -98,7 +98,7 @@ if [[ $create_webp = "true" ]] || [[ $create_avif = "true" ]]; then
       if [ -e "$f" ]; then
         if [ ! -e "${newfile}" ]; then # Create only if file doesn't exist
           dir="$(dirname "${f}")"
-          $npx $avif --input="$f" --output="$dir"
+          "$npx" "$avif" --input="$f" --output="$dir"
           echo -e "${blue}${newfile}${reset}"
         fi
       fi
