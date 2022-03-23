@@ -23,23 +23,24 @@ They are user-configurable and meant to be easy to fork. [Take a look!](scripts)
   this section. -->
 
 <!--ts-->
-* [Rootwork.org publishing system](#rootworkorg-publishing-system)
-* [Local development](#local-development)
-   * [Creating a new post](#creating-a-new-post)
-   * [Editing site variables](#editing-site-variables)
-   * [Hugo modules](#hugo-modules)
-   * [Editing the theme](#editing-the-theme)
-* [Generating the site for production](#generating-the-site-for-production)
-* [Fresh installation](#fresh-installation)
-   * [Go](#go)
-   * [Hugo](#hugo)
-   * [This repo](#this-repo)
-   * [Node/npm](#nodenpm)
-* [Updating dependencies](#updating-dependencies)
-   * [Go](#go-1)
-   * [Hugo](#hugo-1)
-   * [Hugo modules](#hugo-modules-1)
-* [Licenses](#licenses)
+
+- [Rootwork.org publishing system](#rootworkorg-publishing-system)
+- [Local development](#local-development)
+  - [Creating a new post](#creating-a-new-post)
+  - [Editing site variables](#editing-site-variables)
+  - [Hugo modules](#hugo-modules)
+  - [Editing the theme](#editing-the-theme)
+- [Generating the site for production](#generating-the-site-for-production)
+- [Fresh installation](#fresh-installation)
+  - [Go](#go)
+  - [Hugo](#hugo)
+  - [This repo](#this-repo)
+  - [Node/npm](#nodenpm)
+- [Updating dependencies](#updating-dependencies)
+  - [Go](#go-1)
+  - [Hugo](#hugo-1)
+  - [Hugo modules](#hugo-modules-1)
+- [Licenses](#licenses)
 
 <!-- Added by: runner, at: Wed Mar 23 20:54:00 UTC 2022 -->
 
@@ -164,7 +165,8 @@ should be run from a GitHub Action or other CI to build the site.
 
 `npm i`
 
-Tested with Node 16.x and npm 8.x.
+Node is used for automated tools like Prettier. Tested with Node 14.x and 16.x,
+and npm 6.x and 8.x.
 
 # Updating dependencies
 
@@ -187,6 +189,12 @@ Tested with Node 16.x and npm 8.x.
 - Update a single module to a specific version (tag
   [must use semver](https://go.dev/doc/modules/version-numbers)):
   `hugo mod get <repo_path>@<git_tag>`
+
+## Node modules
+
+`npm outdated`
+
+Then `npm up <module>` as necessary, and commit.
 
 # Licenses
 
