@@ -5,7 +5,7 @@
 ######################
 
 # Path to image directory (relative to the path from which you run this script)
-path="./hugo/content" # No trailing slash
+image_dir="./hugo/content" # No trailing slash
 
 # Opt-in to individual actions
 optimize_images=true       # Requires Imagemagick v7+ https://imagemagick.org/
@@ -50,7 +50,7 @@ if [[ $optimize_images = "true" ]]; then
 
   echo -e "\n${green}Optimizing images in content...${reset}"
 
-  for f in "$path"/**/*.{jpg,jpeg,png,gif}; do
+  for f in "$image_dir"/**/*.{jpg,jpeg,png,gif}; do
     if [ -e "$f" ]; then
       if [[ $optimize_images_scale = "true" ]]; then
         "$magick" mogrify -strip -thumbnail '1000>' "$f"
@@ -77,7 +77,7 @@ if [[ $create_webp = "true" ]] || [[ $create_avif = "true" ]]; then
       exit 1
     fi
 
-    for f in "$path"/**/*.{jpg,jpeg,png}; do
+    for f in "$image_dir"/**/*.{jpg,jpeg,png}; do
       newfile="${f%.*}.webp"
       if [ -e "$f" ]; then
         if [ ! -e "${newfile}" ]; then # Create only if file doesn't exist
@@ -104,7 +104,7 @@ if [[ $create_webp = "true" ]] || [[ $create_avif = "true" ]]; then
       exit 1
     fi
 
-    for f in "$path"/**/*.{webp,gif}; do
+    for f in "$image_dir"/**/*.{webp,gif}; do
       newfile="${f%.*}.avif"
       if [ -e "$f" ]; then
         if [ ! -e "${newfile}" ]; then # Create only if file doesn't exist
