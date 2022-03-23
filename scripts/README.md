@@ -59,7 +59,8 @@ actions:
 - Create [AVIF](https://en.wikipedia.org/wiki/AVIF) versions of images with
   [avif-cli](https://github.com/lovell/avif-cli)
 
-This script is called as part of the production build script (below).
+This script is called as part of the
+[production build script](#generate-the-site-for-production) below.
 
 ## Generate the site for production
 
@@ -67,7 +68,7 @@ This script is called as part of the production build script (below).
 
 Performs the following actions:
 
-- The image script is run.
+- The [image script](#generate-optimized-and-modern-images) above is run.
 - The `public` directory, if it exists, will be removed to ensure that no
   outdated files are present.
 - The static site will be re-generated in `public`, with minification turned on.
