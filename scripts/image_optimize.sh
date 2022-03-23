@@ -13,6 +13,18 @@ optimize_images_scale=true # Whether to scale images to a maximum width of 1000p
 create_webp=true           # Requires cwebp https://developers.google.com/speed/webp/docs/cwebp
 create_avif=true           # Requires avif-cli https://github.com/lovell/avif-cli
 
+# Note on image optimization:
+#
+# As noted above, this script uses Imagemagick for image optimization.
+# Imagemagick will recompress an image every time optimization is run, even if
+# it's been done before. This means the operation is not idempotent and will
+# result in new versions of old (already-optimized) files. If this bothers you,
+# alternative tools that could perform optimization include exiv2, exiftool,
+# or format-specific tools like jpegtran and pngquant.
+# References:
+# https://legacy.imagemagick.org/discourse-server/viewtopic.php?f=3&t=10895
+# https://stackoverflow.com/q/2654281
+
 ##########
 # SCRIPT #
 ##########
