@@ -8,16 +8,15 @@
 
     // Labeling automated subheading links
     .link.icon {
-      display: initial;
       color: inherit;
       border-bottom: none;
 
       &::after {
         content: 'Permalink';
         position: relative;
-        top: -0.15rem;
+        top: 0;
         display: inline-block;
-        padding-left: 0.1rem;
+        padding-left: 6rem;
         line-height: 1;
         font-size: 0.9rem;
         font-weight: normal;
