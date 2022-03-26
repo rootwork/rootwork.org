@@ -7,15 +7,16 @@
   a:not(.icon, .footnote-ref, .footnote-backref) {
     font-weight: bold;
     border-bottom: 1px currentColor dotted;
-    @include switch(--bg-h, 50%, 100%);
-    @include switch(--bg-ct, var(--light), var(--light));
-    @include switch(--bg-cb, var(--pale-green), var(--light));
-    background: linear-gradient(0deg, var(--bg-cb), var(--bg-ct)) no-repeat right bottom / 0 var(--bg-h);
-    @include motion(transition, background-size 600ms, color 750ms);
+    @include fancy-highlight(
+      $light_bottom: var(--pale-green),
+      $light_top: var(--light),
+      $dark_bottom: var(--light),
+      $dark_top: var(--light),
+      $light_height: 50%,
+      $dark_height: 100%,
+    );
 
     @include is-on {
-      background-size: 100% var(--bg-h);
-      background-position-x: left;
       @include switch(color, var(--dark-green), var(--dark-green));
       @include switch(border-bottom-color, var(--themedark), var(--light));
     }

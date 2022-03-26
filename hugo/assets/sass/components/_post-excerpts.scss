@@ -3,11 +3,19 @@
 .excerpt {
   font-size: 1.3333rem;
   line-height: 1.5;
-  
+
   .excerpt_header {
     .post_link {
       margin: 0 0 1rem;
       padding-top: 0;
+      @include fancy-highlight(
+        $light_bottom: var(--bright-green),
+        $light_top: var(--bright-green),
+        $dark_bottom: var(--light),
+        $dark_top: var(--light),
+        $light_height: 5%,
+        $dark_height: 2.5%,
+      );
     }
 
     .post_byline {
