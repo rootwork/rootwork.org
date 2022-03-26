@@ -37,3 +37,7 @@ tag = "tags"
 series = "series"
 year = "year"
 month = "month"
+
+# RSS and search
+[outputs]
+   home = ["HTML", "RSS", "JSON"]

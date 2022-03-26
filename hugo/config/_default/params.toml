@@ -108,6 +108,9 @@ iconsDir = "icons/" # without a leading forward slash
 name = "Ivan Boothe"
 photo = "images/ivan.jpg" #include this if you would like to show the author photo on the sidebar
 
+# fuse.js search
+enableSearch = true
+
 [plausible_analytics]
 enable = false # to enable plausible analytics set to true.
 # websiteDomain = "rootwork.org" # domain name of your website, most cases same as your base url
