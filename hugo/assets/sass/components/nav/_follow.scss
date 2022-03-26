@@ -1,18 +1,27 @@
 // SOCIAL-FOLLOW ICONS IN NAVIGATION BAR
 
 .follow {
+
+  .jsopen & {
+    flex-wrap: wrap;
+  }
+
   a {
     opacity: 0.8;
     transition: opacity;
     transition-duration: 500ms;
+
+    .jsopen & {
+      margin-bottom: 1.5rem;
+    }
 
     .icon {
       width: 1.5rem;
       height: 1.5rem;
 
       .jsopen & {
-        width: 1.1rem;
-        height: 1.1rem;
+        width: 1rem;
+        height: 1rem;
       }
     }
 
