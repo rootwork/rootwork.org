@@ -39,6 +39,7 @@
     svg {
       transition: transform;
       transition-duration: 0;
+      fill: var(--white);
     }
 
     @include is-on {
