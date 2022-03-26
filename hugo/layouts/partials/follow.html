@@ -1,6 +1,7 @@
 {{/*
 
-Defining $title based on .Name, and adding it to the <a> element.
+Defining $title based on .Name and adding it to the <a> element.
+Using label as a class.
 
 */}}
 {{- $base := absURL "" }}
@@ -9,7 +10,7 @@ Defining $title based on .Name, and adding it to the <a> element.
 {{- with $social }}
   {{- $items = . }}
 {{- end }}
-<div class='follow'>
+<div class="follow">
   {{- range $items }}
   {{- $url := .URL }}
   {{- $label := lower .Name }}
@@ -21,7 +22,7 @@ Defining $title based on .Name, and adding it to the <a> element.
   {{- if and (eq (hasPrefix $url $base) false) (eq (hasPrefix $url "http") false) }}
     {{ $url = absLangURL $url }}
   {{- end }}
-  <a href="{{ $url }}" title="{{ $title }}" rel="me">
+  <a href="{{ $url }}" class="{{ $label }}" title="{{ $title }}" rel="me">
     {{ partial "sprite" (dict "icon" $label) }}
   </a>
   {{- end }}
