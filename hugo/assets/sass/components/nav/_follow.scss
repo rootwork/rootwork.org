@@ -45,9 +45,15 @@
     @include is-on {
       opacity: 1;
 
-      svg {
+      &:not(.rss) svg {
         transform-origin: 50% 50%;
         @include motion(transform, rotate(360deg));
+        @include motion(transition-duration, 1s);
+      }
+
+      &.rss svg {
+        transform-origin: 0 100%;
+        @include motion(transform, scale(3) rotate(0.001deg));
         @include motion(transition-duration, 1s);
       }
     }
