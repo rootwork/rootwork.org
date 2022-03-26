@@ -37,6 +37,7 @@
   .color_choice {
     background-color: var(--translucent-lighter);
     box-shadow: none;
+    overflow: visible;
 
     &::after {
       width: 1.5rem;
