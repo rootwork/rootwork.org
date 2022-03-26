@@ -38,7 +38,7 @@
 
     svg {
       transition: transform;
-      @include motion(transition-duration, 1s);
+      transition-duration: 0;
     }
 
     @include is-on {
@@ -47,6 +47,7 @@
       svg {
         transform-origin: 50% 50%;
         @include motion(transform, rotate(360deg));
+        @include motion(transition-duration, 1s);
       }
     }
 
