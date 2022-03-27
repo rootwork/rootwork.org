@@ -8,22 +8,42 @@
 
     // Labeling automated subheading links
     .link.icon {
+      position: relative;
       color: inherit;
       border-bottom: none;
       border-radius: 100%;
       background-color: var(--light);
       vertical-align: middle;
+      @include motion(transition-duration, 500ms);
+      @include motion(width, 0);
 
       &::after {
         content: 'Permalink';
-        position: relative;
+        position: absolute;
         top: 0;
         display: inline-block;
-        padding-left: 6rem;
         line-height: 1;
         font-size: 0.9rem;
         font-weight: normal;
         text-transform: uppercase;
+        @include motion(transition, width opacity padding);
+        @include motion(transition-duration, 750ms);
+        @include motion(width, 0);
+        @include motion(overflow, clip);
+        @include motion(opacity, 0);
+      }
+    }
+
+    @include is-on {
+      .link.icon {
+        width: 1rem;
+
+        &::after {
+          width: auto;
+          overflow: visible;
+          padding-left: 6rem;
+          opacity: 1;
+        }
       }
     }
   }
