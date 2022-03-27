@@ -7,3 +7,10 @@
     padding-top: 5rem;
   }
 }
+
+.content.grid-inverse {
+  @include bp(sm) {
+    grid-template-columns: 65% 1fr;
+    grid-column-gap: 3rem;
+  }
+}

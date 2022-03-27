@@ -20,10 +20,15 @@
 }
 
 // Tags in the sidebar
-.tags_nav .post_tag .button_tally {
-  margin-left: 0.5rem;
-  padding: 0.2rem 0.5rem;
-  font-size: 1rem;
-  border-radius: 100%;
-  background-color: darken(map-get($color, bright-green), 12%);
+.tags_nav .post_tag {
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  font-size: 0.95rem;
+
+  .button_tally {
+    margin-left: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+    border-radius: 100%;
+    background-color: darken(map-get($color, bright-green), 12%);
+  }
 }

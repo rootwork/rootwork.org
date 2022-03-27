@@ -2,6 +2,30 @@
 
 .sidebar {
   .sidebar_inner {
+
+    // Divider
+    &::before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -1.5rem;
+      width: 1px;
+      padding: 0;
+      background: linear-gradient(to bottom, var(--theme), var(--white));
+
+      @include darkmode {
+        display: block;
+        background: linear-gradient(to bottom, var(--theme), var(--bg));
+      }
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      line-height: 1.1;
+    }
+
     .author_bio {
       font-size: 1.2rem;
       line-height: 1.3333;
@@ -20,23 +44,6 @@
           $light_height: 100%,
           $dark_height: 100%,
         );
-      }
-    }
-
-    &::before {
-      display: block;
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: -2rem;
-      width: 1px;
-      padding: 0;
-      background: linear-gradient(to bottom, var(--theme), var(--white));
-
-      @include darkmode {
-        display: block;
-        background: linear-gradient(to bottom, var(--theme), var(--bg));
       }
     }
   }
