@@ -12,9 +12,14 @@
       line-height: 1.3333;
 
       .nav-link {
-        @include is-on {
-          text-shadow: 0px 0px 1px var(--text);
-        }
+        @include fancy-highlight(
+          $light_bottom: var(--translucent-green),
+          $light_top: var(--translucent-green),
+          $dark_bottom: var(--translucent-green),
+          $dark_top: var(--translucent-green),
+          $light_height: 100%,
+          $dark_height: 100%,
+        );
       }
     }
 
