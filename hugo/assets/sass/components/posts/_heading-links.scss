@@ -10,6 +10,9 @@
     .link.icon {
       color: inherit;
       border-bottom: none;
+      border-radius: 100%;
+      background-color: var(--light);
+      vertical-align: middle;
 
       &::after {
         content: 'Permalink';
