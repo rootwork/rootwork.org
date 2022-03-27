@@ -32,7 +32,7 @@
       position: relative;
 
       &::after {
-        content: attr(title);
+        @include motion(content, attr(title));
         position: absolute;
         left: 0.7rem;
         bottom: -0.2rem;
@@ -69,7 +69,7 @@
 
         svg {
           transform-origin: 0 50%;
-          opacity: 0;
+          @include motion(opacity, 0);
           @include motion(transform, translateX(27.5%) translateY(-50%) scale(3) rotate(0.001deg));
           @include motion(transition-duration, 1s);
         }
