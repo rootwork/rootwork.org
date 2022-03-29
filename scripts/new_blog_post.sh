@@ -5,6 +5,9 @@
 # USER CONFIGURATION #
 ######################
 
+# Path to your Hugo directory (relative to the path from which you run this script)
+hugo_dir="./hugo" # No trailing slash
+
 # Command to open your preferred file editor
 open_editor=subl
 
@@ -94,7 +97,7 @@ main() {
 
   # Create the new post
   # Need to first cd to the hugo blog root dir
-  cd './hugo' || exit
+  cd "$hugo_dir" || exit
   hugo new "${path}"
 
   # Set the title, slug, date and taxonomy-dates.
