@@ -34,7 +34,7 @@ reset="\e[0m"
 # Open command
 open=$(command -v ${open_editor})
 if [[ ! $open ]]; then
-  echo -e "${red_bg}Error: '${open_editor}' is not installed. Check line 9 of ${0##*/}. Aborting.${reset}\n" >&2
+  echo -e "${red_bg}Error: '${open_editor}' is not installed. Check line 12 of ${0##*/}. Aborting.${reset}\n" >&2
   exit 1
 fi
 
