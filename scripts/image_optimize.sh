@@ -24,6 +24,10 @@ create_avif=true           # Requires avif-cli https://github.com/lovell/avif-cl
 # References:
 # https://legacy.imagemagick.org/discourse-server/viewtopic.php?f=3&t=10895
 # https://stackoverflow.com/q/2654281
+#
+# For a fuller version of this script that is configurable at the command-line,
+# see:
+# https://github.com/rootwork/bash-scripts/blob/main/images/modimg.sh
 
 ##########
 # SCRIPT #
