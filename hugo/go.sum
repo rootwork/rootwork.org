@@ -6,3 +6,5 @@ github.com/chipzoller/hugo-clarity v0.0.0-20220308110352-907d62a27967 h1:RWYB2xu
 github.com/chipzoller/hugo-clarity v0.0.0-20220308110352-907d62a27967/go.mod h1:v1JkaKdcLRibyUCalLP2CNeFo6FGzfd4ipEr4dK0+Zg=
 github.com/chipzoller/hugo-clarity v0.0.0-20220325000548-4bc5168bed27 h1:1dlLQCH7VfjtlOkb9/PHpURsP6iWV8QqFrqXhl+PnaM=
 github.com/chipzoller/hugo-clarity v0.0.0-20220325000548-4bc5168bed27/go.mod h1:v1JkaKdcLRibyUCalLP2CNeFo6FGzfd4ipEr4dK0+Zg=
+github.com/chipzoller/hugo-clarity v0.0.0-20220407195657-f40414b5292c h1:v2NXWYLOsCYUh5g0KrZfeTdSLNAoJ84hO2ZmtihLFfo=
+github.com/chipzoller/hugo-clarity v0.0.0-20220407195657-f40414b5292c/go.mod h1:v1JkaKdcLRibyUCalLP2CNeFo6FGzfd4ipEr4dK0+Zg=
