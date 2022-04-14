@@ -17,7 +17,11 @@
   {{- $image := $scratch.Get "image" }}
   {{- $bg := absLangURL (path.Join "images" $image) }}
   <div
-    class="{{ if ne $p.singleColumn true }}grid-inverse{{ end }}wrap content"
+    class="
+      {{ if ne $p.singleColumn true }}grid-inverse{{ end }}
+      wrap
+      content
+    "
   >
     <article class="post_content h-entry">
       {{- $t := .Title }}
