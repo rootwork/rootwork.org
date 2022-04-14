@@ -7,23 +7,30 @@ function getWeather() {
   let xhr = new XMLHttpRequest()
   xhr.open('GET', json_url, false)
   xhr.send(null)
+  let weather =
+    'indeterminate (due to a server error, not a weather phenomenon)'
 
-  let weatherJSON = JSON.parse(xhr.responseText)
-  let weatherCurrent = weatherJSON.current_condition[0]
+  if (xhr.readyState === 4) {
+    if (xhr.status === 200) {
+      let weatherJSON = JSON.parse(xhr.responseText)
+      let weatherCurrent = weatherJSON.current_condition[0]
 
-  let weatherDesc = weatherCurrent.weatherDesc[0].value.toLowerCase()
-  let weatherTemp = weatherCurrent.temp_F
-  let weatherWindDir = weatherCurrent.winddir16Point
-  let weatherWindSpeed = weatherCurrent.windspeedMiles
+      let weatherDesc = weatherCurrent.weatherDesc[0].value.toLowerCase()
+      let weatherTemp = weatherCurrent.temp_F
+      let weatherWindDir = weatherCurrent.winddir16Point
+      let weatherWindSpeed = weatherCurrent.windspeedMiles
 
-  let baseWeather = weatherDesc + ' and ' + weatherTemp + '°F'
+      let baseWeather = weatherDesc + ' and ' + weatherTemp + '°F'
 
-  let windWeather = ''
-  if (weatherWindSpeed !== '0') {
-    windWeather = ', wind ' + weatherWindDir + ' at ' + weatherWindSpeed + 'mph'
+      let windWeather = ''
+      if (weatherWindSpeed !== '0') {
+        windWeather =
+          ', wind ' + weatherWindDir + ' at ' + weatherWindSpeed + 'mph'
+      }
+
+      weather = baseWeather + windWeather
+    }
   }
-
-  let weather = baseWeather + windWeather
 
   return weather
 }
