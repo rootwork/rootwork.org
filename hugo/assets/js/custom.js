@@ -30,4 +30,6 @@ function getWeather() {
 
 // Embed weather
 let weatherEl = document.getElementById('current-weather')
-weatherEl.innerHTML = getWeather()
+if (weatherEl) {
+  weatherEl.innerHTML = getWeather()
+}
