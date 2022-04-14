@@ -1,0 +1,35 @@
+// Tree image
+
+.tree {
+  svg {
+    pointer-events: none;
+    overflow: hidden;
+
+    .treetop {
+      @include switch(fill, var(--dark-green), var(--text));
+    }
+
+    .roots {
+      @include switch(fill, var(--dark-brown), var(--text));
+    }
+  }
+
+  &--full {
+    svg {
+      margin: 0;
+    }
+  }
+
+  &--treetop {
+    svg {
+      margin-bottom: -100%;
+    }
+  }
+
+  &--roots {
+    svg {
+      margin-top: -66%;
+      margin-bottom: -5%;
+    }
+  }
+}

@@ -1,8 +1,22 @@
-.post_content,
-.posts {
+.post_content {
   margin-top: 0;
 
   @media screen and (min-width: $single-column-breakpoint) {
     margin-left: var(--logo-descender-width);
+  }
+
+  .tree {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    z-index: -10;
+    margin-top: 1rem;
+
+    &--roots {
+      border-top-width: 1px;
+      border-top-style: solid;
+      @include switch(border-top-color, var(--dark-brown), var(--text));
+    }
   }
 }

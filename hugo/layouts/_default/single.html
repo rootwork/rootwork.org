@@ -1,65 +1,67 @@
-{{/*
-  Adding microformats for indieweb:
-
+{{/* Adding microformats for indieweb:
   1. article class h-entry
   2. h1 class p-name and itemprops
   3. post_body e-content and itemprop
+
+  4. Adding "tree" partial at the bottom.
 */}}
 {{- define "main" }}
-{{- $s := .Site.Params }}
-{{- $p := .Params }}
-{{- $scratch := newScratch }}
-{{- if isset $p "image" }}
-  {{- $scratch.Set "image" $p.image }}
-{{- else }}
-  {{ $scratch.Set "image" $s.fallBackOgImage }}
-{{- end }}
-{{- $image := $scratch.Get "image" }}
-{{- $bg := absLangURL (path.Join "images" $image) }}
-<div class="{{ if ne $p.singleColumn true }}grid-inverse {{ end }}wrap content">
-  <article class="post_content h-entry">
-    {{- $t := .Title }}
-    <h1 class="post_title p-name" itemprop="name headline">{{ $t }}</h1>
-    {{- partial "post-meta" . }}
-    {{- if .Params.featureImage -}}
-      <div class="post_featured">
-        {{- partial "image" (dict "file" .Params.featureImage "type" "featured") }}
+  {{- $s := .Site.Params }}
+  {{- $p := .Params }}
+  {{- $scratch := newScratch }}
+  {{- if isset $p "image" }}
+    {{- $scratch.Set "image" $p.image }}
+  {{- else }}
+    {{ $scratch.Set "image" $s.fallBackOgImage }}
+  {{- end }}
+  {{- $image := $scratch.Get "image" }}
+  {{- $bg := absLangURL (path.Join "images" $image) }}
+  <div
+    class="{{ if ne $p.singleColumn true }}grid-inverse{{ end }}wrap content"
+  >
+    <article class="post_content h-entry">
+      {{- $t := .Title }}
+      <h1 class="post_title p-name" itemprop="name headline">{{ $t }}</h1>
+      {{- partial "post-meta" . }}
+      {{- if .Params.featureImage -}}
+        <div class="post_featured">
+          {{- partial "image" (dict "file" .Params.featureImage "type" "featured") }}
+        </div>
+      {{- end -}}
+      {{ if $p.toc }}
+        <div class="post_toc">
+          <h2>{{ T "overview" }}</h2>
+          {{ .TableOfContents }}
+        </div>
+      {{ end }}
+      <div class="post_body e-content" itemprop="articleBody">
+        {{- .Content }}
       </div>
-    {{- end -}}
-    {{ if $p.toc }}
-    <div class="post_toc">
-      <h2>{{ T "overview" }}</h2>
-      {{ .TableOfContents }}
-    </div>
+
+      {{- $showRelatedInArticle := true }}
+      {{- if eq $s.showRelatedInArticle false }}
+        {{- $showRelatedInArticle = false }}
+      {{- else if eq $p.showRelatedInArticle false }}
+        {{- $showRelatedInArticle = false }}
+      {{- end }}
+      {{- if ne $showRelatedInArticle false }}
+        {{- partial "related" . }}
+      {{- end }}
+
+      {{- $showComments := true }}
+      {{- if eq $s.comments false }}
+        {{- $showComments = false }}
+      {{- else if eq $p.comments false }}
+        {{- $showComments = false }}
+      {{- end }}
+      {{- if ne $showComments false }}
+        {{- partial "comments" . }}
+      {{- end }}
+      {{- partial "i18nlist" . }}
+      {{- partial "tree" (dict "display" "roots") }}
+    </article>
+    {{- if ( ne $p.sidebar false ) }}
+      {{- partial "sidebar" . }}
     {{ end }}
-    <div class="post_body e-content" itemprop="articleBody">
-      {{- .Content }}
-    </div>
-
-    {{- $showRelatedInArticle := true }}
-    {{- if eq $s.showRelatedInArticle false }}
-      {{- $showRelatedInArticle = false }}
-    {{- else if eq $p.showRelatedInArticle false }}
-      {{- $showRelatedInArticle = false }}
-    {{- end }}
-    {{- if ne $showRelatedInArticle false }}
-      {{- partial "related" . }}
-    {{- end }}
-
-    {{- $showComments := true }}
-    {{- if eq $s.comments false }}
-      {{- $showComments = false }}
-    {{- else if eq $p.comments false }}
-      {{- $showComments = false }}
-    {{- end }}
-    {{- if ne $showComments false }}
-      {{- partial "comments" . }}
-    {{- end }}
-    {{- partial "i18nlist" . }}
-
-  </article>
-  {{- if ( ne $p.sidebar false ) }}
-    {{- partial "sidebar" . }}
-  {{ end }}
-</div>
+  </div>
 {{- end }}
