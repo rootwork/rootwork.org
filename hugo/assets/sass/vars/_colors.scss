@@ -92,8 +92,13 @@ $light: map-get($color, white);
 $haze: map-get($color, hazy-white);
 
 // Dark mode swaps
+html[data-mode='dim'] {
+  --light: var(--bright-light);
+  --header-text: var(--white);
+}
 html {
-  @include darkmode {
+  @media (prefers-color-scheme: dark) {
     --light: var(--bright-light);
+    --header-text: var(--white);
   }
 }
