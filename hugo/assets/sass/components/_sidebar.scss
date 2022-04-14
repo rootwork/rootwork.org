@@ -2,7 +2,6 @@
 
 .sidebar {
   .sidebar_inner {
-
     // Divider
     &::before {
       display: block;
@@ -42,8 +41,12 @@
           $dark_bottom: var(--translucent-green),
           $dark_top: var(--translucent-green),
           $light_height: 100%,
-          $dark_height: 100%,
+          $dark_height: 100%
         );
+
+        @include is-on {
+          @include switch(color, var(--black), var(--white));
+        }
       }
     }
   }
