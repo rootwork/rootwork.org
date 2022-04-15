@@ -1,39 +1,7 @@
-{{/*
-
-FROM:
-  <img src='{{ absURL (default $defaultFooterLogo $s.footerLogo)
-}}'
-class="icon icon_2 transparent" alt="{{ $t }}">
-
-TO:
-<a href="/"
-  ><img
-    src="{{ absURL (default $defaultFooterLogo $s.footerLogo) }}"
-    class="icon icon_2 transparent"
-    alt="{{ $t }}"
-/></a>
-
-FROM:
-<p>
-  {{ T "copyright" }}{{ with $s.since }}&nbsp;{{ . }}-{{ end }}&nbsp;<span
-    class="year"
-  ></span
-  >&nbsp;{{ upper $t }}. {{ T "all_rights" }}
-</p>
-
-TO:
-<p>
-  {{ T "copyright" }}{{ with $s.since }}&nbsp;{{ . }}&#8211;{{ end }}&nbsp;<span
-    class="year"
-  ></span
-  >&nbsp;<a href="/">{{ $t }}</a>. {{ T "all_rights" }}<br /><a href="/privacy"
-    >Privacy policy</a
-  >
-</p>
-
-- Adding h-card (indieweb)
-
-*/}}{{- $s := .Site.Params }}
+{{/* Rewritten to add icon classes, extra copyright information and h-card
+  (indieweb).
+*/}}
+{{- $s := .Site.Params }}
 {{ $t := .Site.Title }}
 {{- if or .Params.enableMathNotation $s.enableMathNotation }}
   {{ partialCached "math" . }}
@@ -52,13 +20,12 @@ TO:
       {{ T "copyright" }}{{ with $s.since }}
         &nbsp;{{ . }}&#8211;
       {{ end }}&nbsp;<span class="year"></span>&nbsp;<a href="/">{{ $t }}</a>.
-      {{ T "all_rights" }} For details about code licenses,
-      <a
-        href="https://github.com/rootwork/rootwork.org#licenses"
-        target="_blank"
-        >see the repo</a
-      >.<br />
-      <a href="/privacy">Privacy policy</a>
+      {{ T "all_rights" }}
+      <a href="https://github.com/rootwork/rootwork.org#licenses"
+        >See the repo</a
+      >
+      for details about code licenses.
+      <a href="/privacy">View the privacy policy.</a>
     </p>
     {{- partialCached "top" . }}
   </div>
