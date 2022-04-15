@@ -2,11 +2,14 @@
 
 .content.content {
   padding-top: var(--logo-height);
+  padding-bottom: 0;
   padding-left: var(--page-padding);
   padding-right: var(--page-padding);
+  overflow-x: hidden; // preventing scrolling for full-widthed items
 
   @include bp(sm) {
     padding-top: 5rem;
+    overflow-x: initial;
   }
 }
 

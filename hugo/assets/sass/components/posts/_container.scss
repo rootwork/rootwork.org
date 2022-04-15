@@ -6,15 +6,16 @@
   }
 
   .tree {
-    @include fullwidth;
+    @include fullcontent;
+    overflow: hidden;
     z-index: -10;
     margin-top: 1rem;
     margin-bottom: 0;
 
     @media screen and (min-width: $single-column-breakpoint) {
-      @include undofullwidth;
-      overflow: hidden;
+      @include undofull;
       margin-bottom: -10rem;
+      background-color: transparent;
     }
 
     &--roots {
