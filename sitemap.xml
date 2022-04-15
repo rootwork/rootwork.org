@@ -77,9 +77,19 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>/search/</loc>
+    <loc>/blog/2014/03/</loc>
+    <lastmod>2014-03-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+  </url><url>
+    <loc>/blog/2014/03/online-advocacy-learn-community-organizing/</loc>
+    <lastmod>2014-03-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>/search/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.1</priority>
   </url><url>
     <loc>/series/</loc>
     <changefreq>weekly</changefreq>
