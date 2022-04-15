@@ -10,12 +10,15 @@
   {{ $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{ end }}
 <div class="grid-inverse wrap content">
+  {{ partialCached "search/widget" . }}
   <ul class="posts" id="posts">
     {{ if .IsHome }}
       <div class="home_bio h-card vcard">
         {{- $author := $s.Author }}
-        <a href="{{ .Site.BaseURL }}"
-        class="p-name u-url url author metatag" rel="me"
+        <a
+          href="{{ .Site.BaseURL }}"
+          class="p-name u-url url author metatag"
+          rel="me"
           ><span class="img_wrap"
             ><svg
               width="0"

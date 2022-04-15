@@ -40,4 +40,4 @@ month = "month"
 
 # RSS and search
 [outputs]
-   home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON"]

@@ -27,6 +27,7 @@
     {{ $mainSassFile :=  "sass/main.sass" }}
     {{- $styles := resources.Get $mainSassFile | resources.ExecuteAsTemplate $mainSassFile . | resources.ToCSS $options | resources.Fingerprint "sha512" }}
 
+
     <!-- scripts definition -->
     {{- $highlightPath := "js/highlight.js" }}
     {{- $highlight := resources.Get $highlightPath | resources.ExecuteAsTemplate $highlightPath . }}
@@ -50,6 +51,7 @@
     {{- $main := resources.Get $mainScriptPath | resources.ExecuteAsTemplate $mainScriptPath . }}
 
     {{- $bundle := slice $highlight $variables $functions $code $main $custom | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint "sha512" -}}
+
 
     <!-- indieauth endpoint -->
     <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
@@ -91,6 +93,7 @@
       {{- end }}
     {{- end }}
 
+
     <!-- JSON-LD schema (SEO) -->
     {{ partial "site_schema.html" . }}
 
@@ -125,6 +128,7 @@
     </main>
     {{- partialCached "icons" . }}
     {{- partialCached "footer" . }}    <script type="text/javascript" src="{{ $bundle.Permalink }}" integrity="{{ $bundle.Data.Integrity }}" crossorigin="anonymous"></script>
+    {{- partialCached "search/scripts" . }}
     {{- with $s.customJS }}
       {{- range . -}}
     <script type="text/javascript" src="{{ relURL . }}" ></script>
