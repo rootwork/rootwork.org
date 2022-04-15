@@ -1,17 +1,21 @@
 .post_content {
   margin-top: 0;
 
-  @media screen and (min-width: $single-column-breakpoint) {
+  @include bp(sm) {
     margin-left: var(--logo-descender-width);
   }
 
   .tree {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
+    @include fullwidth;
     z-index: -10;
     margin-top: 1rem;
+    margin-bottom: 0;
+
+    @media screen and (min-width: $single-column-breakpoint) {
+      @include undofullwidth;
+      overflow: hidden;
+      margin-bottom: -10rem;
+    }
 
     &--roots {
       border-top-width: 1px;

@@ -1,0 +1,17 @@
+// Full width (breaking out of parents)
+//
+// Accounts for content padding and logo descender width.
+
+@mixin fullwidth {
+  position: relative;
+  width: 100vw;
+  left: calc((var(--logo-descender-width) + var(--page-padding)) * -1);
+  overflow: hidden;
+}
+
+@mixin undofullwidth {
+  position: initial;
+  width: auto;
+  left: 0;
+  overflow: visible;
+}

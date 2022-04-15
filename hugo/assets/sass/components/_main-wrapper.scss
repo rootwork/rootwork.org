@@ -1,7 +1,9 @@
 // <main> element, which wraps the primary content of the page
 
-.content {
+.content.content {
   padding-top: var(--logo-height);
+  padding-left: var(--page-padding);
+  padding-right: var(--page-padding);
 
   @include bp(sm) {
     padding-top: 5rem;
