@@ -27,7 +27,7 @@ showShare: true
 # menu: main
 
 featureImage: 'devsignerslide1.jpg' # Top image on post.
-# featureImageAlt: 'Description of image' # Alternative text for featured image.
+featureImageAlt: 'Portland waterfront' # Alternative text for featured image.
 # featureImageCap: 'This is the featured image.' # Caption (optional).
 # thumbnail: 'thumbnail.jpg' # Image in lists of posts.
 # shareImage: 'share.jpg' # For SEO and social media snippets.
