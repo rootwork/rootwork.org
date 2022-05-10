@@ -24,24 +24,25 @@ They are user-configurable and meant to be easy to fork.
   this section. -->
 
 <!--ts-->
-* [Rootwork.org publishing system](#rootworkorg-publishing-system)
-* [Local development](#local-development)
-   * [Creating a new post](#creating-a-new-post)
-   * [Editing site variables](#editing-site-variables)
-   * [Hugo modules](#hugo-modules)
-   * [Editing the theme](#editing-the-theme)
-* [Generating the site for production](#generating-the-site-for-production)
-* [Fresh installation](#fresh-installation)
-   * [Go](#go)
-   * [Hugo](#hugo)
-   * [This repo](#this-repo)
-   * [Node/npm](#nodenpm)
-* [Updating dependencies](#updating-dependencies)
-   * [Go](#go-1)
-   * [Hugo](#hugo-1)
-   * [Hugo modules](#hugo-modules-1)
-   * [Node modules](#node-modules)
-* [Licenses](#licenses)
+
+- [Rootwork.org publishing system](#rootworkorg-publishing-system)
+- [Local development](#local-development)
+  - [Creating a new post](#creating-a-new-post)
+  - [Editing site variables](#editing-site-variables)
+  - [Hugo modules](#hugo-modules)
+  - [Editing the theme](#editing-the-theme)
+- [Generating the site for production](#generating-the-site-for-production)
+- [Fresh installation](#fresh-installation)
+  - [Go](#go)
+  - [Hugo](#hugo)
+  - [This repo](#this-repo)
+  - [Node/npm](#nodenpm)
+- [Updating dependencies](#updating-dependencies)
+  - [Go](#go-1)
+  - [Hugo](#hugo-1)
+  - [Hugo modules](#hugo-modules-1)
+  - [Node modules](#node-modules)
+- [Licenses](#licenses)
 
 <!-- Added by: runner, at: Wed Mar 23 21:15:58 UTC 2022 -->
 
@@ -187,9 +188,14 @@ and npm 6.x and 8.x.
 - Update all modules: `hugo mod get -u`
 - Update all modules recursively: `hugo mod get -u ./...`
 - Update a single module: `hugo mod get -u <repo_path>`
+- Update a single module to a specific branch:
+  `hugo mod get <repo_path>@<branch>`
 - Update a single module to a specific version (tag
   [must use semver](https://go.dev/doc/modules/version-numbers)):
   `hugo mod get <repo_path>@<git_tag>`
+
+For more, see [Hugo Module Site](https://github.com/rootwork/hugo-module-site)
+and the [overview of Hugo modules](https://gohugo.io/hugo-modules/).
 
 ## Node modules
 
