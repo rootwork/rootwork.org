@@ -5,8 +5,7 @@
 $single-column-breakpoint: 52.5rem;
 $mobile-menu-breakpoint: 55rem;
 
-@mixin bp($breakpoint) {
-
+@mixin breakat($breakpoint) {
   @if $breakpoint = 'sm' {
     @media screen and (min-width: $single-column-breakpoint) {
       & {
@@ -17,6 +16,14 @@ $mobile-menu-breakpoint: 55rem;
 
   @if $breakpoint = 'md' {
     @media screen and (max-width: $mobile-menu-breakpoint) {
+      & {
+        @content;
+      }
+    }
+  }
+
+  @if $breakpoint = 'lg' {
+    @media screen and (min-width: $mobile-menu-breakpoint) {
       & {
         @content;
       }

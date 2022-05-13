@@ -33,6 +33,24 @@
     }
   }
 
+  .excerpt_thumbnail {
+    display: block;
+    margin-bottom: 1rem;
+
+    figure {
+      text-align: center;
+    }
+  }
+
+  .excerpt_footer.partition {
+    display: grid;
+
+    @media screen and (min-width: $mobile-menu-breakpoint) {
+      grid-template-columns: 4fr 7fr;
+      grid-gap: 1rem;
+    }
+  }
+
   .excerpt_footer {
     padding-bottom: 1.333rem;
 

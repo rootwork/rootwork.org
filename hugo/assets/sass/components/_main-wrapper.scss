@@ -7,14 +7,14 @@
   padding-right: var(--page-padding);
   overflow-x: hidden; // preventing scrolling for full-widthed items
 
-  @include bp(sm) {
+  @include breakat(sm) {
     padding-top: 5rem;
     overflow-x: initial;
   }
 }
 
 .content.grid-inverse {
-  @include bp(sm) {
+  @include breakat(sm) {
     grid-template-columns: 65% 1fr;
     grid-column-gap: 3rem;
   }

@@ -20,7 +20,7 @@
     border-radius: 0.5rem;
     @include switch(background-color, var(--white), var(--post-bg));
 
-    @include bp(sm) {
+    @include breakat(sm) {
       margin: 1rem 0;
       padding: 1rem;
       justify-content: flex-start;
@@ -59,7 +59,7 @@
       font-size: 0.8rem;
       font-style: italic;
 
-      @include bp(sm) {
+      @include breakat(sm) {
         flex-basis: auto;
         justify-content: flex-start;
         margin: 0 0 0 0.5rem;
@@ -81,20 +81,18 @@
         margin: 0.5rem 1rem;
         font-size: 0.95rem;
 
-        @include bp(sm) {
+        @include breakat(sm) {
           margin: 0.5rem;
         }
 
         &:first-of-type {
-
-          @include bp(sm) {
+          @include breakat(sm) {
             margin-left: 1rem;
           }
         }
 
         &:last-of-type {
-
-          @include bp(sm) {
+          @include breakat(sm) {
             margin-right: 0.5rem;
           }
         }
@@ -104,7 +102,7 @@
     .post_share {
       margin: 1.5rem 0 0 0;
 
-      @include bp(sm) {
+      @include breakat(sm) {
         margin: 1rem 0 1rem 0.5rem;
       }
 
@@ -137,7 +135,7 @@
   .post_categories,
   .post_tags {
     .post_tag {
-      @include bp(sm) {
+      @include breakat(sm) {
         margin: 0.5rem;
       }
     }

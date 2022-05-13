@@ -1,7 +1,7 @@
 .post_content {
   margin-top: 0;
 
-  @include bp(sm) {
+  @include breakat(sm) {
     margin-left: var(--logo-descender-width);
   }
 
