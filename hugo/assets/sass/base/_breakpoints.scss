@@ -2,7 +2,7 @@
 //
 // Apply styles at particular breakpoints.
 
-$single-column-breakpoint: 42rem;
+$single-column-breakpoint: 52.5rem;
 $mobile-menu-breakpoint: 55rem;
 
 @mixin bp($breakpoint) {
