@@ -29,7 +29,7 @@ showShare: true
 featureImage: 'devsignerslide1.jpg' # Top image on post.
 featureImageAlt: 'Portland waterfront' # Alternative text for featured image.
 # featureImageCap: 'This is the featured image.' # Caption (optional).
-# thumbnail: 'thumbnail.jpg' # Image in lists of posts.
+thumbnail: 'devsigner-thumbnail.jpg' # Image in lists of posts.
 # shareImage: 'share.jpg' # For SEO and social media snippets.
 
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
