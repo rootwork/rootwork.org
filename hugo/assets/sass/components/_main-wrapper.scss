@@ -15,7 +15,7 @@
 
 .content.grid-inverse {
   @include breakat(sm) {
-    grid-template-columns: 65% 1fr;
+    grid-template-columns: 70% 1fr;
     grid-column-gap: 3rem;
   }
 }
