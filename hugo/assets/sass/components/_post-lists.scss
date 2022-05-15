@@ -63,14 +63,34 @@
     }
 
     .excerpt_more {
+      position: relative;
+      overflow: hidden;
       margin-top: -0.5rem;
       font-weight: bold;
       background-color: darken(map-get($color, bright-green), 12%);
       border-color: darken(map-get($color, bright-green), 12%);
 
+      &::after {
+        position: absolute;
+        content: '';
+        bottom: 0.6666rem;
+        left: 1.5rem;
+        right: 1.5rem;
+        border-bottom: 2px solid currentColor;
+        transition: all 0.25s ease-in-out;
+      }
+
       @include is-on {
         background-color: darken(map-get($color, bright-green), 20%);
         border-color: darken(map-get($color, bright-green), 20%);
+        box-shadow: 3px 3px 0 currentColor;
+
+        &::after {
+          left: 50%;
+          right: 50%;
+          opacity: 0;
+          transition-duration: 0.5s;
+        }
       }
     }
   }
