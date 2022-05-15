@@ -9,6 +9,7 @@
 
       @include is-on {
         color: var(--bright-green);
+        border-bottom-style: solid;
       }
     }
   }
