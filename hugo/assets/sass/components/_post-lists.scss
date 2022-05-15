@@ -83,7 +83,7 @@
       @include is-on {
         background-color: darken(map-get($color, bright-green), 20%);
         border-color: darken(map-get($color, bright-green), 20%);
-        box-shadow: 3px 3px 0 currentColor;
+        @include switch(box-shadow, 4px 5px 0 map-get($color, bright-green), 3px 4px 0 currentColor);
 
         &::after {
           left: 50%;
