@@ -6,6 +6,10 @@
     margin-top: 0.25rem;
     padding-top: 0.25rem;
     font-weight: normal;
+
+    @include is-on {
+      border-color: currentColor;
+    }
   }
 }
 
@@ -24,6 +28,10 @@
   margin: 0.5rem 0.5rem 0.5rem 0;
   padding-left: 1rem;
   font-size: 0.95rem;
+
+  @include is-on {
+    border-color: currentColor;
+  }
 
   .button_tally {
     margin: 0.5rem 0 0.5rem 0.5rem;
