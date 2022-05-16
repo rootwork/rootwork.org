@@ -64,13 +64,14 @@
 
     .excerpt_more {
       position: relative;
-      overflow: hidden;
       margin-top: -0.5rem;
       font-weight: bold;
       background-color: darken(map-get($color, bright-green), 12%);
-      border-color: darken(map-get($color, bright-green), 12%);
+      border-width: 0;
+      // border-radius: 0;
+      z-index: 1;
 
-      &::after {
+      &::before {
         position: absolute;
         content: '';
         bottom: 0.6666rem;
@@ -78,18 +79,36 @@
         right: 1.5rem;
         border-bottom: 2px solid currentColor;
         transition: all 0.25s ease-in-out;
+        z-index: 2;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        top: -0.25rem;
+        bottom: -0.25rem;
+        left: -0.25rem;
+        right: -0.25rem;
+        border: 3px transparent solid;
+        background-color: transparent;
+        transition: all 0.5s ease-in-out;
+        z-index: -1;
       }
 
       @include is-on {
-        background-color: darken(map-get($color, bright-green), 20%);
-        border-color: darken(map-get($color, bright-green), 20%);
-        @include switch(box-shadow, 4px 5px 0 map-get($color, bright-green), 3px 4px 0 currentColor);
+        background-color: var(--bright-green);
+        border-radius: 0;
 
-        &::after {
+        &::before {
           left: 50%;
           right: 50%;
           opacity: 0;
-          transition-duration: 0.5s;
+        }
+
+        &::after {
+          background-color: darken(map-get($color, bright-green), 20%);
+          border-color: var(--bright-green);
+          @include switch(box-shadow, 4px 4px var(--pale-green), 4px 4px darken(map-get($color, bright-green), 12%));
         }
       }
     }
