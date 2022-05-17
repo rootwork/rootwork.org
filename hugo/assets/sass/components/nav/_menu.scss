@@ -37,6 +37,7 @@
     // navigation menu links
     padding: 0.5rem 1rem;
     font-size: 1.25rem;
+    @include focus(text-decoration, underline);
   }
 
   .nav_close .icon {

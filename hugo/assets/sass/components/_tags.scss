@@ -24,10 +24,8 @@
   margin: 0.5rem 0.5rem 0.5rem 0;
   padding-left: 1rem;
   font-size: 0.95rem;
-
-  @include is-on {
-    border-color: currentColor;
-  }
+  @include is-on(border-color, currentColor);
+  @include focus(text-decoration, underline);
 
   .button_tally {
     margin: 0.5rem 0 0.5rem 0.5rem;

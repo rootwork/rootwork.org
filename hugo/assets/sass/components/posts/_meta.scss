@@ -109,13 +109,10 @@
       > a {
         display: inline-block;
         opacity: 0.75;
+        @include is-on(opacity, 1, 0.75);
 
         &:first-child {
           padding-left: 0.25rem;
-        }
-
-        @include is-on {
-          opacity: 1;
         }
 
         > .icon {
