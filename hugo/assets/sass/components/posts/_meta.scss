@@ -46,6 +46,7 @@
 
     .post_date {
       margin: 0;
+      @include is-on(text-decoration, underline);
 
       time {
         margin: 0;

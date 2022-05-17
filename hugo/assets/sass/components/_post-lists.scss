@@ -26,10 +26,18 @@
         $light_height: 3px,
         $dark_height: 3px
       );
+
+      > a {
+        @include focus(text-decoration, underline);
+      }
     }
 
     .post_byline {
       @include hidden-visually;
+    }
+
+    .post_date {
+      @include is-on(text-decoration, underline);
     }
   }
 
