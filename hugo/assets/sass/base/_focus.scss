@@ -2,6 +2,44 @@
 // See https://www.tpgi.com/focus-visible-and-backwards-compatibility/
 // and for a full polyfill, https://github.com/WICG/focus-visible
 
-@mixin focus($property, $value) {
+// Inspired by https://fotis.xyz/posts/progressively-enhancing-focus-visible/
+// This mixin is not as elegant or flexible, but simpler.
 
+// Usage
+//
+// SCSS:
+//
+// a {
+//   @include focus(outline, 1px black dotted, none);
+// }
+//
+// CSS:
+//
+// a:focus {
+//   outline: 1px black dotted;
+// }
+//
+// a:focus:not(:focus-visible) {
+//   outline: none;
+// }
+//
+// a:focus-visible {
+//   outline: 1px black dotted;
+// }
+//
+// If the focus reset is "none", it can be omitted:
+// @include focus(outline, 1px black dotted);
+
+@mixin focus($property, $focusStyle, $focusReset: none) {
+  &:focus {
+    #{$property}: $focusStyle;
+  }
+
+  &:focus:not(:focus-visible) {
+    #{$property}: $focusReset;
+  }
+
+  &:focus-visible {
+    #{$property}: $focusStyle;
+  }
 }

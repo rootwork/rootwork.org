@@ -1,8 +1,16 @@
 // Is-On: Use in place of `&:hover` and the like (when element is "on")
-@mixin is-on {
-  &:hover,
-  &:active,
-  &:focus-visible {
-    @content;
+@mixin is-on($property: null, $value: null, $valueReset: null) {
+  @if $property and $value {
+    &:hover,
+    &:active {
+      #{$property}: $value;
+    }
+    @include focus(#{$property}, #{$value}, #{$valueReset})
+  } @else {
+    &:hover,
+    &:active,
+    &:focus-visible {
+      @content;
+    }
   }
 }
