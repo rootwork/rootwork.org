@@ -14,5 +14,7 @@
 
   a {
     border-bottom: 1px dotted currentColor;
+
+    @include focus(border, 1px solid map-get($color, bright-green));
   }
 }
