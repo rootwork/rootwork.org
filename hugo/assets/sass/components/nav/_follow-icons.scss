@@ -1,6 +1,9 @@
 // SOCIAL-FOLLOW ICONS IN NAVIGATION BAR
 
-.follow {
+.follow.follow {
+  flex: 1 0 var(--follow-icons-width);
+  margin-left: auto;
+
   .jsopen & {
     flex-wrap: wrap;
   }

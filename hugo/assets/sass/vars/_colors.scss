@@ -21,6 +21,7 @@ $color: (
   white: #eee,
   hazy-white: #fafafa,
   light: rgba(#eee, 0.25),
+  medium-light: rgba(#fff, 0.3),
   bright-light: rgba(#eee, 0.91),
   black: #111,
   shade: rgba(#111, 0.25),
@@ -59,6 +60,7 @@ $derivedColor: (
   --white: #{map-get($color, white)};
   --hazy-white: #{map-get($color, hazy-white)};
   --light: #{map-get($color, light)};
+  --medium-light: #{map-get($color, medium-light)};
   --bright-light: #{map-get($color, bright-light)};
 
   --black: #{map-get($color, black)};

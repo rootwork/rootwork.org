@@ -1,15 +1,24 @@
 // ROOTWORK LOGO
 
-.nav_brand {
+.nav_brand.nav_item {
   min-height: var(--logo-top-height);
+  padding: 0;
+  @include bp-m-up {
+    flex: calc(var(--logo-width) + 2.5rem) 0 0;
+  }
 
   .logo {
-    position: absolute;
-    top: 0.5rem;
-
-    // prevent lower section from preventing pointer events
+    display: flex;
+    flex: calc(var(--logo-width) + 2.5rem) 0 0;
+    padding: 0.5rem 1.5rem 0.5rem 1rem;
+    @include switch(background-color, var(--light), transparent);
+    // prevent lower section from obscuring pointer events
     max-height: var(--logo-top-height);
     overflow: visible;
+
+    .jsopen & {
+      background-color: transparent;
+    }
 
     .roots {
       pointer-events: none;
@@ -65,7 +74,10 @@
 
     @include is-on {
       .roots {
-        @include motion(transform, translateY(-5%) scale3d(1, 1.25, 1.25) rotate(0.0001deg));
+        @include motion(
+          transform,
+          translateY(-10%) scale3d(1, 1.25, 1.25) rotate(0.0001deg)
+        );
       }
 
       #logo_roots-low,

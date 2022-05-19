@@ -5,7 +5,6 @@
 
   .nav_body {
     // navigation menu wrapper
-    padding-left: var(--logo-width);
   }
 
   .nav_parent {
@@ -17,7 +16,7 @@
       @include switch(
         background-color,
         rgba(0, 0, 0, 0.3),
-        rgba(255, 255, 255, 0.3)
+        var(--medium-light)
       );
       text-shadow: 0px 0px 1px var(--hazy-white);
       transition: background-color text-shadow;
