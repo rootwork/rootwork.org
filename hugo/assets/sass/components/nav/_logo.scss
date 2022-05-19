@@ -3,9 +3,12 @@
 .nav_brand.nav_item {
   min-height: var(--logo-top-height);
   padding: 0;
+
   @include bp-m-up {
     flex: calc(var(--logo-width) + 2.5rem) 0 0;
   }
+
+  @include focus-line(map-get($color, bright-green));
 
   .logo {
     display: flex;

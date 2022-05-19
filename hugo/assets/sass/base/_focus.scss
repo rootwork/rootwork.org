@@ -43,3 +43,43 @@
     #{$property}: $focusStyle;
   }
 }
+
+@mixin focus-line($color, $bgcolor-light: #eee, $bgcolor-dark: #002714) {
+  &:focus {
+    outline: none;
+    box-shadow: -6px 0 0 6px $bgcolor-light, -9px 0 0 9px $color;
+
+    html[data-mode='dim'] & {
+      box-shadow: -6px 0 0 6px $bgcolor-dark, -9px 0 0 9px $color;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      box-shadow: -6px 0 0 6px $bgcolor-dark, -9px 0 0 9px $color;
+    }
+  }
+
+  &:focus:not(:focus-visible) {
+    box-shadow: none;
+
+    html[data-mode='dim'] & {
+      box-shadow: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      box-shadow: none;
+    }
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: -6px 0 0 6px $bgcolor-light, -9px 0 0 9px $color;
+
+    html[data-mode='dim'] & {
+      box-shadow: -6px 0 0 6px $bgcolor-dark, -9px 0 0 9px $color;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      box-shadow: -6px 0 0 6px $bgcolor-dark, -9px 0 0 9px $color;
+    }
+  }
+}
