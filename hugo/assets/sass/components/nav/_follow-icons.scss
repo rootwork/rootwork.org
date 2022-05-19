@@ -12,7 +12,7 @@
     opacity: 0.8;
     transition: opacity;
     transition-duration: 500ms;
-    @include focus-line(map-get($color, bright-green));
+    @include focus-line(map-get($color, white));
 
     .jsopen & {
       margin-bottom: 1.5rem;

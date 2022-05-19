@@ -36,7 +36,7 @@
     // navigation menu links
     padding: 0.5rem 1rem;
     font-size: 1.25rem;
-    @include focus-line(map-get($color, bright-green));
+    @include focus-line(map-get($color, white));
   }
 
   .nav_close .icon {
