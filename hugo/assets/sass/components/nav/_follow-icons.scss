@@ -9,6 +9,7 @@
     opacity: 0.8;
     transition: opacity;
     transition-duration: 500ms;
+    @include focus(outline, 2px white solid);
 
     .jsopen & {
       margin-bottom: 1.5rem;
