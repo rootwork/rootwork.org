@@ -44,42 +44,51 @@
   }
 }
 
-@mixin focus-line($color, $bgcolor-light: #eee, $bgcolor-dark: #002714) {
+@mixin focus-line($color) {
+  position: relative;
+
   &:focus {
     outline: none;
-    box-shadow: -6px 0 0 6px $bgcolor-light, -9px 0 0 9px $color;
 
-    html[data-mode='dim'] & {
-      box-shadow: -6px 0 0 6px $bgcolor-dark, -9px 0 0 9px $color;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      box-shadow: -6px 0 0 6px $bgcolor-dark, -9px 0 0 9px $color;
+    &::after {
+      position: absolute;
+      display: block;
+      content: '';
+      left: 0;
+      right: 0;
+      bottom: -0.55rem;
+      height: 3px;
+      background-color: $color;
     }
   }
 
   &:focus:not(:focus-visible) {
     box-shadow: none;
 
-    html[data-mode='dim'] & {
-      box-shadow: none;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      box-shadow: none;
+    &::after {
+      position: absolute;
+      display: none;
+      content: '';
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 0;
+      background-color: transparent;
     }
   }
 
   &:focus-visible {
     outline: none;
-    box-shadow: -6px 0 0 6px $bgcolor-light, -9px 0 0 9px $color;
 
-    html[data-mode='dim'] & {
-      box-shadow: -6px 0 0 6px $bgcolor-dark, -9px 0 0 9px $color;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      box-shadow: -6px 0 0 6px $bgcolor-dark, -9px 0 0 9px $color;
+    &::after {
+      position: absolute;
+      display: block;
+      content: '';
+      left: 0;
+      right: 0;
+      bottom: -0.55rem;
+      height: 3px;
+      background-color: $color;
     }
   }
 }
