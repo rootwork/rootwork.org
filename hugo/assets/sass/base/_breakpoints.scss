@@ -5,6 +5,38 @@
 $single-column-breakpoint: 52.5rem;
 $mobile-menu-breakpoint: 55rem;
 
+@mixin bp-s-up {
+  @media screen and (min-width: $single-column-breakpoint) {
+    & {
+      @content;
+    }
+  }
+}
+
+@mixin bp-s-only {
+  @media screen and (max-width: $single-column-breakpoint) {
+    & {
+      @content;
+    }
+  }
+}
+
+@mixin bp-m-up {
+  @media screen and (min-width: $mobile-menu-breakpoint) {
+    & {
+      @content;
+    }
+  }
+}
+
+@mixin bp-m-only {
+  @media screen and (max-width: $mobile-menu-breakpoint) {
+    & {
+      @content;
+    }
+  }
+}
+
 @mixin breakat($breakpoint) {
   @if $breakpoint = 'sm' {
     @media screen and (min-width: $single-column-breakpoint) {
