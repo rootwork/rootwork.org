@@ -111,6 +111,7 @@
         display: inline-block;
         opacity: 0.75;
         @include is-on(opacity, 1, 0.75);
+        @include focus-line(map-get($color, bright-green));
 
         &:first-child {
           padding-left: 0.25rem;
