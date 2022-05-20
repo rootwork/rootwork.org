@@ -14,7 +14,6 @@
     display: flex;
     flex: calc(var(--logo-width) + 2.5rem) 0 0;
     padding: 0.5rem 1.5rem 0.5rem 1rem;
-    @include switch(background-color, var(--light), transparent);
     // prevent lower section from obscuring pointer events
     max-height: var(--logo-top-height);
     overflow: visible;

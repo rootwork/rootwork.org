@@ -2,7 +2,7 @@
 
 header.nav_header {
   padding-left: 0;
-  @include switch(background-color, var(--bright-green), var(--hazy-green));
+  @include switch(background-color, var(--medium-green), var(--hazy-green));
   @include switch(border-bottom-color, var(--white), var(--bg));
   border-bottom-width: 0.2rem;
   border-bottom-style: solid;
