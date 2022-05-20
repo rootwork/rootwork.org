@@ -34,6 +34,7 @@
   margin: 0.5rem 0.5rem 0.5rem 0;
   padding-left: 1rem;
   font-size: 0.95rem;
+  color: var(--dark-green);
   @include is-on(border-color, currentColor);
   @include focus(text-decoration, underline);
 
