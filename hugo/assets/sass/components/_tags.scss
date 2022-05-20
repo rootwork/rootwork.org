@@ -6,7 +6,7 @@
     margin-top: 0.25rem;
     padding-top: 0.25rem;
     font-weight: normal;
-    @include switch(color, var(--hazy-green), var(--theme));
+    @include switch(color, var(--hazy-green), var(--pale-green));
     @include focus(text-decoration, underline);
 
     @include is-on {
@@ -21,6 +21,7 @@
 
 .post_categories .post_tag--cat.button {
   font-weight: bold;
+  @include switch(color, var(--hazy-green), var(--theme));
   @include switch(background-color, var(--light), var(--translucent));
   @include switch(border-color, var(--hazy-green), var(--theme));
 
@@ -34,7 +35,7 @@
   margin: 0.5rem 0.5rem 0.5rem 0;
   padding-left: 1rem;
   font-size: 0.95rem;
-  color: var(--dark-green);
+  @include switch(color, var(--dark-green), var(--pale-green));
   @include is-on(border-color, currentColor);
   @include focus(text-decoration, underline);
 
