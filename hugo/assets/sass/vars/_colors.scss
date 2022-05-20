@@ -16,6 +16,7 @@ $color: (
   green: #04800e,
   bright-green: #00b877,
   dark-green: #002714,
+  md-dark-green: #008053,
   medium-green: #3cc695,
   light-green: #4a0,
   pale-green: #afa,
@@ -51,6 +52,7 @@ $derivedColor: (
   --green: #{map-get($color, green)};
   --bright-green: #{map-get($color, bright-green)};
   --medium-green: #{map-get($color, medium-green)};
+  --md-dark-green: #{map-get($color, md-dark-green)};
   --dark-green: #{map-get($color, dark-green)};
   --hazy-green: #{map-get($derivedColor, hazy-green)};
   --medium-green: #{map-get($derivedColor, medium-green)};
