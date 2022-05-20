@@ -13,7 +13,7 @@
   {{ partialCached "search/widget" . }}
   <ul class="posts" id="posts">
     {{ if .IsHome }}
-      <div class="home_bio h-card vcard">
+      <li class="home_bio h-card vcard">
         {{- $author := $s.Author }}
         <a
           href="{{ .Site.BaseURL }}"
@@ -53,7 +53,7 @@
             {{- end }}
           </div>
         </div>
-      </div>
+      </li>
     {{ else }}
       <h1 class="list_title">{{ .Title }}</h1>
     {{ end }}
