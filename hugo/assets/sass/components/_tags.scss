@@ -6,17 +6,27 @@
     margin-top: 0.25rem;
     padding-top: 0.25rem;
     font-weight: normal;
-
-    @include is-on(border-color, currentColor, initial);
+    @include switch(color, var(--hazy-green), var(--theme));
     @include focus(text-decoration, underline);
+
+    @include is-on {
+      @include switch(color, var(--white), var(--white));
+    }
+
+    @include is-on {
+      @include switch(border-color, currentColor, var(--white));
+    }
   }
 }
 
 .post_categories .post_tag--cat.button {
   font-weight: bold;
-  @include is-on(color, inherit, currentColor);
   @include switch(background-color, var(--light), var(--translucent));
-  @include switch(border-color, var(--theme), var(--theme));
+  @include switch(border-color, var(--hazy-green), var(--theme));
+
+  @include is-on {
+    @include switch(color, var(--theme), var(--white));
+  }
 }
 
 // Tags in the sidebar

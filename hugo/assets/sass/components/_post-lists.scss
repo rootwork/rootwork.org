@@ -83,7 +83,7 @@
       position: relative;
       margin-top: -0.5rem;
       font-weight: bold;
-      background-color: darken(map-get($color, bright-green), 12%);
+      background-color: var(--md-dark-green);
       border-width: 0;
       z-index: 1;
 
