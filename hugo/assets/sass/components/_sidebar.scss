@@ -27,6 +27,60 @@
     .author_bio {
       font-size: 1.2rem;
       line-height: 1.3333;
+
+      & + .button {
+        position: relative;
+      margin-top: 0.5rem;
+      color: var(--hazy-white);
+      background-color: var(--md-dark-green);
+      border-width: 0;
+      z-index: 1;
+
+      &::before {
+        position: absolute;
+        content: '';
+        bottom: 0.3333rem;
+        left: 1.5rem;
+        right: 1.5rem;
+        border-bottom: 2px dotted currentColor;
+        transition: all 0.25s ease-in-out;
+        z-index: 2;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        top: -0.25rem;
+        bottom: -0.25rem;
+        left: -0.25rem;
+        right: -0.25rem;
+        border: 3px transparent solid;
+        background-color: transparent;
+        transition: all 0.5s ease-in-out;
+        z-index: -1;
+      }
+
+      @include is-on {
+        background-color: var(--bright-green);
+        border-radius: 0;
+
+        &::before {
+          left: 50%;
+          right: 50%;
+          opacity: 0;
+        }
+
+        &::after {
+          background-color: darken(map-get($color, bright-green), 20%);
+          border-color: var(--bright-green);
+          @include switch(
+            box-shadow,
+            4px 4px var(--pale-green),
+            4px 4px darken(map-get($color, bright-green), 12%)
+          );
+        }
+      }
+      }
     }
 
     li {
