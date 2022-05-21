@@ -17,7 +17,7 @@ toc: false
 
 showDate: false
 showReadTime: false
-showShare: true
+showShare: false
 ---
 
 <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6000 3810">
