@@ -47,7 +47,7 @@ Rootwork.org is hosted on [GitHub](https://github.com/rootwork/rootwork.org).
 While we do not have access to web logs about visitors, GitHub does. These logs
 might include information such as your reported IP address, date and times of
 access, and pages viewed. If you are concerned about this data, consider
-[using a VPN](https://victoria.dev/blog/three-rules-for-choosing-a-vpn-that-takes-your-privacy-seriously/).
+[using a VPN](https://web.archive.org/web/20210814070115/https://victoria.dev/blog/three-rules-for-choosing-a-vpn-that-takes-your-privacy-seriously/).
 
 When third-party social media is embedded (such as YouTube or Twitter) we use
 Hugo's "simple" and "do not track"
