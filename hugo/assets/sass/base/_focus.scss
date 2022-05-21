@@ -95,7 +95,14 @@
 
 // Turn default focus indicators back on as fallbacks.
 
-html a:focus,
+html a:focus {
+  outline: 2px solid #00b877 !important;
+}
+
+html a:focus:not(:focus-visible) {
+  outline: none !important;
+}
+
 html a:focus-visible {
   outline: 2px solid #00b877 !important;
 }
