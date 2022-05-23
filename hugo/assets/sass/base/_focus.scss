@@ -97,6 +97,7 @@
 
 html a:focus {
   outline: 2px solid #00b877 !important;
+  outline-offset: 0.25rem;
 }
 
 html a:focus:not(:focus-visible) {
@@ -105,4 +106,5 @@ html a:focus:not(:focus-visible) {
 
 html a:focus-visible {
   outline: 2px solid #00b877 !important;
+  transition-duration: 0s;
 }
