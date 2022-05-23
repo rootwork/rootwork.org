@@ -1,13 +1,11 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - name: Install Node dependencies
-    init: npm install
-  - name: Install script dependencies
-    init: |
+  - name: Setup
+    before: |
+      brew install hugo
       npm install -g avif
       brew install imagemagick@7
-  - name: Install Hugo dependencies
-    before: brew install hugo
+      alias xdg-open="$(which open)"
     init: echo "Your version of Hugo is `hugo version`"
     command: cd hugo && hugo server -D -F --baseUrl $(gp url 1313) --liveReloadPort=443 --appendPort=false --bind=0.0.0.0
 
