@@ -3,7 +3,8 @@ tasks:
   - name: Setup
     before: |
       brew install hugo
-      npm install -g avif
+      npm install
+      npm install avif
       brew install imagemagick@7
       alias xdg-open="$(which open)"
     init: echo "Your version of Hugo is `hugo version`"
