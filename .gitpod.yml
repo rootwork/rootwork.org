@@ -4,7 +4,8 @@ tasks:
     before: |
       export HOMEBREW_NO_INSTALL_CLEANUP=TRUE
       brew install hugo
-      alias s="cd /workspace/rootwork.org/hugo && hugo server -D -F --baseUrl $(gp url 1313) --liveReloadPort=443 --appendPort=false --bind=0.0.0.0"
+      alias ~="cd /workspace/rootwork.org"
+      alias s="~ && cd hugo && hugo server -D -F --baseUrl $(gp url 1313) --liveReloadPort=443 --appendPort=false --bind=0.0.0.0"
       npm install
     # init: echo "Your version of Hugo is `hugo version`"
     command: echo "Your version of Hugo is `hugo version`"
