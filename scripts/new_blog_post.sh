@@ -9,12 +9,12 @@
 hugo_dir="./hugo" # No trailing slash
 
 # Command to open your preferred file editor
-open_editor=subl
+open_editor=open
 
 # Sublime Text, the default for this script, allows for opening a file at its
 # last line using the syntax <filepath>:<last_line_number>. If you use a
 # different editor and it does not allow this, you can disable the behavior here
-open_at_end=true
+open_at_end=false
 # Alternatively, you can alter the syntax directly in the open_at_end section
 # toward the bottom of this script.
 
