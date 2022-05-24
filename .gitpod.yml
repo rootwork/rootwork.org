@@ -2,11 +2,9 @@
 tasks:
   - name: Setup
     before: |
-    # Homebrew
       brew update --quiet
       export HOMEBREW_NO_INSTALL_CLEANUP=TRUE
       brew install hugo
-    # Node
       npm install -g npm
       npm install
     init: echo "Your version of Hugo is `hugo version`"
