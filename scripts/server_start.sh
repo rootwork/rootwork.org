@@ -51,6 +51,8 @@ if [[ ! $open ]]; then
   exit 1
 fi
 
+here=$(pwd) # Home directory
+
 # Default variables
 notice="Running web server"
 vars="--baseURL ${url} --port ${port}"
@@ -84,5 +86,5 @@ cd './hugo' || exit
 hugo server ${vars} &
 HUGO_PID=$!
 sleep 1s && "$open" "${url}:${port}"
-cd './'
+cd "${here}" || exit
 wait "$HUGO_PID"
