@@ -46,7 +46,7 @@
 
 # USAGE
 #
-# $ ./new_blog_post.sh [--title="<string>"] [--slug="<URL-safe string>"] [--date="YYYY-MM-DD"] [--dir="<path>"] [--editor="<path>"] [-o|--open-at-end] [-q|quiet]
+# $ ./new_blog_post.sh [--title="<string>"] [--slug="<URL-safe string>"] [--date="YYYY-MM-DD"] [--hugo-dir="<path>"] [--content-dir="<path>"] [--blog-dir="<path>"] [--editor="<path>"] [-o|--open-at-end] [-q|quiet]
 # $ ./new_blog_post.sh [-g|--gitpod] [-q|quiet]
 # $ ./new_blog_post.sh [-h|--help]
 
@@ -57,7 +57,7 @@
 #
 # Create a new blog post using interactive mode, specifying directory path of
 # Hugo and command to open Sublime Text editor:
-# $ ./new_blog_post.sh --dir="./hugo" --editor="subl"
+# $ ./new_blog_post.sh --hugo-dir="./hugo" --editor="subl"
 #
 # Create a new blog post using interactive mode, optimized for Gitpod:
 # $ ./new_blog_post.sh -g
@@ -121,7 +121,7 @@ signal_exit() {
 # Usage: Separate lines for mutually exclusive options.
 usage() {
   printf "%s\n" \
-    "${bold}Usage:${reset} ${PROGNAME} [-t|title=\"<string>\"] [-s|slug=\"<URL-safe>\"] [-d|date=\"YYYY-MM-DD\"] [-r|--dir=\"<path>\"] [-o|--open-at-end] [-q|quiet]"
+    "${bold}Usage:${reset} ${PROGNAME} [--title=\"<string>\"] [--slug=\"<URL-safe string>\"] [--date=\"YYYY-MM-DD\"] [--hugo-dir=\"<path>\"] [--content-dir=\"<path>\"] [--blog-dir=\"<path>\"] [--editor=\"<path>\"] [-o|--open-at-end] [-q|quiet]"
   printf "%s\n" \
     "       ${PROGNAME} [-g|--gitpod] [-q|quiet]"
   printf "%s\n" \
@@ -144,13 +144,19 @@ ${bold}Options:${reset}
 --date             Specify date, in format YYYY-MM-DD.
 --slug             Specify slug. Use URL-safe values.
 --editor           Command to run editor, defaults to xdg-open.
---dir              Specify (sub)directory of Hugo instance, relative to the
+--hugo-dir         Specify location of your Hugo instance, relative to the
                    directory from which you run this script. No trailing slash.
-                   Defaults to ./hugo
+                   Defaults to the current directory.
+--content-dir      Specify subdirectory of your Hugo instance containing
+                   your content files. No leading or trailing slashes. Defaults
+                   to 'content'
+--blog-dir         Specify subdirectory of your Hugo content directory
+                   containing blog posts. No leading or trailing slashes.
+                   Defaults to 'blog'
 -o, --open-at-end  Whether to open the file with the cursor placed at the end.
                    Only guaranteed to work for Sublime Text.
 -g, --gitpod       Run optimized for a Gitpod environment.
--q, --quiet          Quiet mode.
+-q, --quiet        Quiet mode.
 -h, --help         Display this help message and exit.
 
 ${bold}Examples:${reset}
@@ -159,10 +165,10 @@ Create a new blog post and use interactive mode to prompt for information:
 
 ${green}$ ${PROGNAME}${reset}
 
-Create a new blog post using interactive mode, specifying directory path of Hugo
-and command to open Sublime Text editor:
+Create a new blog post using interactive mode, specifying path of Hugo and the
+command to open Sublime Text editor:
 
-${green}$ ${PROGNAME} --dir="./hugo" --editor="subl"${reset}
+${green}$ ${PROGNAME} --hugo-dir="./hugo" --editor="subl"${reset}
 
 Create a new blog post using interactive mode, optimized for Gitpod:
 
@@ -181,17 +187,24 @@ needs_arg() {
     error_exit "Error: Argument required for option '$OPT' but none provided."
   fi
 }
+
+# Home directory
+here=$(pwd)
+
 # Set variable defaults.
 quiet_mode=false
 title=""
 date=""
 slug=""
-hugo_dir="./hugo"
+hugo_dir="."
+content_dir="content"
+blog_dir="blog"
 editor="xdg-open"
 open_at_end=false
 gitpod=false
+
 # Run the comparison (be sure to change the "getopts" below!)
-while getopts :gtdsroe-:qh OPT; do
+while getopts :goe-:qh OPT; do
   # Using help flag only? The above should be:
   # while getopts :-:h OPT; do
   if [[ "$OPT" = "-" ]]; then # long option: reformulate OPT and OPTARG
@@ -206,26 +219,31 @@ while getopts :gtdsroe-:qh OPT; do
       help_message
       graceful_exit
       ;;
-    q | quiet)
-      quiet_mode=true
-      ;;
-    t | title)
+    title)
       needs_arg
       title="$OPTARG"
       ;;
-    d | date)
+    date)
       needs_arg
       date="$OPTARG"
       ;;
-    s | slug)
+    slug)
       needs_arg
       slug="$OPTARG"
       ;;
-    r | dir)
+    hugo-dir)
       needs_arg
       hugo_dir="$OPTARG"
       ;;
-    e | editor)
+    content-dir)
+      needs_arg
+      content_dir="$OPTARG"
+      ;;
+    blog-dir)
+      needs_arg
+      blog_dir="$OPTARG"
+      ;;
+    editor)
       needs_arg
       editor="$OPTARG"
       ;;
@@ -236,6 +254,9 @@ while getopts :gtdsroe-:qh OPT; do
       gitpod=true
       editor="open"
       open_at_end=false
+      ;;
+    q | quiet)
+      quiet_mode=true
       ;;
     ??*) # bad long option
       usage >&2
@@ -252,20 +273,21 @@ shift $((OPTIND - 1)) # remove parsed options and args from $@ list
 # Open command
 open=$(command -v ${editor})
 if [[ ! $open ]]; then
-  error_exit "Editor '${editor}' cannot be found. Aborting."
+  error_exit "${red}${reverse}Editor '${editor}' cannot be found. Aborting.${reset}"
 fi
 
-here=$(pwd) # Home directory
-
-echo -e "\n${cyan}${reverse}Creating new blog post...${reset}\n"
-
-if [ -z "$title" ]; then
-  echo -e "${green}What is the title of your blog post?${reset}"
-  read -r title
+# Notify user
+if [ $quiet_mode ]; then
+  msg="Creating new blog post"
+  if [[ $gitpod ]]; then
+    msg="${msg} in Gitpod mode"
+  fi
+  printf "\n%s\n\n" "${cyan}${reverse}${msg}...${reset}"
 fi
 
+# Check and process dates
 if [ -z "$date" ]; then
-  echo -e "${green}What is the date of your blog post? (YYYY-MM-DD; hit return for default of $(date +%Y)-$(date +%m)-$(date +%d))${reset}"
+  printf "%s\n" "${green}What is the date of your blog post? (YYYY-MM-DD; hit return for default of ${cyan}$(date +%Y)-$(date +%m)-$(date +%d)${green})${reset}"
   read -r date
 fi
 
@@ -273,11 +295,10 @@ if [ -z "$date" ]; then
   date=$(date +%Y)-$(date +%m)-$(date +%d)
 else
   if [[ ! ($date =~ ^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$) ]]; then
-    echo -e "${red_bg}Date is malformed; retry with valid YYYY-MM-DD.${reset}" && exit 1
+    error_exit "${red}${reverse}Date is malformed; retry with valid YYYY-MM-DD.${reset}"
   fi
 fi
 
-# Separate date variables
 dateregex="([0-9]{4})-([-0-9]{2})-([0-9]{2})"
 if [[ $date =~ $dateregex ]]; then
   date_year="${BASH_REMATCH[1]}"
@@ -285,7 +306,25 @@ if [[ $date =~ $dateregex ]]; then
   date_day="${BASH_REMATCH[3]}"
 fi
 
-echo -e "\n${green}Creating '$title' on ${date_year}-${date_month}-${date_day}...${reset}"
+# Set and check paths
+blog_path="${blog_dir}/${date_year}-${date_month}-${date_day}"
+content_path="${content_dir}/${blog_path}/index.md"
+full_path="${hugo_dir}/${content_path}"
+
+if [ -f "$full_path" ]; then
+  error_exit "${red}${reverse}Blog entry already exists with that date.${reset} ${red}Because blog paths rely on dates alone, this script only supports one blog entry per date.${reset}"
+fi
+
+# Collect title
+if [ -z "$title" ]; then
+  printf "%s\n" "${green}What is the title of your blog post?${reset}"
+  read -r title
+fi
+
+# Notify user
+if [[ ! $quiet_mode ]]; then
+  printf "\n%s\n" "${cyan}${reverse}Creating '$title' on ${date_year}-${date_month}-${date_day} at ${full_path} ...${reset}"
+fi
 
 main() {
   # Remove leading and trailing whitespace from ${title}
@@ -296,7 +335,7 @@ main() {
   #  - Then lower-case the whole title.
   #  - Then remove common words that don't help with SEO in URLs (stop words).
   #  - Then replace all characters except a-z, 0-9 and '-' with spaces.
-  #  - Then remove leading/trailing spaces if any.
+  #  - Then remove further leading/trailing spaces if any.
   #  - Then replace one or more spaces with a single hyphen.
   # For example, converts 'This, That \& Other!' to 'this-that-and-other.md'
   # (Note that we need to escape & with \ above, in the shell.)
@@ -311,59 +350,55 @@ main() {
       -e 's/[[:space:]]*$//g' \
       -e 's/[[:space:]]+/-/g')
 
-  # Set paths
-  path="blog/${date_year}-${date_month}-${date_day}"
-  fullpath="content/${path}/index.md"
-
   # Create the new post
   # Need to first cd to the hugo blog root dir
   cd "$hugo_dir" || exit
-  hugo new "${path}"
+  hugo new "${blog_path}"
 
   # Set the title, slug, date and taxonomy-dates.
   tmp_file="/tmp/${USER}_hugo_post"
-  \cp -f "$fullpath" "$tmp_file"
+  \cp -f "$content_path" "$tmp_file"
   \sed -r -e 's/^(\s*title: ).*/\1'"'${title}'"'/' \
     -e 's/^(\s*slug: ).*/\1'"'${slug}' # Recommended length is 3 to 5 words."'/' \
     -e 's/^(\s*date: ).*/\1'"'${date_year}-${date_month}-${date_day}'"'/' \
     -e 's/^(\s*year: ).*/\1'"'${date_year}'"'/' \
     -e 's/^(\s*month: ).*/\1'"'${date_year}-${date_month}'"'/' \
-    "$tmp_file" >"$fullpath"
+    "$tmp_file" >"$content_path"
   \rm -f "$tmp_file"
 
   # Create year and month taxonomy pages for this date, if they don't already
   # exist.
-  yearpath="content/year/${date_year}"
+  yearpath="${content_dir}/year/${date_year}"
   if [ ! -d "$yearpath" ]; then
     mkdir "$yearpath"
     cat <<EOF >"${yearpath}/_index.md"
 ---
 title: 'Archives: ${date_year}'
-url: '/blog/${date_year}/'
+url: '/${blog_dir}/${date_year}/'
 ---
 EOF
     echo "Created taxonomy page for ${date_year}"
   fi
-  monthpath="content/month/${date_year}-${date_month}"
+  monthpath="${content_dir}/month/${date_year}-${date_month}"
   if [ ! -d "$monthpath" ]; then
     prettymonth=$(date -d "$date" +'%B')
     mkdir "$monthpath"
     cat <<EOF >"${monthpath}/_index.md"
 ---
 title: 'Archives: ${prettymonth} ${date_year}'
-url: '/blog/${date_year}/${date_month}'
+url: '/${blog_dir}/${date_year}/${date_month}'
 ---
 EOF
     echo "Created taxonomy page for ${date_year}-${date_month}"
   fi
 
-  open_args="$fullpath"
+  open_args="$content_path"
 
   # Optionally open file on the last line
   if [[ $open_at_end = "true" ]]; then
-    line_count=$(wc -l "$fullpath" | awk '{ print $1 }')
+    line_count=$(wc -l "$content_path" | awk '{ print $1 }')
     last_line=$(echo "${line_count} + 1" | bc)
-    open_args="${fullpath}:${last_line}"
+    open_args="$content_path:${last_line}"
   fi
 
   # Open the file
