@@ -6,7 +6,7 @@
   "scripts": {
     "i": "./scripts/image_optimize.sh",
     "n": "./scripts/new_blog_post.sh --hugo-dir='./hugo' --editor='subl' -o",
-    "gn": "./scripts/new_blog_post.sh -g",
+    "gn": "./scripts/new_blog_post.sh -g --hugo-dir='./hugo'",
     "p": "./scripts/production_build.sh",
     "s": "./scripts/server_start.sh",
     "start": "npm run s",

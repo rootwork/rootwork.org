@@ -277,9 +277,9 @@ if [[ ! $open ]]; then
 fi
 
 # Notify user
-if [ $quiet_mode ]; then
+if [[ -n $quiet_mode ]]; then
   msg="Creating new blog post"
-  if [[ $gitpod ]]; then
+  if [[ -v $gitpod ]]; then
     msg="${msg} in Gitpod mode"
   fi
   printf "\n%s\n\n" "${cyan}${reverse}${msg}...${reset}"
