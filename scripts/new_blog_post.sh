@@ -66,7 +66,7 @@
 # $ ./new_blog_post.sh --title="My new blog entry" --date="2022-05-24" --slug="new-post"
 
 # Revision history:
-# 2022-05-24  Full release; script configurable via flags (1.0)
+# 2022-05-26  Full release; script configurable via flags (1.0)
 # 2022-03-29  Adding configurable Hugo directory (0.4)
 # 2022-03-22  Making script configurable via editing (0.3)
 # 2021-09-01  Updating directory structure of generated tags (0.2)
