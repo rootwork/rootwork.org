@@ -15,6 +15,8 @@
   }
 
   @include is-on {
+    @include switch(border-color, var(--dark-green), var(--white));
+
     svg.icon {
       @include switch(fill, var(--dark-green), var(--light));
     }
