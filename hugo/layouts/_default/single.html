@@ -4,6 +4,7 @@
   3. post_body e-content and itemprop
 
   4. Adding "tree" partial at the bottom.
+  5. Adding #content anchor to main content (for skip-to link).
 */}}
 {{- define "main" }}
   {{- $s := .Site.Params }}
@@ -23,7 +24,7 @@
       content
     "
   >
-    <article class="post_content h-entry">
+    <article class="post_content h-entry" id="content">
       {{- $t := .Title }}
       <h1 class="post_title p-name" itemprop="name headline">{{ $t }}</h1>
       {{- partial "post-meta" . }}

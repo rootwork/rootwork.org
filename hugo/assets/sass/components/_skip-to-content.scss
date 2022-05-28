@@ -1,0 +1,14 @@
+.skip-to-content-link {
+  position: absolute;
+  height: 2rem;
+  left: 50%;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+  z-index: 99999;
+  padding: 0.25rem 0.5rem;
+  background-color: var(--white);
+  color: var(--dark-green);
+  font-weight: bold;
+
+  @include focus(transform, translateY(0%), translateY(-100%));
+}

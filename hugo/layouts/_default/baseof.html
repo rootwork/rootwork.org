@@ -8,6 +8,8 @@
   4. Adding `strict-origin-when-cross-origin` referrer policy.
 
   5. Adding indieauth endpoint.
+
+  6. Adding skip_to_content partial.
 */}}{{- $s := .Site.Params }}{{- $p := .Params }}<!DOCTYPE html>
 <html
   lang="{{ .Lang }}"
@@ -122,16 +124,23 @@
     data-lines="{{ $codeLineNumbers }}"
     id="documentTop"
   >
+    {{- partial "skip_to_content" . }}
     {{- partial "header" . }}
     <main>
       {{- block "main" . }}{{ end }}
     </main>
     {{- partialCached "icons" . }}
-    {{- partialCached "footer" . }}    <script type="text/javascript" src="{{ $bundle.Permalink }}" integrity="{{ $bundle.Data.Integrity }}" crossorigin="anonymous"></script>
+    {{- partialCached "footer" . }}
+    <script
+      type="text/javascript"
+      src="{{ $bundle.Permalink }}"
+      integrity="{{ $bundle.Data.Integrity }}"
+      crossorigin="anonymous"
+    ></script>
     {{- partialCached "search/scripts" . }}
     {{- with $s.customJS }}
       {{- range . -}}
-    <script type="text/javascript" src="{{ relURL . }}" ></script>
+        <script type="text/javascript" src="{{ relURL . }}"></script>
       {{- end }}
     {{- end }}
     {{ partialCached "hooks/body-end.html" . }}
