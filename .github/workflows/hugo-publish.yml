@@ -18,7 +18,7 @@ jobs:
         # The first line of `run` is designed to omit husky setup, since it's
         # not necessary or desireable in a remote build.
         run: |
-          npm pkg set scripts.prepare=""
+          npm pkg set scripts.prepare=" "
           npm ci
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
