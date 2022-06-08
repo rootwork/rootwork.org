@@ -3,7 +3,6 @@
 // In order to override Sass variables in the parent theme, our component files
 // need to use @import rather than Sass's newer @use syntax.
 
-@import 'vars/dirs';
 @import 'vars/sizes';
 
 @import 'base/hiding';

@@ -41,8 +41,8 @@
 
       @include switch(
         background-image,
-        url('#{$icons}sun.svg'),
-        url('#{$icons}moon.svg')
+        url('../icons/sun.svg'),
+        url('../icons/moon.svg')
       );
     }
   }
