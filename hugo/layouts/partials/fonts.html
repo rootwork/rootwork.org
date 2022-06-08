@@ -25,6 +25,7 @@
     url('{{ "/fonts/source-sans-pro-v14-latin-italic.woff" | relURL }}') format('woff'), /* Modern Browsers */
     url('{{ "/fonts/source-sans-pro-v14-latin-italic.ttf" | relURL }}') format('truetype'), /* Safari, Android, iOS */
     url('{{ "/fonts/source-sans-pro-v14-latin-italic.svg#SourceSansPro" | relURL }}') format('svg'); /* Legacy iOS */
+    font-display: swap; /* Used on italic fonts only; non-italic fonts are preloaded in HTML. */
   }
 
   /* source-sans-pro-900 - latin */
@@ -53,5 +54,6 @@
     url('{{ "/fonts/source-sans-pro-v14-latin-900italic.woff" | relURL }}') format('woff'), /* Modern Browsers */
     url('{{ "/fonts/source-sans-pro-v14-latin-900italic.ttf" | relURL }}') format('truetype'), /* Safari, Android, iOS */
     url('{{ "/fonts/source-sans-pro-v14-latin-900italic.svg#SourceSansPro" | relURL }}') format('svg'); /* Legacy iOS */
+    font-display: swap; /* Used on italic fonts only; non-italic fonts are preloaded in HTML. */
   }
 </style>
