@@ -9,6 +9,9 @@
   5. Adding indieauth endpoint.
 
   6. Adding skip_to_content partial.
+
+  7. Changing any relURL calls to absURL, per:
+  https://discourse.gohugo.io/t/how-to-define-links-if-i-dont-know-baseurl-in-advance/15694/6
 */}}{{- $s := .Site.Params }}{{- $p := .Params }}<!DOCTYPE html>
 <html
   lang="{{ .Lang }}"
@@ -60,7 +63,7 @@
     <!-- preload assets declaration -->
     <link
       rel="preload"
-      href="{{ "/fonts/source-sans-pro-v14-latin-900.woff2" | relURL }}"
+      href="{{ "/fonts/source-sans-pro-v14-latin-900.woff2" | absURL }}"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
@@ -90,7 +93,7 @@
     />
     {{- with $s.customCSS }}
       {{- range . -}}
-        <link rel="stylesheet" href="{{ relURL . }}" />
+        <link rel="stylesheet" href="{{ absURL . }}" />
       {{- end }}
     {{- end }}
 
@@ -139,7 +142,7 @@
     {{- partialCached "search/scripts" . }}
     {{- with $s.customJS }}
       {{- range . -}}
-        <script type="text/javascript" src="{{ relURL . }}"></script>
+        <script type="text/javascript" src="{{ absURL . }}"></script>
       {{- end }}
     {{- end }}
     {{ partialCached "hooks/body-end.html" . }}
