@@ -1,6 +1,6 @@
 {{/* 1. Adding `fonts.html` partial.
 
-  2. Adding preload tag for font (bold only).
+  2. Adding preload tag for fonts (bold and regular; no italics).
 
   3. Adding default `no-js` tag on <html>
 
@@ -61,6 +61,13 @@
     <link
       rel="preload"
       href="{{ "/fonts/source-sans-pro-v14-latin-900.woff2" | relURL }}"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="{{ "/fonts/source-sans-pro-v14-latin-regular.woff2" | relURL }}"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
