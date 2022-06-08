@@ -15,11 +15,7 @@
     padding: 0.2rem 0.4rem 0;
     height: 32px;
     border-radius: 1rem;
-    @include switch(
-      background-color,
-      var(--light),
-      var(--dark-shade)
-    );
+    @include switch(background-color, var(--light), var(--dark-shade));
 
     &:hover::after,
     &:focus-within::after {
@@ -45,8 +41,8 @@
 
       @include switch(
         background-image,
-        url('/icons/sun.svg'),
-        url('/icons/moon.svg')
+        url('#{$icons}sun.svg'),
+        url('#{$icons}moon.svg')
       );
     }
   }
@@ -61,11 +57,7 @@
     margin-left: 0.1rem;
     padding: 0.2rem 0.15rem 0;
     height: auto;
-    @include switch(
-    background-color,
-      var(--light),
-      var(--dark-shade)
-    );
+    @include switch(background-color, var(--light), var(--dark-shade));
   }
 
   .color_choice::after {
