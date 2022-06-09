@@ -51,3 +51,25 @@ other = "All Series"
 
 [overview]
 other = "Overview"
+
+[reading_time]
+other = "{{ .ReadingTime }} min read"
+
+[series_posts]
+other = "Posts in this series"
+
+# search
+[quick_links]
+  other = "Search Results"
+[no_matches]
+  other = "No results found"
+[search_field_placeholder]
+  other = "Search the knowledge base"
+[blog_search_field_placeholder]
+  other = "Search..."
+[search_results_label]
+  other = "Search Results"
+[short_search_query]
+  other = "Query is too short"
+[type_to_search]
+  other = "Type to search"
