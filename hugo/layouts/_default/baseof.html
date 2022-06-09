@@ -1,63 +1,46 @@
-{{/* 1. Adding `fonts.html` partial.
+{{/* 1. Adding default `no-js` tag on <html>
 
-  2. Adding preload tag for fonts (bold and regular; no italics).
+  2. Adding `strict-origin-when-cross-origin` CORS referrer policy.
 
-  3. Adding default `no-js` tag on <html>
+  3. Adding `fonts.html` partial.
 
-  4. Adding `strict-origin-when-cross-origin` referrer policy.
+  4. Adding indieauth endpoint.
 
-  5. Adding indieauth endpoint.
+  5. Adding preload tag for fonts (bold and regular; no italics).
 
   6. Adding skip_to_content partial.
-*/}}{{- $s := .Site.Params }}{{- $p := .Params }}<!DOCTYPE html>
+*/}}{{- $s := .Site.Params }}{{- $p := .Params }}{{- $codeBlockConfig := partial "func/getCodeBlockSettings" . }}<!DOCTYPE html>
 <html
   lang="{{ .Lang }}"
   data-figures="{{ $p.figurePositionShow }}"
-  {{ if .IsPage }}class="no-js page"{{ end }}{{ if .IsHome }}
-    class="no-js home"
-  {{ end }}{{ with $s.enforceLightMode }}
-    data-mode="lit"
-  {{ end }}{{ with $s.enforceDarkMode }}data-mode="dim"{{ end }}
+  class="
+    no-js
+    {{ if .IsPage }}
+    page
+  {{ else if .IsHome }}
+    home
+  {{ end }}
+  "
+  data-mode="
+    {{ with $s.enforceLightMode }}lit{{ end }}
+    {{ with $s.enforceDarkMode }}dim{{ end }}
+  "
 >
   <head>
     {{- partial "head" . }}
+
+
+    <!-- CORS -->
     <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- custom fonts -->
     {{- partial "fonts" . }}
-    <!-- styles definition-->
-    {{- $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed" "enableSourceMap" "true") -}}
-    {{ $mainSassFile :=  "sass/main.sass" }}
-    {{- $styles := resources.Get $mainSassFile | resources.ExecuteAsTemplate $mainSassFile . | resources.ToCSS $options | resources.Fingerprint "sha512" }}
-
-
-    <!-- scripts definition -->
-    {{- $highlightPath := "js/highlight.js" }}
-    {{- $highlight := resources.Get $highlightPath | resources.ExecuteAsTemplate $highlightPath . }}
-
-    {{- $variablesScriptPath := "js/variables.js" }}
-    {{- $variables := resources.Get $variablesScriptPath | resources.ExecuteAsTemplate $variablesScriptPath . }}
-
-    {{- $functionsScriptPath := "js/functions.js" }}
-    {{- $functions := resources.Get $functionsScriptPath | resources.ExecuteAsTemplate $functionsScriptPath . }}
-
-    {{- $codeScriptPath := "js/code.js" }}
-    {{- $code := resources.Get $codeScriptPath | resources.ExecuteAsTemplate $codeScriptPath . }}
-
-    {{- $customScriptPath := "js/custom.js" }}
-    {{ if (fileExists "../../assets/js/custom.js") }}
-      {{ $customScriptPath := "../../assets/js/custom.js" }}
-    {{ end }}
-    {{- $custom := resources.Get $customScriptPath | resources.ExecuteAsTemplate $customScriptPath . }}
-
-    {{- $mainScriptPath := "js/index.js" }}
-    {{- $main := resources.Get $mainScriptPath | resources.ExecuteAsTemplate $mainScriptPath . }}
-
-    {{- $bundle := slice $highlight $variables $functions $code $main $custom | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint "sha512" -}}
 
 
     <!-- indieauth endpoint -->
     <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
 
-    <!-- preload assets declaration -->
+    <!-- preload fonts -->
     <link
       rel="preload"
       href="{{ "/fonts/source-sans-pro-v14-latin-900.woff2" | relURL }}"
@@ -72,62 +55,12 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
-    <link
-      rel="preload"
-      href="{{ $styles.Permalink }}"
-      integrity="{{ $styles.Data.Integrity }}"
-      as="style"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="{{ $bundle.Permalink }}"
-      as="script"
-      integrity="{{ $bundle.Data.Integrity }}"
-      crossorigin="anonymous"
-    />
-
-    <!-- styles file -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{{ $styles.Permalink }}"
-      integrity="{{ $styles.Data.Integrity }}"
-      crossorigin="anonymous"
-    />
-    {{- with $s.customCSS }}
-      {{- range . -}}
-        <link rel="stylesheet" href="{{ relURL . }}" />
-      {{- end }}
-    {{- end }}
-
-
-    <!-- JSON-LD schema (SEO) -->
-    {{ partial "site_schema.html" . }}
 
     {{ partial "hooks/head-end.html" . }}
   </head>
-  {{- $maxCodeLines := 100 }}
-  {{- with $s.codeMaxLines }}
-    {{- $maxCodeLines = . }}
-  {{- end }}
-  {{- with $p.codeMaxLines }}
-    {{- $maxCodeLines = . }}
-  {{- end }}
-  {{- $codeLineNumbers := false }}
-  {{ with $s.codeLineNumbers }}
-    {{- $codeLineNumbers = . }}
-  {{ end }}
-  {{ with $p.codeLineNumbers }}
-    {{- $codeLineNumbers = . }}
-  {{ else }}
-    {{ if eq $p.codeLineNumbers false }}
-      {{- $codeLineNumbers = false }}
-    {{ end }}
-  {{ end }}
   <body
-    data-code="{{ $maxCodeLines }}"
-    data-lines="{{ $codeLineNumbers }}"
+    data-code="{{ $codeBlockConfig.max }}"
+    data-lines="{{ $codeBlockConfig.lines }}"
     id="documentTop"
   >
     {{- partial "skip_to_content" . }}
@@ -137,18 +70,7 @@
     </main>
     {{- partialCached "icons" . }}
     {{- partialCached "footer" . }}
-    <script
-      type="text/javascript"
-      src="{{ $bundle.Permalink }}"
-      integrity="{{ $bundle.Data.Integrity }}"
-      crossorigin="anonymous"
-    ></script>
-    {{- partialCached "search/scripts" . }}
-    {{- with $s.customJS }}
-      {{- range . -}}
-        <script type="text/javascript" src="{{ relURL . }}"></script>
-      {{- end }}
-    {{- end }}
-    {{ partialCached "hooks/body-end.html" . }}
+    {{- partialCached "scripts" . }}
+    {{- partialCached "hooks/body-end" . }}
   </body>
 </html>
