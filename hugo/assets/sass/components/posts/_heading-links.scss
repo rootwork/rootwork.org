@@ -2,10 +2,6 @@
 
 .post_body {
   .link_owner {
-    // When subheading links are clicked, we slide them down below the fixed header.
-    // https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin-top
-    scroll-margin-top: 4rem;
-
     // Labeling automated subheading links
     .link.icon {
       position: relative;
