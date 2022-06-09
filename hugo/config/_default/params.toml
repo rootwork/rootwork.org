@@ -62,7 +62,7 @@ mobileNavigation = "right" # if you prefer right change to 'right'
 enforceDarkMode = true
 
 # customize footer icon. see issue https://github.com/chipzoller/hugo-clarity/issues/77
-footerLogo = "icons/android-chrome-512x512.png"
+footerLogo = "icons/icon_48.png"
 
 # Customize Sidebar Disclaimer Text
 # sidebardisclaimer = true
