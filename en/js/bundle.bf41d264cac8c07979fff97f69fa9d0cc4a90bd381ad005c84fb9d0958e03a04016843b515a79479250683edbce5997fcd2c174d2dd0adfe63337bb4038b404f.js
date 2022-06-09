@@ -156,7 +156,7 @@ function copyToClipboard(str) {
   }
 }
 
-const iconsPath = 'icons/';
+const iconsPath = '../icons/';
 
 function getMobileOperatingSystem() {
   let userAgent = navigator.userAgent || navigator.vendor || window.opera;
