@@ -15,7 +15,10 @@
     </div>
 
     <div
-      class="excerpt_footer{{- with .Params.thumbnail }}partition{{- end -}}"
+      class="
+        excerpt_footer
+        {{ with .Params.thumbnail }}partition{{ end }}
+      "
     >
       {{- with .Params.thumbnail -}}
         <div class="excerpt_thumbnail">
