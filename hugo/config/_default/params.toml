@@ -104,13 +104,13 @@ iconsDir = "../icons/" # without a leading forward slash
 # showRelatedInArticle = false
 # showRelatedInSidebar = false
 
+# fuse.js search
+enableSearch = true
+
 [author] # also see author setting in config.toml
 name = "Ivan Boothe"
 photo = "images/ivan_256.jpg"
 sm_photo = "images/ivan_96.jpg"
-
-# fuse.js search
-enableSearch = true
 
 [plausible_analytics]
 enable = false # to enable plausible analytics set to true.
