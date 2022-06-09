@@ -1,0 +1,48 @@
+{{/* 1. Adding (visually hidden) page title to 'read more' links.
+
+  2. Restructuring the 'with .Params.thumbnail' section so linters won't
+  complain.
+*/}}
+<li class="post_item">
+  <div class="excerpt">
+    <div class="excerpt_header">
+      <h3 class="post_link">
+        <a href="{{ .Permalink }}" title="{{ .Title }}"
+          >{{ .Title | markdownify }}</a
+        >
+      </h3>
+      {{ partial "post-meta" . }}
+    </div>
+
+    <div
+      class="excerpt_footer{{- with .Params.thumbnail }}partition{{- end -}}"
+    >
+      {{- with .Params.thumbnail -}}
+        <div class="excerpt_thumbnail">
+          {{- partial "image" (dict "file" . "alt" $.Title "type" "thumbnail" "Page" $.Page ) }}
+        </div>
+      {{- end -}}
+      <div class="pale">
+        {{- $summary := truncate 320 .Summary }}
+        {{- if .Params.summary }}
+          {{- $summary = .Params.summary }}
+        {{- else if .Params.abstract }}
+          {{ $summary = .Params.abstract }}
+        {{- end }}
+        {{ if not ( strings.Contains $summary "<p>" ) }}
+          <p>{{ $summary | markdownify }}</p>
+        {{ else }}
+          {{ $summary | markdownify }}
+        {{ end }}
+        <br />
+        {{- $r := T "read_more" }}
+        <a
+          href="{{ .Permalink }}"
+          title="{{ $r }} about '{{ .Title }}'"
+          class="excerpt_more button"
+          >{{ $r }}<span class="hidden-visually"> about "{{ .Title }}"</span></a
+        >
+      </div>
+    </div>
+  </div>
+</li>
