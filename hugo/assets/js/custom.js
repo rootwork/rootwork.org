@@ -31,7 +31,6 @@ function headingPermalink() {
     // Create new links
     link = createEl('a')
     link.className = 'link icon'
-    link.style.backgroundImage = `url(${baseURL}${iconsPath}link.svg)`
 
     // Create child span
     let span = createEl('span')

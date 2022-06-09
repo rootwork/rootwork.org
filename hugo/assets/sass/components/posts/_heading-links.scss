@@ -9,6 +9,7 @@
       border-bottom: none;
       border-radius: 100%;
       background-color: var(--light);
+      background-image: url('../icons/link.svg');
       vertical-align: middle;
       @include motion(transition-duration, 500ms);
       @include motion(width, 0);
