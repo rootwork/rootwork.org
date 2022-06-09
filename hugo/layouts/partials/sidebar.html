@@ -25,7 +25,9 @@
         {{- if $showAuthorPhoto }}
           <div class="author_header">
             <img
-              src="{{ absURL $author.photo }}"
+              width="48"
+              height="48"
+              src="{{ absURL $author.sm_photo }}"
               alt="{{ $author.name }} photo"
             />
             <h2>{{ $author.name }}</h2>

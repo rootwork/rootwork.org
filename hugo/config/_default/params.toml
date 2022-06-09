@@ -106,7 +106,8 @@ iconsDir = "icons/" # without a leading forward slash
 
 [author] # also see author setting in config.toml
 name = "Ivan Boothe"
-photo = "images/ivan_128.jpg" #include this if you would like to show the author photo on the sidebar
+photo = "images/ivan_256.jpg"
+sm_photo = "images/ivan_96.jpg"
 
 # fuse.js search
 enableSearch = true
