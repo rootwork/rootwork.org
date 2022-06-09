@@ -1,0 +1,20 @@
+.search {
+  .search_results {
+    @include switch(background-color, var(--hazy-white), var(--dark-green));
+    border: 1px white solid;
+
+    .search_title {
+      color: var(--white);
+    }
+
+    .search_result {
+      @include is-on {
+        @include switch(
+          background-color,
+          var(--dark-shade),
+          var(--md-dark-green)
+        );
+      }
+    }
+  }
+}
