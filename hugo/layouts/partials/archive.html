@@ -2,6 +2,7 @@
   2. Defining some extra content when this is the home page, including a modified version of the intro-description/author-bio from the sidebar, with a SVG filter.
   3. Adding the page (list) title when this is not the home page.
   4. Adding #content anchor to main content (for skip-to link).
+  5. Removing search widget (since we show it all the time in the sidebar).
 */}}
 {{ $s := .Site.Params }}
 {{ $pages := .Pages }}
@@ -9,7 +10,6 @@
   {{ $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{ end }}
 <div class="grid-inverse wrap content" id="content">
-  {{ partialCached "search/widget" . }}
   <ul class="posts" id="posts">
     {{ if .IsHome }}
       <li class="home_bio h-card vcard">
