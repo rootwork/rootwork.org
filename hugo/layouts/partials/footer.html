@@ -17,10 +17,10 @@
         alt="{{ $t }}"
     /></a>
     <p>
-      {{ T "copyright" }}{{ with $s.since }}
+      {{ T "copyright" | markdownify }}{{ with $s.since }}
         &nbsp;{{ . }}&#8211;
       {{ end }}&nbsp;<span class="year"></span>&nbsp;<a href="/">{{ $t }}</a>.
-      {{ T "all_rights" }}
+      {{ T "all_rights" | markdownify }}
       <a href="https://github.com/rootwork/rootwork.org#licenses"
         >See the repo</a
       >
