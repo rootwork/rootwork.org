@@ -1,20 +1,32 @@
 {
-    "name": "Rootwork.org",
-    "short_name": "Rootwork.org",
-    "icons": [
-        {
-            "src": "/icons/android-chrome-192x192.png?v=7k0j59bxg6",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "/icons/android-chrome-512x512.png?v=7k0j59bxg6",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
-    "start_url": "https://rootwork.org",
-    "display": "standalone"
+  "name": "Rootwork.org",
+  "short_name": "Rootwork.org",
+  "icons": [
+    {
+      "src": "/icons/android-chrome-192x192.png?v=7k0j59bxg6",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/android-chrome-512x512.png?v=7k0j59bxg6",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/android-chrome-192x192-maskable.png?v=7k0j59bxg6",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/android-chrome-512x512-maskable.png?v=7k0j59bxg6",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "start_url": "https://rootwork.org",
+  "display": "standalone"
 }
