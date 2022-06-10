@@ -15,7 +15,7 @@ const goBackClass = 'button_back';
 const lineClass = '.line';
 
 // defined in i18n / translation files
-const quickLinks = 'Results';
+const quickLinks = 'Search Results';
 const searchResultsLabel = 'Search Results';
 const shortSearchQuery = 'Query is too short'
 const typeToSearch = 'Type to search';
