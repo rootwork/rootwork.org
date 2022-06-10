@@ -65,5 +65,9 @@ This script is called as part of the production build, below.
 
 `npm run p`
 
-This will run [`image_optimize.sh`](image_optimize.sh), then re-generate the
-Hugo site in `public` with minification turned on.
+This will generate the Hugo site in `public` with minification turned on. It's
+equivalent to running:
+
+```sh
+hugo --source ./hugo --minify --gc
+```

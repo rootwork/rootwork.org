@@ -126,8 +126,12 @@ as an override.
 
 `npm run p`
 
-This will run the [image optimization script](scripts/image_optimize.sh), then
-re-generate the Hugo site in `public` with minification turned on.
+This will generate the Hugo site in `public` with minification turned on. It's
+equivalent to running:
+
+```sh
+hugo --source ./hugo --minify --gc
+```
 
 Note that `public` is excluded from the repo in `.gitignore`, so this command
 should be run from a GitHub Action or other CI to build the site.

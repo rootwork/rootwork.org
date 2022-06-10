@@ -20,16 +20,23 @@ jobs:
         run: |
           npm pkg set scripts.prepare=" "
           npm ci
+      - name: Install image optimization dependencies
+        run: |
+          brew install imagemagick vips
+          sudo apt-get install -y webp
+          npm install -g avif
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
           extended: true
       - name: Build Hugo site
-        # `npm run p` optimizes images and then builds the site, copying over
-        # the optimized images. `git restore` then removes the optimized images
-        # from the repo, leaving them only in the public site.
+        # The script optimizes (and creates modern formats of) images.
+        # `npm run p` builds the site, copying over the optimized images.
+        # `git restore` then removes the optimized images from the repo, leaving
+        # them only in the public site.
         run: |
+          ./scripts/image_optimize.sh
           npm run p -- --baseUrl https://rootwork.github.io/rootwork.org/
           git restore hugo/content
       - name: Deploy
