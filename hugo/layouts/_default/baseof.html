@@ -29,18 +29,16 @@
   <head>
     {{- partial "head" . }}
 
-
-    <!-- CORS -->
+    {{/* CORS */}}
     <meta name="referrer" content="strict-origin-when-cross-origin" />
 
-    <!-- custom fonts -->
+    {{/* custom fonts */}}
     {{- partial "fonts" . }}
 
-
-    <!-- indieauth endpoint -->
+    {{/* indieauth endpoint */}}
     <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
 
-    <!-- preload fonts -->
+    {{/* preload fonts */}}
     <link
       rel="preload"
       href="{{ "/fonts/source-sans-pro-v14-latin-900.woff2" | relURL }}"
@@ -55,6 +53,9 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
+
+    {{/* JSON-LD schema (SEO) */}}
+    {{ partial "site_schema.html" . }}
 
     {{ partial "hooks/head-end.html" . }}
   </head>
