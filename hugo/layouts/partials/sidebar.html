@@ -5,7 +5,7 @@
 {{ $s := site.Params }}
 <aside class="sidebar">
   <section class="sidebar_inner">
-    {{ partialCached "search/widget" . }}
+    {{ partial "search/widget" . }}
     {{- $introDescription := $s.introDescription }}
     {{- with .Params.introDescription }}
       {{- $introDescription = . }}
@@ -73,7 +73,8 @@
         {{ range $related }}
           <li>
             <a href="{{ .Permalink }}" class="nav-link" title="{{ .Title }}"
-              >{{ .Title }}</a
+              >{{ .Title | markdownify }}</a
+            >
             >
           </li>
         {{ end }}
@@ -88,7 +89,8 @@
         {{- range . }}
           <li>
             <a href="{{ .Permalink }}" class="nav-link" title="{{ .Title }}"
-              >{{ .Title }}</a
+              >{{ .Title | markdownify }}</a
+            >
             >
           </li>
         {{- end }}
@@ -100,7 +102,7 @@
       {{- range first $recent $posts }}
         <li>
           <a href="{{ .Permalink }}" class="nav-link" title="{{ .Title }}"
-            >{{ .Title }}</a
+            >{{ .Title | markdownify }}</a
           >
         </li>
       {{- end }}
