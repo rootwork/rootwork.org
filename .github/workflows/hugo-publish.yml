@@ -26,7 +26,12 @@ jobs:
           hugo-version: 'latest'
           extended: true
       - name: Build Hugo site
-        run: npm run p -- --baseUrl https://rootwork.github.io/rootwork.org/
+        # `npm run p` optimizes images and then builds the site, copying over
+        # the optimized images. `git restore` then removes the optimized images
+        # from the repo, leaving them only in the public site.
+        run: |
+          npm run p -- --baseUrl https://rootwork.github.io/rootwork.org/
+          git restore hugo/content
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
