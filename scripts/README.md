@@ -59,21 +59,11 @@ actions:
 - Create [AVIF](https://en.wikipedia.org/wiki/AVIF) versions of images with
   [avif-cli](https://github.com/lovell/avif-cli)
 
-This script is called as part of the
-[production build script](production_build.sh) below.
+This script is called as part of the production build, below.
 
 ## Generate the site for production
 
-[`production_build.sh`](production_build.sh)
+`npm run p`
 
-Set the path to your Hugo and `public` directories at the top of the script, and
-enable or disable running the [image script](image_optimize.sh) as part of this
-build.
-
-The `public` directory, if it exists, will be removed to ensure that no outdated
-files are present.
-
-The site will then be re-generated in `public`, with minification turned on. You
-can
-[fine tune this in your site configuration](https://gohugo.io/getting-started/configuration/#configure-minify)
-or disable it completely with the `-m` flag.
+This will run [`image_optimize.sh`](image_optimize.sh), then re-generate the
+Hugo site in `public` with minification turned on.

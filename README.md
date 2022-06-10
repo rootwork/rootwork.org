@@ -24,24 +24,25 @@ They are user-configurable and meant to be easy to fork.
   this section. -->
 
 <!--ts-->
-* [Rootwork.org publishing system](#rootworkorg-publishing-system)
-* [Local development](#local-development)
-   * [Creating a new post](#creating-a-new-post)
-   * [Editing site variables](#editing-site-variables)
-   * [Hugo modules](#hugo-modules)
-   * [Editing the theme](#editing-the-theme)
-* [Generating the site for production](#generating-the-site-for-production)
-* [Fresh installation](#fresh-installation)
-   * [Go](#go)
-   * [Hugo](#hugo)
-   * [This repo](#this-repo)
-   * [Node/npm](#nodenpm)
-* [Updating dependencies](#updating-dependencies)
-   * [Go](#go-1)
-   * [Hugo](#hugo-1)
-   * [Hugo modules](#hugo-modules-1)
-   * [Node modules](#node-modules)
-* [Licenses](#licenses)
+
+- [Rootwork.org publishing system](#rootworkorg-publishing-system)
+- [Local development](#local-development)
+  - [Creating a new post](#creating-a-new-post)
+  - [Editing site variables](#editing-site-variables)
+  - [Hugo modules](#hugo-modules)
+  - [Editing the theme](#editing-the-theme)
+- [Generating the site for production](#generating-the-site-for-production)
+- [Fresh installation](#fresh-installation)
+  - [Go](#go)
+  - [Hugo](#hugo)
+  - [This repo](#this-repo)
+  - [Node/npm](#nodenpm)
+- [Updating dependencies](#updating-dependencies)
+  - [Go](#go-1)
+  - [Hugo](#hugo-1)
+  - [Hugo modules](#hugo-modules-1)
+  - [Node modules](#node-modules)
+- [Licenses](#licenses)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
 <!-- Added by: runner, at: Fri May 13 23:32:28 UTC 2022 -->
@@ -124,21 +125,10 @@ as an override.
 
 # Generating the site for production
 
-`npm run p` or `./scripts/production_build.sh`
+`npm run p`
 
-Set the path to your Hugo and `public` directories at the top of the script, and
-enable or disable running the [image script](scripts/image_optimize.sh) as part
-of this build. (See
-[information about the image script](scripts#generate-optimized-and-modern-images)
-for details.)
-
-The `public` directory, if it exists, will be removed to ensure that no outdated
-files are present.
-
-The site will then be re-generated in `public`, with minification turned on. You
-can
-[fine tune this in your site configuration](https://gohugo.io/getting-started/configuration/#configure-minify)
-or disable it completely with the `-m` flag.
+This will run the [image optimization script](scripts/image_optimize.sh), then
+re-generate the Hugo site in `public` with minification turned on.
 
 Note that `public` is excluded from the repo in `.gitignore`, so this command
 should be run from a GitHub Action or other CI to build the site.
@@ -181,7 +171,9 @@ and npm 6.x and 8.x.
 
 - Check version: `hugo version`
 - `sudo rm -rf /usr/local/bin/hugo`
-- Reinstall following the instructions above.
+- Get the `hugo_extended_VERSION_OS-64bit.*`
+  [package from GitHub releases](https://github.com/gohugoio/hugo/releases)
+  (e.g. `hugo_extended_0.81.0_Linux-64bit.deb`) and install.
 
 ## Hugo modules
 
