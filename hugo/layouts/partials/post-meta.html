@@ -56,7 +56,7 @@
           {{- $tag := urlize . -}}
           <a
             href="{{ absLangURL (printf "categories/%s/" $tag) }}"
-            title="{{ humanize . }}"
+            title="View all content categorized as '{{ humanize . }}'"
             class="post_tag--cat post_tag button button_translucent"
           >
             {{- . }}
@@ -73,7 +73,7 @@
           {{- $tag := urlize . -}}
           <a
             href="{{ absLangURL (printf "tags/%s/" $tag) }}"
-            title="{{ humanize . }}"
+            title="View all content tagged with '{{ humanize . }}'"
             class="post_tag button button_translucent"
           >
             {{- . }}
