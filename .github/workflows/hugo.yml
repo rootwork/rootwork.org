@@ -22,8 +22,16 @@ jobs:
           npm ci
       - name: Install image optimization dependencies
         run: |
-          wget https://download.imagemagick.org/ImageMagick/download/binaries/magick
-          alias magick="./magick"
+          sudo apt update
+          sudo apt remove -y imagemagick
+          sudo apt install -y build-essential
+          wget https://www.imagemagick.org/download/ImageMagick.tar.gz
+          mkdir imagemagick && tar xf ImageMagick.tar.gz -C imagemagick --strip-components 1
+          cd imagemagick
+          ./configure
+          make
+          sudo make install
+          sudo ldconfig /usr/local/lib
           sudo apt install -y webp
           npm install --location=global avif
           echo -e "\e[0;92m#### VERSIONS ####\e[0m"
