@@ -41,9 +41,9 @@
         {{- $r := T "read_more" }}
         <a
           href="{{ .Permalink }}"
-          title="{{ $r }} about '{{ .Title }}'"
+          title="Continue reading '{{ .Title }}'"
           class="excerpt_more button"
-          >{{ $r }}<span class="hidden-visually"> about "{{ .Title }}"</span></a
+          >{{ $r }}<span class="hidden-visually">: {{ .Title }}</span></a
         >
       </div>
     </div>
