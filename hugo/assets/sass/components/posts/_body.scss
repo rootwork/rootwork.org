@@ -13,7 +13,7 @@
       $dark_bottom: var(--light),
       $dark_top: var(--light),
       $light_height: 50%,
-      $dark_height: 100%,
+      $dark_height: 100%
     );
 
     @include is-on {
@@ -62,13 +62,5 @@
     border-radius: 0.25rem;
     @include switch(background-color, var(--shade), var(--translucent-lighter));
     @include switch(color, var(--dark), var(--light));
-  }
-
-  mark {
-    margin: 0 0.1rem;
-    padding: 0 0.25rem;
-    border-radius: 0.25rem;
-    background-color: var(--theme);
-    color: var(--white);
   }
 }

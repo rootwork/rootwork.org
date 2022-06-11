@@ -1,0 +1,10 @@
+// <mark> elements can be used anywhere, but appear automatically to highlight
+// keywords in search results.
+
+mark {
+  margin: 0 0.1rem;
+  padding: 0 0.25rem;
+  border-radius: 0.25rem;
+  background-color: var(--theme);
+  color: var(--white);
+}
