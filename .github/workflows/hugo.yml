@@ -20,8 +20,9 @@ jobs:
         run: |
           npm pkg set scripts.prepare=" "
           npm ci
-      - name:
-          Setup image library dependencies sudo apt install -y build-essential
+      - name: Setup image library dependencies
+        run: |
+          sudo apt install -y build-essential
           libjpeg-dev libpng-dev libtiff-dev libgif-dev
       - name: Install WebP libraries
         run: |
