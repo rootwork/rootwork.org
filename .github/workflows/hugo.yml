@@ -23,8 +23,9 @@ jobs:
       - name: Install image optimization dependencies
         run: |
           wget https://download.imagemagick.org/ImageMagick/download/binaries/magick
+          alias magick="./magick"
           sudo apt install -y webp
-          npm install -g avif
+          npm install --location=global avif
           echo -e "\e[0;92m#### VERSIONS ####\e[0m"
           magick --version
           cwebp -version
