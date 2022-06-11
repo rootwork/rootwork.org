@@ -22,7 +22,10 @@ jobs:
           npm ci
       - name: Install image optimization dependencies
         run: |
-          sudo apt update
+          sudo apt install -y webp
+          npm install --location=global avif
+      - name: Remove outdated ImageMagick and install newer version
+        run: |
           sudo apt remove -y imagemagick
           sudo apt install -y build-essential
           wget https://www.imagemagick.org/download/ImageMagick.tar.gz
@@ -32,10 +35,10 @@ jobs:
           make
           sudo make install
           sudo ldconfig /usr/local/lib
-          sudo apt install -y webp
-          npm install --location=global avif
+      - name: Report versions
+        run: |
           echo -e "\e[0;92m#### VERSIONS ####\e[0m"
-          magick --version
+          magick --version | grep "Version"
           cwebp -version
           npx avif --version
           echo -e "\e[0;92m#### ######## ####\e[0m"
