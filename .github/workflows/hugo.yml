@@ -1,4 +1,4 @@
-name: Publish Hugo site to GitHub Pages
+name: Prepare Hugo site
 on:
   push:
     branches: [main]
