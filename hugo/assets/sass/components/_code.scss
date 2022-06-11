@@ -1,4 +1,4 @@
-// CODE HIGHLIGHTING
+// Code highlighting
 
 %standard-code {
   margin: 0;
@@ -35,7 +35,11 @@ code.noClass {
     line-break: normal;
     word-break: normal;
     --inlineColor: var(--black);
-    @include switch(background-color, var(--translucent-green), var(--dark-shade));
+    @include switch(
+      background-color,
+      var(--translucent-green),
+      var(--dark-shade)
+    );
   }
 }
 
@@ -60,7 +64,11 @@ code.noClass {
 
 .highlight {
   scrollbar-width: thin;
-  @include switch(scrollbar-color, var(--medium-green) var(--dark-green), var(--light) var(--medium-green));
+  @include switch(
+    scrollbar-color,
+    var(--medium-green) var(--dark-green),
+    var(--light) var(--medium-green)
+  );
 
   code,
   .hljs {

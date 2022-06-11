@@ -1,5 +1,5 @@
 // Override variables here. To add custom CSS, use _custom.scss
-
+//
 // In order to override Sass variables in the parent theme, our component files
 // need to use @import rather than Sass's newer @use syntax.
 
@@ -52,4 +52,4 @@
 
 @import 'components/footer/container';
 @import 'components/footer/to-top';
-@import 'components/footer/inner';
+@import 'components/footer/body';

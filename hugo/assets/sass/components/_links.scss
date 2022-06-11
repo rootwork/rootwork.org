@@ -1,3 +1,5 @@
+// General link styles
+
 a {
   transition: color background-color opacity text-decoration border-bottom-width;
   @include motion(transition-duration, 500ms);

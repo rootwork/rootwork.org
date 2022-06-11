@@ -1,3 +1,5 @@
+// Search results overlay
+
 .search {
   .search_results {
     @include switch(background-color, var(--hazy-white), var(--dark-green));

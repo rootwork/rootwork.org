@@ -4,6 +4,7 @@
 // (wrapping only certain styles) or to wrap an entire element block. Note that
 // if no preference is indicated and the user has not toggled dark mode on the
 // site, the interface defaults to light mode.
+
 @mixin darkmode {
   html[data-mode='dim'] & {
     @content;

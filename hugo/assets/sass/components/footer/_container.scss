@@ -1,3 +1,7 @@
+// Footer container
+//
+// Double-classed to override specificity of parent theme.
+
 .footer.footer {
   margin-top: 4rem;
   @include switch(background-color, var(--translucent-green), var(--shade));

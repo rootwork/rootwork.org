@@ -1,5 +1,5 @@
-// COLORS
-
+// Colors
+//
 // We define colors in a Sass map so that we can use Sass color functions on
 // them if necessary. Then we assign those colors to corresponding CSS variables
 // as well as assigning them to particular uses. Finally, we swap out the CSS
@@ -45,6 +45,7 @@ $derivedColor: (
 
 :root {
   // Define colors
+
   --brown: #{map-get($color, brown)};
   --medium-brown: #{map-get($color, medium-brown)};
   --dark-brown: #{map-get($color, dark-brown)};
@@ -82,6 +83,7 @@ $derivedColor: (
 }
 
 // CSS vars that override values in the parent theme
+
 html {
   --theme: var(--theme);
   --themedark: var(--theme-dark);
@@ -94,12 +96,14 @@ html {
 }
 
 // Sass vars that override values in the parent theme
+
 $bg: map-get($color, dark-green);
 $theme: map-get($color, bright-green);
 $light: map-get($color, white);
 $haze: map-get($color, hazy-white);
 
 // Dark mode swaps
+
 html[data-mode='dim'] {
   --light: var(--bright-light);
   --header-text: var(--white);

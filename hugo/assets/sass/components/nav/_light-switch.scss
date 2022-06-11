@@ -1,6 +1,7 @@
-// LIGHT MODE SWITCHER
-
+// Light mode switcher
+//
 // General styles come first; for clarity mobile menu overrides are all together at the bottom.
+
 .color_mode {
   position: relative;
   top: -0.3333rem;
@@ -47,6 +48,8 @@
     }
   }
 }
+
+// Mobile-menu version (overrides)
 
 .jsopen {
   .color_mode {

@@ -1,11 +1,20 @@
 // Fancy highlight
 //
 // Used for link-active states.
-@mixin fancy-highlight ($light_bottom, $light_top, $dark_bottom, $dark_top, $light_height: 100%, $dark_height: 100%) {
+
+@mixin fancy-highlight(
+  $light_bottom,
+  $light_top,
+  $dark_bottom,
+  $dark_top,
+  $light_height: 100%,
+  $dark_height: 100%
+) {
   @include switch(--bg-h, $light_height, $dark_height);
   @include switch(--bg-ct, $light_top, $dark_top);
   @include switch(--bg-cb, $light_bottom, $dark_bottom);
-  background: linear-gradient(0deg, var(--bg-cb), var(--bg-ct)) no-repeat right bottom / 0 var(--bg-h);
+  background: linear-gradient(0deg, var(--bg-cb), var(--bg-ct)) no-repeat right
+    bottom / 0 var(--bg-h);
   @include motion(transition, background-size 600ms, color 750ms);
 
   @include is-on {

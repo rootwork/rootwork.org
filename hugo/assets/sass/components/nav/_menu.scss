@@ -1,14 +1,14 @@
-// NAVIGATION MENU
+// Navigation menu
+//
+// Header wrapper used for specificity.
 
 .nav_header {
-  // header wrapper provided for specificity
-
+  // Navigation menu wrapper
   .nav_body {
-    // navigation menu wrapper
   }
 
+  // Navigation menu items
   .nav_parent {
-    // navigation menu items
     margin: 0;
     border-radius: 0;
 
@@ -24,13 +24,14 @@
     }
   }
 
+  // Navigation menu links
   .nav_item {
-    // navigation menu links
     padding: 0.5rem 1rem;
     font-size: 1.25rem;
     @include focus-line(map-get($color, white));
   }
 
+  // Mobile navigation close icon
   .nav_close .icon {
     fill: var(--white);
   }
