@@ -43,11 +43,9 @@ jobs:
         run: npm install --location=global avif
       - name: Report versions
         run: |
-          echo -e "\e[0;92m#### VERSIONS ####\e[0m"
-          magick --version | grep "Version"
-          echo "libwebp" $(cwebp -version)
-          echo "avif-cli" $(npx avif --version)
-          echo -e "\e[0;92m#### ######## ####\e[0m"
+          echo -e "\e[0;92m" $(magick --version | grep "Version" | sed 's/Version: //g') "\e[0m"
+          echo -e "\e[0;92m libwebp" $(cwebp -version) "\e[0m"
+          echo -e "\e[0;92m avif-cli" $(npx avif --version) "\e[0m"
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
