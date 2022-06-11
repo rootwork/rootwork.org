@@ -24,6 +24,9 @@ jobs:
         run: |
           sudo apt install -y imagemagick webp
           npm install -g avif
+          magick --version
+          cwebp -version
+          npx avif --version
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
