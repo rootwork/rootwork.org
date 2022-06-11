@@ -20,6 +20,9 @@ jobs:
         run: |
           npm pkg set scripts.prepare=" "
           npm ci
+      - name:
+          Setup image library dependencies sudo apt install -y build-essential
+          libjpeg-dev libpng-dev libtiff-dev libgif-dev
       - name: Install WebP libraries
         run: |
           wget https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.2.2-linux-x86-64.tar.gz
@@ -30,7 +33,6 @@ jobs:
       - name: Remove outdated ImageMagick and install newer version
         run: |
           sudo apt remove -y imagemagick
-          sudo apt install -y build-essential
           wget https://www.imagemagick.org/download/ImageMagick.tar.gz
           mkdir imagemagick && tar xf ImageMagick.tar.gz -C imagemagick --strip-components 1
           cd imagemagick
