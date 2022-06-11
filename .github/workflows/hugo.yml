@@ -22,11 +22,14 @@ jobs:
           npm ci
       - name: Install image optimization dependencies
         run: |
-          sudo apt install -y imagemagick webp
+          wget https://download.imagemagick.org/ImageMagick/download/binaries/magick
+          sudo apt install -y webp
           npm install -g avif
+          echo -e "\e[0;92m#### VERSIONS ####\e[0m"
           magick --version
           cwebp -version
           npx avif --version
+          echo -e "\e[0;92m#### ######## ####\e[0m"
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
