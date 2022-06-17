@@ -34,11 +34,18 @@ figurePositionShow: false # Override global value for showing the figure label.
 showRelatedInArticle: false # Override global value for showing related posts in this series at the end of the content.
 
 categories:
-  - Planet Drupal
+  - Online advocacy
 tags:
-  - Drupal
+  - activism
+  - nptech
+  - social change
 keywords: # For SEO
-  - Drupal
+  - advocacy
+  - online advocacy
+  - nptech
+  - nonprofit technology
+  - social change
+  - social justice
 
 # Archive taxonomy terms (auto-generated)
 year: '2014'
