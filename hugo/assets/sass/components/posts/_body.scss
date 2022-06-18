@@ -52,6 +52,19 @@
     font-weight: bold;
   }
 
+  hr {
+    opacity: 1;
+    margin: 1rem 1.5rem;
+    padding: 2px;
+    background-image: linear-gradient(
+      to bottom right,
+      var(--bright-green),
+      var(--green)
+    );
+    box-shadow: -1px -1px 1px rgba(255, 255, 255, 0.5),
+      1px 1px 1px rgba(0, 0, 0, 0.2);
+  }
+
   th {
     text-align: left;
   }
