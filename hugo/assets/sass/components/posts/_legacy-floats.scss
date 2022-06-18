@@ -1,0 +1,28 @@
+// Floats for images in legacy blog posts
+
+.post_content {
+  // Aligning with line-height (em so as to change based on font size)
+  --top-pad: 0.3333em;
+  // Gap from surrounding text
+  --margin: 1.5rem;
+
+  .legacy-float-l,
+  .post_body img.legacy-float-l {
+    margin-bottom: var(--margin);
+
+    @include bp-s-up {
+      float: left;
+      margin: var(--top-pad) var(--margin) var(--margin) 0;
+    }
+  }
+
+  .legacy-float-r,
+  .post_body img.legacy-float-r {
+    margin-bottom: var(--margin);
+
+    @include bp-s-up {
+      float: right;
+      margin: var(--top-pad) 0 var(--margin) var(--margin);
+    }
+  }
+}
