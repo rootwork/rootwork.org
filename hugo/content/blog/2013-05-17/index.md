@@ -6,8 +6,8 @@ date: '2013-05-17'
 # lastmod: 2022-06-21 # Appends 'edited on' to the publish date
 
 slug: 'drupalcon-portland-responsive-web-design-snap-breakpoint-sass' # Recommended length is 3 to 5 words.
-# aliases:
-#   -
+aliases:
+  - /p/130517
 description: 'Media queries are a key part of responsive web design, because
   they control at what width (among other things) different CSS rules kick in.
   Design in Drupal, like web design everywhere, has been embracing responsive
@@ -224,4 +224,4 @@ case. I think we can all agree that there’s a poignant metaphor for web design
 there. And some pretty sweet gifs.
 
 _Image credit Flickr user
-[missnita](https://www.flickr.com/photos/missnita "View this person's Flickr stream [external site]")_
+[missnita](https://www.flickr.com/photos/missnita "View this person's Flickr stream")_
