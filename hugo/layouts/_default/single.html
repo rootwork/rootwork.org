@@ -59,6 +59,14 @@
             {{ . | markdownify }}
           </div>
         {{ end }}
+        {{ range $p.aliases }}
+          {{ if in . "/p/" }}
+            <div class="short_link">
+              <strong>Short link:</strong>
+              <code><a href="{{ . }}">https://rootwork.org{{ . }}</a></code>
+            </div>
+          {{ end }}
+        {{ end }}
       </div>
 
       {{- $showRelatedInArticle := true }}

@@ -1,0 +1,22 @@
+// Automated short links/permalinks
+
+.post_content {
+  .short_link {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-left: 0.25rem;
+    @include switch(border-top-color, var(--theme), var(--light));
+    border-top-width: 1px;
+    border-top-style: solid;
+    font-size: 80%;
+    font-family: monospace;
+
+    code {
+      display: block;
+
+      @include bp-s-up {
+        display: inline;
+      }
+    }
+  }
+}
