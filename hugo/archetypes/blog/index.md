@@ -24,7 +24,7 @@ showShare: true
 # featureImageAlt: 'Description of image' # Alternative text for featured image.
 # featureImageCap: 'This is the featured image.' # Caption (optional).
 # thumbnail: 'thumbnail.jpg' # Image in lists of posts.
-# shareImage: 'share.jpg' # For SEO and social media snippets.
+# shareImage: 'share.jpg' # For SEO and social media snippets. Falls back to thumbnail (if set) or featureImage.
 
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
