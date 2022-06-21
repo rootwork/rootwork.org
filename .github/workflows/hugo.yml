@@ -33,7 +33,7 @@ jobs:
       - name: Remove outdated ImageMagick and install newer version
         run: |
           sudo apt remove -y imagemagick
-          wget https://www.imagemagick.org/download/ImageMagick.tar.gz
+          wget https://imagemagick.org/archive/ImageMagick.tar.gz
           mkdir imagemagick && tar xf ImageMagick.tar.gz -C imagemagick --strip-components 1
           cd imagemagick
           sudo ./configure --with-webp=yes
