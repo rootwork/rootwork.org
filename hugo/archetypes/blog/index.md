@@ -20,22 +20,22 @@ showShare: true
 
 # menu: main
 
-featureImage: 'feature.jpg' # Top image on post.
-featureImageAlt: 'Description of image' # Alternative text for featured image.
-featureImageCap: 'This is the featured image.' # Caption (optional).
-thumbnail: 'thumbnail.jpg' # Image in lists of posts.
+# featureImage: 'feature.jpg' # Top image on post.
+# featureImageAlt: 'Description of image' # Alternative text for featured image.
+# featureImageCap: 'This is the featured image.' # Caption (optional).
+# thumbnail: 'thumbnail.jpg' # Image in lists of posts.
 # shareImage: 'share.jpg' # For SEO and social media snippets.
 
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
-figurePositionShow: true # Override global value for showing the figure label.
+figurePositionShow: false # Override global value for showing the figure label.
 showRelatedInArticle: false # Override global value for showing related posts in this series at the end of the content.
 
 categories:
   - Planet Drupal
 tags:
   - Drupal
-keywords: # For SEO
+keywords: # For SEO. Generally a combination of categories and tags.
   - Drupal
 
 # Archive taxonomy terms (auto-generated)
