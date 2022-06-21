@@ -7,8 +7,8 @@ date: '2013-05-21'
 # lastmod: 2022-06-17 # Appends 'edited on' to the publish date
 
 slug: 'we-need-talk-about-your-stylesheets-interview-jonathan-snook-drupalcon-portland' # Recommended length is 3 to 5 words.
-# aliases:
-#   -
+aliases:
+  - /p/130521
 description: "SMACSS, or Scalable and Modular Architecture for CSS, was
   developed by Jonathan Snook, a featured speaker at Drupalcon Portland. I'm
   really excited to get the opportunity to have Jonathan speak, not only because

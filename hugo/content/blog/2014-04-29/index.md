@@ -7,8 +7,8 @@ date: '2014-04-29'
 # lastmod: '2014-04-30' # Appends 'edited on' to the publish date
 
 slug: 'join-me-devsigner-conference-portland-may-designers-developers-join-forces'
-# aliases:
-#   -
+aliases:
+  - /p/140429
 description: 'Devsigner is celebrating the cross-overs, the
   multi-disciplinarians, the coders who paint and the designers who send pull
   requests --- and those who want to develop some new left-right brain skills.' # For SEO and social media snippets.

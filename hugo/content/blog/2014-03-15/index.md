@@ -5,8 +5,8 @@ date: '2014-03-15'
 # lastmod: 2022-03-24 # Appends 'edited on' to the publish date
 
 slug: 'online-advocacy-learn-community-organizing' # Recommended length is 3 to 5 words.
-# aliases:
-#   -
+aliases:
+  - /p/140315
 description: 'Investigate how sustainable social change has transpired in the
   past, and you’ll be closer to effecting change in the future.' # For SEO and social media snippets.
 summary: 'Investigate how sustainable social change has transpired in the past,
