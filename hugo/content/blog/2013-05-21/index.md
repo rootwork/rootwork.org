@@ -20,7 +20,7 @@ summary: "SMACSS, or Scalable and Modular Architecture for CSS, was developed by
   personally well-dog-eared copy of SMACSS, but because Drupal itself is
   adopting a SMACSS approach to its CSS." # For the post in lists.
 
-draft: true # Change to 'false' to publish this post.
+draft: false # Change to 'false' to publish this post.
 featured: true
 toc: false
 
