@@ -32,7 +32,9 @@ showShare: true
 
 featureImage: 'spaghetti-light_flickr-stevensnodgrass.jpg' # Top image on post.
 featureImageAlt: 'Backlit spaghetti (as in code)' # Alternative text for featured image.
-# featureImageCap: 'This is the featured image.' # Caption (optional).
+featureImageCap: 'It’s spaghetti! (As in code.)' # Caption (optional).
+featureImageCreditFlickr: 'stevensnodgrass'
+# featureImageCreditCustom: 'Image credit Flickr user [username](https://www.flickr.com/photos/username).'
 thumbnail: 'spaghetti-light_flickr-stevensnodgrass.jpg' # Image in lists of posts.
 # shareImage: 'share.jpg' # For SEO and social media snippets.
 
@@ -135,7 +137,3 @@ work on a prototyping/site development tool that uses the SMACSS concepts. We
 had built something like this when I was at Yahoo! that I think many people in
 the industry would find really useful. Hopefully I can find the time to work
 on it!
-
-_Image credit Flickr user
-[stevensnodgrass](https://www.flickr.com/photos/stevensnodgrass "View this person's Flickr stream").
-It’s spaghetti! (As in code.)_

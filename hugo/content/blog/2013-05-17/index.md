@@ -33,6 +33,8 @@ showShare: true
 featureImage: 'snap-squares_flickr-missnita.jpg' # Top image on post.
 featureImageAlt: 'Credit: Flickr user missnita' # Alternative text for featured image.
 # featureImageCap: 'This is the featured image.' # Caption (optional).
+featureImageCreditFlickr: 'missnita'
+# featureImageCreditCustom: 'Image credit Flickr user [username](https://www.flickr.com/photos/username).'
 thumbnail: 'snap-squares_flickr-missnita.jpg' # Image in lists of posts.
 # shareImage: 'share.jpg' # For SEO and social media snippets.
 
@@ -221,7 +223,4 @@ MW: With a name like Breakpoint, how could I not revisit the cinema classic
 Point Break. Bodhi and his gang of thrill-seeking bank-robbing surfers evaded
 the FBI for years until the newly minted Special Agent Johnny Utah was on the
 case. I think we can all agree that there’s a poignant metaphor for web designer
-there. And some pretty sweet gifs.
-
-_Image credit Flickr user
-[missnita](https://www.flickr.com/photos/missnita "View this person's Flickr stream")_
+there. And some pretty sweet GIFs.

@@ -29,6 +29,8 @@ showShare: true
 featureImage: 'devsignerslide1.jpg' # Top image on post.
 featureImageAlt: 'Portland waterfront' # Alternative text for featured image.
 # featureImageCap: 'This is the featured image.' # Caption (optional).
+# featureImageCreditFlickr: 'username'
+# featureImageCreditCustom: 'Image credit Flickr user [username](https://www.flickr.com/photos/username).'
 thumbnail: 'devsigner-thumbnail.jpg' # Image in lists of posts.
 # shareImage: 'share.jpg' # For SEO and social media snippets.
 
