@@ -2,9 +2,10 @@
   1. article class h-entry
   2. h1 class p-name and itemprops
   3. post_body e-content and itemprop
-
-  4. Adding "tree" partial at the bottom.
-  5. Adding #content anchor to main content (for skip-to link).
+  4. Adding featured-image credit section at the bottom.
+  5. Adding automated shortcode at the bottom.
+  6. Adding "tree" partial at the bottom.
+  7. Adding #content anchor to main content (for skip-to link).
 */}}
 {{- define "main" }}
   {{- $s := .Site.Params }}
@@ -30,7 +31,7 @@
         {{ $t | markdownify }}
       </h1>
       {{- partial "post-meta" . }}
-      {{- with .Params.featureImage -}}
+      {{- with $p.featureImage -}}
         <div class="post_featured">
           {{- partial "image" (dict "file" $p.featureImage "alt" $p.featureImageAlt "cap" $p.featureImageCap "type" "featured" "Page" $.Page) }}
         </div>
@@ -43,6 +44,21 @@
       {{ end }}
       <div class="post_body e-content" itemprop="articleBody">
         {{- .Content }}
+        {{ with $p.featureImageCreditFlickr }}
+          <div class="featured_image_credit">
+            Top image credit Flickr user
+            <a
+              href="https://www.flickr.com/photos/{{ . }}"
+              title="View this person's Flickr stream"
+              >{{ . }}</a
+            >.
+          </div>
+        {{ end }}
+        {{ with $p.featureImageCreditCustom }}
+          <div class="featured_image_credit">
+            {{ . | markdownify }}
+          </div>
+        {{ end }}
       </div>
 
       {{- $showRelatedInArticle := true }}

@@ -24,8 +24,8 @@ showShare: true
 # featureImage: 'feature.jpg' # Top image on post.
 # featureImageAlt: 'Description of image' # Alternative text for featured image.
 # featureImageCap: 'This is the featured image.' # Caption (optional).
-# featureImageCreditFlickr: 'username
-# featureImageCreditCustom: 'Image credit Flickr user [username](https://www.flickr.com/photos/username "View this person's Flickr stream").'
+# featureImageCreditFlickr: 'username'
+# featureImageCreditCustom: 'Top image credit Flickr user [username](https://www.flickr.com/photos/username).'
 # thumbnail: 'thumbnail.jpg' # Image in lists of posts.
 # shareImage: 'share.jpg' # For SEO and social media snippets. Falls back to thumbnail (if set) or featureImage.
 
