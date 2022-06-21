@@ -3,7 +3,7 @@ title:
   'We need to talk about your stylesheets: An interview with Jonathan Snook at
   Drupalcon Portland'
 author: Ivan Boothe
-date: '2013-05-13'
+date: '2013-05-21'
 # lastmod: 2022-06-17 # Appends 'edited on' to the publish date
 
 slug: 'we-need-talk-about-your-stylesheets-interview-jonathan-snook-drupalcon-portland' # Recommended length is 3 to 5 words.
