@@ -37,13 +37,15 @@
     overflow: visible;
 
     &::after {
-      width: 1.5rem;
-      height: 1.5rem;
+      top: -0.16666rem;
+      left: -0.25rem;
+      width: 2rem;
+      height: 2rem;
 
       @include switch(
         background-image,
-        url('../icons/sun.svg'),
-        url('../icons/moon.svg')
+        url('../icons/full-sun.svg'),
+        url('../icons/full-moon.svg')
       );
     }
   }
