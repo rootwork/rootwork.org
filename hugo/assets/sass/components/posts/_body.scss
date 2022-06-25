@@ -53,16 +53,18 @@
   }
 
   hr {
-    opacity: 1;
-    margin: 1rem 1.5rem;
-    padding: 2px;
-    background-image: linear-gradient(
-      to bottom right,
-      var(--bright-green),
-      var(--green)
-    );
-    box-shadow: -1px -1px 1px rgba(255, 255, 255, 0.5),
-      1px 1px 1px rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
+    margin: 1rem 0;
+    border: none;
+    height: 100px;
+    @include switch(background-color, var(--dark-green), var(--white));
+    mask-image: url('../icons/plant-divider.svg');
+    -webkit-mask-position: bottom;
+    mask-position: bottom;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
   }
 
   th {
