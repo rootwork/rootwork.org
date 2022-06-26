@@ -1,8 +1,9 @@
 // Elements appearing within a post's body
 
 .post_body {
-  font-size: 1.3333rem;
-  line-height: 1.5;
+  font-family: var(--content-font);
+  font-size: 1.4rem;
+  line-height: 1.6;
 
   a:not(.icon, .footnote-ref, .footnote-backref) {
     font-weight: bold;
