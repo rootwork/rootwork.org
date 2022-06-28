@@ -23,12 +23,15 @@
     }
 
     h2 {
+      font-family: var(--heading-font);
       font-size: 1.75rem;
       line-height: 1.1;
+      font-style: italic;
     }
 
     .author_bio {
-      font-size: 1.2rem;
+      font-family: var(--content-font);
+      font-size: 1.1rem;
       line-height: 1.3333;
 
       & + .button {
@@ -86,9 +89,17 @@
       }
     }
 
+    ul {
+      margin-left: -0.2rem;
+      padding-left: 0;
+    }
+
     li {
-      font-size: 1.2rem;
+      padding-left: 0.2rem;
+      font-family: var(--content-font);
+      font-size: 1.1rem;
       line-height: 1.3333;
+      list-style-type: '☙';
 
       .nav-link {
         @include fancy-highlight(
