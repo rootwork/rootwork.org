@@ -2,6 +2,14 @@
 
 .post_body {
   .link_owner {
+    font-family: var(--heading-font);
+    font-style: italic;
+
+    em {
+      font-weight: bold;
+      font-style: normal;
+    }
+
     // Labeling automated subheading links
     .link.icon {
       position: relative;
@@ -18,9 +26,11 @@
         position: absolute;
         top: 0;
         display: inline-block;
-        line-height: 1;
+        font-family: var(--font);
         font-size: 0.9rem;
+        line-height: 1;
         font-weight: normal;
+        font-style: normal;
         text-transform: uppercase;
         @include motion(transition, width opacity padding);
         @include motion(transition-duration, 750ms);
