@@ -5,8 +5,11 @@
   font-size: 1.5rem;
   line-height: 1.6666;
 
-  a:not(.icon, .footnote-ref, .footnote-backref) {
+  a {
     font-weight: bold;
+  }
+
+  a:not(.icon, .footnote-ref, .footnote-backref) {
     border-bottom: 1px currentColor dotted;
     @include fancy-highlight(
       $light_bottom: var(--pale-green),
@@ -26,7 +29,6 @@
   a.footnote-ref {
     padding: 0 0.1rem;
     font-size: 0.9rem;
-    font-weight: bold;
 
     @include is-on {
       @include switch(color, var(--dark-green), var(--light));

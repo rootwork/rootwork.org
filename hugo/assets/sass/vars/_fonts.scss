@@ -7,7 +7,7 @@
   --serif: 'cormorant', 'Iowan Old Style', 'Apple Garamond', Baskerville,
     'Times New Roman', 'Droid Serif', Times, 'Source Serif Pro', serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  --slab: 'faustina', 'Iowan Old Style', 'Apple Garamond', Baskerville,
+  --slab: 'ibmplexserif', 'Iowan Old Style', 'Apple Garamond', Baskerville,
     'Times New Roman', 'Droid Serif', Times, 'Source Serif Pro', serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --mono: Menlo, Consolas, Monaco, 'Liberation Mono', 'Lucida Console',
@@ -18,7 +18,7 @@ html {
   // Because fonts override values from the parent theme, we need to restate
   // them here.
   --font: var(--sans);
-  --content-font: var(--slab);
-  --header-font: var(--serif);
+  --content-font: var(--slab); // faustina, ibmplexserif
+  --header-font: var(--serif); // cormorant, cormorantinfant
   --code-font: var(--mono);
 }
