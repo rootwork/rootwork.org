@@ -1,6 +1,7 @@
 {{/* 1. Displaying intro description only if this is not the home page.
   2. Removing auto-generated year and month archives.
   3. Adding class="taxonomy_[[ $key ]]_group"
+  4. Changing tag style from "upper" to "humanize" (all caps to initial caps)
 */}}
 {{ $s := site.Params }}
 <aside class="sidebar">
@@ -124,7 +125,7 @@
                     class="post_tag button button_translucent"
                     title="View all content related to '{{ humanize .Name }}'"
                   >
-                    {{ upper .Name }}
+                    {{ humanize .Name }}
                     <span class="button_tally">{{ .Count }}</span>
                   </a>
                 {{ end }}
@@ -144,7 +145,7 @@
                           data-position="{{ .Count }}"
                           title="View all content related to '{{ humanize .Name }}'"
                         >
-                          {{- upper .Name -}}
+                          {{- humanize .Name -}}
                           <span class="button_tally">{{ .Count }}</span>
                         </a>
                       {{ end }}
