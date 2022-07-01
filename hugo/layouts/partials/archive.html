@@ -39,7 +39,7 @@
               alt="{{ $author.name }} photo" /></span
         ></a>
         <div>
-          <h1>Hello, I&#8217;m {{ $author.name }}</h1>
+          <h1>Hello, I&#8217;m <span>{{ $author.name }}</span></h1>
           <div class="author_bio">
             {{ markdownify $s.IntroDescription }}
             {{- if ( ne $s.introURL false ) }}

@@ -20,6 +20,9 @@
   h1 {
     position: relative;
     margin: 0 0 0.5rem;
+    background: var(--g-greenblue);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     &::before {
       z-index: -1;
@@ -38,6 +41,10 @@
       @include darkmode {
         background-color: var(--light);
       }
+    }
+
+    > span {
+      white-space: nowrap;
     }
   }
 

@@ -59,6 +59,13 @@ $gradients: (
       map-get($color, bright-green) 50%,
       rgb(171, 121, 214) 95%
     ),
+  greenblue:
+    linear-gradient(
+      120deg,
+      rgb(0, 187, 203) 10%,
+      map-get($color, bright-green) 25%,
+      rgb(171, 121, 214) 95%
+    ),
 );
 
 :root {
@@ -103,6 +110,7 @@ $gradients: (
 
   --g-rainbow: #{map-get($gradients, rainbow)};
   --g-green: #{map-get($gradients, green)};
+  --g-greenblue: #{map-get($gradients, greenblue)};
 }
 
 // CSS vars that override values in the parent theme
