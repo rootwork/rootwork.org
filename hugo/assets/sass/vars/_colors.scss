@@ -38,10 +38,28 @@ $derivedColor: (
   translucent-green: rgba(map-get($color, bright-green), 0.15),
   translucent-brown: rgba(map-get($color, medium-brown), 0.1),
 );
-// $bc: lighten(map-get($color, bg), 75%);
-// $bc2: lighten(map-get($color, bg), 25%);
-// $bc3: lighten(map-get($color, bg), 15%);
-// $bc4: lighten(map-get($color, bg), 5%);
+
+// Gradients
+
+$gradients: (
+  rainbow:
+    linear-gradient(
+      35deg,
+      rgb(211, 103, 193) 10%,
+      rgb(222, 223, 64) 25%,
+      rgb(98, 203, 92) 50%,
+      rgb(0, 187, 203) 75%,
+      rgb(171, 121, 214) 90%
+    ),
+  green:
+    linear-gradient(
+      35deg,
+      rgb(0, 187, 203) 10%,
+      map-get($color, bright-green) 25%,
+      map-get($color, bright-green) 50%,
+      rgb(171, 121, 214) 95%
+    ),
+);
 
 :root {
   // Define colors
@@ -80,6 +98,11 @@ $derivedColor: (
   --medium-theme: #{map-get($derivedColor, medium-green)};
   --light-theme: #{map-get($color, translucent-green)};
   --post-bg: #{map-get($color, hazy-white)};
+
+  // Define gradients
+
+  --g-rainbow: #{map-get($gradients, rainbow)};
+  --g-green: #{map-get($gradients, green)};
 }
 
 // CSS vars that override values in the parent theme

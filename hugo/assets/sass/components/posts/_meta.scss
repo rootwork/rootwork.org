@@ -10,20 +10,43 @@
 .post_content,
 .excerpt_header {
   .post_meta {
+    position: relative;
     width: 100%;
     align-items: center;
     justify-content: center;
     margin: 1rem 0;
-    padding: 1rem;
+    padding: 0;
     font-size: 1.1rem;
     line-height: 1;
-    border-radius: 0.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
     @include switch(background-color, var(--white), var(--post-bg));
 
     @include breakat(sm) {
       margin: 1rem 0;
-      padding: 1rem;
       justify-content: flex-start;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: relative;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background-image: var(--g-green);
+    }
+
+    &::before {
+      height: 0.25rem;
+      margin-bottom: 1rem;
+      border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    &::after {
+      margin-top: 1rem;
+      height: 1px;
     }
 
     > span,
