@@ -5,5 +5,14 @@
 
   .search_field {
     border: 3px solid var(--bright-green);
+
+    &:focus-within {
+      @include switch(border-color, var(--md-dark-green), var(--light));
+      @include switch(
+        box-shadow,
+        0 0 1rem var(--shade),
+        0 0 1rem var(--pale-light)
+      );
+    }
   }
 }

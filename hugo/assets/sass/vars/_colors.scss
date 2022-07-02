@@ -22,6 +22,7 @@ $color: (
   pale-green: #cfffcf,
   white: #eee,
   hazy-white: #fafafa,
+  pale-light: rgba(#eee, 0.15),
   light: rgba(#eee, 0.25),
   medium-light: rgba(#fff, 0.3),
   bright-light: rgba(#eee, 0.91),
@@ -89,6 +90,7 @@ $gradients: (
 
   --white: #{map-get($color, white)};
   --hazy-white: #{map-get($color, hazy-white)};
+  --pale-light: #{map-get($color, pale-light)};
   --light: #{map-get($color, light)};
   --medium-light: #{map-get($color, medium-light)};
   --bright-light: #{map-get($color, bright-light)};
