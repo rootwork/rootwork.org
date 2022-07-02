@@ -26,6 +26,9 @@
       font-size: 1.75rem;
       line-height: 1.1;
       font-style: italic;
+      background: var(--g-greenblue);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .author_bio {
