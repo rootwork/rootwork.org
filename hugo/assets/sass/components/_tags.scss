@@ -73,7 +73,7 @@
   font-family: var(--content-font);
   font-size: 0.95rem;
   text-transform: capitalize;
-  @include switch(color, var(--dark-green), var(--pale-green));
+  @include switch(color, var(--dark-green), var(--light));
   @include is-on(border-color, currentColor);
   @include focus(text-decoration, underline);
 
