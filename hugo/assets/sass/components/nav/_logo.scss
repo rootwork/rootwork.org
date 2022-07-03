@@ -92,27 +92,27 @@
       }
 
       #logo_leaf {
-        fill: yellow;
+        fill: var(--yellow);
         transform: scale(0.5) translate(2px, -5px) rotate(-30deg);
       }
 
       #logo_leaf-2 {
-        fill: yellow;
+        fill: var(--yellow);
         transform: scale(0.6) translate(10px, -5px) rotate(2.5deg);
       }
 
       #logo_leaf-3 {
-        fill: deepPink;
+        fill: var(--pink);
         transform: scale(0.8) rotate(-17.5deg);
       }
 
       #logo_leaf-4 {
-        fill: deepPink;
+        fill: var(--pink);
         transform: rotate(10deg);
       }
 
       #logo_leaf-5 {
-        fill: deepPink;
+        fill: var(--pink);
         transform: scaleX(-1) translate(-16px, 7px) rotate(-40deg);
       }
 
