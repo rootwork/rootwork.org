@@ -13,6 +13,7 @@ $color: (
   brown: #80311a,
   medium-brown: #80502c,
   dark-brown: #5e1b07,
+
   green: #04800e,
   bright-green: #00b877,
   dark-green: #002714,
@@ -20,6 +21,9 @@ $color: (
   medium-green: #3cc695,
   light-green: #4a0,
   pale-green: #cfffcf,
+
+  blue: rgb(0, 187, 203),
+  purple: rgb(171, 121, 214),
   white: #eee,
   hazy-white: #fafafa,
   pale-light: rgba(#eee, 0.15),
@@ -55,17 +59,17 @@ $gradients: (
   green:
     linear-gradient(
       35deg,
-      rgb(0, 187, 203) 10%,
+      map-get($color, blue) 10%,
       map-get($color, bright-green) 25%,
       map-get($color, bright-green) 50%,
-      rgb(171, 121, 214) 95%
+      map-get($color, purple) 95%
     ),
   greenblue:
     linear-gradient(
       120deg,
-      rgb(0, 187, 203) 10%,
+      map-get($color, blue) 10%,
       map-get($color, bright-green) 25%,
-      rgb(171, 121, 214) 95%
+      map-get($color, purple) 95%
     ),
 );
 
@@ -75,6 +79,7 @@ $gradients: (
   --brown: #{map-get($color, brown)};
   --medium-brown: #{map-get($color, medium-brown)};
   --dark-brown: #{map-get($color, dark-brown)};
+  --translucent-brown: #{map-get($derivedColor, translucent-brown)};
 
   --green: #{map-get($color, green)};
   --bright-green: #{map-get($color, bright-green)};
@@ -86,7 +91,9 @@ $gradients: (
   --light-green: #{map-get($color, light-green)};
   --pale-green: #{map-get($color, pale-green)};
   --translucent-green: #{map-get($derivedColor, translucent-green)};
-  --translucent-brown: #{map-get($derivedColor, translucent-brown)};
+
+  --blue: #{map-get($color, blue)};
+  --purple: #{map-get($color, purple)};
 
   --white: #{map-get($color, white)};
   --hazy-white: #{map-get($color, hazy-white)};

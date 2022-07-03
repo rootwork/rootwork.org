@@ -33,14 +33,10 @@
       content: '';
       width: 0;
       height: 2px;
-      background-color: var(--theme);
+      background: var(--g-greenblue);
       transition-timing-function: ease-in-out;
       @include motion(transition-delay, 500ms);
       @include motion(transition-duration, 750ms);
-
-      @include darkmode {
-        background-color: var(--light);
-      }
     }
 
     > span {
@@ -123,9 +119,9 @@
       $widthNeg: calc(var(--image-on-border) * -1);
 
       $colorLt1: map-get($color, bright-green);
-      $colorLt2: lighten(map-get($color, bright-green), 35%);
-      $colorLt3: lighten(map-get($color, bright-green), 45%);
-      $colorLt4: lighten(map-get($color, bright-green), 55%);
+      $colorLt2: darken(map-get($color, bright-green), 5%);
+      $colorLt3: map-get($color, blue);
+      $colorLt4: map-get($color, purple);
 
       $colorDk1: lighten(map-get($color, dark-green), 75%);
       $colorDk2: lighten(map-get($color, dark-green), 25%);
