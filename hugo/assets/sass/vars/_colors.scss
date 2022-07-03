@@ -22,8 +22,11 @@ $color: (
   light-green: #4a0,
   pale-green: #cfffcf,
 
+  yellow: yellow,
   blue: rgb(0, 187, 203),
   purple: rgb(171, 121, 214),
+  pink: deepPink,
+
   white: #eee,
   hazy-white: #fafafa,
   pale-light: rgba(#eee, 0.15),
@@ -50,11 +53,11 @@ $gradients: (
   rainbow:
     linear-gradient(
       35deg,
-      rgb(211, 103, 193) 10%,
-      rgb(222, 223, 64) 25%,
-      rgb(98, 203, 92) 50%,
-      rgb(0, 187, 203) 75%,
-      rgb(171, 121, 214) 90%
+      map-get($color, pink) 10%,
+      map-get($color, yellow) 25%,
+      map-get($color, bright-green) 50%,
+      map-get($color, blue) 75%,
+      map-get($color, purple) 90%
     ),
   green:
     linear-gradient(
@@ -92,8 +95,10 @@ $gradients: (
   --pale-green: #{map-get($color, pale-green)};
   --translucent-green: #{map-get($derivedColor, translucent-green)};
 
+  --yellow: #{map-get($color, yellow)};
   --blue: #{map-get($color, blue)};
   --purple: #{map-get($color, purple)};
+  --pink: #{map-get($color, pink)};
 
   --white: #{map-get($color, white)};
   --hazy-white: #{map-get($color, hazy-white)};
