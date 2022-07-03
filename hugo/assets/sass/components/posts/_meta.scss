@@ -169,7 +169,7 @@
 
   &::before,
   &::after {
-    @include switch(background-color, var(--white), var(--post-bg));
+    background-color: transparent;
   }
 
   .post_categories,
