@@ -7,6 +7,7 @@
 // - tags
 // - share links
 
+// Meta on both full posts and in lists of posts
 .post_content,
 .excerpt_header {
   .post_meta {
@@ -35,7 +36,6 @@
       left: 0;
       right: 0;
       width: 100%;
-      background-image: var(--g-green);
     }
 
     &::before {
@@ -45,8 +45,8 @@
     }
 
     &::after {
-      margin-top: 1rem;
       height: 1px;
+      margin-top: 1rem;
     }
 
     .post_byline,
@@ -62,6 +62,13 @@
       gap: 0.5rem 0;
       align-items: center;
       margin-bottom: 0;
+    }
+
+    .post_byline,
+    .post_date_icon,
+    .post_categories,
+    .post_tags {
+      padding-left: 1rem;
     }
 
     .post_byline {
@@ -156,8 +163,14 @@
   }
 }
 
+// Posts in lists only
 .excerpt_header .post_meta {
   margin: 0;
+
+  &::before,
+  &::after {
+    @include switch(background-color, var(--white), var(--post-bg));
+  }
 
   .post_categories,
   .post_tags {
@@ -166,5 +179,14 @@
         margin: 0.5rem;
       }
     }
+  }
+}
+
+// Full posts only
+
+.post_content .post_meta {
+  &::before,
+  &::after {
+    background-image: var(--g-green);
   }
 }

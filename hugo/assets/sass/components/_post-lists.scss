@@ -15,9 +15,11 @@
   line-height: 1.5;
 
   .excerpt_header {
+    // Also see styles in posts > _meta.scss
+
     .post_link {
-      margin: 0 0 1rem;
-      padding-top: 0;
+      margin: 0 0 0.25rem;
+      padding: 0 0 0.25rem;
       font-size: 2.25rem;
 
       @include fancy-highlight(
