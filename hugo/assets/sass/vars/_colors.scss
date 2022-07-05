@@ -34,6 +34,7 @@ $color: (
   medium-light: rgba(#fff, 0.3),
   bright-light: rgba(#eee, 0.91),
   black: #111,
+  slate: rgb(39, 39, 44),
   shade: rgba(#111, 0.25),
   dark-shade: rgba(#111, 0.8),
 );
@@ -113,7 +114,7 @@ $gradients: (
 
   // Assign colors
 
-  --bg: #{map-get($color, dark-green)};
+  --bg: #{map-get($color, slate)};
   --theme: #{map-get($color, bright-green)};
   --dark-theme: #{map-get($color, dark-green)};
   --medium-theme: #{map-get($derivedColor, medium-green)};
@@ -142,7 +143,7 @@ html {
 
 // Sass vars that override values in the parent theme
 
-$bg: map-get($color, dark-green);
+$bg: map-get($color, slate);
 $theme: map-get($color, bright-green);
 $light: map-get($color, white);
 $haze: map-get($color, hazy-white);
