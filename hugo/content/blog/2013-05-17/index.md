@@ -32,7 +32,6 @@ showShare: true
 
 featureImage: 'snap-squares_flickr-missnita.jpg' # Top image on post.
 featureImageAlt: 'Credit: Flickr user missnita' # Alternative text for featured image.
-# featureImageCap: 'This is the featured image.' # Caption (optional).
 featureImageCreditFlickr: 'missnita'
 # featureImageCreditCustom: 'Image credit Flickr user [username](https://www.flickr.com/photos/username).'
 thumbnail: 'snap-squares_flickr-missnita.jpg' # Image in lists of posts.

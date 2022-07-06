@@ -24,7 +24,6 @@ showShare: true
 
 featureImage: '2014-04-ntc-b.jpg' # Top image on post.
 featureImageAlt: 'Slide image from the presentation' # Alternative text for featured image.
-# featureImageCap: 'This is the featured image.' # Caption (optional).
 # featureImageCreditFlickr: 'username'
 # featureImageCreditCustom: 'Image credit Flickr user [username](https://www.flickr.com/photos/username).'
 thumbnail: '2014-04-ntc-b.jpg' # Image in lists of posts.

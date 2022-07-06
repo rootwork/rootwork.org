@@ -32,7 +32,6 @@ showShare: true
 
 featureImage: 'spaghetti-light_flickr-stevensnodgrass.jpg' # Top image on post.
 featureImageAlt: 'Backlit spaghetti (as in code)' # Alternative text for featured image.
-featureImageCap: 'It’s spaghetti! (As in code.)' # Caption (optional).
 featureImageCreditFlickr: 'stevensnodgrass'
 # featureImageCreditCustom: 'Image credit Flickr user [username](https://www.flickr.com/photos/username).'
 thumbnail: 'spaghetti-light_flickr-stevensnodgrass.jpg' # Image in lists of posts.
