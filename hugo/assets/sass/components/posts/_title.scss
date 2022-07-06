@@ -1,7 +1,50 @@
 .post_title {
-  font-family: var(--heading-font);
+  position: relative;
+  margin: 0.5rem 0 0;
 
-  @include breakat(sm) {
-    margin-left: var(--logo-descender-width);
+  // font-family: var(--heading-font);
+
+  // @include breakat(sm) {
+  //   margin-left: var(--logo-descender-width);
+  // }
+
+  .post_featured {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+
+    figure,
+    picture {
+      height: 100%;
+      text-align: center;
+    }
+
+    .image_featured {
+      margin: 0 !important; // Overriding parent theme !important
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .caption_featured {
+      @include hidden-all;
+    }
+  }
+
+  .post_title__text {
+    display: block;
+    position: relative;
+    margin: 1rem;
+    z-index: 10;
+    color: var(--white);
+    text-shadow: 2px 2px 0 var(--dark-shade), 3px 3px 0 var(--dark-shade),
+      -1px -1px 0 var(--dark-shade), 1px -1px 0 var(--dark-shade),
+      -1px 1px 0 var(--dark-shade), 1px 1px 0 var(--dark-shade);
+    @include bp-s-up {
+      margin: 2rem;
+    }
   }
 }

@@ -38,8 +38,9 @@
     }
 
     &::after {
-      height: 1px;
+      height: 0.25rem;
       margin-top: 1rem;
+      border-radius: 0 0 0.5rem 0.5rem;
     }
 
     .post_byline,
@@ -125,12 +126,28 @@
 
     // When appearing on full-page posts
     &--page {
-      justify-content: center;
+      margin-top: 0;
+      padding-top: 1rem;
+      justify-content: flex-start;
 
-      &::before,
+      @include bp-s-up {
+        justify-content: center;
+      }
+
+      &::before {
+        display: none;
+      }
+
       &::after {
         background-image: var(--g-green);
-        border-radius: 0.5rem 0.5rem 0 0;
+      }
+
+      .post_date_icon {
+        margin-left: 1rem;
+
+        @include bp-s-up {
+          margin-left: 0;
+        }
       }
 
       .post_categories {

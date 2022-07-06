@@ -1,12 +1,6 @@
 // Images appearing within posts
 
 .post_content {
-  .image_featured {
-    // Featured images that are too small for full width should be left-aligned, not centered.
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-
   .image-scale {
     background-color: var(--shadedark);
   }

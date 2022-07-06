@@ -2,10 +2,11 @@
   1. article class h-entry
   2. h1 class p-name and itemprops
   3. post_body e-content and itemprop
-  4. Adding featured-image credit section at the bottom.
-  5. Adding automated shortcode at the bottom.
-  6. Adding "tree" partial at the bottom.
-  7. Adding #content anchor to main content (for skip-to link).
+  4. Moving featured image to title area to use as background.
+  5. Adding featured image credit section at the bottom.
+  6. Adding automated shortcode at the bottom.
+  7 Adding "tree" partial at the bottom.
+  8. Adding #content anchor to main content (for skip-to link).
 */}}
 {{- define "main" }}
   {{- $s := .Site.Params }}
@@ -28,14 +29,14 @@
     <article class="post_content h-entry" id="content">
       {{- $t := .Title }}
       <h1 class="post_title p-name" itemprop="name headline">
-        {{ $t | markdownify }}
+        {{- with $p.featureImage -}}
+          <div class="post_featured">
+            {{- partial "image" (dict "file" $p.featureImage "alt" $p.featureImageAlt "cap" $p.featureImageCap "type" "featured" "Page" $.Page) }}
+          </div>
+        {{- end -}}
+        <span class="post_title__text">{{ $t | markdownify }}</span>
       </h1>
       {{- partial "post-meta" . }}
-      {{- with $p.featureImage -}}
-        <div class="post_featured">
-          {{- partial "image" (dict "file" $p.featureImage "alt" $p.featureImageAlt "cap" $p.featureImageCap "type" "featured" "Page" $.Page) }}
-        </div>
-      {{- end -}}
       {{ if $p.toc }}
         <div class="post_toc">
           <h2>{{ T "overview" }}</h2>
