@@ -18,7 +18,7 @@
 {{- $scratch.Set "writeSeparator" false }}
 
 {{ $metaClass := "" }}
-{{- if .Scratch.Get "withinRangeLoop" }}
+{{- if eq (.Scratch.Get "withinRangeLoop") true }}
   {{ $metaClass = "post_meta--list" }}
 {{- else }}
   {{ $metaClass = "post_meta--page" }}
