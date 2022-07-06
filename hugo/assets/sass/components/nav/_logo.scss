@@ -31,20 +31,24 @@
 
     #logo_roots {
       fill: var(--brown);
+      // stroke-width: 3px;
+      // @include switch(stroke, var(--white), var(--dark-green));
+      // transition-duration: 0s;
     }
 
-    #logo_roots-1 {
+    #logo_roots-2 {
       fill: var(--brown);
     }
 
-    #logo_roots-2,
-    #logo_roots-3 {
-      fill: transparent;
+    #logo_roots-low {
+      fill: var(--brown);
+      // stroke-width: 3px;
+      // @include switch(stroke, var(--white), var(--dark-green));
+      // transition-duration: 0s;
     }
 
-    #logo_roots-low,
     #logo_roots-low-2 {
-      fill: transparent;
+      fill: var(--brown);
     }
 
     #logo_word-root {
