@@ -117,6 +117,7 @@
             left: 1.5rem;
             right: 1.5rem;
             border-bottom: 2px solid currentColor;
+            opacity: 0.8;
             transition: all 0.25s ease-in-out;
             z-index: 2;
           }
@@ -135,25 +136,35 @@
           }
 
           @include is-on {
-            background-color: var(--bright-green);
-            border-radius: 0;
-
             &::before {
-              left: 50%;
-              right: 50%;
-              opacity: 0;
-            }
-
-            &::after {
-              background-color: darken(map-get($color, bright-green), 20%);
-              border-color: var(--bright-green);
-              @include switch(
-                box-shadow,
-                4px 4px var(--pale-green),
-                4px 4px darken(map-get($color, bright-green), 12%)
-              );
+              left: 1.5rem;
+              right: 1.5rem;
+              opacity: 1;
             }
           }
+        }
+      }
+    }
+
+    @include is-on {
+      .more_wrap .excerpt_more {
+        background-color: var(--bright-green);
+        border-radius: 0;
+
+        &::before {
+          left: 50%;
+          right: 50%;
+          opacity: 0;
+        }
+
+        &::after {
+          background-color: darken(map-get($color, bright-green), 20%);
+          border-color: var(--bright-green);
+          @include switch(
+            box-shadow,
+            4px 4px var(--pale-green),
+            4px 4px darken(map-get($color, bright-green), 12%)
+          );
         }
       }
     }
