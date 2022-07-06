@@ -3,10 +3,6 @@
 .post_content {
   margin-top: 0;
 
-  @include breakat(sm) {
-    margin-left: var(--logo-descender-width);
-  }
-
   .tree {
     @include fullcontent;
     overflow: hidden;

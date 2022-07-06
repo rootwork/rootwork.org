@@ -1,3 +1,7 @@
 .post_title {
   font-family: var(--heading-font);
+
+  @include breakat(sm) {
+    margin-left: var(--logo-descender-width);
+  }
 }
