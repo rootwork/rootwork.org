@@ -5,6 +5,8 @@
   .post_tag.button {
     @include switch(--bg-color, var(--hazy-green), var(--dark-green));
     @include switch(--fg-color, var(--white), var(--light));
+    @include switch(--bg-hover-color, var(--pale-green), var(--light));
+    @include switch(--fg-hover-color, var(--md-dark-green), var(--dark-green));
 
     position: relative;
     margin: 0.25rem 0 0;
@@ -16,11 +18,19 @@
     text-transform: capitalize;
     color: var(--fg-color);
     background-color: var(--bg-color);
+    transition: all;
+    @include motion(transition-duration, 500ms);
 
     @include focus(text-decoration, underline);
 
     @include is-on {
-      @include switch(color, var(--bright-green));
+      background-color: var(--bg-hover-color);
+      color: var(--fg-hover-color);
+
+      &::before {
+        background-color: inherit;
+        color: inherit;
+      }
     }
 
     &::before {
@@ -33,6 +43,7 @@
       width: var(--size);
       background-color: var(--bg-color);
       clip-path: polygon(0 50%, 100% 0, 100% 100%);
+      transition: inherit;
     }
 
     &::after {
