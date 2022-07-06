@@ -7,24 +7,18 @@
 // - tags
 // - share links
 
-// Meta on both full posts and in lists of posts
 .post_content,
 .excerpt_header {
+  // Meta section on both full posts and in lists of posts
   .post_meta {
     position: relative;
     width: 100%;
     align-items: center;
-    justify-content: center;
     margin: 1rem 0;
     padding: 0;
     font-size: 1.1rem;
     line-height: 1;
     @include switch(background-color, var(--white), var(--post-bg));
-
-    @include breakat(sm) {
-      margin: 1rem 0;
-      justify-content: flex-start;
-    }
 
     &::before,
     &::after {
@@ -55,19 +49,12 @@
     .post_time,
     .post_categories,
     .post_tags,
-    .page_only {
+    .post_share {
       display: inline-flex;
       flex-flow: row wrap;
       gap: 0.5rem 0;
       align-items: center;
       margin-bottom: 0;
-    }
-
-    .post_byline,
-    .post_date_icon,
-    .post_categories,
-    .post_tags {
-      padding-left: 1rem;
     }
 
     .post_byline {
@@ -105,88 +92,76 @@
       margin: 0 0 0 1rem;
     }
 
-    .post_categories,
-    .post_tags {
+    // When appearing in lists of posts
+    &--list {
       margin: 0;
-      gap: 0 0.75rem;
+      border-radius: 0.5rem;
+      justify-content: flex-start;
 
-      .post_tag.post_tag {
-        gap: 0;
-        margin: 0.5rem 1rem;
-        font-size: 0.95rem;
+      &::before,
+      &::after {
+        background-color: transparent;
+      }
 
-        @include breakat(sm) {
-          margin: 0.5rem 0.5rem 0 0.5rem;
+      .post_byline,
+      .post_date_icon,
+      .post_categories,
+      .post_tags {
+        padding-left: 1rem;
+      }
+
+      .post_categories,
+      .post_tags {
+        margin: 0;
+        gap: 0 0.75rem;
+
+        .post_tag.post_tag {
+          gap: 0;
+          margin: 0.5rem;
+          font-size: 0.95rem;
         }
       }
     }
 
-    .post_share {
-      margin: 1.5rem 0 0 0;
+    // When appearing on full-page posts
+    &--page {
+      justify-content: center;
 
-      @include breakat(sm) {
-        margin: 1.5rem 0 1rem 0.5rem;
+      &::before,
+      &::after {
+        background-image: var(--g-green);
+        border-radius: 0.5rem 0.5rem 0 0;
       }
 
-      > a {
-        display: inline-block;
-        opacity: 0.75;
-        @include is-on(opacity, 1, 0.75);
-        @include focus-line(map-get($color, bright-green));
+      .post_categories {
+        margin-top: 0.75rem;
 
-        &:first-child {
-          padding-left: 0.25rem;
-        }
-
-        > .icon {
-          width: 1rem;
-          height: 1rem;
-          margin-top: -0.15rem;
-          @include switch(fill, var(--black), var(--light));
+        @include bp-s-up {
+          margin-top: 0;
         }
       }
-    }
-  }
-}
 
-// Posts in lists only
-.excerpt_header .post_meta {
-  margin: 0;
-  border-radius: 0.5rem;
+      .post_share {
+        margin: 1.5rem;
 
-  &::before,
-  &::after {
-    background-color: transparent;
-  }
+        > a {
+          display: inline-block;
+          opacity: 0.75;
+          @include is-on(opacity, 1, 0.75);
+          @include focus-line(map-get($color, bright-green));
 
-  .post_categories,
-  .post_tags {
-    .post_tag {
-      @include breakat(sm) {
-        margin: 0.5rem;
+          &:first-child {
+            padding-left: 0.25rem;
+          }
+
+          > .icon {
+            width: 1rem;
+            height: 1rem;
+            margin-top: -0.15rem;
+            @include switch(fill, var(--black), var(--light));
+          }
+        }
       }
     }
-  }
-}
-
-// Full posts only
-
-.post_content .post_meta {
-  &::before,
-  &::after {
-    background-image: var(--g-green);
-    border-radius: 0.5rem 0.5rem 0 0;
-  }
-
-  .post_categories {
-    margin-top: 0.75rem;
-
-    @include bp-s-up {
-      margin-top: 0;
-    }
-  }
-
-  .post_share {
-    margin-left: 1.5rem;
   }
 }

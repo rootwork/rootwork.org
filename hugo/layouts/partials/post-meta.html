@@ -5,6 +5,8 @@
   3. Inserting CATEGORIES section and separating out TAGS section.
 
   4. Removing 'writeSeparator' = true
+
+  5. Adding $metaClass to container.
 */}}
 {{ $lastmod := .Lastmod.Format "2006-01-02" }}
 {{ $date := .Date.Format "2006-01-02" }}
@@ -14,8 +16,15 @@
 {{- $showPostMeta := or ($showShare) ($showDate) ($showReadTime) (isset .Params "tags") }}
 {{- $scratch := newScratch }}
 {{- $scratch.Set "writeSeparator" false }}
+
+{{ $metaClass := "" }}
+{{- if .Scratch.Get "withinRangeLoop" }}
+  {{ $metaClass = "post_meta--list" }}
+{{- else }}
+  {{ $metaClass = "post_meta--page" }}
+{{- end }}
 {{- if $showPostMeta }}
-  <div class="post_meta">
+  <div class="post_meta {{ $metaClass }}">
     <span class="post_byline"
       >By
       <span class="p-author"
@@ -48,46 +57,52 @@
       >
     {{- end }}
 
-    {{/* CATEGORIES */}}
-    {{- with .Params.categories -}}
-      <span class="post_categories">
-        {{- if ($scratch.Get "writeSeparator") }}&nbsp;·{{ end }}
-        {{- range . }}
-          {{- $tag := urlize . -}}
-          <a
-            href="{{ absLangURL (printf "categories/%s/" $tag) }}"
-            title="View all content categorized as '{{ humanize . }}'"
-            class="post_tag--cat post_tag button button_translucent"
-          >
-            {{- . }}
-          </a>
-        {{- end }}
-      </span>
+    {{/* Display in lists */}}
+    {{ if eq $metaClass "post_meta--list" }}
+      {{/* CATEGORIES */}}
+      {{- with .Params.categories -}}
+        <span class="post_categories">
+          {{- if ($scratch.Get "writeSeparator") }}&nbsp;·{{ end }}
+          {{- range . }}
+            {{- $tag := urlize . -}}
+            <a
+              href="{{ absLangURL (printf "categories/%s/" $tag) }}"
+              title="View all content categorized as '{{ humanize . }}'"
+              class="post_tag--cat post_tag button button_translucent"
+            >
+              {{- . }}
+            </a>
+          {{- end }}
+        </span>
+      {{- end }}
+
+      {{/* TAGS */}}
+      {{- with .Params.tags -}}
+        <span class="post_tags">
+          {{- if ($scratch.Get "writeSeparator") }}&nbsp;·{{ end }}
+          {{- range . }}
+            {{- $tag := urlize . -}}
+            <a
+              href="{{ absLangURL (printf "tags/%s/" $tag) }}"
+              title="View all content tagged with '{{ humanize . }}'"
+              class="post_tag button button_translucent"
+            >
+              {{- . }}
+            </a>
+          {{- end }}
+        </span>
+      {{- end }}
+
     {{- end }}
 
-    {{/* TAGS */}}
-    {{- with .Params.tags -}}
-      <span class="post_tags">
-        {{- if ($scratch.Get "writeSeparator") }}&nbsp;·{{ end }}
-        {{- range . }}
-          {{- $tag := urlize . -}}
-          <a
-            href="{{ absLangURL (printf "tags/%s/" $tag) }}"
-            title="View all content tagged with '{{ humanize . }}'"
-            class="post_tag button button_translucent"
-          >
-            {{- . }}
-          </a>
-        {{- end }}
-      </span>
-    {{- end }}
-
-    {{- if $showShare }}
-      <span class="page_only"
-        >{{ if ($scratch.Get "writeSeparator") }}
+    {{/* Display in full pages */}}
+    {{ if eq $metaClass "post_meta--page" }}
+      {{- if $showShare }}
+        {{ if ($scratch.Get "writeSeparator") }}
           &nbsp;·
-        {{ end }}{{ partial "share" . }}</span
-      >
+        {{ end }}{{ partial "share" . }}
+      {{- end }}
+
     {{- end }}
 
   </div>

@@ -3,6 +3,7 @@
   3. Adding the page (list) title when this is not the home page.
   4. Adding #content anchor to main content (for skip-to link).
   5. Removing search widget (since we show it all the time in the sidebar).
+  6. Adding `.Scratch.Set "withinRangeLoop" true` to selectively render elements inside the loop vs. on a full page.
 */}}
 {{ $s := .Site.Params }}
 {{ $pages := .Pages }}
@@ -59,6 +60,7 @@
       <h1 class="list_title">{{ .Title }}</h1>
     {{ end }}
     {{- range (.Paginate $pages).Pages }}
+      {{ .Scratch.Set "withinRangeLoop" true }}
       {{ partial "excerpt" . }}
     {{- end }}
     <li>
