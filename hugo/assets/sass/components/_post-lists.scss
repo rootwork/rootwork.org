@@ -32,6 +32,7 @@
       );
 
       > a {
+        @include switch(color, var(--black), var(--white));
         @include focus(text-decoration, underline);
       }
     }
