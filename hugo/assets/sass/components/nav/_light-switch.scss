@@ -52,9 +52,9 @@
 
 // Mobile-menu version (overrides)
 
-.jsopen {
+html.jsopen {
   .color_mode {
-    top: -0.85rem;
+    top: -0.9rem;
   }
 
   .color_mode-toggle {
@@ -64,8 +64,10 @@
     @include switch(background-color, var(--light), var(--dark-shade));
   }
 
-  .color_choice::after {
-    width: 1.2rem;
-    height: 1.2rem;
+  .color_choice.color_choice::after {
+    @include switch(top, -0.5rem, -0.26666rem);
+    @include switch(left, -0.5rem, -0.25rem);
+    @include switch(width, 2.5rem);
+    @include switch(height, 2.5rem);
   }
 }
