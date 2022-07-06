@@ -118,18 +118,6 @@
         @include breakat(sm) {
           margin: 0.5rem 0.5rem 0 0.5rem;
         }
-
-        &:first-of-type {
-          @include breakat(sm) {
-            margin-left: 1rem;
-          }
-        }
-
-        &:last-of-type {
-          @include breakat(sm) {
-            margin-right: 0.5rem;
-          }
-        }
       }
     }
 
@@ -190,16 +178,15 @@
     border-radius: 0.5rem 0.5rem 0 0;
   }
 
-  .post_categories,
-  .post_tags {
-    margin: 1rem 0 0 0;
+  .post_categories {
+    margin-top: 0.75rem;
+
+    @include bp-s-up {
+      margin-top: 0;
+    }
   }
 
   .post_share {
-    margin: 1.5rem 0 0 0;
-
-    @include breakat(sm) {
-      margin: 2.5rem 0 1rem 0.5rem;
-    }
+    margin-left: 1.5rem;
   }
 }
