@@ -137,7 +137,7 @@
       margin: 1.5rem 0 0 0;
 
       @include breakat(sm) {
-        margin: 1rem 0 1rem 0.5rem;
+        margin: 1.5rem 0 1rem 0.5rem;
       }
 
       > a {
@@ -188,5 +188,18 @@
   &::after {
     background-image: var(--g-green);
     border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .post_categories,
+  .post_tags {
+    margin: 1rem 0 0 0;
+  }
+
+  .post_share {
+    margin: 1.5rem 0 0 0;
+
+    @include breakat(sm) {
+      margin: 2.5rem 0 1rem 0.5rem;
+    }
   }
 }
