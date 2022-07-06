@@ -115,6 +115,7 @@
         margin: 2rem 1rem 1rem;
         text-align: center;
         z-index: 10;
+        pointer-events: none; // Allows wrapping link event to show through
 
         .excerpt_more {
           position: relative;
@@ -128,6 +129,7 @@
           );
           border-width: 0;
           z-index: 1;
+          pointer-events: auto; // Applies link event as normal
 
           &::before {
             position: absolute;
