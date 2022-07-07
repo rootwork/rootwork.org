@@ -8,7 +8,7 @@
     line-height: 1.3333;
 
     a {
-      font-weight: 700;
+      font-weight: bold;
       border-bottom: 1px currentColor dotted;
       @include is-on(color, var(--bright-green));
       @include is-on(border-bottom-style, solid);

@@ -6,7 +6,7 @@
 
   4. Adding indieauth endpoint.
 
-  5. Adding preload tag for fonts (bold and regular; no italics).
+  5. Adding preload tag for most important font styles.
 
   6. Adding skip_to_content partial.
 */}}{{- $s := .Site.Params }}{{- $p := .Params }}{{- $codeBlockConfig := partial "func/getCodeBlockSettings" . }}<!DOCTYPE html>
@@ -41,14 +41,21 @@
     {{/* preload fonts */}}
     <link
       rel="preload"
-      href="{{ "/fonts/source-sans-pro-v14-latin-900.woff2" | relURL }}"
+      href="{{ "/fonts/cormorant/cormorant-v18-latin-700.woff2" | relURL }}"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
     />
     <link
       rel="preload"
-      href="{{ "/fonts/source-sans-pro-v14-latin-regular.woff2" | relURL }}"
+      href="{{ "/fonts/cormorant/cormorant-v18-latin-700italic.woff2" | relURL }}"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="{{ "/fonts/ibm-plex-serif/ibm-plex-serif-v15-latin-300.woff2" | relURL }}"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
