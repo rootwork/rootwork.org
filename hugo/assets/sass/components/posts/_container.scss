@@ -7,8 +7,7 @@
     @include fullcontent;
     overflow: hidden;
     z-index: -10;
-    margin-top: 1rem;
-    margin-bottom: 0;
+    margin: 0 auto;
 
     @media screen and (min-width: $single-column-breakpoint) {
       @include undofull;
@@ -17,9 +16,6 @@
     }
 
     &--roots {
-      border-top-width: 1px;
-      border-top-style: solid;
-      @include switch(border-top-color, var(--dark-brown), var(--text));
     }
   }
 }

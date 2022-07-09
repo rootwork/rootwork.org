@@ -4,10 +4,11 @@
   - post_body e-content and itemprop
   2. Moving featured image to title area to use as background.
   3. Adding optional shaded class to featured image.
-  4. Adding featured image credit section at the bottom.
-  5. Adding #content anchor to main content (for skip-to link).
-  6. Adding automated shortcode at the bottom.
-  7. Adding "tree" partial at the bottom.
+  4. Adding categories/tags to bottom, which are omitted from the meta section on full posts.
+  5. Adding featured image credit section at the bottom.
+  6. Adding #content anchor to main content (for skip-to link).
+  7. Adding automated shortcode at the bottom.
+  8. Adding "tree" partial at the bottom.
 */}}
 {{- define "main" }}
   {{- $s := .Site.Params }}
@@ -55,6 +56,7 @@
       {{ end }}
       <div class="post_body e-content" itemprop="articleBody">
         {{- .Content }}
+
         {{ with $p.featureImageCreditFlickr }}
           <div class="featured_image_credit">
             Top image credit Flickr user
@@ -70,11 +72,47 @@
             {{ . | markdownify }}
           </div>
         {{ end }}
+      </div>
+
+      <div class="post_body_footer">
+        <div class="post_terms">
+          <h5>View more posts about:</h5>
+
+          {{- with .Params.categories -}}
+            <span class="post_categories">
+              {{- range . }}
+                {{- $tag := urlize . -}}
+                <a
+                  href="{{ absLangURL (printf "categories/%s/" $tag) }}"
+                  title="View all content categorized as '{{ humanize . }}'"
+                  class="post_tag--cat post_tag button button_translucent"
+                >
+                  {{- . }}
+                </a>
+              {{- end }}
+            </span>
+          {{- end }}
+          {{- with .Params.tags -}}
+            <span class="post_tags">
+              {{- range . }}
+                {{- $tag := urlize . -}}
+                <a
+                  href="{{ absLangURL (printf "tags/%s/" $tag) }}"
+                  title="View all content tagged with '{{ humanize . }}'"
+                  class="post_tag button button_translucent"
+                >
+                  {{- . }}
+                </a>
+              {{- end }}
+            </span>
+          {{- end }}
+        </div>
+
         {{ range $p.aliases }}
           {{ if in . "/p/" }}
             <div class="short_link">
-              <strong>Short link:</strong>
-              <code><a href="{{ . }}">https://rootwork.org{{ . }}</a></code>
+              <h6>Short link to this post:</h6>
+              <a href="{{ . }}">https://rootwork.org{{ . }}</a>
             </div>
           {{ end }}
         {{ end }}
