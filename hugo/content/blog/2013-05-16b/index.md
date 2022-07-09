@@ -6,7 +6,7 @@ date: '2013-05-16'
 
 slug: 'drupal-8-power-twig-drupalcon-portland-featured-session' # Recommended length is 3 to 5 words.
 aliases:
-  - /p/130516
+  - /p/130516b
 description: 'A new theming engine, Twig, is coming along with Drupal 8’s
   adoption of the Symfony framework. And it’s downright magical.' # For SEO and social media snippets.
 summary: 'A new theming engine, Twig, is coming along with Drupal 8’s adoption
@@ -23,6 +23,7 @@ showShare: true
 # menu: main
 
 featureImage: 'twig_flickr-cgc.jpg' # Top image on post.
+# featureImageShade: true # Add a translucent shade to the image to make overlaid text easier to read.
 # featureImageAlt: 'Description of image' # Alternative text for featured image.
 featureImageCreditFlickr: 'cgc'
 # featureImageCreditCustom: 'Top image credit Flickr user [username](https://www.flickr.com/photos/username).'
