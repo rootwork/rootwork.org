@@ -37,7 +37,6 @@ showRelatedInArticle: false # Override global value for showing related posts in
 
 categories:
   - Frontend development
-  - Planet Drupal
 tags:
   - Drupal
   - Twig

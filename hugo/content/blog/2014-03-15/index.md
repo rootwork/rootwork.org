@@ -36,9 +36,9 @@ figurePositionShow: false # Override global value for showing the figure label.
 showRelatedInArticle: false # Override global value for showing related posts in this series at the end of the content.
 
 categories:
-  - Online advocacy
-tags:
+  - online advocacy
   - activism
+tags:
   - nptech
   - social change
 keywords: # For SEO

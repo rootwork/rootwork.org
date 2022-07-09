@@ -44,7 +44,6 @@ showRelatedInArticle: false # Override global value for showing related posts in
 
 categories:
   - Frontend development
-  - Planet Drupal
 tags:
   - Drupal
 keywords: # For SEO. Generally a combination of categories and tags.
