@@ -1,12 +1,7 @@
 .post_title {
   position: relative;
   margin: 0.5rem 0 0;
-
-  // font-family: var(--heading-font);
-
-  // @include breakat(sm) {
-  //   margin-left: var(--logo-descender-width);
-  // }
+  padding: 0;
 
   .post_featured {
     position: absolute;
@@ -38,14 +33,19 @@
   .post_title__text {
     display: block;
     position: relative;
-    margin: 1rem;
+    margin: 0;
+    padding: 1rem;
     z-index: 10;
     color: var(--white);
     text-shadow: 2px 2px 0 var(--dark-shade), 3px 3px 0 var(--dark-shade),
       -1px -1px 0 var(--dark-shade), 1px -1px 0 var(--dark-shade),
       -1px 1px 0 var(--dark-shade), 1px 1px 0 var(--dark-shade);
     @include bp-s-up {
-      margin: 2rem;
+      padding: 2rem;
+    }
+
+    &.shaded {
+      background-color: var(--shade);
     }
   }
 }

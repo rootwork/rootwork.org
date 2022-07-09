@@ -1,12 +1,13 @@
-{{/* Adding microformats for indieweb:
-  1. article class h-entry
-  2. h1 class p-name and itemprops
-  3. post_body e-content and itemprop
-  4. Moving featured image to title area to use as background.
-  5. Adding featured image credit section at the bottom.
+{{/* 1. Adding microformats for indieweb:
+  - article class h-entry
+  - h1 class p-name and itemprops
+  - post_body e-content and itemprop
+  2. Moving featured image to title area to use as background.
+  3. Adding optional shaded class to featured image.
+  4. Adding featured image credit section at the bottom.
+  5. Adding #content anchor to main content (for skip-to link).
   6. Adding automated shortcode at the bottom.
-  7 Adding "tree" partial at the bottom.
-  8. Adding #content anchor to main content (for skip-to link).
+  7. Adding "tree" partial at the bottom.
 */}}
 {{- define "main" }}
   {{- $s := .Site.Params }}
@@ -34,7 +35,16 @@
             {{- partial "image" (dict "file" $p.featureImage "alt" $p.featureImageAlt "cap" $p.featureImageCap "type" "featured" "Page" $.Page) }}
           </div>
         {{- end -}}
-        <span class="post_title__text">{{ $t | markdownify }}</span>
+        <span
+          class="
+          post_title__text
+          {{ if eq $p.featureImageShade true -}}
+            shaded
+          {{- end -}}
+        "
+        >
+          {{ $t | markdownify }}
+        </span>
       </h1>
       {{- partial "post-meta" . }}
       {{ if $p.toc }}

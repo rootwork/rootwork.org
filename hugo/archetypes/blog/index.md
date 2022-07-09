@@ -22,6 +22,7 @@ showShare: true
 # menu: main
 
 # featureImage: 'feature.jpg' # Top image on post.
+# featureImageShade: true # Add a translucent shade to the image to make overlaid text easier to read.
 # featureImageAlt: 'Description of image' # Alternative text for featured image.
 # featureImageCreditFlickr: 'username'
 # featureImageCreditCustom: 'Top image credit Flickr user [username](https://www.flickr.com/photos/username).'
