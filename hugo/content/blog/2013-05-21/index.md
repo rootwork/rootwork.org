@@ -31,6 +31,7 @@ showShare: true
 # menu: main
 
 featureImage: 'spaghetti-light_flickr-stevensnodgrass.jpg' # Top image on post.
+# featureImageShade: true # Add a translucent shade to the image to make overlaid text easier to read.
 featureImageAlt: 'Backlit spaghetti (as in code)' # Alternative text for featured image.
 featureImageCreditFlickr: 'stevensnodgrass'
 # featureImageCreditCustom: 'Image credit Flickr user [username](https://www.flickr.com/photos/username).'

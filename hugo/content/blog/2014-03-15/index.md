@@ -23,6 +23,7 @@ showShare: true
 # menu: main
 
 featureImage: '2014-04-ntc-b.jpg' # Top image on post.
+# featureImageShade: true # Add a translucent shade to the image to make overlaid text easier to read.
 featureImageAlt: 'Slide image from the presentation' # Alternative text for featured image.
 # featureImageCreditFlickr: 'username'
 # featureImageCreditCustom: 'Image credit Flickr user [username](https://www.flickr.com/photos/username).'
