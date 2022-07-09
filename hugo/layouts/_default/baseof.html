@@ -6,7 +6,7 @@
 
   4. Adding indieauth endpoint.
 
-  5. Adding preload tag for most important font styles.
+  5. Adding preload tag for most important font styles and light switch images.
 
   6. Adding skip_to_content partial.
 */}}{{- $s := .Site.Params }}{{- $p := .Params }}{{- $codeBlockConfig := partial "func/getCodeBlockSettings" . }}<!DOCTYPE html>
@@ -60,6 +60,10 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
+
+    {{/* preload light switch images */}}
+    <link rel="preload" as="image" href="/icons/sun-icon2.png" />
+    <link rel="preload" as="image" href="/icons/full-moon.svg" />
 
     {{/* JSON-LD schema (SEO) */}}
     {{ partial "site_schema.html" . }}
