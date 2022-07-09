@@ -1,6 +1,6 @@
 // Elements appearing within a post's body
 
-.post_body {
+.post_content .post_body {
   font-family: var(--content-font);
   font-size: 1.5rem;
   line-height: 1.6666;
@@ -72,6 +72,17 @@
 
   th {
     text-align: left;
+  }
+
+  ol,
+  ul,
+  dl {
+    margin: 0.8rem 0 0.8rem 1.6rem;
+    padding: 0;
+  }
+
+  dt {
+    font-weight: bold;
   }
 
   kbd {
