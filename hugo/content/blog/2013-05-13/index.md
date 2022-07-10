@@ -6,7 +6,7 @@ date: '2013-05-13'
 
 slug: 'grow-your-own-learning-custom-base-themes-drupalcon-portland' # Recommended length is 3 to 5 words.
 aliases:
-  - /p/220709
+  - /p/130513
 description: "By necessity, base themes make assumptions about how teams and
   individuals work. By rolling your own, you'll become much more comfortable and
   informed about the Drupal theming layer, and have a better launchpad for your
