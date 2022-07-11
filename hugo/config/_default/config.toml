@@ -1,6 +1,4 @@
-# set `baseurl` to your root domain
-# if you set it to "/" share icons won't work properly on production
-baseurl = "/" # Include trailing slash
+baseurl = "https://rootwork.github.io/rootwork.org/" # Include trailing slash
 title = "Rootwork.org"
 author = "Ivan Boothe" # Also set in [params.author]; defined here for safety
 
