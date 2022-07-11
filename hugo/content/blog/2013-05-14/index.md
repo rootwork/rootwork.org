@@ -65,7 +65,7 @@ client or a designer wants to change a color and suddenly we have to change
 dozens or hundreds of values across CSS.
 
 **[Dale Sande](https://web.archive.org/web/20150919092337/http://www.dalesande.com/)**
-captures that kind of revolution in efficiency that SASS brings, as seen in a
+captures that kind of revolution in efficiency that Sass brings, as seen in a
 screenshot from
 [his upcoming presentation at Drupalcon Portland](https://portland2013.drupal.org/node/333.html).
 
@@ -93,10 +93,10 @@ covering at Drupalcon.
 addressing that concern effectively?**
 
 DS: Sass doesn’t create bad code.
-[Bad coders do.](https://web.archive.org/web/20150919092337/http://thesassway.com/articles/sass-doesnt-create-bad-code-bad-coders-do)
+[Bad coders do.](https://thesassway.com/sass-doesnt-create-bad-code-bad-coders-do/)
 
 The whole concept of
-[placeholder selectors](https://web.archive.org/web/20150919092337/http://chriseppstein.github.io/blog/2012/08/23/sass-3-2-is-released/)
+[placeholder selectors](https://chriseppstein.github.io/blog/2012/08/23/sass-3-2-is-released/)
 was designed to fight code bloat and be a more pragmatic solution to OOCSS. In
 my presentation, I illustrate how using the various techniques generate code.
 
@@ -108,7 +108,7 @@ of rules?**
 
 DS: Simply put, being able to re-use code without duplicating code. The use of
 mixins was the first part of being
-[DRY with our code](https://web.archive.org/web/20150919092337/http://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
+[DRY with our code](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
 Looking at the Sass it felt AWESOME! But when we looked at the output CSS, this
 is when we realized that we were all living a lie.
 
@@ -122,12 +122,12 @@ code. Sass’ @extend directive allows developers to create name-spaced reusable
 chunks of code that is portable, re-usable and extendable without
 duplicating anything.
 
-![Fighting tight coupling in CSS by keeping code separation in SASS](https://web.archive.org/web/20150919092337im_/http://rootwork.org/sites/default/files/dsande-oocss2.png)**IB:
+![Fighting tight coupling in CSS by keeping code separation in Sass ::legacy-float-r](dsande-oocss2.png)**IB:
 Do you see placeholders as helping to reduce the amount of tight
-[coupling](https://web.archive.org/web/20150919092337/http://en.wikipedia.org/wiki/Coupling_%28computer_programming%29)
-— scattering pieces of styles in multiple places?**
+[coupling](https://en.wikipedia.org/wiki/Coupling_%28computer_programming%29) —
+scattering pieces of styles in multiple places?**
 
-DS: While Placeholder Selectors are a tool that can help with scattered code, it
+DS: While placeholder selectors are a tool that can help with scattered code, it
 is not the only solution. Having a file/folder structure that embraces the
 different types of code, e.g. CSS selectors, placeholder selectors, mixins and
 functions, can assist in creating reusable modulare code and maintain a process
