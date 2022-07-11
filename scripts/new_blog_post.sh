@@ -316,9 +316,9 @@ if [[ ! $open ]]; then
 fi
 
 # Notify user
-if [[ -n $quiet_mode ]]; then
+if [[ $quiet_mode != "true" ]]; then
   msg="Creating new blog post"
-  if [[ -v $gitpod ]]; then
+  if [[ $gitpod = "true" ]]; then
     msg="${msg} in Gitpod mode"
   fi
   printf "\n%s\n\n" "${cyan}${reverse}${msg}...${reset}"
@@ -358,7 +358,7 @@ if [ -f "$full_path" ]; then
   if [ -f "$full_path" ]; then
     error_exit "${red}${reverse}Two blog entries already exist on that date.${reset} ${red}Exiting.${reset}"
   fi
-  if [[ ! $quiet_mode ]]; then
+  if [[ $quiet_mode != "true" ]]; then
     printf "%s\n" "${yellow}A blog entry already exists for ${date}, so the path for this blog will be '${full_path}'.${reset}"
   fi
 fi
@@ -370,7 +370,7 @@ if [ -z "$title" ]; then
 fi
 
 # Notify user
-if [[ ! $quiet_mode ]]; then
+if [[ $quiet_mode != "true" ]]; then
   printf "\n%s\n" "${cyan}${reverse}Creating '$title' on ${date_year}-${date_month}-${date_day} at ${full_path} ...${reset}"
 fi
 
@@ -410,6 +410,15 @@ main() {
   regex_month="s/^(\s*month: ).*/\1'${date_year}-${date_month}'/"
   regex_year="s/^(\s*year: ).*/\1'${date_year}'/"
 
+  # Set optional alias.
+  regex_alias1=""
+  regex_alias2=""
+  if [[ $alias = "true" ]]; then
+    alias_name="\/p\/${date_year_short}${date_month}${date_day}"
+    regex_alias1="s/^\s*# aliases:/aliases:/"
+    regex_alias2="s/^\s*aliases:/aliases:\n  - '${alias_name}'/"
+  fi
+
   # Set the title, slug, date and taxonomy-dates.
   tmp_file="/tmp/${USER}_hugo_post"
   cp -f "$content_path" "$tmp_file"
@@ -419,13 +428,9 @@ main() {
     -e "$regex_date" \
     -e "$regex_year" \
     -e "$regex_month" \
+    -e "$regex_alias1" \
+    -e "$regex_alias2" \
     "$tmp_file" > "$content_path"
-
-  # Set optional alias.
-  if [[ $alias ]]; then
-    alias_name="\/p\/${date_year_short}${date_month}${date_day}"
-    sed -r -e "s/^\s*# aliases:/aliases:/" -e "s/^\s*aliases:/aliases:\n  - '${alias_name}'/" "$tmp_file" > "$content_path"
-  fi
 
   # Remove the temporary file.
   rm -f "$tmp_file"
