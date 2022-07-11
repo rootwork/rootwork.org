@@ -1,12 +1,12 @@
 ---
 title: 'Grow your own: Learning custom base themes at Drupalcon Portland'
 author: Ivan Boothe
-date: '2013-05-13'
+date: '2013-05-15'
 # lastmod: 2022-07-09 # Appends 'edited on' to the publish date
 
 slug: 'grow-your-own-learning-custom-base-themes-drupalcon-portland' # Recommended length is 3 to 5 words.
 aliases:
-  - /p/130513
+  - /p/130515
 description: "By necessity, base themes make assumptions about how teams and
   individuals work. By rolling your own, you'll become much more comfortable and
   informed about the Drupal theming layer, and have a better launchpad for your
