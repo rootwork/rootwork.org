@@ -10,7 +10,8 @@
 #
 #  - Ask you for a title
 #  - Ask you for a date (defaults to today)
-#  - Create an appropriate slug
+#  - Create an appropriate slug without words or symbols that don't add to SEO
+#  - Optionally create a short alias based on the date
 #  - Create taxonomy year and month files, if necessary (cf. gohugoio/hugo#448 )
 #  - Create the necessary Markdown file, with sane defaults, at the appropriate
 #    directory/file location
@@ -24,12 +25,40 @@
 # end.
 #
 # There is a dedicated -g|--gitpod flag that optimizes the script for running in
-# Gitpod, in which case you don't need to set any other flags.
+# Gitpod.
+#
+# If a blog entry already exists for a given date, the script will append "b" to
+# the date to avoid overwriting existing files. Personally, I rarely post more
+# than even one blog post on the same day, so if two blog posts already exist the
+# script will simply error and exit. Patches or forks welcome to create more
+# robust behavior.
+#
+# The optional short alias (-a|--alias) flag adds an alias based on the date, in
+# the form: '/p/YYMMDD'
 #
 # Note that to pass flags to this script via npm you must prepend it with an
 # empty flag, e.g.:
 #
 # npm run n -- -g
+#
+# REQUIREMENTS
+#
+# The following keys must be present in your Hugo post archetype (either as
+# default.md or as blog/index.md):
+#
+# title
+# date
+# slug
+#
+# Add the following custom keys to your archetype to allow for the taxonomy-
+# based date archives:
+#
+# year
+# month
+#
+# Finally, to use the optional alias flag, you must have an "aliases" key,
+# though it can be commented out. The alias this script adds will not
+# interfere with any other aliases you may be creating.
 
 # Copyright 2022, Ivan Boothe <git@rootwork.org>
 
@@ -46,7 +75,7 @@
 
 # USAGE
 #
-# $ ./new_blog_post.sh [--title="<string>"] [--slug="<URL-safe string>"] [--date="YYYY-MM-DD"] [--hugo-dir="<path>"] [--content-dir="<path>"] [--blog-dir="<path>"] [--editor="<path>"] [-o|--open-at-end] [-q|quiet]
+# $ ./new_blog_post.sh [--title="<string>"] [--slug="<URL-safe string>"] [--date="YYYY-MM-DD"] [--hugo-dir="<path>"] [--content-dir="<path>"] [--blog-dir="<path>"] [--editor="<path>"] [-a|--alias] [-o|--open-at-end] [-q|quiet]
 # $ ./new_blog_post.sh [-g|--gitpod] [-q|quiet]
 # $ ./new_blog_post.sh [-h|--help]
 
@@ -62,10 +91,12 @@
 # Create a new blog post using interactive mode, optimized for Gitpod:
 # $ ./new_blog_post.sh -g
 #
-# Create a new blog post, specifying title, date and slug:
-# $ ./new_blog_post.sh --title="My new blog entry" --date="2022-05-24" --slug="new-post"
+# Create a new blog post, specifying title, date and slug, and creating an
+# automatic short alias:
+# $ ./new_blog_post.sh --title="My new blog entry" --date="2022-05-24" --slug="new-post" -a
 
 # Revision history:
+# 2022-07-09  Added short alias option; handle blog entries on same date (1.1)
 # 2022-05-26  Full release; script configurable via flags (1.0)
 # 2022-03-29  Adding configurable Hugo directory (0.4)
 # 2022-03-22  Making script configurable via editing (0.3)
@@ -77,7 +108,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 PROGNAME=${0##*/}
-VERSION="1.0"
+VERSION="1.1"
 
 # tput colors (for printf)
 red=$(tput setaf 1)
@@ -121,7 +152,7 @@ signal_exit() {
 # Usage: Separate lines for mutually exclusive options.
 usage() {
   printf "%s\n" \
-    "${bold}Usage:${reset} ${PROGNAME} [--title=\"<string>\"] [--slug=\"<URL-safe string>\"] [--date=\"YYYY-MM-DD\"] [--hugo-dir=\"<path>\"] [--content-dir=\"<path>\"] [--blog-dir=\"<path>\"] [--editor=\"<path>\"] [-o|--open-at-end] [-q|quiet]"
+    "${bold}Usage:${reset} ${PROGNAME} [--title=\"<string>\"] [--slug=\"<URL-safe string>\"] [--date=\"YYYY-MM-DD\"] [--hugo-dir=\"<path>\"] [--content-dir=\"<path>\"] [--blog-dir=\"<path>\"] [--editor=\"<path>\"] [-a|--alias] [-o|--open-at-end] [-q|quiet]"
   printf "%s\n" \
     "       ${PROGNAME} [-g|--gitpod] [-q|quiet]"
   printf "%s\n" \
@@ -153,6 +184,9 @@ ${bold}Options:${reset}
 --blog-dir         Specify subdirectory of your Hugo content directory
                    containing blog posts. No leading or trailing slashes.
                    Defaults to 'blog'
+-a, --alias        Include a short alias based on the date. A blog post written
+                   on June 1, 2022, will generate the alias '/p/220601'.
+                   This can be changed in the post's front matter once created.
 -o, --open-at-end  Whether to open the file with the cursor placed at the end.
                    Only guaranteed to work for Sublime Text.
 -g, --gitpod       Run optimized for a Gitpod environment.
@@ -174,9 +208,10 @@ Create a new blog post using interactive mode, optimized for Gitpod:
 
 ${green}$ ${PROGNAME} -g${reset}
 
-Create a new blog post, specifying title, date and slug:
+Create a new blog post, specifying title, date and slug, and creating an
+automatic short alias:
 
-${green}$ ${PROGNAME} --title="My new blog entry" --date="2022-05-24" --slug="new-post"${reset}
+${green}$ ${PROGNAME} --title="My new blog entry" --date="2022-05-24" --slug="new-post" -a${reset}
 
 _EOF_
 }
@@ -200,11 +235,12 @@ hugo_dir="."
 content_dir="content"
 blog_dir="blog"
 editor="xdg-open"
+alias=false
 open_at_end=false
 gitpod=false
 
 # Run the comparison (be sure to change the "getopts" below!)
-while getopts :goe-:qh OPT; do
+while getopts :goea-:qh OPT; do
   # Using help flag only? The above should be:
   # while getopts :-:h OPT; do
   if [[ "$OPT" = "-" ]]; then # long option: reformulate OPT and OPTARG
@@ -249,6 +285,9 @@ while getopts :goe-:qh OPT; do
       ;;
     o | open-at-end)
       open_at_end=true
+      ;;
+    a | alias)
+      alias=true
       ;;
     g | gitpod)
       gitpod=true
@@ -302,17 +341,26 @@ fi
 dateregex="([0-9]{4})-([-0-9]{2})-([0-9]{2})"
 if [[ $date =~ $dateregex ]]; then
   date_year="${BASH_REMATCH[1]}"
+  date_year_short="${date_year:2}"
   date_month="${BASH_REMATCH[2]}"
   date_day="${BASH_REMATCH[3]}"
 fi
 
-# Set and check paths
+# Set paths based on date
 blog_path="${blog_dir}/${date_year}-${date_month}-${date_day}"
 content_path="${content_dir}/${blog_path}/index.md"
 full_path="${hugo_dir}/${content_path}"
 
 if [ -f "$full_path" ]; then
-  error_exit "${red}${reverse}Blog entry already exists with that date.${reset} ${red}Because blog paths rely on dates alone, this script only supports one blog entry per date.${reset}"
+  blog_path="${blog_path}b"
+  content_path="${content_dir}/${blog_path}/index.md"
+  full_path="${hugo_dir}/${content_path}"
+  if [ -f "$full_path" ]; then
+    error_exit "${red}${reverse}Two blog entries already exist on that date.${reset} ${red}Exiting.${reset}"
+  fi
+  if [[ ! $quiet_mode ]]; then
+    printf "%s\n" "${yellow}A blog entry already exists for ${date}, so the path for this blog will be '${full_path}'.${reset}"
+  fi
 fi
 
 # Collect title
@@ -355,16 +403,32 @@ main() {
   cd "$hugo_dir" || exit
   hugo new "${blog_path}"
 
+  # Set sed find-and-replace strings in the archetype file.
+  regex_title="s/^(\s*title: ).*/\1'${title}'/"
+  regex_slug="s/^(\s*slug: ).*/\1'${slug}' # Recommended length is 3 to 5 words./"
+  regex_date="s/^(\s*date: ).*/\1'${date_year}-${date_month}-${date_day}'/"
+  regex_month="s/^(\s*month: ).*/\1'${date_year}-${date_month}'/"
+  regex_year="s/^(\s*year: ).*/\1'${date_year}'/"
+
   # Set the title, slug, date and taxonomy-dates.
   tmp_file="/tmp/${USER}_hugo_post"
-  \cp -f "$content_path" "$tmp_file"
-  \sed -r -e 's/^(\s*title: ).*/\1'"'${title}'"'/' \
-    -e 's/^(\s*slug: ).*/\1'"'${slug}' # Recommended length is 3 to 5 words."'/' \
-    -e 's/^(\s*date: ).*/\1'"'${date_year}-${date_month}-${date_day}'"'/' \
-    -e 's/^(\s*year: ).*/\1'"'${date_year}'"'/' \
-    -e 's/^(\s*month: ).*/\1'"'${date_year}-${date_month}'"'/' \
-    "$tmp_file" >"$content_path"
-  \rm -f "$tmp_file"
+  cp -f "$content_path" "$tmp_file"
+  sed -r \
+    -e "$regex_title" \
+    -e "$regex_slug" \
+    -e "$regex_date" \
+    -e "$regex_year" \
+    -e "$regex_month" \
+    "$tmp_file" > "$content_path"
+
+  # Set optional alias.
+  if [[ $alias ]]; then
+    alias_name="\/p\/${date_year_short}${date_month}${date_day}"
+    sed -r -e "s/^\s*# aliases:/aliases:/" -e "s/^\s*aliases:/aliases:\n  - '${alias_name}'/" "$tmp_file" > "$content_path"
+  fi
+
+  # Remove the temporary file.
+  rm -f "$tmp_file"
 
   # Create year and month taxonomy pages for this date, if they don't already
   # exist.

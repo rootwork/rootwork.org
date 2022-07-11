@@ -5,9 +5,7 @@ date: '{{ .Date | dateFormat "2006-01-02" }}'
 # lastmod: {{ .Date | dateFormat "2006-01-02" }} # Appends 'edited on' to the publish date
 
 slug: '{{ .Name }}' # Recommended length is 3 to 5 words.
-aliases:
-  - /p/{{ .Date | dateFormat "06" }}{{ .Date | dateFormat "01" }}{{ .Date |
-    dateFormat "02" }}
+# aliases:
 description: 'Post description.' # For SEO and social media snippets.
 summary: 'Post summary.' # For the post in lists.
 

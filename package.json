@@ -5,8 +5,8 @@
   "main": "README.md",
   "scripts": {
     "i": "./scripts/image_optimize.sh",
-    "n": "./scripts/new_blog_post.sh --hugo-dir='./hugo' --editor='subl' -o",
-    "gn": "./scripts/new_blog_post.sh -g --hugo-dir='./hugo'",
+    "n": "./scripts/new_blog_post.sh --hugo-dir='./hugo' --editor='subl' -o -a",
+    "gn": "./scripts/new_blog_post.sh -g --hugo-dir='./hugo' -a",
     "p": "hugo --source ./hugo --minify --gc",
     "s": "./scripts/server_start.sh",
     "gs": "cd /workspace/rootwork.org/hugo && hugo server -D -F --baseUrl $(gp url 1313) --liveReloadPort=443 --appendPort=false --bind=0.0.0.0 && cd /workspace/rootwork.org",
