@@ -40,7 +40,7 @@ figurePositionShow: false # Override global value for showing the figure label.
 showRelatedInArticle: false # Override global value for showing related posts in this series at the end of the content.
 
 categories:
-  - Frontend Development
+  - frontend development
 tags:
   - Devsigner
   - Drupal

@@ -43,11 +43,11 @@ figurePositionShow: false # Override global value for showing the figure label.
 showRelatedInArticle: false # Override global value for showing related posts in this series at the end of the content.
 
 categories:
-  - Frontend development
+  - frontend development
 tags:
   - Drupal
 keywords: # For SEO. Generally a combination of categories and tags.
-  - Frontend
+  - frontend
   - Drupal
 
 # Archive taxonomy terms (auto-generated)

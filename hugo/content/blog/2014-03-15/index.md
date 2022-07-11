@@ -44,6 +44,7 @@ tags:
 keywords: # For SEO
   - advocacy
   - online advocacy
+  - activism
   - nptech
   - nonprofit technology
   - social change
