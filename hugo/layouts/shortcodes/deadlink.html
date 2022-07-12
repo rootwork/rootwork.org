@@ -1,6 +1,6 @@
 <a
   data-dead-link="{{ .Get 0 }}"
-  href="/dead-link?url={{ .Get 0 }}"
+  href="{{ relref . "/dead-link" }}?url={{ urlquery (.Get 0) }}"
   title="{{ .Get 0 }}"
   >{{ .Get 1 }}</a
 >
