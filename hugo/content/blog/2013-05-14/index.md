@@ -70,7 +70,8 @@ screenshot from
 [his upcoming presentation at Drupalcon Portland](https://portland2013.drupal.org/node/333.html).
 
 But Dale, who’s [spoken plenty on Sass](https://speakerdeck.com/anotheruiguy)
-and organizes the [Seattle Sass meetup](https://www.meetup.com/SASSlang/), is
+and organizes the
+{{< deadlink "https://www.meetup.com/SASSlang/" "Seattle Sass meetup" >}}, is
 taking us way past the Sass basics like variables, and that’s why I’m excited to
 see his presentation next week.
 
