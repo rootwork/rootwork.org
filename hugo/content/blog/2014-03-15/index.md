@@ -38,8 +38,8 @@ showRelatedInArticle: false # Override global value for showing related posts in
 categories:
   - online advocacy
   - activism
+  - nonprofit technology
 tags:
-  - nptech
   - social change
 keywords: # For SEO
   - advocacy
