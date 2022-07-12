@@ -74,47 +74,63 @@
         {{ end }}
       </div>
 
-      <div class="post_body_footer">
-        <div class="post_terms">
-          <h5>View more posts about:</h5>
+      {{ $shortalias := "false" }}
+      {{ range $p.aliases }}
+        {{ if in . "/p/" }}
+          {{ $shortalias = "true" }}
+        {{ end }}
+      {{ end }}
 
-          {{- with .Params.categories -}}
-            <span class="post_categories">
-              {{- range . }}
-                {{- $tag := urlize . -}}
-                <a
-                  href="{{ absLangURL (printf "categories/%s/" $tag) }}"
-                  title="View all content categorized as '{{ humanize . }}'"
-                  class="post_tag--cat post_tag button button_translucent"
-                >
-                  {{- . }}
-                </a>
-              {{- end }}
-            </span>
-          {{- end }}
-          {{- with .Params.tags -}}
-            <span class="post_tags">
-              {{- range . }}
-                {{- $tag := urlize . -}}
-                <a
-                  href="{{ absLangURL (printf "tags/%s/" $tag) }}"
-                  title="View all content tagged with '{{ humanize . }}'"
-                  class="post_tag button button_translucent"
-                >
-                  {{- . }}
-                </a>
-              {{- end }}
-            </span>
-          {{- end }}
-        </div>
 
-        {{ range $p.aliases }}
-          {{ if in . "/p/" }}
-            <div class="short_link">
-              <h6>Short link to this post:</h6>
-              <a href="{{ . }}">https://rootwork.org{{ . }}</a>
-            </div>
-          {{ end }}
+      <div
+        class="
+        post_body_footer
+        {{ if or .Params.categories .Params.tags }}
+          post_body_footer--terms
+        {{ end }}
+        {{ if eq $shortalias "true" }}post_body_footer--alias{{ end }}
+      "
+      >
+        {{ if or .Params.categories .Params.tags }}
+          <div class="post_terms">
+            <h5>View more posts about:</h5>
+
+            {{- with .Params.categories -}}
+              <span class="post_categories">
+                {{- range . }}
+                  {{- $tag := urlize . -}}
+                  <a
+                    href="{{ absLangURL (printf "categories/%s/" $tag) }}"
+                    title="View all content categorized as '{{ humanize . }}'"
+                    class="post_tag--cat post_tag button button_translucent"
+                  >
+                    {{- . }}
+                  </a>
+                {{- end }}
+              </span>
+            {{- end }}
+            {{- with .Params.tags -}}
+              <span class="post_tags">
+                {{- range . }}
+                  {{- $tag := urlize . -}}
+                  <a
+                    href="{{ absLangURL (printf "tags/%s/" $tag) }}"
+                    title="View all content tagged with '{{ humanize . }}'"
+                    class="post_tag button button_translucent"
+                  >
+                    {{- . }}
+                  </a>
+                {{- end }}
+              </span>
+            {{- end }}
+          </div>
+        {{ end }}
+
+        {{ if eq $shortalias "true" }}
+          <div class="short_link">
+            <h6>Short link to this post:</h6>
+            <a href="{{ . }}">https://rootwork.org{{ . }}</a>
+          </div>
         {{ end }}
       </div>
 
