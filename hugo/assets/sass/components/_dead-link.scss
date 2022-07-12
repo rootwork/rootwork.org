@@ -1,0 +1,14 @@
+.dead-link {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: var(--dark-shade);
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  line-height: 1.25;
+  font-family: var(--font);
+
+  .url {
+    color: var(--white);
+    overflow-wrap: anywhere;
+  }
+}

@@ -1,6 +1,18 @@
 // Enable CSS classes based on whether JS loads
 document.documentElement.classList.remove('no-js')
 
+// Reading params from query strings
+function queryParams() {
+  const params = new URLSearchParams(window.location.search)
+  let url = params.get('url')
+  let display = elem('.dead-link .url')
+  let archive = elem('.archive-link .internet-archive')
+  display.textContent = url
+  archive.href = 'https://web.archive.org/web/*/' + url
+}
+
+queryParams()
+
 // Overriding subheading permalinks in Hugo Clarity
 // cf. https://github.com/chipzoller/hugo-clarity/blob/f062754faf7b5e92fa9dfc249b370022cc72738a/assets/js/index.js#L105-L115
 function headingPermalink() {
