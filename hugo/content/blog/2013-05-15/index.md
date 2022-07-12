@@ -28,7 +28,7 @@ showShare: true
 
 featureImage: 'growyourown-themes.jpg' # Top image on post.
 featureImageShade: true # Add a translucent shade to the image to make overlaid text easier to read.
-# featureImageAlt: 'Description of image' # Alternative text for featured image.
+featureImageAlt: 'Grow your own...themes!' # Alternative text for featured image.
 # featureImageCreditFlickr: 'username'
 featureImageCreditCustom:
   'Top images: [National

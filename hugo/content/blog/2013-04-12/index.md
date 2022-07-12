@@ -31,7 +31,7 @@ showShare: true
 
 featureImage: 'capitalism-crisis_flickr-beckytappin.jpg' # Top image on post.
 featureImageShade: true # Add a translucent shade to the image to make overlaid text easier to read.
-# featureImageAlt: 'Description of image' # Alternative text for featured image.
+featureImageAlt: 'Banner: Capitalism is crisis' # Alternative text for featured image.
 featureImageCreditFlickr: 'beckytappin'
 # featureImageCreditCustom: 'Top image credit Flickr user [username](https://www.flickr.com/photos/username).'
 thumbnail: 'capitalism-crisis_flickr-beckytappin.jpg' # Image in lists of posts.

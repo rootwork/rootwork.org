@@ -24,7 +24,7 @@ showShare: true
 
 featureImage: 'twig_flickr-cgc.jpg' # Top image on post.
 # featureImageShade: true # Add a translucent shade to the image to make overlaid text easier to read.
-# featureImageAlt: 'Description of image' # Alternative text for featured image.
+featureImageAlt: 'Twig' # Alternative text for featured image.
 featureImageCreditFlickr: 'cgc'
 # featureImageCreditCustom: 'Top image credit Flickr user [username](https://www.flickr.com/photos/username).'
 thumbnail: 'twig_flickr-cgc.jpg' # Image in lists of posts.

@@ -25,7 +25,7 @@ showShare: true
 
 featureImage: 'qDG7XKJLKbs_unsplash-lazycreekimages.jpg' # Top image on post.
 # featureImageShade: true # Add a translucent shade to the image to make overlaid text easier to read.
-# featureImageAlt: 'Description of image' # Alternative text for featured image.
+featureImageAlt: 'Abstract graphic design' # Alternative text for featured image.
 # featureImageCreditFlickr: 'username'
 featureImageCreditCustom:
   'Top image credit Unsplash user

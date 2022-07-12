@@ -32,7 +32,7 @@ showShare: true
 
 featureImage: 'snap-squares_flickr-missnita.jpg' # Top image on post.
 # featureImageShade: true # Add a translucent shade to the image to make overlaid text easier to read.
-featureImageAlt: 'Credit: Flickr user missnita' # Alternative text for featured image.
+featureImageAlt: 'Artistic rendering of a person snapping' # Alternative text for featured image.
 featureImageCreditFlickr: 'missnita'
 # featureImageCreditCustom: 'Image credit Flickr user [username](https://www.flickr.com/photos/username).'
 thumbnail: 'snap-squares_flickr-missnita.jpg' # Image in lists of posts.
