@@ -153,10 +153,12 @@ $haze: map-get($color, hazy-white);
 html[data-mode='dim'] {
   --light: var(--bright-light);
   --header-text: var(--white);
+  --text: var(--white);
 }
 html {
   @media (prefers-color-scheme: dark) {
     --light: var(--bright-light);
     --header-text: var(--white);
+    --text: var(--white);
   }
 }
