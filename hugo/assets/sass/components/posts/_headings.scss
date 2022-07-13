@@ -1,6 +1,15 @@
 // Permalinks automatically inserted alongside headings within a post
 
 .post_body {
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  h4 > span {
+    display: inline-block;
+    border-bottom: 1px currentColor dotted;
+  }
+
   .link_owner {
     font-style: italic;
 
