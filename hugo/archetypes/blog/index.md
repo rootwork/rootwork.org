@@ -10,7 +10,7 @@ description: 'Description' # For SEO and social media snippets.
 summary: 'Summary' # For the post in lists.
 
 draft: true # Change to 'false' to publish this post.
-featured: true
+featured: false
 toc: false
 
 showDate: true
