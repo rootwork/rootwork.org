@@ -1,0 +1,25 @@
+// Pagination navigation at the bottom of lists
+
+.pagination {
+  justify-content: center;
+
+  .page-item {
+    padding: 0.25rem 0.5rem;
+    font-weight: bold;
+
+    .page-link {
+      position: relative;
+      padding: 0.5rem 1rem;
+      border: 3px transparent solid;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      @include motion(transition, border-color 0.5s ease-in-out);
+    }
+
+    .page-link:not(&.disabled .page-link):not(&.active .page-link) {
+      @include is-on {
+        @include switch(border-color, var(--dark-green), var(--white));
+      }
+    }
+  }
+}
