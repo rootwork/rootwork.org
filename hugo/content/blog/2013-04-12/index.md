@@ -108,8 +108,8 @@ like to play with charities.** In the past I’ve referred to this as
 
 Yet lots of research has shown people who donate once are
 [more likely](https://web.archive.org/web/20150911224753/http://www.articlesbase.com/non-profit-organizations-articles/the-16-principles-of-personal-fundraising-influence-5204143.html)
-to {{< deadlink "http://groups.yahoo.com/group/NARCDC/message/5757" "donate" >}}
-{{< deadlink "https://twitter.com/MollyZerener/status/121363610214739968" "again" >}},
+to {{< deadlink "donate" "dl://groups.yahoo.com/group/NARCDC/message/5757" >}}
+{{< deadlink "again" "dls://twitter.com/MollyZerener/status/121363610214739968" >}},
 even to other organizations in the same field — it’s why some nonprofits sell
 their lists. And the same principle is at work with advocacy:
 [get people interested](https://joymayer.com/2010/10/01/the-nonprofit-worlds-ladder-of-engagement/)

@@ -1,10 +1,35 @@
-{{ $title := .Get 2 }}<a
-  data-dead-link="{{ .Get 0 }}"
-  href="{{ relref . "/dead-link" }}?url={{ urlquery (.Get 0) }}"
+{{/* USAGE:
+
+  If the deadlink is http://example.com and you want to link the word "example":
+
+  < deadlink "example" "dl://example.com">
+
+  If the deadlink is https://example.com and you want to link the phrase "secure
+  example" with the title "See this example"
+
+  < deadlink "secure example" "dls://example.com" "See this example">
+
+  Why dl:// and dls:// ? To tell link-checker actions that these are dead links
+  and do not need to be processed.
+*/}}
+{{- $dl := .Get 1 -}}
+{{- $href := "" -}}
+{{- with $dl -}}
+  {{- if in . "dls:" -}}
+    {{- $href = replace $dl "dls:" "https:" -}}
+  {{- else -}}
+    {{- $href = replace $dl "dl:" "http:" -}}
+  {{- end -}}
+{{- end -}}
+{{- $content := .Get 0 -}}
+{{- $title := .Get 2 -}}
+<a
+  data-dead-link="{{ $href }}"
+  href="{{ relref . "/dead-link" }}?url={{ urlquery $href }}"
   {{ if $title }}
     title="{{ $title }}"
   {{ else }}
-    title="{{ .Get 0 }}"
+    title="{{ $href }}"
   {{ end }}
-  >{{ .Get 1 }}</a
+  >{{ $content }}</a
 >

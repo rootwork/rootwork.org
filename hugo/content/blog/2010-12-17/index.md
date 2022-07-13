@@ -61,13 +61,13 @@ for each tab that they open, to a charity of their choice. The project runs from
 Dec. 15 to 19, and includes five charities: The Nature Conservancy, charity:
 water, Doctors Without Borders, Un Techo para mi País, and Room to Read. Google
 will donate a
-{{< deadlink "http://www.google.com/chrome/intl/en/p/cause/tos/" "combined total of up to $1 million" >}}
+{{< deadlink "combined total of up to $1 million" "dl://www.google.com/chrome/intl/en/p/cause/tos/" >}}
 to the five charities.
 
 To have your Chrome tabs count, you must first install a small extension to your
 copy of Chrome. There’s a maximum of 250 tabs per day, and one tab per second,
 that count toward your cause. You also
-{{< deadlink "http://www.google.com/chrome/intl/en/p/cause/privacy/" "must have a Google account" >}}
+{{< deadlink "must have a Google account" "dl://www.google.com/chrome/intl/en/p/cause/privacy/" >}}
 to submit your totals.
 
 ### What I like about it
