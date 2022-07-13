@@ -127,10 +127,14 @@
         {{ end }}
 
         {{ if eq $shortalias "true" }}
-          <div class="short_link">
-            <h6>Short link to this post:</h6>
-            <a href="{{ . }}">https://rootwork.org{{ . }}</a>
-          </div>
+          {{ range $p.aliases }}
+            {{ if in . "/p/" }}
+              <div class="short_link">
+                <h6>Short link to this post:</h6>
+                <a href="{{ . }}">https://rootwork.org{{ . }}</a>
+              </div>
+            {{ end }}
+          {{ end }}
         {{ end }}
       </div>
 
