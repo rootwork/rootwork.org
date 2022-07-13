@@ -7,8 +7,14 @@ date: '2010-12-17'
 slug: 'google-chrome-cause-nonprofit-deathmatch-strikes-again' # Recommended length is 3 to 5 words.
 aliases:
   - '/p/101217'
-description: 'Description' # For SEO and social media snippets.
-summary: 'Summary' # For the post in lists.
+description: "It's great that Google is directing money to nonprofits, and
+  letting people decide where those donations go. But it's frustrating how
+  Chrome for a Cause is rooted in a scarcity model — in which organizations must
+  compete rather than collaborate." # For SEO and social media snippets.
+summary: "It's great that Google is directing money to nonprofits, and letting
+  people decide where those donations go. But it's frustrating how Chrome for a
+  Cause is rooted in a scarcity model — in which organizations must compete
+  rather than collaborate." # For the post in lists.
 
 draft: false # Change to 'false' to publish this post.
 featured: false
