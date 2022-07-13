@@ -58,8 +58,8 @@ month: '2013-05'
 I’m a millennial, but even I remember the experience of calling the telephone
 operator and getting a live human to look up the number of a business or place a
 collect call. We have the digital means to complete lots of tasks like that
-today, but that doesn’t mean all of our methods are equally effective
-for everyone.
+today, but that doesn’t mean all of our methods are equally effective for
+everyone.
 
 ![Drupal's new mobile-friendly toolbar ::legacy-float-r](mobile-friendly-toolbar.png ' ')“Drupal
 8 will be the most accessible version of Drupal yet,” declare **J. Renée Beach**
@@ -67,31 +67,31 @@ and **Wim Leers** in their
 [Drupalcon Portland session description](https://portland2013.drupal.org/node/2158.html).
 
 They’re both part of the [Spark team](https://www.drupal.org/project/spark), an
-initiative to improve the authoring experience in Drupal for everyone.
+initiative to improve the authoring experience in Drupal for everyone.
 
 Spark is more well known for things like
 [in-place editing](https://www.drupal.org/project/quickedit) and a
 [mobile friendly toolbar](https://www.drupal.org/project/navbar), (see image).
 But from the beginning, improving the experience for everyone has been a big
-priority, and one of the most exciting developments is a new aural interface.
+priority, and one of the most exciting developments is a new aural interface.
 
-**That’s right, Drupal is getting a switchboard operator:**
+**That’s right, Drupal is getting a switchboard operator:**
 
 ![Drupal announce log showing three “polite Drupal announcements”](drupal-announce-log.png)
 
 OK, so that doesn’t look _terribly_ exciting all on its own. But trust me, when
 you watch the videos of people interacting with Drupal 8 and having menus and
-selections read as they go, it’s pretty cool.
+selections read as they go, it’s pretty cool.
 
 When I spoke with J. Renée about Drupal 8 and the nature of working on
 accessibility, the passion for this work really shown through. I’m really
 looking forward to their session with Wim,
 [**“Drupal Speaks: Aural user interfaces, new Drupal 8 accessibility features,” on Wednesday at 10:45 AM.**](https://portland2013.drupal.org/node/2158.html)
-Hope to see you there!
+Hope to see you there!
 
 ---
 
-**IB: What are we missing when we talk about accessibility right now?**
+**IB: What are we missing when we talk about accessibility right now?**
 
 JRB: I want developers to understand that accessibility is fundamental to user
 interface development. We tend to talk about accessibility like we talk about
@@ -100,7 +100,7 @@ talking about being non-male. Male is a kind of genderless base state. So is it
 with accessibility. When we speak of making something accessible, we tend to
 refer to making an interface for blind users or for users with physical
 capabilities that make keyboard and mouse use difficult, as examples. Visual is
-a kind of accessible base state.
+a kind of accessible base state.
 
 We risk “othering” folks for whom accessibility is an issue because as
 developers, in general, non-visual accessibility has not been a primary concern.
@@ -110,13 +110,13 @@ resolve those issues and close the loop on the otherness. We can be other and
 also be equal. Now is the time for front end developers to start thinking about
 accessibility as a multi-modal effort. We no longer have the excuse that the
 tools and technologies available to us do not support efficient workflows for
-non-visual UI development.
+non-visual UI development.
 
-**IB: Where is Drupal 8 going to do better?**
+**IB: Where is Drupal 8 going to do better?**
 
 JRB: Most importantly, we have more individual core contributors this cycle who
 truly believe in addressing accessibility issues. And they are all smart,
-wonderful people which makes working with them a pleasure!
+wonderful people which makes working with them a pleasure!
 
 For example, take
 [this issue about requirement warnings during installation](https://drupal.org/node/1811128).
@@ -126,22 +126,22 @@ must traverse every cell in the table to discover a missing requirement. Would
 we ever impose such a burden on a sight user through the UI? No, not without
 grumbles in the issue queues at least. With more contributors invested in
 improving these types of non-visual details, we are polishing all the rough
-edges — the ones we see _and_ the ones we don’t.
+edges — the ones we see _and_ the ones we don’t.
 
-**IB: How important is context in aural interfaces?**
+**IB: How important is context in aural interfaces?**
 
 JRB: Context is important to all interfaces. As front end developers we build
 templates that expose context in a predictable, consumable way. As a practice we
 have established and then refined patterns of visual expression over the past
-30-plus years.
+30-plus years.
 
 Metaphors grounded visual pointer displays on a virtual desktop. We talk of
 visual affordances in rounded, gradient-embellished, reflective buttons.
 [Skeumorphic designs](https://en.wikipedia.org/wiki/Skeuomorph) bring our
-understanding of the physical world to bear on pixels and bits.
+understanding of the physical world to bear on pixels and bits.
 
 Where are the metaphors in aural interface design? I know of none. To me, these
-interfaces are flat. The metal is bare underneath them.
+interfaces are flat. The metal is bare underneath them.
 
 Perhaps non-visual interfaces have one less level of abstraction to traverse.
 Maybe there’s no need to translate language into symbol and then back into
@@ -155,27 +155,27 @@ Jackendoff gives us a way of understanding language that starts at basic
 physical dichotomies — up/down and near/far — and from there offers us a model
 of communication. He gives us pattern. (Early) Chomsky gave us metal. So much
 that we humans do starts with structure that softens with time to fit our curvy,
-winding nature.
+winding nature.
 
 I want to believe that the aural interfaces we have today still just the awkward
 first attempts to build an abstract audio interface pattern language. That
 non-visual interface design is still working through its
 [structuralist](https://en.wikipedia.org/wiki/Structural_linguistics) phase. We
-are still learning how to pack context into denser forms through
-non-visual expressions.
+are still learning how to pack context into denser forms through non-visual
+expressions.
 
-**IB: Will the Drupal 8 improvements have things to offer module developers?**
+**IB: Will the Drupal 8 improvements have things to offer module developers?**
 
 JRB: In Drupal 8, we are building tools that manage a couple of the trickier
-components of accessibility in a browser. These are:
+components of accessibility in a browser. These are:
 
 1. Outputting audio updates
 
-2. Managing tabbing in constrained workflows
+2. Managing tabbing in constrained workflows
 
 Module developers will be able to pass a string to a method called
-“**announce**” on the Drupal object and have that string read by a
-screen reader.
+“**announce**” on the Drupal object and have that string read by a screen
+reader.
 
 Another method on the Drupal object called “**tabbingManager**” will constrain
 tabbable elements on the page. A developer will select those elements, either
