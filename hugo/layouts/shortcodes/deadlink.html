@@ -26,10 +26,10 @@
 <a
   data-dead-link="{{ $href }}"
   href="{{ relref . "/dead-link" }}?url={{ urlquery $href }}"
-  {{ if $title }}
+  {{- if $title }}
     title="{{ $title }}"
-  {{ else }}
+  {{- else }}
     title="{{ $href }}"
-  {{ end }}
+  {{- end }}
   >{{ $content }}</a
->
+>{{- "" -}}
