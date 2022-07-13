@@ -7,22 +7,29 @@
   --margin: 1.5rem;
 
   .legacy-float-l,
-  .post_body img.legacy-float-l {
-    margin-bottom: var(--margin);
-
-    @include bp-s-up {
-      float: left;
-      margin: var(--top-pad) var(--margin) var(--margin) 0;
-    }
-  }
-
+  .post_body img.legacy-float-l,
   .legacy-float-r,
   .post_body img.legacy-float-r {
     margin-bottom: var(--margin);
 
     @include bp-s-up {
-      float: right;
+      max-width: 45%;
+    }
+  }
+
+  .legacy-float-l,
+  .post_body img.legacy-float-l {
+    @include bp-s-up {
+      margin: var(--top-pad) var(--margin) var(--margin) 0;
+      float: left;
+    }
+  }
+
+  .legacy-float-r,
+  .post_body img.legacy-float-r {
+    @include bp-s-up {
       margin: var(--top-pad) 0 var(--margin) var(--margin);
+      float: right;
     }
   }
 }
