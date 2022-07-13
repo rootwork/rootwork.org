@@ -19,6 +19,8 @@ jobs:
       - name: Report broken links
         uses: urlstechie/urlchecker-action@master
         with:
+          # Choose whether to print a more verbose end summary with files and broken URLs
+          verbose: true
           # A comma-separated list of file types to cover in the URL checks
           file_types: .md,.toml,.yml,.scss
           # The timeout seconds to provide to requests, defaults to 5 seconds
@@ -27,5 +29,6 @@ jobs:
           retry_count: 3
           # Choose whether to include files with no URLs in the output
           print_all: false
-          # A comma separated patterns to exclude during URL checks
+          # A comma separated list of patterns to exclude during URL checks
           exclude_patterns: http://www.w3.org,http://schema.org/,http://purl.org,http://ogp.me,http://rdfs.org,http://xmlns.com,http://localhost,https://www.linkedin.com
+          # A comma separated list of full paths to files to exclude
