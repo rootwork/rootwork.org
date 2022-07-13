@@ -109,7 +109,7 @@ for both tracks:
 > - Frontend devs interested in UX
 
 For the frontend track, global track chair John Ferris and I are looking for
-balance among three big areas: CSS and CSS metalanguages like SASS and LESS;
+balance among three big areas: CSS and CSS metalanguages like Sass and LESS;
 jQuery and JavaScript; and Drupal 8’s new template engine, Twig. There are also
 topics that span those areas, such as frontend mobile development (including
 responsiveness) and multilingual frontend development.
