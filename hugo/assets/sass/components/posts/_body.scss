@@ -55,6 +55,16 @@
     font-weight: bold;
   }
 
+  em {
+    font-style: italic;
+  }
+
+  strong em,
+  em strong {
+    font-weight: bold;
+    font-style: italic;
+  }
+
   hr {
     opacity: 0.8;
     margin: 1rem 0;
