@@ -1,4 +1,134 @@
-// Author, when it appears on a post
+// Animations
+
+%author-image {
+  position: relative;
+  display: inline-block;
+  margin: -0.5rem 0 0;
+  padding: 0;
+  overflow: visible;
+  @include motion(transition-delay, 500ms);
+  @include motion(transition-duration, 750ms);
+
+  @include bp-xs-up {
+    margin-top: 0;
+  }
+
+  #blob {
+    path {
+      d: var(--path1);
+      transition-timing-function: ease-in-out;
+      @include motion(transition-duration, 750ms);
+    }
+  }
+
+  img {
+    --image-size: 128px;
+    margin: calc(var(--image-top-pad) * -1) 0 0 calc(var(--image-left-pad) * -1);
+    padding: var(--image-top-pad) 0 0 var(--image-left-pad);
+    max-width: var(--image-size);
+    clip-path: url(#blob);
+  }
+
+  &--on {
+    $width: var(--image-on-border);
+    $width2: calc(var(--image-on-border) * 15);
+    $widthNeg: calc(var(--image-on-border) * -1);
+
+    $colorLt1: map-get($color, bright-green);
+    $colorLt2: darken(map-get($color, bright-green), 5%);
+    $colorLt3: map-get($color, blue);
+    $colorLt4: map-get($color, purple);
+
+    $colorDk1: lighten(map-get($color, dark-green), 75%);
+    $colorDk2: lighten(map-get($color, dark-green), 25%);
+    $colorDk3: lighten(map-get($color, dark-green), 15%);
+    $colorDk4: lighten(map-get($color, dark-green), 5%);
+
+    @include switch(
+      filter,
+      // Light mode
+      drop-shadow($width 0 0 $colorLt1) drop-shadow($widthNeg 0 0 $colorLt1)
+        drop-shadow(0 $width 0 $colorLt1) drop-shadow(0 $widthNeg 0 $colorLt1)
+        drop-shadow($width $width 0 $colorLt1)
+        drop-shadow($widthNeg $widthNeg 0 $colorLt1)
+        drop-shadow($width $widthNeg 0 $colorLt1)
+        drop-shadow($widthNeg $width 0 $colorLt1)
+        drop-shadow(0 $width2 0 $colorLt2) drop-shadow(0 $width2 0 $colorLt3)
+        drop-shadow(0 $width2 0 $colorLt4),
+      // Dark mode
+      drop-shadow($width 0 0 $colorDk1) drop-shadow($widthNeg 0 0 $colorDk1)
+        drop-shadow(0 $width 0 $colorDk1) drop-shadow(0 $widthNeg 0 $colorDk1)
+        drop-shadow($width $width 0 $colorDk1)
+        drop-shadow($widthNeg $widthNeg 0 $colorDk1)
+        drop-shadow($width $widthNeg 0 $colorDk1)
+        drop-shadow($widthNeg $width 0 $colorDk1)
+        drop-shadow(0 $width2 0 $colorDk2) drop-shadow(0 $width2 0 $colorDk3)
+        drop-shadow(0 $width2 0 $colorDk4)
+    );
+    @include motion(transition-delay, 350ms);
+    @include motion(transition-duration, 600ms);
+
+    #blob {
+      path {
+        d: var(--path2);
+      }
+    }
+  }
+}
+
+%author-line {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  left: -5rem;
+  display: block;
+  content: '';
+  width: 0;
+  height: 2px;
+  background: var(--g-greenblue);
+  transition-timing-function: ease-in-out;
+  @include motion(transition-delay, 0);
+  @include motion(transition-duration, 500ms);
+
+  &--on {
+    width: calc(100% + 5rem);
+    @include motion(transition-delay, 500ms);
+  }
+}
+
+%author-button {
+  position: absolute;
+  content: '';
+  top: -0.25rem;
+  bottom: -0.25rem;
+  left: -0.25rem;
+  right: -0.25rem;
+  border: 3px transparent solid;
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+
+  &--on {
+    @include switch(background-color, var(--bright-green), var(--light));
+    border-width: 0;
+    border-radius: 0;
+
+    &::before {
+      @include motion(transition-delay, 500ms);
+    }
+
+    &::after {
+      @include switch(
+        border-color,
+        var(--bright-green),
+        darken(map-get($color, bright-green), 12%)
+      );
+      @include switch(background-color, var(--dark-green), var(--light));
+    }
+  }
+}
+
+// Author, when it appears in the sidebar
 
 .author_header > img {
   border-radius: 100%;
@@ -37,18 +167,23 @@
     font-size: clamp(2rem, 10vw, 3rem);
 
     &::before {
-      z-index: -1;
-      position: absolute;
-      bottom: 0;
-      left: -5rem;
-      display: block;
-      content: '';
-      width: 0;
-      height: 2px;
-      background: var(--g-greenblue);
-      transition-timing-function: ease-in-out;
-      @include motion(transition-delay, 0);
-      @include motion(transition-duration, 500ms);
+      @extend %author-line;
+
+      @include bp-xs-only {
+        display: none;
+      }
+    }
+
+    &::after {
+      @extend %author-line;
+      position: relative;
+      width: calc(100% + var(--img) + var(--gap));
+      left: calc((var(--img) * -1) - var(--gap));
+      top: 100%;
+
+      @include bp-xs-up {
+        display: none;
+      }
     }
 
     > span {
@@ -71,119 +206,25 @@
     z-index: 1;
 
     &::after {
-      position: absolute;
-      content: '';
-      top: -0.25rem;
-      bottom: -0.25rem;
-      left: -0.25rem;
-      right: -0.25rem;
-      border: 3px transparent solid;
-      background-color: transparent;
-      transition: all 0.5s ease-in-out;
-      z-index: -1;
+      @extend %author-button;
     }
 
     @include is-on {
-      @include switch(background-color, var(--bright-green), var(--light));
-      border-width: 0;
-      border-radius: 0;
-
-      &::before {
-        @include motion(transition-delay, 500ms);
-      }
-
-      &::after {
-        @include switch(
-          border-color,
-          var(--bright-green),
-          darken(map-get($color, bright-green), 12%)
-        );
-        @include switch(background-color, var(--dark-green), var(--light));
-      }
+      @extend %author-button--on;
     }
   }
 
   .img_wrap {
-    position: relative;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    overflow: visible;
-    @include motion(transition-delay, 500ms);
-    @include motion(transition-duration, 750ms);
-
-    #blob {
-      path {
-        d: var(--path1);
-        transition-timing-function: ease-in-out;
-        @include motion(transition-duration, 750ms);
-      }
-    }
-
-    img {
-      --image-size: 128px;
-      margin: calc(var(--image-top-pad) * -1) 0 0
-        calc(var(--image-left-pad) * -1);
-      padding: var(--image-top-pad) 0 0 var(--image-left-pad);
-      max-width: var(--image-size);
-      clip-path: url(#blob);
-    }
+    @extend %author-image;
   }
 
   @include is-on {
     .img_wrap {
-      $width: var(--image-on-border);
-      $width2: calc(var(--image-on-border) * 15);
-      $widthNeg: calc(var(--image-on-border) * -1);
-
-      $colorLt1: map-get($color, bright-green);
-      $colorLt2: darken(map-get($color, bright-green), 5%);
-      $colorLt3: map-get($color, blue);
-      $colorLt4: map-get($color, purple);
-
-      $colorDk1: lighten(map-get($color, dark-green), 75%);
-      $colorDk2: lighten(map-get($color, dark-green), 25%);
-      $colorDk3: lighten(map-get($color, dark-green), 15%);
-      $colorDk4: lighten(map-get($color, dark-green), 5%);
-
-      @include switch(
-        filter,
-        // Light mode
-        drop-shadow($width 0 0 $colorLt1) drop-shadow($widthNeg 0 0 $colorLt1)
-          drop-shadow(0 $width 0 $colorLt1) drop-shadow(0 $widthNeg 0 $colorLt1)
-          drop-shadow($width $width 0 $colorLt1)
-          drop-shadow($widthNeg $widthNeg 0 $colorLt1)
-          drop-shadow($width $widthNeg 0 $colorLt1)
-          drop-shadow($widthNeg $width 0 $colorLt1)
-          drop-shadow(0 $width2 0 $colorLt2) drop-shadow(0 $width2 0 $colorLt3)
-          drop-shadow(0 $width2 0 $colorLt4),
-        // Dark mode
-        drop-shadow($width 0 0 $colorDk1) drop-shadow($widthNeg 0 0 $colorDk1)
-          drop-shadow(0 $width 0 $colorDk1) drop-shadow(0 $widthNeg 0 $colorDk1)
-          drop-shadow($width $width 0 $colorDk1)
-          drop-shadow($widthNeg $widthNeg 0 $colorDk1)
-          drop-shadow($width $widthNeg 0 $colorDk1)
-          drop-shadow($widthNeg $width 0 $colorDk1)
-          drop-shadow(0 $width2 0 $colorDk2) drop-shadow(0 $width2 0 $colorDk3)
-          drop-shadow(0 $width2 0 $colorDk4)
-      );
-      @include motion(transition-delay, 350ms);
-      @include motion(transition-duration, 600ms);
-
-      #blob {
-        path {
-          d: var(--path2);
-        }
-      }
+      @extend %author-image--on;
     }
 
     h1::before {
-      width: calc(100% + 5rem);
-      @include motion(transition-delay, 500ms);
-    }
-
-    .button {
-      @include switch(border-color, var(--theme), var(--light));
+      @extend %author-line--on;
     }
   }
 }

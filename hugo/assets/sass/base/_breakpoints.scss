@@ -14,6 +14,14 @@ $mobile-screen: 27rem;
   }
 }
 
+@mixin bp-xs-only {
+  @media screen and (max-width: $mobile-screen) {
+    & {
+      @content;
+    }
+  }
+}
+
 @mixin bp-s-up {
   @media screen and (min-width: $single-column-breakpoint) {
     & {
