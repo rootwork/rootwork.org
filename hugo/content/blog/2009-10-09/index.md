@@ -61,7 +61,7 @@ at Marquette University, I hosted a workshop called,
 "[Finding the Movement's Voice: Online Social Networks and Social Change](https://web.archive.org/web/20091013231106/http://www.peacejusticestudies.org/conference/sessions.php?con=C.4)":
 
 The subtitle of this workshop could be, "Social change has always relied on
-social networks — they just weren't called Facebook." I'm going to be talking
+social networks — they just weren't called Facebook." I'm going to be talking
 concretely about the _strategy_ of using online tools for social change. This
 won't be an ain't-it-cool presentation of shiny technology, nor will it be a
 technical exploration of complicated software. It will be an interactive how-to
@@ -69,7 +69,7 @@ on making social change work more effective by using online social technology.
 
 While I did use a set of slides, the workshop was participatory and the slides
 were mostly illustrative; I hope to publish them here and on
-[Slideshare](https://www.slideshare.net/rootwork) with a voiceover soon, but
+[Slideshare](https://www.slideshare.net/rootwork) with a voiceover soon, but
 they're probably not worth posting otherwise.
 
 What I can post is an extended set of resources and tools for those pursuing
@@ -93,8 +93,8 @@ this list; feel free to use or distribute as you like._
 
 #### Guides, case studies and places for inspiration
 
-- [Beth's Blog: How Nonprofits Can Use Social Media](https://bethkanter.org)
-  — "A place to capture and share ideas, experiment with and exchange links and
+- [Beth's Blog: How Nonprofits Can Use Social Media](https://bethkanter.org) —
+  "A place to capture and share ideas, experiment with and exchange links and
   resources about the adoption challenges, strategy, and ROI of nonprofits and
   social media." Beth Kanter explores the social use by nonprofits of images
   (e.g., Flickr), video (YouTube) and microblogs (Twitter), among other
@@ -106,14 +106,14 @@ this list; feel free to use or distribute as you like._
   and a
   [guide to secure communication](https://web.archive.org/web/20091003030354/http://www.digiactive.org/2009/06/26/secure-comm/).
 - [Dear SoSi](https://web.archive.org/web/20100102135322/http://socialsignal.com/dearsosi)
-  — Social Signal's Alexandra Samuel and Rob Cottingham are leaders in social
+  — Social Signal's Alexandra Samuel and Rob Cottingham are leaders in social
   media integration and online community development for nonprofits and social
   change groups. They've collected some of their best advice and grouped it by
   audience — so whether you're a nonprofit executive, a membership director or
   online manager, or an activist on a shoestring budget, Dear SoSi will give you
   some great pointers.
 - [NetSquared](https://web.archive.org/web/20090927182734/http://www.netsquared.org/)
-  — A community of nonprofits and groups who are using technology — especially
+  — A community of nonprofits and groups who are using technology — especially
   social networks and social media — for social change. In addition to the blog,
   NetSquared sponsors gatherings in many cities called
   [Net Tuesdays](https://web.archive.org/web/20090817065437/http://netsquared.org/share/meetup/),
@@ -131,7 +131,7 @@ this list; feel free to use or distribute as you like._
 - [Community Organizer 2.0](https://web.archive.org/web/20091021173351/http://www.communityorganizer20.com/)
   — The blog of Debra Askanase, a veteran community organizer who focuses on the
   strategy of using technology.
-- [Apophenia](https://www.zephoria.org/thoughts/) — Sociological research and
+- [Apophenia](https://www.zephoria.org/thoughts/) — Sociological research and
   commentary on the use of social networks like MySpace, Facebook, LiveJournal,
   Xanga and YouTube by teenagers in the United States. danah boyd is a PhD
   candidate at the University of California Berkeley and a fellow at Harvard's
@@ -153,22 +153,22 @@ this list; feel free to use or distribute as you like._
 
 #### Tools and services
 
-- [TechSoup](https://www.techsoup.org/) — TechSoup is a nonprofit that helps
+- [TechSoup](https://www.techsoup.org/) — TechSoup is a nonprofit that helps
   other nonprofits in the United States and Canada acquire deeply-discounted
   software and online services. Microsoft Office for $16? Adobe InDesign for
   $60? Flickr accounts for $3/year? It's all in TechSoup's stock. Additionally,
   TechSoup has a vibrant forum community and blog postings relating to the use
   of technology by nonprofits.
 - [Idealware](https://web.archive.org/web/20091001051945/http://idealware.org/)
-  — Provides candid Consumer Reports–style reviews and articles about software
+  — Provides candid Consumer Reports–style reviews and articles about software
   of interest to nonprofits. Through product comparisons, recommendations, case
   studies, and software news, Idealware allows nonprofits to make the software
   decisions that will help them be more effective.
 - [Human Rights Data Analysis Group](https://hrdag.org/) — Designs database
   software, data collection strategies, and statistical techniques to measure
-  human rights atrocities; and conducts statistical analysis on behalf of human
+  human rights atrocities; and conducts statistical analysis on behalf of human
   rights projects.
-- [Nonprofit Technology Network (NTEN)](https://www.nten.org/) — A membership
+- [Nonprofit Technology Network (NTEN)](https://www.nten.org/) — A membership
   organization of nonprofit professionals who put technology to use for their
   causes. NTEN sponsors online "webinars" and the annual Nonprofit Technology
   Conference.
