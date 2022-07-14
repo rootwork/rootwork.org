@@ -2,7 +2,16 @@
 //
 // Also see posts/container for tree roots
 
-.tree {
+.post_content .tree {
+  max-width: var(--max-content-width);
+  overflow: hidden;
+  z-index: -10;
+  margin: 0 auto -10rem;
+
+  @media screen and (min-width: $single-column-breakpoint) {
+    background-color: transparent;
+  }
+
   svg {
     pointer-events: none;
     overflow: hidden;

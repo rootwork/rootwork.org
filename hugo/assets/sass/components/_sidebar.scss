@@ -1,6 +1,13 @@
 // Sidebar container and children styles
 
 .sidebar {
+  margin: 2.5rem auto 0;
+  max-width: calc(var(--max-content-width) - 10rem);
+
+  @include bp-s-up {
+    margin-top: 0;
+  }
+
   .sidebar_inner {
     @include bp-s-up {
       // Divider

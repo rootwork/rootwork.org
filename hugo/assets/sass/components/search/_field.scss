@@ -1,9 +1,11 @@
 // Search input field
 
 .search.search {
+  margin: 1rem auto;
   max-width: none;
 
   .search_field {
+    @include switch(background-color, var(--bright-light), var(--shade));
     border: 3px solid var(--bright-green);
 
     &:focus-within {

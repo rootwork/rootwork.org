@@ -14,8 +14,10 @@
 }
 
 .content.grid-inverse {
+  grid-template-columns: min-content minmax(75%, 1fr) auto;
+
   @include breakat(sm) {
-    grid-template-columns: 70% 1fr;
+    grid-template-columns: 75% 1fr;
     grid-column-gap: 3rem;
   }
 }

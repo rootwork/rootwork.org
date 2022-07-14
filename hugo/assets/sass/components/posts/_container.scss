@@ -1,21 +1,6 @@
 // Post container
 
 .post_content {
-  margin-top: 0;
-
-  .tree {
-    @include fullcontent;
-    overflow: hidden;
-    z-index: -10;
-    margin: 0 auto;
-
-    @media screen and (min-width: $single-column-breakpoint) {
-      @include undofull;
-      margin-bottom: -10rem;
-      background-color: transparent;
-    }
-
-    &--roots {
-    }
-  }
+  margin: 0 auto;
+  max-width: var(--max-content-width);
 }
