@@ -9,6 +9,10 @@
   margin-right: var(--offset);
 }
 
+@mixin full {
+  @extend %full;
+}
+
 @mixin fullwidth {
   --offset: calc((var(--page-padding) / 2) * -1);
   @extend %full;

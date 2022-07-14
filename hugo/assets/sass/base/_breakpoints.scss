@@ -4,6 +4,15 @@
 
 $single-column-breakpoint: 92.5rem;
 $mobile-menu-breakpoint: 55rem;
+$mobile-screen: 27rem;
+
+@mixin bp-xs-up {
+  @media screen and (min-width: $mobile-screen) {
+    & {
+      @content;
+    }
+  }
+}
 
 @mixin bp-s-up {
   @media screen and (min-width: $single-column-breakpoint) {

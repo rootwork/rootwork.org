@@ -7,14 +7,25 @@
 // Author, when it appears on the home page
 
 .home_bio {
+  --gap: 1rem;
+  --img: 8rem;
   display: grid;
-  grid-template-columns: 8rem 1fr;
-  grid-gap: 1rem;
+  grid-template-columns: var(--img) 1fr;
+  grid-gap: var(--gap);
   margin: 1rem 0 2rem;
 
   .author_bio {
+    margin-top: 2rem;
+    position: relative;
+    width: calc(100% + var(--img) + var(--gap));
+    left: calc((var(--image-size) * -1) - var(--gap));
     font-family: var(--content-font);
     line-height: 1.35;
+
+    @include bp-xs-up {
+      @include undofull;
+      margin-top: 0;
+    }
   }
 
   h1 {
@@ -23,6 +34,7 @@
     background: var(--g-greenblue);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: clamp(2rem, 10vw, 3rem);
 
     &::before {
       z-index: -1;
@@ -35,12 +47,14 @@
       height: 2px;
       background: var(--g-greenblue);
       transition-timing-function: ease-in-out;
-      @include motion(transition-delay, 500ms);
-      @include motion(transition-duration, 750ms);
+      @include motion(transition-delay, 0);
+      @include motion(transition-duration, 500ms);
     }
 
     > span {
-      white-space: nowrap;
+      @include bp-xs-up {
+        white-space: nowrap;
+      }
     }
   }
 
@@ -73,6 +87,10 @@
       @include switch(background-color, var(--bright-green), var(--light));
       border-width: 0;
       border-radius: 0;
+
+      &::before {
+        @include motion(transition-delay, 500ms);
+      }
 
       &::after {
         @include switch(
@@ -150,7 +168,7 @@
           drop-shadow(0 $width2 0 $colorDk4)
       );
       @include motion(transition-delay, 350ms);
-      @include motion(transition-duration, 1s);
+      @include motion(transition-duration, 600ms);
 
       #blob {
         path {
@@ -161,6 +179,7 @@
 
     h1::before {
       width: calc(100% + 5rem);
+      @include motion(transition-delay, 500ms);
     }
 
     .button {
