@@ -107,10 +107,10 @@ the current tools are simply making those skills more visible.
 ### Fewer Leaders, More Leadership
 
 “Organizations and societies,” wrote Bruce Kokopeli and George Lakey, “_do need
-leadership_, but they _do not need leaders_.”1 They argued for a shared value of
-leadership, in which many individuals took responsibility for the direction of a
-group, but didn’t invest the institutional power in a single person to call the
-shots. A critical part of this feminist approach relies on cultivating
+leadership_, but they _do not need leaders_.”[^1] They argued for a shared value
+of leadership, in which many individuals took responsibility for the direction
+of a group, but didn’t invest the institutional power in a single person to call
+the shots. A critical part of this feminist approach relies on cultivating
 leadership among more and more individuals. Everyone has a stake, and everyone
 has a say.
 
@@ -136,7 +136,7 @@ strategy rather than dictate to or control the masses.
 > burning building; it is to lead them into the populist pitfall and transform
 > them into masses which can be manipulated. … [T]he oppressed must see
 > themselves as women and men engaged in the … vocation of becoming more fully
-> human.2
+> human.[^2]
 
 This may seem like heavy or strident language in the context of online petition
 drives or peer-to-peer fundraising campaigns. But my goal is to push social
@@ -185,7 +185,7 @@ from, and it doesn’t mean that everyone involved is a charlatan simply out to
 make a buck. But selling people an identity, even a “good” one, is fundamentally
 different from organizing for social change. Freire again: “Conviction cannot be
 packaged and sold; it is reached, rather, by means of a totality of reflection
-and action.3
+and action.[^3]
 
 **Movement building also goes beyond electoral organizing.** Folks working for
 social change often form common cause with those organizing around a political
@@ -226,11 +226,13 @@ vote for — and even more importantly, leave a positive comment on — the
 The deadline is the end of the day this Friday, Sept. 4, so don’t delay! (More
 information above.)
 
-1. Kokopeli, Bruce and George Lakey. _Leadership for Change: Toward a Feminist
-   Model_. New Society Publishers, Santa Cruz, Calif., 1985. Available from
-   [Training for Change](https://web.archive.org/web/20130617163615/http://www.trainingforchange.org/leadership_for_change).
+[^1]:
+    Kokopeli, Bruce and George Lakey. _Leadership for Change: Toward a Feminist
+    Model_. New Society Publishers, Santa Cruz, Calif., 1985. Available from
+    [Training for Change](https://web.archive.org/web/20130617163615/http://www.trainingforchange.org/leadership_for_change).
 
-2. Freire, Paulo. _Pedagogy of the Oppressed_. Continuum International
-   Publishing Group, New York, 2004, pp. 65–66.
+[^2]:
+    Freire, Paulo. _Pedagogy of the Oppressed_. Continuum International
+    Publishing Group, New York, 2004, pp. 65–66.
 
-3. Freire, p. 67.
+[^3]: Freire, p. 67.
