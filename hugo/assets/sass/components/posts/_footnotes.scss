@@ -1,0 +1,10 @@
+// Footnotes, supported out of the box by Hugo
+
+.post_content .post_body {
+  .footnote-backref.footnote-backref.footnote-backref {
+    background-color: transparent;
+    border: none;
+    color: var(--theme);
+    font-size: 0.9rem;
+  }
+}
