@@ -11,195 +11,205 @@
 
 // Excerpts of posts appearing in lists
 
-.excerpt {
-  font-size: 1.3333rem;
-  line-height: 1.5;
+.post_item {
+  .excerpt {
+    font-size: 1.3333rem;
+    line-height: 1.5;
 
-  .excerpt_header {
-    // Also see styles in posts > _meta.scss
+    .excerpt_header {
+      // Also see styles in posts > _meta.scss
 
-    .post_link {
-      margin: 0 0 0.25rem;
-      padding: 0 0 0.25rem;
-      font-size: 2.25rem;
+      .post_link {
+        margin: 0;
+        padding: 0.25rem 0;
+        font-size: 2.25rem;
 
-      @include fancy-highlight(
-        $light_bottom: var(--bright-green),
-        $light_top: var(--bright-green),
-        $dark_bottom: var(--light),
-        $dark_top: var(--light),
-        $light_height: 3px,
-        $dark_height: 3px
-      );
+        @include fancy-highlight(
+          $light_bottom: var(--bright-green),
+          $light_top: var(--bright-green),
+          $dark_bottom: var(--light),
+          $dark_top: var(--light),
+          $light_height: 3px,
+          $dark_height: 3px
+        );
 
-      > a {
-        @include switch(color, var(--black), var(--white));
-        @include focus(text-decoration, underline);
+        > a {
+          @include switch(color, var(--black), var(--white));
+          @include focus(text-decoration, underline);
+        }
+      }
+
+      .post_byline {
+        @include hidden-visually;
+      }
+
+      .post_date {
+        @include is-on(text-decoration, underline);
       }
     }
 
-    .post_byline {
-      @include hidden-visually;
-    }
-
-    .post_date {
-      @include is-on(text-decoration, underline);
-    }
-  }
-
-  .excerpt_footer.excerpt_footer {
-    display: block;
-    position: relative;
-    padding-bottom: 1.333rem;
-
-    .excerpt_summary {
-      // Accounting for margin created by line height (below)
+    .excerpt_footer.excerpt_footer {
+      display: block;
       position: relative;
-      font-family: var(--content-font);
-      overflow: hidden;
+      padding-bottom: 1.333rem;
 
-      .excerpt_thumbnail {
-        display: block;
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: var(--shade);
-        transition: background-color;
-        @include motion(transition-duration, 500ms);
+      .excerpt_summary {
+        // Accounting for margin created by line height (below)
+        position: relative;
+        font-family: var(--content-font);
+        overflow: hidden;
 
-        figure {
-          text-align: center;
+        .excerpt_thumbnail {
+          display: block;
+          position: absolute;
+          left: 0;
+          width: 100%;
           height: 100%;
+          background-color: var(--shade);
+          transition: background-color;
+          @include motion(transition-duration, 500ms);
 
-          &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            border-radius: 0.5rem;
-            transition: background-color;
-            @include switch(background-color, var(--shade), var(--dark-green));
-            @include motion(transition-duration, 500ms);
-          }
-
-          picture {
+          figure {
+            text-align: center;
             height: 100%;
-          }
 
-          img {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 0.5rem;
-            @include switch(mix-blend-mode, hard-light, hard-light);
-          }
-        }
-      }
-
-      .summary_wrap {
-        position: relative;
-        margin: 1rem;
-        border-radius: 0.5rem;
-        background-color: var(--bright-light);
-        z-index: 10;
-
-        p {
-          padding: 0.5rem 1rem;
-          line-height: 1.5;
-          color: var(--black);
-        }
-      }
-
-      .more_wrap {
-        position: relative;
-        margin: 2rem 1rem 1rem;
-        text-align: center;
-        z-index: 10;
-        pointer-events: none; // Allows wrapping link event to show through
-
-        .excerpt_more {
-          position: relative;
-          margin-top: -0.5rem;
-          font-weight: bold;
-          @include switch(color, var(--md-dark-green), var(--hazy-white));
-          @include switch(
-            background-color,
-            var(--hazy-white),
-            var(--md-dark-green)
-          );
-          border-width: 0;
-          z-index: 1;
-          pointer-events: auto; // Applies link event as normal
-
-          &::before {
-            position: absolute;
-            content: '';
-            bottom: 0.6666rem;
-            left: 1.5rem;
-            right: 1.5rem;
-            border-bottom: 2px solid currentColor;
-            opacity: 0.8;
-            transition: all 0.25s ease-in-out;
-            z-index: 2;
-          }
-
-          &::after {
-            position: absolute;
-            content: '';
-            top: -0.25rem;
-            bottom: -0.25rem;
-            left: -0.25rem;
-            right: -0.25rem;
-            border: 3px transparent solid;
-            background-color: transparent;
-            transition: all 0.5s ease-in-out;
-            z-index: -1;
-          }
-
-          @include is-on {
             &::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              border-radius: 0.5rem;
+              transition: background-color;
+              @include switch(
+                background-color,
+                var(--shade),
+                var(--dark-green)
+              );
+              @include motion(transition-duration, 500ms);
+            }
+
+            picture {
+              height: 100%;
+            }
+
+            img {
+              position: relative;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 0.5rem;
+              @include switch(mix-blend-mode, hard-light, hard-light);
+            }
+          }
+        }
+
+        .summary_wrap {
+          position: relative;
+          margin: 1rem;
+          border-radius: 0.5rem;
+          background-color: var(--bright-light);
+          z-index: 10;
+
+          p {
+            padding: 0.5rem 1rem;
+            line-height: 1.5;
+            color: var(--black);
+          }
+        }
+
+        .more_wrap {
+          position: relative;
+          margin: 2rem 1rem 1rem;
+          text-align: center;
+          z-index: 10;
+          pointer-events: none; // Allows wrapping link event to show through
+
+          .excerpt_more {
+            position: relative;
+            margin-top: -0.5rem;
+            font-weight: bold;
+            @include switch(color, var(--md-dark-green), var(--hazy-white));
+            @include switch(
+              background-color,
+              var(--hazy-white),
+              var(--md-dark-green)
+            );
+            border-width: 0;
+            z-index: 1;
+            pointer-events: auto; // Applies link event as normal
+
+            &::before {
+              position: absolute;
+              content: '';
+              bottom: 0.6666rem;
               left: 1.5rem;
               right: 1.5rem;
-              opacity: 1;
+              border-bottom: 2px solid currentColor;
+              opacity: 0.8;
+              transition: all 0.25s ease-in-out;
+              z-index: 2;
+            }
+
+            &::after {
+              position: absolute;
+              content: '';
+              top: -0.25rem;
+              bottom: -0.25rem;
+              left: -0.25rem;
+              right: -0.25rem;
+              border: 3px transparent solid;
+              background-color: transparent;
+              transition: all 0.5s ease-in-out;
+              z-index: -1;
+            }
+
+            @include is-on {
+              &::before {
+                left: 1.5rem;
+                right: 1.5rem;
+                opacity: 1;
+              }
             }
           }
         }
       }
-    }
 
-    @include is-on {
-      .excerpt_thumbnail {
-        @include switch(
-          background-color,
-          var(--bright-light),
-          var(--dark-shade)
-        );
+      @include is-on {
+        .excerpt_thumbnail {
+          @include switch(
+            background-color,
+            var(--bright-light),
+            var(--dark-shade)
+          );
 
-        figure {
-          &::before {
-            @include switch(background-color, var(--white), var(--light));
+          figure {
+            &::before {
+              @include switch(background-color, var(--white), var(--light));
+            }
           }
         }
-      }
 
-      .more_wrap .excerpt_more {
-        @include switch(color, var(--md-dark-green), var(--white));
-        border-radius: 0;
+        .more_wrap .excerpt_more {
+          @include switch(color, var(--md-dark-green), var(--white));
+          border-radius: 0;
 
-        &::before {
-          left: 50%;
-          right: 50%;
-          opacity: 0;
-        }
+          &::before {
+            left: 50%;
+            right: 50%;
+            opacity: 0;
+          }
 
-        &::after {
-          @include switch(background-color, var(--white), var(--md-dark-green));
-          border-color: var(--bright-green);
-          box-shadow: 4px 4px var(--md-dark-green);
+          &::after {
+            @include switch(
+              background-color,
+              var(--white),
+              var(--md-dark-green)
+            );
+            border-color: var(--bright-green);
+            box-shadow: 4px 4px var(--md-dark-green);
+          }
         }
       }
     }

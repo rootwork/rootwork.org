@@ -44,7 +44,7 @@ $color: (
 $derivedColor: (
   medium-green: lighten(map-get($color, bright-green), 3%),
   hazy-green: lighten(map-get($color, dark-green), 3%),
-  translucent-green: rgba(map-get($color, bright-green), 0.15),
+  translucent-green: rgba(map-get($color, bright-green), 0.075),
   translucent-brown: rgba(map-get($color, medium-brown), 0.1),
 );
 
@@ -119,7 +119,11 @@ $gradients: (
   --dark-theme: #{map-get($color, dark-green)};
   --medium-theme: #{map-get($derivedColor, medium-green)};
   --light-theme: #{map-get($color, translucent-green)};
-  --post-bg: #{map-get($color, hazy-white)};
+  @include switch(
+    --post-bg,
+    var(--translucent-green),
+    var(--translucent-white)
+  );
 
   // Define gradients
 
@@ -137,7 +141,6 @@ html {
   --translucent-lighter: var(--translucent-white);
   --shade: var(--shade);
   --shadedark: var(--dark-shade);
-  --post-bg: var(--post-bg);
   --choice-bg: var(--light);
 }
 
