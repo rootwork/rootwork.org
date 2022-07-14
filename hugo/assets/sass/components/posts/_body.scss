@@ -2,7 +2,7 @@
 
 .post_content .post_body {
   font-family: var(--content-font);
-  font-size: 1.5rem;
+  font-size: clamp(1.15rem, 5vw, 1.5rem);
   line-height: 1.75;
 
   a {
@@ -52,7 +52,8 @@
   }
 
   p {
-    margin: 1rem 0;
+    margin: clamp(1.25rem, 5vw, 2.25rem) 0;
+    padding: 0;
   }
 
   strong {
@@ -70,10 +71,15 @@
   }
 
   blockquote {
-    margin: 1rem 0;
-    padding: 0.1rem 2rem;
+    margin: clamp(1.25rem, 10vw, 2.25rem) 0;
+    padding: clamp(0.5rem, 5vw, 0.75rem) clamp(0.2rem, 2vw, 1.5rem)
+      clamp(0.5rem, 5vw, 0.75rem) clamp(0.5rem, 5vw, 1.5rem);
     background-color: var(--post-bg);
     color: var(--text);
+
+    > p {
+      margin: clamp(0.25rem, 1vw, 1rem) 0;
+    }
   }
 
   hr {

@@ -13,7 +13,7 @@
 
 .post_item {
   .excerpt {
-    font-size: 1.3333rem;
+    font-size: clamp(1rem, 5vw, 1.3333rem);
     line-height: 1.5;
 
     .excerpt_header {
@@ -22,7 +22,7 @@
       .post_link {
         margin: 0;
         padding: 0.25rem 0;
-        font-size: 2.25rem;
+        font-size: clamp(1.85rem, 5vw, 2.25rem);
 
         @include fancy-highlight(
           $light_bottom: var(--bright-green),
