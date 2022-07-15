@@ -2,7 +2,7 @@
 title: 'What online advocacy can learn from community organizing'
 author: Ivan Boothe
 date: '2014-03-15'
-# lastmod: 2022-03-24 # Appends 'edited on' to the publish date
+lastmod: '2015-03-06' # Appends 'edited on' to the publish date
 
 slug: 'online-advocacy-learn-community-organizing' # Recommended length is 3 to 5 words.
 aliases:
@@ -24,8 +24,8 @@ showShare: true
 
 featureImage: '2014-04-ntc-b.jpg' # Top image on post.
 # featureImageShade: true # Add a translucent shade to the image to make overlaid text easier to read.
-featureImageAlt: 'Slide image from the presentation' # Alternative text for featured image.
-# featureImageCreditFlickr: 'username'
+featureImageAlt: 'Cover slide from the presentation' # Alternative text for featured image.
+featureImageCreditFlickr: 'fenris117'
 # featureImageCreditCustom: 'Image credit Flickr user [username](https://www.flickr.com/photos/username).'
 thumbnail: '2014-04-ntc-b.jpg' # Image in lists of posts.
 # shareImage: 'share.jpg' # For SEO and social media snippets.
@@ -59,6 +59,12 @@ A transcript from my portion of the
 “[Big Idea](https://14ntc.sched.com/event/10981233f5dfb1e3ca5a325d9bd19f81)”
 panel on “The Power of Technology in Advocacy and Organizing” from the 2014
 Nonprofit Technology Conference, March 13-15 in Washington, DC.
+
+_Update, March 6, 2015: Today I gave a similar presentation as part of the 2015
+Nonprofit Technology Conference's Ignite talks. You can
+[view the Slideshare](https://www.slideshare.net/rootwork/the-technology-of-social-change)
+or [download the PDF](2015-03-06_technology-social-change.pdf), but the slides
+are simply images._
 
 My background is in community organizing and social movement theory, and that’s
 what I’d like to talk a little bit about today.
