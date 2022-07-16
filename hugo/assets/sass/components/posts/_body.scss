@@ -5,52 +5,6 @@
   font-size: clamp(1.15rem, 5vw, 1.5rem);
   line-height: 1.75;
 
-  a {
-    font-weight: bold;
-  }
-
-  a:not(.icon, .footnote-ref, .footnote-backref) {
-    border-bottom: 1px currentColor dotted;
-    @include fancy-highlight(
-      $light_bottom: var(--pale-green),
-      $light_top: var(--light),
-      $dark_bottom: var(--light),
-      $dark_top: var(--light),
-      $light_height: 50%,
-      $dark_height: 100%
-    );
-
-    @include is-on {
-      @include switch(color, var(--dark-green), var(--dark-green));
-      @include switch(border-bottom-color, var(--themedark), var(--light));
-    }
-  }
-
-  a.footnote-ref {
-    padding: 0 0.1rem;
-    font-size: 0.9rem;
-
-    @include is-on {
-      @include switch(color, var(--dark-green), var(--light));
-    }
-  }
-
-  a.footnote-backref {
-    padding: 0.125rem 0.3333rem;
-    @include switch(color, var(--white), var(--bright-green));
-    @include switch(background-color, var(--bright-green), var(--dark-shade));
-    border-radius: 50%;
-    border-width: 1px;
-    border-style: solid;
-    @include switch(border-color, var(--bright-green), var(--white));
-
-    @include is-on {
-      @include switch(background-color, var(--dark-green), var(--white));
-      @include switch(color, var(--white), var(--dark-green));
-      @include switch(border-color, var(--dark-green), var(--white));
-    }
-  }
-
   p {
     margin: clamp(1.25rem, 5vw, 2.25rem) 0;
     padding: 0;
