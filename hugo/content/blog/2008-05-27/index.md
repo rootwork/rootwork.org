@@ -39,12 +39,13 @@ figurePositionShow: false # Override global value for showing the figure label.
 showRelatedInArticle: false # Override global value for showing related posts in this series at the end of the content.
 
 categories:
-  - frontend development
+  - nonprofit technology
+  - online advocacy
 tags:
-  - Drupal
 keywords: # For SEO. Generally a combination of categories and tags.
-  - frontend
-  - Drupal
+  - nonprofit technology
+  - nptech
+  - online advocacy
 
 # Archive taxonomy terms (auto-generated)
 year: '2008'
