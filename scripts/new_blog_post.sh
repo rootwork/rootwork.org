@@ -392,7 +392,7 @@ main() {
       -e 's/\./ dot /g' \
       -e "s/'//g" \
       -e 's/./\L\0/g' \
-      -e "s/\<a\>//g;s/\<an\>//g;s/\<and\>//g;s/\<as\>//g;s/\<at\>//g;s/\<for\>//g;s/\<in\>//g;s/\<of\>//g;s/\<on\>//g;s/\<or\>//g;s/\<the\>//g;s/\<to\>//g" \
+      -e "s/\<a\>//g;s/\<an\>//g;s/\<and\>//g;s/\<as\>//g;s/\<at\>//g;s/\<for\>//g;s/\<from\>//g;s/\<in\>//g;s/\<of\>//g;s/\<on\>//g;s/\<or\>//g;s/\<the\>//g;s/\<to\>//g" \
       -e 's/[^a-z0-9-]/ /g' \
       -e 's/^[[:space:]]*//g' \
       -e 's/[[:space:]]*$//g' \
