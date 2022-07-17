@@ -52,22 +52,18 @@ year: '2008'
 month: '2008-01'
 ---
 
-(Cross-posted to
-[NetSquared](https://web.archive.org/web/20160803034413/http://www.netsquared.org/blog/quixotic/drupal-nonprofits-or-how-build-social-networks-change))
+_Cross-posted to
+[NetSquared](https://web.archive.org/web/20080531044257/http://www.netsquared.org/blog/quixotic/drupal-nonprofits-or-how-build-social-networks-change)._
 
 Earlier this month, NetSquared was generous enough to fund my attendance at the
-[Lullabot Drupal Intensive](https://web.archive.org/web/20160803034413/http://www.lullabot.com/workshop/both-fall-workshops/providence-ri-2007)
-workshop in Providence, Rhode Island.
-[Drupal](https://web.archive.org/web/20160803034413/http://www.drupal.org/) is a
+[Lullabot Drupal Intensive](https://web.archive.org/web/20080705122154/http://www.lullabot.com/workshop/both-fall-workshops/providence-ri-2007)
+workshop in Providence, Rhode Island. [Drupal](https://www.drupal.org/) is a
 free, open-source content management system that allows non-technical users to
 update your site and is capable of powering blogs, community sites,
-action-oriented campaigns and social networks along the lines of
-[MySpace](https://web.archive.org/web/20160803034413/http://rootwork.org/category/tags/myspace)
-and
-[Facebook](https://web.archive.org/web/20160803034413/http://rootwork.org/category/tags/facebook).
-Lullabot, a Drupal development firm that involved in much of the Drupal
-development, has a
-[keen interest in Drupal for nonprofits](https://web.archive.org/web/20160803034413/http://www.lullabot.com/articles/how_drupal_will_save_world).
+action-oriented campaigns and social networks along the lines of MySpace and
+Facebook. Lullabot, a Drupal development firm that involved in much of the
+Drupal development, has a
+[keen interest in Drupal for nonprofits](https://www.lullabot.com/articles/how-drupal-will-save-the-world).
 
 In return for NetSquared’s generosity, I wanted to post some tips for nonprofits
 thinking about using Drupal for their sites. I’m convinced that, under most
@@ -77,18 +73,23 @@ social change.
 ### Background
 
 To date, I have built four full-fledged sites with Drupal for the
-[Genocide Intervention Network](https://web.archive.org/web/20160803034413/http://www.genocideintervention.net/):
-[Ask the Candidates](https://web.archive.org/web/20160803034413/http://www.askthecandidates.org/)
-(Drupal version 5), the
-[Darfur Congressional Scorecard](https://web.archive.org/web/20160803034413/http://www.darfurscores.org/)
-(v4.7), Time to Protect (v4.7, no longer online) and Power to Protect (v4.6, no
-longer online). GI\-Net’s
-[main site](https://web.archive.org/web/20160803034413/http://www.genocideintervention.net/)
-was also developed in Drupal (v4.7) by an outside firm, as was GI\-Net’s student
-site,
-[STAND](https://web.archive.org/web/20160803034413/http://www.standnow.org/)
-(v4.7). My
-[personal site](https://web.archive.org/web/20160803034413/http://www.quixoticlife.net/)
+[Genocide Intervention Network](https://web.archive.org/web/20080804233456/http://www.genocideintervention.net/):
+
+- {{< deadlink "Ask the Candidates" "dl://www.askthecandidates.org" >}} (Drupal
+  version 5)
+- [Darfur Congressional Scorecard](https://web.archive.org/web/20080801050841/http://www.darfurscores.org/)
+  (v4.7)
+- [Time to Protect](https://web.archive.org/web/20070208211701/http://www.timetoprotect.org/)
+  (v4.7)
+- {{< deadlink "Power to Protect" "dl://www.powertoprotect.org" >}} (v4.6)
+
+GI-Net’s
+[main site](https://web.archive.org/web/20080804233456/http://www.genocideintervention.net/)
+was also developed in Drupal (v4.7) by an outside firm, as was GI-Net’s student
+site, [STAND](https://standnow.org/) (v4.7).
+
+My
+[personal site](https://web.archive.org/web/20170312021724/http://www.quixoticlife.net/)
 is in Drupal (v5) and I’m working on releasing an e-commerce site and a
 community events site in the near future.
 
@@ -116,49 +117,47 @@ Drupal has a number of strengths:
 - It’s free! More importantly, it has a large, robust community of developers
   regularly updating both its core features and plug-in modules — also for free!
   And when you can’t swing the free-software cost — staff time — there are
-  plenty of
-  [Drupal developers](https://web.archive.org/web/20160803034413/http://drupal.org/drupal-services)
-  out there. For nonprofits looking to “act out” social change, Drupal is a
-  welcome addition to for-profit corporations upon which you have to depend for
-  any updates or bug fixes.
+  plenty of [Drupal developers](https://www.drupal.org/drupal-services) out
+  there. For nonprofits looking to “act out” social change, Drupal is a welcome
+  addition to for-profit corporations upon which you have to depend for any
+  updates or bug fixes.
 - Because it’s open-source, Drupal won’t lock you in to a proprietary system
   that mangles your data or makes it difficult to switch to another CMS in the
   future. Additionally, it’s open nature allows for more frequent integration
   with other software and web services — everything from
-  [Flickr](https://web.archive.org/web/20160803034413/http://www.flickr.com/) to
-  [Salesforce](https://web.archive.org/web/20160803034413/http://www.salesforce.com/),
-  with rumors of
-  [Democracy in Action](https://web.archive.org/web/20160803034413/http://www2.democracyinaction.org/)
+  [Flickr](https://www.flickr.com/) to
+  [Salesforce](https://www.salesforce.com/), with rumors of
+  [Democracy in Action](https://web.archive.org/web/20080806144433/http://www2.democracyinaction.org/)
   on the way.
 - Of special note, Drupal has tight integration with
-  [CiviCRM](https://web.archive.org/web/20160803034413/http://civicrm.org/) and
-  equally free, open-source contact relationship manager (also available for the
-  Joomla CMS). If you opt to use CiviCRM as your CRM for donors or members, you
-  can aggregate useful data like donations through the website, membership dues,
-  attendance at events, subscriptions to mailing lists and participation in
-  local groups, as well as the usual searching, sorting and categorizing of
-  contacts available in any CRM.
+  [CiviCRM](https://civicrm.org/) and equally free, open-source contact
+  relationship manager (also available for the
+  [Joomla CMS](https://www.joomla.org/)). If you opt to use CiviCRM as your CRM
+  for donors or members, you can aggregate useful data like donations through
+  the website, membership dues, attendance at events, subscriptions to mailing
+  lists and participation in local groups, as well as the usual searching,
+  sorting and categorizing of contacts available in any CRM.
 - For you geeks out there, it uses standards compliant (at least in core)
   semantic code and is built on the
-  [MVC](https://web.archive.org/web/20160803034413/http://en.wikipedia.org/wiki/Model-view-controller) model.
+  [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) model.
 
 Many prominent sites, both commercial and nonprofit, have been built on Drupal,
 including
-[MTV.co.uk](https://web.archive.org/web/20160803034413/http://www.mtv.co.uk/),
-[Sen. Chris Dodd](https://web.archive.org/web/20160803034413/http://dodd.senate.gov/),
-[The Onion](https://web.archive.org/web/20160803034413/http://www.theonion.com/)
+[MTV.co.uk](https://web.archive.org/web/20080801192132/http://www.mtv.co.uk/),
+[Sen. Chris Dodd](https://web.archive.org/web/20080805060144/http://dodd.senate.gov/),
+[The Onion](https://web.archive.org/web/20080108234632/http://www.theonion.com/content/index)
 and NetSquared itself
-([see a full list](https://web.archive.org/web/20160803034413/http://www.netsquared.org/)).
+([see a full list](https://web.archive.org/web/20080805075701/http://www.netsquared.org/)).
+
 One of my favorites, just recently released, is WITNESS’s
-[The Hub](https://web.archive.org/web/20160803034413/http://hub.witness.org/),
-built by the fine folks at
-[CivicActions](https://web.archive.org/web/20160803034413/http://www.civicactions.com/).
-(The Hub was also a
-[proposal](https://web.archive.org/web/20160803034413/http://www.netsquared.org/projects/proposals/hub)
+[The Hub](https://web.archive.org/web/20071220024321/http://hub.witness.org/),
+built by the fine folks at [CivicActions](https://civicactions.com/). (The Hub
+was also a
+[proposal](https://web.archive.org/web/20070817032657/http://www.netsquared.org/projects/proposals/hub)
 for the 2007 NetSquared Conference.) I think The Hub really shows the potential
 for social change that Drupal-powered sites can accomplish.
 
-When might you not want to use Drupal?
+**When might you not want to use Drupal?**
 
 - For those completely new to Drupal, it can have a significant learning curve.
   We’re not talking Photoshop here, but much of the terminology and structure of
@@ -167,23 +166,21 @@ When might you not want to use Drupal?
   might make more sense to go with a CMS you already know.
 - Drupal is an excellent platform for blogs, and allows you to build in a lot of
   community and social-networking features that can strengthen your blog’s
-  appeal. However,
-  [WordPress](https://web.archive.org/web/20160803034413/http://wordpress.org/),
-  another free open-source software, is specifically oriented toward blogs. The
-  learning curve is significantly less, and it’s somewhat easier to theme
-  (design). If you’re primarily a designer and you want a straightforward blog
-  site without having to ever see a line of PHP code, WordPress may well be a
-  better option. Like Drupal, it has an excellent community of developers and
-  contributers, and many of its plugins can also stretch its capabilities to
-  encompass social-networking-oriented functions.
+  appeal. However, [WordPress](https://wordpress.org/), another free open-source
+  software, is specifically oriented toward blogs. The learning curve is
+  significantly less, and it’s somewhat easier to theme (design). If you’re
+  primarily a designer and you want a straightforward blog site without having
+  to ever see a line of PHP code, WordPress may well be a better option. Like
+  Drupal, it has an excellent community of developers and contributers, and many
+  of its plugins can also stretch its capabilities to encompass
+  social-networking-oriented functions.
 - If you absolutely need a website tomorrow — a simple blog or “brochureware”
   site giving the basics of a new campaign and a place to post updates and press
-  releases, your best bet may be
-  [Joomla](https://web.archive.org/web/20160803034413/http://www.joomla.org/).
-  Like Drupal and WordPress, it’s free, open-source and has lots of developers,
-  many of them involved in nonprofits and advocacy campaigns. It is somewhat
-  harder to design to not look like “a Joomla site” but there’s no question that
-  it’s faster to set up and publish a simple website.
+  releases, your best bet may be [Joomla](https://www.joomla.org/). Like Drupal
+  and WordPress, it’s free, open-source and has lots of developers, many of them
+  involved in nonprofits and advocacy campaigns. It is somewhat harder to design
+  to not look like “a Joomla site” but there’s no question that it’s faster to
+  set up and publish a simple website.
 - Free software is great and all, but if you have no budget and no design or
   programming resources in-house, you may want to stick with that commercial CMS
   you know — or even Dreamweaver or FrontPage sites. The cost of free software
@@ -208,9 +205,9 @@ When might you not want to use Drupal?
   guaranteed — that module you depend on might have a bug that doesn’t get fixed
   for six months. There are ways to help guard against this — for instance, by
   sticking to modules
-  [recommended](https://web.archive.org/web/20160803034413/http://www.lullabot.com/audiocast/drupal_podcast_no_40_top_40_projects)
+  [recommended](https://web.archive.org/web/20080805011707/http://www.lullabot.com/audiocast/drupal_podcast_no_40_top_40_projects)
   by
-  [others](https://web.archive.org/web/20160803034413/http://webpodge.com/2007/02/22/top-10-drupal-modules/),
+  [others](https://web.archive.org/web/20080803004646/http://webpodge.com/2007/02/22/top-10-drupal-modules/),
   and checking to see how often past releases have come out, but it’s definitely
   something to consider. In all of the sites I’ve built Drupal on, only one
   mission-critical item has ever had a serious bug that took a couple of months
@@ -221,32 +218,30 @@ When might you not want to use Drupal?
 
 ### Drupal Resources for Nonprofits
 
-[Drupal for Good](https://web.archive.org/web/20160803034413/http://groups.drupal.org/drupal-for-good)
-is the primary Drupal-centered site for nonprofit and charitable discussions.
-(For the mischievous, there’s also
-[Drupal for Evil](https://web.archive.org/web/20160803034413/http://groups.drupal.org/drupal-for-evil).)
-There are plenty of
-[geographically-based Drupal groups](https://web.archive.org/web/20160803034413/http://tinyurl.com/35g76u)
+[Drupal for Good](https://groups.drupal.org/drupal-for-good) is the primary
+Drupal-centered site for nonprofit and charitable discussions. (For the
+mischievous, there’s also
+[Drupal for Evil](https://groups.drupal.org/drupal-for-evil).) There are plenty
+of
+[geographically-based Drupal groups](https://groups.drupal.org/og/all?filter0=&filter1=141&filter2=**ALL**)
 — see if there’s one near you!
 
 There’s lots of general Drupal support out there, including the
-[handbook documentation](https://web.archive.org/web/20160803034413/http://drupal.org/handbooks),
-[mailing lists](https://web.archive.org/web/20160803034413/http://drupal.org/handbooks),
-[IRC](https://web.archive.org/web/20160803034413/http://drupal.org/node/108355),
-[forums](https://web.archive.org/web/20160803034413/http://drupal.org/forum) and
-[blogs](https://web.archive.org/web/20160803034413/http://drupal.org/planet).
-(If you have questions about a specific module, the best practice is to go to
-that module’s project page on Drupal and post an issue — among other things,
-it’s far more likely your questions or concerns will be answered than if you
-post on the general forums!) There are also
-[books on Drupal](https://web.archive.org/web/20160803034413/http://drupal.org/node/42200)
-as well as fee-based training from groups like
-[Lullabot](https://web.archive.org/web/20160803034413/http://www.lullabot.com/training).
+[handbook documentation](https://web.archive.org/web/20080629032329/http://drupal.org/handbooks),
+[mailing lists](https://web.archive.org/web/20080612200622/http://drupal.org/lists),
+[IRC](https://drupal.org/node/108355), [forums](https://www.drupal.org/forum)
+and [blogs](https://www.drupal.org/planet). (If you have questions about a
+specific module, the best practice is to go to that module’s project page on
+Drupal and post an issue — among other things, it’s far more likely your
+questions or concerns will be answered than if you post on the general forums!)
+There are also [books on Drupal](https://www.drupal.org/books) as well as
+fee-based training from groups like
+[Lullabot](https://web.archive.org/web/20080804225909/http://www.lullabot.com/training).
 
 Want even more? Try the weekly
-[Lullabot Podcast](https://web.archive.org/web/20160803034413/http://www.lullabot.com/podcast)
+[Lullabot Podcast](https://web.archive.org/web/20080108134222/http://www.lullabot.com/podcast)
 or browse through the step-by-step
-[Drupal Dojo screencasts](https://web.archive.org/web/20160803034413/http://www.drupaldojo.com/).
+[Drupal Dojo screencasts](https://web.archive.org/web/20071230220904/http://drupaldojo.com/).
 One of Drupal’s strengths is its vibrant community!
 
 I’ll be posting more about how Drupal can be useful to nonprofits — including
