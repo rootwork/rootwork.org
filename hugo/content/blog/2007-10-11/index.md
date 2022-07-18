@@ -175,11 +175,13 @@ more lasting change.
 ### Previous Articles
 
 - [Using Social Networking to Stop Genocide](https://web.archive.org/web/20070612180331/http://www.idealware.org/articles/social_networking_genocide.php)
-  (Idealware), on the origins of GI-Net’s approach
+  (Idealware), on the origins of GI-Net’s approach.
 - [Bottom-up social networking interview](/blog/2006/12/theory-bottom-social-networking),
   on why MySpace isn’t like banner ads (see the second half).
 - [Leveraging Social Networks for Progressive Organizing](https://web.archive.org/web/20080724202531/http://www.americanprogressaction.org/events/2007/noi.html)
-  (New Organizing Institute), a video of a panel discussion I was on talking
-  about the possibilities for nonprofits using social networks
+  (New Organizing Institute), a panel discussion I was on talking about the
+  possibilities for nonprofits using social networks. Sadly the video is no
+  longer online, but you can read
+  [this write-up of the panel](http://www.ddmcd.com/managing-technology/nonprofits-and-the-future-of-social-networking.html).
 - [Notes from NTC: Leveraging the power of participatory media and the future of online outreach](/blog/2007/04/notes-ntc-participatory-media-future-online-outreach),
-  on the related topic of user-generated media campaigns
+  on the related topic of user-generated media campaigns.
