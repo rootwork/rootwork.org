@@ -32,7 +32,7 @@ showShare: true
 
 featureImage: '787-first-class_flickr-john_pozadzides.jpg' # Top image on post.
 featureImageShade: true # Add a translucent shade to the image to make overlaid text easier to read.
-# featureImageAlt: 'Description of image' # Alternative text for featured image.
+featureImageAlt: 'A first-class flight' # Alternative text for featured image.
 # featureImageCreditFlickr: 'username'
 featureImageCreditCustom:
   'Top image credit Flickr user [John
