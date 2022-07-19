@@ -80,7 +80,9 @@ At the moment, Google Plus is only designed to have profiles for people, similar
 to core Facebook profiles. Business profiles, like Facebook Pages, are likely
 coming in the future. In the meantime you could try to circumvent this by
 creating a "person" with the name of an organization, but just like with
-Facebook, that risks having your profile deleted. (More on that in a moment.)
+Facebook, that
+[risks having your profile deleted](https://beth.typepad.com/beths_blog/2007/08/free-ranger-ric.html).
+(More on that in a moment.)
 
 One positive aspect of this is that it gets easier to organize among people you
 know. Until now, social networks have basically had two models: Public profiles
