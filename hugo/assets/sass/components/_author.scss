@@ -163,6 +163,7 @@
     margin: 0 0 0.5rem;
     background: var(--g-greenblue);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: clamp(2rem, 10vw, 3rem);
 
