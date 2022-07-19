@@ -2,7 +2,7 @@
 title: 'Can blogging stop genocide?'
 author: Ivan Boothe
 date: '2006-05-28'
-# lastmod: '2022-07-18' # Appends 'edited on' to the publish date
+lastmod: '2007-09-12' # Appends 'edited on' to the publish date
 
 slug: 'can-blogging-stop-genocide' # Recommended length is 3 to 5 words.
 aliases:
@@ -224,3 +224,9 @@ I would be happy to talk further with any of you about GI-Net or
 [our ideas](https://web.archive.org/web/20060706215202/http://www.genocideintervention.net/advocate/tenthings.php 'Ten things you can do right now to stop genocide!'),
 but this post is already mighty long, so I’ll stop here. Thanks again for
 allowing me to come, and I’m looking forward to seeing everyone!
+
+_Update, Sept. 12, 2007: This blog post has been adapted into a chapter of the
+book_
+[Online social networking](https://www.worldcat.org/title/online-social-networking/oclc/731757535&referer=brief_results)
+_(2008), edited by Sylvia Engdahl, under the title "Online social networking is
+being used to oppose genocide."_
