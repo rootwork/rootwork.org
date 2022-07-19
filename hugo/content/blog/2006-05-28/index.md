@@ -65,9 +65,9 @@ _Cross-posted to the
 [NetSquared blog](https://web.archive.org/web/20070419182635/http://netsquared.org/blog/quixotic/can-blogging-stop-genocide)._
 
 First, I want to thank NetSquared for offering me and the
-[Genocide Intervention Network](https://web.archive.org/web/20160709080631/http://www.genocideintervention.net/ "Visit the Genocide Intervention Network's website")
+[Genocide Intervention Network](https://web.archive.org/web/20060707132744/http://www.genocideintervention.net/index.php "Visit the Genocide Intervention Network's website")
 the opportunity to attend this
-[critical event](https://web.archive.org/web/20160709080631/http://netsquared.org/2006/conference '2006 NetSquared Conference').
+[critical event](https://web.archive.org/web/20061031234727/http://netsquared.org/2006/conference '2006 NetSquared Conference').
 I had written out my introduction earlier this week, but due to a browser mishap
 lost nearly all of it and haven’t had time to re-write it until now.
 
@@ -75,7 +75,7 @@ GI-Net is a nonprofit based in DC that is a little more than two years old. We
 began as a student group at Swarthmore College with an idea: to change the way
 the world responds to genocide. In her groundbreaking and Pulitzer Prize–winning
 book, _‘A Problem From Hell’: America and the Age of Genocide_,
-[Samantha Power](https://web.archive.org/web/20160709080631/http://www.thenation.com/doc/20060605/power 'Read a recent commencement speech by Samantha Power')
+[Samantha Power](https://www.thenation.com/article/archive/why-cant-we/ 'Read a recent commencement speech by Samantha Power')
 surveys the U.S. response to genocides in the twentieth century and discovers
 that, above all, the reason the United States so often failed to act, or to act
 too late or ineffectively, was simply because there was no political will. In
@@ -87,16 +87,16 @@ As a result of our origins as a student group, we have a strong history in using
 online social networking and viral campaigns, and this continues even as we
 branch out into other constituencies. In our first year of existence, we raised
 a
-[quarter-million dollars](https://web.archive.org/web/20160709080631/http://www.genocideintervention.net/donate/info.php "Learn more about GI-Net's fundraising for peacekeepers")
+[quarter-million dollars](https://web.archive.org/web/20060709042957/http://www.genocideintervention.net/donate/info.php "Learn more about GI-Net's fundraising for peacekeepers")
 for peacekeepers in Darfur — the only NGO to raise money for protection rather
 than humanitarian aid — primarily through student networks, both actual and
 virtual. In my work for GI-Net, I am heavily influenced by
-[Howard Rheingold](https://web.archive.org/web/20160709080631/http://www.rheingold.com/ "Howard Rheingold's website"),
+[Howard Rheingold](https://rheingold.com/ "Howard Rheingold's website"),
 Christian Crumlish’s
-[_The Power of Many_](https://web.archive.org/web/20160709080631/http://thepowerofmany.com/ "'The Power of Many' book and website"),
-[Marty Kearns](https://web.archive.org/web/20160709080631/http://www.network-centricadvocacy.net/ "Marty Kearns' blog")
+[_The Power of Many_](https://web.archive.org/web/20060707224126/http://thepowerofmany.com/ "'The Power of Many' book and website"),
+[Marty Kearns](https://web.archive.org/web/20060710192840/http://www.network-centricadvocacy.net/ "Marty Kearns' blog")
 and
-[Network-Centric Advocacy](https://web.archive.org/web/20160709080631/http://netcentriccampaigns.org/ 'Netcentric Campaigns')
+[Network-Centric Advocacy](https://netcentriccampaigns.org/ 'Netcentric Campaigns')
 and similar movements.
 
 How can online activism build a movement that prevents and stops genocide?
@@ -107,15 +107,15 @@ This might get a bit long, so:
 ### First, a little background…
 
 I am a self-taught
-[web developer](https://web.archive.org/web/20160709080631/http://quixotic1.com/ 'My website, quixotic1.com')
+[web developer](https://web.archive.org/web/20070207093051/http://quixotic1.com/ 'My website, quixotic1.com')
 and artist (digitally and otherwise) with a strong interest in peacebuilding,
 community organizing and empowerment. My major at Swarthmore was not
 computer-related but rather peace and conflict studies, for which I wrote a
 thesis on
-[third-party nonviolent intervention organizations](https://web.archive.org/web/20160709080631/http://quixotic1.com/tpni 'Read more about the thesis').
+[third-party nonviolent intervention organizations](https://web.archive.org/web/20080828193419/http://quixoticlife.net/tpni 'Read more about the thesis').
 
 While at Swarthmore I was involved with a number of campaigns, most notably
-[Why War?](https://web.archive.org/web/20160709080631/http://why-war.org/ 'Visit Why War?').
+[Why War?](https://web.archive.org/web/20040113040820/http://why-war.com/ 'Visit Why War?').
 Why War? was a prominent site for news and analysis against the war (first
 Afghanistan, and then Iraq). Its database from 2001–2004 is the most
 comprehensive accounting of articles and opinions on the war, resistance to it
@@ -128,24 +128,24 @@ states about the security of its machines, had violated contracts with states by
 installing new software that had not been certified, and had knowingly
 implemented voting systems with severe security vulnerabilities. Investigative
 journalist
-[Bev Harris](https://web.archive.org/web/20160709080631/http://www.blackboxvoting.org/ 'Bev Harris and Black Box Voting')
-and the UK
-[_Independent_](https://web.archive.org/web/20160709080631/http://www.why-war.com/news/2003/10/14/allthepr.html "Article: All the President's Votes?")
+[Bev Harris](https://blackboxvoting.org/ 'Bev Harris and Black Box Voting') and
+the UK
+[_Independent_](https://web.archive.org/web/20040803082657/http://www.why-war.com/news/2003/10/14/allthepr.html "Article: All the President's Votes?")
 had documented some of the serious problems, but few had taken notice, and
 Harris had been repeatedly threatened by her ISP, fearful of repercussions from
 Diebold’s lawyers.
 
 A member of Why War? decided to
-[post an archive](https://web.archive.org/web/20160709080631/http://why-war.com/features/2003/10/diebold.html 'View the Diebold files')
+[post an archive](https://web.archive.org/web/20040712083338/http://www.why-war.com/features/2003/10/diebold.html 'View the Diebold files')
 of the internal files on his website. After Swarthmore threatened to shut off
 our Internet access in the face of baseless copyright infringement claims from
 Diebold, we initiated a global campaign of electronic civil disobedience, in
 which students at universities would post mirrors of the files on their own
 servers, staying ahead of each specious take-down request. Simultaneously, our
 friends in what would become
-[FreeCulture.org](https://web.archive.org/web/20160709080631/http://www.freeculture.org/ 'FreeCulture.org')
+[FreeCulture.org](https://web.archive.org/web/20060707010513/http://www.freeculture.org/ 'FreeCulture.org')
 sued Diebold through the
-[Electronic Frontier Foundation](https://web.archive.org/web/20160709080631/http://www.eff.org/legal/ISP_liability/OPG_v_Diebold/20031103_eff_pr.php 'Learn more about the Diebold case')
+[Electronic Frontier Foundation](https://www.eff.org/press/archives/2003/11/03 'Learn more about the Diebold case')
 for abusive copyright threats.
 
 The combination of civil disobedience and civil action paid off handsomely.
@@ -160,17 +160,13 @@ So how does the Genocide Intervention Network use the Internet to effect social
 change? There are three primary ways.
 
 First, we
-[raise money online](https://web.archive.org/web/20160709080631/http://www.genocideintervention.net/donate/ 'Learn more about donating to GI-Net')
+[raise money online](https://web.archive.org/web/20060118220930/http://www.genocideintervention.net/donate/ 'Learn more about donating to GI-Net')
 directly for peacekeepers in Darfur. This is unprecedented — never before has
 the average person been able to directly affect human security in the midst of a
 genocide. We raise money through a variety of techniques such as
-[virtual house parties](https://web.archive.org/web/20160709080631/http://www.genocideintervention.net/fundraise/virtual.php 'Learn about virtual house parties')
-(a favorite among
-[Facebook](https://web.archive.org/web/20160709080631/http://rootwork.org/category/tags/facebook)
-and
-[MySpace](https://web.archive.org/web/20160709080631/http://rootwork.org/category/tags/myspace)
-users),
-[dinners for Darfur](https://web.archive.org/web/20160709080631/http://www.genocideintervention.net/fundraise/dinners.php 'Learn about dinners for Darfur')
+[virtual house parties](https://web.archive.org/web/20060706215139/http://www.genocideintervention.net/fundraise/virtual.php 'Learn about virtual house parties')
+(a favorite among Facebook and MySpace users),
+[dinners for Darfur](https://web.archive.org/web/20060706215126/http://www.genocideintervention.net/fundraise/dinners.php 'Learn about dinners for Darfur')
 and old-fashioned member volunteering. (A piano teacher in Utah giving two
 weeks’ proceeds; a “battle of the bands” fundraiser in California; a bat mitzvah
 in New Jersey; a frat party in Massachusetts.)
@@ -178,7 +174,7 @@ in New Jersey; a frat party in Massachusetts.)
 Our second component is education. People can’t act against genocide unless they
 know about it, which is why we partnered with the American Progress Action Fund
 in 2005 to launch the
-[Be A Witness campaign](https://web.archive.org/web/20160709080631/http://beawitness.org/ 'Visit BeAWitness.org'),
+[Be A Witness campaign](https://web.archive.org/web/20060703175035/http://beawitness.org/splash/ 'Visit BeAWitness.org'),
 urging the news media to adequately cover the crisis in Darfur. Our analysis
 showed that in June 2005, the major networks ran 50 times as many stories about
 Michael Jackson and 12 times as many stories about Tom Cruise as about the
@@ -186,22 +182,21 @@ genocide in Darfur. In fact, in all of 2005 CBS ran just two minutes — total �
 on the issue, a fact that motivated more than 30,000 viewers to take action
 through the viral video and website. Because of the paltry news coverage, we
 also issue
-[weekly news reports](https://web.archive.org/web/20160709080631/http://www.genocideintervention.net/educate/darfurnews/ 'Read the latest report from Darfur')
+[weekly news reports](https://web.archive.org/web/20060706214512/http://www.genocideintervention.net/educate/darfurnews/ 'Read the latest report from Darfur')
 from the ground in Darfur.
 
 Finally, we give our members the tools to advocate for protection in the face of
 genocide. We use
-[Democracy in Action](https://web.archive.org/web/20160709080631/http://www.democracyinaction.org/dia/organizationsORG/ginetwork/campaign.jsp?campaign_KEY=3407 'Read our most recent advocacy campaign')
+[Democracy in Action](https://web.archive.org/web/20060710155602/http://www.democracyinaction.org/dia/organizationsORG/ginetwork/campaign.jsp?campaign_KEY=3407 'Read our most recent advocacy campaign')
 to direct our national campaigns, and work closely with the
-[Sudan divestment task force](https://web.archive.org/web/20160709080631/http://www.genocideintervention.net/advocate/divestment/ 'Learn more about divestment from Sudan')
+[Sudan divestment task force](https://web.archive.org/web/20060707032526/http://www.genocideintervention.net/advocate/divestment/ 'Learn more about divestment from Sudan')
 at the state level. In April, we brought more than 850 students to Washington,
 D.C. as part of the
-[Power to Protect: D.C. to Darfur](https://web.archive.org/web/20160709080631/http://www.powertoprotect.org/ "Learn more about 'P2P'")
+{{< deadlink "Power to Protect: D.C. to Darfur" "dl://www.powertoprotect.org/" "Learn more about 'P2P'" >}}
 weekend. The P2P website, which uses the
-[Drupal](https://web.archive.org/web/20160709080631/http://drupal.org/ 'Drupal.org')
-open-source community platform, is key to sustaining these activists through the
-summer, when they will act as the catalysts for local anti-genocide groups in
-their hometowns.
+[Drupal](https://drupal.org/ 'Drupal.org') open-source community platform, is
+key to sustaining these activists through the summer, when they will act as the
+catalysts for local anti-genocide groups in their hometowns.
 
 ### Coming up next
 
