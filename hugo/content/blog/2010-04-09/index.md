@@ -205,13 +205,14 @@ _How this relates to online activism:_ **Seek to put yourself out of a job.**
 The best online campaigns are the ones that are self-sustaining. Encourage those
 who are taking the most action to begin to brainstorm new ideas and actions for
 the campaign. Reward people who are doing the most recruiting, and make them
-feel that they’re a part of the “core” of the organizing. For nonprofits — and I
-know this will be hard to hear — stop pretending that you’re the only
-organization active on the issue. Support your members who become active in
-allied groups and consider working in coalitions early and often. Not only will
-this cement your supporters’ dedication to the cause, it will build the identity
-of a long-term movement, rather than a limited “card-carrying member” view of
-participation.
+feel that they’re a part of the “core” of the organizing.
+
+For nonprofits — and I know this will be hard to hear — stop pretending that
+you’re the only organization active on the issue. Support your members who
+become active in allied groups and consider working in coalitions early and
+often. Not only will this cement your supporters’ dedication to the cause, it
+will build the identity of a long-term movement, rather than a limited
+“card-carrying member” view of participation.
 
 ### Help continue this conversation
 
@@ -219,6 +220,28 @@ Below, I’ve embedded the slides of our presentation, which goes beyond the
 things I’ve discussed above and includes an exciting interactive workshop
 component — so if you’re at NTC,
 [please do stop by](https://web.archive.org/web/20120202003828/https://www.ntenonline.org/eweb/DynamicPage.aspx?webcode=SessionDetails&ses_key=9e27f6a5-1720-4ad1-8ee0-058a2260bcbb 'View time, location and other information on this session')!
+
+And as I wrote awhile back
+[in a similar discussion on Beth Kanter's blog](https://beth.typepad.com/beths_blog/2009/06/listening-leads-to-engagement-relationship-models.html):
+
+> The old model of nonprofit/social change theory is that the organization has
+> the power. You sign up with an organization _in order to_ have an impact; the
+> organization mobilizes its supporters successfully based on their numbers but
+> fundamentally the strategy is coming from the top.
+>
+> The new model of social change embodied in the social web is the wisdom of the
+> network. The power isn't inherent in the organization though they may act as
+> the catalyst. In this case people become part of the organization _as part of
+> the process_ of having an impact. Indeed, many of the most effective
+> supporters may be "outside" the organization on paper. The value comes from
+> the network rather than the membership.
+
+So in some ways, the dynamics of social media is actually driving us toward more
+sustainable, honest organizing, in which advocacy groups can provide expertise,
+training, resources and education, but it's the grassroots that is mobilizing to
+effect change. Looked at this way, a lot of day-to-day online organizers have
+already taken up the best parts of offline community organizing -- and it's on
+the "professional activists" to catch up.
 
 ---
 
