@@ -206,9 +206,9 @@ moved to Drupal to allow our members to connect with local leaders and
 organizations, and concretely affect the direction of the national campaigns.
 
 A photo petition, using
-[ForwardTrack](https://web.archive.org/web/20160709080631/http://forwardtrack.eyebeamresearch.org/ 'Learn about ForwardTrack')
+[ForwardTrack](https://web.archive.org/web/20060707182012/http://forwardtrack.eyebeamresearch.org/ 'Learn about ForwardTrack')
 and our
-[Flickr](https://web.archive.org/web/20160709080631/http://www.flickr.com/photos/genocideintervention/ 'See our most recent photos on Flickr')
+[Flickr](https://flickr.com/photos/genocideintervention 'See our most recent photos on Flickr')
 account, will put a human face on the victims in Darfur. Viewers will be asked
 to upload images of themselves holding a sign with — not a comment or a pledge —
 but the name of one of the hundreds of thousands of victims in Darfur. These
@@ -221,6 +221,6 @@ do just that. Members will be able to distribute information about the race and
 GI-Net, collect pledges online, and then follow-up with donors after the race.
 
 I would be happy to talk further with any of you about GI-Net or
-[our ideas](https://web.archive.org/web/20160709080631/http://www.genocideintervention.net/advocate/tenthings.php 'Ten things you can do right now to stop genocide!'),
+[our ideas](https://web.archive.org/web/20060706215202/http://www.genocideintervention.net/advocate/tenthings.php 'Ten things you can do right now to stop genocide!'),
 but this post is already mighty long, so I’ll stop here. Thanks again for
 allowing me to come, and I’m looking forward to seeing everyone!
