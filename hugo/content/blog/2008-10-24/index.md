@@ -74,12 +74,18 @@ year: '2008'
 month: '2008-10'
 ---
 
-In 2008, I spoke at the
-[Democracy in Action Community Conference](https://web.archive.org/web/20130217190830/http://salsa.democracyinaction.org/o/103/t/6267/content.jsp?content_KEY=4035)
+I spoke at the
+[2008 Democracy in Action Community Conference](https://web.archive.org/web/20130217190830/http://salsa.democracyinaction.org/o/103/t/6267/content.jsp?content_KEY=4035)
 about the Genocide Intervention Network’s use of social networking and social
 media to achieve our goals in advocacy, fundraising and membership development.
 
 [Download a PDF of the presentation slides.](2008_dia_social-networks-social-change.pdf)
+
+_Update, Nov. 12, 2008: Beth Kanter has
+[written up a summary of this presentation over on her blog](https://beth.typepad.com/beths_blog/2008/11/social-networks-for-social-change-ivan-boothe-knows-what-he-is-talking-about.html).
+Thanks, Beth! Be sure to check out her
+[We Are Media wiki](https://web.archive.org/web/20090220142359/https://www.wearemedia.org/Tactical+Track+Module+5)
+for more resources and stories like this._
 
 ### Using Social Networks for Social Change: Facebook, MySpace and More
 

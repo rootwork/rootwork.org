@@ -2,7 +2,7 @@
 title: 'Social change takes more than social media'
 author: Ivan Boothe
 date: '2009-05-25'
-# lastmod: '2022-07-14' # Appends 'edited on' to the publish date
+lastmod: '2009-07-05' # Appends 'edited on' to the publish date
 
 slug: 'social-change-takes-more-than-social-media' # Recommended length is 3 to 5 words.
 aliases:
@@ -179,3 +179,7 @@ end goal, the social change. Social justice organizers are a pretty creative
 bunch. Throughout history, they've taken a wide variety of technologies and used
 them strategically to move their campaigns forward. I have no doubt social media
 has and will become one tool in many organizers' toolbelts.
+
+_Update, July 5, 2009: This post has now been
+[cross posted to Beth Kanter's blog](https://beth.typepad.com/beths_blog/2009/07/guest-post-by-ivan-boothe-social-change-takes-more-than-social-media.html).
+Thanks for the invitation, Beth!_
