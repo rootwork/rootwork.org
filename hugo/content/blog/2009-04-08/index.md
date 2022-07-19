@@ -3,7 +3,7 @@ title:
   "The fire and the food: Why there's no such thing as a Twitter revolution"
 author: Ivan Boothe
 date: '2009-04-08'
-# lastmod: '2022-07-14' # Appends 'edited on' to the publish date
+lastmod: '2009-04-13' # Appends 'edited on' to the publish date
 
 slug: 'fire-food-why-theres-no-such-thing-twitter-revolution' # Recommended length is 3 to 5 words.
 aliases:
@@ -198,5 +198,9 @@ must be laid out first.
 which technologies will best cultivate the fire within your supporters to
 achieve the social change you seek.**
 
-_Update: I misattributed something to Jon Pincus that was actually written by
-Evgeny Morozov. It’s fixed, above._
+_Update, April 9, 2009: I misattributed something to Jon Pincus that was
+actually written by Evgeny Morozov. It’s fixed, above._
+
+_Update, April 13, 2009: More great coverage and discussion, as always,
+[at Beth Kanter's blog](https://beth.typepad.com/beths_blog/2009/04/twitter-for-activism-tool-vs-strategy-debate-and-a-new-twitter-activism-guide.html),
+which also excerpts part of the article above._
