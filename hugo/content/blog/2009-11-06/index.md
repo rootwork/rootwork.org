@@ -127,6 +127,17 @@ engage members**. There was less chance for engagement on MySpace; though
 supporters could still put up a badge demonstrating their support and make
 donations, in my experience those were actually the least useful parts of
 Causes.
+[As I wrote earlier this year](https://beth.typepad.com/beths_blog/2009/04/hello-washington-post-dolllars-per-facebook-donor-is-not-the-right-metric-for-success.html):
+
+> Someone who expects Causes — or any social networking approach — to replace
+> their development director doesn’t understand the nature of social networks.
+> It’s not about building a more effective ATM — sorry, “donor list” — it’s
+> about cultivating relationships with your most passionate supporters, giving
+> them ways to speak in their own voice and connecting them with other people.
+>
+> Most young folks who are on social networks get this, since it’s how they’re
+> relating socially on these networks already. (As danah boyd has said, “We’re
+> not addicted to computers, we’re addicted to friends.”)
 
 Again, I suspect this was a limitation imposed by MySpace, so I don’t
 necessarily fault Causes. The lesson here, though, is that **a fundraising
