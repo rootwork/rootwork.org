@@ -1,5 +1,5 @@
 ---
-title: 'Using Social Networks for Social Change: Facebook, MySpace and More'
+title: 'Using social networks for social change: Facebook, MySpace and more'
 author: Ivan Boothe
 date: '2008-10-24'
 lastmod: '2022-07-14' # Appends 'edited on' to the publish date

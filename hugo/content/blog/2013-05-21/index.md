@@ -21,7 +21,7 @@ summary: "SMACSS, or Scalable and Modular Architecture for CSS, was developed by
   adopting a SMACSS approach to its CSS." # For the post in lists.
 
 draft: false # Change to 'false' to publish this post.
-featured: true
+featured: false
 toc: false
 
 showDate: true

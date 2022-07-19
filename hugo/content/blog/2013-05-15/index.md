@@ -17,7 +17,7 @@ summary: '“By necessity, base themes make assumptions about how teams and
   front-end projects.”' # For the post in lists.
 
 draft: false # Change to 'false' to publish this post.
-featured: true
+featured: false
 toc: false
 
 showDate: true

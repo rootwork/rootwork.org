@@ -17,7 +17,7 @@ summary: 'Devsigner is celebrating the cross-overs, the multi-disciplinarians,
   who want to develop some new left-right brain skills.' # For the post in lists.
 
 draft: false
-featured: true
+featured: false
 toc: false
 
 showDate: true

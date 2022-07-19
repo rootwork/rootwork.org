@@ -1,6 +1,6 @@
 ---
 title:
-  'Gurus Are Not Enough: A Call for Organizers and Organizing in Social Media'
+  'Gurus are not enough: A call for organizers and organizing in social media'
 author: Ivan Boothe
 date: '2009-09-03'
 # lastmod: '2022-07-14' # Appends 'edited on' to the publish date

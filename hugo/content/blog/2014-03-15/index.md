@@ -66,6 +66,13 @@ Nonprofit Technology Conference's Ignite talks. You can
 or [download the PDF](2015-03-06_technology-social-change.pdf), but the slides
 are simply images._
 
+In many ways this is a retelling of
+[an article I wrote back in 2010](/blog/2010/04/what-online-activism-can-learn-from-community-organizing/)
+about online and offline organizing, with a more visual focus. If you prefer
+words to images, the original might serve you better.
+
+### Online advocacy and community organizing
+
 My background is in community organizing and social movement theory, and that’s
 what I’d like to talk a little bit about today.
 
