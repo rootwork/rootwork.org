@@ -45,8 +45,8 @@ showRelatedInArticle: false # Override global value for showing related posts in
 
 categories:
   - online advocacy
-tags:
   - activism
+tags:
   - communications
   - Facebook
   - Twitter

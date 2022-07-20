@@ -41,7 +41,7 @@ showRelatedInArticle: false # Override global value for showing related posts in
 
 categories:
   - frontend development
-  - a11y
+  - accessibility
 tags:
   - Drupal
 keywords: # For SEO. Generally a combination of categories and tags.

@@ -42,7 +42,6 @@ showRelatedInArticle: false # Override global value for showing related posts in
 categories:
   - frontend development
 tags:
-  - Devsigner
   - Drupal
 keywords: # For SEO
   - Drupal

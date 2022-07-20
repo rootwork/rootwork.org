@@ -49,6 +49,7 @@ categories:
   - nonprofit technology
 tags:
   - social change
+  - Flickr
 keywords: # For SEO. Generally a combination of categories and tags.
   - social media
   - online advocacy

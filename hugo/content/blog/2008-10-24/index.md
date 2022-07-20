@@ -51,7 +51,6 @@ categories:
 tags:
   - Facebook
   - Flickr
-  - LiveJournal
   - MySpace
   - Twitter
   - YouTube
@@ -62,7 +61,6 @@ keywords: # For SEO. Generally a combination of categories and tags.
   - nptech
   - Facebook
   - Flickr
-  - LiveJournal
   - MySpace
   - Twitter
   - YouTube

@@ -40,6 +40,7 @@ categories:
   - activism
 tags:
   - social change
+  - communications
 keywords: # For SEO. Generally a combination of categories and tags.
   - nonprofit technology
   - nptech
@@ -47,6 +48,7 @@ keywords: # For SEO. Generally a combination of categories and tags.
   - social change
   - social justice
   - PJSA
+  - communications
 
 # Archive taxonomy terms (auto-generated)
 year: '2009'
