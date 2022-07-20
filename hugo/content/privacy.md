@@ -1,8 +1,8 @@
 ---
 title: Privacy policy
 author: Ivan Boothe
-date: '2022-02-01'
-effective_date: 'Feb. 1, 2022' # Used verbatim in the post
+date: '2022-07-01'
+effective_date: 'July 1, 2022' # Used verbatim in the post
 # lastmod: '2014-04-29' # Appends 'edited on' to the publish date
 
 slug: 'privacy'
@@ -22,10 +22,6 @@ showShare: false
 ---
 
 **Effective Date: {{< param effective_date >}}**
-
-Rootwork.org is committed to protecting the privacy of visitors to its website.
-We have established this privacy policy to explain what information we collect
-through our website and how it is used.
 
 Rootwork.org is authored in Hugo, a static-site generator with
 [a strong position on privacy](https://gohugo.io/about/hugo-and-gdpr/).
@@ -52,7 +48,8 @@ access, and pages viewed. If you are concerned about this data, consider
 When third-party social media is embedded (such as YouTube or Twitter) we use
 Hugo's "simple" and "do not track"
 [options](https://gohugo.io/about/hugo-and-gdpr/#the-privacy-settings-explained),
-although some forms of tracking from these networks may still slip through.
+although some forms of tracking from these networks may still slip through. See
+the next section for options on blocking these sites.
 
 If you click on social media icons to share content from this site or follow
 Rootwork.org, you may be tracked by these services as well.
