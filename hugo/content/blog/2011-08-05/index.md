@@ -44,9 +44,9 @@ showRelatedInArticle: false # Override global value for showing related posts in
 categories:
   - social media
   - nonprofit technology
+  - online advocacy
 tags:
   - Google Plus
-  - activism
   - social change
 keywords: # For SEO. Generally a combination of categories and tags.
   - social media
