@@ -6,8 +6,8 @@ date: '{{ .Date | dateFormat "2006-01-02" }}'
 
 slug: '{{ .Name }}' # Recommended length is 3 to 5 words.
 # aliases:
-description: 'Description' # For SEO and social media snippets.
-summary: 'Summary' # For the post in lists.
+description: "Description" # For SEO and social media snippets.
+summary: "Summary" # For the post in lists.
 
 draft: true # Change to 'false' to publish this post.
 featured: false
