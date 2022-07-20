@@ -1,7 +1,10 @@
 {{/* 1. Displaying intro description only if this is not the home page.
-  2. Removing auto-generated year and month archives.
-  3. Adding class="taxonomy_[[ $key ]]_group"
+  2. Making all sections collapsible.
+  3. Adding "sidebar_group" class and variants.
   4. Changing tag style from "upper" to "humanize" (all caps to initial caps)
+  5. Removing auto-generated month tags.
+  6. Moving auto-generated year tags to dedicated section.
+  7. Removing "show all" from tag limit, as tags are already collapsible.
 */}}
 {{ $s := site.Params }}
 <aside class="sidebar">
@@ -29,19 +32,19 @@
               src="{{ absURL $author.sm_photo }}"
               alt="{{ $author.name }} photo"
             />
-            <h2>{{ $author.name }}</h2>
+            <h3>{{ $author.name }}</h3>
           </div>
         {{- else }}
-          <h2>
-            {{ if $fullAuthor }}
-              {{ $author.name }}
-            {{ else }}
-              {{ $author }}
-            {{ end }}
-          </h2>
+          <h3>
+            {{- if $fullAuthor -}}
+              {{- $author.name -}}
+            {{- else -}}
+              {{- $author -}}
+            {{- end -}}
+          </h3>
         {{- end }}
         <div class="author_bio">
-          {{ markdownify $introDescription }}
+          {{- markdownify $introDescription -}}
         </div>
         {{- if ( ne $s.introURL false ) }}
           {{- $r := T "read_more" }}
@@ -58,8 +61,8 @@
 
     {{ if .Site.Params.sidebardisclaimer }}
       <div class="sidebardisclaimer">
-        <h2 class="mt-4">Disclaimer</h2>
-        {{ .Site.Params.disclaimerText }}
+        <h3>Disclaimer</h3>
+        <p>{{ .Site.Params.disclaimerText }}</p>
       </div>
     {{ end }}
 
@@ -69,25 +72,41 @@
     {{- end }}
     {{ if (and ($relatedInSidebar) (isset .Params "series") ) }}
       {{ $related := where .Site.RegularPages ".Params.series" "eq" .Params.series }}
-      <h2 class="mt-4">{{ T "series_posts" }}</h2>
-      <ul>
-        {{ range $related }}
-          <li>
-            <a href="{{ .Permalink }}" class="nav-link"
-              >{{ .Title | markdownify }}</a
-            >
-            >
-          </li>
-        {{ end }}
-      </ul>
+      <details open class="sidebar_group sidebar_group--series">
+        <summary>{{ T "series_posts" }}</summary>
+        <ul>
+          {{ range $related }}
+            <li>
+              <a href="{{ .Permalink }}" class="nav-link"
+                >{{ .Title | markdownify }}</a
+              >
+            </li>
+          {{ end }}
+        </ul>
+      </details>
     {{ end }}
 
     {{- $posts := where (where .Site.RegularPages "Permalink" "!=" .Permalink) "Type" "in" $s.mainSections }}
     {{- $featured := default 8 $s.numberOfFeaturedPosts }}
     {{- with first $featured (where $posts "Params.featured" true) }}
-      <h2 class="mt-4">{{ T "featured_posts" }}</h2>
-      <ul>
-        {{- range . }}
+      <details open class="sidebar_group sidebar_group--featured">
+        <summary>{{ T "featured_posts" }}</summary>
+        <ul>
+          {{- range . }}
+            <li>
+              <a href="{{ .Permalink }}" class="nav-link"
+                >{{ .Title | markdownify }}</a
+              >
+            </li>
+          {{- end }}
+        </ul>
+      </details>
+    {{- end }}
+    <details class="sidebar_group sidebar_group--recent">
+      <summary>{{ T "recent_posts" }}</summary>
+      <ul class="flex-column">
+        {{- $recent := default 8 $s.numberOfRecentPosts }}
+        {{- range first $recent $posts }}
           <li>
             <a href="{{ .Permalink }}" class="nav-link"
               >{{ .Title | markdownify }}</a
@@ -95,75 +114,50 @@
           </li>
         {{- end }}
       </ul>
-    {{- end }}
-    <h2 class="mt-4">{{ T "recent_posts" }}</h2>
-    <ul class="flex-column">
-      {{- $recent := default 8 $s.numberOfRecentPosts }}
-      {{- range first $recent $posts }}
-        <li>
-          <a href="{{ .Permalink }}" class="nav-link"
-            >{{ .Title | markdownify }}</a
-          >
-        </li>
-      {{- end }}
-    </ul>
+    </details>
     {{- $tagsLimit := (default 100 $s.numberOfTagsShown) }}
     {{- range $key, $value := .Site.Taxonomies }}
       {{- if ( ne $key "year" ) }}
         {{- if ( ne $key "month" ) }}
           {{- if gt $value 0 }}
-            <div class="taxonomy_{{ $key }}_group">
-              <h2 class="mt-4 taxonomy" id="{{ $key }}-section">
-                {{ T $key }}
-              </h2>
+            <details class="sidebar_group sidebar_group--{{ $key }}">
+              <summary id="{{ $key }}-section">{{ T $key }}</summary>
               <nav class="tags_nav">
                 {{- $onPageTags := $.Page.Params.tags }}
-                {{- $slicedTags := ($value.ByCount | first $tagsLimit) }}
+                {{- $slicedTags := ($value.ByCount) }}
                 {{- range $slicedTags }}
                   <a
                     href="{{ absLangURL $key }}/{{ (replace .Name "#" "%23") | urlize }}/"
                     class="post_tag button button_translucent"
                     title="View all content related to '{{ humanize .Name }}'"
                   >
-                    {{ humanize .Name }}
-                    <span class="button_tally">{{ .Count }}</span>
+                    <span class="tag_name">{{ humanize .Name }}</span>
+                    <span class="tag_tally">{{ .Count }}</span>
                   </a>
                 {{ end }}
-                {{ if gt (len $value.ByCount) $tagsLimit }}
-                  <br />
-                  <div class="post_tags_toggle button">
-                    {{ T (printf "all_%s" (lower $key)) }}
-                  </div>
-                  {{- $tagsInfo := newScratch }}
-                  <div class="post_tags">
-                    <div class="tags_list">
-                      {{- range $value.Alphabetical }}
-                        {{ $tagsInfo.Add "tagsInfo" (slice .Name .Count) }}
-                        <a
-                          href="{{ absLangURL $key }}/{{ (replace .Name "#" "%23") | urlize }}/"
-                          class="post_tag button button_translucent foo"
-                          data-position="{{ .Count }}"
-                          title="View all content related to '{{ humanize .Name }}'"
-                        >
-                          {{- humanize .Name -}}
-                          <span class="button_tally">{{ .Count }}</span>
-                        </a>
-                      {{ end }}
-                      <div class="tags_sort">
-                        <span title="sort alphabetically">[A~Z]</span
-                        ><span title="sort by count">[0~9]</span>
-                      </div>
-                      <span class="tags_hide"
-                        ><svg class="icon">
-                          <use xlink:href="#closeme"></use></svg
-                      ></span>
-                    </div>
-                  </div>
-                {{- end }}
               </nav>
-            </div>
+            </details>
           {{- end }}
         {{- end }}
+      {{- end }}
+      {{- if ( eq $key "year" ) }}
+        <details class="sidebar_group sidebar_group--{{ $key }}">
+          <summary id="{{ $key }}-section">Posts by year</summary>
+          <nav class="tags_nav">
+            {{- $onPageTags := $.Page.Params.tags }}
+            {{- $slicedTags := ($value.Alphabetical.Reverse) }}
+            {{- range $slicedTags }}
+              <a
+                href="{{ absLangURL $key }}/{{ (replace .Name "#" "%23") | urlize }}/"
+                class="post_tag post_tag--year button button_translucent"
+                title="View all content from {{ .Name }}"
+              >
+                {{ .Name }}
+                <span class="button_tally">{{ .Count }}</span>
+              </a>
+            {{- end }}
+          </nav>
+        </details>
       {{- end }}
     {{- end }}
   </section>

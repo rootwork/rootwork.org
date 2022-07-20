@@ -29,13 +29,46 @@
       }
     }
 
-    h2 {
+    h3,
+    summary {
+      font-family: var(--heading-font);
       font-size: 1.75rem;
       line-height: 1.1;
+      font-weight: bold;
       font-style: italic;
+      color: var(
+        --blue
+      ); // For browsers that don't render the gradient color on the marker
       background: var(--g-greenblue);
       background-clip: text;
+      -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+    }
+
+    .author_header h3 {
+      padding-top: 1.3333rem;
+    }
+
+    summary {
+      padding: 0.25rem 0;
+      border-bottom-width: 0.25rem;
+      border-bottom-style: dotted;
+      @include switch(border-bottom-color, var(--light), var(--pale-light));
+      cursor: pointer;
+
+      &::marker {
+        font-size: 85%;
+      }
+    }
+
+    details[open] summary {
+      margin-bottom: 1rem;
+      border-bottom-width: 0.5rem;
+      @include switch(border-bottom-color, #fff, var(--dark-green));
+    }
+
+    details {
+      margin: 1.5rem 0;
     }
 
     .author_bio {

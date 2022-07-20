@@ -1,64 +1,67 @@
 // Styles for all tag-like objects, which include both Hugo categories and Hugo tags
 
+%tag {
+  position: relative;
+  margin: 0.25rem 0 0;
+  padding: 0.25rem 0.5rem 0.3333rem 0.75rem;
+  border-width: 0;
+  border-radius: 0 0.3333rem 0.3333rem 0;
+  font-family: var(--content-font);
+  text-transform: capitalize;
+  color: var(--fg-color);
+  background-color: var(--bg-color);
+  transition: all;
+
+  @include focus(text-decoration, underline);
+
+  @include is-on {
+    background-color: var(--bg-hover-color);
+    color: var(--fg-hover-color);
+
+    &::before {
+      background-color: inherit;
+      color: inherit;
+    }
+  }
+
+  &::before {
+    --size: 0.75rem;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(
+      (var(--size) * -1) + 1px
+    ); // 1px fills gap rendered in some browsers
+    width: var(--size);
+    background-color: var(--bg-color);
+    clip-path: polygon(0 50%, 100% 0, 100% 100%);
+  }
+
+  &::after {
+    --size: 0.3333rem;
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.05rem;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.4);
+  }
+}
+
 .post_categories,
 .post_tags {
   .post_tag.button {
+    @extend %tag;
+    font-weight: normal;
     @include switch(--bg-color, var(--hazy-green), var(--dark-green));
     @include switch(--fg-color, var(--white), var(--light));
-    @include switch(--bg-hover-color, var(--pale-green), var(--light));
+    @include switch(--bg-hover-color, var(--pale-green), var(--white));
     @include switch(--fg-hover-color, var(--md-dark-green), var(--dark-green));
-
-    position: relative;
-    margin: 0.25rem 0 0;
-    padding: 0.25rem 0.5rem 0.3333rem 0.75rem;
-    border-width: 0;
-    border-radius: 0 0.3333rem 0.3333rem 0;
-    font-family: var(--content-font);
-    font-weight: normal;
-    text-transform: capitalize;
-    color: var(--fg-color);
-    background-color: var(--bg-color);
-    transition: all;
-    @include motion(transition-duration, 500ms);
-
-    @include focus(text-decoration, underline);
-
-    @include is-on {
-      background-color: var(--bg-hover-color);
-      color: var(--fg-hover-color);
-
-      &::before {
-        background-color: inherit;
-        color: inherit;
-      }
-    }
-
-    &::before {
-      --size: 0.75rem;
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: calc(var(--size) * -1);
-      width: var(--size);
-      background-color: var(--bg-color);
-      clip-path: polygon(0 50%, 100% 0, 100% 100%);
-      transition: inherit;
-    }
-
-    &::after {
-      --size: 0.3333rem;
-      content: '';
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 0.05rem;
-      width: var(--size);
-      height: var(--size);
-      border-radius: 50%;
-      background: #fff;
-      box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.4);
-    }
   }
 }
 
@@ -69,21 +72,56 @@
 // Tags in the sidebar
 
 .tags_nav .post_tag {
-  margin: 0.5rem 0.5rem 0.5rem 0;
-  padding-left: 1rem;
-  font-family: var(--content-font);
-  font-size: 0.95rem;
-  text-transform: capitalize;
-  @include switch(color, var(--dark-green), var(--light));
-  @include is-on(border-color, currentColor);
-  @include focus(text-decoration, underline);
+  @extend %tag;
+  @include switch(--bg-color, var(--blue));
+  @include switch(--fg-color, var(--white));
+  @include switch(--bg-hover-color, var(--pale-green), var(--white));
+  @include switch(--fg-hover-color, var(--md-dark-green), var(--dark-green));
+  margin-left: 1rem;
+  padding-top: 0.125rem;
+  padding-bottom: 0.16666rem;
+  font-size: 1rem;
+  font-weight: bold;
 
-  .button_tally {
+  .tag_name {
+    border-bottom: 1px var(--bg-color) solid;
+    transition: border-bottom-color;
+    @include motion(transition-duration, 500ms);
+  }
+
+  @include is-on {
+    border: none;
+
+    .tag_name {
+      border-bottom-color: currentColor;
+    }
+
+    .tag_tally {
+      color: var(--white);
+    }
+  }
+
+  // margin: 0.5rem 0.5rem 0.5rem 0;
+  // padding-left: 1rem;
+  // font-family: var(--content-font);
+  // font-size: 0.95rem;
+  // text-transform: capitalize;
+  // @include switch(color, var(--dark-green), var(--light));
+  // @include is-on(border-color, currentColor);
+  // @include focus(text-decoration, underline);
+
+  .tag_tally {
     margin: 0.5rem 0 0.5rem 0.5rem;
     padding: 0.2rem 0.5rem;
     font-family: var(--font);
+    font-weight: normal;
     font-size: 1rem;
     border-radius: 100%;
-    background-color: darken(map-get($color, bright-green), 12%);
+    background-color: var(--purple);
+    color: var(--white);
+
+    @include is-on {
+      color: var(--white);
+    }
   }
 }
