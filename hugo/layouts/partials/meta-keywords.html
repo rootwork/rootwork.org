@@ -16,23 +16,9 @@
   {{- $metaKeywords = $metaKeywords | append . -}}
 {{- end -}}
 
-{{/* Add meta keywords based on tags and categories. */}}
-{{- $addKeywords := dict
-  "accessibility"        "a11y"
-  "communications"       "online communications"
-  "community"            "communities"
-  "Drupal"               "Planet Drupal"
-  "frontend development" "frontend"
-  "Google Plus"          "Google+"
-  "nonprofit technology" "nptech"
-  "online advocacy"      "advocacy"
-  "open source"          "F/LOSS"
-  "social change"        "social justice"
--}}
-
 {{- with $metaKeywords -}}
-  {{/* Add keywords defined above. */}}
-  {{- range $key, $value := $addKeywords -}}
+  {{/* Add meta keywords based on tags and categories. */}}
+  {{- range $key, $value := $.Site.Data.keywords.additional -}}
     {{- if in $metaKeywords $key -}}
       {{- $metaKeywords = $metaKeywords | append $value -}}
     {{- end -}}
