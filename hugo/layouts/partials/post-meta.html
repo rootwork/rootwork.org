@@ -10,6 +10,10 @@
 */}}
 {{- $lastmod := .Lastmod.Format "2006-01-02" -}}
 {{- $date := .Date.Format "2006-01-02" -}}
+{{- $edited := false -}}
+{{- if ne $lastmod $date -}}
+  {{- $edited = true -}}
+{{- end -}}
 {{- $validCats := $.Site.Data.terms.categories -}}
 {{- $validTags := $.Site.Data.terms.tags -}}
 {{- $showShare := ne (.Param "showshare") false }}
@@ -42,17 +46,15 @@
           {{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) -}}
         </time>
       </a>
-      {{ if ne $lastmod $date }}
+      {{- if eq $edited true }}
         <span class="post_date__edit"
           >&nbsp;Edited on
           {{ .Lastmod.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) }}&nbsp;</span
         >
-      {{ else }}
-        {{/* No edits present. */}}
-      {{ end }}
+      {{- end }}
     {{- end }}
     {{- if $showReadTime }}
-      <span class="post_time"
+      <span class="post_time{{ if eq $edited true }}post-date-edited{{ end }}"
         >{{ if ($scratch.Get "writeSeparator") }}
           ·
         {{ end }}{{ T "reading_time" . }}</span
