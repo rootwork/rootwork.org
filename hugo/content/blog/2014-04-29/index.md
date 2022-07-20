@@ -43,9 +43,8 @@ categories:
   - frontend development
 tags:
   - Drupal
-keywords:# For SEO
-  # - Drupal
-  # - frontend development
+keywords: # Extra keywords in addition to the above, for SEO.
+  -
 
 # Archive taxonomy terms (auto-generated)
 year: '2014'

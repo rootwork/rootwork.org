@@ -52,13 +52,8 @@ categories:
 tags:
   - social change
   - community
-keywords: # For SEO. Generally a combination of categories and tags.
-  - nonprofit technology
-  - nptech
-  - social change
-  - social justice
-  - community
-  - communities
+keywords: # Extra keywords in addition to the above, for SEO.
+  -
 
 # Archive taxonomy terms (auto-generated)
 year: '2010'

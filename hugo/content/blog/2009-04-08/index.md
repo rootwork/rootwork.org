@@ -53,14 +53,8 @@ categories:
 tags:
   - Twitter
   - social change
-keywords: # For SEO. Generally a combination of categories and tags.
-  - activism
-  - social media
-  - nonprofit technology
-  - nptech
-  - Twitter
-  - social change
-  - social justice
+keywords: # Extra keywords in addition to the above, for SEO.
+  -
 
 # Archive taxonomy terms (auto-generated)
 year: '2009'

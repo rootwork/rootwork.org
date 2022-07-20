@@ -44,11 +44,8 @@ categories:
   - accessibility
 tags:
   - Drupal
-keywords: # For SEO. Generally a combination of categories and tags.
-  - frontend
-  - Drupal
-  - a11y
-  - accessibility
+keywords: # Extra keywords in addition to the above, for SEO.
+  -
 
 # Archive taxonomy terms (auto-generated)
 year: '2013'

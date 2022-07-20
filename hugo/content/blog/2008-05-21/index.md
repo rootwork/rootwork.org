@@ -50,14 +50,8 @@ tags:
   - social change
   - Facebook
   - MySpace
-keywords: # For SEO. Generally a combination of categories and tags.
-  - activism
-  - social change
-  - social justice
-  - nonprofit technology
-  - nptech
-  - Facebook
-  - MySpace
+keywords: # Extra keywords in addition to the above, for SEO.
+  -
 
 # Archive taxonomy terms (auto-generated)
 year: '2008'

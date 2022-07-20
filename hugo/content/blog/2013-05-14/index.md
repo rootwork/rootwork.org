@@ -43,10 +43,8 @@ categories:
 tags:
   - CSS
   - Drupal
-keywords: # For SEO. Generally a combination of categories and tags.
-  - frontend
-  - CSS
-  - Drupal
+keywords: # Extra keywords in addition to the above, for SEO.
+  - Sass
 
 # Archive taxonomy terms (auto-generated)
 year: '2013'

@@ -45,11 +45,8 @@ categories:
 tags:
   - communications
   - YouTube
-keywords: # For SEO. Generally a combination of categories and tags.
-  - online advocacy
-  - nonprofit technology
-  - nptech
-  - communications
+keywords: # Extra keywords in addition to the above, for SEO.
+  -
 
 # Archive taxonomy terms (auto-generated)
 year: '2007'

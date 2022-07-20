@@ -49,16 +49,8 @@ tags:
   - Google Plus
   - social change
   - privacy
-keywords: # For SEO. Generally a combination of categories and tags.
-  - social media
-  - nonprofit technology
-  - nptech
-  - Google Plus
-  - Google+
-  - activism
-  - social change
-  - social justice
-  - privacy
+keywords: # Extra keywords in addition to the above, for SEO.
+  -
 
 # Archive taxonomy terms (auto-generated)
 year: '2011'

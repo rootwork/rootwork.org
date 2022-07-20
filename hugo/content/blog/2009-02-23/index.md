@@ -52,14 +52,8 @@ categories:
 tags:
   - Facebook
   - social change
-keywords: # For SEO. Generally a combination of categories and tags.
-  - activism
-  - social media
-  - nonprofit technology
-  - nptech
-  - Facebook
-  - social change
-  - social justice
+keywords: # Extra keywords in addition to the above, for SEO.
+  -
 
 # Archive taxonomy terms (auto-generated)
 year: '2009'

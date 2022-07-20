@@ -47,9 +47,8 @@ showRelatedInArticle: false # Override global value for showing related posts in
 categories:
   - nonprofit technology
 tags:
-keywords: # For SEO. Generally a combination of categories and tags.
-  - nonprofit technology
-  - nptech
+  -
+keywords: # Extra keywords in addition to the above, for SEO.
   - Domain Registry of America
   - Domain Registry Services
 

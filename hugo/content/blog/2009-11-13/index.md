@@ -50,13 +50,8 @@ tags:
   - communications
   - Facebook
   - Twitter
-keywords: # For SEO. Generally a combination of categories and tags.
-  - online advocacy
-  - activism
-  - communications
-  - online communications
-  - Facebook
-  - Twitter
+keywords: # Extra keywords in addition to the above, for SEO.
+  -
 
 # Archive taxonomy terms (auto-generated)
 year: '2009'

@@ -44,15 +44,8 @@ tags:
   - community
   - Drupal
   - WordPress
-keywords: # For SEO. Generally a combination of categories and tags.
-  - open source
-  - F/LOSS
-  - nonprofit technology
-  - nptech
-  - community
-  - communities
-  - Drupal
-  - WordPress
+keywords: # Extra keywords in addition to the above, for SEO.
+  -
 
 # Archive taxonomy terms (auto-generated)
 year: '2009'

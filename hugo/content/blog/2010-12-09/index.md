@@ -44,11 +44,8 @@ categories:
   - nonprofit technology
 tags:
   - Facebook
-keywords: # For SEO. Generally a combination of categories and tags.
-  - social media
-  - nonprofit technology
-  - nptech
-  - Facebook
+keywords: # Extra keywords in addition to the above, for SEO.
+  -
 
 # Archive taxonomy terms (auto-generated)
 year: '2010'

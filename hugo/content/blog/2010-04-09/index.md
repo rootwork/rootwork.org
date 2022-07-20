@@ -47,15 +47,8 @@ categories:
 tags:
   - community
   - social change
-keywords: # For SEO. Generally a combination of categories and tags.
-  - online advocacy
-  - activism
-  - nptech
-  - community
-  - communities
+keywords: # Extra keywords in addition to the above, for SEO.
   - community organizing
-  - social change
-  - social justice
 
 # Archive taxonomy terms (auto-generated)
 year: '2010'

@@ -57,14 +57,8 @@ categories:
   - activism
 tags:
   - social change
-keywords: # For SEO. Generally a combination of categories and tags.
-  - social media
-  - nonprofit technology
-  - nptech
-  - online advocacy
-  - activism
-  - social change
-  - social justice
+keywords: # Extra keywords in addition to the above, for SEO.
+  -
 
 # Archive taxonomy terms (auto-generated)
 year: '2007'

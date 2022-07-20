@@ -51,15 +51,8 @@ tags:
   - Google Plus
   - Twitter
   - privacy
-keywords: # For SEO. Generally a combination of categories and tags.
-  - nonprofit technology
-  - nptech
-  - social media
-  - Facebook
-  - Google Plus
-  - Google+
-  - Twitter
-  - privacy
+keywords: # Extra keywords in addition to the above, for SEO.
+  -
 
 # Archive taxonomy terms (auto-generated)
 year: '2011'

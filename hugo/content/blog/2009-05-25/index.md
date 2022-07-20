@@ -46,11 +46,8 @@ categories:
   - social media
 tags:
   - social change
-keywords: # For SEO. Generally a combination of categories and tags.
-  - activism
-  - social media
-  - social change
-  - social justice
+keywords: # Extra keywords in addition to the above, for SEO.
+  -
 
 # Archive taxonomy terms (auto-generated)
 year: '2009'

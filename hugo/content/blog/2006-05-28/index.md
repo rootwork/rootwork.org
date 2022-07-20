@@ -50,12 +50,8 @@ categories:
 tags:
   - social change
   - Flickr
-keywords: # For SEO. Generally a combination of categories and tags.
-  - social media
-  - online advocacy
-  - nonprofit technology
-  - nptech
-  - social change
+keywords: # Extra keywords in addition to the above, for SEO.
+  -
 
 # Archive taxonomy terms (auto-generated)
 year: '2006'

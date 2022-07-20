@@ -44,10 +44,9 @@ categories:
   - nonprofit technology
   - online advocacy
 tags:
-keywords: # For SEO. Generally a combination of categories and tags.
-  - nonprofit technology
-  - nptech
-  - online advocacy
+  -
+keywords: # Extra keywords in addition to the above, for SEO.
+  -
 
 # Archive taxonomy terms (auto-generated)
 year: '2008'

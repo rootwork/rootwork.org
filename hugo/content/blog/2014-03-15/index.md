@@ -41,14 +41,8 @@ categories:
   - nonprofit technology
 tags:
   - social change
-keywords: # For SEO
-  - advocacy
-  - online advocacy
-  - activism
-  - nptech
-  - nonprofit technology
-  - social change
-  - social justice
+keywords: # Extra keywords in addition to the above, for SEO.
+  -
 
 # Archive taxonomy terms (auto-generated)
 year: '2014'

@@ -53,16 +53,8 @@ categories:
 tags:
   - community
   - MySpace
-keywords: # For SEO. Generally a combination of categories and tags.
-  - fundraising
-  - nonprofit technology
-  - nptech
-  - open source
-  - F/LOSS
-  - community
-  - communities
-  - MySpace
-  - social media
+keywords: # Extra keywords in addition to the above, for SEO.
+  -
 
 # Archive taxonomy terms (auto-generated)
 year: '2009'
