@@ -3,7 +3,7 @@ title: This link has gone away
 author: Ivan Boothe
 date: '2022-07-01'
 
-slug: 'dead-link'
+slug: '/dead-link'
 
 description: 'This is a dead link' # For SEO and social media snippets.
 
