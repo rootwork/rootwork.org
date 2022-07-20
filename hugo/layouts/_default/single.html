@@ -98,28 +98,28 @@
             {{- with .Params.categories -}}
               <span class="post_categories">
                 {{- range . }}
-                  {{- $tag := urlize . -}}
+                  {{- $termName := . -}}
+                  {{- $termPath := urlize $termName -}}
                   <a
-                    href="{{ absLangURL (printf "categories/%s/" $tag) }}"
-                    title="View all content categorized as '{{ humanize . }}'"
+                    href="{{ absLangURL (printf "categories/%s/" $termPath) }}"
+                    title="View all content categorized as '{{ $termName }}'"
                     class="post_tag--cat post_tag button button_translucent"
+                    >{{- $termName -}}</a
                   >
-                    {{- . }}
-                  </a>
                 {{- end }}
               </span>
             {{- end }}
             {{- with .Params.tags -}}
               <span class="post_tags">
                 {{- range . }}
-                  {{- $tag := urlize . -}}
+                  {{- $termName := . -}}
+                  {{- $termPath := urlize $termName -}}
                   <a
-                    href="{{ absLangURL (printf "tags/%s/" $tag) }}"
-                    title="View all content tagged with '{{ humanize . }}'"
+                    href="{{ absLangURL (printf "tags/%s/" $termPath) }}"
+                    title="View all content tagged with '{{ $termName }}'"
                     class="post_tag button button_translucent"
+                    >{{- $termName -}}</a
                   >
-                    {{- . }}
-                  </a>
                 {{- end }}
               </span>
             {{- end }}

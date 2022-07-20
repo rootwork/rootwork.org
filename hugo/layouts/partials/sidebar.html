@@ -115,7 +115,7 @@
         {{- end }}
       </ul>
     </details>
-    {{- $tagsLimit := (default 100 $s.numberOfTagsShown) }}
+
     {{- range $key, $value := .Site.Taxonomies }}
       {{- if ( ne $key "year" ) }}
         {{- if ( ne $key "month" ) }}
@@ -123,15 +123,15 @@
             <details class="sidebar_group sidebar_group--{{ $key }}">
               <summary id="{{ $key }}-section">{{ T $key }}</summary>
               <nav class="tags_nav">
-                {{- $onPageTags := $.Page.Params.tags }}
-                {{- $slicedTags := ($value.ByCount) }}
-                {{- range $slicedTags }}
+                {{- $slicedTags := ($value.ByCount) -}}
+                {{- range $slicedTags -}}
+                  {{- $termName := .Page.Title -}}
                   <a
                     href="{{ absLangURL $key }}/{{ (replace .Name "#" "%23") | urlize }}/"
                     class="post_tag button button_translucent"
-                    title="View all content related to '{{ humanize .Name }}'"
+                    title="View all content related to '{{ $termName }}'"
                   >
-                    <span class="tag_name">{{ humanize .Name }}</span>
+                    <span class="tag_name">{{ $termName }}</span>
                     <span class="tag_tally">{{ .Count }}</span>
                   </a>
                 {{ end }}
@@ -144,7 +144,6 @@
         <details class="sidebar_group sidebar_group--{{ $key }}">
           <summary id="{{ $key }}-section">Posts by year</summary>
           <nav class="tags_nav">
-            {{- $onPageTags := $.Page.Params.tags }}
             {{- $slicedTags := ($value.Alphabetical.Reverse) }}
             {{- range $slicedTags }}
               <a
@@ -152,7 +151,7 @@
                 class="post_tag post_tag--year button button_translucent"
                 title="View all content from {{ .Name }}"
               >
-                {{ .Name }}
+                {{- .Name }}
                 <span class="tag_tally">{{ .Count }}</span>
               </a>
             {{- end }}

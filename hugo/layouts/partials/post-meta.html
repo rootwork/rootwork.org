@@ -2,14 +2,14 @@
 
   2. Wrapping date in permalink, microformat class, and time element (for indieweb).
 
-  3. Inserting CATEGORIES section and separating out TAGS section.
+  3. Inserting categories and separating out tags.
 
   4. Removing 'writeSeparator' = true
 
   5. Adding $metaClass to container.
 */}}
-{{ $lastmod := .Lastmod.Format "2006-01-02" }}
-{{ $date := .Date.Format "2006-01-02" }}
+{{- $lastmod := .Lastmod.Format "2006-01-02" -}}
+{{- $date := .Date.Format "2006-01-02" -}}
 {{- $showShare := ne (.Param "showshare") false }}
 {{- $showDate := ne (.Param "showdate") false }}
 {{- $showReadTime := ne (.Param "showreadtime") false }}
@@ -64,14 +64,14 @@
         <span class="post_categories">
           {{- if ($scratch.Get "writeSeparator") }}&nbsp;·{{ end }}
           {{- range . }}
-            {{- $tag := urlize . -}}
+            {{- $termName := . -}}
+            {{- $termPath := urlize $termName -}}
             <a
-              href="{{ absLangURL (printf "categories/%s/" $tag) }}"
-              title="View all content categorized as '{{ humanize . }}'"
+              href="{{ absLangURL (printf "categories/%s/" $termPath) }}"
+              title="View all content categorized as '{{ $termName }}'"
               class="post_tag--cat post_tag button button_translucent"
+              >{{- $termName -}}</a
             >
-              {{- . }}
-            </a>
           {{- end }}
         </span>
       {{- end }}
@@ -81,14 +81,14 @@
         <span class="post_tags">
           {{- if ($scratch.Get "writeSeparator") }}&nbsp;·{{ end }}
           {{- range . }}
-            {{- $tag := urlize . -}}
+            {{- $termName := . -}}
+            {{- $termPath := urlize $termName -}}
             <a
-              href="{{ absLangURL (printf "tags/%s/" $tag) }}"
-              title="View all content tagged with '{{ humanize . }}'"
+              href="{{ absLangURL (printf "tags/%s/" $termPath) }}"
+              title="View all content tagged with '{{ $termName }}'"
               class="post_tag button button_translucent"
+              >{{- $termName -}}</a
             >
-              {{- . }}
-            </a>
           {{- end }}
         </span>
       {{- end }}
