@@ -36,9 +36,8 @@ categories:
   - frontend development
 tags:
   - Drupal
-keywords: # For SEO. Generally a combination of categories and tags.
-  - frontend
-  - Drupal
+keywords: # Extra keywords in addition to the above, for SEO.
+  -
 
 # Archive taxonomy terms (auto-generated)
 year: '{{ .Date | dateFormat "2006" }}'
