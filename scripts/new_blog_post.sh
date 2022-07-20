@@ -379,7 +379,7 @@ main() {
   title=$(echo "${title}" | \sed -r -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')
 
   # Using ${title}
-  #  - Replace '&' with 'and', '.' with 'dot', and apostrophes with nothing.
+  #  - Replace '&' with 'and', '.' with 'dot', and apostrophes and commas with nothing.
   #  - Then lower-case the whole title.
   #  - Then remove common words that don't help with SEO in URLs (stop words).
   #  - Then replace all characters except a-z, 0-9 and '-' with spaces.
@@ -391,8 +391,9 @@ main() {
     \sed -r -e 's/&/ and /g' \
       -e 's/\./ dot /g' \
       -e "s/'//g" \
+      -e "s/,//g" \
       -e 's/./\L\0/g' \
-      -e "s/\<a\>//g;s/\<an\>//g;s/\<and\>//g;s/\<as\>//g;s/\<at\>//g;s/\<for\>//g;s/\<from\>//g;s/\<in\>//g;s/\<of\>//g;s/\<on\>//g;s/\<or\>//g;s/\<the\>//g;s/\<to\>//g" \
+      -e "s/\<a\>//g;s/\<an\>//g;s/\<and\>//g;s/\<as\>//g;s/\<at\>//g;s/\<for\>//g;s/\<from\>//g;s/\<in\>//g;s/\<of\>//g;s/\<on\>//g;s/\<or\>//g;s/\<than\>//g;s/\<the\>//g;s/\<to\>//g" \
       -e 's/[^a-z0-9-]/ /g' \
       -e 's/^[[:space:]]*//g' \
       -e 's/[[:space:]]*$//g' \
@@ -416,7 +417,7 @@ main() {
   if [[ $alias = "true" ]]; then
     alias_name="\/p\/${date_year_short}${date_month}${date_day}"
     regex_alias1="s/^\s*# aliases:/aliases:/"
-    regex_alias2="s/^\s*aliases:/aliases:\n  - '${alias_name}'/"
+    regex_alias2="s/^\s*aliases:/aliases:\n  - ${alias_name}/"
   fi
 
   # Set the title, slug, date and taxonomy-dates.
