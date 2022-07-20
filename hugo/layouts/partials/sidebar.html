@@ -4,12 +4,12 @@
   4. Changing tag style from "upper" to "humanize" (all caps to initial caps)
   5. Removing auto-generated month tags.
   6. Moving auto-generated year tags to dedicated section.
-  7. Removing "show all" from tag limit, as tags are already collapsible.
+  7. Removing "show all" option from tag limit, as tags are already collapsible.
+  8. Removing search field from sidebar since it's in the top nav.
 */}}
 {{ $s := site.Params }}
 <aside class="sidebar">
   <section class="sidebar_inner">
-    {{ partial "search/widget" . }}
     {{- $introDescription := $s.introDescription }}
     {{- with .Params.introDescription }}
       {{- $introDescription = . }}

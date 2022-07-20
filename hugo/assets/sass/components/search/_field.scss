@@ -4,9 +4,24 @@
   margin: 1rem auto;
   max-width: none;
 
+  .nav_header & {
+    margin: 1rem 0;
+    max-height: 3rem;
+  }
+
   .search_field {
     @include switch(background-color, var(--bright-light), var(--shade));
     border: 3px solid var(--bright-green);
+
+    .nav_header & {
+      margin: 0 1rem;
+      @include switch(background-color, var(--shade));
+      @include switch(color, var(--white));
+
+      .jsopen & {
+        margin: 0;
+      }
+    }
 
     &:focus-within {
       @include switch(border-color, var(--md-dark-green), var(--light));

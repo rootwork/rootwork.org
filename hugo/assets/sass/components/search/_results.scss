@@ -3,7 +3,11 @@
 .search {
   .search_results {
     @include switch(background-color, var(--hazy-white), var(--dark-green));
-    border: 1px white solid;
+    border: 1px var(--white) solid;
+
+    .nav_header & {
+      @include switch(border-color, var(--dark-green), var(--white));
+    }
 
     .search_title {
       color: var(--white);

@@ -5,15 +5,15 @@
   padding: 0;
 
   @include bp-m-up {
-    flex: calc(var(--logo-width) + 2.5rem) 0 0;
+    flex: calc(var(--logo-width) + 2rem) 0 0;
   }
 
   @include focus-line(map-get($color, bright-green));
 
   .logo {
     display: flex;
-    flex: calc(var(--logo-width) + 2.5rem) 0 0;
-    padding: 0.5rem 1.5rem 0.5rem 1rem;
+    flex: calc(var(--logo-width) + 2rem) 0 0;
+    padding: 0.5rem 1rem;
     // prevent lower section from obscuring pointer events
     max-height: var(--logo-top-height);
     overflow: visible;
