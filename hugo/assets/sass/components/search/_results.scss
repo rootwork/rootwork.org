@@ -10,6 +10,7 @@
     }
 
     .search_title {
+      font-size: 1.5rem;
       color: var(--white);
     }
 
@@ -20,6 +21,23 @@
           var(--dark-shade),
           var(--md-dark-green)
         );
+      }
+
+      &[href*='/categories/'] {
+        font-weight: bold;
+        text-transform: capitalize;
+
+        &::before {
+          content: 'Category: ';
+        }
+      }
+
+      &[href*='/tags/'] {
+        font-weight: bold;
+
+        &::before {
+          content: 'Tag: ';
+        }
       }
     }
   }
