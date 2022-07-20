@@ -22,10 +22,10 @@
 #   name = "Twitter"
 #   url = "https://twitter.com/"
 
-[[main]]
-  name = "Blog"
-  url = "blog/"
-  weight = -107
+# [[main]]
+#   name = "Blog"
+#   url = "blog/"
+#   weight = -107
 
 # social menu links
 
