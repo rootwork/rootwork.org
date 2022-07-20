@@ -18,7 +18,7 @@
 
 {{- with $metaKeywords -}}
   {{/* Add meta keywords based on tags and categories. */}}
-  {{- range $key, $value := $.Site.Data.keywords.additional -}}
+  {{- range $key, $value := $.Site.Data.terms.keywords.additional -}}
     {{- if in $metaKeywords $key -}}
       {{- $metaKeywords = $metaKeywords | append $value -}}
     {{- end -}}
@@ -27,12 +27,11 @@
   {{/* Comma-delimit and remove empty values. */}}
   {{- $metaKeywords = delimit $metaKeywords ", " -}}
   {{- $metaKeywords = replace $metaKeywords ", , " ", " -}}
-
 {{- end -}}
 
 {{- $keywords := "" -}}
-{{- with $s.keywords -}}
-  {{- $keywords = delimit $s.keywords "," -}}
+{{- with $.Site.Data.terms.keywords.default -}}
+  {{- $keywords = delimit $.Site.Data.terms.keywords.default "," -}}
 {{- end -}}
 {{- with $metaKeywords -}}
   {{- $keywords = $metaKeywords -}}
