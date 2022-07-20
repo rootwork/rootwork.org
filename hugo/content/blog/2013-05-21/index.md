@@ -74,7 +74,7 @@ to tell they were related in the CSS.
 My stylesheets were like that too, because strategies for writing CSS had barely
 altered since the days when it was used to change the colors of the scroll bars
 in Internet Explorer. Luckily, in the past couple of years both
-[CSS architecture and CSS preprocessors came into their own](https://rootwork.org/blog/2013/05/ninjas-your-code-drupalcon-portland-sass-extends-placeholders).
+[CSS architecture and CSS preprocessors came into their own](/blog/2013/05/ninjas-your-code-drupalcon-portland-sass-extends-placeholders).
 
 ![Jonathan Snook ::legacy-float-r](jonathansnook.jpg ' ')**SMACSS**, or
 [Scalable and Modular Architecture for CSS](http://smacss.com/), was developed
@@ -82,7 +82,7 @@ by **[Jonathan Snook](https://snook.ca/)**, a featured speaker at Drupalcon
 Portland. I’m really excited to get the opportunity to have Jonathan speak, not
 only because of my personally well-dog-eared copy of _SMACSS_, but because
 Drupal itself is
-[adopting a SMACSS approach](https://rootwork.org/blog/2013/05/world-class-frontend-track-drupalcon-portland)
+[adopting a SMACSS approach](/blog/2013/05/world-class-frontend-track-drupalcon-portland)
 to its CSS.
 
 I spoke with Jonathan about sustainable stylesheets and the future of SMACSS.
