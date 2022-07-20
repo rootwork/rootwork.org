@@ -7,9 +7,9 @@ effective_date: 'July 1, 2022' # Used verbatim in the post
 
 slug: 'privacy'
 aliases:
-  - 'privacypolicy'
-  - 'privacy_policy'
-  - 'security'
+  - privacypolicy
+  - privacy_policy
+  - security
 description: 'Rootwork.org privacy and security' # For SEO and social media snippets.
 
 draft: false
