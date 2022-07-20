@@ -6,7 +6,7 @@ lastmod: '2007-09-12' # Appends 'edited on' to the publish date
 
 slug: 'can-blogging-stop-genocide' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/060528'
+  - /p/060528
 description: 'The Genocide Intervention Network is a nonprofit based in DC that
   is a little more than two years old. We began as a student group at Swarthmore
   College with an idea: to change the way the world responds to genocide. As a

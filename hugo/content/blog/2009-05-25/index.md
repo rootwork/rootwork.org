@@ -4,9 +4,9 @@ author: Ivan Boothe
 date: '2009-05-25'
 lastmod: '2009-07-05' # Appends 'edited on' to the publish date
 
-slug: 'social-change-takes-more-than-social-media' # Recommended length is 3 to 5 words.
+slug: 'social-change-takes-more-social-media' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/090525'
+  - /p/090525
 description: "Social media doesn't mean you do less organizing -- it means you
   (can) do it better, or at least differently. You still have to use all the old
   skills of coalition-building, strategic planning, creative social action,

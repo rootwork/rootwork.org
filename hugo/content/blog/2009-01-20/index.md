@@ -6,7 +6,7 @@ date: '2009-01-20'
 
 slug: 'community-blogs-run-better-open-source-software' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/090120'
+  - /p/090120
 description: 'Even if Bryght/Acquia/May First went out of business tomorrow,
   virtually all of its customers could find another vendor to take their system
   completely intact and get them up and running in an hour or two.' # For SEO and social media snippets.

@@ -5,9 +5,9 @@ author: Ivan Boothe
 date: '2013-05-14'
 # lastmod: 2022-07-11 # Appends 'edited on' to the publish date
 
-slug: 'ninjas-your-code-drupalcon-portland-sass-with-extends-placeholders' # Recommended length is 3 to 5 words.
+slug: 'ninjas-your-code-drupalcon-portland-sass-extends-placeholders' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/130514'
+  - /p/130514
 description: "Dale Sande captures the revolution in efficiency that Sass brings,
   and at Drupalcon Portland he's taking us way past Sass basics." # For SEO and social media snippets.
 summary: "Dale Sande captures the revolution in efficiency that Sass brings, and

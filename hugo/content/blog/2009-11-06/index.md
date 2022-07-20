@@ -4,9 +4,9 @@ author: Ivan Boothe
 date: '2009-11-06'
 # lastmod: '2022-07-13' # Appends 'edited on' to the publish date
 
-slug: 'causes-abandons-184-674-nonprofit-supporters-myspace' # Recommended length is 3 to 5 words.
+slug: 'causes-abandons-184674-nonprofit-supporters-myspace' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/091106'
+  - /p/091106
 description: 'To Causes, leaving MySpace to focus on its core community on
   Facebook made good business sense, but certainly those organizations left in
   the lurch on MySpace feel otherwise. Simply put, you can’t rely on

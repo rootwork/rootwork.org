@@ -4,9 +4,9 @@ author: Ivan Boothe
 date: '2011-03-01'
 # lastmod: '2022-07-12' # Appends 'edited on' to the publish date
 
-slug: 'grant-your-mission-as-poem' # Recommended length is 3 to 5 words.
+slug: 'grant-your-mission-poem' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/110301'
+  - /p/110301
 description: 'The Community TechKnowledge Foundation announced today a grant of
   $10,000 for a nonprofit that submits a description of their mission -- in the
   form of a poem. Along with the grant, the poetry will be turned into a song by

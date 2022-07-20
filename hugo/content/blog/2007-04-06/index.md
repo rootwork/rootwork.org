@@ -6,7 +6,7 @@ date: '2007-04-06'
 
 slug: 'notes-ntc-participatory-media-future-online-outreach' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/070406'
+  - /p/070406
 description: 'Although these two panels -- "Leveraging the Power of
   Participatory Media" and "The Future of Online Outreach" -- were held
   separately at the 2007 Nonprofit Technology Conference, I thought that they

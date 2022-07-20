@@ -6,7 +6,7 @@ date: '2013-02-27'
 
 slug: 'free-drupal-qa-call-nonprofits-social-change-tomorrow-feb-28' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/130227'
+  - /p/130227
 description: 'Tomorrow at 1PM Eastern/10AM Pacific, Johanna Bates and I will be
   co-hosting the monthly Nonprofit Drupal Community of Practice discussion and
   Q&A call. This is a free conference call, sponsored by the Nonprofit

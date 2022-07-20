@@ -7,7 +7,7 @@ date: '2013-04-12'
 
 slug: 'uncharitable-how-businesses-co-opt-nonprofits-undermine-their-potential' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/130412'
+  - /p/130412
 description: 'It’s no wonder Dan Pallotta is so popular among the TED crowd —
   business leaders and wealthy technologists who can see a product in every
   social trend. What’s more mystifying is why he would be popular among

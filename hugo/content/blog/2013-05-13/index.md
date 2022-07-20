@@ -6,7 +6,7 @@ date: '2013-05-13'
 
 slug: 'world-class-frontend-track-drupalcon-portland' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/130513'
+  - /p/130513
 description: 'The big news at Drupalcon Portland is that, for the first time at
   a Drupalcon, we’re having separate frontend and user experience (UX) tracks.
   That means we were able to offer even more sessions targeted directly at

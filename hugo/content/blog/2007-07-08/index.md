@@ -6,7 +6,7 @@ date: '2007-07-08'
 
 slug: 'one-minute-1-800-genocide' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/070708'
+  - /p/070708
 description: 'Just wanted to highlight a small initiative the Genocide
   Intervention Network sent out today using Collactive, a web firm that helps
   organizations use their network of members to promote news stories and

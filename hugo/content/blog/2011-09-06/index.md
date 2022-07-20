@@ -8,7 +8,7 @@ date: '2011-09-06'
 
 slug: 'two-click-button-foils-facebook-tracking-new-tool-privacy-concerned-nonprofits' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/110906'
+  - /p/110906
 description: 'Organizations concerned about the privacy of their visitors should
   carefully weigh whether a given social widget is worth the risk in privacy.
   Moreover, these organizations should absolutely provide a privacy policy that

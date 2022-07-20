@@ -6,7 +6,7 @@ date: '2009-02-23'
 
 slug: 'using-facebook-social-change-webinar' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/090223'
+  - /p/090223
 description: "Just a quick note to say I’ll be speaking as part of Social
   Actions' 'Using Facebook for Social Change' webinar on Thursday, along with
   Susan Gordon, the nonprofit coordinator of Causes, and moderated by Beth

@@ -6,7 +6,7 @@ date: '2009-10-09'
 
 slug: 'finding-movements-voice-online-social-networks-social-change' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/091009'
+  - /p/091009
 description: 'The subtitle of this could be, “Social change has always relied on
   social networks -- they just weren’t called Facebook.”' # For SEO and social media snippets.
 summary: 'The subtitle of this could be, “Social change has always relied on

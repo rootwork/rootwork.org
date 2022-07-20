@@ -7,7 +7,7 @@ lastmod: '2009-04-13' # Appends 'edited on' to the publish date
 
 slug: 'fire-food-why-theres-no-such-thing-twitter-revolution' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/090408'
+  - /p/090408
 description: 'If organizers limit themselves to seeing Twitter as a strategy in
   and of itself -- without considering the strategy apart from the tool -- they
   risk overlooking ways to run a more effective campaign on other platforms, or

@@ -6,7 +6,8 @@ date: '2008-01-01'
 
 slug: 'drupal-nonprofits-how-build-social-networks-change' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/080101'
+  - /blog/2008/01/drupal-nonprofits-or-how-build-social-networks-change
+  - /p/080101
 description: "In return for NetSquared's generosity, I wanted to post some tips
   for nonprofits thinking about using Drupal for their sites -- when to use it
   and when not to use it, as well as a few useful tidbits from a recent

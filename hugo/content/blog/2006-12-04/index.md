@@ -6,7 +6,8 @@ date: '2006-12-04'
 
 slug: 'theory-bottom-up-social-networking' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/061204'
+  - /blog/2006/12/theory-bottom-social-networking
+  - /p/061204
 description: 'Offering concrete ideas for how to solve a seemingly
   insurmountable problem can give people a sense that they, as individuals, have
   a stake in an issue. This sort of advocacy is similar to bottom-up,

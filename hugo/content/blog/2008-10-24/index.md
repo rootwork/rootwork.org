@@ -6,7 +6,7 @@ lastmod: '2022-07-14' # Appends 'edited on' to the publish date
 
 slug: 'using-social-networks-social-change-facebook-myspace-more' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/081024'
+  - /p/081024
 description: 'In this presentation from the Democracy in Action Community
   Conference 2008, I talk about some of the successful approaches for nonprofits
   in using social networks like Facebook and MySpace, and social media like

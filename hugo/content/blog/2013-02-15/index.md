@@ -6,7 +6,7 @@ date: '2013-02-15'
 
 slug: 'frontend-session-proposals-portland-drupalcon-due-today' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/130215'
+  - /p/130215
 description: 'Description' # For SEO and social media snippets.
 summary: 'Summary' # For the post in lists.
 

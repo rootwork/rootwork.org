@@ -6,7 +6,7 @@ date: '2009-11-13'
 
 slug: 'government-accountability-through-web-20-case-study' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/091113'
+  - /p/091113
 description: 'Last week, Special Envoy to Sudan Gen. Scott Gration sat down with
   representatives from Save Darfur and the student network STAND for an
   unprecedented live Q&A, webcast directly from the White House website. The

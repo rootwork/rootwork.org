@@ -6,7 +6,7 @@ date: '2008-05-27'
 
 slug: 'hundreds-gather-social-change-tech-netsquared-year-three' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/080527'
+  - /p/080527
 description: 'The NetSquared Year Three conference has gotten off to a great
   start: Nonprofit staffers, activists, techies and funders gathering to talk
   about -- and award some money to -- using technology for social change.' # For SEO and social media snippets.

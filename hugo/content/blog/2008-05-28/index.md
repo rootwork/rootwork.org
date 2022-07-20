@@ -6,7 +6,7 @@ date: '2008-05-28'
 
 slug: 'netsquared-project-interviews-session-notes' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/080528'
+  - /p/080528
 description: "Some really incredible presentations here at the NetSquared
   conference, both from featured projects and individual speakers. Seth Horwitz
   and I are busily collecting information for next Tuesday's Philly NetSquared

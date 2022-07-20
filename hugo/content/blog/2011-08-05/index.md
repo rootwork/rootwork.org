@@ -6,7 +6,7 @@ lastmod: '2015-10-05' # Appends 'edited on' to the publish date
 
 slug: 'google-plus-nonprofit-social-change-implications' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/110805'
+  - /p/110805
 description: "While this presentation does not cover the basics of what Google
   Plus is and how it works, it looks at how nonprofits and activists might
   effectively use Google Plus and highlights its most useful tools. The

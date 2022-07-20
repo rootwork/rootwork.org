@@ -6,7 +6,7 @@ date: '2010-12-09'
 
 slug: 'facebook-removes-default-landing-tab-new-nonprofit-pages' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/101209'
+  - /p/101209
 description: "Now all visitors to a nonprofit's Facebook Page will be directed
   to the Wall. What's more, with tabs being de-emphasized by their move to
   smaller links under your profile, it's less obvious how new visitors can find

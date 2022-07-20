@@ -7,7 +7,7 @@ lastmod: '2022-07-12' # Appends 'edited on' to the publish date
 
 slug: 'domain-registry-america-scam-dont-let-your-nonprofit-get-fooled' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/130226'
+  - /p/130226
 description: 'Domain Registry of America sends the owner of a website domain an
   official-looking “expiration notice,” urging the owner to “act today” to
   prevent “loss of your online identity making it difficult for your customers

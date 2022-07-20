@@ -6,7 +6,7 @@ date: '2010-08-30'
 
 slug: 'too-few-women-tech-blame-sexism' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/100830'
+  - /p/100830
 description: "Sexism is bigger than any one person; it's a system in which our
   entire society is enmeshed. Too often, such systematic discrimination as
   treated as discrete, individual acts, disconnected from the larger reality.

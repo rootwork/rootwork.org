@@ -6,6 +6,7 @@ lastmod: '2015-03-06' # Appends 'edited on' to the publish date
 
 slug: 'online-advocacy-learn-community-organizing' # Recommended length is 3 to 5 words.
 aliases:
+  - /blog/2014/03/what-online-advocacy-can-learn-community-organizing-2014-nonprofit-tech-conference
   - /p/140315
 description: 'Investigate how sustainable social change has transpired in the
   past, and you’ll be closer to effecting change in the future.' # For SEO and social media snippets.

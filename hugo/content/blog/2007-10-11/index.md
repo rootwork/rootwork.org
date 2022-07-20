@@ -6,9 +6,9 @@ author: Ivan Boothe
 date: '2007-10-11'
 # lastmod: '2022-07-17' # Appends 'edited on' to the publish date
 
-slug: 'organizing-rather-than-mobilizing-using-social-networks-constituency-building' # Recommended length is 3 to 5 words.
+slug: 'organizing-rather-mobilizing-using-social-networks-constituency-building' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/071011'
+  - /p/071011
 description: 'For the Genocide Intervention Network, involvement in the "social
   web" is really an outgrowth of our entire mission: To form the first
   anti-genocide constituency, and to empower our members with the tools to

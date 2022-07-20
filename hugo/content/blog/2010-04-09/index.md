@@ -4,9 +4,9 @@ author: Ivan Boothe
 date: '2010-04-09'
 # lastmod: '2022-07-13' # Appends 'edited on' to the publish date
 
-slug: 'what-online-activism-can-learn-from-community-organizing' # Recommended length is 3 to 5 words.
+slug: 'what-online-activism-can-learn-community-organizing' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/100409'
+  - /p/100409
 description: 'Online activism didn’t come out of nowhere. The methods and
   tactics of online activists -- be they individuals or international nonprofits
   with hundreds of staff -- are drawn on social change movements and community

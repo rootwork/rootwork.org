@@ -6,7 +6,7 @@ date: '2006-05-30'
 
 slug: 'different-kinds-elites-different-kinds-elitism' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/060530'
+  - /p/060530
 description: "Keep these different types of elites in mind as we think about the
   intersections of technology and social change. One way of achieving change is
   by appealing to the state's powerholders -- traditional power, that is. But

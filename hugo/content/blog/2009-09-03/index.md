@@ -7,7 +7,7 @@ date: '2009-09-03'
 
 slug: 'gurus-are-not-enough-call-organizers-organizing-social-media' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/090903'
+  - /p/090903
 description: "Gurus, mavens and experts convey information — they tell you the
   way things are. Organizers, conversely, cultivate leadership and facilitate a
   community's exploration of its vision — they offer a way to see how things

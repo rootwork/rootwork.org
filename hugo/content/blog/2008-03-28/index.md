@@ -6,7 +6,7 @@ date: '2008-03-28'
 
 slug: 'genocide-intervention-network-nominated-netsquared-mashup-award' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/080328'
+  - /p/080328
 description: 'This week, the Genocide Intervention Network was honored to be
   nominated by the NetSquared community as a 2008 Featured Project for our
   proposal to upgrade and extend the DarfurScores.org website. Thank you to

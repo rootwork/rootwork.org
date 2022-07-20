@@ -6,7 +6,7 @@ lastmod: '2008-05-21' # Appends 'edited on' to the publish date
 
 slug: 'just-what-kind-social-change-are-you-interested' # Recommended length is 3 to 5 words.
 aliases:
-  - '/p/080521'
+  - /p/080521
 description: 'Some nonprofits, older and more institutionalized, are wary of
   giving their members "control" of their "message" in social media. Mostly, I
   think that’s nothing more than a fear of losing power. When you think you know
