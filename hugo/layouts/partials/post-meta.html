@@ -2,7 +2,7 @@
 
   2. Wrapping date in permalink, microformat class, and time element (for indieweb).
 
-  3. Inserting categories and separating out tags.
+  3. Inserting categories and separating out tags, and validating both against our lists ($validCats, $validTags).
 
   4. Removing 'writeSeparator' = true
 
@@ -10,6 +10,8 @@
 */}}
 {{- $lastmod := .Lastmod.Format "2006-01-02" -}}
 {{- $date := .Date.Format "2006-01-02" -}}
+{{- $validCats := $.Site.Data.terms.categories -}}
+{{- $validTags := $.Site.Data.terms.tags -}}
 {{- $showShare := ne (.Param "showshare") false }}
 {{- $showDate := ne (.Param "showdate") false }}
 {{- $showReadTime := ne (.Param "showreadtime") false }}
@@ -66,12 +68,16 @@
           {{- range . }}
             {{- $termName := . -}}
             {{- $termPath := urlize $termName -}}
-            <a
-              href="{{ absLangURL (printf "categories/%s/" $termPath) }}"
-              title="View all content categorized as '{{ $termName }}'"
-              class="post_tag--cat post_tag button button_translucent"
-              >{{- $termName -}}</a
-            >
+            {{- if in $validCats $termName -}}
+              <a
+                href="{{ absLangURL (printf "categories/%s/" $termPath) }}"
+                title="View all content categorized as '{{ $termName }}'"
+                class="post_tag--cat post_tag button button_translucent"
+                >{{- $termName -}}</a
+              >
+            {{- else -}}
+              {{ errorf "Category %q is invalid." $termName }}
+            {{- end -}}
           {{- end }}
         </span>
       {{- end }}
@@ -83,12 +89,16 @@
           {{- range . }}
             {{- $termName := . -}}
             {{- $termPath := urlize $termName -}}
-            <a
-              href="{{ absLangURL (printf "tags/%s/" $termPath) }}"
-              title="View all content tagged with '{{ $termName }}'"
-              class="post_tag button button_translucent"
-              >{{- $termName -}}</a
-            >
+            {{- if in $validTags $termName -}}
+              <a
+                href="{{ absLangURL (printf "tags/%s/" $termPath) }}"
+                title="View all content tagged with '{{ $termName }}'"
+                class="post_tag button button_translucent"
+                >{{- $termName -}}</a
+              >
+            {{- else -}}
+              {{ errorf "Tag %q is invalid." $termName }}
+            {{- end -}}
           {{- end }}
         </span>
       {{- end }}

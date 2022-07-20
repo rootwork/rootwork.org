@@ -1,3 +1,32 @@
+categories:
+  - accessibility
+  - activism
+  - coding
+  - frontend development
+  - fundraising
+  - nonprofit technology
+  - online advocacy
+  - open source
+  - social media
+  - '' # Allow empty category
+
+tags:
+  - communications
+  - community
+  - CSS
+  - Drupal
+  - Facebook
+  - Flickr
+  - Google Plus
+  - MySpace
+  - privacy
+  - social change
+  - Twig
+  - Twitter
+  - WordPress
+  - YouTube
+  - '' # Allow empty tag
+
 keywords:
   default:
     - Hugo
