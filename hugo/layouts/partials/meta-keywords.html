@@ -16,17 +16,29 @@
   {{- if in . "accessibility" -}}
     {{- $metaKeywords = $metaKeywords | append "a11y" -}}
   {{- end -}}
+  {{- if in . "communications" -}}
+    {{- $metaKeywords = $metaKeywords | append "online communications" -}}
+  {{- end -}}
+  {{- if in . "community" -}}
+    {{- $metaKeywords = $metaKeywords | append "communities" -}}
+  {{- end -}}
   {{- if in . "Drupal" -}}
     {{- $metaKeywords = $metaKeywords | append "Planet Drupal" -}}
   {{- end -}}
   {{- if in . "frontend development" -}}
     {{- $metaKeywords = $metaKeywords | append "frontend" -}}
   {{- end -}}
+  {{- if in . "Google Plus" -}}
+    {{- $metaKeywords = $metaKeywords | append "Google+" -}}
+  {{- end -}}
   {{- if in . "nonprofit technology" -}}
     {{- $metaKeywords = $metaKeywords | append "nptech" -}}
   {{- end -}}
   {{- if in . "online advocacy" -}}
     {{- $metaKeywords = $metaKeywords | append "advocacy" -}}
+  {{- end -}}
+  {{- if in . "open source" -}}
+    {{- $metaKeywords = $metaKeywords | append "F/LOSS" -}}
   {{- end -}}
   {{- if in . "social change" -}}
     {{- $metaKeywords = $metaKeywords | append "social justice" -}}
