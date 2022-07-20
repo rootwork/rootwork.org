@@ -6,6 +6,9 @@ introDescription = "I'm into frontend engineering (especially back-of-the-fronte
 introURL = "about/" # set the url for the 'read more' button below the introDescription, or set to false to not show the button
 description = "I'm into frontend engineering (especially back-of-the-frontend), creative social protest and radical nonviolent praxis. These things go together more than you think." # Site description will be used for home page content meta tags (SEO). It can alternatively be set in `content/_index.md`. In that file you can also set SEO keywords.
 
+# Meta keywords to apply when no other keywords exist (like on the home page).
+keywords = ["Hugo","Drupal","CSS","frontend development","frontend","activism","social change","social justice"]
+
 # showShare = false # Uncomment to not show share buttons on each post. Also available in each post's front matter.
 
 # Google analytics Id

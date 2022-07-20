@@ -1,0 +1,46 @@
+{{/* Custom partial defining meta keywords based on categories and tags. */}}
+{{ $s := .Site.Params }}
+{{ $p := .Params }}
+
+{{- $metaKeywords := slice -}}
+
+{{- with $p.categories -}}
+  {{- $metaKeywords = $metaKeywords | append . -}}
+{{- end -}}
+
+{{- with $p.tags -}}
+  {{- $metaKeywords = $metaKeywords | append . -}}
+{{- end -}}
+
+{{- with $metaKeywords -}}
+  {{- if in . "accessibility" -}}
+    {{- $metaKeywords = $metaKeywords | append "a11y" -}}
+  {{- end -}}
+  {{- if in . "Drupal" -}}
+    {{- $metaKeywords = $metaKeywords | append "Planet Drupal" -}}
+  {{- end -}}
+  {{- if in . "frontend development" -}}
+    {{- $metaKeywords = $metaKeywords | append "frontend" -}}
+  {{- end -}}
+  {{- if in . "nonprofit technology" -}}
+    {{- $metaKeywords = $metaKeywords | append "nptech" -}}
+  {{- end -}}
+  {{- if in . "online advocacy" -}}
+    {{- $metaKeywords = $metaKeywords | append "advocacy" -}}
+  {{- end -}}
+  {{- if in . "social change" -}}
+    {{- $metaKeywords = $metaKeywords | append "social justice" -}}
+  {{- end -}}
+  {{- $metaKeywords = delimit $metaKeywords ", " -}}
+{{- end -}}
+
+{{- $keywords := "" -}}
+{{- with $s.keywords -}}
+  {{- $keywords = delimit $s.keywords "," -}}
+{{- end -}}
+{{- with $metaKeywords -}}
+  {{- $keywords = $metaKeywords -}}
+{{- end -}}
+{{- with $keywords -}}
+  <meta name="keywords" content="{{- $keywords -}}" />
+{{- end -}}
