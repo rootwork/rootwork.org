@@ -101,27 +101,60 @@
     }
   }
 
-  // margin: 0.5rem 0.5rem 0.5rem 0;
-  // padding-left: 1rem;
-  // font-family: var(--content-font);
-  // font-size: 0.95rem;
-  // text-transform: capitalize;
-  // @include switch(color, var(--dark-green), var(--light));
-  // @include is-on(border-color, currentColor);
-  // @include focus(text-decoration, underline);
-
   .tag_tally {
-    margin: 0.5rem 0 0.5rem 0.5rem;
-    padding: 0.2rem 0.5rem;
+    margin: 0.1rem 0 0.1rem 0.5rem;
+    padding: 0.4rem 0.5rem;
+    min-width: 2rem;
     font-family: var(--font);
     font-weight: normal;
     font-size: 1rem;
     border-radius: 100%;
     background-color: var(--purple);
     color: var(--white);
+    text-align: center;
 
     @include is-on {
       color: var(--white);
+    }
+  }
+
+  &--year {
+    border: 2px var(--blue) solid;
+    border-radius: 0.5rem;
+    @include switch(color, var(--blue));
+    @include switch(background-color, transparent);
+    transition: all;
+    @include motion(transition-duration, 500ms);
+
+    @include is-on {
+      border-width: 2px;
+      border-style: solid;
+      @include switch(border-color, var(--blue));
+      @include switch(color, var(--black), var(--white));
+      @include switch(background-color, var(--blue));
+
+      .tag_tally {
+        @include switch(color, var(--black), var(--white));
+      }
+    }
+
+    &::before,
+    &::after {
+      @include hidden-all;
+    }
+
+    .tag_tally {
+      padding: 0;
+      @include switch(background-color, transparent);
+      @include switch(color, var(--black), var(--white));
+
+      &::before {
+        content: '(';
+      }
+
+      &::after {
+        content: ')';
+      }
     }
   }
 }
