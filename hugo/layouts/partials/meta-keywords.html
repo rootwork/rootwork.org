@@ -16,38 +16,32 @@
   {{- $metaKeywords = $metaKeywords | append . -}}
 {{- end -}}
 
+{{/* Add meta keywords based on tags and categories. */}}
+{{- $addKeywords := dict
+  "accessibility"        "a11y"
+  "communications"       "online communications"
+  "community"            "communities"
+  "Drupal"               "Planet Drupal"
+  "frontend development" "frontend"
+  "Google Plus"          "Google+"
+  "nonprofit technology" "nptech"
+  "online advocacy"      "advocacy"
+  "open source"          "F/LOSS"
+  "social change"        "social justice"
+-}}
+
 {{- with $metaKeywords -}}
-  {{- if in . "accessibility" -}}
-    {{- $metaKeywords = $metaKeywords | append "a11y" -}}
+  {{/* Add keywords defined above. */}}
+  {{- range $key, $value := $addKeywords -}}
+    {{- if in $metaKeywords $key -}}
+      {{- $metaKeywords = $metaKeywords | append $value -}}
+    {{- end -}}
   {{- end -}}
-  {{- if in . "communications" -}}
-    {{- $metaKeywords = $metaKeywords | append "online communications" -}}
-  {{- end -}}
-  {{- if in . "community" -}}
-    {{- $metaKeywords = $metaKeywords | append "communities" -}}
-  {{- end -}}
-  {{- if in . "Drupal" -}}
-    {{- $metaKeywords = $metaKeywords | append "Planet Drupal" -}}
-  {{- end -}}
-  {{- if in . "frontend development" -}}
-    {{- $metaKeywords = $metaKeywords | append "frontend" -}}
-  {{- end -}}
-  {{- if in . "Google Plus" -}}
-    {{- $metaKeywords = $metaKeywords | append "Google+" -}}
-  {{- end -}}
-  {{- if in . "nonprofit technology" -}}
-    {{- $metaKeywords = $metaKeywords | append "nptech" -}}
-  {{- end -}}
-  {{- if in . "online advocacy" -}}
-    {{- $metaKeywords = $metaKeywords | append "advocacy" -}}
-  {{- end -}}
-  {{- if in . "open source" -}}
-    {{- $metaKeywords = $metaKeywords | append "F/LOSS" -}}
-  {{- end -}}
-  {{- if in . "social change" -}}
-    {{- $metaKeywords = $metaKeywords | append "social justice" -}}
-  {{- end -}}
+
+  {{/* Comma-delimit and remove empty values. */}}
   {{- $metaKeywords = delimit $metaKeywords ", " -}}
+  {{- $metaKeywords = replace $metaKeywords ", , " ", " -}}
+
 {{- end -}}
 
 {{- $keywords := "" -}}
