@@ -12,6 +12,10 @@
   {{- $metaKeywords = $metaKeywords | append . -}}
 {{- end -}}
 
+{{- with $p.keywords -}}
+  {{- $metaKeywords = $metaKeywords | append . -}}
+{{- end -}}
+
 {{- with $metaKeywords -}}
   {{- if in . "accessibility" -}}
     {{- $metaKeywords = $metaKeywords | append "a11y" -}}
