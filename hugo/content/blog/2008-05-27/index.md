@@ -7,12 +7,18 @@ date: '2008-05-27'
 slug: 'hundreds-gather-social-change-tech-netsquared-year-three' # Recommended length is 3 to 5 words.
 aliases:
   - /p/080527
-description: 'The NetSquared Year Three conference has gotten off to a great
-  start: Nonprofit staffers, activists, techies and funders gathering to talk
-  about -- and award some money to -- using technology for social change.' # For SEO and social media snippets.
-summary: 'The NetSquared Year Three conference has gotten off to a great start:
+
+# For the post as it appears in lists.
+summary: >
+  The NetSquared Year Three conference has gotten off to a great start:
   Nonprofit staffers, activists, techies and funders gathering to talk about --
-  and award some money to -- using technology for social change.' # For the post in lists.
+  and award some money to -- using technology for social change.
+
+# For SEO and social media snippets (recommended 150-200 characters).
+description: >
+  The NetSquared Year Three conference has gotten off to a great start:
+  Nonprofit staffers, activists, techies and funders gathering to talk about --
+  and award some money to -- technology for social change.
 
 draft: false # Change to 'false' to publish this post.
 featured: false
@@ -31,7 +37,7 @@ featureImageAlt: 'Attendees at NetSquared Conference Year Three' # Alternative t
 featureImageCreditCustom:
   'Top image: Attendees of NetSquared Conference Year Three, via Flickr.'
 thumbnail: 'n2y3-crowd_flickr.jpg' # Image in lists of posts.
-# shareImage: 'share.jpg' # For SEO and social media snippets. Falls back to thumbnail (if set) or featureImage.
+# shareImage: 'share.jpg Falls back to thumbnail (if set) or featureImage.
 
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
@@ -54,14 +60,14 @@ month: '2008-05'
 The
 [NetSquared Year Three](https://web.archive.org/web/20080710195249/http://www.netsquared.org/mashup 'NetSquared Mashup Challenge')
 conference has gotten off to a great start: nonprofit staffers, activists,
-techies and funders gathering to talk about — and award some money to — using
+techies and funders gathering to talk about -- and award some money to -- using
 technology for social change.
 
 There have been a couple of blog entries focusing on two of the
 [featured projects](https://web.archive.org/web/20080709050029/http://www.netsquared.org/2008/conference/projects/n2y3_featured_projects 'View the featured projects'),
 KnowMore.org and the Genocide Intervention Network.
 
-KnowMore.org’s proposal is a Firefox extension that just launched, as
+KnowMore.org's proposal is a Firefox extension that just launched, as
 [described in the blog](https://web.archive.org/web/20080605012715/http://www.netsquared.org/blog/dietrich/knowmore-firefox-extension-debuts-netsquared-2008):
 
 > The extension itself acts as a simple lens through which to experience the
@@ -73,10 +79,10 @@ KnowMore.org’s proposal is a Firefox extension that just launched, as
 > visual notifications in search engine results, marking links to corporations
 > of concern.
 
-The Genocide Intervention Network’s proposal is an anti-genocide legislation
+The Genocide Intervention Network's proposal is an anti-genocide legislation
 tracker and widget system
 [developed by Ivan Boothe](https://web.archive.org/web/20080719230742/http://www.netsquared.org/2008/conference/projects/anti-genocide-action-tracker-genocide-scores-every-politician-state-and-university 'View the NetSquared proposal').
-In an interview with GI-NET’s Ben Drexler, Aida McArthur asks:
+In an interview with GI-NET's Ben Drexler, Aida McArthur asks:
 
 > AM: What is the main challenge your staff is experiencing?
 >
@@ -86,7 +92,7 @@ In an interview with GI-NET’s Ben Drexler, Aida McArthur asks:
 > communicating to a wider audience to be able to mobilize phone calls from
 > activists on a faster turnaround basis.
 
-I’ll be continuing to post articles focusing on some of the featured projects —
+I'll be continuing to post articles focusing on some of the featured projects --
 the
 [NetSquared blog](https://web.archive.org/web/20080531044252/http://www.netsquared.org/blog)
 is a great place to follow along as well. Some images from the NetSquared

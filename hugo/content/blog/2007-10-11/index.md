@@ -9,21 +9,23 @@ date: '2007-10-11'
 slug: 'organizing-rather-mobilizing-using-social-networks-constituency-building' # Recommended length is 3 to 5 words.
 aliases:
   - /p/071011
-description: 'For the Genocide Intervention Network, involvement in the "social
-  web" is really an outgrowth of our entire mission: To form the first
-  anti-genocide constituency, and to empower our members with the tools to
-  prevent and stop genocide. The words "constituency" and "empower" are key. We
-  want an educated, active movement of people interested in preventing and
-  stopping genocide. Our members need to be able to think for themselves on the
-  issue, not to simply be another name on a list, but to be a hub in an
-  ever-expanding network.' # For SEO and social media snippets.
-summary: 'For the Genocide Intervention Network, involvement in the "social web"
-  is really an outgrowth of our entire mission: To form the first anti-genocide
+
+# For the post as it appears in lists.
+summary: >
+  For the Genocide Intervention Network, involvement in the "social web" is
+  really an outgrowth of our entire mission: To form the first anti-genocide
   constituency, and to empower our members with the tools to prevent and stop
   genocide. The words "constituency" and "empower" are key. We want an educated,
   active movement of people interested in preventing and stopping genocide. Our
   members need to be able to think for themselves on the issue, not to simply be
-  another name on a list, but to be a hub in an ever-expanding network.' # For the post in lists.
+  another name on a list, but to be a hub in an ever-expanding network.
+
+# For SEO and social media snippets (recommended 150-200 characters).
+description: >
+  For the Genocide Intervention Network, involvement in the "social web" is
+  really an outgrowth of our entire mission: To form the first anti-genocide
+  constituency, and to empower our members with the tools to prevent and stop
+  genocide.
 
 draft: false # Change to 'false' to publish this post.
 featured: false
@@ -43,7 +45,7 @@ featureImageCreditCustom:
   'Top image credit Flickr user [kevin
   dooley](https://www.flickr.com/photos/12836528@N00).'
 thumbnail: 'bokeh-remix_flickr-kevin_dooley.jpg' # Image in lists of posts.
-# shareImage: 'share.jpg' # For SEO and social media snippets. Falls back to thumbnail (if set) or featureImage.
+# shareImage: 'share.jpg Falls back to thumbnail (if set) or featureImage.
 
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
@@ -68,27 +70,27 @@ month: '2007-10'
 Britt Bravo from
 [NetSquared](https://web.archive.org/web/20070920094210/http://www.netsquared.org/)
 asks,
-“[What is the return on investment of the social web for nonprofits?](https://web.archive.org/web/20080719222229/http://www.netsquared.org/blog/britt-bravo/join-net2thinktank-what-return-investment-social-web-nonprofits)”
+"[What is the return on investment of the social web for nonprofits?](https://web.archive.org/web/20080719222229/http://www.netsquared.org/blog/britt-bravo/join-net2thinktank-what-return-investment-social-web-nonprofits)"
 
 For the
 [Genocide Intervention Network](https://web.archive.org/web/20080710032847/http://www.genocideintervention.net/),
-which is the organization I’m involved with that has been most active in social
-networking, involvement in the “social web” is really an outgrowth of our entire
+which is the organization I'm involved with that has been most active in social
+networking, involvement in the "social web" is really an outgrowth of our entire
 mission: To form the first anti-genocide constituency, and to empower our
 members with the tools to prevent and stop genocide.
 
-The words “constituency” and “empower” are key.
+The words "constituency" and "empower" are key.
 
-**We’re not simply looking for a mailing list or an ATM — we want an educated,
+**We're not simply looking for a mailing list or an ATM -- we want an educated,
 active movement of people interested in preventing and stopping genocide.**
 
-Our members need to be able to think for themselves on the issue — to hold
+Our members need to be able to think for themselves on the issue -- to hold
 events in their communities, motivate others to take action, press their elected
-representatives to take stand — not to simply be another name on a list, but to
+representatives to take stand -- not to simply be another name on a list, but to
 be a hub in an ever-expanding network.
 
 This is really the principle behind the social web:
-[it’s all about conversations](https://cluetrain.com/book/95-theses.html). And
+[it's all about conversations](https://cluetrain.com/book/95-theses.html). And
 for us, conversations are the perfect way to build a vibrant,
 effective movement.
 
@@ -106,20 +108,20 @@ on affective
 [social ties](https://www.worldcat.org/title/race-rebels-culture-politics-and-the-black-working-class/oclc/925010414&referer=brief_results 'Robin D.G. Kelley: Race Rebels'),
 and fears of
 [postmodern atomization](https://www.worldcat.org/title/bowling-alone-the-collapse-and-revival-of-american-community/oclc/1225886940&referer=brief_results 'Robert Putnam: Bowling Alone')
-aside, twenty-first century movements won’t be any different.
+aside, twenty-first century movements won't be any different.
 
 When I
 [first started writing about this](https://web.archive.org/web/20080618234425/http://www.idealware.org/articles/social_networking_genocide.php),
 however, I explained an important requirement for engagement in the social web
-to succeed — and this is still true for us today:
+to succeed -- and this is still true for us today:
 
-> There’s a mentality shift required to fully engage with social networking and
-> community content sites: sometimes, you have to let go. It’s true that someone
+> There's a mentality shift required to fully engage with social networking and
+> community content sites: sometimes, you have to let go. It's true that someone
 > could start posting pictures on Flickr of irrelevant things and tag them
-> “antigenocide,” or that some of our biggest fans hosting the YouTube video on
+> "antigenocide," or that some of our biggest fans hosting the YouTube video on
 > MySpace might have profiles that would make some of our donors cringe.
 >
-> Perhaps even more significantly, it’s possible that some of the people who
+> Perhaps even more significantly, it's possible that some of the people who
 > encounter us on these sites never make it to our main website, never sign up
 > for a newsletter, never complete an action, and never make a donation.
 >
@@ -128,25 +130,25 @@ to succeed — and this is still true for us today:
 > constituency.
 >
 > While we do, of course, want to increase our membership rolls and make
-> ever-larger donations to civilian protection, in some respects it’s not always
+> ever-larger donations to civilian protection, in some respects it's not always
 > necessary for people to perform every anti-genocide action through our
 > organization.
 >
 > If our videos or emails or profiles get people talking more substantially
-> about genocide — and the concrete ways in which they can actually prevent and
-> stop genocide — then in some sense whether they end up on our mailing list is
+> about genocide -- and the concrete ways in which they can actually prevent and
+> stop genocide -- then in some sense whether they end up on our mailing list is
 > somewhat beside the point. Through their knowledge they will engage others,
-> and ultimately enhance the anti-genocide movement we’re helping to build.
+> and ultimately enhance the anti-genocide movement we're helping to build.
 
 In his
 [profile](https://web.archive.org/web/20080621134439/http://www.personaldemocracy.com/node/1116)
 of GI-Net and Catalyst Campaigns, Joshua Levy describes this approach as
-“similar to bottom-up, open-source collaborative projects,” and I think that’s
+"similar to bottom-up, open-source collaborative projects," and I think that's
 exactly right. Our organization is engaged in a collaborative project with our
-members, and while we may have particular resources or acquired expertise, it’s
+members, and while we may have particular resources or acquired expertise, it's
 really their activism and passion that will build and drive the movement.
 
-What it all comes down to is that we’re focusing on organizing people into a
+What it all comes down to is that we're focusing on organizing people into a
 permanent anti-genocide movement (and much of that happens in a
 [decentralized, self-organized](https://web.archive.org/web/20080516033252/http://www.idealware.org/articles/participatory_tools.php)
 sort of way) rather than simply mobilizing people for a particular event or
@@ -169,9 +171,9 @@ more lasting change.
 ### Previous Articles
 
 - [Using Social Networking to Stop Genocide](https://web.archive.org/web/20070612180331/http://www.idealware.org/articles/social_networking_genocide.php)
-  (Idealware), on the origins of GI-Net’s approach.
+  (Idealware), on the origins of GI-Net's approach.
 - [Bottom-up social networking interview](/blog/2006/12/theory-bottom-social-networking),
-  on why MySpace isn’t like banner ads (see the second half).
+  on why MySpace isn't like banner ads (see the second half).
 - [Leveraging Social Networks for Progressive Organizing](https://web.archive.org/web/20080724202531/http://www.americanprogressaction.org/events/2007/noi.html)
   (New Organizing Institute), a panel discussion I was on talking about the
   possibilities for nonprofits using social networks. Sadly the video is no

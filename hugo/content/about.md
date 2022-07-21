@@ -5,11 +5,14 @@ date: '2021-08-12'
 # lastmod: '2014-04-29' # Appends 'edited on' to the publish date
 
 slug: 'about'
-# aliases:
-#   -
-description: "I'm into frontend engineering (especially back-of-the-frontend),
-  creative social protest and radical nonviolent praxis. These things go
-  together more than you think." # For SEO and social media snippets.
+aliases:
+  - about-ivan-boothe
+
+# For SEO and social media snippets (recommended 150-200 characters).
+description: >
+  I'm into frontend engineering (especially back-of-the-frontend), creative
+  social protest and radical nonviolent praxis. These things go together more
+  than you think.
 
 draft: false
 featured: false

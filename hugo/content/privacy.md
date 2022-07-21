@@ -10,7 +10,10 @@ aliases:
   - privacypolicy
   - privacy_policy
   - security
-description: 'Rootwork.org privacy and security' # For SEO and social media snippets.
+
+# For SEO and social media snippets (recommended 150-200 characters).
+description: >
+  Rootwork.org privacy and security
 
 draft: false
 featured: false

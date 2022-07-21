@@ -7,22 +7,23 @@ date: '2010-08-30'
 slug: 'too-few-women-tech-blame-sexism' # Recommended length is 3 to 5 words.
 aliases:
   - /p/100830
-description: "Sexism is bigger than any one person; it's a system in which our
-  entire society is enmeshed. Too often, such systematic discrimination as
-  treated as discrete, individual acts, disconnected from the larger reality.
-  What too many men miss is the reality that the system under which they face
-  such inhumane expectations is the same one that limits the potential of women.
-  This exists in the technology and nonprofit tech communities no less than the
-  rest of society — and has to be faced in a systematic way, not simply by
-  counting the number of women on a tech panel." # For SEO and social media snippets.
-summary: "Sexism is bigger than any one person; it's a system in which our
-  entire society is enmeshed. Too often, such systematic discrimination as
-  treated as discrete, individual acts, disconnected from the larger reality.
-  What too many men miss is the reality that the system under which they face
-  such inhumane expectations is the same one that limits the potential of women.
-  This exists in the technology and nonprofit tech communities no less than the
-  rest of society — and has to be faced in a systematic way, not simply by
-  counting the number of women on a tech panel." # For the post in lists.
+
+# For the post as it appears in lists.
+summary: >
+  Sexism is bigger than any one person; it's a system in which our entire
+  society is enmeshed. Too often, such systematic discrimination as treated as
+  discrete, individual acts, disconnected from the larger reality. What too many
+  men miss is the reality that the system under which they face such inhumane
+  expectations is the same one that limits the potential of women. This exists
+  in the technology and nonprofit tech communities no less than the rest of
+  society -- and has to be faced in a systematic way, not simply by counting the
+  number of women on a tech panel.
+
+# For SEO and social media snippets (recommended 150-200 characters).
+description: >
+  Sexism is bigger than any one person; it's a system in which our entire
+  society is enmeshed. Too often, such systematic discrimination as treated as
+  discrete, individual acts, disconnected from the larger reality.
 
 draft: false # Change to 'false' to publish this post.
 featured: false
@@ -40,7 +41,7 @@ featureImageAlt: 'Nametag from the BlogHer conference' # Alternative text for fe
 featureImageCreditFlickr: 'SFist'
 # featureImageCreditCustom: 'Top image credit Flickr user [username](https://www.flickr.com/photos/username).'
 thumbnail: 'blogher_sfist.jpg' # Image in lists of posts.
-# shareImage: 'share.jpg' # For SEO and social media snippets. Falls back to thumbnail (if set) or featureImage.
+# shareImage: 'share.jpg Falls back to thumbnail (if set) or featureImage.
 
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
@@ -62,8 +63,8 @@ month: '2010-08'
 
 Michael Arrington has a
 [tedious post on TechCrunch](https://techcrunch.com/2010/08/28/women-in-tech-stop-blaming-me/)
-up about the fact that there aren't as many women in technology, or — more to
-the point — in positions of leadership in technology companies or on panels at
+up about the fact that there aren't as many women in technology, or -- more to
+the point -- in positions of leadership in technology companies or on panels at
 tech conferences isn't men's fault.
 
 But you know what? I think he's right.
@@ -73,11 +74,11 @@ Nor, clearly, are women to blame. What causes this disparity? One word:
 Sexism.**
 
 "But wait!" you cry. "Surely there must be someone _carrying out_ this sexism."
-And indeed, that's true — many individual men, and some women, often put forth
+And indeed, that's true -- many individual men, and some women, often put forth
 ideas or enact policies that are rooted in sexism.
 
 **But sexism is bigger than any one person; it's a system in which our entire
-society — certainly the privileged, Western technology community — is
+society -- certainly the privileged, Western technology community -- is
 enmeshed.**
 
 Too often, such systematic discrimination as treated as discrete, individual
@@ -89,7 +90,7 @@ acts, disconnected from the larger reality. And so Arrington can complain:
 By attempting to fill a quota, he thinks he can inoculate himself (or his
 conference) against the charge of sexism. (He then makes the absurd point that,
 really, women are getting annoyed by being asked to speak at conferences all the
-time — which tends to undo that inoculation a small bit.)
+time -- which tends to undo that inoculation a small bit.)
 
 **Men are privileged most directly by sexism, of course, which is why
 Arrington's post is so galling.** He suggests "we" need women "who go out and
@@ -102,7 +103,7 @@ has called
 "[the diversity trap](http://www.timwise.org/1999/12/springing-the-diversity-trap-thoughts-on-how-not-to-defend-affirmative-action/),"
 in which a commitment only to "different backgrounds" motivates any kind of
 diversity. He's writing about racism and affirmative action, but the movement is
-the same — away from working to end sexism or racism, and toward an anodyne
+the same -- away from working to end sexism or racism, and toward an anodyne
 pledge to provide different perspectives. Wise quotes then-California Gov.
 Ronald Reagan, upon signing affirmative action into law in 1974:
 
@@ -119,7 +120,7 @@ Arrington makes the mind-boggling assertion that women are at an advantage,
 because there are so few of them that the press wants to write about the ones
 who "make it." This is the
 "[talented tenth](https://teachingamericanhistory.org/document/the-talented-tenth/)"
-turned on its head — that because
+turned on its head -- that because
 [a few individuals](https://www.fastcompany.com/section/women-in-tech-2009) have
 struggled against overwhelming odds toward success, and that the media naturally
 wants to cover such extraordinary stories, the institutional oppression that
@@ -167,7 +168,7 @@ to are women: [Beth Kanter](https://bethkanter.org/),
 [Susan Gordon](https://web.archive.org/web/20100902160446/http://exchange.causes.com/?s=%22susan+gordon%22),
 [Katya Andresen](https://web.archive.org/web/20100902160446/http://www.nonprofitmarketingblog.com/),
 [Maddie Grant](https://web.archive.org/web/20100902160446/http://www.socialfish.org/blog),
-[Margaux O'Malley](https://www.grandjunctiondesign.com/) — and that's just off
+[Margaux O'Malley](https://www.grandjunctiondesign.com/) -- and that's just off
 the top of my head (sorry if I missed anyone).
 
 Yet even in this space, women leaders are repeatedly
@@ -184,12 +185,12 @@ is seen as
 
 Arrington is feeling put-upon because he's experiencing women who point out the
 inequity in representation and leadership as a personal attack on him. It's not
-that unusual of a response — it's the same experience white folks have when
+that unusual of a response -- it's the same experience white folks have when
 people of color talk about racism, straight people have when queers demand equal
 treatment, and able-bodied individuals have when persons with disabilities
 expect equal access.
 
-This is how oppression is set up — forcing individuals to compete against one
+This is how oppression is set up -- forcing individuals to compete against one
 another _as individuals_ and rendering its pervasive influence invisible.
 
 **Michael Arrington is right to be outraged. But the outrage should be focused
@@ -211,7 +212,7 @@ women.**
 Of course, there are individual men and women who help to support such a system.
 Their actions are rightly be identified and they should be given the support and
 resources to help to change these actions. But changing individual actions isn't
-enough by itself — the system must be confronted as a whole.
+enough by itself -- the system must be confronted as a whole.
 
 The [BlogHer](https://www.blogher.com/),
 [Women Who Tech](https://womenwhotech.org/),
@@ -239,7 +240,7 @@ technology and beyond.**
 to address this issue, and Michael Arrington followed up by saying he knows more
 needs to be done, but he might delete the post in favor of something
 "[far less painful](https://twitter.com/arrington/status/22454841699)." It's
-likely that to really address sexism — if that is what he wants to do — he'll
+likely that to really address sexism -- if that is what he wants to do -- he'll
 have to face some painful truths, however. Jon Pincus says it much more
 succinctly:
 "[Yes, it's hard. Take some responsibility.](https://www.talesfromthe.net/jon/?p=1552)"

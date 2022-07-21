@@ -5,7 +5,9 @@ date: '2022-07-01'
 
 slug: '/dead-link'
 
-description: 'This is a dead link' # For SEO and social media snippets.
+# For SEO and social media snippets (recommended 150-200 characters).
+description: >
+  This is a dead link
 
 draft: false
 featured: false

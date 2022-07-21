@@ -7,18 +7,22 @@ lastmod: '2007-09-12' # Appends 'edited on' to the publish date
 slug: 'can-blogging-stop-genocide' # Recommended length is 3 to 5 words.
 aliases:
   - /p/060528
-description: 'The Genocide Intervention Network is a nonprofit based in DC that
-  is a little more than two years old. We began as a student group at Swarthmore
-  College with an idea: to change the way the world responds to genocide. As a
-  result of our origins as a student group, we have a strong history in using
-  online social networking and viral campaigns.' # For SEO and social media snippets.
-summary: 'The Genocide Intervention Network is a nonprofit based in DC that is a
-  little more than two years old. We began as a student group at Swarthmore
-  College with an idea: to change the way the world responds to genocide. As a
-  result of our origins as a student group, we have a strong history in using
-  online social networking and viral campaigns.' # For the post in lists.
 
-draft: true # Change to 'false' to publish this post.
+# For the post as it appears in lists.
+summary: >
+  The Genocide Intervention Network is a nonprofit based in DC that is a little
+  more than two years old. We began as a student group at Swarthmore College
+  with an idea: to change the way the world responds to genocide. As a result of
+  our origins as a student group, we have a strong history in using online
+  social networking and viral campaigns.
+
+# For SEO and social media snippets (recommended 150-200 characters).
+description: >
+  The Genocide Intervention Network is a nonprofit to change the way the world
+  responds to genocide. Because we began as a student group, we often use online
+  social networking and viral campaigns.
+
+draft: false # Change to 'false' to publish this post.
 featured: false
 toc: false
 
@@ -36,7 +40,7 @@ featureImageCreditCustom:
   'Top image credit Flickr user [Maria
   Reyes-McDavis](https://www.flickr.com/photos/23300119@N03).'
 thumbnail: 'pen-paper_flickr-maria_reyes-mcdavis.jpg' # Image in lists of posts.
-# shareImage: 'share.jpg' # For SEO and social media snippets. Falls back to thumbnail (if set) or featureImage.
+# shareImage: 'share.jpg Falls back to thumbnail (if set) or featureImage.
 
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
@@ -66,12 +70,12 @@ First, I want to thank NetSquared for offering me and the
 the opportunity to attend this
 [critical event](https://web.archive.org/web/20061031234727/http://netsquared.org/2006/conference '2006 NetSquared Conference').
 I had written out my introduction earlier this week, but due to a browser mishap
-lost nearly all of it and haven’t had time to re-write it until now.
+lost nearly all of it and haven't had time to re-write it until now.
 
 GI-Net is a nonprofit based in DC that is a little more than two years old. We
 began as a student group at Swarthmore College with an idea: to change the way
 the world responds to genocide. In her groundbreaking and Pulitzer Prize–winning
-book, _‘A Problem From Hell’: America and the Age of Genocide_,
+book, _'A Problem From Hell': America and the Age of Genocide_,
 [Samantha Power](https://www.thenation.com/article/archive/why-cant-we/ 'Read a recent commencement speech by Samantha Power')
 surveys the U.S. response to genocides in the twentieth century and discovers
 that, above all, the reason the United States so often failed to act, or to act
@@ -85,11 +89,11 @@ online social networking and viral campaigns, and this continues even as we
 branch out into other constituencies. In our first year of existence, we raised
 a
 [quarter-million dollars](https://web.archive.org/web/20060709042957/http://www.genocideintervention.net/donate/info.php "Learn more about GI-Net's fundraising for peacekeepers")
-for peacekeepers in Darfur — the only NGO to raise money for protection rather
-than humanitarian aid — primarily through student networks, both actual and
+for peacekeepers in Darfur -- the only NGO to raise money for protection rather
+than humanitarian aid -- primarily through student networks, both actual and
 virtual. In my work for GI-Net, I am heavily influenced by
 [Howard Rheingold](https://rheingold.com/ "Howard Rheingold's website"),
-Christian Crumlish’s
+Christian Crumlish's
 [_The Power of Many_](https://web.archive.org/web/20060707224126/http://thepowerofmany.com/ "'The Power of Many' book and website"),
 [Marty Kearns](https://web.archive.org/web/20060710192840/http://www.network-centricadvocacy.net/ "Marty Kearns' blog")
 and
@@ -97,11 +101,11 @@ and
 and similar movements.
 
 How can online activism build a movement that prevents and stops genocide?
-Read on…
+Read on...
 
 This might get a bit long, so:
 
-### First, a little background…
+### First, a little background...
 
 I am a self-taught
 [web developer](https://web.archive.org/web/20070207093051/http://quixotic1.com/ 'My website, quixotic1.com')
@@ -130,7 +134,7 @@ the UK
 [_Independent_](https://web.archive.org/web/20040803082657/http://www.why-war.com/news/2003/10/14/allthepr.html "Article: All the President's Votes?")
 had documented some of the serious problems, but few had taken notice, and
 Harris had been repeatedly threatened by her ISP, fearful of repercussions from
-Diebold’s lawyers.
+Diebold's lawyers.
 
 A member of Why War? decided to
 [post an archive](https://web.archive.org/web/20040712083338/http://www.why-war.com/features/2003/10/diebold.html 'View the Diebold files')
@@ -148,8 +152,8 @@ for abusive copyright threats.
 The combination of civil disobedience and civil action paid off handsomely.
 Within two months, Diebold backed down from their legal threats and resigned
 themselves to the damaging information about them now in the public domain.
-Suspicion of Diebold and other electronic voting machine manufacturers — and,
-thus, consistent investigation into their practices — remains high.
+Suspicion of Diebold and other electronic voting machine manufacturers -- and,
+thus, consistent investigation into their practices -- remains high.
 
 ### Back to genocide
 
@@ -158,24 +162,24 @@ change? There are three primary ways.
 
 First, we
 [raise money online](https://web.archive.org/web/20060118220930/http://www.genocideintervention.net/donate/ 'Learn more about donating to GI-Net')
-directly for peacekeepers in Darfur. This is unprecedented — never before has
+directly for peacekeepers in Darfur. This is unprecedented -- never before has
 the average person been able to directly affect human security in the midst of a
 genocide. We raise money through a variety of techniques such as
 [virtual house parties](https://web.archive.org/web/20060706215139/http://www.genocideintervention.net/fundraise/virtual.php 'Learn about virtual house parties')
 (a favorite among Facebook and MySpace users),
 [dinners for Darfur](https://web.archive.org/web/20060706215126/http://www.genocideintervention.net/fundraise/dinners.php 'Learn about dinners for Darfur')
 and old-fashioned member volunteering. (A piano teacher in Utah giving two
-weeks’ proceeds; a “battle of the bands” fundraiser in California; a bat mitzvah
+weeks' proceeds; a "battle of the bands" fundraiser in California; a bat mitzvah
 in New Jersey; a frat party in Massachusetts.)
 
-Our second component is education. People can’t act against genocide unless they
+Our second component is education. People can't act against genocide unless they
 know about it, which is why we partnered with the American Progress Action Fund
 in 2005 to launch the
 [Be A Witness campaign](https://web.archive.org/web/20060703175035/http://beawitness.org/splash/ 'Visit BeAWitness.org'),
 urging the news media to adequately cover the crisis in Darfur. Our analysis
 showed that in June 2005, the major networks ran 50 times as many stories about
 Michael Jackson and 12 times as many stories about Tom Cruise as about the
-genocide in Darfur. In fact, in all of 2005 CBS ran just two minutes — total —
+genocide in Darfur. In fact, in all of 2005 CBS ran just two minutes -- total --
 on the issue, a fact that motivated more than 30,000 viewers to take action
 through the viral video and website. Because of the paltry news coverage, we
 also issue
@@ -207,10 +211,10 @@ A photo petition, using
 and our
 [Flickr](https://flickr.com/photos/genocideintervention 'See our most recent photos on Flickr')
 account, will put a human face on the victims in Darfur. Viewers will be asked
-to upload images of themselves holding a sign with — not a comment or a pledge —
-but the name of one of the hundreds of thousands of victims in Darfur. These
+to upload images of themselves holding a sign with -- not a comment or a pledge
+-- but the name of one of the hundreds of thousands of victims in Darfur. These
 photos will be delivered to members of Congress to show the depth of human
-involvement — and human crisis — around Darfur.
+involvement -- and human crisis -- around Darfur.
 
 More than one of our members has asked us to be their designated charity for a
 marathon, and so our next fundraising tool will be a website to enable them to
@@ -219,8 +223,8 @@ GI-Net, collect pledges online, and then follow-up with donors after the race.
 
 I would be happy to talk further with any of you about GI-Net or
 [our ideas](https://web.archive.org/web/20060706215202/http://www.genocideintervention.net/advocate/tenthings.php 'Ten things you can do right now to stop genocide!'),
-but this post is already mighty long, so I’ll stop here. Thanks again for
-allowing me to come, and I’m looking forward to seeing everyone!
+but this post is already mighty long, so I'll stop here. Thanks again for
+allowing me to come, and I'm looking forward to seeing everyone!
 
 _Update, Sept. 12, 2007: This blog post has been adapted into a chapter of the
 book_

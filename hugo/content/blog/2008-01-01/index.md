@@ -8,15 +8,20 @@ slug: 'drupal-nonprofits-how-build-social-networks-change' # Recommended length 
 aliases:
   - /blog/2008/01/drupal-nonprofits-or-how-build-social-networks-change
   - /p/080101
-description: "In return for NetSquared's generosity, I wanted to post some tips
-  for nonprofits thinking about using Drupal for their sites -- when to use it
-  and when not to use it, as well as a few useful tidbits from a recent
-  workshop." # For SEO and social media snippets.
-summary: "In return for NetSquared's generosity, I wanted to post some tips for
-  nonprofits thinking about using Drupal for their sites -- when to use it and
-  when not to use it, as well as a few useful tidbits from a recent workshop." # For the post in lists.
 
-draft: true # Change to 'false' to publish this post.
+# For the post as it appears in lists.
+summary: >
+  In return for NetSquared's generosity, I wanted to post some tips for
+  nonprofits thinking about using Drupal for their sites -- when to use it and
+  when not to use it, as well as a few useful tidbits from a recent workshop.
+
+# For SEO and social media snippets (recommended 150-200 characters).
+description: >
+  Some tips for nonprofits thinking about using Drupal for their sites -- when
+  to use it and when not to use it, as well as a few useful tidbits from a
+  recent workshop.
+
+draft: false # Change to 'false' to publish this post.
 featured: false
 toc: false
 
@@ -32,7 +37,7 @@ featureImageAlt: 'Drupal' # Alternative text for featured image.
 featureImageCreditFlickr: 'morten.dk'
 # featureImageCreditCustom: 'Top image credit Flickr user [username](https://www.flickr.com/photos/username).'
 thumbnail: 'drupal-wallpaper_flickr-matt_farina.jpg' # Image in lists of posts.
-# shareImage: 'share.jpg' # For SEO and social media snippets. Falls back to thumbnail (if set) or featureImage.
+# shareImage: 'share.jpg Falls back to thumbnail (if set) or featureImage.
 
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
@@ -64,8 +69,8 @@ Facebook. Lullabot, a Drupal development firm that involved in much of the
 Drupal development, has a
 [keen interest in Drupal for nonprofits](https://www.lullabot.com/articles/how-drupal-will-save-the-world).
 
-In return for NetSquared’s generosity, I wanted to post some tips for nonprofits
-thinking about using Drupal for their sites. I’m convinced that, under most
+In return for NetSquared's generosity, I wanted to post some tips for nonprofits
+thinking about using Drupal for their sites. I'm convinced that, under most
 circumstances, Drupal can be a powerful resource for online advocacy and
 social change.
 
@@ -82,29 +87,29 @@ To date, I have built four full-fledged sites with Drupal for the
   (v4.7)
 - {{< deadlink "Power to Protect" "dl://www.powertoprotect.org" >}} (v4.6)
 
-GI-Net’s
+GI-Net's
 [main site](https://web.archive.org/web/20080804233456/http://www.genocideintervention.net/)
-was also developed in Drupal (v4.7) by an outside firm, as was GI-Net’s student
+was also developed in Drupal (v4.7) by an outside firm, as was GI-Net's student
 site, [STAND](https://standnow.org/) (v4.7).
 
 My
 [personal site](https://web.archive.org/web/20170312021724/http://www.quixoticlife.net/)
-is in Drupal (v5) and I’m working on releasing an e-commerce site and a
+is in Drupal (v5) and I'm working on releasing an e-commerce site and a
 community events site in the near future.
 
 Although I have a working knowledge of basic PHP, on which Drupal is based, my
-work primarily is in HTML and CSS — for the majority of things our sites need to
-do, it’s mainly a matter of finding the right modules (plugins) and then
-themeing (designing) the site to look the way we want. By and large you don’t
+work primarily is in HTML and CSS -- for the majority of things our sites need
+to do, it's mainly a matter of finding the right modules (plugins) and then
+themeing (designing) the site to look the way we want. By and large you don't
 need to have a lot of programming knowledge to create effective sites in Drupal.
 
-### When to Use Drupal — and When Not to Use it
+### When to Use Drupal -- and When Not to Use it
 
 Drupal has a number of strengths:
 
-- Once you understand the terminology and basic structure of Drupal, it’s easy
+- Once you understand the terminology and basic structure of Drupal, it's easy
   to set up sites relatively quickly, with advanced functionality simply
-  “dropped in” by way of modules.
+  "dropped in" by way of modules.
 - Drupal is relatively easy to theme, especially in version 5 and even more so
   in the upcoming version 6 (likely to be released in early 2008).
 - Drupal is extremely search-engine friendly, helping get your site to the top
@@ -113,17 +118,17 @@ Drupal has a number of strengths:
 - Drupal is relatively scalable, able to power large sites as well as small. For
   very high-traffic sites, this will take some tweaking of the server settings,
   but this is true for pretty much any content management system (CMS).
-- It’s free! More importantly, it has a large, robust community of developers
-  regularly updating both its core features and plug-in modules — also for free!
-  And when you can’t swing the free-software cost — staff time — there are
-  plenty of [Drupal developers](https://www.drupal.org/drupal-services) out
-  there. For nonprofits looking to “act out” social change, Drupal is a welcome
+- It's free! More importantly, it has a large, robust community of developers
+  regularly updating both its core features and plug-in modules -- also for
+  free! And when you can't swing the free-software cost -- staff time -- there
+  are plenty of [Drupal developers](https://www.drupal.org/drupal-services) out
+  there. For nonprofits looking to "act out" social change, Drupal is a welcome
   addition to for-profit corporations upon which you have to depend for any
   updates or bug fixes.
-- Because it’s open-source, Drupal won’t lock you in to a proprietary system
+- Because it's open-source, Drupal won't lock you in to a proprietary system
   that mangles your data or makes it difficult to switch to another CMS in the
-  future. Additionally, it’s open nature allows for more frequent integration
-  with other software and web services — everything from
+  future. Additionally, it's open nature allows for more frequent integration
+  with other software and web services -- everything from
   [Flickr](https://www.flickr.com/) to
   [Salesforce](https://www.salesforce.com/), with rumors of
   [Democracy in Action](https://web.archive.org/web/20080806144433/http://www2.democracyinaction.org/)
@@ -148,7 +153,7 @@ including
 and NetSquared itself
 ([see a full list](https://web.archive.org/web/20080805075701/http://www.netsquared.org/)).
 
-One of my favorites, just recently released, is WITNESS’s
+One of my favorites, just recently released, is WITNESS's
 [The Hub](https://web.archive.org/web/20071220024321/http://hub.witness.org/),
 built by the fine folks at [CivicActions](https://civicactions.com/). (The Hub
 was also a
@@ -159,34 +164,34 @@ for social change that Drupal-powered sites can accomplish.
 **When might you not want to use Drupal?**
 
 - For those completely new to Drupal, it can have a significant learning curve.
-  We’re not talking Photoshop here, but much of the terminology and structure of
+  We're not talking Photoshop here, but much of the terminology and structure of
   the site can be unfamiliar to new users, even those familiar with other CMSes.
-  If you need a hot website tomorrow and can’t spring for a paid developer, it
+  If you need a hot website tomorrow and can't spring for a paid developer, it
   might make more sense to go with a CMS you already know.
 - Drupal is an excellent platform for blogs, and allows you to build in a lot of
-  community and social-networking features that can strengthen your blog’s
+  community and social-networking features that can strengthen your blog's
   appeal. However, [WordPress](https://wordpress.org/), another free open-source
   software, is specifically oriented toward blogs. The learning curve is
-  significantly less, and it’s somewhat easier to theme (design). If you’re
+  significantly less, and it's somewhat easier to theme (design). If you're
   primarily a designer and you want a straightforward blog site without having
   to ever see a line of PHP code, WordPress may well be a better option. Like
   Drupal, it has an excellent community of developers and contributers, and many
   of its plugins can also stretch its capabilities to encompass
   social-networking-oriented functions.
-- If you absolutely need a website tomorrow — a simple blog or “brochureware”
+- If you absolutely need a website tomorrow -- a simple blog or "brochureware"
   site giving the basics of a new campaign and a place to post updates and press
   releases, your best bet may be [Joomla](https://www.joomla.org/). Like Drupal
-  and WordPress, it’s free, open-source and has lots of developers, many of them
+  and WordPress, it's free, open-source and has lots of developers, many of them
   involved in nonprofits and advocacy campaigns. It is somewhat harder to design
-  to not look like “a Joomla site” but there’s no question that it’s faster to
+  to not look like "a Joomla site" but there's no question that it's faster to
   set up and publish a simple website.
 - Free software is great and all, but if you have no budget and no design or
   programming resources in-house, you may want to stick with that commercial CMS
-  you know — or even Dreamweaver or FrontPage sites. The cost of free software
-  is the development time, and that isn’t an insignificant concern. If you’re
+  you know -- or even Dreamweaver or FrontPage sites. The cost of free software
+  is the development time, and that isn't an insignificant concern. If you're
   planning a big campaign and have a budget or in-house developers, I highly
   recommend one of the open-source CMSes because of all of the strengths
-  mentioned above (and particularly that they won’t lock you into some horrible
+  mentioned above (and particularly that they won't lock you into some horrible
   proprietary code nightmare). But not every nonprofit will have that luxury,
   and you should carefully consider if you have the money or staff time to build
   a site from scratch.
@@ -194,44 +199,44 @@ for social change that Drupal-powered sites can accomplish.
   software and web services. This is true, but not for every piece of software
   out there, and not always as robustly as you might like. In particular, if you
   have a lot of tight integration needs and already have another piece hosted
-  with another service — a donor database or an online action suite, for
-  instance — it may make sense to build your website using their own CMS to
-  allow for the tightest possible integration. You’ll give up some of the cool
+  with another service -- a donor database or an online action suite, for
+  instance -- it may make sense to build your website using their own CMS to
+  allow for the tightest possible integration. You'll give up some of the cool
   Drupal functionality and customization possibilities, but when it comes time
   to run those end-year reports, you just push a button.
 - Drupal is built by volunteers. Some of them are paid web developers who
   voluntarily contribute their work back to the Drupal community. But nothing is
-  guaranteed — that module you depend on might have a bug that doesn’t get fixed
-  for six months. There are ways to help guard against this — for instance, by
-  sticking to modules
+  guaranteed -- that module you depend on might have a bug that doesn't get
+  fixed for six months. There are ways to help guard against this -- for
+  instance, by sticking to modules
   [recommended](https://web.archive.org/web/20080805011707/http://www.lullabot.com/audiocast/drupal_podcast_no_40_top_40_projects)
   by
   [others](https://web.archive.org/web/20080803004646/http://webpodge.com/2007/02/22/top-10-drupal-modules/),
-  and checking to see how often past releases have come out, but it’s definitely
-  something to consider. In all of the sites I’ve built Drupal on, only one
+  and checking to see how often past releases have come out, but it's definitely
+  something to consider. In all of the sites I've built Drupal on, only one
   mission-critical item has ever had a serious bug that took a couple of months
   to get addressed. That said, if you do have developers on hand or can pay
-  others, Drupal’s open-source nature makes it easy to find and squash the bugs
-  yourself as they occur — no waiting on Kintera or Convio to get around to
+  others, Drupal's open-source nature makes it easy to find and squash the bugs
+  yourself as they occur -- no waiting on Kintera or Convio to get around to
   fixing your pet peeve with the software.
 
 ### Drupal Resources for Nonprofits
 
 [Drupal for Good](https://groups.drupal.org/drupal-for-good) is the primary
 Drupal-centered site for nonprofit and charitable discussions. (For the
-mischievous, there’s also
+mischievous, there's also
 [Drupal for Evil](https://groups.drupal.org/drupal-for-evil).) There are plenty
 of
 [geographically-based Drupal groups](https://groups.drupal.org/og/all?filter0=&filter1=141&filter2=**ALL**)
-— see if there’s one near you!
+-- see if there's one near you!
 
-There’s lots of general Drupal support out there, including the
+There's lots of general Drupal support out there, including the
 [handbook documentation](https://web.archive.org/web/20080629032329/http://drupal.org/handbooks),
 [mailing lists](https://web.archive.org/web/20080612200622/http://drupal.org/lists),
 [IRC](https://drupal.org/node/108355), [forums](https://www.drupal.org/forum)
 and [blogs](https://www.drupal.org/planet). (If you have questions about a
-specific module, the best practice is to go to that module’s project page on
-Drupal and post an issue — among other things, it’s far more likely your
+specific module, the best practice is to go to that module's project page on
+Drupal and post an issue -- among other things, it's far more likely your
 questions or concerns will be answered than if you post on the general forums!)
 There are also [books on Drupal](https://www.drupal.org/books) as well as
 fee-based training from groups like
@@ -241,8 +246,8 @@ Want even more? Try the weekly
 [Lullabot Podcast](https://web.archive.org/web/20080108134222/http://www.lullabot.com/podcast)
 or browse through the step-by-step
 [Drupal Dojo screencasts](https://web.archive.org/web/20071230220904/http://drupaldojo.com/).
-One of Drupal’s strengths is its vibrant community!
+One of Drupal's strengths is its vibrant community!
 
-I’ll be posting more about how Drupal can be useful to nonprofits — including
-case studies — in the near future. If you have any comments or suggestions for
+I'll be posting more about how Drupal can be useful to nonprofits -- including
+case studies -- in the near future. If you have any comments or suggestions for
 resources, please add them in the comments!

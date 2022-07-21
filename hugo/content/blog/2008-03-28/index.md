@@ -7,16 +7,21 @@ date: '2008-03-28'
 slug: 'genocide-intervention-network-nominated-netsquared-mashup-award' # Recommended length is 3 to 5 words.
 aliases:
   - /p/080328
-description: 'This week, the Genocide Intervention Network was honored to be
-  nominated by the NetSquared community as a 2008 Featured Project for our
-  proposal to upgrade and extend the DarfurScores.org website. Thank you to
-  everyone who offered your support!' # For SEO and social media snippets.
-summary: 'This week, the Genocide Intervention Network was honored to be
-  nominated by the NetSquared community as a 2008 Featured Project for our
-  proposal to upgrade and extend the DarfurScores.org website. Thank you to
-  everyone who offered your support!' # For the post in lists.
 
-draft: true # Change to 'false' to publish this post.
+# For the post as it appears in lists.
+summary: >
+  This week, the Genocide Intervention Network was honored to be nominated by
+  the NetSquared community as a 2008 Featured Project for our proposal to
+  upgrade and extend the DarfurScores.org website. Thank you to everyone who
+  offered your support!
+
+# For SEO and social media snippets (recommended 150-200 characters).
+description: >
+  The Genocide Intervention Network was honored to be nominated by the
+  NetSquared community as a 2008 Featured Project for our proposal to upgrade
+  and extend the DarfurScores.org website.
+
+draft: false # Change to 'false' to publish this post.
 featured: false
 toc: false
 
@@ -34,7 +39,7 @@ featureImageCreditCustom:
   'Top image credit Flickr user [Kevin
   Burkett](https://www.flickr.com/photos/24514780@N02).'
 thumbnail: 'capitol_flickr-kevin_burkett.jpg' # Image in lists of posts.
-# shareImage: 'share.jpg' # For SEO and social media snippets. Falls back to thumbnail (if set) or featureImage.
+# shareImage: 'share.jpg Falls back to thumbnail (if set) or featureImage.
 
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
@@ -68,8 +73,8 @@ for our proposal to
 > tentatively named GenocideScores.org.
 
 ![NetSquared Featured Project ::legacy-float-r](n2y3-featured-project.jpg)Our
-current plan for the site — which could change as we explore different options
-and hear feedback from our members — has four main components:
+current plan for the site -- which could change as we explore different options
+and hear feedback from our members -- has four main components:
 
 - **Collecting together anti-genocide data**, not only on Darfur but on each of
   our
@@ -80,9 +85,9 @@ and hear feedback from our members — has four main components:
   and
   [genocide education](https://web.archive.org/web/20080320063747/http://www.teachagainstgenocide.org:80/).
 - **Provide clear illustrations of legislative status.** Instead of just hearing
-  about a bill when a member of Congress does (or doesn’t) vote for it, we’ll be
+  about a bill when a member of Congress does (or doesn't) vote for it, we'll be
   tracking bills as they move through each chamber.
-- **Cross-index a bill’s status with a member’s location.** When the latest bill
+- **Cross-index a bill's status with a member's location.** When the latest bill
   on genocide prevention is up for a vote, anti-genocide activists whose members
   of Congress represent key votes on the legislation will be able to receive
   automatic alerts.
@@ -95,11 +100,11 @@ and hear feedback from our members — has four main components:
 
 **Now, we want your feedback. If you have a chance,
 [read through our proposal for DarfurScores.org](https://web.archive.org/web/20080719230742/http://www.netsquared.org/2008/conference/projects/anti-genocide-action-tracker-genocide-scores-every-politician-state-and-university)
-and leave a comment** — tell us what you like, what you think could be changed,
-what we’re overlooking.
+and leave a comment** -- tell us what you like, what you think could be changed,
+what we're overlooking.
 
 Remember that this is all about our core mission: **empowering individuals and
 communities with the tools to prevent and stop genocide.**
 
-We hope this project will result in a valuable new tool, and we’d love to have
+We hope this project will result in a valuable new tool, and we'd love to have
 your input!

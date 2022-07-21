@@ -7,16 +7,19 @@ lastmod: '2015-10-05' # Appends 'edited on' to the publish date
 slug: 'google-plus-nonprofit-social-change-implications' # Recommended length is 3 to 5 words.
 aliases:
   - /p/110805
-description: "While this presentation does not cover the basics of what Google
-  Plus is and how it works, it looks at how nonprofits and activists might
-  effectively use Google Plus and highlights its most useful tools. The
-  presentation also discusses the effects that Google Plus's approach to social
-  networking might have on online activism in general." # For SEO and social media snippets.
-summary: "While this presentation does not cover the basics of what Google Plus
-  is and how it works, it looks at how nonprofits and activists might
-  effectively use Google Plus and highlights its most useful tools. The
-  presentation also discusses the effects that Google Plus's approach to social
-  networking might have on online activism in general." # For the post in lists.
+
+# For the post as it appears in lists.
+summary: >
+  While this presentation does not cover the basics of what Google Plus is and
+  how it works, it looks at how nonprofits and activists might effectively use
+  Google Plus and highlights its most useful tools. The presentation also
+  discusses the effects that Google Plus's approach to social networking might
+  have on online activism in general.
+
+# For SEO and social media snippets (recommended 150-200 characters).
+description: >
+  How nonprofits and activists might use Google Plus, and the effects its
+  approach to social networking might have on online activism in general.
 
 draft: false # Change to 'false' to publish this post.
 featured: false
@@ -34,7 +37,7 @@ featureImageAlt: 'Google Plus' # Alternative text for featured image.
 featureImageCreditFlickr: 'west.m'
 # featureImageCreditCustom: 'Top image credit Flickr user [username](https://www.flickr.com/photos/username).'
 thumbnail: 'google-plus_flickr-west-m.jpg' # Image in lists of posts.
-# shareImage: 'share.jpg' # For SEO and social media snippets. Falls back to thumbnail (if set) or featureImage.
+# shareImage: 'share.jpg Falls back to thumbnail (if set) or featureImage.
 
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
@@ -153,8 +156,8 @@ Plus's "nymwars" policy
 ["an abuse of power"](https://www.zephoria.org/thoughts/archives/2011/08/04/real-names.html):
 
 > The people who most heavily rely on pseudonyms in online spaces are those who
-> are most marginalized by systems of power. “Real names” policies aren’t
-> empowering; they’re an authoritarian assertion of power over vulnerable
+> are most marginalized by systems of power. "Real names" policies aren't
+> empowering; they're an authoritarian assertion of power over vulnerable
 > people.
 
 The Geek Feminism Wiki has an extensive entry on

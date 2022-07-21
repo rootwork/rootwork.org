@@ -8,10 +8,16 @@ slug: 'online-advocacy-learn-community-organizing' # Recommended length is 3 to 
 aliases:
   - /blog/2014/03/what-online-advocacy-can-learn-community-organizing-2014-nonprofit-tech-conference
   - /p/140315
-description: 'Investigate how sustainable social change has transpired in the
-  past, and you’ll be closer to effecting change in the future.' # For SEO and social media snippets.
-summary: 'Investigate how sustainable social change has transpired in the past,
-  and you’ll be closer to effecting change in the future.' # For the post in lists.
+
+# For the post as it appears in lists.
+summary: >
+  Investigate how sustainable social change has transpired in the past, and
+  you'll be closer to effecting change in the future.
+
+# For SEO and social media snippets (recommended 150-200 characters).
+description: >
+  Investigate how sustainable social change has transpired in the past, and
+  you'll be closer to effecting change in the future.
 
 draft: false # Change to 'false' to publish this post.
 featured: true
@@ -29,7 +35,7 @@ featureImageAlt: 'Cover slide from the presentation' # Alternative text for feat
 featureImageCreditFlickr: 'fenris117'
 # featureImageCreditCustom: 'Image credit Flickr user [username](https://www.flickr.com/photos/username).'
 thumbnail: '2014-04-ntc-b.jpg' # Image in lists of posts.
-# shareImage: 'share.jpg' # For SEO and social media snippets.
+# shareImage: 'share.jpg
 
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
@@ -51,8 +57,8 @@ month: '2014-03'
 ---
 
 A transcript from my portion of the
-“[Big Idea](https://14ntc.sched.com/event/10981233f5dfb1e3ca5a325d9bd19f81)”
-panel on “The Power of Technology in Advocacy and Organizing” from the 2014
+"[Big Idea](https://14ntc.sched.com/event/10981233f5dfb1e3ca5a325d9bd19f81)"
+panel on "The Power of Technology in Advocacy and Organizing" from the 2014
 Nonprofit Technology Conference, March 13-15 in Washington, DC.
 
 _Update, March 6, 2015: Today I gave a similar presentation as part of the 2015
@@ -68,12 +74,12 @@ words to images, the original might serve you better.
 
 ### Online advocacy and community organizing
 
-My background is in community organizing and social movement theory, and that’s
-what I’d like to talk a little bit about today.
+My background is in community organizing and social movement theory, and that's
+what I'd like to talk a little bit about today.
 
 ![Strategy](2014004-ntc-b-0031280.jpg ' ')
 
-In popular culture, we have two stories we usually tell about social change —
+In popular culture, we have two stories we usually tell about social change --
 two lenses in which we view advocacy and activism.
 
 ![Charisma](2014004-ntc-b-0041280.jpg ' ')
@@ -90,22 +96,22 @@ square to reclaim their democracy.
 
 ![Nope.](2014004-ntc-b-0061280.jpg ' ')
 
-While both of these stories have kernels of truth — events happen, and people
-inspire — they are fundamentally not how social change occurs. Instead, it’s
+While both of these stories have kernels of truth -- events happen, and people
+inspire -- they are fundamentally not how social change occurs. Instead, it's
 movement-building work that pushes change forward.
 
 ![Training](2014004-ntc-b-0071280.jpg ' ')
 
-Rosa Parks wasn’t just tired — she was trained.
+Rosa Parks wasn't just tired -- she was trained.
 
 ![Physical and virtual](2014004-ntc-b-0081280.jpg ' ')
 
-The Egyptian revolution didn’t just happen, it was preceded by years of student
+The Egyptian revolution didn't just happen, it was preceded by years of student
 organizing.
 
 ![Strategy](2014004-ntc-b-0091280.jpg ' ')
 
-The most successful social change movements didn’t just get lucky or figure out
+The most successful social change movements didn't just get lucky or figure out
 how to use the newest tools, they were built through concerted strategic
 planning. Our work for change can draw on that history and experience.
 
@@ -121,9 +127,9 @@ communications, and the campaign strategy I just mentioned.
 
 ![Maintenance work](2014004-ntc-b-0121280.jpg ' ')
 
-But there’s more to an organization and more to a movement than that. There’s
+But there's more to an organization and more to a movement than that. There's
 another group of endeavors sometimes called maintenance work, and it flies under
-the radar even though it’s crucial to keeping our campaigns afloat.
+the radar even though it's crucial to keeping our campaigns afloat.
 
 ![Gardening](2014004-ntc-b-0131280.jpg ' ')
 
@@ -140,7 +146,7 @@ technical knowledge can be more easily measured.
 ![Certified expert white men](2014004-ntc-b-0151280.jpg ' ')
 
 Meanwhile, movement-building work is disproportionately done by women, leaving
-men in the “important” and visible roles.
+men in the "important" and visible roles.
 
 ![Gatekeepers](2014004-ntc-b-0161280.jpg ' ')
 
@@ -149,14 +155,14 @@ unacknowledged power through gatekeeping.
 
 ![Gatekeeper techies](2014004-ntc-b-0171280.jpg ' ')
 
-Or to put it another way, “We’ll launch that campaign when I’m ready to update
-the website for you.”
+Or to put it another way, "We'll launch that campaign when I'm ready to update
+the website for you."
 
 ![Solidarity](2014004-ntc-b-0181280.jpg ' ')
 
 In our organizations, we should be striving toward social change, not startup
 culture. We should cultivate sustainable work. We should commit to
-anti-oppression work so we don’t replicate the unequal society we’re trying to
+anti-oppression work so we don't replicate the unequal society we're trying to
 improve. We should provide benefits rather than relying on a precarious
 workforce of independent contractors. We should _pay our interns_. We should
 allow staff to unionize, or become a worker-owned collective.
@@ -171,13 +177,13 @@ not expect them to work for us just because they made people some money.
 
 In closing, my one piece of advice is in addition to all the
 [Twitter](/tags/twitter/) guides and fundraising how-tos in your tool belt,
-explore some movement history. Whether it’s _Poor People’s Movements_ about work
-against economic injustice, _I’ve Got the Light of Freedom_ or _Southern Labor
+explore some movement history. Whether it's _Poor People's Movements_ about work
+against economic injustice, _I've Got the Light of Freedom_ or _Southern Labor
 and Black Civil Rights_ about the black-led freedom struggle
 
 ![Green Memes organizing guide](2014004-ntc-b-0211280.jpg ' ')
 
 Or maybe my little article in
 [this recent publication by Green Memes](https://greenmemesteam.tumblr.com/guide).
-Investigate how sustainable social change has transpired in the past, and you’ll
+Investigate how sustainable social change has transpired in the past, and you'll
 be closer to effecting change in the future.

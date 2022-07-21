@@ -8,20 +8,22 @@ slug: 'theory-bottom-up-social-networking' # Recommended length is 3 to 5 words.
 aliases:
   - /blog/2006/12/theory-bottom-social-networking
   - /p/061204
-description: 'Offering concrete ideas for how to solve a seemingly
-  insurmountable problem can give people a sense that they, as individuals, have
-  a stake in an issue. This sort of advocacy is similar to bottom-up,
-  open-source collaborative projects like Wikipedia, in which no one group has
-  proprietary ownership over an idea or a product; instead, the goal is a
-  constant generation of awareness and ideas. Social media can be "a tool for
-  mobilizing people for different kinds of action."' # For SEO and social media snippets.
-summary: 'Offering concrete ideas for how to solve a seemingly insurmountable
-  problem can give people a sense that they, as individuals, have a stake in an
-  issue. This sort of advocacy is similar to bottom-up, open-source
-  collaborative projects like Wikipedia, in which no one group has proprietary
-  ownership over an idea or a product; instead, the goal is a constant
-  generation of awareness and ideas. Social media can be "a tool for mobilizing
-  people for different kinds of action."' # For the post in lists.
+
+# For the post as it appears in lists.
+summary: >
+  Offering concrete ideas for how to solve a seemingly insurmountable problem
+  can give people a sense that they, as individuals, have a stake in an issue.
+  This sort of advocacy is similar to bottom-up, open-source collaborative
+  projects like Wikipedia, in which no one group has proprietary ownership over
+  an idea or a product; instead, the goal is a constant generation of awareness
+  and ideas. Social media can be "a tool for mobilizing people for different
+  kinds of action."
+
+# For SEO and social media snippets (recommended 150-200 characters).
+description: >
+  Offering concrete ideas for how to solve a seemingly insurmountable problem
+  can give people a sense that they, as individuals, have a stake in an issue,
+  similar to open-source projects like Wikipedia.
 
 draft: false # Change to 'false' to publish this post.
 featured: false
@@ -39,7 +41,7 @@ featureImageAlt: 'Grass growing near a gutter.' # Alternative text for featured 
 featureImageCreditFlickr: 'Dustpuppy72'
 # featureImageCreditCustom: 'Top image credit Flickr user [username](https://www.flickr.com/photos/username).'
 thumbnail: 'grass-gutter_flickr-dustpuppy72.jpg' # Image in lists of posts.
-# shareImage: 'share.jpg' # For SEO and social media snippets. Falls back to thumbnail (if set) or featureImage.
+# shareImage: 'share.jpg Falls back to thumbnail (if set) or featureImage.
 
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
@@ -63,9 +65,9 @@ month: '2006-12'
 ---
 
 Recently, the
-[Genocide Intervention Network](https://web.archive.org/web/20061229164737/http://www.genocideintervention.net/index.php)’s
-efforts in “social networking” — things like MySpace, Facebook, Flickr and
-del.icio.us — have been attracting a fair amount of attention. I was invited to
+[Genocide Intervention Network](https://web.archive.org/web/20061229164737/http://www.genocideintervention.net/index.php)'s
+efforts in "social networking" -- things like MySpace, Facebook, Flickr and
+del.icio.us -- have been attracting a fair amount of attention. I was invited to
 write guest posts for the
 [Democracy in Action blog](https://web.archive.org/web/20090918215435/http://blog.democracyinaction.org/comments.jsp?blog_entry_KEY=21711)
 and
@@ -84,7 +86,7 @@ that I wrote as an introduction to the NetSquared national conference last May
 distributed to attendees).
 
 Today, Joshua Levy at Personal Democracy Forum posts the
-“[rules for using MySpace](https://web.archive.org/web/20070717032434/http://www.personaldemocracy.com/node/1116)”
+"[rules for using MySpace](https://web.archive.org/web/20070717032434/http://www.personaldemocracy.com/node/1116)"
 derived from interviews with me and with Scott Goodstein, another online
 organizer who has done some amazing work with
 [Save the Internet](https://web.archive.org/web/20070709102431/http://www.myspace.com/savetheinternet),
@@ -96,9 +98,9 @@ with the band [Anti-Flag](http://www.anti-flag.com/) on a Darfur essay included
 in their newest album.)
 
 One thing I have been emphasizing in all of these presentations and interviews
-has been the idea of **using social networking as a “bottom-up” way of online
-mobilization** — in the words of GI-Net’s mission, “empowering individuals and
-communities with the tools” to effect change.
+has been the idea of **using social networking as a "bottom-up" way of online
+mobilization** -- in the words of GI-Net's mission, "empowering individuals and
+communities with the tools" to effect change.
 
 Salient quote from
 [Joshua's article](https://web.archive.org/web/20070717032434/http://www.personaldemocracy.com/node/1116):
@@ -106,24 +108,24 @@ Salient quote from
 > Offering concrete ideas for how to solve a seemingly insurmountable problem
 > can give people a sense that they, as individuals, have a stake in an issue.
 >
-> The Genocide Intervention Network links to a list of “ten things you can do to
-> stop genocide.” Ivan Boothe argues that these steps, broken down into easily
+> The Genocide Intervention Network links to a list of "ten things you can do to
+> stop genocide." Ivan Boothe argues that these steps, broken down into easily
 > digestible chunks, give people an easy way to participate.
 >
-> Although they also link to the Genocide Intervention Network’s main web site,
-> that isn’t always the point. “A number of these steps aren’t even within our
-> organization,” Boothe says. This sort of advocacy is similar to bottom-up,
+> Although they also link to the Genocide Intervention Network's main web site,
+> that isn't always the point. "A number of these steps aren't even within our
+> organization," Boothe says. This sort of advocacy is similar to bottom-up,
 > open-source collaborative projects like Wikipedia, in which no one group has
 > proprietary ownership over an idea or a product; instead, the goal is a
 > constant generation of awareness and ideas.
 >
-> A MySpace page, says Boothe, isn’t simply an advertisement for an
-> organization, “it’s a tool for mobilizing people for different kinds
-> of action.”
+> A MySpace page, says Boothe, isn't simply an advertisement for an
+> organization, "it's a tool for mobilizing people for different kinds
+> of action."
 
-I don’t by any means consider myself an expert (personally I find myself less
-interested in MySpace than you might expect — but then again I’m a techie who
-hates cell phones, so maybe that’s not a surprise) but I do think there’s a lot
+I don't by any means consider myself an expert (personally I find myself less
+interested in MySpace than you might expect -- but then again I'm a techie who
+hates cell phones, so maybe that's not a surprise) but I do think there's a lot
 to be accomplished in this space.
 
 I think organizations just have to stay focused on empowering their members
@@ -140,39 +142,40 @@ seem to involve nothing more than acquiring banner space:
 
 Yes, you can reach a large audience with MySpace, and statistically, with a
 large enough audience you will have talented people volunteer their services.
-But that’s not “social networking,” it’s just advertising — if nonprofits could
-easily and cheaply fly banner advertisements behind airplanes in the world’s
+But that's not "social networking," it's just advertising -- if nonprofits could
+easily and cheaply fly banner advertisements behind airplanes in the world's
 major cities, they would probably get a lot of volunteers, too. The only
-difference in this case is that it’s electronic and (relatively) free.
+difference in this case is that it's electronic and (relatively) free.
 
-And — as our organization has certainly found out — getting a lot of volunteers
-often means getting a lot of people wanting to do things you don’t do or can’t
-do (like volunteering to go to Darfur, or raising money for guns for rebels, or
-adopting orphaned Darfurian children). Getting a lot of exposure all of a sudden
-can overwhelm a nonprofit, and if there isn’t a clear understanding already in
-place about how to effectively mobilize people toward actions that will make a
-positive difference, then I would be worried about getting distracted by chasing
-benefit concerts and bake sales all over the world. Enthusiastic supporters are
-great, but sometimes you have to channel them in the right direction.
+And -- as our organization has certainly found out -- getting a lot of
+volunteers often means getting a lot of people wanting to do things you don't do
+or can't do (like volunteering to go to Darfur, or raising money for guns for
+rebels, or adopting orphaned Darfurian children). Getting a lot of exposure all
+of a sudden can overwhelm a nonprofit, and if there isn't a clear understanding
+already in place about how to effectively mobilize people toward actions that
+will make a positive difference, then I would be worried about getting
+distracted by chasing benefit concerts and bake sales all over the world.
+Enthusiastic supporters are great, but sometimes you have to channel them in the
+right direction.
 
 Finally, even if online organizing dovetails well with community organizing, the
 mobilizing of third-party advocates only effects change if that mobilization is
 directed in a useful direction.[^1] You might get a lot of people to sign a
 petition, but does that actually aid the community you supposedly help? You
 might attract a lot of donations, but does that actually support the people you
-say you represent? **These are classic nonprofit challenges that don’t go away
+say you represent? **These are classic nonprofit challenges that don't go away
 simply through electronic networking.**
 
-Online organizing doesn’t replace real on-the-ground community organizing or
+Online organizing doesn't replace real on-the-ground community organizing or
 empowerment. (This is actually one of my concerns with the
 [Second Life nonprofit fad](https://beth.typepad.com/beths_blog/2006/07/an_interview_wi.html),
-but that’s for another post.) Action online only matters if it can be translated
+but that's for another post.) Action online only matters if it can be translated
 into the real world, or if it can develop social bonds that provide the
 framework for real-world action.
 
 ### Social Networking to Stop Genocide
 
-Some of GI-Net’s social networking campaigns online:
+Some of GI-Net's social networking campaigns online:
 
 - [MySpace](https://web.archive.org/web/20070302163843/http://myspace.com/genocideintervention)
 - {{< deadlink "Facebook" "dl://www.facebook.com/group.php?gid=2204803189" >}}

@@ -7,16 +7,20 @@ lastmod: '2009-07-05' # Appends 'edited on' to the publish date
 slug: 'social-change-takes-more-social-media' # Recommended length is 3 to 5 words.
 aliases:
   - /p/090525
-description: "Social media doesn't mean you do less organizing -- it means you
-  (can) do it better, or at least differently. You still have to use all the old
-  skills of coalition-building, strategic planning, creative social action,
-  managing relationships and preventing burnout. None of that goes away just
-  because you’re engaging with people on Facebook instead of in town halls." # For SEO and social media snippets.
-summary: "Social media doesn't mean you do less organizing -- it means you (can)
-  do it better, or at least differently. You still have to use all the old
-  skills of coalition-building, strategic planning, creative social action,
-  managing relationships and preventing burnout. None of that goes away just
-  because you’re engaging with people on Facebook instead of in town halls." # For the post in lists.
+
+# For the post as it appears in lists.
+summary: >
+  Social media doesn't mean you do less organizing -- it means you (can) do it
+  better, or at least differently. You still have to use all the old skills of
+  coalition-building, strategic planning, creative social action, managing
+  relationships and preventing burnout. None of that goes away just because
+  you're engaging with people on Facebook instead of in town halls.
+
+# For SEO and social media snippets (recommended 150-200 characters).
+description: >
+  In social media for social change, you still have to use all the old skills of
+  coalition-building, strategic planning, creative social action, managing
+  relationships and preventing burnout.
 
 draft: false # Change to 'false' to publish this post.
 featured: false
@@ -34,7 +38,7 @@ featureImageAlt: 'Working to build something' # Alternative text for featured im
 featureImageCreditFlickr: 'foreversouls'
 # featureImageCreditCustom: 'Top image credit Flickr user [username](https://www.flickr.com/photos/username).'
 thumbnail: 'construction-work_flickr-foreversouls.jpg' # Image in lists of posts.
-# shareImage: 'share.jpg' # For SEO and social media snippets. Falls back to thumbnail (if set) or featureImage.
+# shareImage: 'share.jpg Falls back to thumbnail (if set) or featureImage.
 
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
@@ -100,7 +104,7 @@ I thought the author made some good points that "social change techies" would do
 well to keep in mind. I can see how the author might have gotten the impression
 that some or all of the folks in Joe's roundup are simply shiny-tech pushers. I
 won't try to speak for them, but I do think they aren't blindly following the
-latest tech hype and hoping it will change the world — many of them have clear
+latest tech hype and hoping it will change the world -- many of them have clear
 social change strategies.
 
 My own background is rooted in a) on-the-ground community organizing, including
@@ -164,14 +168,14 @@ strategies in and of themselves when each technology first came out. But smart
 social justice organizers recognized them as tactics, and such tactics were only
 effective when deployed as part of an overall strategy for social change.
 
-**Social media doesn't mean you do _less_ organizing — it means you (can) do it
+**Social media doesn't mean you do _less_ organizing -- it means you (can) do it
 _better_, or at least differently.** You still have to use all the old skills of
 coalition-building, strategic planning, creative social action, managing
 relationships and preventing burnout. None of that goes away just because you're
 engaging with people on Facebook instead of in town halls.
 
-So to get 'round to the original question — the reason I don't feel jaded when I
-look at all the unstrategic uses of social media is because I'm focused on the
+So to get 'round to the original question -- the reason I don't feel jaded when
+I look at all the unstrategic uses of social media is because I'm focused on the
 end goal, the social change. Social justice organizers are a pretty creative
 bunch. Throughout history, they've taken a wide variety of technologies and used
 them strategically to move their campaigns forward. I have no doubt social media

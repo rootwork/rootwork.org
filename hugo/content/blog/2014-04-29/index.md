@@ -9,12 +9,18 @@ date: '2014-04-29'
 slug: 'join-me-devsigner-conference-portland-may-designers-developers-join-forces'
 aliases:
   - /p/140429
-description: 'Devsigner is celebrating the cross-overs, the
-  multi-disciplinarians, the coders who paint and the designers who send pull
-  requests --- and those who want to develop some new left-right brain skills.' # For SEO and social media snippets.
-summary: 'Devsigner is celebrating the cross-overs, the multi-disciplinarians,
-  the coders who paint and the designers who send pull requests --- and those
-  who want to develop some new left-right brain skills.' # For the post in lists.
+
+# For the post as it appears in lists.
+summary: >
+  Devsigner is celebrating the cross-overs, the multi-disciplinarians, the
+  coders who paint and the designers who send pull requests -- and those who
+  want to develop some new left-right brain skills.
+
+# For SEO and social media snippets (recommended 150-200 characters).
+description: >
+  Devsigner is celebrating the cross-overs, the multi-disciplinarians, the
+  coders who paint and the designers who send pull requests -- and those who
+  want to develop some new left-right brain skills.
 
 draft: false
 featured: false
@@ -32,7 +38,7 @@ featureImageAlt: 'Portland waterfront' # Alternative text for featured image.
 # featureImageCreditFlickr: 'username'
 # featureImageCreditCustom: 'Image credit Flickr user [username](https://www.flickr.com/photos/username).'
 thumbnail: 'devsigner-thumbnail.jpg' # Image in lists of posts.
-# shareImage: 'share.jpg' # For SEO and social media snippets.
+# shareImage: 'share.jpg
 
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.

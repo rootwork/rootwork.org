@@ -7,14 +7,19 @@ date: '2010-12-09'
 slug: 'facebook-removes-default-landing-tab-new-nonprofit-pages' # Recommended length is 3 to 5 words.
 aliases:
   - /p/101209
-description: "Now all visitors to a nonprofit's Facebook Page will be directed
-  to the Wall. What's more, with tabs being de-emphasized by their move to
-  smaller links under your profile, it's less obvious how new visitors can find
-  out more about your organization." # For SEO and social media snippets.
-summary: "Now all visitors to a nonprofit's Facebook Page will be directed to
-  the Wall. What's more, with tabs being de-emphasized by their move to smaller
-  links under your profile, it's less obvious how new visitors can find out more
-  about your organization." # For the post in lists.
+
+# For the post as it appears in lists.
+summary: >
+  Now all visitors to a nonprofit's Facebook Page will be directed to the Wall.
+  What's more, with tabs being de-emphasized by their move to smaller links
+  under your profile, it's less obvious how new visitors can find out more about
+  your organization.
+
+# For SEO and social media snippets (recommended 150-200 characters).
+description: >
+  All visitors to a nonprofit's Facebook Page will be directed to the Wall. With
+  tabs being de-emphasized, it's less obvious how new visitors can find out more
+  about your organization.
 
 draft: false # Change to 'false' to publish this post.
 featured: false
@@ -32,7 +37,7 @@ featureImageAlt: 'A helipad at sunset' # Alternative text for featured image.
 featureImageCreditFlickr: 'sbszine'
 # featureImageCreditCustom: 'Top image credit Flickr user [username](https://www.flickr.com/photos/username).'
 thumbnail: 'helipad-sunset_flickr-sbszine.jpg' # Image in lists of posts.
-# shareImage: 'share.jpg' # For SEO and social media snippets. Falls back to thumbnail (if set) or featureImage.
+# shareImage: 'share.jpg Falls back to thumbnail (if set) or featureImage.
 
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
@@ -70,9 +75,9 @@ other differences, what were formerly tabs across the top of your page will now
 be links underneath your profile picture, similar to the
 [new Facebook Profiles](https://web.archive.org/web/20110826093738/http://www.johnhaydon.com/2010/12/new-and-improved-facebook-profiles-a-screen-shot-tour/ 'View a walk-through of the new Facebook Profiles from John Haydon').
 
-**And that's where the trouble starts: On your new merged Facebook Page — as the
-picture above shows — you will no longer be able to specify a default landing
-tab.**
+**And that's where the trouble starts: On your new merged Facebook Page -- as
+the picture above shows -- you will no longer be able to specify a default
+landing tab.**
 
 Default landing tabs are a powerful way to
 [convert visitors to fans](https://web.archive.org/web/20110826093738/http://fblandingtabs.wikispaces.com/Nonprofitexamples 'View a slideshow on creating default landing tabs by Debra Askanase').
@@ -98,17 +103,17 @@ Since at the moment this only appears to affect Places pages, and any existing
 Pages merged with a Place, it's unclear whether this is simply a roll-out bug or
 something more long-term. But given that Facebook
 [first removed the default landing tab a few months ago](https://nonprofitorgs.wordpress.com/2009/12/13/attn-nonprofits-major-changes-coming-soon-to-facebook-fan-pages/ 'Read about the changes to the Pages and Profiles over time, by Heather Mansfield'),
-reinstating it after an uproar — but only "temporarily" — I would guess that
+reinstating it after an uproar -- but only "temporarily" -- I would guess that
 this is the direction of things on Facebook.
 
 It's possible that this might only apply to pages in some categories, e.g.
 nonprofits but not companies; I don't have access to any company Facebook pages
 to investigate this on. It appears a default landing tab has
 {{< deadlink "never been available" "dl://www.facebook.com/help/#%21/help/?question=87334" "Read Facebook's help topic on default landing tabs and Community Pages">}}
-on things categorized as Community Pages — initially auto-generated from
+on things categorized as Community Pages -- initially auto-generated from
 interests listed on profiles.
 
-**It appears that default landing tabs are not available on Places pages — or
+**It appears that default landing tabs are not available on Places pages -- or
 any traditional Pages "merged" with Places. My prediction is that it won't stick
 around for the rest of the Pages on Facebook.**
 
@@ -117,7 +122,7 @@ general "standardness of experience" for users. Yet without any way to
 (substantially) customize the Wall, this seems like a net loss for both
 organizations and regular users. New visitors will no longer have an easy way to
 be introduced to an organization, and organizations will have to carefully
-cultivate their Wall to — at any moment — appeal to both current fans and new
+cultivate their Wall to -- at any moment -- appeal to both current fans and new
 visitors.
 
 I'm not sure what possible solutions out there, although one might be to make

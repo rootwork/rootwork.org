@@ -7,16 +7,21 @@ date: '2007-07-08'
 slug: 'one-minute-1-800-genocide' # Recommended length is 3 to 5 words.
 aliases:
   - /p/070708
-description: 'Just wanted to highlight a small initiative the Genocide
+
+# For the post as it appears in lists.
+summary: >
+  Just wanted to highlight a small initiative the Genocide Intervention Network
+  sent out today using Collactive, a web firm that helps organizations use their
+  network of members to promote news stories and websites to larger audiences.
+  In this case, we are asking our members to vote up an article on our
+  anti-genocide hotline, 1-800-GENOCIDE.
+
+# For SEO and social media snippets (recommended 150-200 characters).
+description: >
+  Just wanted to highlight a small initiative, 1-800-GENOCIDE, that the Genocide
   Intervention Network sent out today using Collactive, a web firm that helps
   organizations use their network of members to promote news stories and
-  websites to larger audiences. In this case, we are asking our members to vote
-  up an article on our anti-genocide hotline, 1-800-GENOCIDE.' # For SEO and social media snippets.
-summary: 'Just wanted to highlight a small initiative the Genocide Intervention
-  Network sent out today using Collactive, a web firm that helps organizations
-  use their network of members to promote news stories and websites to larger
-  audiences. In this case, we are asking our members to vote up an article on
-  our anti-genocide hotline, 1-800-GENOCIDE.' # For the post in lists.
+  websites to larger audiences.
 
 draft: false # Change to 'false' to publish this post.
 featured: false
@@ -34,7 +39,7 @@ showShare: true
 # featureImageCreditFlickr: 'username'
 # featureImageCreditCustom: 'Top image credit Flickr user [username](https://www.flickr.com/photos/username).'
 # thumbnail: 'thumbnail.jpg' # Image in lists of posts.
-# shareImage: 'share.jpg' # For SEO and social media snippets. Falls back to thumbnail (if set) or featureImage.
+# shareImage: 'share.jpg Falls back to thumbnail (if set) or featureImage.
 
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.

@@ -8,14 +8,18 @@ date: '2009-09-03'
 slug: 'gurus-are-not-enough-call-organizers-organizing-social-media' # Recommended length is 3 to 5 words.
 aliases:
   - /p/090903
-description: "Gurus, mavens and experts convey information — they tell you the
-  way things are. Organizers, conversely, cultivate leadership and facilitate a
-  community's exploration of its vision — they offer a way to see how things
-  could be." # For SEO and social media snippets.
-summary: "Gurus, mavens and experts convey information — they tell you the way
-  things are. Organizers, conversely, cultivate leadership and facilitate a
-  community's exploration of its vision — they offer a way to see how things
-  could be." # For the post in lists.
+
+# For the post as it appears in lists.
+summary: >
+  Gurus, mavens and experts convey information -- they tell you the way things
+  are. Organizers, conversely, cultivate leadership and facilitate a community's
+  exploration of its vision -- they offer a way to see how things could be.
+
+# For SEO and social media snippets (recommended 150-200 characters).
+description: >
+  Gurus, mavens and experts convey information -- the way things are. Organizers
+  cultivate leadership and facilitate exploration of a vision -- a way to see
+  how things could be.
 
 draft: false # Change to 'false' to publish this post.
 featured: false
@@ -34,7 +38,7 @@ featureImageAlt: "Hommage to Tarkovsky's _Stalker_, a bronze statue representing
 featureImageCreditFlickr: 'uqbar'
 # featureImageCreditCustom: 'Top image credit Flickr user [username](https://www.flickr.com/photos/username).'
 thumbnail: 'tarkovsky-stalker-sculpture_flickr-uqbar.jpg' # Image in lists of posts.
-# shareImage: 'share.jpg' # For SEO and social media snippets. Falls back to thumbnail (if set) or featureImage.
+# shareImage: 'share.jpg Falls back to thumbnail (if set) or featureImage.
 
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
@@ -55,26 +59,26 @@ year: '2009'
 month: '2009-09'
 ---
 
-Gurus, mavens and experts convey information — they tell you **the way things
+Gurus, mavens and experts convey information -- they tell you **the way things
 are**.
 
-Organizers, conversely, cultivate leadership and facilitate a community’s
-exploration of its vision — they offer a way to see **how things could be**.
+Organizers, conversely, cultivate leadership and facilitate a community's
+exploration of its vision -- they offer a way to see **how things could be**.
 
 Naturally, we need an accurate picture of how things are before we can
-strategize ways to improve them, and so it’s important to continually listen to
+strategize ways to improve them, and so it's important to continually listen to
 and learn from the experts, taking from them relevant information and measuring
 it against our own experience and knowledge. But folks involved in social change
-— online or offline — can’t stay there. We have to be willing to step up and do
-the difficult organizing work that leverages our knowledge and experts’ data
+-- online or offline -- can't stay there. We have to be willing to step up and
+do the difficult organizing work that leverages our knowledge and experts' data
 into something larger: a movement.
 
 ### Everybody Organizing Everybody
 
-Community organizers are a natural fit for “web 2.0” — the movement from one-way
-broadcasting on the web to two-way coversation and connection. I want to expand
-the definition a little bit, however, and suggest that online organizing goes
-far beyond the professional, experienced organizers.
+Community organizers are a natural fit for "web 2.0" -- the movement from
+one-way broadcasting on the web to two-way coversation and connection. I want to
+expand the definition a little bit, however, and suggest that online organizing
+goes far beyond the professional, experienced organizers.
 
 **One of the defining aspects of web 2.0 is social _organization_.** People are
 constantly presented with their social circles in visual media: Facebook news
@@ -86,31 +90,31 @@ vocational, familial or other commitments.
 
 Communities at the margins of society have always had a more visceral
 understanding of their social networks, which are often the sites of social
-change planning and strategizing — consider the role of black churches in the US
-civil rights movement, or gay bars and bathhouses in the early Stonewall era of
-the gay rights movement. So I don’t want to suggest that this phenomenon of a
+change planning and strategizing -- consider the role of black churches in the
+US civil rights movement, or gay bars and bathhouses in the early Stonewall era
+of the gay rights movement. So I don't want to suggest that this phenomenon of a
 community visualized is necessarily new for everyone, but I think it is new for
 many folks in the mainstream of society.
 
-**The online “social web” — social networks and social media — allows people to
-organize their social connections**, not simply to put them in order, but to
+**The online "social web" -- social networks and social media -- allows people
+to organize their social connections**, not simply to put them in order, but to
 connect and collaborate with others. Evite invitations and Facebook events are
 clear examples of this, as is Wikipedia.
 
 **Increasingly, the social web is teaching everyday folks how to be community
 organizers.**
 
-It’s usually gurus, however, who get — or take — the credit for this
+It's usually gurus, however, who get -- or take -- the credit for this
 transformation. On the contrary, I see it as a much more grassroots bubbling-up
 of organizing skills. Everyone has the ability to organize and inspire others;
 the current tools are simply making those skills more visible.
 
 ### Fewer Leaders, More Leadership
 
-“Organizations and societies,” wrote Bruce Kokopeli and George Lakey, “_do need
-leadership_, but they _do not need leaders_.”[^1] They argued for a shared value
+"Organizations and societies," wrote Bruce Kokopeli and George Lakey, "_do need
+leadership_, but they _do not need leaders_."[^1] They argued for a shared value
 of leadership, in which many individuals took responsibility for the direction
-of a group, but didn’t invest the institutional power in a single person to call
+of a group, but didn't invest the institutional power in a single person to call
 the shots. A critical part of this feminist approach relies on cultivating
 leadership among more and more individuals. Everyone has a stake, and everyone
 has a say.
@@ -122,12 +126,12 @@ approach.
 
 **The fact that more people are organizers, and that everyone can exercise
 leadership, does not mean that there is no role for the full-time organizer.**
-Indeed, the “professional” organizer becomes more important than ever, passing
+Indeed, the "professional" organizer becomes more important than ever, passing
 on stories and lived experience, and sharing a pedagogy for cultivating new
 leadership. What fades away is the positioning of some people within a movement
-as “experts” to whom everyone looks for direction.
+as "experts" to whom everyone looks for direction.
 
-Paulo Freire calls such an approach “co-intentional education,” in which each
+Paulo Freire calls such an approach "co-intentional education," in which each
 person is both teacher and student. Those with more experience may seek to
 inspire or ask questions to further dialogue, but as a way to further develop
 strategy rather than dictate to or control the masses.
@@ -135,14 +139,14 @@ strategy rather than dictate to or control the masses.
 > Attempting to liberate the oppressed without their reflective participation in
 > the act of liberation is to treat them as objects which must be saved from a
 > burning building; it is to lead them into the populist pitfall and transform
-> them into masses which can be manipulated. … [T]he oppressed must see
-> themselves as women and men engaged in the … vocation of becoming more fully
+> them into masses which can be manipulated. ... [T]he oppressed must see
+> themselves as women and men engaged in the ... vocation of becoming more fully
 > human.[^2]
 
 This may seem like heavy or strident language in the context of online petition
 drives or peer-to-peer fundraising campaigns. But my goal is to push social
 change organizers to look toward the larger picture. What sort of movement do
-you want to build in the long-term? What role do people play in that movement —
+you want to build in the long-term? What role do people play in that movement --
 is it a passive one of letter-signing and donation-giving, or an active one of
 working from the ground up for lasting change?
 
@@ -153,7 +157,7 @@ us by the end of Friday!**
 
 Ivan Boothe is part of a proposed panel for the South by Southwest Interactive
 conference,
-“[Connecting Communities for the Common Good: Owning Online Organizing](https://web.archive.org/web/20150305052211/http://panelpicker.sxsw.com/ideas/view/4673),”
+"[Connecting Communities for the Common Good: Owning Online Organizing](https://web.archive.org/web/20150305052211/http://panelpicker.sxsw.com/ideas/view/4673),"
 along with **Ben Rattray**, founder of change.org; **Peter Corbet** with
 iStrategy Labs; **Sally Kohn** of the Center for Community Change; and moderated
 by **Kari Dunn Saratovsky** from the Case Foundation.
@@ -161,30 +165,30 @@ by **Kari Dunn Saratovsky** from the Case Foundation.
 **We need your help to get this panel on the schedule!** Please consider
 [voting for the panel at SXSW](https://web.archive.org/web/20150305052211/http://panelpicker.sxsw.com/ideas/view/4673)
 (quick registration required). Additionally, please **leave a comment on the
-panel’s page**. Voting accounts for only about 30% of the decision to include a
+panel's page**. Voting accounts for only about 30% of the decision to include a
 panel, so we want to demonstrate support for discussion around online organizing
 with your comments.
 
-If you’re not familiar with the process, here’s a
+If you're not familiar with the process, here's a
 [step-by-step guide to voting](https://web.archive.org/web/20100613042521/http://www.casefoundation.org/blog/help-put-social-good-map-sxsw-interactive)
-from the Case Foundation. There’s no limit to the number of panels you can vote
+from the Case Foundation. There's no limit to the number of panels you can vote
 for, so check out
-[Beth Kanter’s list of nptech panel proposals](https://beth.typepad.com/beths_blog/2009/08/sxsw.html)
+[Beth Kanter's list of nptech panel proposals](https://beth.typepad.com/beths_blog/2009/08/sxsw.html)
 and share the love!
 
 Social marketing experts are adept at building brand loyalty, or encouraging the
 formation of an identity around an issue. They know how to sell the idea of
-“social good” to the public at large, using people’s goodwill toward a cause as
+"social good" to the public at large, using people's goodwill toward a cause as
 a way to market to them through a given company, and increase donations to a
 partner charity. Well-known examples of this are the
-[RED campaign](https://www.red.org/) and Starbucks’
+[RED campaign](https://www.red.org/) and Starbucks'
 [Ethos Water](https://web.archive.org/web/20090207001439/http://www.ethoswater.com/).
 
-**Online organizers turn a skeptical eye toward “social good” and social
-marketing.** It doesn’t mean such projects aren’t worth exploring or learning
-from, and it doesn’t mean that everyone involved is a charlatan simply out to
-make a buck. But selling people an identity, even a “good” one, is fundamentally
-different from organizing for social change. Freire again: “Conviction cannot be
+**Online organizers turn a skeptical eye toward "social good" and social
+marketing.** It doesn't mean such projects aren't worth exploring or learning
+from, and it doesn't mean that everyone involved is a charlatan simply out to
+make a buck. But selling people an identity, even a "good" one, is fundamentally
+different from organizing for social change. Freire again: "Conviction cannot be
 packaged and sold; it is reached, rather, by means of a totality of reflection
 and action.[^3]
 
@@ -194,7 +198,7 @@ candidate, and there is of course much to be learned and shared between the two
 practices. But whereas elections are centered around a single charismatic
 leader, a fully-engaged, vibrant social change movement consists of both shared
 vision and shared leadership. Elections give people an answer, while movements
-ask people a question — and then encourage them to speak for themselves.
+ask people a question -- and then encourage them to speak for themselves.
 
 **Instead of selling or giving supporters a solution, then, online organizers
 are involved in cultivation.** There are pieces of both social marketing and
@@ -205,7 +209,7 @@ replicating these other models when it comes to leadership.
 ### Network Wisdom
 
 There is a developing praxis being explored by numerous thinkers and strategists
-in online organizing. For sociological analyses — stories and experiences —
+in online organizing. For sociological analyses -- stories and experiences --
 [danah boyd](https://www.danah.org/papers/) is indispensible.
 [Clay Shirky](https://web.archive.org/web/20150305052211/http://www.shirky.com/),
 [Allison Fine](https://web.archive.org/web/20100203061228/http://afine2.wordpress.com/),
@@ -218,13 +222,13 @@ and
 [Debra Askanase](https://web.archive.org/web/20100308084436/http://www.communityorganizer20.com/)
 provide concrete case studies of online organizing in action.
 
-**What’s your experience? Who are online organizers with whom you share
+**What's your experience? Who are online organizers with whom you share
 successes and strategies?** Please offer your wisdom in the comments!
 
 **Like the idea of discussing and strategizing about online organizing? Please
-vote for — and even more importantly, leave a positive comment on — the
+vote for -- and even more importantly, leave a positive comment on -- the
 [online organizing panel proposal for SXSW](https://web.archive.org/web/20150305052211/http://panelpicker.sxsw.com/ideas/view/4673?return=%2Fideas%2Findex%2F4%2Fq%3Aorganizing).**
-The deadline is the end of the day this Friday, Sept. 4, so don’t delay! (More
+The deadline is the end of the day this Friday, Sept. 4, so don't delay! (More
 information above.)
 
 [^1]:
