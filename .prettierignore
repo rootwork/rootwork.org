@@ -15,7 +15,6 @@ LICENSE*.*
 hugo/public/
 
 # Hugo layout files that trip up Prettier
-hugo/archetypes/blog/index.md
 hugo/layouts/_default/_markup/render-heading.html
 
 # Package files, since these will be auto-generated
