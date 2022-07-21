@@ -13,3 +13,12 @@ tasks:
 ports:
   - port: 1313
     onOpen: open-preview
+
+# VS Code extensions. https://www.gitpod.io/docs/ides-and-editors/vscode-extensions#installing-an-extension
+vscode:
+  extensions:
+    - EditorConfig.EditorConfig
+    - esbenp.prettier-vscode
+    - DavidAnson.vscode-markdownlint
+    - golang.go
+    - casualjim.gotemplate
