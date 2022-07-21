@@ -1,4 +1,6 @@
-{{/* Adding custom meta keywords partial. */}}
+{{/* 1. Increasing description length to 200 characters.
+  2. Adding custom meta keywords partial.
+*/}}
 {{- $summary := truncate 160 .Summary }}
 {{- $s := .Site.Params }}
 {{- $p := .Params }}
@@ -13,7 +15,7 @@
 {{ end }}
 
 {{- with $p.description }}
-  {{- $summary = truncate 160 . }}
+  {{- $summary = truncate 200 . }}
 {{- end }}
 {{- if .IsHome }}
   {{- $summary = $s.description }}
