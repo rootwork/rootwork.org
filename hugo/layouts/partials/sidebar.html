@@ -129,7 +129,7 @@
                   <a
                     href="{{ absLangURL $key }}/{{ (replace .Name "#" "%23") | urlize }}/"
                     class="post_tag button button_translucent"
-                    title="View all content related to '{{ $termName }}'"
+                    title="View content related to {{ $termName }}"
                   >
                     <span class="tag_name">{{ $termName }}</span>
                     <span class="tag_tally">{{ .Count }}</span>
@@ -150,7 +150,7 @@
               <a
                 href="/blog/{{ $termName }}"
                 class="post_tag post_tag--year button button_translucent"
-                title="View all content from {{ $termName }}"
+                title="View content from {{ $termName }}"
               >
                 {{- $termName }}
                 <span class="tag_tally">{{ .Count }}</span>

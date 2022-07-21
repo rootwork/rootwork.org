@@ -102,7 +102,7 @@
                   {{- $termPath := urlize $termName -}}
                   <a
                     href="{{ absLangURL (printf "categories/%s/" $termPath) }}"
-                    title="View all content categorized as '{{ $termName }}'"
+                    title="View content related to {{ $termName }}"
                     class="post_tag--cat post_tag button button_translucent"
                     >{{- $termName -}}</a
                   >
@@ -116,7 +116,7 @@
                   {{- $termPath := urlize $termName -}}
                   <a
                     href="{{ absLangURL (printf "tags/%s/" $termPath) }}"
-                    title="View all content tagged with '{{ $termName }}'"
+                    title="View content related to {{ $termName }}"
                     class="post_tag button button_translucent"
                     >{{- $termName -}}</a
                   >
