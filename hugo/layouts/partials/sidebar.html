@@ -146,12 +146,13 @@
           <nav class="tags_nav">
             {{- $slicedTags := ($value.Alphabetical.Reverse) }}
             {{- range $slicedTags }}
+              {{- $termName := .Name -}}
               <a
-                href="{{ absLangURL $key }}/{{ (replace .Name "#" "%23") | urlize }}/"
+                href="/blog/{{ $termName }}"
                 class="post_tag post_tag--year button button_translucent"
-                title="View all content from {{ .Name }}"
+                title="View all content from {{ $termName }}"
               >
-                {{- .Name }}
+                {{- $termName }}
                 <span class="tag_tally">{{ .Count }}</span>
               </a>
             {{- end }}
