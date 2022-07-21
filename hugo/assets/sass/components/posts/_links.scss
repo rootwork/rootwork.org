@@ -22,6 +22,15 @@
     }
   }
 
+  .link_owner a:not(.icon, .footnote-ref, .footnote-backref) {
+    border-bottom-width: 1px;
+    color: inherit;
+
+    @include is-on {
+      @include switch(color, var(--dark-green), var(--dark-green));
+    }
+  }
+
   a.footnote-ref {
     padding: 0 0.1rem;
     font-size: 0.9rem;
