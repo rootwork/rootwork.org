@@ -17,7 +17,7 @@ jobs:
         with:
           fetch-depth: 1
       - name: Report broken links
-        uses: urlstechie/urlchecker-action@master
+        uses: urlstechie/urlchecker-action@fix/ansi-colors
         with:
           # Choose whether to print a more verbose end summary with files and broken URLs
           verbose: true
