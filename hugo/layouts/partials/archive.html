@@ -4,9 +4,20 @@
   4. Adding #content anchor to main content (for skip-to link).
   5. Removing search widget (since we show it all the time in the sidebar).
   6. Adding `.Scratch.Set "withinRangeLoop" true` to selectively render elements inside the loop vs. on a full page.
+  7. Adding list title based on taxonomy type.
 */}}
 {{ $s := .Site.Params }}
 {{ $pages := .Pages }}
+
+{{ $listTitle := .Title }}
+{{ if or (eq .Data.Plural "categories") (eq .Data.Plural "tags") }}
+  {{ $listTitle = printf "%s" "’" | printf "%s%s" $listTitle | printf "%s%s" " ‘" | printf "%s%s" .Data.Singular | printf "%s%s" "Posts with the " | printf "%s" }}
+{{ end }}
+{{ if or (eq .Data.Plural "year") (eq .Data.Plural "month") }}
+  {{ $listTitle = printf "%s"  $listTitle | printf "%s%s" "Posts from " | printf "%s" }}
+  {{ $listTitle = replace $listTitle "Archives: " "" }}
+{{ end }}
+
 {{ if .IsHome }}
   {{ $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{ end }}
@@ -57,7 +68,7 @@
         </div>
       </li>
     {{ else }}
-      <h1 class="list_title">{{ .Title }}</h1>
+      <h1 class="list_title">{{ $listTitle }}</h1>
     {{ end }}
     {{- range (.Paginate $pages).Pages }}
       {{ .Scratch.Set "withinRangeLoop" true }}
