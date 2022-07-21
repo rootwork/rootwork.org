@@ -21,15 +21,21 @@
     {{- $href = replace $dl "dl:" "http:" -}}
   {{- end -}}
 {{- end -}}
+
 {{- $content := .Get 0 -}}
-{{- $title := .Get 2 -}}
+
+{{- $title := "" -}}
+{{- if .Get 2 -}}
+  {{- $title = .Get 2 -}}
+{{- else -}}
+  {{- $title = $href -}}
+{{- end }}
+{{- $title = printf "%s" " [dead link]" | printf "%s%s" $title | printf "%s" -}}
+
+
 <a
   data-dead-link="{{ $href }}"
   href="{{ relref . "/dead-link" }}?url={{ urlquery $href }}"
-  {{- if $title }}
-    title="{{ $title }}"
-  {{- else }}
-    title="{{ $href }}"
-  {{- end }}
+  title="{{ $title }}"
   >{{ $content }}</a
 >{{- "" -}}
