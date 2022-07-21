@@ -122,7 +122,7 @@ GI-Net focuses on **organizing** -- creating an educated constituency of people
 who can motivate others.
 
 When we first arrived on
-{{< deadlink "Facebook" "dl://www.facebook.com/group.php?gid=2204803189" "The Facebook Group for the Genocide Intervention Network" >}}
+{{< deadlink "Facebook" "http://www.facebook.com/group.php?gid=2204803189" "The Facebook Group for the Genocide Intervention Network" >}}
 in 2005, for example, there were already dozens of groups about the genocide in
 Darfur, Sudan. So it was much more about giving supporters tools to take
 effective action than it was about convincing people to join our cause. **Social

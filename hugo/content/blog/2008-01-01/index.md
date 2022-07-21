@@ -79,13 +79,13 @@ social change.
 To date, I have built four full-fledged sites with Drupal for the
 [Genocide Intervention Network](https://web.archive.org/web/20080804233456/http://www.genocideintervention.net/):
 
-- {{< deadlink "Ask the Candidates" "dl://www.askthecandidates.org" >}} (Drupal
-  version 5)
+- {{< deadlink "Ask the Candidates" "http://www.askthecandidates.org" >}}
+  (Drupal version 5)
 - [Darfur Congressional Scorecard](https://web.archive.org/web/20080801050841/http://www.darfurscores.org/)
   (v4.7)
 - [Time to Protect](https://web.archive.org/web/20070208211701/http://www.timetoprotect.org/)
   (v4.7)
-- {{< deadlink "Power to Protect" "dl://www.powertoprotect.org" >}} (v4.6)
+- {{< deadlink "Power to Protect" "http://www.powertoprotect.org" >}} (v4.6)
 
 GI-Net's
 [main site](https://web.archive.org/web/20080804233456/http://www.genocideintervention.net/)

@@ -82,7 +82,7 @@ That all follows some
 [more general ideas on blogging](https://web.archive.org/web/20070922003030/http://www.netsquared.org/blog/quixotic/can-blogging-stop-genocide)
 that I wrote as an introduction to the NetSquared national conference last May
 (see also a
-{{< deadlink "PDF of the brochure" "dl://genocideintervention.net/members/docs/netact.pdf" >}}
+{{< deadlink "PDF of the brochure" "http://genocideintervention.net/members/docs/netact.pdf" >}}
 distributed to attendees).
 
 Today, Joshua Levy at Personal Democracy Forum posts the
@@ -133,7 +133,7 @@ rather than simply advertising to them, and really being willing engaging them
 in a constructive way.
 
 Many of the
-{{< deadlink "approaches to social networking" "dl://www.associatedcontent.com/article/79084/myspace_brings_humanitarian_organization.html" >}}
+{{< deadlink "approaches to social networking" "http://www.associatedcontent.com/article/79084/myspace_brings_humanitarian_organization.html" >}}
 seem to involve nothing more than acquiring banner space:
 
 > If anyone out in the world needs help, all they have to do is look to MySpace.
@@ -178,8 +178,8 @@ framework for real-world action.
 Some of GI-Net's social networking campaigns online:
 
 - [MySpace](https://web.archive.org/web/20070302163843/http://myspace.com/genocideintervention)
-- {{< deadlink "Facebook" "dl://www.facebook.com/group.php?gid=2204803189" >}}
-- {{< deadlink "del.icio.us" "dl://del.icio.us/antigenocide" >}} and
+- {{< deadlink "Facebook" "http://www.facebook.com/group.php?gid=2204803189" >}}
+- {{< deadlink "del.icio.us" "http://del.icio.us/antigenocide" >}} and
   [Magnolia](https://web.archive.org/web/20070619111521/http://ma.gnolia.com/people/antigenocide)
 - [LiveJournal](https://endgenocide.livejournal.com/profile)
 - [Flickr](https://flickr.com/photos/genocideintervention)

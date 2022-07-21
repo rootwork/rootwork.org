@@ -75,7 +75,7 @@ screenshot from
 
 But Dale, who's [spoken plenty on Sass](https://speakerdeck.com/anotheruiguy)
 and organizes the
-{{< deadlink "Seattle Sass meetup" "dls://www.meetup.com/SASSlang/" >}}, is
+{{< deadlink "Seattle Sass meetup" "https://www.meetup.com/SASSlang/" >}}, is
 taking us way past the Sass basics like variables, and that's why I'm excited to
 see his presentation next week.
 

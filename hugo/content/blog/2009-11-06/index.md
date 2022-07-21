@@ -170,9 +170,9 @@ to focus on its core community on Facebook made good business sense, but
 certainly those organizations left in the lurch on MySpace feel otherwise.
 
 I think Rebecca Leaman
-{{< deadlink "said it best" "dl://twitter.com/rjleaman/status/5430851340" >}} --
-don't put "all fundraising eggs in one third-party basket!" These services are
-useful, and can help your organization advance its mission, but it's not
+{{< deadlink "said it best" "http://twitter.com/rjleaman/status/5430851340" >}}
+-- don't put "all fundraising eggs in one third-party basket!" These services
+are useful, and can help your organization advance its mission, but it's not
 accountable to you -- and you need to have other options.
 
 ### Letting go of your message, holding on to your relationships

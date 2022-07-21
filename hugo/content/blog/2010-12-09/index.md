@@ -86,7 +86,7 @@ companies) could create custom tabs, welcoming new visitors, introducing them to
 the organization, and encouraging them to "Like" the nonprofit.
 
 Earlier this year, Facebook announced they were
-{{< deadlink "dropping support for new custom tabs that used Facebook Markup Language (FBML)" "dl://www.facebook.com/posted.php?id=212577490407&share_id=112272642162634&comments=1#s112272642162634" "Read Beth Kanter's discussion about this change on Facebook" >}},
+{{< deadlink "dropping support for new custom tabs that used Facebook Markup Language (FBML)" "http://www.facebook.com/posted.php?id=212577490407&share_id=112272642162634&comments=1#s112272642162634" "Read Beth Kanter's discussion about this change on Facebook" >}},
 although you could still specify a particular application tab as your landing
 page, including
 [custom-page-creating applications](https://web.archive.org/web/20110826093738/http://savedelete.com/how-to-create-impressive-welcome-page-for-your-facebook-fan-page-absolutely-free.html 'A guide to creating custom landing tabs from SaveDelete blog').
@@ -109,7 +109,7 @@ this is the direction of things on Facebook.
 It's possible that this might only apply to pages in some categories, e.g.
 nonprofits but not companies; I don't have access to any company Facebook pages
 to investigate this on. It appears a default landing tab has
-{{< deadlink "never been available" "dl://www.facebook.com/help/#%21/help/?question=87334" "Read Facebook's help topic on default landing tabs and Community Pages">}}
+{{< deadlink "never been available" "http://www.facebook.com/help/#%21/help/?question=87334" "Read Facebook's help topic on default landing tabs and Community Pages">}}
 on things categorized as Community Pages -- initially auto-generated from
 interests listed on profiles.
 

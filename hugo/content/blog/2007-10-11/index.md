@@ -161,7 +161,7 @@ more lasting change.
 ### The Genocide Intervention Network on the Social Web
 
 - [MySpace](https://web.archive.org/web/20080726053628/http://myspace.com/genocideintervention)
-- {{< deadlink "Facebook" "dl://www.facebook.com/group.php?gid=2204803189" >}}
+- {{< deadlink "Facebook" "http://www.facebook.com/group.php?gid=2204803189" >}}
 - [change.org](https://web.archive.org/web/20070501040009/http://www.change.org/genocideintervention)
 - [LiveJournal](https://endgenocide.livejournal.com/profile)
 - [Twitter](https://twitter.com/antigenocide)
