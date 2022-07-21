@@ -112,7 +112,7 @@ the White House's point person on Sudan on the spot and demand answers.
 event, largely remained silent -- were generally panned by activists watching
 the chat via Twitter and Facebook.** "In his opening remarks Gration said 'we
 owe you answers' -- you still do," said
-{{< deadlink "Will Fischer" "http://twitter.com/willcfischer/statuses/5599271449" >}}.
+{{< deadlink "Will Fischer" "dl://twitter.com/willcfischer/statuses/5599271449" >}}.
 "I respect the hell out of Sam Power but I'm not going to buy Gration's vague
 answers just because she's sitting there," said Genocide Intervention Network
 Director of Membership

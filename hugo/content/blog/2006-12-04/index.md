@@ -178,8 +178,8 @@ framework for real-world action.
 Some of GI-Net's social networking campaigns online:
 
 - [MySpace](https://web.archive.org/web/20070302163843/http://myspace.com/genocideintervention)
-- {{< deadlink "Facebook" "http://www.facebook.com/group.php?gid=2204803189" >}}
-- {{< deadlink "del.icio.us" "http://del.icio.us/antigenocide" >}} and
+- {{< deadlink "Facebook" "dl://www.facebook.com/group.php?gid=2204803189" >}}
+- {{< deadlink "del.icio.us" "dl://del.icio.us/antigenocide" >}} and
   [Magnolia](https://web.archive.org/web/20070619111521/http://ma.gnolia.com/people/antigenocide)
 - [LiveJournal](https://endgenocide.livejournal.com/profile)
 - [Flickr](https://flickr.com/photos/genocideintervention)

@@ -62,7 +62,7 @@ both from featured projects and individual speakers. Seth Horwitz and I are
 busily collecting information for
 [next Tuesday's Philly NetSquared event](https://web.archive.org/web/20160709185617/http://netsquared.meetup.com/16/calendar/7890323/).
 
-{{< deadlink "View photo from the conference." "http://www.flickr.com/photos/schipulites/2528919057/" >}}
+{{< deadlink "View photo from the conference." "dl://www.flickr.com/photos/schipulites/2528919057/" >}}
 
 Interview with **Abram Stern, Metavid**
 [community video archive project](https://web.archive.org/web/20080705023937/http://netsquared.org/2008/conference/projects/metavid-community-video-archive-project).
@@ -70,7 +70,7 @@ Interview with **Abram Stern, Metavid**
 footage available. Enables participants to search who said what when, blog
 clips, improve transcripts and edit sequences."
 
-{{< deadlink "Video interview with Abram Stern." "http://blip.tv/file/get/Netsquared-N2Y3InterviewWithAbramSternMetaVid675.MOV" >}}
+{{< deadlink "Video interview with Abram Stern." "dl://blip.tv/file/get/Netsquared-N2Y3InterviewWithAbramSternMetaVid675.MOV" >}}
 
 Interview with **Erik Hersman, Ushadidi**
 [mapping reports of post-election violence in Kenya](https://web.archive.org/web/20080706203924/http://netsquared.org/2008/conference/projects/ushahidi).
@@ -79,7 +79,7 @@ incidents of violence (and peace) happening in post-election Kenya via SMS,
 email and the web."
 
 ![Interview with Erik Hersman, Ushahidi ::legacy-float-r](https://web.archive.org/web/20160709185617im_/http://blip.tv/file/get/Netsquared-N2Y3InterviewWithErikHersmanFromUshahidi381.MOV.jpg)
-{{< deadlink "Video interview with Erik Hermann." "http://blip.tv/file/get/Netsquared-N2Y3InterviewWithErikHersmanFromUshahidi381.MOV" >}}
+{{< deadlink "Video interview with Erik Hermann." "dl://blip.tv/file/get/Netsquared-N2Y3InterviewWithErikHersmanFromUshahidi381.MOV" >}}
 
 Interview with **Janessa Goldbeck, Genocide Intervention Network**
 [anti-genocide action tracker](https://web.archive.org/web/20080709185617/http://netsquared.org/2008/conference/projects/anti-genocide-action-tracker-genocide-scores-every-politician-state-and-university)
@@ -88,7 +88,7 @@ activists with the tools to end genocide by alerting them to pending
 anti-genocide legislation their state governments or elected representatives can
 play key roles in passing."
 
-{{< deadlink "Video interview with Janessa Goldbeck." "http://blip.tv/file/get/Netsquared-N2Y3InterviewWithJanessaGoldbeckAntiGenocideActionTracker726.MOV" >}}
+{{< deadlink "Video interview with Janessa Goldbeck." "dl://blip.tv/file/get/Netsquared-N2Y3InterviewWithJanessaGoldbeckAntiGenocideActionTracker726.MOV" >}}
 
 Interview with **Melinda Wittstock, Capitol News Connection**
 [ask your lawmaker](https://web.archive.org/web/20080709185617/http://netsquared.org/2008/conference/projects/ask-your-lawmaker-national-local).
@@ -96,12 +96,12 @@ Interview with **Melinda Wittstock, Capitol News Connection**
 share via 'grabbable' widgets customizable by issue/location for Congress, state
 capitols and town halls with social networking and APIs."
 
-{{< deadlink "Video interview with Melinda Wittstock." "http://blip.tv/file/get/Netsquared-N2Y3AskYourLawmaker749.flv" >}}
+{{< deadlink "Video interview with Melinda Wittstock." "dl://blip.tv/file/get/Netsquared-N2Y3AskYourLawmaker749.flv" >}}
 
 More photos:
-{{< deadlink "Knowmore.org" "http://www.flickr.com/photos/schipulites/2528909201/" >}},
-{{< deadlink "NetSquared conference schwag" "http://www.flickr.com/photos/schipulites/2529723670/" >}},
-{{< deadlink "Genocide Intervention Network" "http://www.flickr.com/photos/schipulites/2528906941/" >}}
+{{< deadlink "Knowmore.org" "dl://www.flickr.com/photos/schipulites/2528909201/" >}},
+{{< deadlink "NetSquared conference schwag" "dl://www.flickr.com/photos/schipulites/2529723670/" >}},
+{{< deadlink "Genocide Intervention Network" "dl://www.flickr.com/photos/schipulites/2528906941/" >}}
 
 Those working on building websites may be interested in the write up of
 [Building a Community Network with Plone](https://web.archive.org/web/20080531154255/http://www.netsquared.org/blog/laurawhitehead/n2y3con-building-community-network-plone)

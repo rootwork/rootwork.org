@@ -66,7 +66,7 @@ a web firm that helps organizations use their network of members to promote news
 stories and websites to larger audiences. You can see our action in the message
 below, or by going to:
 
-{{< deadlink "GenocideIntervention.net/OneMinute" "http://www.GenocideIntervention.net/OneMinute" >}}
+{{< deadlink "GenocideIntervention.net/OneMinute" "dl://www.GenocideIntervention.net/OneMinute" >}}
 
 Prior to this action, we used Collactive twice to promote particular op-eds (one
 in the _Boston Globe_ --

@@ -193,7 +193,7 @@ to direct our national campaigns, and work closely with the
 [Sudan divestment task force](https://web.archive.org/web/20060707032526/http://www.genocideintervention.net/advocate/divestment/ 'Learn more about divestment from Sudan')
 at the state level. In April, we brought more than 850 students to Washington,
 D.C. as part of the
-{{< deadlink "Power to Protect: D.C. to Darfur" "http://www.powertoprotect.org/" "Learn more about 'P2P'" >}}
+{{< deadlink "Power to Protect: D.C. to Darfur" "dl://www.powertoprotect.org/" "Learn more about 'P2P'" >}}
 weekend. The P2P website, which uses the
 [Drupal](https://drupal.org/ 'Drupal.org') open-source community platform, is
 key to sustaining these activists through the summer, when they will act as the
