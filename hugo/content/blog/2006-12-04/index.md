@@ -133,7 +133,7 @@ rather than simply advertising to them, and really being willing engaging them
 in a constructive way.
 
 Many of the
-{{< deadlink "approaches to social networking" "http://www.associatedcontent.com/article/79084/myspace_brings_humanitarian_organization.html" >}}
+{{< deadlink "approaches to social networking" "dl://www.associatedcontent.com/article/79084/myspace_brings_humanitarian_organization.html" >}}
 seem to involve nothing more than acquiring banner space:
 
 > If anyone out in the world needs help, all they have to do is look to MySpace.
