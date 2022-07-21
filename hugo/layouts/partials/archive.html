@@ -69,6 +69,11 @@
       </li>
     {{ else }}
       <h1 class="list_title">{{ $listTitle }}</h1>
+      {{ if gt .Paginator.PageNumber 1 }}
+        <div class="list_title__pagenumber">
+          Page {{ .Paginator.PageNumber }}
+        </div>
+      {{ end }}
     {{ end }}
     {{- range (.Paginate $pages).Pages }}
       {{ .Scratch.Set "withinRangeLoop" true }}
