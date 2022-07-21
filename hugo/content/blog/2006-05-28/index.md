@@ -70,7 +70,7 @@ First, I want to thank NetSquared for offering me and the
 the opportunity to attend this
 [critical event](https://web.archive.org/web/20061031234727/http://netsquared.org/2006/conference '2006 NetSquared Conference').
 I had written out my introduction earlier this week, but due to a browser mishap
-lost nearly all of it and haven't had time to re-write it until now.
+lost nearly all of it and haven't had time to re-write it until now.
 
 GI-Net is a nonprofit based in DC that is a little more than two years old. We
 began as a student group at Swarthmore College with an idea: to change the way
@@ -82,7 +82,7 @@ that, above all, the reason the United States so often failed to act, or to act
 too late or ineffectively, was simply because there was no political will. In
 essence, it was easier for presidents and members of Congress to do nothing
 while genocide was being perpetrated and apologize for it later, than risk
-political capital taking action.
+political capital taking action.
 
 As a result of our origins as a student group, we have a strong history in using
 online social networking and viral campaigns, and this continues even as we
@@ -98,14 +98,14 @@ Christian Crumlish's
 [Marty Kearns](https://web.archive.org/web/20060710192840/http://www.network-centricadvocacy.net/ "Marty Kearns' blog")
 and
 [Network-Centric Advocacy](https://netcentriccampaigns.org/ 'Netcentric Campaigns')
-and similar movements.
+and similar movements.
 
-How can online activism build a movement that prevents and stops genocide?
-Read on...
+How can online activism build a movement that prevents and stops genocide? Read
+on...
 
-This might get a bit long, so:
+This might get a bit long, so:
 
-### First, a little background...
+### First, a little background...
 
 I am a self-taught
 [web developer](https://web.archive.org/web/20070207093051/http://quixotic1.com/ 'My website, quixotic1.com')
@@ -121,7 +121,7 @@ Why War? was a prominent site for news and analysis against the war (first
 Afghanistan, and then Iraq). Its database from 2001–2004 is the most
 comprehensive accounting of articles and opinions on the war, resistance to it
 and the movements that arose on each side. We are most well-known, however, for
-a campaign that had little to do with the war.
+a campaign that had little to do with the war.
 
 In 2003, internal emails from the electronic voting machine manufacturer Diebold
 emerged that suggested the company had misled voting officials in numerous
@@ -134,7 +134,7 @@ the UK
 [_Independent_](https://web.archive.org/web/20040803082657/http://www.why-war.com/news/2003/10/14/allthepr.html "Article: All the President's Votes?")
 had documented some of the serious problems, but few had taken notice, and
 Harris had been repeatedly threatened by her ISP, fearful of repercussions from
-Diebold's lawyers.
+Diebold's lawyers.
 
 A member of Why War? decided to
 [post an archive](https://web.archive.org/web/20040712083338/http://www.why-war.com/features/2003/10/diebold.html 'View the Diebold files')
@@ -147,18 +147,18 @@ friends in what would become
 [FreeCulture.org](https://web.archive.org/web/20060707010513/http://www.freeculture.org/ 'FreeCulture.org')
 sued Diebold through the
 [Electronic Frontier Foundation](https://www.eff.org/press/archives/2003/11/03 'Learn more about the Diebold case')
-for abusive copyright threats.
+for abusive copyright threats.
 
 The combination of civil disobedience and civil action paid off handsomely.
 Within two months, Diebold backed down from their legal threats and resigned
 themselves to the damaging information about them now in the public domain.
 Suspicion of Diebold and other electronic voting machine manufacturers -- and,
-thus, consistent investigation into their practices -- remains high.
+thus, consistent investigation into their practices -- remains high.
 
-### Back to genocide
+### Back to genocide
 
 So how does the Genocide Intervention Network use the Internet to effect social
-change? There are three primary ways.
+change? There are three primary ways.
 
 First, we
 [raise money online](https://web.archive.org/web/20060118220930/http://www.genocideintervention.net/donate/ 'Learn more about donating to GI-Net')
@@ -170,7 +170,7 @@ genocide. We raise money through a variety of techniques such as
 [dinners for Darfur](https://web.archive.org/web/20060706215126/http://www.genocideintervention.net/fundraise/dinners.php 'Learn about dinners for Darfur')
 and old-fashioned member volunteering. (A piano teacher in Utah giving two
 weeks' proceeds; a "battle of the bands" fundraiser in California; a bat mitzvah
-in New Jersey; a frat party in Massachusetts.)
+in New Jersey; a frat party in Massachusetts.)
 
 Our second component is education. People can't act against genocide unless they
 know about it, which is why we partnered with the American Progress Action Fund
@@ -184,7 +184,7 @@ on the issue, a fact that motivated more than 30,000 viewers to take action
 through the viral video and website. Because of the paltry news coverage, we
 also issue
 [weekly news reports](https://web.archive.org/web/20060706214512/http://www.genocideintervention.net/educate/darfurnews/ 'Read the latest report from Darfur')
-from the ground in Darfur.
+from the ground in Darfur.
 
 Finally, we give our members the tools to advocate for protection in the face of
 genocide. We use
@@ -197,14 +197,14 @@ D.C. as part of the
 weekend. The P2P website, which uses the
 [Drupal](https://drupal.org/ 'Drupal.org') open-source community platform, is
 key to sustaining these activists through the summer, when they will act as the
-catalysts for local anti-genocide groups in their hometowns.
+catalysts for local anti-genocide groups in their hometowns.
 
-### Coming up next
+### Coming up next
 
 We are in the planning stages of a number of exciting online campaigns to
 further support the emerging anti-genocide movement. Our main website will be
 moved to Drupal to allow our members to connect with local leaders and
-organizations, and concretely affect the direction of the national campaigns.
+organizations, and concretely affect the direction of the national campaigns.
 
 A photo petition, using
 [ForwardTrack](https://web.archive.org/web/20060707182012/http://forwardtrack.eyebeamresearch.org/ 'Learn about ForwardTrack')
@@ -214,17 +214,17 @@ account, will put a human face on the victims in Darfur. Viewers will be asked
 to upload images of themselves holding a sign with -- not a comment or a pledge
 -- but the name of one of the hundreds of thousands of victims in Darfur. These
 photos will be delivered to members of Congress to show the depth of human
-involvement -- and human crisis -- around Darfur.
+involvement -- and human crisis -- around Darfur.
 
 More than one of our members has asked us to be their designated charity for a
 marathon, and so our next fundraising tool will be a website to enable them to
 do just that. Members will be able to distribute information about the race and
-GI-Net, collect pledges online, and then follow-up with donors after the race.
+GI-Net, collect pledges online, and then follow-up with donors after the race.
 
 I would be happy to talk further with any of you about GI-Net or
 [our ideas](https://web.archive.org/web/20060706215202/http://www.genocideintervention.net/advocate/tenthings.php 'Ten things you can do right now to stop genocide!'),
 but this post is already mighty long, so I'll stop here. Thanks again for
-allowing me to come, and I'm looking forward to seeing everyone!
+allowing me to come, and I'm looking forward to seeing everyone!
 
 _Update, Sept. 12, 2007: This blog post has been adapted into a chapter of the
 book_

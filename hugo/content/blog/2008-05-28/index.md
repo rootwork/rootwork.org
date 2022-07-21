@@ -68,7 +68,7 @@ Interview with **Abram Stern, Metavid**
 [community video archive project](https://web.archive.org/web/20080705023937/http://netsquared.org/2008/conference/projects/metavid-community-video-archive-project).
 "Metavid makes over a thousand hours of public domain US House and Senate floor
 footage available. Enables participants to search who said what when, blog
-clips, improve transcripts and edit sequences."
+clips, improve transcripts and edit sequences."
 
 {{< deadlink "Video interview with Abram Stern." "http://blip.tv/file/get/Netsquared-N2Y3InterviewWithAbramSternMetaVid675.MOV" >}}
 
@@ -76,7 +76,7 @@ Interview with **Erik Hersman, Ushadidi**
 [mapping reports of post-election violence in Kenya](https://web.archive.org/web/20080706203924/http://netsquared.org/2008/conference/projects/ushahidi).
 "Ushahidi is a conflict mapping and visualization tool first used to report
 incidents of violence (and peace) happening in post-election Kenya via SMS,
-email and the web."
+email and the web."
 
 ![Interview with Erik Hersman, Ushahidi ::legacy-float-r](https://web.archive.org/web/20160709185617im_/http://blip.tv/file/get/Netsquared-N2Y3InterviewWithErikHersmanFromUshahidi381.MOV.jpg)
 {{< deadlink "Video interview with Erik Hermann." "http://blip.tv/file/get/Netsquared-N2Y3InterviewWithErikHersmanFromUshahidi381.MOV" >}}
@@ -86,7 +86,7 @@ Interview with **Janessa Goldbeck, Genocide Intervention Network**
 developed by Ivan Boothe. "The Anti-Genocide Action Tracker will empower
 activists with the tools to end genocide by alerting them to pending
 anti-genocide legislation their state governments or elected representatives can
-play key roles in passing."
+play key roles in passing."
 
 {{< deadlink "Video interview with Janessa Goldbeck." "http://blip.tv/file/get/Netsquared-N2Y3InterviewWithJanessaGoldbeckAntiGenocideActionTracker726.MOV" >}}
 
@@ -94,7 +94,7 @@ Interview with **Melinda Wittstock, Capitol News Connection**
 [ask your lawmaker](https://web.archive.org/web/20080709185617/http://netsquared.org/2008/conference/projects/ask-your-lawmaker-national-local).
 "Ask your lawmaker a question and CNC reporters get it answered: you listen and
 share via 'grabbable' widgets customizable by issue/location for Congress, state
-capitols and town halls with social networking and APIs."
+capitols and town halls with social networking and APIs."
 
 {{< deadlink "Video interview with Melinda Wittstock." "http://blip.tv/file/get/Netsquared-N2Y3AskYourLawmaker749.flv" >}}
 
@@ -110,7 +110,7 @@ non-profit organizations and is also the Web Team Chair at the Davis Community
 Network (a 501c3), an organization that promotes the use of Internet
 technologies for local and regional community building. He's going to share with
 us how Plone can be used for sites large and small, and about how Plone can be
-used to build and used to serve for a geographic community."
+used to build and used to serve for a geographic community."
 
 Meanwhile, Benji Burrell of [iLoveMountains.org](https://ilovemountains.org/)
 delivered a presentation about their online advocacy, including an innovative

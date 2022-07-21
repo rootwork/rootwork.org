@@ -60,9 +60,9 @@ month: '2007-04'
 
 Although these two panels were held separately at the
 [Nonprofit Technology Conference 2007](https://web.archive.org/web/20070308071728/http://www.nten.org/ntc),
-I thought that they related so well that I'd present them together.
+I thought that they related so well that I'd present them together.
 
-**Leveraging the Power of Participatory Media**
+**Leveraging the Power of Participatory Media**
 
 - Colin Delany, [e.politics](https://www.epolitics.com/) (presentation slides
   and resources
@@ -70,7 +70,7 @@ I thought that they related so well that I'd present them together.
 - Michael Silberman,
   [EchoDitto](https://web.archive.org/web/20070701104529/http://www.echoditto.com/)
 
-**The Future of Online Outreach**
+**The Future of Online Outreach**
 
 - Marty Kearns and Ruby Sinreich,
   [Green Media Toolshed](https://web.archive.org/web/20070701171633/http://www.greenmediatoolshed.org/)
@@ -91,31 +91,31 @@ Colin pointed out that Chevy had decided to leave the ads online because they
 had the effect of driving lots of traffic to the website -- thus turning a
 negative backlash into a positive result. In his presentation, however, Marty
 said there had been a significant drop in sales of the Tahoe the next quarter --
-possibly due to the rise in gas prices, but possibly also due to this
-negative publicity.
+possibly due to the rise in gas prices, but possibly also due to this negative
+publicity.
 
 After recommending that campaigns engage in participatory media for the simple
 reason that your users are doing it anyway (giving the example of the
 "[vote different](https://www.youtube.com/watch?v=6h3G-lMZxjo)" video), Colin
-outlined the basic motivations:
+outlined the basic motivations:
 
 - engagement
-- leveraging collective intelligence (Marty might call this
-  being network-centric)
+- leveraging collective intelligence (Marty might call this being
+  network-centric)
 - publicity
-- because they're there
+- because they're there
 
 Colin pointed out that email discussion lists and fora were a basic form of
 user-generated content. Beyond that lay blogs, then video and photographs,
-altered images, stories, social networking projects and "ideas" themselves.
+altered images, stories, social networking projects and "ideas" themselves.
 
-There are several levels of engagement possible with participatory media:
+There are several levels of engagement possible with participatory media:
 
-- observation (one-way, receiving information)
-- interaction (responding with information, as in a blog comment)
-- contribution (creating information, as in posting a blog)
+- observation (one-way, receiving information)
+- interaction (responding with information, as in a blog comment)
+- contribution (creating information, as in posting a blog)
 - solicitation (asking others to create information in response to yours, as in
-  a video response or a contest)
+  a video response or a contest)
 
 A prime example of participatory media that Colin gave was Late Night with Conan
 O'Brien's
@@ -136,32 +136,32 @@ the attack on Pearl Harbor in 1941. They had set up a toll-free number so that
 technologically-challenged seniors wouldn't have to interface with the website,
 but to their surprise that was the primary mode of submission. In another twist,
 they established a MySpace profile not expecting much response from a youthful
-crowd, but soon went on to find 20,000 friend requests.
+crowd, but soon went on to find 20,000 friend requests.
 
 Michael pointed out that the nature of participatory media was still new enough
 that it is able to earn media for the organization -- the Survivors Project
 really took off after a feature in Parade. The very existence of the campaign
 was a news story, in a way a traditional museum-style exhibit on Pearl Harbor
-would not be.
+would not be.
 
 As for Since Sliced Bread, Michael explained that it was an attempt by
 [SEIU](https://seiu.org/) president Andy Stern to solicit ideas directly from
 workers, because he felt like DC lobbyists and consultants working on labor
-issues weren't concerned with the real issues facing his union members.
+issues weren't concerned with the real issues facing his union members.
 
 Users were thus invited to submit their best ideas Since Sliced Bread, with the
 [winner](https://web.archive.org/web/20070719053813/http://www.sinceslicedbread.com/idea/9602)
 receiving a prize of $100,000 and runners-up receiving money as well. The
 project had what Michael called "a panel of sort-of celebrities" which narrowed
 the tens-of-thousands of entries to a slate of 21 finalists. The community then
-voted on the winners from those 21.
+voted on the winners from those 21.
 
 Michael talked about the issues confronted by the team when losers in the
 contest turned against the site -- a much higher volume of nasty blog comments,
 to the point that the blog became de-emphasized on the site to try to remove the
 flashpoint. The site also generated some serious victories as well, including
 the winning project going on to being approved by voters in a Washington state
-ballot initiative.
+ballot initiative.
 
 In the question-and-answer period, numerous participatory media campaigns were
 offered, including the March of Dimes'
@@ -172,27 +172,27 @@ and the
 **Alan Rosenblatt** said
 [Care2](https://web.archive.org/web/20070706210219/http://www.care2.com/) had
 done a study demonstrating that people who participated in discussion fora were
-74% more likely to take action.
+74% more likely to take action.
 
-### On to the second session!
+### On to the second session!
 
 **Marty** began by making the argument that the differences in social networks
 (connections) today -- aptly covered by
 [David Weinberger](https://web.archive.org/web/20081205054343/netsquared.org/blog/britt-bravo/notes-ntc-keynote-david-weinberger)
 earlier in the day -- should necessarily change the way we go about social
 organizing. It is not as much about building individual leadership or
-organizational capacity, he said, but about making strong and
-effective connections.
+organizational capacity, he said, but about making strong and effective
+connections.
 
-In other words, what would your organization do with 10,000 people for
-ten minutes?
+In other words, what would your organization do with 10,000 people for ten
+minutes?
 
 Most people today are under a barrage of information. When the FCC's
 "[Do Not Call](https://www.donotcall.gov/)" list was launched, 50 million people
 signed up in just a few weeks -- without any advertising whatsoever. These
 people have "walked away from the current models of civic engagement." They
 don't sign up for email lists because they're afraid of ever getting off -- a
-barrier to exit becomes a barrier to entry.
+barrier to exit becomes a barrier to entry.
 
 Network-centric advocacy focuses not only on the individual or organization, but
 more importantly on the network "as a mechanism for exerting influence." Recent
@@ -206,31 +206,31 @@ visual example is
 recently deployed by the Oxygen network in
 [Oh! Speakup!](https://web.archive.org/web/20070716232054/http://speakup.oxygen.com/campaigns/womensrights/).
 
-A strong network depends on five key components, according to Marty:
+A strong network depends on five key components, according to Marty:
 
 - _strong social ties_ that become a "tangible, measured and carefully
-  cultivated strategic asset" for organizers
-- _a common story_ that allows the core actors to understand each other
+  cultivated strategic asset" for organizers
+- _a common story_ that allows the core actors to understand each other
 - _a communications grid_ that allows for one-to-one, one-to-many and
-  many-to-many conversations, including self-segmentation
-- _shared resources_ for coordinated tasks
-- _clarity of purpose_ and given the context to refine this purpose
+  many-to-many conversations, including self-segmentation
+- _shared resources_ for coordinated tasks
+- _clarity of purpose_ and given the context to refine this purpose
 
-What networks are particularly good at are:
+What networks are particularly good at are:
 
 - connecting ([eBay](https://www.ebay.com/))
 - sequencing ([SETI@Home](https://en.wikipedia.org/wiki/SETI@home))
 - synchronizing ([flash mobs](https://smartmobs.com/book-summary/))
-- distributing (viral news)
+- distributing (viral news)
 
 Additional examples given were MoveOn.org's
 [Bush in 30 Seconds](https://web.archive.org/web/20070709151254/http://bushin30seconds.org/)
 and the unaffiliated
 [Congress in 30 Seconds](https://web.archive.org/web/20070625065450/http://www.congressin30seconds.com/)
--- both participatory media campaigns!
+-- both participatory media campaigns!
 
 The session closed with time for people to meet in small groups and discuss
-network-centric advocacy in the context of their own organizaitons.
+network-centric advocacy in the context of their own organizaitons.
 
 With that, I'll leave you with a quote from Marty: "Networks are
 leader<em>ful</em> and boss<em>less</em>."

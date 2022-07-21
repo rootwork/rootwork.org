@@ -83,7 +83,7 @@ That all follows some
 that I wrote as an introduction to the NetSquared national conference last May
 (see also a
 {{< deadlink "PDF of the brochure" "http://genocideintervention.net/members/docs/netact.pdf" >}}
-distributed to attendees).
+distributed to attendees).
 
 Today, Joshua Levy at Personal Democracy Forum posts the
 "[rules for using MySpace](https://web.archive.org/web/20070717032434/http://www.personaldemocracy.com/node/1116)"
@@ -95,15 +95,15 @@ and the
 [Military Free Zone](https://web.archive.org/web/20070708173159/http://www.militaryfreezone.org/).
 (Scott was also the person who originally contacted GI-Net about collaborating
 with the band [Anti-Flag](http://www.anti-flag.com/) on a Darfur essay included
-in their newest album.)
+in their newest album.)
 
 One thing I have been emphasizing in all of these presentations and interviews
 has been the idea of **using social networking as a "bottom-up" way of online
 mobilization** -- in the words of GI-Net's mission, "empowering individuals and
-communities with the tools" to effect change.
+communities with the tools" to effect change.
 
 Salient quote from
-[Joshua's article](https://web.archive.org/web/20070717032434/http://www.personaldemocracy.com/node/1116):
+[Joshua's article](https://web.archive.org/web/20070717032434/http://www.personaldemocracy.com/node/1116):
 
 > Offering concrete ideas for how to solve a seemingly insurmountable problem
 > can give people a sense that they, as individuals, have a stake in an issue.
@@ -120,8 +120,8 @@ Salient quote from
 > constant generation of awareness and ideas.
 >
 > A MySpace page, says Boothe, isn't simply an advertisement for an
-> organization, "it's a tool for mobilizing people for different kinds
-> of action."
+> organization, "it's a tool for mobilizing people for different kinds of
+> action."
 
 I don't by any means consider myself an expert (personally I find myself less
 interested in MySpace than you might expect -- but then again I'm a techie who
@@ -130,22 +130,22 @@ to be accomplished in this space.
 
 I think organizations just have to stay focused on empowering their members
 rather than simply advertising to them, and really being willing engaging them
-in a constructive way.
+in a constructive way.
 
 Many of the
 {{< deadlink "approaches to social networking" "http://www.associatedcontent.com/article/79084/myspace_brings_humanitarian_organization.html" >}}
-seem to involve nothing more than acquiring banner space:
+seem to involve nothing more than acquiring banner space:
 
 > If anyone out in the world needs help, all they have to do is look to MySpace.
 > You just have to get up on the wall at MySpace, and represent. Good things
-> will happen.
+> will happen.
 
 Yes, you can reach a large audience with MySpace, and statistically, with a
 large enough audience you will have talented people volunteer their services.
 But that's not "social networking," it's just advertising -- if nonprofits could
 easily and cheaply fly banner advertisements behind airplanes in the world's
 major cities, they would probably get a lot of volunteers, too. The only
-difference in this case is that it's electronic and (relatively) free.
+difference in this case is that it's electronic and (relatively) free.
 
 And -- as our organization has certainly found out -- getting a lot of
 volunteers often means getting a lot of people wanting to do things you don't do
@@ -156,7 +156,7 @@ already in place about how to effectively mobilize people toward actions that
 will make a positive difference, then I would be worried about getting
 distracted by chasing benefit concerts and bake sales all over the world.
 Enthusiastic supporters are great, but sometimes you have to channel them in the
-right direction.
+right direction.
 
 Finally, even if online organizing dovetails well with community organizing, the
 mobilizing of third-party advocates only effects change if that mobilization is
@@ -164,18 +164,18 @@ directed in a useful direction.[^1] You might get a lot of people to sign a
 petition, but does that actually aid the community you supposedly help? You
 might attract a lot of donations, but does that actually support the people you
 say you represent? **These are classic nonprofit challenges that don't go away
-simply through electronic networking.**
+simply through electronic networking.**
 
 Online organizing doesn't replace real on-the-ground community organizing or
 empowerment. (This is actually one of my concerns with the
 [Second Life nonprofit fad](https://beth.typepad.com/beths_blog/2006/07/an_interview_wi.html),
 but that's for another post.) Action online only matters if it can be translated
 into the real world, or if it can develop social bonds that provide the
-framework for real-world action.
+framework for real-world action.
 
-### Social Networking to Stop Genocide
+### Social Networking to Stop Genocide
 
-Some of GI-Net's social networking campaigns online:
+Some of GI-Net's social networking campaigns online:
 
 - [MySpace](https://web.archive.org/web/20070302163843/http://myspace.com/genocideintervention)
 - {{< deadlink "Facebook" "http://www.facebook.com/group.php?gid=2204803189" >}}
@@ -197,4 +197,4 @@ Some of GI-Net's social networking campaigns online:
     [student walkouts](https://www.washingtonpost.com/wp-dyn/content/article/2006/03/28/AR2006032800982.html)
     in Virginia and Maryland, they were largely decentralized, with no
     organization pointing the way or setting up MySpace profiles to encourage
-    the movement.
+    the movement.
