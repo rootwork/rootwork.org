@@ -33,6 +33,10 @@
       <h1 class="post_title p-name" itemprop="name headline">
         {{- with $p.featureImage -}}
           <div class="post_featured">
+            <span
+              class="post_featured__bg"
+              style="background-image: url('{{ $p.featureImage }}');"
+            ></span>
             {{- partial "image" (dict "file" $p.featureImage "alt" $p.featureImageAlt "cap" $p.featureImageCap "type" "featured" "Page" $.Page) }}
           </div>
         {{- end -}}
