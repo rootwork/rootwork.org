@@ -8,7 +8,7 @@
 
     &__link {
       display: inline-block;
-      padding: 0.5rem;
+      padding: 0.5rem 1rem;
       background: var(--g-greenblue);
       background-size: 200% auto;
       border-radius: 0.25em;
@@ -18,7 +18,33 @@
 
       @include is-on {
         background-position: 100% 0;
-        box-shadow: rgba(255, 255, 255, 0.25) 1px 1px 0.5em 0.25em;
+        @include switch(
+          box-shadow,
+          var(--shade) 1px 1px 0.5em 0.1em,
+          var(--pale-light) 1px 1px 0.5em 0.25em
+        );
+      }
+    }
+
+    &__dir.newer-post {
+      a {
+        padding-left: 1rem;
+
+        @include is-on {
+          padding-left: 0.5rem;
+          padding-right: 1.5rem;
+        }
+      }
+    }
+
+    &__dir.older-post {
+      a {
+        padding-right: 1rem;
+
+        @include is-on {
+          padding-left: 1.5rem;
+          padding-right: 0.5rem;
+        }
       }
     }
   }
