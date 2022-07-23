@@ -8,7 +8,8 @@
   5. Adding featured image credit section at the bottom.
   6. Adding #content anchor to main content (for skip-to link).
   7. Adding automated shortcode at the bottom.
-  8. Adding "tree" partial at the bottom.
+  8. Adding newer/older post navigation at the bottom.
+  9. Adding "tree" partial at the bottom.
 */}}
 {{- define "main" }}
   {{- $s := .Site.Params }}
@@ -141,29 +142,31 @@
           {{ end }}
         {{ end }}
 
+        {{ if eq .Type "blog" }}
+          <nav class="post-nav">
+            <div class="post-nav__dir newer-post">
+              {{ if and (.NextPage) (eq .NextPage.Type "blog") }}
+                <a
+                  class="post-nav__link"
+                  href="{{ .NextPage.Permalink }}"
+                  title="{{ .NextPage.Title }}"
+                  >« Newer post</a
+                >
+              {{ end }}
+            </div>
+            <div class="post-nav__dir older-post">
+              {{ if and (.PrevPage) (eq .PrevPage.Type "blog") }}
+                <a
+                  class="post-nav__link"
+                  href="{{ .PrevPage.Permalink }}"
+                  title="{{ .PrevPage.Title }}"
+                  >Older post »</a
+                >
+              {{ end }}
+            </div>
+          </nav>
+        {{ end }}
 
-        <nav class="post-nav">
-          <div class="post-nav__dir next-post">
-            {{ if .NextPage }}
-              <a
-                class="post-nav__link"
-                href="{{ .NextPage.Permalink }}"
-                title="{{ .NextPage.Title }}"
-                >« Newer post</a
-              >
-            {{ end }}
-          </div>
-          <div class="post-nav__dir previous-post">
-            {{ if .PrevPage }}
-              <a
-                class="post-nav__link"
-                href="{{ .PrevPage.Permalink }}"
-                title="{{ .PrevPage.Title }}"
-                >Older post »</a
-              >
-            {{ end }}
-          </div>
-        </nav>
       </div>
 
       {{- $showRelatedInArticle := true }}
