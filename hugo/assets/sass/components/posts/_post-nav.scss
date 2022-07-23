@@ -1,0 +1,25 @@
+// Newer/older post navigation
+
+.post_content .post_body_footer {
+  .post-nav {
+    display: flex;
+    padding: 1rem 1rem 1.25rem;
+    justify-content: space-between;
+
+    &__link {
+      display: inline-block;
+      padding: 0.5rem;
+      background: var(--g-greenblue);
+      background-size: 200% auto;
+      border-radius: 0.25em;
+      color: var(--white);
+      font-size: 1rem;
+      font-weight: bold;
+
+      @include is-on {
+        background-position: 100% 0;
+        box-shadow: rgba(255, 255, 255, 0.25) 1px 1px 0.5em 0.25em;
+      }
+    }
+  }
+}

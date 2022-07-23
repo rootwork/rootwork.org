@@ -140,6 +140,30 @@
             {{ end }}
           {{ end }}
         {{ end }}
+
+
+        <nav class="post-nav">
+          <div class="post-nav__dir next-post">
+            {{ if .NextPage }}
+              <a
+                class="post-nav__link"
+                href="{{ .NextPage.Permalink }}"
+                title="{{ .NextPage.Title }}"
+                >« Newer post</a
+              >
+            {{ end }}
+          </div>
+          <div class="post-nav__dir previous-post">
+            {{ if .PrevPage }}
+              <a
+                class="post-nav__link"
+                href="{{ .PrevPage.Permalink }}"
+                title="{{ .PrevPage.Title }}"
+                >Older post »</a
+              >
+            {{ end }}
+          </div>
+        </nav>
       </div>
 
       {{- $showRelatedInArticle := true }}
