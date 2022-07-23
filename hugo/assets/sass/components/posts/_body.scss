@@ -38,12 +38,12 @@
   }
 
   hr {
-    opacity: 0.8;
-    margin: 1rem 0;
+    margin: 1rem auto;
     border: none;
-    height: 100px;
-    @include switch(background-color, var(--dark-green), var(--white));
-    mask-image: url('../icons/plant-divider.svg');
+    height: 2.25rem;
+    opacity: 0.9;
+    @include switch(background-color, var(--bright-green), var(--light));
+    mask-image: url('../icons/divider.svg');
     -webkit-mask-position: bottom;
     mask-position: bottom;
     -webkit-mask-size: contain;
