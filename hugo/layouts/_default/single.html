@@ -43,7 +43,7 @@
         <span
           class="
           post_title__text
-          {{ if eq $p.featureImageShade true -}}
+          {{ if or (not $p.featureImage) (eq $p.featureImageShade true) -}}
             shaded
           {{- end -}}
         "
