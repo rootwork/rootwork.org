@@ -13,17 +13,17 @@
     margin: 0;
 
     &__bg {
+      --blur: 1.5rem;
       position: absolute;
       display: block;
       z-index: -1;
-      width: 100vw;
-      height: 100%;
+      width: calc(100vw + (2 * var(--blur)));
+      height: calc(100% - (2 * var(--blur)));
       left: 50%;
       right: 50%;
-      margin-left: -50vw;
-      margin-right: -50vw;
+      margin: var(--blur) calc(-50vw - var(--blur)) 0;
       background-size: 100% 100%;
-      filter: blur(1.5rem);
+      filter: blur(var(--blur));
     }
 
     figure,
@@ -50,11 +50,12 @@
     position: relative;
     margin: 0;
     padding: 1rem;
-    z-index: 10;
     color: var(--white);
     text-shadow: 2px 2px 0 var(--dark-shade), 3px 3px 0 var(--dark-shade),
       -1px -1px 0 var(--dark-shade), 1px -1px 0 var(--dark-shade),
       -1px 1px 0 var(--dark-shade), 1px 1px 0 var(--dark-shade);
+    z-index: 10;
+
     @include bp-s-up {
       padding: 2rem;
     }
