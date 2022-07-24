@@ -16,11 +16,11 @@
 # [[main]]
 #   parent = "Links"
 #   name = "LinkedIn"
-#   url = "https://www.linkedin.com/"
+#   url = ""
 # [[main]]
 #   parent = "Links"
 #   name = "Twitter"
-#   url = "https://twitter.com/"
+#   url = ""
 
 # [[main]]
 #   name = "Blog"
@@ -64,10 +64,10 @@
 
 # other supported social links
 # name = "youtube"
-# url = "https://www.youtube.com/#"
+# url = ""
 # name = "facebook"
-# url = "https://facebook.com/#"
+# url = ""
 # name = "instagram"
-# url = "https://instagram.com/#"
+# url = ""
 # name = "stackoverflow"
-# url = "https://stackoverflow.com/#"
+# url = ""
