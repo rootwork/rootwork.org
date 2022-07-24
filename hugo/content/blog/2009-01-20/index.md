@@ -68,7 +68,7 @@ gone, despite the fact that they had been paying for the service.
 
 Why did one system failure take down such a large network? Because the entire
 project was being
-[run by one person](https://web.archive.org/web/20130116145605/http://www.https://www.dailykos.com/stories/2009/01/07/681191/-Why-SoapBlox-Matters 'Read about the setup, as described on Daily Kos'),
+[run by one person](https://web.archive.org/web/20191123003217/https://www.dailykos.com/stories/2009/01/07/681191/-Why-SoapBlox-Matters 'Read about the setup, as described on Daily Kos'),
 part-time. These were fairly high-traffic blogs, yet their content was hosted on
 Soapblox's own servers, and when it all went down, that data became unavailable.
 After first proclaiming the software "dead," developer Paul Preston responded to
