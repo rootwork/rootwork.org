@@ -18,6 +18,7 @@ Network Trash Folder
 .TemporaryItems
 Temporary Items
 .fuse_hidden*
+core.*
 *~
 *.swp
 *.swo
