@@ -1,0 +1,54 @@
+// Display of posts in a series at the bottom of each member post.
+
+.post_content .post_series {
+  --border: 0.25rem;
+  position: relative;
+  margin: calc(var(--border) + 1rem) var(--border);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: var(--bright-light);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: calc(var(--border) * -1);
+    bottom: calc(var(--border) * -1);
+    left: calc(var(--border) * -1);
+    right: calc(var(--border) * -1);
+    border-radius: 0.5rem;
+    background: var(--g-rainbow);
+    z-index: -1;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    color: var(--black);
+  }
+
+  &__list {
+    padding-top: 0;
+    font-family: var(--font);
+    color: var(--dark-shade);
+  }
+
+  &__list-item {
+    margin: 0.5rem 0;
+  }
+
+  &__link:not(.button) {
+    display: block;
+    font-family: var(--content-font);
+    font-weight: bold;
+    font-style: italic;
+    color: var(--dark-shade);
+
+    @include is-on {
+      color: var(--black);
+    }
+  }
+
+  &__date {
+    display: block;
+  }
+}
