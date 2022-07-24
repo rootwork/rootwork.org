@@ -14,9 +14,10 @@
             href="{{ .Permalink }}"
             class="post_series__link"
             title="{{ .Title }}"
-            >{{ .Title }}</a
-          ><span class="post_series__date"
-            >{{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) }}</span
+            ><span class="post_series__link-title">{{ .Title }}</span
+            ><span class="post_series__link-date"
+              >{{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) }}</span
+            ></a
           >
         </li>
       {{ end }}
