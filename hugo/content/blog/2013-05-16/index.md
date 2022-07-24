@@ -174,7 +174,6 @@ JRB: In Drupal 8, we are building tools that manage a couple of the trickier
 components of accessibility in a browser. These are:
 
 1. Outputting audio updates
-
 2. Managing tabbing in constrained workflows
 
 Module developers will be able to pass a string to a method called

@@ -120,11 +120,8 @@ JL: There are four main areas where we need help right now, as outlined in our
 [Twig TODO wiki](https://groups.drupal.org/node/278968).
 
 1. Help us test all the patches.
-
 2. Help us fix issues with the patches.
-
 3. Help us improve the markup in core (after being converted to Twig).
-
 4. Help us clean up the rest of the theme system.
 
 If people are interested in any one of these four areas, they can
