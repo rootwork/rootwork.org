@@ -9,7 +9,8 @@
   6. Adding #content anchor to main content (for skip-to link).
   7. Adding automated shortcode at the bottom.
   8. Adding newer/older post navigation at the bottom.
-  9. Adding "tree" partial at the bottom.
+  9. Altering the logic displaying posts in series.
+  10. Adding "tree" partial at the bottom.
 */}}
 {{- define "main" }}
   {{- $s := .Site.Params }}
@@ -78,6 +79,16 @@
           </div>
         {{ end }}
       </div>
+
+      {{- $showRelatedInArticle := true }}
+      {{- if eq $s.showRelatedInArticle true }}
+        {{- $showRelatedInArticle = true }}
+      {{- else if eq $p.showRelatedInArticle true }}
+        {{- $showRelatedInArticle = true }}
+      {{- end }}
+      {{- if ne $showRelatedInArticle false }}
+        {{- partial "related" . }}
+      {{- end }}
 
       {{ $shortalias := "false" }}
       {{ range $p.aliases }}
@@ -168,16 +179,6 @@
         {{ end }}
 
       </div>
-
-      {{- $showRelatedInArticle := true }}
-      {{- if eq $s.showRelatedInArticle false }}
-        {{- $showRelatedInArticle = false }}
-      {{- else if eq $p.showRelatedInArticle false }}
-        {{- $showRelatedInArticle = false }}
-      {{- end }}
-      {{- if ne $showRelatedInArticle false }}
-        {{- partial "related" . }}
-      {{- end }}
 
       {{- $showComments := true }}
       {{- if eq $s.comments false }}

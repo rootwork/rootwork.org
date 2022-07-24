@@ -1,0 +1,25 @@
+{{/* 1. Adding wrapping div and changing class names.
+  2. Adding title of series to heading.
+  3. Changing heading to h3.
+  4. Changing sort from reverse-chronological to chronological.
+*/}}
+{{ if isset .Params "series" }}
+  {{ $related := where .Site.RegularPages ".Params.series" "eq" .Params.series }}
+  <nav class="post_series">
+    <h3 class="post_series__title">{{ .Params.series }}</h3>
+    <ul class="post_series__list">
+      {{ range $related.ByDate }}
+        <li class="post_series__list-item">
+          <a
+            href="{{ .Permalink }}"
+            class="post_series__link"
+            title="{{ .Title }}"
+            >{{ .Title }}</a
+          ><span class="post_series__date"
+            >{{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) }}</span
+          >
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
+{{ end }}
