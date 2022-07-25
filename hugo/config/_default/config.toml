@@ -9,9 +9,47 @@ languageCode = "en-US"
 
 paginate = 10
 canonifyurls = false # See https://gohugo.io/content-management/urls/#canonicalization
+timeout = 30000
+enableInlineShortcodes = true
 
 # Emoji
 enableEmoji = true
+
+# Footnotes
+
+footnoteReturnLinkContents = "^"
+
+# Privacy settings
+
+[privacy]
+
+[privacy.disqus]
+disable = true
+
+[privacy.googleAnalytics]
+anonymizeIP = true
+disable = true
+respectDoNotTrack = true
+useSessionStorage = false
+
+[privacy.instagram]
+disable = false
+simple = true
+
+[privacy.twitter]
+disable = false
+enableDNT = true
+simple = true
+disableInlineCSS = true
+
+[privacy.vimeo]
+disable = false
+enableDNT = true
+simple = true
+
+[privacy.youtube]
+disable = false
+privacyEnhanced = true
 
 # SEO settings
 enableRobotsTXT = true
@@ -37,14 +75,16 @@ month = "month"
 [outputs]
   home = ["HTML", "RSS", "ATOM", "JSON"]
 
-# Define ATOM output format
+# Define feed output formats
 [outputFormats]
+
   [outputFormats.ATOM]
   name = "ATOM"
   baseName = "feed"
   mediaType = "application/atom+xml"
 
-# Define ATOM media type
+# Define feed media types
 [mediaTypes]
+
   [mediaTypes."application/atom+xml"]
   suffixes = ["atom"]
