@@ -1,0 +1,51 @@
+{{- $site := .Site -}}
+{{- $s := $site.Params -}}
+{{- $permalink := .Permalink -}}
+{{- $pctx := . -}}
+{{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
+{{- $pages := slice -}}
+{{- $pages = where .Site.RegularPages "Type" "in" .Site.Params.mainSections -}}
+{{- $limit := .Site.Config.Services.RSS.Limit -}}
+{{- if ge $limit 1 -}}
+{{- $pages = $pages | first $limit -}}
+{{- end -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}</title>
+    <link>{{ $permalink }}</link>
+    {{- with .Site.Params.description }}
+    <description>{{ . }}</description>
+    {{- end }}
+    {{- with .Site.Params.feedLogo }}
+    <image>
+      <url>{{ . | absURL }}</url>
+      <title>{{ $site.Title }}</title>
+      <link>{{ $permalink }}</link>
+    </image>
+    {{- end }}
+    <generator>Hugo -- gohugo.io</generator>{{ with .Site.LanguageCode }}
+    <language>{{.}}</language>{{end}}{{ with .Site.Author.email }}
+    <managingEditor>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</managingEditor>{{end}}{{ with $site.Data.authors.default.email }}
+    <webMaster>{{.}}{{ with $site.Data.authors.default.name }} ({{.}}){{end}}</webMaster>{{end}}
+    <copyright>{{- T "copyright" | markdownify }}
+      {{- with $s.since }} {{ . }}&#8211;{{ end }}{{ now.Format "2006"}}, {{ .Site.Title }}. {{ T "all_rights" | markdownify -}}
+    </copyright>{{ if not .Date.IsZero }}
+    <lastBuildDate>{{ now.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
+    {{- with .OutputFormats.Get "RSS" -}}
+    {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+    {{- end -}}
+    {{ range $pages }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+      {{- with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
+      <guid>{{ .Permalink }}</guid>
+      {{ $content := trim .Content "\n" -}}
+      {{- $content = replace $content "\n" " " -}}
+      <description>{{ $content | html }}</description>
+    </item>
+    {{ end }}
+  </channel>
+</rss>
