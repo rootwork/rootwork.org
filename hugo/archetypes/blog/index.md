@@ -1,6 +1,6 @@
 ---
 title: '{{ replace .Name "-" " " | title }}'
-author: Ivan Boothe
+author: ivan
 date: '{{ .Date | dateFormat "2006-01-02" }}'
 # lastmod: '{{ .Date | dateFormat "2006-01-02" }}' # Appends 'edited on' to the publish date
 
