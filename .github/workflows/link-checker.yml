@@ -17,14 +17,14 @@ jobs:
         with:
           fetch-depth: 1
       - name: Report broken links
-        uses: urlstechie/urlchecker-action@test-release-31-drivers
+        uses: urlstechie/urlchecker-action@master
         with:
           # Choose whether to print a more verbose end summary with files and broken URLs
           verbose: true
           # A comma-separated list of file types to cover in the URL checks
           file_types: .md,.toml,.yml,.scss
           # The timeout seconds to provide to requests, defaults to 5 seconds
-          timeout: 300
+          timeout: 180
           # How many times to retry a failed request (each is logged, defaults to 1)
           retry_count: 5
           # Choose whether to include files with no URLs in the output
