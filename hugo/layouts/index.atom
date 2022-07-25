@@ -1,3 +1,4 @@
+{{- $s := .Site.Params -}}
 {{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections -}}
 {{- $limit := .Site.Config.Services.RSS.Limit -}}
 {{- if ge $limit 1 -}}
@@ -6,7 +7,7 @@
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ .Site.LanguageCode }}">
   <title>{{ .Site.Title }}</title>
-  {{- with .Site.Params.brand.tagline }}
+  {{- with .Site.Params.description }}
   <subtitle>{{ . }}</subtitle>
   {{- end }}
   <id>{{ "/" | absLangURL }}</id>
@@ -15,13 +16,14 @@
     <uri>{{ "/" | absLangURL }}</uri>
   </author>
   <generator>Hugo gohugo.io</generator>
-  {{- with .Site.Copyright }}
-  <rights>{{ . }}</rights>
-  {{- end }}
-  {{- with .Site.Params.brand.icon }}
+  <rights>
+    {{- T "copyright" | markdownify }}
+    {{- with $s.since }} {{ . }}&#8211;{{ end }}{{ now.Format "2006"}}, {{ .Site.Title }}. {{ T "all_rights" | markdownify -}}
+  </rights>
+  {{- with .Site.Params.feedIcon }}
   <icon>{{ . | absURL }}</icon>
   {{- end }}
-  {{- with .Site.Params.brand.logo }}
+  {{- with .Site.Params.feedLogo }}
   <logo>{{ . | absURL }}</logo>
   {{- end }}
   <updated>{{ dateFormat "2006-01-02T15:04:05Z" now.UTC | safeHTML }}</updated>
@@ -45,9 +47,21 @@
     <link rel="alternate" href="{{ .Permalink }}" hreflang="{{ .Language.Lang }}"/>
     {{- end -}}
     {{ end }}
-    <updated>{{ dateFormat "2006-01-02T15:04:05Z" .Lastmod.UTC | safeHTML }}</updated>
+    {{/* Adding a random number of seconds+millisecs to ensure no two dates are exactly the same. */}}
+    {{- $date := .Lastmod.Unix -}}
+    {{- $seed := int ( printf "0x%.8s" (md5 (readFile .File.Path))) -}}
+    {{- $rnd := mod (add (mul 13 $seed) 97) 400 -}}
+    {{- $date = add $date $rnd -}}
+    <updated>{{ dateFormat "2006-01-02T15:04:05Z" $date | safeHTML }}</updated>
     <published>{{ dateFormat "2006-01-02T15:04:05Z" .Date.UTC | safeHTML }}</published>
-    <content type="html">{{ trim .Content "\n" }}</content>
+    {{/* In addition to trimming newlines, this helpfully escapes HTML. */}}
+    {{- $content := trim .Content "\n" -}}
+    {{- $content = replace $content "\n" " " -}}
+    {{/* Fix HTML entities that get mangled and invalidate the feed. */}}
+    {{- $content = replace $content "é" "&eacute;" -}}
+    {{- $content = replace $content "í" "&iacute;" -}}
+    {{- $content = replace $content "ï" "&iuml;" -}}
+    <content type="html">{{ $content }}</content>
   </entry>
   {{- end }}
 </feed>
