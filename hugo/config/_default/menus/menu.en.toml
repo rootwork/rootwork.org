@@ -8,24 +8,30 @@
   url = "about/"
   weight = -109
 
-# Submenus are done this way: parent -> identifier
-# [[main]]
-#   name = "Links"
-#   identifier = "Links"
-#   weight = -108
-# [[main]]
-#   parent = "Links"
-#   name = "LinkedIn"
-#   url = ""
-# [[main]]
-#   parent = "Links"
-#   name = "Twitter"
-#   url = ""
+# feeds
 
-# [[main]]
-#   name = "Blog"
-#   url = "blog/"
-#   weight = -107
+[[main]]
+  name = "Feeds"
+  identifier = "feeds"
+  weight = -100
+
+[[main]]
+  parent = "feeds"
+  name = "RSS"
+  weight = 1
+  url = "index.xml"
+
+[[main]]
+  parent = "feeds"
+  name = "Atom"
+  weight = 2
+  url = "index.atom"
+
+[[main]]
+  parent = "feeds"
+  name = "JSON feed"
+  weight = 3
+  url = "index.json"
 
 # social menu links
 
@@ -57,10 +63,6 @@
   name = "linkedin"
   weight = 6
   url = "https://www.linkedin.com/in/ivanboothe"
-[[social]]
-  name = "rss"
-  weight = 7
-  url = "index.xml"
 
 # other supported social links
 # name = "youtube"
