@@ -1,7 +1,7 @@
 ---
 title:
   'Ninjas in your code at Drupalcon Portland: Sass with extends and placeholders'
-author: Ivan Boothe
+author: ivan
 date: '2013-05-14'
 # lastmod: 2022-07-11 # Appends 'edited on' to the publish date
 

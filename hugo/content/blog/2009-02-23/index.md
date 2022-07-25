@@ -1,6 +1,6 @@
 ---
 title: 'Using Facebook for social change: The webinar'
-author: Ivan Boothe
+author: ivan
 date: '2009-02-23'
 # lastmod: '2022-07-14' # Appends 'edited on' to the publish date
 

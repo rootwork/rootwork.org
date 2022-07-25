@@ -2,7 +2,7 @@
 title:
   'Drupal 8, aural interfaces and groundbreaking accessibility at Drupalcon
   Portland'
-author: Ivan Boothe
+author: ivan
 date: '2013-05-16'
 # lastmod: 2022-07-09 # Appends 'edited on' to the publish date
 

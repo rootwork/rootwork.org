@@ -1,6 +1,6 @@
 ---
 title: 'Different kinds of elites (and different kinds of elitism)'
-author: Ivan Boothe
+author: ivan
 date: '2006-05-30'
 # lastmod: '2022-07-18' # Appends 'edited on' to the publish date
 

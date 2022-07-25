@@ -1,6 +1,6 @@
 ---
 title: 'Community blogs run better on open-source software'
-author: Ivan Boothe
+author: ivan
 date: '2009-01-20'
 # lastmod: '2022-07-14' # Appends 'edited on' to the publish date
 

@@ -1,6 +1,6 @@
 ---
 title: 'Just what kind of social change are you interested in?'
-author: Ivan Boothe
+author: ivan
 date: '2008-05-14'
 lastmod: '2008-05-21' # Appends 'edited on' to the publish date
 

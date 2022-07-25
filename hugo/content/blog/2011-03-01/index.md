@@ -1,6 +1,6 @@
 ---
 title: 'A grant for your mission, as a poem'
-author: Ivan Boothe
+author: ivan
 date: '2011-03-01'
 # lastmod: '2022-07-12' # Appends 'edited on' to the publish date
 

@@ -1,7 +1,7 @@
 ---
 title:
   "The fire and the food: Why there's no such thing as a Twitter revolution"
-author: Ivan Boothe
+author: ivan
 date: '2009-04-08'
 lastmod: '2009-04-13' # Appends 'edited on' to the publish date
 

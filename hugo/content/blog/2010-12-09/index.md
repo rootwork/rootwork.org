@@ -1,6 +1,6 @@
 ---
 title: 'Facebook removes default landing tab for new nonprofit pages'
-author: Ivan Boothe
+author: ivan
 date: '2010-12-09'
 # lastmod: '2022-07-13' # Appends 'edited on' to the publish date
 

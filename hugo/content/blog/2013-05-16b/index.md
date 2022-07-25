@@ -1,6 +1,6 @@
 ---
 title: 'Drupal 8 and the power of Twig: A Drupalcon Portland featured session'
-author: Ivan Boothe
+author: ivan
 date: '2013-05-16'
 # lastmod: 2022-07-07 # Appends 'edited on' to the publish date
 

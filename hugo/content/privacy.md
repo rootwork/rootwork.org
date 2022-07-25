@@ -1,6 +1,6 @@
 ---
 title: Privacy policy
-author: Ivan Boothe
+author: ivan
 date: '2022-07-01'
 effective_date: 'July 1, 2022' # Used verbatim in the post
 # lastmod: '2014-04-29' # Appends 'edited on' to the publish date

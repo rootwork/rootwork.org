@@ -2,7 +2,7 @@
 title:
   'We need to talk about your stylesheets: An interview with Jonathan Snook at
   Drupalcon Portland'
-author: Ivan Boothe
+author: ivan
 date: '2013-05-21'
 # lastmod: 2022-06-17 # Appends 'edited on' to the publish date
 

@@ -1,6 +1,6 @@
 ---
 title: 'What online advocacy can learn from community organizing'
-author: Ivan Boothe
+author: ivan
 date: '2014-03-15'
 lastmod: '2015-03-06' # Appends 'edited on' to the publish date
 

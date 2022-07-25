@@ -1,6 +1,6 @@
 ---
 title: 'A world-class frontend track at Drupalcon Portland'
-author: Ivan Boothe
+author: ivan
 date: '2013-05-13'
 # lastmod: 2022-07-11 # Appends 'edited on' to the publish date
 

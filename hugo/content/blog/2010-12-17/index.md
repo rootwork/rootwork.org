@@ -1,6 +1,6 @@
 ---
 title: 'Google Chrome for a cause, or, nonprofit deathmatch strikes again'
-author: Ivan Boothe
+author: ivan
 date: '2010-12-17'
 # lastmod: '2022-07-12' # Appends 'edited on' to the publish date
 

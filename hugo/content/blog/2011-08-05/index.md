@@ -1,6 +1,6 @@
 ---
 title: 'Google Plus: Nonprofit and social change implications'
-author: Ivan Boothe
+author: ivan
 date: '2011-08-05'
 lastmod: '2015-10-05' # Appends 'edited on' to the publish date
 

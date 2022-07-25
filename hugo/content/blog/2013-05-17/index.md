@@ -1,7 +1,7 @@
 ---
 title:
   'Drupalcon Portland: Responsive web design in a snap with Breakpoint and Sass'
-author: Ivan Boothe
+author: ivan
 date: '2013-05-17'
 # lastmod: 2022-06-21 # Appends 'edited on' to the publish date
 

@@ -1,6 +1,6 @@
 ---
 title: 'Free Drupal Q&A call for nonprofits and social change tomorrow, Feb. 28'
-author: Ivan Boothe
+author: ivan
 date: '2013-02-27'
 # lastmod: 2022-07-12 # Appends 'edited on' to the publish date
 

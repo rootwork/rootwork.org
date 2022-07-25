@@ -1,6 +1,6 @@
 ---
 title: 'Frontend session proposals to Portland Drupalcon due today!'
-author: Ivan Boothe
+author: ivan
 date: '2013-02-15'
 # lastmod: '2022-07-12' # Appends 'edited on' to the publish date
 

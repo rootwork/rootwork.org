@@ -1,6 +1,6 @@
 ---
 title: 'Hundreds gather for social change tech at NetSquared Year Three'
-author: Ivan Boothe
+author: ivan
 date: '2008-05-27'
 # lastmod: '2022-07-16' # Appends 'edited on' to the publish date
 

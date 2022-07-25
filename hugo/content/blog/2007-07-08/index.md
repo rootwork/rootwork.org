@@ -1,6 +1,6 @@
 ---
 title: 'One minute for 1-800-GENOCIDE'
-author: Ivan Boothe
+author: ivan
 date: '2007-07-08'
 # lastmod: '2022-07-19' # Appends 'edited on' to the publish date
 

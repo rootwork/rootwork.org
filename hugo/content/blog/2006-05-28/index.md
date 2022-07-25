@@ -1,6 +1,6 @@
 ---
 title: 'Can blogging stop genocide?'
-author: Ivan Boothe
+author: ivan
 date: '2006-05-28'
 lastmod: '2007-09-12' # Appends 'edited on' to the publish date
 

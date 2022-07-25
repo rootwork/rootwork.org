@@ -1,6 +1,6 @@
 ---
 title: 'NetSquared project interviews and session notes'
-author: Ivan Boothe
+author: ivan
 date: '2008-05-28'
 # lastmod: '2022-07-16' # Appends 'edited on' to the publish date
 

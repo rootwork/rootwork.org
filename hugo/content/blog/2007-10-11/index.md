@@ -2,7 +2,7 @@
 title:
   'Organizing rather than mobilizing: Using social networks for
   constituency-building'
-author: Ivan Boothe
+author: ivan
 date: '2007-10-11'
 # lastmod: '2022-07-17' # Appends 'edited on' to the publish date
 

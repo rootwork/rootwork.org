@@ -1,6 +1,6 @@
 ---
 title: 'Grow your own: Learning custom base themes at Drupalcon Portland'
-author: Ivan Boothe
+author: ivan
 date: '2013-05-15'
 # lastmod: 2022-07-09 # Appends 'edited on' to the publish date
 

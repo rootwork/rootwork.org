@@ -1,6 +1,6 @@
 ---
 title: 'Notes from NTC: Participatory media and the future of online outreach'
-author: Ivan Boothe
+author: ivan
 date: '2007-04-06'
 # lastmod: '2022-07-17' # Appends 'edited on' to the publish date
 

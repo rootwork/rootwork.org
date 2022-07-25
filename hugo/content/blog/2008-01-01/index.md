@@ -1,6 +1,6 @@
 ---
 title: 'Drupal for nonprofits, or, how to build social networks for change'
-author: Ivan Boothe
+author: ivan
 date: '2008-01-01'
 # lastmod: '2022-07-16' # Appends 'edited on' to the publish date
 

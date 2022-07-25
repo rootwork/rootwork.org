@@ -1,6 +1,6 @@
 ---
 title: "Finding the movement's voice: Online social networks and social change"
-author: Ivan Boothe
+author: ivan
 date: '2009-10-09'
 # lastmod: '2022-07-13' # Appends 'edited on' to the publish date
 

@@ -1,7 +1,7 @@
 ---
 title:
   "Domain Registry of America is a scam. Don't let your nonprofit get fooled."
-author: Ivan Boothe
+author: ivan
 date: '2013-02-26'
 lastmod: '2022-07-12' # Appends 'edited on' to the publish date
 

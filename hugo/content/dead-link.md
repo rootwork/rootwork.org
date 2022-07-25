@@ -1,6 +1,6 @@
 ---
 title: This link has gone away
-author: Ivan Boothe
+author: ivan
 date: '2022-07-01'
 
 slug: '/dead-link'

@@ -1,6 +1,6 @@
 ---
 title: 'Social change takes more than social media'
-author: Ivan Boothe
+author: ivan
 date: '2009-05-25'
 lastmod: '2009-07-05' # Appends 'edited on' to the publish date
 

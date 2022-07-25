@@ -1,6 +1,6 @@
 ---
 title: 'Too few women in tech? Blame sexism.'
-author: Ivan Boothe
+author: ivan
 date: '2010-08-30'
 # lastmod: '2022-07-13' # Appends 'edited on' to the publish date
 

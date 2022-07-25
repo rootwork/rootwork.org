@@ -1,6 +1,6 @@
 ---
 title: 'What online activism can learn from community organizing'
-author: Ivan Boothe
+author: ivan
 date: '2010-04-09'
 # lastmod: '2022-07-13' # Appends 'edited on' to the publish date
 

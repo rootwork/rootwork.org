@@ -1,6 +1,6 @@
 ---
 title: 'Causes abandons 184,674 nonprofit supporters on MySpace'
-author: Ivan Boothe
+author: ivan
 date: '2009-11-06'
 # lastmod: '2022-07-13' # Appends 'edited on' to the publish date
 

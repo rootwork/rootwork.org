@@ -1,6 +1,6 @@
 ---
 title: 'Government accountability through web 2.0: A case study'
-author: Ivan Boothe
+author: ivan
 date: '2009-11-13'
 # lastmod: '2022-07-13' # Appends 'edited on' to the publish date
 

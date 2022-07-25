@@ -2,7 +2,7 @@
 title:
   'Two-click button foils Facebook tracking, a new tool for privacy-concerned
   nonprofits'
-author: Ivan Boothe
+author: ivan
 date: '2011-09-06'
 # lastmod: '2022-07-12' # Appends 'edited on' to the publish date
 

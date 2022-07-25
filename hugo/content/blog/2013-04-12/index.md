@@ -1,7 +1,7 @@
 ---
 title:
   'Uncharitable: How businesses co-opt nonprofits and undermine their potential'
-author: Ivan Boothe
+author: ivan
 date: '2013-04-12'
 # lastmod: 2022-07-11 # Appends 'edited on' to the publish date
 

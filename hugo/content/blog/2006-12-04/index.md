@@ -1,6 +1,6 @@
 ---
 title: 'The theory of bottom-up social networking'
-author: Ivan Boothe
+author: ivan
 date: '2006-12-04'
 # lastmod: '2022-07-18' # Appends 'edited on' to the publish date
 

@@ -1,6 +1,6 @@
 ---
 title: 'Genocide Intervention Network nominated for NetSquared mashup award'
-author: Ivan Boothe
+author: ivan
 date: '2008-03-28'
 # lastmod: '2022-07-16' # Appends 'edited on' to the publish date
 

@@ -1,7 +1,7 @@
 ---
 title:
   'Gurus are not enough: A call for organizers and organizing in social media'
-author: Ivan Boothe
+author: ivan
 date: '2009-09-03'
 # lastmod: '2022-07-14' # Appends 'edited on' to the publish date
 

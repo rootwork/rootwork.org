@@ -1,6 +1,6 @@
 ---
 title: 'Using social networks for social change: Facebook, MySpace and more'
-author: Ivan Boothe
+author: ivan
 date: '2008-10-24'
 lastmod: '2022-07-14' # Appends 'edited on' to the publish date
 
