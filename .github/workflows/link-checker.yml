@@ -24,9 +24,9 @@ jobs:
           # A comma-separated list of file types to cover in the URL checks
           file_types: .md,.toml,.yml,.scss
           # The timeout seconds to provide to requests, defaults to 5 seconds
-          timeout: 60
+          timeout: 30
           # How many times to retry a failed request (each is logged, defaults to 1)
-          retry_count: 5
+          retry_count: 3
           # Choose whether to include files with no URLs in the output
           print_all: false
           # A comma separated list of patterns to exclude during URL checks
