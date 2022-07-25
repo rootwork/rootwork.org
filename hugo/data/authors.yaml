@@ -1,0 +1,12 @@
+default:
+  name: Rootwork.org
+  uri: 'https://rootwork.org/'
+  email: info@rootwork.org
+  twitter: rootwork
+  image: logos/rootwork.svg
+ivan:
+  name: Ivan Boothe
+  uri: 'https://rootwork.org/'
+  email: info@rootwork.org
+  twitter: rootwork
+  image: images/ivan_256.jpg

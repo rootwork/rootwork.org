@@ -2,7 +2,8 @@ baseurl = "https://rootwork.github.io/rootwork.org/" # Include trailing slash
 title = "Rootwork.org"
 author = "Ivan Boothe" # Also set in [params.author]; defined here for safety
 
-DefaultContentLanguage = "en"
+defaultContentLanguage = "en"
+languageCode = "en-US"
 # [languages]
 # config/_default/languages.toml
 
@@ -32,6 +33,18 @@ series = "series"
 year = "year"
 month = "month"
 
-# RSS and search
+# Define feeds and search formats
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "ATOM", "JSON"]
+
+# Define ATOM output format
+[outputFormats]
+  [outputFormats.ATOM]
+  name = "ATOM"
+  baseName = "feed"
+  mediaType = "application/atom+xml"
+
+# Define ATOM media type
+[mediaTypes]
+  [mediaTypes."application/atom+xml"]
+  suffixes = ["atom"]
