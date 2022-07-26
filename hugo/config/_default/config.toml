@@ -80,7 +80,7 @@ month = "month"
 
   [outputFormats.ATOM]
   name = "ATOM"
-  baseName = "feed"
+  baseName = "index"
   mediaType = "application/atom+xml"
 
 # Define feed media types
