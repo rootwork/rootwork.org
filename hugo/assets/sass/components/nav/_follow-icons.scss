@@ -1,6 +1,6 @@
 // Social/follow icons in navigation bar
 
-.follow.follow {
+.nav_header .nav_body .follow {
   flex: 1 0 var(--follow-icons-width);
   margin-left: auto;
 
@@ -31,54 +31,13 @@
       }
     }
 
-    &.rss {
-      position: relative;
-
-      &::before {
-        @include motion(content, attr(title));
-        position: absolute;
-        left: 0.7rem;
-        bottom: -0.2rem;
-        font-size: 0.9rem;
-        text-transform: uppercase;
-        opacity: 0;
-        transition-duration: 0;
-      }
-
-      .icon {
-        width: 1.15rem;
-        height: 1.15rem;
-
-        .jsopen & {
-          width: 1rem;
-          height: 1rem;
-        }
-      }
-    }
-
     @include is-on {
       opacity: 1;
 
-      &:not(.rss) svg {
+      & svg {
         transform-origin: 50% 50%;
         @include motion(transform, rotate(360deg));
         @include motion(transition-duration, 1s);
-      }
-
-      &.rss {
-        &::before {
-          opacity: 1;
-        }
-
-        svg {
-          transform-origin: 0 50%;
-          @include motion(opacity, 0);
-          @include motion(
-            transform,
-            translateX(27.5%) translateY(-50%) scale(3) rotate(0.001deg)
-          );
-          @include motion(transition-duration, 1s);
-        }
       }
     }
 

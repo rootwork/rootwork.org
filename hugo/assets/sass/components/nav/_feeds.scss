@@ -1,0 +1,98 @@
+.nav_header {
+  .nav_body {
+    .nav_parent--feeds {
+      > .nav_item {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415a3.3 3.3 0 0 1 3.293 3.295A3.303 3.303 0 0 1 3.283 24C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat no-repeat;
+        background-position: center center;
+        font-size: 0;
+        width: 1.1rem;
+        height: 1.1rem;
+        opacity: 0.75;
+
+        .nav_icon {
+          @include hidden-all;
+        }
+
+        &.nav_open + .nav_sub {
+          margin-top: 0.5rem;
+          @include switch(background-color, var(--white), var(--dark-green));
+
+          &::before {
+            @include switch(
+              border-bottom-color,
+              var(--white),
+              var(--dark-green)
+            );
+          }
+
+          .nav_item {
+            opacity: 1;
+            font-size: 1.25rem;
+
+            @include is-on {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      @include is-on {
+        background-color: inherit;
+
+        > .nav_item {
+          opacity: 1;
+        }
+
+        .nav_sub .nav_item {
+          text-shadow: none;
+        }
+      }
+    }
+
+    &.rss {
+      position: relative;
+
+      &::before {
+        @include motion(content, attr(title));
+        position: absolute;
+        left: 0.7rem;
+        bottom: -0.2rem;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        opacity: 0;
+        transition-duration: 0;
+      }
+
+      .icon {
+        width: 1.15rem;
+        height: 1.15rem;
+
+        .jsopen & {
+          width: 1rem;
+          height: 1rem;
+        }
+      }
+
+      @include is-on {
+        &.rss {
+          &::before {
+            opacity: 1;
+          }
+
+          svg {
+            transform-origin: 0 50%;
+            @include motion(opacity, 0);
+            @include motion(
+              transform,
+              translateX(27.5%) translateY(-50%) scale(3) rotate(0.001deg)
+            );
+            @include motion(transition-duration, 1s);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
-{{/* 1. Removing alt content (but not attribute) from the icon nav-item, as the icon's ID provides the correct alt text.
+{{/* 1. Adding classes to nav items based on name.
   2. Adding search field.
+  3. Removing alt content (but not attribute) from the icon nav-item, as the icon's ID provides the correct alt text.
 */}}
 {{- $menu := .menu }}
 {{ $menuData := .context.Site.Data.menu }}
@@ -19,7 +20,7 @@
     {{- $url = absLangURL .URL }}
   {{- end }}
   <div
-    class="nav_parent{{ if (and (not .Children) (eq (trim $url $forwardSlash) (trim $link $forwardSlash))) }}
+    class="nav_parent nav_parent--{{ $name | lower }}{{ if (and (not .Children) (eq (trim $url $forwardSlash) (trim $link $forwardSlash))) }}
       nav_active
     {{ end }}"
   >
