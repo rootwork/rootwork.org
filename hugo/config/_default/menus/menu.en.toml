@@ -19,13 +19,13 @@
   parent = "feeds"
   name = "RSS"
   weight = 1
-  url = "index.xml"
+  url = "feed.rss"
 
 [[main]]
   parent = "feeds"
   name = "Atom"
   weight = 2
-  url = "index.atom"
+  url = "feed.atom"
 
 [[main]]
   parent = "feeds"
