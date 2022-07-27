@@ -27,11 +27,11 @@
   weight = 2
   url = "index.atom"
 
-# [[main]]
-#   parent = "feeds"
-#   name = "JSON feed"
-#   weight = 3
-#   url = "index.jsonfeed.json"
+[[main]]
+  parent = "feeds"
+  name = "JSON feed"
+  weight = 3
+  url = "feed.json"
 
 # social menu links
 

@@ -1,0 +1,32 @@
+{{- $s := .Site.Params -}}
+{{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections -}}
+{{- $limit := .Site.Config.Services.RSS.Limit -}}
+{{- if ge $limit 1 -}}
+{{- $pages = $pages | first $limit -}}
+{{- end -}}
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "title": {{ .Site.Title | jsonify }},
+    "home_page_url": {{ .Site.BaseURL | jsonify }},
+    {{ with .OutputFormats.Get "json" -}}
+    "feed_url": {{ .Permalink | jsonify }},
+    {{- end }}
+    "description": {{ .Site.Title | jsonify }},
+    "authors": [{
+        "name": {{ .Site.Author.name | jsonify }},
+        "url": "https://rys.sommefeldt.uk/",
+        "avatar": "https://work.sommefeldt.com/img/avatar.jpg"
+    }],
+    "items": [
+        {{ range $index, $element := $pages }}
+        {{ if $index }},{{ end }} {
+            "id": {{ .Permalink | jsonify }},
+            "url": {{ .Permalink | jsonify }},
+            "title": {{ .Title | jsonify }},
+            "content_html": {{ .Content | jsonify }},
+            "summary": {{ .Summary | jsonify }},
+            "date_published": {{ .Date.Format "2006-01-02T15:04:05Z07:00" | jsonify }}
+        }
+        {{ end }}
+    ]
+}

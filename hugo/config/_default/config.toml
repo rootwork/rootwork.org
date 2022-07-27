@@ -73,7 +73,7 @@ month = "month"
 
 # Define feeds and search formats
 [outputs]
-  home = ["HTML", "RSS", "ATOM", "JSON"]
+  home = ["HTML", "RSS", "ATOM", "JSONfeed", "JSON"]
 
 # Define feed output formats
 [outputFormats]
@@ -82,6 +82,12 @@ month = "month"
   name = "ATOM"
   baseName = "index"
   mediaType = "application/atom+xml"
+
+  [outputFormats.jsonfeed]
+  name = "JSONfeed"
+  mediaType = "application/json"
+  baseName = "feed"
+  isPlainText = true
 
 # Define feed media types
 [mediaTypes]
