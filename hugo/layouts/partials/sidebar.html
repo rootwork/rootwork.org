@@ -86,9 +86,10 @@
       </details>
     {{ end }}
 
-    {{- $posts := where (where .Site.RegularPages "Permalink" "!=" .Permalink) "Type" "in" $s.mainSections }}
+    {{- $posts := where .Site.RegularPages "Type" "in" $s.mainSections }}
     {{- $featured := default 8 $s.numberOfFeaturedPosts }}
-    {{- with first $featured (where $posts "Params.featured" true) }}
+    {{- $featuredPosts := first $featured (where $posts "Params.featured" true) }}
+    {{- with $featuredPosts }}
       <details open class="sidebar_group sidebar_group--featured">
         <summary>{{ T "featured_posts" }}</summary>
         <ul>
@@ -106,7 +107,7 @@
       <summary>{{ T "recent_posts" }}</summary>
       <ul class="flex-column">
         {{- $recent := default 8 $s.numberOfRecentPosts }}
-        {{- range first $recent $posts }}
+        {{- range first $recent $posts | symdiff $featuredPosts }}
           <li>
             <a href="{{ .Permalink }}" class="nav-link"
               >{{ .Title | markdownify }}</a
