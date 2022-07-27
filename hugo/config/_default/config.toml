@@ -73,7 +73,11 @@ month = "month"
 
 # Define feeds and search formats
 [outputs]
-  home = ["HTML", "JSON", "RSS", "ATOM"]
+  home = ["HTML", "JSON", "RSS", "ATOM", "JF2Feed"]
+  # <domain>/posts/jf2feed.json
+  # section = ["HTML", "RSS", "JF2Feed"]  # default = ["HTML", "RSS"]
+  # <domain>/posts/mypost/jf2post.json
+  # page = ["HTML", "JF2Post"]            # default = ["HTML"]
 
 # Define feed output formats
 [outputFormats]
@@ -89,6 +93,11 @@ month = "month"
     mediaType = "application/json"
     baseName = "feed"
 
+  [outputFormats.JF2Feed]
+    mediaType = "application/jf2feed+json"
+    baseName = "jf2feed" # generated file = <baseName>.<mediaType."application/jf2feed+json".suffixes[0]> = jf2feed.json
+    isPlainText = true
+
 # Define feed media types
 [mediaTypes]
 
@@ -97,3 +106,6 @@ month = "month"
 
   [mediaTypes."application/rss+xml"]
     suffixes = ["rss"]
+
+  [mediaTypes."application/jf2feed+json"]
+    suffixes = ["json"]

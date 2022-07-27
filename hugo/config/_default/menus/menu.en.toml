@@ -33,6 +33,12 @@
   weight = 3
   url = "feed.json"
 
+[[main]]
+  parent = "feeds"
+  name = "JF2 feed"
+  weight = 4
+  url = "jf2feed.json"
+
 # social menu links
 
 [[social]]
