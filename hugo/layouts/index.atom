@@ -1,5 +1,10 @@
-{{- $s := .Site.Params -}}
-{{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections -}}
+{{- $site := .Site -}}
+{{- $s := $site.Params -}}
+{{- $permalink := .Permalink -}}
+{{- $pctx := . -}}
+{{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
+{{- $pages := slice -}}
+{{- $pages = where .Site.RegularPages "Type" "in" .Site.Params.mainSections -}}
 {{- $limit := .Site.Config.Services.RSS.Limit -}}
 {{- if ge $limit 1 -}}
 {{- $pages = $pages | first $limit -}}
