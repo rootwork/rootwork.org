@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Year on Rootwork.org</title>
+    <link>https://rootwork.github.io/rootwork.org/year/</link>
+    <description>Recent content in Year on Rootwork.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 29 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://rootwork.github.io/rootwork.org/year/feed.rss" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Archives: 2014</title>
+      <link>https://rootwork.github.io/rootwork.org/blog/2014/</link>
+      <pubDate>Tue, 29 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://rootwork.github.io/rootwork.org/blog/2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Archives: 2013</title>
+      <link>https://rootwork.github.io/rootwork.org/blog/2013/</link>
+      <pubDate>Tue, 21 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://rootwork.github.io/rootwork.org/blog/2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Archives: 2011</title>
+      <link>https://rootwork.github.io/rootwork.org/blog/2011/</link>
+      <pubDate>Tue, 06 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://rootwork.github.io/rootwork.org/blog/2011/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Archives: 2010</title>
+      <link>https://rootwork.github.io/rootwork.org/blog/2010/</link>
+      <pubDate>Fri, 17 Dec 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://rootwork.github.io/rootwork.org/blog/2010/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Archives: 2009</title>
+      <link>https://rootwork.github.io/rootwork.org/blog/2009/</link>
+      <pubDate>Fri, 13 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://rootwork.github.io/rootwork.org/blog/2009/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Archives: 2008</title>
+      <link>https://rootwork.github.io/rootwork.org/blog/2008/</link>
+      <pubDate>Fri, 24 Oct 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://rootwork.github.io/rootwork.org/blog/2008/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Archives: 2007</title>
+      <link>https://rootwork.github.io/rootwork.org/blog/2007/</link>
+      <pubDate>Thu, 11 Oct 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://rootwork.github.io/rootwork.org/blog/2007/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Archives: 2006</title>
+      <link>https://rootwork.github.io/rootwork.org/blog/2006/</link>
+      <pubDate>Mon, 04 Dec 2006 00:00:00 +0000</pubDate>
+      
+      <guid>https://rootwork.github.io/rootwork.org/blog/2006/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
