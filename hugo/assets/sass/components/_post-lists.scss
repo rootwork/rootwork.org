@@ -65,10 +65,13 @@
           left: 0;
           width: 100%;
           height: 100%;
-          background: var(--g-green);
           border-radius: 0.5rem;
           transition: background-color;
           @include motion(transition-duration, 500ms);
+
+          &--none {
+            background: var(--g-green);
+          }
 
           figure {
             text-align: center;

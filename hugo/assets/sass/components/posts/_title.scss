@@ -2,7 +2,6 @@
   position: relative;
   margin: 0.5rem 0 0;
   padding: 0;
-  background: var(--g-greenblue);
   font-size: clamp(2.5rem, 5vw, 3rem);
 
   .post_featured {
@@ -12,6 +11,10 @@
     left: 0;
     right: 0;
     margin: 0;
+
+    &--none {
+      background: var(--g-greenblue);
+    }
 
     &__bg {
       --blur: 1.5rem;
