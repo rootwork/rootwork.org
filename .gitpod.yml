@@ -21,4 +21,3 @@ vscode:
     - esbenp.prettier-vscode
     - DavidAnson.vscode-markdownlint
     - golang.go
-    - casualjim.gotemplate
