@@ -1,66 +1,94 @@
-{{/* 1. Increasing description length to 200 characters.
-  2. Reworking keywords section.
-  3. Adding JSON-LD schema.
+{{/* This file has been substantially rewritten.
+
+  LOGIC HERE IS ALSO USED IN FEED TEMPLATES. If any of the variable construction
+  at the top changes, it needs to be propagated to these template files as well.
+
+  1. Reordering variable construction.
+  2. Increasing description length to 200 characters.
+  3. Reworking keywords section.
+  4. Adding JSON-LD schema.
 */}}
-{{- $summary := truncate 160 .Summary }}
-{{- $s := .Site.Params }}
-{{- $p := .Params }}
+{{- $s := .Site.Params -}}
+{{- $p := .Params -}}
 
+{{/* Site info */}}
+{{- $siteName := .Site.Title -}}
+{{- $siteURL := .Site.BaseURL -}}
+{{- $siteLang := .Site.LanguageCode | default "en-us" -}}
+{{- $siteAuthor := .Site.Data.authors.default.name -}}
+{{- $siteAuthorImage := .Site.Data.authors.default.image | absURL -}}
+{{- $siteAuthorEmail := .Site.Data.authors.default.email -}}
+{{- $siteAuthorTwitter := .Site.Data.authors.default.twitter -}}
+{{- $siteURL := .Site.BaseURL -}}
+{{- $siteLogo := $s.Logo | absURL -}}
+{{- $siteDesc := $s.description -}}
+{{- $siteLicense := T "license" -}}
+
+{{/* Post permalink */}}
 {{- $relpath := "" -}}
-{{- if or $s.usePageBundles $p.usePageBundles }}
+{{- if or $s.usePageBundles $p.usePageBundles -}}
   {{- $relpath = .Page.RelPermalink -}}
-{{- end }}
+{{- end -}}
+{{ if eq $p.usePageBundles false -}}
+  {{- $relpath = "" -}}
+{{ end -}}
+{{- $permalink := .Permalink -}}
 
-{{ if eq $p.usePageBundles false }}
-  {{- $relpath = "" }}
-{{ end }}
+{{/* Post title */}}
+{{- $title := .Title -}}
 
-{{- with $p.description }}
-  {{- $summary = truncate 200 . }}
-{{- end }}
-{{- if .IsHome }}
-  {{- $summary = $s.description }}
-  {{- with $p.description }}
-    {{- $summary = . }}
-  {{- end }}
-{{- end }}
-{{- $site := .Site.Title }}
-{{- $title := .Title }}
-{{- $permalink := .Permalink }}
-{{- $logo := absURL $s.logo }}
-{{- $author := $s.author }}
-{{- with $p.author }}
-  {{ $author := . }}
-{{- end }}
-{{- $image := absURL $s.fallBackOgImage }}
-{{- with $p.featureImage }}
-  {{- $fullpath := ( add $relpath . ) -}}
-  {{- $image = absURL $fullpath }}
-{{- end }}
-{{- with $p.thumbnail }}
-  {{- $fullpath := ( add $relpath . ) -}}
-  {{- $image = absURL $fullpath }}
-{{- end }}
-{{- with $p.shareImage }}
-  {{- $fullpath := ( add $relpath . ) -}}
-  {{- $image = absURL $fullpath }}
-{{- end }}
+{{/* Post summary */}}
+{{- $summary := truncate 200 .Summary -}}
+{{- with $p.description -}}
+  {{- $summary = truncate 200 . -}}
+{{- end -}}
+{{- if .IsHome -}}
+  {{- $summary = $s.description -}}
+  {{- with $p.description -}}
+    {{- $summary = . -}}
+  {{- end -}}
+{{- end -}}
 
-{{/* Keywords */}}
+{{/* Post byline */}}
+{{- $author := $siteAuthor -}}
+{{- $authorName := $siteAuthor -}}
+{{- $authorImage := $siteAuthorImage -}}
+{{- $authorEmail := $siteAuthorEmail -}}
+{{- $authorTwitter := $siteAuthorTwitter -}}
+{{- with $p.author -}}
+  {{- $author = index $.Site.Data.authors . -}}
+  {{- $authorName = $author.name -}}
+  {{- $authorImage = $author.image | absURL -}}
+  {{- $authorEmail = $author.email -}}
+  {{- $authorTwitter = $author.twitter -}}
+{{- end -}}
+
+{{/* Post images */}}
+{{- $image := absURL $s.fallBackOgImage -}}
+{{- with $p.featureImage -}}
+  {{- $fullpath := ( add $relpath . ) -}}
+  {{- $image = absURL $fullpath -}}
+{{- end -}}
+{{- with $p.thumbnail -}}
+  {{- $fullpath := ( add $relpath . ) -}}
+  {{- $image = absURL $fullpath -}}
+{{- end -}}
+{{- with $p.shareImage -}}
+  {{- $fullpath := ( add $relpath . ) -}}
+  {{- $image = absURL $fullpath -}}
+{{- end -}}
+
+{{/* Post keywords */}}
 {{- $metaKeywords := slice -}}
-
 {{- with $p.categories -}}
   {{- $metaKeywords = $metaKeywords | append . -}}
 {{- end -}}
-
 {{- with $p.tags -}}
   {{- $metaKeywords = $metaKeywords | append . -}}
 {{- end -}}
-
 {{- with $p.keywords -}}
   {{- $metaKeywords = $metaKeywords | append . -}}
 {{- end -}}
-
 {{- with $metaKeywords -}}
   {{/* Add meta keywords based on tags and categories. */}}
   {{- range $key, $value := $.Site.Data.terms.keywords.additional -}}
@@ -68,19 +96,14 @@
       {{- $metaKeywords = $metaKeywords | append $value -}}
     {{- end -}}
   {{- end -}}
-
   {{- $metaKeywords = delimit $metaKeywords ", " -}}
 {{- end -}}
-
 {{- $keywords := "" -}}
 {{- with $.Site.Data.terms.keywords.default -}}
   {{- $keywords = delimit $.Site.Data.terms.keywords.default "," -}}
 {{- end -}}
 {{- with $metaKeywords -}}
   {{- $keywords = $metaKeywords -}}
-{{- end -}}
-{{- with $keywords -}}
-  <meta name="keywords" content="{{- $keywords -}}" />
 {{- end -}}
 
 
@@ -90,35 +113,42 @@
 {{ end }}
 {{- if .IsHome }}
   <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ $siteName }}" />
+  <meta name="twitter:title" content="{{ $siteName }}" />
 {{- else }}
   <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{ $title }}" />
+  <meta name="twitter:title" content="{{ $title }}" />
 {{- end }}
 <meta name="description" content="{{ $summary }}" />
-<meta
-  name="twitter:card"
-  content="{{ if $s.largeTwitterCard }}
-    summary_large_image
-  {{ else }}
-    summary
-  {{ end }}"
-/>
-<meta name="twitter:creator" content="{{ $s.twitter }}" />
-<meta name="twitter:title" content="{{ .Title }}" />
-<meta name="twitter:image" content="{{ $image }}" />
+{{- with $keywords }}
+  <meta name="keywords" content="{{- $keywords -}}" />
+{{- end }}
 <meta property="og:url" content="{{ $permalink }}" />
-<meta property="og:title" content="{{ $title }}" />
 <meta property="og:description" content="{{ $summary }}" />
 <meta property="og:image" content="{{ $image }}" />
-{{- if eq .Section $s.blogDir -}}
+<meta
+  name="twitter:card"
+  content="
+    {{- if $s.largeTwitterCard -}}
+    summary_large_image
+  {{- else -}}
+    summary
+  {{- end -}}
+  "
+/>
+<meta name="twitter:creator" content="@{{ $authorTwitter }}" />
+<meta name="twitter:image" content="{{ $image }}" />
+{{ if eq .Section $s.blogDir -}}
   {{- $date := ( .Date.Format "2006-02-01") -}}
-  {{- $date := (time .Date) }}
-  {{- $lastMod := (time .Lastmod) }}
+  {{- $date := (time .Date) -}}
+  {{- $lastMod := (time .Lastmod) -}}
   <script type="application/ld+json">
     {
       "@context": "http://schema.org",
       "@type": "BlogPosting",
       "mainEntityOfPage":"{{ $permalink }}",
-      "name": "{{ $site }}",
+      "name": "{{ $siteName }}",
       "headline": {{ $title }},
       "description": {{ $summary }},
       "url": "{{ $permalink }}",
@@ -126,7 +156,9 @@
       "dateModified": {{ $lastMod }},
       "author": {
         "@type": "Person",
-        "name": "{{ $author }}"
+        "name": "{{ $authorName }}",
+        "image": "{{ $authorImage }}",
+        "email": "{{ $authorEmail }}"
       },
       "image":{
         "@type":"ImageObject",
@@ -136,29 +168,29 @@
         "@type": "Organization",
         "logo": {
           "@type":"ImageObject",
-          "url": "{{ $logo }}"
+          "url": "{{ $siteLogo }}"
         },
-        "name": "{{ $site }}",
-        "license": "{{ T "license" }}"
+        "name": "{{ $siteName }}",
+        "license": "{{ $siteLicense }}"
       }
     }
   </script>
-{{- end }}
-{{ if .IsHome -}}
+{{- end -}}
+{{- if .IsHome -}}
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "WebSite",
-    "name": "{{ .Site.Title }}",
-    "url": "{{ .Site.BaseURL }}",
-    "description": "{{ .Site.Params.description }}",
-    "thumbnailUrl": "{{ .Site.Params.Logo | absURL }}",
-    "license": "{{ T "license" }}"
+    "name": "{{ $siteName }}",
+    "url": "{{ $siteURL }}",
+    "description": "{{ $siteDesc }}",
+    "thumbnailUrl": "{{ $siteLogo }}",
+    "license": "{{ $siteLicense }}"
 }
 </script>
-{{ else if .IsPage }}
-  {{ $author :=  or (.Params.author) (.Site.Author.name) }}
-  {{ $org_name :=  .Site.Title }}
+{{- else if .IsPage -}}
+  {{- $author :=  or (.Params.author) (.Site.Author.name) -}}
+  {{- $org_name := $siteName -}}
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -167,23 +199,29 @@
     "name": "{{ .Title | safeJS }}",
     "headline": "{{ .Title | safeJS }}",
     "description": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}{{if .IsPage}}{{ .Summary  }}{{ end }}{{ end }}",
-    "inLanguage": {{ .Site.LanguageCode | default "en-us" }},
+    "inLanguage": {{ $siteLang }},
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "{{ .Permalink }}"
+        "@id": "{{ $permalink }}"
     },
     "author" : {
         "@type": "Person",
-        "name": "{{ $author }}"
+        "name": "{{ $authorName }}",
+        "image": "{{ $authorImage }}",
+        "email": "{{ $authorEmail }}"
     },
     "creator" : {
         "@type": "Person",
-        "name": "{{ $author }}"
+        "name": "{{ $authorName }}",
+        "image": "{{ $authorImage }}",
+        "email": "{{ $authorEmail }}"
     },
     "accountablePerson" : {
         "@type": "Person",
-        "name": "{{ $author }}"
+        "name": "{{ $authorName }}",
+        "image": "{{ $authorImage }}",
+        "email": "{{ $authorEmail }}"
     },
     "copyrightHolder" : "{{ $org_name }}",
     "copyrightYear" : "{{ .Date.Format "2006" }}",
@@ -193,20 +231,20 @@
     "publisher":{
         "@type":"Organization",
         "name": {{ $org_name }},
-        "url": {{ .Site.BaseURL }},
+        "url": {{ $siteURL }},
         "logo": {
             "@type": "ImageObject",
-            "url": "{{ .Site.Params.logo | absURL }}",
-            "width":"32",
-            "height":"32"
+            "url": "{{ $siteLogo }}",
+            "width": "32",
+            "height": "32"
         }
     },
-    "image": {{ with $image }}{{ $image }}{{ else}}{{.Site.Params.logo | absURL }}{{ end }},
-    "url" : "{{ .Permalink }}",
+    "image": {{ with $image }}{{ $image }}{{ else}}{{ $siteLogo }}{{ end }},
+    "url" : "{{ $permalink }}",
     "wordCount" : "{{ .WordCount }}",
     "genre" : [ {{ $keywords }} ],
     "keywords" : [ {{ $keywords }} ],
-    "license": "{{ T "license" }}"
+    "license": "{{ $siteLicense }}"
 }
 </script>
-{{ end }}
+{{- end -}}
