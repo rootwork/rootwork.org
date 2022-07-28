@@ -18,10 +18,8 @@ function showDeadLink() {
 }
 
 // Overriding subheading permalinks in Hugo Clarity
-// cf. https://github.com/chipzoller/hugo-clarity/blob/f062754faf7b5e92fa9dfc249b370022cc72738a/assets/js/index.js#L105-L115
+// cf. https://github.com/chipzoller/hugo-clarity/blob/master/assets/js/index.js#L105-L115
 function headingPermalink() {
-  const baseURL = '{{ .Site.BaseURL }}'
-
   let headingNodes = [],
     results,
     link,
@@ -41,8 +39,7 @@ function headingPermalink() {
   })
 
   headingNodes.forEach(function (node) {
-    // Remove HC-created links
-    node.removeChild(node.firstElementChild)
+    const oldIcon = node.childNodes[1] || ''
 
     // Create new links
     link = createEl('a')
@@ -60,6 +57,11 @@ function headingPermalink() {
       link.href = `${current}#${id}`
       node.appendChild(link)
       pushClass(node, 'link_owner')
+    }
+
+    // Replace old icon-link with new one
+    if (oldIcon) {
+      oldIcon.replaceWith(link)
     }
   })
 }
