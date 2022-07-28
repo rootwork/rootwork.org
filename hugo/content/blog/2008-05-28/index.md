@@ -47,9 +47,7 @@ categories:
   - nonprofit technology
   - online advocacy
 tags:
-  -
 keywords: # Extra keywords in addition to the above, for SEO.
-  -
 
 # Archive taxonomy terms (auto-generated)
 year: '2008'

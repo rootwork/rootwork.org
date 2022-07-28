@@ -50,7 +50,6 @@ showRelatedInArticle: false # Override global value for showing related posts in
 categories:
   - nonprofit technology
 tags:
-  -
 keywords: # Extra keywords in addition to the above, for SEO.
   - Domain Registry of America
   - Domain Registry Services

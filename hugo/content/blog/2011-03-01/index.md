@@ -48,9 +48,7 @@ showRelatedInArticle: false # Override global value for showing related posts in
 categories:
   - fundraising
 tags:
-  -
 keywords: # Extra keywords in addition to the above, for SEO.
-  -
 
 # Archive taxonomy terms (auto-generated)
 year: '2011'

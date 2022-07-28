@@ -54,7 +54,6 @@ categories:
 tags:
   - Drupal
 keywords: # Extra keywords in addition to the above, for SEO.
-  -
 series: Drupalcon Portland 2013
 
 # Archive taxonomy terms (auto-generated)

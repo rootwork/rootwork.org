@@ -69,9 +69,7 @@
     {{- end -}}
   {{- end -}}
 
-  {{/* Comma-delimit and remove empty values. */}}
   {{- $metaKeywords = delimit $metaKeywords ", " -}}
-  {{- $metaKeywords = replace $metaKeywords ", , " ", " -}}
 {{- end -}}
 
 {{- $keywords := "" -}}

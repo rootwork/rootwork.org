@@ -8,7 +8,6 @@ categories:
   - online advocacy
   - open source
   - social media
-  - '' # Allow empty category
 
 tags:
   - communications
@@ -25,7 +24,6 @@ tags:
   - Twitter
   - WordPress
   - YouTube
-  - '' # Allow empty tag
 
 keywords:
   default:

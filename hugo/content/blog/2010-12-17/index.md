@@ -48,7 +48,6 @@ showRelatedInArticle: false # Override global value for showing related posts in
 categories:
   - fundraising
 tags:
-  -
 keywords: # Extra keywords in addition to the above, for SEO.
   - Google Chrome
   - Chrome for a Cause

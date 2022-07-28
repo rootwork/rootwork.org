@@ -50,7 +50,6 @@ categories:
 tags:
   - Facebook
 keywords: # Extra keywords in addition to the above, for SEO.
-  -
 
 # Archive taxonomy terms (auto-generated)
 year: '2010'

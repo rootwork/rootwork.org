@@ -55,7 +55,6 @@ tags:
   - social change
   - Flickr
 keywords: # Extra keywords in addition to the above, for SEO.
-  -
 
 # Archive taxonomy terms (auto-generated)
 year: '2006'
