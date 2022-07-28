@@ -4,9 +4,9 @@ document.documentElement.classList.remove('no-js')
 // Reading params from query strings
 function queryParams() {
   const params = new URLSearchParams(window.location.search)
-  let url = params.get('url')
-  let display = elem('.dead-link .url')
-  let archive = elem('.archive-link .internet-archive')
+  let url = params.get('url') || ''
+  let display = elem('.dead-link .url') || ''
+  let archive = elem('.archive-link .internet-archive') || ''
   display.textContent = url
   archive.href = 'https://web.archive.org/web/*/' + url
 }
