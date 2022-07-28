@@ -4,9 +4,11 @@ default:
   email: info@rootwork.org
   twitter: rootwork
   image: logos/rootwork.svg
+  sm_image: logos/rootwork-white.png
 ivan:
   name: Ivan Boothe
   uri: 'https://rootwork.org/'
   email: info@rootwork.org
   twitter: rootwork
   image: images/ivan_256.jpg
+  sm_image: images/ivan_96.jpg

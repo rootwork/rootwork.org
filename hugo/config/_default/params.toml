@@ -1,7 +1,7 @@
 # Note some relevant params like copyright are set in `i18n/en.toml`.
 
-twitter = "@rootwork"
-largeTwitterCard = false # set to true if you want to show a large twitter card image. The default is a small twitter card image
+twitter = "@rootwork" # Note in metadata this is overridden by the data/authors.yml file
+largeTwitterCard = true # set to true if you want to show a large twitter card image. The default is a small twitter card image
 introDescription = "I'm into frontend engineering (especially back-of-the-frontend), creative social protest and radical nonviolent praxis. These things go together more than you think."
 introURL = "about/" # set the url for the 'read more' button below the introDescription, or set to false to not show the button
 description = "I'm into frontend engineering (especially back-of-the-frontend), creative social protest and radical nonviolent praxis. These things go together more than you think." # Site description will be used for home page content meta tags (SEO). It can alternatively be set in `content/_index.md`. In that file you can also set SEO keywords.
@@ -27,10 +27,10 @@ numberOfTagsShown = 14 # Applies for all other default & custom taxonomies. e.g 
 usePageBundles = true
 
 # will be used on share >> twitter, facebook, linkedin
-fallBackOgImage = "icons/android-chrome-512x512.png"
+fallBackOgImage = "logos/rootwork-share.png"
 
 # for feeds (RSS, Atom, etc.)
-feedLogo = "logos/rootwork-white.png"
+feedLogo = "logos/rootwork-share.png"
 feedIcon = "icons/android-chrome-512x512.png"
 
 # sets the maximum number of lines per codeblock. The codeblock will however be scrollable and expandable.
@@ -111,7 +111,7 @@ showRelatedInSidebar = true
 # fuse.js search
 enableSearch = true
 
-[author] # also see author setting in config.toml
+[author] # Note in most places this is overridden by the data/authors.yml file
 name = "Ivan Boothe"
 photo = "images/ivan_256.jpg"
 sm_photo = "images/ivan_96.jpg"
