@@ -1,8 +1,14 @@
 // Enable CSS classes based on whether JS loads
 document.documentElement.classList.remove('no-js')
 
-// Reading params from query strings
-function queryParams() {
+// If on dead-link page, show the link based on query params.
+const page = window.location.pathname
+if (page === '/dead-link/') {
+  showDeadLink()
+}
+
+// Read params from query strings and set dead-link.
+function showDeadLink() {
   const params = new URLSearchParams(window.location.search)
   let url = params.get('url') || ''
   let display = elem('.dead-link .url') || ''
@@ -10,8 +16,6 @@ function queryParams() {
   display.textContent = url
   archive.href = 'https://web.archive.org/web/*/' + url
 }
-
-queryParams()
 
 // Overriding subheading permalinks in Hugo Clarity
 // cf. https://github.com/chipzoller/hugo-clarity/blob/f062754faf7b5e92fa9dfc249b370022cc72738a/assets/js/index.js#L105-L115
