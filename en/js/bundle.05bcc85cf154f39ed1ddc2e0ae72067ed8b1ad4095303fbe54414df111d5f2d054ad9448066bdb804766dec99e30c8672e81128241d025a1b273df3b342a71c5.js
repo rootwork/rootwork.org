@@ -1079,23 +1079,25 @@ window.addEventListener(pageHasLoaded, fileClosure());
 // Enable CSS classes based on whether JS loads
 document.documentElement.classList.remove('no-js')
 
-// Reading params from query strings
-function queryParams() {
+// If on dead-link page, show the link based on query params.
+const page = window.location.pathname
+if (page === '/dead-link/') {
+  showDeadLink()
+}
+
+// Read params from query strings and set dead-link.
+function showDeadLink() {
   const params = new URLSearchParams(window.location.search)
-  let url = params.get('url')
-  let display = elem('.dead-link .url')
-  let archive = elem('.archive-link .internet-archive')
+  let url = params.get('url') || ''
+  let display = elem('.dead-link .url') || ''
+  let archive = elem('.archive-link .internet-archive') || ''
   display.textContent = url
   archive.href = 'https://web.archive.org/web/*/' + url
 }
 
-queryParams()
-
 // Overriding subheading permalinks in Hugo Clarity
-// cf. https://github.com/chipzoller/hugo-clarity/blob/f062754faf7b5e92fa9dfc249b370022cc72738a/assets/js/index.js#L105-L115
+// cf. https://github.com/chipzoller/hugo-clarity/blob/master/assets/js/index.js#L105-L115
 function headingPermalink() {
-  const baseURL = 'https://rootwork.github.io/rootwork.org/'
-
   let headingNodes = [],
     results,
     link,
@@ -1115,8 +1117,7 @@ function headingPermalink() {
   })
 
   headingNodes.forEach(function (node) {
-    // Remove HC-created links
-    node.removeChild(node.firstElementChild)
+    const oldIcon = node.childNodes[1] || ''
 
     // Create new links
     link = createEl('a')
@@ -1134,6 +1135,11 @@ function headingPermalink() {
       link.href = `${current}#${id}`
       node.appendChild(link)
       pushClass(node, 'link_owner')
+    }
+
+    // Replace old icon-link with new one
+    if (oldIcon) {
+      oldIcon.replaceWith(link)
     }
   })
 }
