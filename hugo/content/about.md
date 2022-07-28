@@ -1,8 +1,7 @@
 ---
 title: About Ivan Boothe & Rootwork.org
 author: ivan
-date: '2021-08-12'
-# lastmod: '2014-04-29' # Appends 'edited on' to the publish date
+date: '2000-01-01'
 
 slug: 'about'
 aliases:

@@ -1,7 +1,7 @@
 ---
 title: This link has gone away
 author: ivan
-date: '2022-07-01'
+date: '2000-01-01'
 
 slug: '/dead-link'
 
