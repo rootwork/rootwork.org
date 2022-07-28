@@ -89,10 +89,6 @@ month = "month"
     mediaType = "application/atom+xml"
     baseName = "feed"
 
-  [outputFormats.Json]
-    mediaType = "application/json"
-    baseName = "feed"
-
   [outputFormats.JF2Feed]
     mediaType = "application/jf2feed+json"
     baseName = "jf2feed" # generated file = <baseName>.<mediaType."application/jf2feed+json".suffixes[0]> = jf2feed.json
