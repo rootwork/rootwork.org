@@ -16,6 +16,7 @@
 {{- $siteURL := .Site.BaseURL -}}
 {{- $siteLogo := $s.Logo | absURL -}}
 {{- $siteFeedLogo := $s.feedLogo | absURL -}}
+{{- $siteFeedIcon := $s.feedIcon | absURL -}}
 {{- $siteDesc := $s.description -}}
 {{- $siteLicense := T "license" -}}
 {{- $siteCopyright := T "all_rights" -}}
