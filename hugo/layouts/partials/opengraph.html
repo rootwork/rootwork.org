@@ -37,6 +37,13 @@
 {{/* Post title */}}
 {{- $title := .Title -}}
 
+{{/* Post date */}}
+{{- $date := .Date -}}
+{{- $updated := .Lastmod -}}
+{{- if eq $date $updated -}}
+  {{- $updated = "" -}}
+{{- end -}}
+
 {{/* Post summary */}}
 {{- $summary := truncate 200 .Summary -}}
 {{- with $p.description -}}
@@ -140,9 +147,10 @@
 <meta name="twitter:creator" content="@{{ $authorTwitter }}" />
 <meta name="twitter:image" content="{{ $image }}" />
 {{ if eq .Section $s.blogDir -}}
+  {{/* These dates refer to the section (list), not the individual post. */}}
   {{- $date := ( .Date.Format "2006-02-01") -}}
   {{- $date := (time .Date) -}}
-  {{- $lastMod := (time .Lastmod) -}}
+  {{- $updated := (time .Lastmod) -}}
   <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -153,7 +161,9 @@
       "description": {{ $summary }},
       "url": "{{ $permalink }}",
       "datePublished": {{ $date  }},
-      "dateModified": {{ $lastMod }},
+      {{ with $updated -}}
+      "dateModified": {{ . }},
+      {{- end }}
       "author": {
         "@type": "Person",
         "name": "{{ $authorName }}",
@@ -224,10 +234,12 @@
         "email": "{{ $authorEmail }}"
     },
     "copyrightHolder" : "{{ $org_name }}",
-    "copyrightYear" : "{{ .Date.Format "2006" }}",
-    "dateCreated": "{{ .Date.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
-    "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
-    "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
+    "copyrightYear" : "{{ $date.Format "2006" }}",
+    "dateCreated": "{{ $date.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
+    "datePublished": "{{ $date.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
+    {{ with $updated -}}
+    "dateModified": "{{ .Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
+    {{- end }}
     "publisher":{
         "@type":"Organization",
         "name": {{ $org_name }},
