@@ -19,11 +19,10 @@ function showDeadLink() {
 
 // Overriding subheading permalinks in Hugo Clarity
 // cf. https://github.com/chipzoller/hugo-clarity/blob/master/assets/js/index.js#L105-L115
-function headingPermalink() {
+;(function headingPermalink() {
   let headingNodes = [],
     results,
     link,
-    icon,
     current,
     id,
     tags = ['h2', 'h3', 'h4', 'h5', 'h6']
@@ -64,6 +63,52 @@ function headingPermalink() {
       oldIcon.replaceWith(link)
     }
   })
+})()
+
+// Provide copy function for shortlinks
+// cf. https://github.com/chipzoller/hugo-clarity/blob/master/assets/js/index.js#L138-L155
+function copyShortLink() {
+  let cssClass, deeplinks, newLink, parent, target
+  cssClass = 'short_link__link'
+  deeplinks = elems(`.${cssClass}`)
+
+  if (deeplinks) {
+    // let linkTitle = 'short_link__linktitle'
+    // elems(`.${linkTitle}`).innerText = "Copy link"
+    // elem(`.${linkTitle}::hover,.${linkTitle}::active,.${linkTitle}::focus`).style.display = "block"
+
+    document.addEventListener('click', function (event) {
+      target = event.target
+      parent = target.parentNode
+      if (
+        (target && containsClass(target, cssClass)) ||
+        containsClass(parent, cssClass)
+      ) {
+        event.preventDefault()
+        // linkTitle.remove();
+        newLink =
+          target.href != undefined ? target.href : target.parentNode.href
+        copyToClipboard(newLink)
+        target.href != undefined
+          ? copyShortLinkFeedback(target)
+          : copyShortLinkFeedback(target.parentNode)
+        target.title = ''
+      }
+    })
+  }
 }
 
-headingPermalink()
+copyShortLink()
+
+function copyShortLinkFeedback(parent) {
+  const copyText = document.createElement('div')
+  const yanked = 'link_yanked'
+  copyText.classList.add(yanked)
+  copyText.innerText = 'Link Copied'
+  if (!elem(`.${yanked}`, parent)) {
+    parent.appendChild(copyText)
+    setTimeout(function () {
+      parent.removeChild(copyText)
+    }, 3000)
+  }
+}
