@@ -23,6 +23,9 @@ description: >
   want to develop some new left-right brain skills.
 
 draft: false
+disable_feed: false # Change to 'true' to exclude from RSS etc.
+unlisted: false # Change to 'true' to exclude from search, lists, sitemaps, and feeds.
+
 featured: false
 toc: false
 

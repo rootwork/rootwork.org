@@ -24,6 +24,9 @@ description: >
   organization's interests. What if we started demanding some openness?
 
 draft: false # Change to 'false' to publish this post.
+disable_feed: false # Change to 'true' to exclude from RSS etc.
+unlisted: false # Change to 'true' to exclude from search, lists, sitemaps, and feeds.
+
 featured: false
 toc: false
 

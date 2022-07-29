@@ -22,6 +22,9 @@ description: >
   approach to social networking might have on online activism in general.
 
 draft: false # Change to 'false' to publish this post.
+disable_feed: false # Change to 'true' to exclude from RSS etc.
+unlisted: false # Change to 'true' to exclude from search, lists, sitemaps, and feeds.
+
 featured: false
 toc: false
 
