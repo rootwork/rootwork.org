@@ -23,6 +23,7 @@
 {{- $siteLogo := $s.Logo | absURL -}}
 {{- $siteDesc := $s.description -}}
 {{- $siteLicense := T "license" -}}
+{{- $siteCopyright := T "all_rights" -}}
 
 {{/* Post permalink */}}
 {{- $relpath := "" -}}
@@ -200,7 +201,6 @@
 </script>
 {{- else if .IsPage -}}
   {{- $author :=  or (.Params.author) (.Site.Author.name) -}}
-  {{- $org_name := $siteName -}}
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -233,7 +233,9 @@
         "image": "{{ $authorImage }}",
         "email": "{{ $authorEmail }}"
     },
-    "copyrightHolder" : "{{ $org_name }}",
+    "copyrightNotice" : "{{ $siteCopyright }}"
+    "copyrightHolder" : "{{ $siteName }}",
+    "license": "{{ $siteLicense }}",
     "copyrightYear" : "{{ $date.Format "2006" }}",
     "dateCreated": "{{ $date.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
     "datePublished": "{{ $date.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
@@ -242,7 +244,7 @@
     {{- end }}
     "publisher":{
         "@type":"Organization",
-        "name": {{ $org_name }},
+        "name": {{ $siteName }},
         "url": {{ $siteURL }},
         "logo": {
             "@type": "ImageObject",
@@ -255,8 +257,7 @@
     "url" : "{{ $permalink }}",
     "wordCount" : "{{ .WordCount }}",
     "genre" : [ {{ $keywords }} ],
-    "keywords" : [ {{ $keywords }} ],
-    "license": "{{ $siteLicense }}"
+    "keywords" : [ {{ $keywords }} ]
 }
 </script>
 {{- end -}}
