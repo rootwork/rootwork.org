@@ -162,6 +162,7 @@
       <author>{{ . }}{{ with $authorName }} ({{.}}){{end}}</author>
       {{- end }}
       <guid>{{ $permalink }}</guid>
+      {{/* In addition to trimming newlines, this helpfully escapes HTML. */}}
       {{ $content := trim .Content "\n" -}}
       {{- $content = replace $content "\n" " " -}}
       <description>{{ $content | html }}</description>
