@@ -15,8 +15,10 @@
 {{- $siteAuthorTwitter := .Site.Data.authors.default.twitter -}}
 {{- $siteURL := .Site.BaseURL -}}
 {{- $siteLogo := $s.Logo | absURL -}}
+{{- $siteFeedLogo := $s.feedLogo | absURL -}}
 {{- $siteDesc := $s.description -}}
 {{- $siteLicense := T "license" -}}
+{{- $siteCopyright := T "all_rights" -}}
 
 {{/* Determine pages to include */}}
 {{- $pages := (where .RegularPages "Type" "in" site.Params.mainSections) -}}
