@@ -1,2 +1,5 @@
 [[imports]]
 path = "github.com/chipzoller/hugo-clarity" # Project theme
+
+[[imports]]
+path = "github.com/gohugoio/hugo-mod-jslibs/instantpage" # instant.page

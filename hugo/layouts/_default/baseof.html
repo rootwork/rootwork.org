@@ -1,14 +1,10 @@
-{{/* 1. Adding default `no-js` tag on <html>
-
+{{/* 1. Adding default `no-js` tag on `html`
   2. Adding `strict-origin-when-cross-origin` CORS referrer policy.
-
   3. Adding `fonts.html` partial.
-
   4. Adding indieauth endpoint.
-
   5. Adding preload tag for most important font styles and light switch images.
-
   6. Adding skip_to_content partial.
+  7. Adding instant.page script at the bottom.
 */}}{{- $s := .Site.Params }}{{- $p := .Params }}{{- $codeBlockConfig := partial "func/getCodeBlockSettings" . }}<!DOCTYPE html>
 <html
   lang="{{ .Lang }}"
@@ -72,6 +68,8 @@
     data-lines="{{ $codeBlockConfig.lines }}"
     id="documentTop"
     data-lang="{{ .Lang }}"
+    {{/* https://instant.page/intensity */}}
+    data-instant-intensity="viewport"
   >
     {{- partial "skip_to_content" . }}
     {{- partial "header" . }}
@@ -81,6 +79,7 @@
     {{- partialCached "icons" . }}
     {{- partialCached "footer" . }}
     {{- partialCached "scripts" . }}
+    {{- partialCached "jslibs/instantpage/script-src.html" "-" -}}
     {{- partialCached "hooks/body-end" . }}
   </body>
 </html>
