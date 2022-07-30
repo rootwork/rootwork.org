@@ -120,24 +120,26 @@
     {{- range $key, $value := .Site.Taxonomies }}
       {{- if ( ne $key "year" ) }}
         {{- if ( ne $key "month" ) }}
-          {{- if gt $value 0 }}
-            <details class="sidebar_group sidebar_group--{{ $key }}">
-              <summary id="{{ $key }}-section">{{ T $key }}</summary>
-              <nav class="terms_nav">
-                {{- $slicedTags := ($value.ByCount) -}}
-                {{- range $slicedTags -}}
-                  {{- $termName := .Page.Title -}}
-                  <a
-                    href="{{ absLangURL $key }}/{{ (replace .Name "#" "%23") | urlize }}/"
-                    class="post_term"
-                    title="View content related to {{ $termName }}"
-                  >
-                    <span class="term_name">{{ $termName }}</span>
-                    <span class="term_tally">{{ .Count }}</span>
-                  </a>
-                {{ end }}
-              </nav>
-            </details>
+          {{/* Until we have more recent series */}}{{- if ( ne $key "series" ) }}
+            {{- if gt $value 0 }}
+              <details class="sidebar_group sidebar_group--{{ $key }}">
+                <summary id="{{ $key }}-section">{{ T $key }}</summary>
+                <nav class="terms_nav">
+                  {{- $slicedTags := ($value.ByCount) -}}
+                  {{- range $slicedTags -}}
+                    {{- $termName := .Page.Title -}}
+                    <a
+                      href="{{ absLangURL $key }}/{{ (replace .Name "#" "%23") | urlize }}/"
+                      class="post_term"
+                      title="View content related to {{ $termName }}"
+                    >
+                      <span class="term_name">{{ $termName }}</span>
+                      <span class="term_tally">{{ .Count }}</span>
+                    </a>
+                  {{ end }}
+                </nav>
+              </details>
+            {{- end }}
           {{- end }}
         {{- end }}
       {{- end }}
