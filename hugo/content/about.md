@@ -61,7 +61,7 @@ figurePositionShow: false # Override global value for showing the figure label.
 
 ## Holy 🦎s and 🦄s, it's Ivan Boothe
 
-_US-Pacific ☙ Multnomah, Tsinook & Cowlitz lands ☙ Portland, OR_
+_US-Pacific ☙ Tsinuk (Multnomah) & Cowlitz lands ☙ Portland, OR_
 
 ### Current projects
 
