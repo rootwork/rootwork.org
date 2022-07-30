@@ -30,23 +30,23 @@
     {{/* 1.0 priority for home page */}}
     <priority>1.0</priority>
     {{- else if eq ($listingDate.Format "2006-01") ( now.Format "2006-01") -}}
-      {{- if eq .Kind "page" -}}
-      {{/* 0.9 priority for posts/pages (up)dated this month */}}
+      {{- if eq .Type "blog" -}}
+      {{/* 0.9 priority for posts (up)dated this month */}}
     <priority>0.9</priority>
       {{- end -}}
     {{- else if eq ($listingDate.Format "2006") ( now.Format "2006") -}}
-      {{- if eq .Kind "page" -}}
-      {{/* 0.8 priority for posts/pages (up)dated this year */}}
+      {{- if eq .Type "blog" -}}
+      {{/* 0.8 priority for posts (up)dated this year */}}
     <priority>0.8</priority>
-      {{- else -}}
-      {{/* 0.7 priority for lists updated this year */}}
+      {{- else if ne .Type "blog" -}}
+      {{/* 0.7 priority for pages and lists updated this year */}}
     <priority>0.7</priority>
       {{- end -}}
     {{- else if eq .Kind "page" -}}
-    {{/* 0.6 priority for all other posts/pages */}}
+    {{/* 0.6 priority for all other posts and pages */}}
     <priority>0.6</priority>
     {{- else -}}
-    {{/* Default priority (0.5) for everything left */}}
+    {{/* Default priority (0.5) for lists and everything else */}}
     <priority>{{ .Sitemap.Priority }}</priority>
     {{- end -}}
     {{- end }}
