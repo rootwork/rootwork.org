@@ -1,0 +1,7 @@
+{{/* Adding default dimensions to SVGs to prevent giant images on slow
+  connections.
+*/}}
+<svg class="icon" width="16" height="16">
+  <title>{{ .icon }}</title>
+  <use xlink:href="#{{ .icon }}"></use>
+</svg>
