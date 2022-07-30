@@ -62,7 +62,7 @@
 
       @include is-on {
         &::before {
-          @include motion(translate, 0);
+          translate: none;
         }
       }
     }
@@ -85,17 +85,10 @@
     }
   }
 
-  &__link--current:not(.button) {
-    @include switch(color, var(--black), var(--white));
+  .page .content &__link--current:not(.button) {
+    --bg-ct: transparent;
+    --bg-cb: transparent;
     border-bottom: 1px currentColor dotted;
-    @include fancy-highlight(
-      $light_bottom: transparent,
-      $light_top: transparent,
-      $dark_bottom: transparent,
-      $dark_top: transparent,
-      $light_height: 100%,
-      $dark_height: 100%
-    );
   }
 
   &__link-title {
