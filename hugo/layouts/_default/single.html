@@ -110,32 +110,32 @@
       "
       >
         {{ if or .Params.categories .Params.tags }}
-          <div class="post_terms">
-            <h5>View more posts about:</h5>
+          <div class="post_terms_section">
+            <h5 class="post_terms_section__title">View more posts about:</h5>
 
             {{- with .Params.categories -}}
-              <span class="post_categories">
+              <span class="post_terms post_terms--cat">
                 {{- range . }}
                   {{- $termName := . -}}
                   {{- $termPath := urlize $termName -}}
                   <a
                     href="{{ absLangURL (printf "categories/%s/" $termPath) }}"
                     title="View content related to {{ $termName }}"
-                    class="post_tag--cat post_tag button button_translucent"
+                    class="post_term post_term--cat"
                     >{{- $termName -}}</a
                   >
                 {{- end }}
               </span>
             {{- end }}
             {{- with .Params.tags -}}
-              <span class="post_tags">
+              <span class="post_terms post_terms--tag">
                 {{- range . }}
                   {{- $termName := . -}}
                   {{- $termPath := urlize $termName -}}
                   <a
                     href="{{ absLangURL (printf "tags/%s/" $termPath) }}"
                     title="View content related to {{ $termName }}"
-                    class="post_tag button button_translucent"
+                    class="post_term post_term--tag"
                     >{{- $termName -}}</a
                   >
                 {{- end }}

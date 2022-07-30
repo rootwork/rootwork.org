@@ -30,25 +30,16 @@
     }
   }
 
-  // Categories and tags
-  .post_terms {
+  // Terms container
+  .post_terms_section {
     margin: 1rem;
 
-    > h5 {
+    &__title {
       display: inline-block;
       margin: 0 1rem 0.25rem 0;
       font-family: var(--content-font);
       font-size: 1.2rem;
       font-weight: bold;
-    }
-
-    .post_tags {
-      display: inline;
-    }
-
-    .post_tag.post_tag {
-      margin: 0 1rem 0.5rem 0.5rem;
-      font-size: 1rem;
     }
   }
 

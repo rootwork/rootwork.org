@@ -69,7 +69,7 @@
     {{ if eq $metaClass "post_meta--list" }}
       {{/* CATEGORIES */}}
       {{- with .Params.categories -}}
-        <span class="post_categories">
+        <span class="post_terms post_terms--cat">
           {{- if ($scratch.Get "writeSeparator") }}&nbsp;·{{ end }}
           {{- range . }}
             {{- $termName := . -}}
@@ -78,7 +78,7 @@
               <a
                 href="{{ absLangURL (printf "categories/%s/" $termPath) }}"
                 title="View content related to {{ $termName }}"
-                class="post_tag--cat post_tag button button_translucent"
+                class="post_term--cat post_term"
                 >{{- $termName -}}</a
               >
             {{- else -}}
@@ -90,7 +90,7 @@
 
       {{/* TAGS */}}
       {{- with .Params.tags -}}
-        <span class="post_tags">
+        <span class="post_terms post_terms--tag">
           {{- if ($scratch.Get "writeSeparator") }}&nbsp;·{{ end }}
           {{- range . }}
             {{- $termName := . -}}
@@ -99,12 +99,29 @@
               <a
                 href="{{ absLangURL (printf "tags/%s/" $termPath) }}"
                 title="View content related to {{ $termName }}"
-                class="post_tag button button_translucent"
+                class="post_term post_term--tag"
                 >{{- $termName -}}</a
               >
             {{- else -}}
               {{ errorf "Tag %q is invalid." $termName }}
             {{- end -}}
+          {{- end }}
+        </span>
+      {{- end }}
+
+      {{/* SERIES */}}
+      {{- with .Params.series -}}
+        <span class="post_terms post_terms--series">
+          {{- if ($scratch.Get "writeSeparator") }}&nbsp;·{{ end }}
+          {{- range . }}
+            {{- $termName := . -}}
+            {{- $termPath := urlize $termName -}}
+            <a
+              href="{{ absLangURL (printf "series/%s/" $termPath) }}"
+              title="View content in the series '{{ $termName }}'"
+              class="post_term post_term--series"
+              >{{- $termName -}}</a
+            >
           {{- end }}
         </span>
       {{- end }}

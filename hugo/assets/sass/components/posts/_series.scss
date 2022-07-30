@@ -54,6 +54,18 @@
         @include motion(translate, -0.25rem);
       }
     }
+
+    &--current {
+      &::before {
+        @include switch(color, var(--pink));
+      }
+
+      @include is-on {
+        &::before {
+          @include motion(translate, 0);
+        }
+      }
+    }
   }
 
   &__link:not(.button) {
@@ -71,6 +83,19 @@
     @include is-on {
       @include switch(color, var(--black), var(--white));
     }
+  }
+
+  &__link--current:not(.button) {
+    @include switch(color, var(--black), var(--white));
+    border-bottom: 1px currentColor dotted;
+    @include fancy-highlight(
+      $light_bottom: transparent,
+      $light_top: transparent,
+      $dark_bottom: transparent,
+      $dark_top: transparent,
+      $light_height: 100%,
+      $dark_height: 100%
+    );
   }
 
   &__link-title {

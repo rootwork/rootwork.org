@@ -1,7 +1,9 @@
-// Styles for all tag-like objects, which include both Hugo categories and Hugo tags
+// Styles for all terms: categories, tags, series, and years
 
-%tag {
+%term {
   position: relative;
+  display: inline-flex;
+  align-items: center;
   margin: 0.25rem 0 0;
   padding: 0.25rem 0.5rem 0.3333rem 0.75rem;
   border-width: 0;
@@ -10,6 +12,7 @@
   text-transform: capitalize;
   color: var(--fg-color);
   background-color: var(--bg-color);
+  user-select: none;
   transition: all;
 
   @include focus(text-decoration, underline);
@@ -53,26 +56,36 @@
   }
 }
 
-.post_categories,
-.post_tags {
-  .post_tag.button {
-    @extend %tag;
+// Terms in posts
+
+.post_terms {
+  .post_term:not(.button) {
+    @extend %term;
     font-weight: normal;
     @include switch(--bg-color, var(--hazy-green), var(--dark-green));
     @include switch(--fg-color, var(--white), var(--light));
     @include switch(--bg-hover-color, var(--pale-green), var(--white));
     @include switch(--fg-hover-color, var(--md-dark-green), var(--dark-green));
   }
+
+  .post_term--cat:not(.button) {
+    font-weight: bold;
+  }
+
+  .post_body_footer & {
+    display: inline;
+
+    .post_term {
+      margin: 0 1rem 0.5rem 0.5rem;
+      font-size: 1rem;
+    }
+  }
 }
 
-.post_categories .post_tag--cat.button {
-  font-weight: bold;
-}
+// Terms in the sidebar
 
-// Tags in the sidebar
-
-.tags_nav .post_tag {
-  @extend %tag;
+.terms_nav .post_term {
+  @extend %term;
   @include switch(--bg-color, var(--blue));
   @include switch(--fg-color, var(--white));
   @include switch(--bg-hover-color, var(--pale-green), var(--white));
@@ -83,7 +96,7 @@
   font-size: 1rem;
   font-weight: bold;
 
-  .tag_name {
+  .term_name {
     border-bottom: 1px var(--bg-color) solid;
     transition: border-bottom-color;
     @include motion(transition-duration, 500ms);
@@ -92,16 +105,16 @@
   @include is-on {
     border: none;
 
-    .tag_name {
+    .term_name {
       border-bottom-color: currentColor;
     }
 
-    .tag_tally {
+    .term_tally {
       color: var(--white);
     }
   }
 
-  .tag_tally {
+  .term_tally {
     margin: 0.1rem 0 0.1rem 0.5rem;
     padding: 0.4rem 0.5rem;
     min-width: 2rem;
@@ -133,7 +146,7 @@
       @include switch(color, var(--black), var(--white));
       @include switch(background-color, var(--blue));
 
-      .tag_tally {
+      .term_tally {
         @include switch(color, var(--black), var(--white));
       }
     }
@@ -143,7 +156,7 @@
       @include hidden-all;
     }
 
-    .tag_tally {
+    .term_tally {
       padding: 0;
       @include switch(background-color, transparent);
       @include switch(color, var(--black), var(--white));

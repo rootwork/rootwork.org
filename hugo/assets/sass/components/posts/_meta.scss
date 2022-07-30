@@ -5,6 +5,7 @@
 // - readtime
 // - categories
 // - tags
+// - series (if set)
 // - share links
 
 .post_content,
@@ -48,8 +49,7 @@
     .post_date,
     .post_date__edit,
     .post_time,
-    .post_categories,
-    .post_tags,
+    .post_terms,
     .post_share {
       display: inline-flex;
       flex-flow: row wrap;
@@ -114,17 +114,15 @@
 
       .post_byline,
       .post_date_icon,
-      .post_categories,
-      .post_tags {
+      .post_terms {
         padding-left: 1rem;
       }
 
-      .post_categories,
-      .post_tags {
+      .post_terms {
         margin: 0;
         gap: 0 0.75rem;
 
-        .post_tag.post_tag {
+        .post_term {
           gap: 0;
           margin: 0.5rem;
           font-size: 0.95rem;
@@ -158,7 +156,7 @@
         }
       }
 
-      .post_categories {
+      .post_terms--cat {
         margin-top: 0.75rem;
 
         @include bp-s-up {

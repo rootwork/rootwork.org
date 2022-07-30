@@ -1,10 +1,10 @@
 {{/* 1. Displaying intro description only if this is not the home page.
   2. Making all sections collapsible.
   3. Adding "sidebar_group" class and variants.
-  4. Changing tag style from "upper" to "humanize" (all caps to initial caps)
-  5. Removing auto-generated month tags.
-  6. Moving auto-generated year tags to dedicated section.
-  7. Removing "show all" option from tag limit, as tags are already collapsible.
+  4. Changing term style from "upper" to "humanize" (all caps to initial caps)
+  5. Removing auto-generated month terms.
+  6. Moving auto-generated year terms to dedicated section.
+  7. Removing "show all" option from term limit, as terms are already collapsible.
   8. Removing search field from sidebar since it's in the top nav.
 */}}
 {{ $s := site.Params }}
@@ -123,17 +123,17 @@
           {{- if gt $value 0 }}
             <details class="sidebar_group sidebar_group--{{ $key }}">
               <summary id="{{ $key }}-section">{{ T $key }}</summary>
-              <nav class="tags_nav">
+              <nav class="terms_nav">
                 {{- $slicedTags := ($value.ByCount) -}}
                 {{- range $slicedTags -}}
                   {{- $termName := .Page.Title -}}
                   <a
                     href="{{ absLangURL $key }}/{{ (replace .Name "#" "%23") | urlize }}/"
-                    class="post_tag button button_translucent"
+                    class="post_term"
                     title="View content related to {{ $termName }}"
                   >
-                    <span class="tag_name">{{ $termName }}</span>
-                    <span class="tag_tally">{{ .Count }}</span>
+                    <span class="term_name">{{ $termName }}</span>
+                    <span class="term_tally">{{ .Count }}</span>
                   </a>
                 {{ end }}
               </nav>
@@ -144,17 +144,17 @@
       {{- if ( eq $key "year" ) }}
         <details class="sidebar_group sidebar_group--{{ $key }}">
           <summary id="{{ $key }}-section">Posts by year</summary>
-          <nav class="tags_nav">
+          <nav class="terms_nav">
             {{- $slicedTags := ($value.Alphabetical.Reverse) }}
             {{- range $slicedTags }}
               {{- $termName := .Name -}}
               <a
                 href="/blog/{{ $termName }}"
-                class="post_tag post_tag--year button button_translucent"
+                class="post_term post_term--year"
                 title="View content from {{ $termName }}"
               >
                 {{- $termName }}
-                <span class="tag_tally">{{ .Count }}</span>
+                <span class="term_tally">{{ .Count }}</span>
               </a>
             {{- end }}
           </nav>
