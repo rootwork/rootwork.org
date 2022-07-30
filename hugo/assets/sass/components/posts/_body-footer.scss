@@ -74,11 +74,19 @@
         @include switch(background-color, var(--black), var(--white));
         @include switch(color, var(--white), var(--black));
         @include switch(border-color, var(--black), var(--white));
+
+        .short_link__linktitle {
+          display: block;
+
+          .no-js & {
+            display: none;
+          }
+        }
       }
     }
 
     .short_link__linktitle {
-      display: none; // Controlled via JS
+      display: none;
       position: absolute;
       bottom: calc(100% + 0.6rem);
       left: -1rem;
