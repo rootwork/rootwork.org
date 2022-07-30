@@ -17,6 +17,9 @@
   {{ $listTitle = printf "%s"  $listTitle | printf "%s%s" "Posts from " | printf "%s" }}
   {{ $listTitle = replace $listTitle "Archives: " "" }}
 {{ end }}
+{{ if eq .Data.Plural "series" }}
+  {{ $listTitle = printf "%s"  $listTitle | printf "%s%s" "Series: " | printf "%s" }}
+{{ end }}
 
 {{ if .IsHome }}
   {{ $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
@@ -71,7 +74,8 @@
       <h1 class="list_title">{{ $listTitle }}</h1>
       {{ if gt .Paginator.PageNumber 1 }}
         <div class="list_title__pagenumber">
-          Page {{ .Paginator.PageNumber }}
+          Page
+          {{ .Paginator.PageNumber }}
         </div>
       {{ end }}
     {{ end }}
