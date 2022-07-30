@@ -1,18 +1,30 @@
-{{/* 1. Adding wrapping div and changing class names.
-  2. Adding title of series to heading.
-  3. Changing heading to h3.
-  4. Changing sort from reverse-chronological to chronological.
+{{/* This file has been completely rewritten to allow for an array of series
+  rather than a single string value.
 */}}
-{{ if isset .Params "series" }}
-  {{ $related := where .Site.RegularPages ".Params.series" "eq" .Params.series }}
+{{- $postPermalink := .Page.RelPermalink -}}
+{{- range (.GetTerms "series") -}}
+  {{- $series := .LinkTitle -}}
+  {{- $posts := (index .Site.Taxonomies.series (urlize $series)).Pages -}}
   <nav class="post_series">
-    <h3 class="post_series__title">{{ .Params.series }}</h3>
+    <h3 class="post_series__title">{{ $series }}</h3>
     <ul class="post_series__list">
-      {{ range $related.ByDate }}
-        <li class="post_series__list-item">
+      {{- range $posts.ByDate }}
+        <li
+          class="
+          post_series__list-item
+          {{- if (eq .RelPermalink $postPermalink) }}
+            post_series__list-item--current
+          {{- end }}
+        "
+        >
           <a
             href="{{ .Permalink }}"
-            class="post_series__link"
+            class="
+            post_series__link
+            {{- if (eq .RelPermalink $postPermalink) }}
+              post_series__link--current
+            {{- end }}
+          "
             title="{{ .Title }}"
             ><span class="post_series__link-title">{{ .Title }}</span
             ><span class="post_series__link-date"
@@ -20,7 +32,7 @@
             ></a
           >
         </li>
-      {{ end }}
+      {{- end }}
     </ul>
   </nav>
-{{ end }}
+{{- end -}}
