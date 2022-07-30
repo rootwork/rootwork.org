@@ -1,6 +1,6 @@
 {{- $s := .Site.Params -}}
 {{/* Determine pages to include */}}
-{{- $pages := .Data.Pages -}}
+{{- $pages := .Site.Pages -}}
 {{- $pages = where $pages ".Params.disable_feed" "!=" true -}}
 {{- $pages = where $pages ".Params.unlisted" "!=" true -}}
 
@@ -25,6 +25,9 @@
     {{- with .Sitemap.ChangeFreq }}
     <changefreq>{{ . }}</changefreq>
     {{- end }}
+    {{- with .Params.Priority }}
+    <priority>{{ . }}</priority>
+    {{- else }}
     {{- if ge .Sitemap.Priority 0.0 }}
     {{- if (eq .Kind "home") -}}
     {{/* 1.0 priority for home page */}}
@@ -48,6 +51,7 @@
     {{- else -}}
     {{/* Default priority (0.5) for lists and everything else */}}
     <priority>{{ .Sitemap.Priority }}</priority>
+    {{- end -}}
     {{- end -}}
     {{- end }}
     {{- if .IsTranslated }}

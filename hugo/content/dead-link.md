@@ -12,6 +12,7 @@ description: >
 draft: false
 disable_feed: true # Change to 'true' to exclude from RSS etc.
 unlisted: true # Change to 'true' to exclude from search, lists, sitemaps, and feeds.
+# priority: '1.0' # Override the sitemap priority for this page, range 1.0 (high) to 0.0 (low)
 
 featured: false
 toc: false
