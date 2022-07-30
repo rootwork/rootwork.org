@@ -16,7 +16,6 @@ enableInlineShortcodes = true
 enableEmoji = true
 
 # Footnotes
-
 footnoteReturnLinkContents = "^"
 
 # Privacy settings
@@ -56,6 +55,13 @@ enableRobotsTXT = true
 [sitemap]
   changefreq = "weekly"
   priority = 0.5
+  # All pages and posts have a default priority of 0.6
+  # All taxonomy lists have the default priority above, 0.5
+  # Lists updated in the past year have a priority of 0.7
+  # Pages and posts updated in the past year have a priority of 0.8
+  # Pages and posts updated in the past month have a priority of 0.9
+  # Home page has a priority of 1.0
+  # See layouts/sitemap.xml for details.
 
 # [menus]
 # config/_default/menus/menu.xx.toml

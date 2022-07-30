@@ -42,7 +42,11 @@
       {{/* 0.7 priority for lists updated this year */}}
     <priority>0.7</priority>
       {{- end -}}
+    {{- else if eq .Kind "page" -}}
+    {{/* 0.6 priority for all other posts/pages */}}
+    <priority>0.6</priority>
     {{- else -}}
+    {{/* Default priority (0.5) for everything left */}}
     <priority>{{ .Sitemap.Priority }}</priority>
     {{- end -}}
     {{- end }}
