@@ -41,6 +41,8 @@ codeLineNumbers: false # Override global value for showing of line numbers withi
 figurePositionShow: false # Override global value for showing the figure label.
 showRelatedInArticle: false # Override global value for showing related posts in this series at the end of the content.
 
+series: # Creates lists of posts in series as well as custom tag.
+
 categories:
   - frontend development
 tags:

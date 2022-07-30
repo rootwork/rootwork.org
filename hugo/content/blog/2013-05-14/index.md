@@ -47,6 +47,9 @@ codeLineNumbers: false # Override global value for showing of line numbers withi
 figurePositionShow: false # Override global value for showing the figure label.
 showRelatedInArticle: false # Override global value for showing related posts in this series at the end of the content.
 
+series:
+  - Drupalcon Portland 2013
+
 categories:
   - frontend development
 tags:
@@ -54,7 +57,6 @@ tags:
   - Drupal
 keywords: # Extra keywords in addition to the above, for SEO.
   - Sass
-series: Drupalcon Portland 2013
 
 # Archive taxonomy terms (auto-generated)
 year: '2013'
