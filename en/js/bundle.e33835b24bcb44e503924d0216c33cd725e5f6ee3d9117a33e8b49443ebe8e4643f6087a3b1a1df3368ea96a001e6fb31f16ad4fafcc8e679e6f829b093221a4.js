@@ -1160,9 +1160,8 @@ function copyShortLink() {
   deeplinks = elems(`.${cssClass}`)
 
   if (deeplinks) {
-    // let linkTitle = 'short_link__linktitle'
-    // elems(`.${linkTitle}`).innerText = "Copy link"
-    // elem(`.${linkTitle}::hover,.${linkTitle}::active,.${linkTitle}::focus`).style.display = "block"
+    let linkTitle = elem('.short_link__linktitle')
+    linkTitle.innerText = 'Copy link'
 
     document.addEventListener('click', function (event) {
       target = event.target
@@ -1172,7 +1171,7 @@ function copyShortLink() {
         containsClass(parent, cssClass)
       ) {
         event.preventDefault()
-        // linkTitle.remove();
+        linkTitle.remove()
         newLink =
           target.href != undefined ? target.href : target.parentNode.href
         copyToClipboard(newLink)
