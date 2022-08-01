@@ -17,19 +17,19 @@
     }
   }
 
-  .legacy-float-l,
-  .post_body img.legacy-float-l {
-    @include bp-s-up {
-      margin: var(--top-pad) var(--margin) var(--margin) 0;
-      float: left;
-    }
-  }
+  // .legacy-float-l,
+  // .post_body img.legacy-float-l {
+  //   @include bp-s-up {
+  //     margin: var(--top-pad) var(--margin) var(--margin) 0;
+  //     float: left;
+  //   }
+  // }
 
-  .legacy-float-r,
-  .post_body img.legacy-float-r {
-    @include bp-s-up {
-      margin: var(--top-pad) 0 var(--margin) var(--margin);
-      float: right;
-    }
-  }
+  // .legacy-float-r,
+  // .post_body img.legacy-float-r {
+  //   @include bp-s-up {
+  //     margin: var(--top-pad) 0 var(--margin) var(--margin);
+  //     float: right;
+  //   }
+  // }
 }

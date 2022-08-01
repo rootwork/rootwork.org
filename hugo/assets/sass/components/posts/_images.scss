@@ -11,16 +11,17 @@
   }
 
   .post_body {
-    figure {
-      text-align: center;
-    }
-
     img {
       margin-bottom: 0;
     }
 
-    figure > img {
-      margin-bottom: 0;
+    figure {
+      margin: clamp(1.25rem, 5vw, 2.25rem) 0;
+      text-align: center;
+
+      > img {
+        margin-bottom: 0;
+      }
     }
 
     .img_alt {
