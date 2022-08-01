@@ -1,0 +1,36 @@
+// Second-level menus
+
+.nav_header .nav_body .nav_parent {
+  > .nav_item.nav_open + .nav_sub {
+    margin-top: 0.5rem;
+    @include switch(background-color, var(--white), var(--dark-green));
+    box-shadow: var(--light) 1px 1px 20px -5px;
+
+    &::before {
+      @include switch(border-bottom-color, var(--white), var(--dark-green));
+    }
+
+    .jsopen & {
+      box-shadow: none;
+    }
+
+    .nav_child {
+      opacity: 1;
+      font-size: 1.25rem;
+
+      @include is-on {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @include is-on {
+    > .nav_item {
+      opacity: 1;
+
+      + .nav_sub .nav_child {
+        text-shadow: none;
+      }
+    }
+  }
+}

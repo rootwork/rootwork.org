@@ -15,40 +15,10 @@
         .nav_icon {
           @include hidden-all;
         }
-
-        &.nav_open + .nav_sub {
-          margin-top: 0.5rem;
-          @include switch(background-color, var(--white), var(--dark-green));
-
-          &::before {
-            @include switch(
-              border-bottom-color,
-              var(--white),
-              var(--dark-green)
-            );
-          }
-
-          .nav_item {
-            opacity: 1;
-            font-size: 1.25rem;
-
-            @include is-on {
-              text-decoration: underline;
-            }
-          }
-        }
       }
 
       @include is-on {
         background-color: inherit;
-
-        > .nav_item {
-          opacity: 1;
-        }
-
-        .nav_sub .nav_item {
-          text-shadow: none;
-        }
       }
 
       .jsopen & {
