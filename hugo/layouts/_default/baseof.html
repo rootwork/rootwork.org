@@ -1,10 +1,9 @@
 {{/* 1. Adding default `no-js` tag on `html`
   2. Adding `strict-origin-when-cross-origin` CORS referrer policy.
-  3. Adding `fonts.html` partial.
-  4. Adding indieauth endpoint.
-  5. Adding preload tag for most important font styles and light switch images.
-  6. Adding skip_to_content partial.
-  7. Adding instant.page script at the bottom.
+  3. Adding indieauth endpoint.
+  4. Adding preload tag for most important font styles and light switch images.
+  5. Adding skip_to_content partial.
+  6. Adding instant.page script at the bottom.
 */}}{{- $s := .Site.Params }}{{- $p := .Params }}{{- $codeBlockConfig := partial "func/getCodeBlockSettings" . }}<!DOCTYPE html>
 <html
   lang="{{ .Lang }}"
@@ -27,9 +26,6 @@
 
     {{/* CORS */}}
     <meta name="referrer" content="strict-origin-when-cross-origin" />
-
-    {{/* custom fonts */}}
-    {{- partial "fonts" . }}
 
     {{/* indieauth endpoint */}}
     <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
