@@ -9,6 +9,7 @@
     "gn": "./scripts/new_blog_post.sh -g --hugo-dir='./hugo' -a",
     "p": "hugo --source ./hugo --minify --gc",
     "s": "./scripts/server_start.sh",
+    "ws": "hugo server -D -F --disableFastRender --source ./hugo --baseUrl http://localhost/",
     "gs": "cd /workspace/rootwork.org/hugo && hugo server -D -F --baseUrl $(gp url 1313) --liveReloadPort=443 --appendPort=false --bind=0.0.0.0 && cd /workspace/rootwork.org",
     "start": "npm run s",
     "prod": "npm run p",
