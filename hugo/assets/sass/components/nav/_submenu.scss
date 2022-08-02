@@ -1,14 +1,26 @@
 // Second-level menus
 
 .nav_header .nav_body .nav_parent {
-  > .nav_item.nav_open + .nav_sub {
-    margin-top: 0.5rem;
-    @include switch(background-color, var(--white), var(--dark-green));
-    box-shadow: var(--light) 1px 1px 20px -5px;
+  > .nav_item + .nav_sub {
+    opacity: 0;
+    max-height: 0;
+    margin: 1rem 0 0;
+    padding: 0;
+    @include switch(background-color, var(--blue));
+    transition: all 0.3s ease-in-out;
+
+    .jsopen & {
+      margin-top: 0;
+    }
 
     &::before {
-      @include switch(border-bottom-color, var(--white), var(--dark-green));
+      @include switch(border-bottom-color, var(--blue));
     }
+  }
+
+  > .nav_item.nav_open + .nav_sub {
+    opacity: 1;
+    max-height: 100vh;
 
     .jsopen & {
       box-shadow: none;
@@ -16,11 +28,25 @@
 
     .nav_child {
       opacity: 1;
+      padding: 0.5rem 1rem;
       font-size: 1.25rem;
+      @include switch(color, var(--black));
 
       @include is-on {
-        text-decoration: underline;
+        @include switch(color, var(--white));
       }
+
+      &:first-of-type {
+        padding-top: 1rem;
+      }
+
+      &:last-of-type {
+        padding-bottom: 1rem;
+      }
+    }
+
+    span.nav_child {
+      padding: 0;
     }
   }
 
