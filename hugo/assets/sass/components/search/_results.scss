@@ -39,6 +39,14 @@
           content: 'Tag: ';
         }
       }
+
+      &[href*='/series/'] {
+        font-weight: bold;
+
+        &::before {
+          content: 'Series: ';
+        }
+      }
     }
   }
 }
