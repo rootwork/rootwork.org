@@ -21,13 +21,11 @@
       position: absolute;
       display: block;
       z-index: -1;
-      width: calc(100vw + (2 * var(--blur)));
-      height: calc(100% - (2 * var(--blur)));
-      left: 50%;
-      right: 50%;
-      margin: var(--blur) calc(-50vw - var(--blur)) 0;
+      width: 100%;
+      height: 100%;
       background-size: 100% 100%;
       filter: blur(var(--blur));
+      @include switch(mix-blend-mode, darken, hard-light);
     }
 
     figure,
