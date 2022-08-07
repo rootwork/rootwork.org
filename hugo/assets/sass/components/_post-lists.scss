@@ -11,7 +11,9 @@
 
 // Excerpts of posts appearing in lists
 
-.post_item {
+.posts .post_item {
+  @extend %card-bg;
+
   .excerpt {
     font-size: clamp(1rem, 5vw, 1.3333rem);
     line-height: 1.5;
