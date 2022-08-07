@@ -75,6 +75,22 @@ $gradients: (
       map-get($color, bright-green) 25%,
       map-get($color, purple) 95%
     ),
+  shade-h:
+    linear-gradient(
+      90deg,
+      map-get($color, shade) 5%,
+      map-get($color, dark-shade) 15%,
+      map-get($color, dark-shade) 85%,
+      map-get($color, shade) 95%
+    ),
+  shade-v:
+    linear-gradient(
+      180deg,
+      map-get($color, shade) 5%,
+      map-get($color, dark-shade) 15%,
+      map-get($color, dark-shade) 85%,
+      map-get($color, shade) 95%
+    ),
 );
 
 :root {
@@ -130,6 +146,8 @@ $gradients: (
   --g-rainbow: #{map-get($gradients, rainbow)};
   --g-green: #{map-get($gradients, green)};
   --g-greenblue: #{map-get($gradients, greenblue)};
+  --g-shade-h: #{map-get($gradients, shade-h)};
+  --g-shade-v: #{map-get($gradients, shade-v)};
 }
 
 // CSS vars that override values in the parent theme

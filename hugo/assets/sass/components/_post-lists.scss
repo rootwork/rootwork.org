@@ -113,12 +113,42 @@
           position: relative;
           margin: 1rem;
           border-radius: 0.5rem;
-          background-color: var(--bright-light);
+          // backdrop-filter: blur(1rem);
+          transition: all 0.5s ease-in-out;
           z-index: 10;
+
+          &::before,
+          &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            border-radius: 0.7rem;
+            // background-color: var(--dark-shade);
+            transition: all 750ms ease-in-out;
+            z-index: -1;
+          }
+
+          &::before {
+            top: -3px;
+            bottom: -3px;
+            left: 50%;
+            right: 50%;
+            background: var(--g-shade-h);
+          }
+
+          &::after {
+            left: -3px;
+            right: -3px;
+            top: 50%;
+            bottom: 50%;
+            background: var(--g-shade-v);
+          }
 
           p {
             padding: 0.5rem 1rem;
             line-height: 1.5;
+            border-radius: 0.5rem;
+            background-color: var(--white);
             color: var(--black);
           }
         }
@@ -192,6 +222,21 @@
             &::before {
               @include switch(background-color, var(--white), var(--light));
             }
+          }
+        }
+
+        .summary_wrap {
+          background-color: var(--hazy-white);
+          box-shadow: var(--shade) 1px 1px 0.5rem;
+
+          &::before {
+            left: -3px;
+            right: -3px;
+          }
+
+          &::after {
+            top: 0;
+            bottom: 0;
           }
         }
 
