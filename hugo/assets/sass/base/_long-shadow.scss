@@ -1,0 +1,34 @@
+// Long text shadows
+//
+// USAGE:
+// Red shadow 50 pixels long:
+// @include longshadow(red, 50);
+//
+// Green shadow 25 pixels long with a 2-pixel border:
+// @include longshadow(green, 50, 2);
+//
+// Inspired by https://codepen.io/danieltott/pen/nowBRp
+
+@function makelongshadow($color, $size) {
+  $val: 0 0 $color;
+  $size: $size * 2; // Make roughly similar to pixel size (assuming 1rem = 16px)
+  @for $i from 1 through $size {
+    $val: #{$val}, calc(#{$i}rem / 50) calc(#{$i}rem / 50) #{$color};
+  }
+  @return $val;
+}
+
+@function makebordershadow($color, $border) {
+  $val: 0 0 $color;
+  @for $i from 1 through $border {
+    $val: #{$val}, #{$i}px #{$i}px #{$color};
+    $val: #{$val}, #{$i}px -#{$i}px #{$color};
+    $val: #{$val}, -#{$i}px #{$i}px #{$color};
+    $val: #{$val}, -#{$i}px -#{$i}px #{$color};
+  }
+  @return $val;
+}
+
+@mixin longshadow($color, $size: 200, $border: 0) {
+  text-shadow: makebordershadow($color, $border), makelongshadow($color, $size);
+}
