@@ -53,9 +53,7 @@
     margin: 0;
     padding: 1rem;
     color: var(--white);
-    text-shadow: 2px 2px 0 var(--dark-shade), 3px 3px 0 var(--dark-shade),
-      -1px -1px 0 var(--dark-shade), 1px -1px 0 var(--dark-shade),
-      -1px 1px 0 var(--dark-shade), 1px 1px 0 var(--dark-shade);
+    @include longshadow(var(--slate), 8, 1);
     z-index: 10;
 
     @include bp-s-up {
