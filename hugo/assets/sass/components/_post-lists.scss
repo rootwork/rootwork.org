@@ -183,7 +183,7 @@
             &::before {
               position: absolute;
               content: '';
-              bottom: 0.6666rem;
+              bottom: 0.5rem;
               left: 1.5rem;
               right: 1.5rem;
               border-bottom: 2px solid currentColor;
@@ -249,11 +249,13 @@
         .more_wrap .excerpt_more {
           @include switch(color, var(--md-dark-green), var(--white));
           border-radius: 0;
+          @include longshadow(var(--slate), 5, 1);
 
           &::before {
             left: 50%;
             right: 50%;
             opacity: 0;
+            box-shadow: var(--slate) 2px 1px 0 1px;
           }
 
           &::after {
