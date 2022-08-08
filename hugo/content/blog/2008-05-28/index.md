@@ -80,8 +80,8 @@ Interview with **Erik Hersman, Ushadidi**
 incidents of violence (and peace) happening in post-election Kenya via SMS,
 email and the web."
 
-![Interview with Erik Hersman, Ushahidi ::legacy-float-r](https://web.archive.org/web/20160709185617im_/http://blip.tv/file/get/Netsquared-N2Y3InterviewWithErikHersmanFromUshahidi381.MOV.jpg)
-{{< deadlink "Video interview with Erik Hermann." "dl://blip.tv/file/get/Netsquared-N2Y3InterviewWithErikHersmanFromUshahidi381.MOV" >}}
+![Interview with Erik Hersman, Ushahidi ::legacy-float-r](Erik-Hersman.jpg)
+{{< deadlink "Video interview with Erik Hersman." "dl://blip.tv/file/get/Netsquared-N2Y3InterviewWithErikHersmanFromUshahidi381.MOV" >}}
 
 Interview with **Janessa Goldbeck, Genocide Intervention Network**
 [anti-genocide action tracker](https://web.archive.org/web/20080709185617/http://netsquared.org/2008/conference/projects/anti-genocide-action-tracker-genocide-scores-every-politician-state-and-university)
