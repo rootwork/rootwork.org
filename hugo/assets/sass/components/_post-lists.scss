@@ -247,9 +247,10 @@
         }
 
         .more_wrap .excerpt_more {
-          @include switch(color, var(--md-dark-green), var(--white));
+          @include switch(color, var(--white), var(--white));
           border-radius: 0;
-          @include longshadow(var(--slate), 5, 1);
+          @include switch(--shadow, var(--shade), var(--slate));
+          @include longshadow(var(--shadow), 5, 1);
 
           &::before {
             left: 50%;
@@ -261,7 +262,7 @@
           &::after {
             @include switch(
               background-color,
-              var(--white),
+              var(--medium-green),
               var(--md-dark-green)
             );
             border-color: var(--bright-green);
