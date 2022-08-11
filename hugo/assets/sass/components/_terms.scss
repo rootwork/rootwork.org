@@ -79,13 +79,16 @@
       font-weight: bold;
       background-color: transparent;
       background: var(--g-greenblue);
+      background-size: 100% auto;
       border-radius: 1rem;
       color: var(--white);
       text-shadow: 0.05rem 0.05rem 0.25rem var(--dark-shade);
-      @include motion(transition-duration, 100ms);
+      transition-property: all;
+      @include motion(transition-duration, 500ms);
 
       @include is-on {
         background-color: transparent;
+        background-size: 200% auto;
         @include switch(--bg-hover-color, transparent);
         @include switch(
           box-shadow,
