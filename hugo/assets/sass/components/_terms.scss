@@ -66,8 +66,8 @@
     font-weight: normal;
     @include switch(--bg-color, var(--hazy-green), var(--dark-green));
     @include switch(--fg-color, var(--white), var(--light));
-    @include switch(--bg-hover-color, var(--pale-green), var(--white));
-    @include switch(--fg-hover-color, var(--md-dark-green), var(--dark-green));
+    @include switch(--bg-hover-color, var(--hazy-white), var(--white));
+    @include switch(--fg-hover-color, var(--dark-green));
   }
 
   .post_term--cat:not(.button) {
