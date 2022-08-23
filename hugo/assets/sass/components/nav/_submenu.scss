@@ -7,7 +7,9 @@
     margin: 1rem 0 0;
     padding: 0;
     @include switch(background-color, var(--blue));
-    transition: all 0.3s ease-in-out;
+    transition-property: opacity, max-height;
+    transition-timing-function: ease-in-out;
+    @include motion(transition-duration, 300ms);
 
     .jsopen & {
       margin-top: 0;
@@ -30,6 +32,9 @@
       opacity: 1;
       padding: 0.5rem 1rem;
       font-size: 1.25rem;
+      transition-property: color;
+      transition-timing-function: ease-in-out;
+      @include motion(transition-duration, 250ms);
       @include switch(color, var(--black));
 
       @include is-on {

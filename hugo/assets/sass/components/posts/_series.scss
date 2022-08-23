@@ -45,7 +45,9 @@
       margin-left: -1.5rem;
       width: 1.25rem;
       content: '☙';
-      transition: all ease-in-out 400ms;
+      transition-property: color, translate;
+      transition-timing-function: ease-in-out;
+      @include motion(transition-duration, 400ms);
     }
 
     @include is-on {

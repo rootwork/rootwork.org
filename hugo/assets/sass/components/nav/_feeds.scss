@@ -11,6 +11,8 @@
         width: 1.1rem;
         height: 1.1rem;
         opacity: 0.75;
+        transition: background-position 0s;
+        transition: opacity 300ms ease-in-out;
 
         .nav_icon {
           @include hidden-all;
