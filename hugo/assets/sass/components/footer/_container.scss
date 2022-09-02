@@ -4,5 +4,6 @@
 
 .footer.footer {
   margin-top: 4rem;
+  padding: 0 1.5rem;
   @include switch(background-color, var(--translucent-green), var(--shade));
 }
