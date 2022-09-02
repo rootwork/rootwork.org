@@ -9,25 +9,27 @@
 {{- $iconsDir := default "icons/" .Site.Params.iconsDir }}
 {{- $defaultFooterLogo := printf "%s%s" $iconsDir "apple-touch-icon.png" }}
 <footer class="footer">
-  <div class="footer_inner wrap pale">
-    <a href="/"
-      ><img
-        src="{{ absURL (default $defaultFooterLogo $s.footerLogo) }}"
-        class="icon icon_2 transparent"
-        alt="{{ $t }}"
-    /></a>
-    <p>
-      {{ T "copyright" | markdownify }}{{ with $s.since }}
-        &nbsp;{{ . }}&#8211;
-      {{ end }}&nbsp;<span class="year"></span>&nbsp;<a href="/">{{ $t }}</a>.
-      {{ T "all_rights" | markdownify }}
-      <a href="https://github.com/rootwork/rootwork.org#licenses"
-        >See the repo</a
-      >
-      for details about code licenses.
-      <a href="/privacy">View the privacy policy.</a>
-    </p>
-    {{- partialCached "top" . }}
+  <div class="footer_wrap">
+    <div class="footer_body">
+      <a href="/"
+        ><img
+          src="{{ absURL (default $defaultFooterLogo $s.footerLogo) }}"
+          class="icon icon_2 transparent"
+          alt="{{ $t }}"
+      /></a>
+      <p>
+        {{ T "copyright" | markdownify }}{{ with $s.since }}
+          &nbsp;{{ . }}&#8211;
+        {{ end }}&nbsp;<span class="year"></span>&nbsp;<a href="/">{{ $t }}</a>.
+        {{ T "all_rights" | markdownify }}
+        <a href="https://github.com/rootwork/rootwork.org#licenses"
+          >See the repo</a
+        >
+        for details about code licenses.
+        <a href="/privacy">View the privacy policy.</a>
+      </p>
+    </div>
   </div>
   <div class="footer_surprise"></div>
+  {{- partialCached "top" . }}
 </footer>

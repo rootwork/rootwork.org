@@ -1,8 +1,15 @@
 // Content of the footer
 
-.footer_inner {
-  padding: 1.5rem 0;
-  font-family: var(--content-font);
+.footer_wrap {
+  position: relative;
+  z-index: 2;
+
+  .footer_body {
+    margin: 0 -1.5rem;
+    padding: 1.5rem;
+    font-family: var(--content-font);
+    @include switch(background-color, var(--translucent-green), var(--shade));
+  }
 
   p {
     font-size: 1rem;
