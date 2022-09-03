@@ -1,8 +1,32 @@
 // Content of the footer
 
 .footer_inner {
-  padding: 1.5rem 0;
+  position: relative;
+  margin-top: -0.1rem;
+  padding: 3rem 1.5rem;
   font-family: var(--content-font);
+  @include switch(background-color, var(--pale-green), var(--dark-green));
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+  }
+
+  &::before {
+    top: 0;
+    height: 1px;
+    background: var(--light);
+  }
+
+  &::after {
+    bottom: 0;
+    height: 3px;
+    background: var(--g-green);
+  }
 
   p {
     font-size: 1rem;

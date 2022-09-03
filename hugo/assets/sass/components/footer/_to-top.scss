@@ -1,24 +1,34 @@
 // Back-to-top link
 
-.footer .to_top,
-.footer .to_top.ios {
-  background-color: var(--bright-green);
-  border-width: 2px;
-  border-style: solid;
-  @include switch(border-color, var(--white), var(--dark-green));
-
-  svg.icon {
-    opacity: 1;
-    @include switch(fill, var(--white), var(--dark-green));
-    transition: fill;
-    @include motion(transition-duration, 500ms);
+.footer {
+  .to_top {
+    margin-left: -1rem;
   }
 
-  @include is-on {
-    @include switch(border-color, var(--dark-green), var(--white));
+  .to_top.ios {
+    right: 1rem;
+  }
+
+  .to_top,
+  .to_top.ios {
+    background-color: var(--bright-green);
+    border-width: 2px;
+    border-style: solid;
+    @include switch(border-color, var(--white), var(--dark-green));
 
     svg.icon {
-      @include switch(fill, var(--dark-green), var(--light));
+      opacity: 1;
+      @include switch(fill, var(--white), var(--dark-green));
+      transition: fill;
+      @include motion(transition-duration, 500ms);
+    }
+
+    @include is-on {
+      @include switch(border-color, var(--dark-green), var(--white));
+
+      svg.icon {
+        @include switch(fill, var(--dark-green), var(--light));
+      }
     }
   }
 }
