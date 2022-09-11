@@ -4,7 +4,11 @@
 # new_blog_post - Create new Hugo blog posts with automated year and month
 # categories by tag.
 #
-# Inspired by https://discourse.gohugo.io/t/auto-generate-file-name-based-on-title/4648/2?u=kaushalmodi
+# Source:
+# https://github.com/rootwork/rootwork.org/blob/main/scripts/new_blog_post.sh
+#
+# Inspired by:
+# https://discourse.gohugo.io/t/auto-generate-file-name-based-on-title/4648/2?u=kaushalmodi
 #
 # This script will:
 #
@@ -43,8 +47,8 @@
 #
 # REQUIREMENTS
 #
-# The following keys must be present in your Hugo post archetype (either as
-# default.md or as blog/index.md):
+# The following keys must be present in your Hugo post archetype (at
+# `default.md`, `blog.md`, or `blog/index.md`):
 #
 # title
 # date
@@ -56,9 +60,9 @@
 # year
 # month
 #
-# Finally, to use the optional alias flag, you must have an "aliases" key,
-# though it can be commented out. The alias this script adds will not
-# interfere with any other aliases you may be creating.
+# Finally, to use the optional alias flag, you must have an "aliases" key, in
+# the archetype, although it can be commented out. The alias this script adds
+# will not interfere with any other aliases you may be creating.
 
 # Copyright 2022, Ivan Boothe <git@rootwork.org>
 
@@ -96,6 +100,8 @@
 # $ ./new_blog_post.sh --title="My new blog entry" --date="2022-05-24" --slug="new-post" -a
 
 # Revision history:
+# 2022-09-09  Corrected bug when base 'year' and 'month' category directories
+#             do not exist (1.2)
 # 2022-07-09  Added short alias option; handle blog entries on same date (1.1)
 # 2022-05-26  Full release; script configurable via flags (1.0)
 # 2022-03-29  Adding configurable Hugo directory (0.4)
@@ -108,7 +114,7 @@
 set -euo pipefail
 IFS=$'\n\t'
 PROGNAME=${0##*/}
-VERSION="1.1"
+VERSION="1.2"
 
 # tput colors (for printf)
 red=$(tput setaf 1)
@@ -438,9 +444,23 @@ main() {
 
   # Create year and month taxonomy pages for this date, if they don't already
   # exist.
-  yearpath="${content_dir}/year/${date_year}"
+  yeardir="${content_dir}/year"
+  if [ ! -d "$yeardir" ]; then
+    mkdir -p "$yeardir"
+    cat <<EOF >"${yeardir}/_index.md"
+---
+draft: true # This is set to draft as an easy way to exclude this top-level
+            # directory from things like sitemaps and feeds. Feel free to adapt
+            # this to your theme directly, in which case the draft-mode bypass
+            # won't be necessary. One example of doing so is described here:
+            # https://dereckcurry.com/posts/excluding-pages-from-the-sitemap/
+---
+EOF
+    echo "Created taxonomy directory for yearly archives"
+  fi
+  yearpath="${yeardir}/${date_year}"
   if [ ! -d "$yearpath" ]; then
-    mkdir "$yearpath"
+    mkdir -p "$yearpath"
     cat <<EOF >"${yearpath}/_index.md"
 ---
 title: 'Archives: ${date_year}'
@@ -449,10 +469,24 @@ url: '/${blog_dir}/${date_year}/'
 EOF
     echo "Created taxonomy page for ${date_year}"
   fi
-  monthpath="${content_dir}/month/${date_year}-${date_month}"
+  monthdir="${content_dir}/month"
+  if [ ! -d "$monthdir" ]; then
+    mkdir -p "$monthdir"
+    cat <<EOF >"${monthdir}/_index.md"
+---
+draft: true # This is set to draft as an easy way to exclude this top-level
+            # directory from things like sitemaps and feeds. Feel free to adapt
+            # this to your theme directly, in which case the draft-mode bypass
+            # won't be necessary. One example of doing so is described here:
+            # https://dereckcurry.com/posts/excluding-pages-from-the-sitemap/
+---
+EOF
+    echo "Created taxonomy directory for monthly archives"
+  fi
+  monthpath="${monthdir}/${date_year}-${date_month}"
   if [ ! -d "$monthpath" ]; then
     prettymonth=$(date -d "$date" +'%B')
-    mkdir "$monthpath"
+    mkdir -p "$monthpath"
     cat <<EOF >"${monthpath}/_index.md"
 ---
 title: 'Archives: ${prettymonth} ${date_year}'
