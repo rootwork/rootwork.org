@@ -70,7 +70,7 @@ collect call. We have the digital means to complete lots of tasks like that
 today, but that doesn't mean all of our methods are equally effective for
 everyone.
 
-![Drupal's new mobile-friendly toolbar ::legacy-float-r](mobile-friendly-toolbar.png ' ')"Drupal
+![Drupal's new mobile-friendly toolbar ::align-right](mobile-friendly-toolbar.png ' ')"Drupal
 8 will be the most accessible version of Drupal yet," declare **J. Renée Beach**
 and **Wim Leers** in their
 [Drupalcon Portland session description](https://portland2013.drupal.org/node/2158.html).

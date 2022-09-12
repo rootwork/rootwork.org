@@ -86,7 +86,7 @@ altered since the days when it was used to change the colors of the scroll bars
 in Internet Explorer. Luckily, in the past couple of years both
 [CSS architecture and CSS preprocessors came into their own](/blog/2013/05/ninjas-your-code-drupalcon-portland-sass-extends-placeholders).
 
-![Jonathan Snook ::legacy-float-r](jonathansnook.jpg ' ')**SMACSS**, or
+![Jonathan Snook ::align-right](jonathansnook.jpg ' ')**SMACSS**, or
 [Scalable and Modular Architecture for CSS](http://smacss.com/), was developed
 by **[Jonathan Snook](https://snook.ca/)**, a featured speaker at Drupalcon
 Portland. I'm really excited to get the opportunity to have Jonathan speak, not
@@ -108,9 +108,9 @@ single page. We're no longer just building sites with a design for a home page
 and an inside page. We're developing complex systems that need to work in a
 variety of contexts and we need a development approach that complements that.
 
-[![SMACSS ::legacy-float-l](smacss-book.png ' ')](http://smacss.com/)**IB:
-What's the biggest "win" you see in using the SMACSS approach? Why should
-frontend developers change their approach to CSS?**
+[![SMACSS ::align-left](smacss-book.png ' ')](http://smacss.com/)**IB: What's
+the biggest "win" you see in using the SMACSS approach? Why should frontend
+developers change their approach to CSS?**
 
 JS: The biggest win is maintainability. The SMACSS methodology makes it easier
 to build larger projects by breaking things down into smaller components. Like

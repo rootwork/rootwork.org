@@ -30,4 +30,36 @@
       opacity: 0.9;
     }
   }
+
+  // Aligning with line-height (em so as to change based on font size)
+  --top-pad: 0.3333em;
+  // Gap from surrounding text
+  --margin: var(--page-padding);
+
+  .align-left,
+  .post_body img.align-left,
+  .align-right,
+  .post_body img.align-right {
+    margin-bottom: var(--margin);
+
+    @include bp-m-up {
+      max-width: 45%;
+    }
+  }
+
+  // .align-left,
+  // .post_body img.align-left {
+  //   @include bp-m-up {
+  //     margin: var(--top-pad) var(--margin) var(--margin) 0;
+  //     float: left;
+  //   }
+  // }
+
+  // .align-right,
+  // .post_body img.align-right {
+  //   @include bp-m-up {
+  //     margin: var(--top-pad) 0 var(--margin) var(--margin);
+  //     float: right;
+  //   }
+  // }
 }

@@ -74,7 +74,7 @@ for our proposal to
 > **[DarfurScores.org](https://web.archive.org/web/20080708201835/http://www.darfurscores.org/)**,
 > tentatively named GenocideScores.org.
 
-![NetSquared Featured Project ::legacy-float-r](n2y3-featured-project.jpg)Our
+![NetSquared Featured Project ::align-right](n2y3-featured-project.jpg)Our
 current plan for the site -- which could change as we explore different options
 and hear feedback from our members -- has four main components:
 

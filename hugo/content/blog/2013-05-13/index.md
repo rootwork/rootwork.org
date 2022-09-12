@@ -72,13 +72,13 @@ excited about what we've ended up with!
 
 ### Groundbreaking frontend featured speakers
 
-![Jonathan Snook ::legacy-float-l](jonathansnook.jpg ' ')First and foremost, of
+![Jonathan Snook ::align-left](jonathansnook.jpg ' ')First and foremost, of
 course, we have **Jonathan Snook** presenting on his concept (and book)
 [_Scalable and Modular Architecture for CSS_](http://smacss.com/).
 
-![MortenDK at Drupalcon Sydney ::legacy-float-r](MASS-mortendk-crop.jpg)SMACSS
-has had a big impact on a lot of frontend developers and themers -- and in fact
-it's had a huge impact on Drupal itself. The
+![MortenDK at Drupalcon Sydney ::align-right](MASS-mortendk-crop.jpg)SMACSS has
+had a big impact on a lot of frontend developers and themers -- and in fact it's
+had a huge impact on Drupal itself. The
 [Zen base theme](https://www.drupal.org/project/zen), the most-downloaded Drupal
 theme out there, has
 [adopted a SMACSS approach](https://www.drupal.org/node/1931746).

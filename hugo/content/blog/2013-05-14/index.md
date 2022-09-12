@@ -135,7 +135,7 @@ code. Sass' @extend directive allows developers to create name-spaced reusable
 chunks of code that is portable, re-usable and extendable without duplicating
 anything.
 
-![Fighting tight coupling in CSS by keeping code separation in Sass ::legacy-float-r](dsande-oocss2.png)**IB:
+![Fighting tight coupling in CSS by keeping code separation in Sass ::align-right](dsande-oocss2.png)**IB:
 Do you see placeholders as helping to reduce the amount of tight
 [coupling](https://en.wikipedia.org/wiki/Coupling_%28computer_programming%29) --
 scattering pieces of styles in multiple places?**

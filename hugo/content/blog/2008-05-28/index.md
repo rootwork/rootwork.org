@@ -80,7 +80,7 @@ Interview with **Erik Hersman, Ushadidi**
 incidents of violence (and peace) happening in post-election Kenya via SMS,
 email and the web."
 
-![Interview with Erik Hersman, Ushahidi ::legacy-float-r](Erik-Hersman.jpg)
+![Interview with Erik Hersman, Ushahidi ::align-right](Erik-Hersman.jpg)
 {{< deadlink "Video interview with Erik Hersman." "dl://blip.tv/file/get/Netsquared-N2Y3InterviewWithErikHersmanFromUshahidi381.MOV" >}}
 
 Interview with **Janessa Goldbeck, Genocide Intervention Network**

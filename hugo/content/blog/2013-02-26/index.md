@@ -84,7 +84,7 @@ something you learned (perhaps the hard way) to schedule on your calendar, to
 make sure the website doesn't go down -- as it did once for me -- when the
 single "tech person" on staff is away at a conference.
 
-![Domain Registry of America notice ::legacy-float-r](domain-registry-america_annotated.jpg 'Domain Registry of America "notice"')
+![Domain Registry of America notice ::align-right](domain-registry-america_annotated.jpg 'Domain Registry of America "notice"')
 
 Into this confusion steps [Domain Registry of America](https://droa.com/), a
 bottomfeeding company that intentionally misleads low-information website owners
