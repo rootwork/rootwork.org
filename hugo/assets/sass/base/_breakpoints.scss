@@ -6,7 +6,7 @@ $single-column-breakpoint: 92.5rem;
 $mobile-menu-breakpoint: 62.5rem;
 $mobile-screen: 27rem;
 
-@mixin bp-xs-up {
+@mixin bp-s-up {
   @media screen and (min-width: $mobile-screen) {
     & {
       @content;
@@ -14,24 +14,8 @@ $mobile-screen: 27rem;
   }
 }
 
-@mixin bp-xs-only {
-  @media screen and (max-width: $mobile-screen) {
-    & {
-      @content;
-    }
-  }
-}
-
-@mixin bp-s-up {
-  @media screen and (min-width: $single-column-breakpoint) {
-    & {
-      @content;
-    }
-  }
-}
-
 @mixin bp-s-only {
-  @media screen and (max-width: $single-column-breakpoint) {
+  @media screen and (max-width: $mobile-screen) {
     & {
       @content;
     }
@@ -47,35 +31,25 @@ $mobile-screen: 27rem;
 }
 
 @mixin bp-m-only {
-  @media screen and (max-width: $mobile-menu-breakpoint) {
+  @media screen and (min-width: $mobile-screen) and (max-width: $mobile-menu-breakpoint) {
     & {
       @content;
     }
   }
 }
 
-@mixin breakat($breakpoint) {
-  @if $breakpoint = 'sm' {
-    @media screen and (min-width: $single-column-breakpoint) {
-      & {
-        @content;
-      }
+@mixin bp-l-up {
+  @media screen and (min-width: $single-column-breakpoint) {
+    & {
+      @content;
     }
   }
+}
 
-  @if $breakpoint = 'md' {
-    @media screen and (max-width: $mobile-menu-breakpoint) {
-      & {
-        @content;
-      }
-    }
-  }
-
-  @if $breakpoint = 'lg' {
-    @media screen and (min-width: $mobile-menu-breakpoint) {
-      & {
-        @content;
-      }
+@mixin bp-l-only {
+  @media screen and (min-width: $mobile-menu-breakpoint) and (max-width: $single-column-breakpoint) {
+    & {
+      @content;
     }
   }
 }
