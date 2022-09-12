@@ -76,17 +76,11 @@
     }
 
     .post_date__edit {
-      flex-basis: 100%;
-      justify-content: center;
-      margin: 0.25rem 0 0.5rem 0.25rem;
+      flex-basis: auto;
+      justify-content: flex-start;
+      margin: 0.2rem 0 0 0.5rem;
       font-size: 0.8rem;
       font-style: italic;
-
-      @include breakat(sm) {
-        flex-basis: auto;
-        justify-content: flex-start;
-        margin: 0.2rem 0 0 0.5rem;
-      }
     }
 
     .post_time {
@@ -95,7 +89,7 @@
       &.post-date-edited {
         margin: 0.5rem 0 0 1.5rem;
 
-        @include bp-xs-up {
+        @include bp-s-up {
           margin-top: 0;
         }
       }
@@ -136,7 +130,7 @@
       padding-top: 1rem;
       justify-content: flex-start;
 
-      @include bp-s-up {
+      @include bp-m-up {
         justify-content: center;
       }
 
@@ -151,7 +145,7 @@
       .post_date_icon {
         margin-left: 1rem;
 
-        @include bp-s-up {
+        @include bp-m-up {
           margin-left: 0;
         }
       }
@@ -159,7 +153,7 @@
       .post_terms--cat {
         margin-top: 0.75rem;
 
-        @include bp-s-up {
+        @include bp-m-up {
           margin-top: 0;
         }
       }

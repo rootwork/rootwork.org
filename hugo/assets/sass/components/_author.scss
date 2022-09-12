@@ -9,7 +9,7 @@
   @include motion(transition-delay, 500ms);
   @include motion(transition-duration, 750ms);
 
-  @include bp-xs-up {
+  @include bp-s-up {
     margin-top: 0;
   }
 
@@ -154,7 +154,7 @@
     font-family: var(--content-font);
     line-height: 1.35;
 
-    @include bp-xs-up {
+    @include bp-s-up {
       @include undofull;
       margin-top: 0;
     }
@@ -172,7 +172,7 @@
     &::before {
       @extend %author-line;
 
-      @include bp-xs-only {
+      @include bp-s-only {
         display: none;
       }
     }
@@ -184,13 +184,13 @@
       left: calc((var(--img) * -1) - var(--gap));
       top: 100%;
 
-      @include bp-xs-up {
+      @include bp-s-up {
         display: none;
       }
     }
 
     > span {
-      @include bp-xs-up {
+      @include bp-s-up {
         white-space: nowrap;
       }
     }

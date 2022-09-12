@@ -4,12 +4,12 @@
   margin: 2.5rem auto 0;
   max-width: calc(var(--max-content-width) - 10rem);
 
-  @include bp-s-up {
+  @include bp-l-up {
     margin-top: 0;
   }
 
   .sidebar_inner {
-    @include bp-s-up {
+    @include bp-l-up {
       // Divider
       &::before {
         display: block;
