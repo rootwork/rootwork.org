@@ -30,10 +30,9 @@
       <li class="home_bio h-card vcard">
         {{- $author := $s.Author }}
         <a
-          href="{{ .Site.BaseURL }}"
+          href="{{ absLangURL (default "about/" $s.introURL) }}"
           class="p-name u-url url author metatag"
           rel="me"
-          tabindex="-1"
           ><span class="img_wrap"
             ><svg
               width="0"
@@ -41,6 +40,7 @@
               viewBox="0 0 100 100"
               xmlns="http://www.w3.org/2000/svg"
             >
+              <title>{{ $author.name }}</title>
               <defs>
                 <clipPath id="blob" clipPathUnits="objectBoundingBox">
                   <path />
@@ -51,7 +51,7 @@
               width="128"
               height="128"
               src="{{ absURL $author.photo }}"
-              alt="{{ $author.name }} photo" /></span
+              alt="{{ $author.name }}" /></span
         ></a>
         <div>
           <h1>Hello, I&#8217;m <span>{{ $author.name }}</span></h1>
