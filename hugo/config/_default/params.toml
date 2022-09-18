@@ -106,7 +106,7 @@ iconsDir = "../icons/" # without a leading forward slash
 
 # Show related content at the end of an article based on the 'series' taxonomy. Can be set in post front matter.
 showRelatedInArticle = true
-showRelatedInSidebar = true
+showRelatedInSidebar = false
 
 # fuse.js search
 enableSearch = true
