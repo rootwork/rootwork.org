@@ -27,11 +27,11 @@
   weight = 2
   url = "feed.atom"
 
-[[main]]
-  parent = "feeds"
-  name = "JSON feed"
-  weight = 3
-  url = "index.json"
+# [[main]]
+#   parent = "feeds"
+#   name = "JSON feed"
+#   weight = 3
+#   url = "index.json"
 
 [[main]]
   parent = "feeds"
