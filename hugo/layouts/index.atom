@@ -97,9 +97,9 @@
 
     {{/* Post content */}}
     {{- $content := strings.Trim .Content "\n" -}}
-    {{- $content = printf "%s" "</small></p>" | printf "%s%s" ($siteFeedFooter | markdownify) | printf "%s%s" " " | printf "%s%s" $linkedTitle | printf "%s%s" "<p><small>" | printf "%s%s" $content | printf "%s" -}}
+    {{- $content = printf "%s" "</small></p>" | printf "%s%s" ($siteFeedFooter | markdownify) | printf "%s%s" " " | printf "%s%s" $linkedTitle | printf "%s%s" "<hr /><p><small>" | printf "%s%s" $content | printf "%s" -}}
     {{- $plainContent := strings.Trim .Plain "\n" -}}
-    {{- $plainContent = printf "%s" $permalink | printf "%s%s" ": " | printf "%s%s" ($siteFeedFooter | markdownify | plainify) | printf "%s%s" "” " | printf "%s%s" $title | printf "%s%s" "\n“" | printf "%s%s" $plainContent | printf "%s" -}}
+    {{- $plainContent = printf "%s" $permalink | printf "%s%s" ": " | printf "%s%s" ($siteFeedFooter | markdownify | plainify) | printf "%s%s" "” " | printf "%s%s" $title | printf "%s%s" "\n\n“" | printf "%s%s" $plainContent | printf "%s" -}}
 
     {{/* Post byline */}}
     {{- $author := $siteAuthor -}}
