@@ -91,6 +91,7 @@
         {{- $summary = . -}}
       {{- end -}}
     {{- end -}}
+    {{- $summary = strings.Trim $summary "\n" -}}
 
     {{/* Post byline */}}
     {{- $author := $siteAuthor -}}
