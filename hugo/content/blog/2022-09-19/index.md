@@ -10,11 +10,11 @@ aliases:
 
 # For the post as it appears in lists.
 summary: >
-  Summary
+  It's been quite a while since I posted on this blog.
 
 # For SEO and social media snippets (recommended 150-200 characters).
 description: >
-  Description
+  It's been quite a while since I posted on this blog.
 
 draft: false # Change to 'false' to publish this post.
 disable_feed: false # Change to 'true' to exclude from RSS etc.
@@ -46,9 +46,10 @@ showRelatedInArticle: false # Override global value for showing related posts in
 series: # Creates lists of posts in series as well as custom tag.
 
 categories:
-  # - frontend development
+  - frontend development
 tags:
-  # - Drupal
+  - Drupal
+  - communications
 keywords: # Extra keywords in addition to the above, for SEO.
 
 # Archive taxonomy terms (auto-generated)
