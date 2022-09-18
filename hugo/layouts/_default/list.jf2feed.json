@@ -17,6 +17,7 @@
 {{- $siteLogo := $s.Logo | absURL -}}
 {{- $siteFeedLogo := $s.feedLogo | absURL -}}
 {{- $siteFeedIcon := $s.feedIcon | absURL -}}
+{{- $siteFeedFooter := $s.feedFooter -}}
 {{- $siteDesc := $s.description -}}
 {{- $siteLicense := T "license" -}}
 {{- $siteCopyright := T "all_rights" -}}
@@ -45,6 +46,7 @@
 
   {{/* Post title */}}
   {{- $title := .Title -}}
+  {{- $linkedTitle := printf "%s" "</a>" | printf "%s%s" $title | printf "%s%s" "'>" | printf "%s%s" $permalink | printf "%s%s" "<a href='" | printf "%s" -}}
 
   {{/* Post date */}}
   {{- $date := .Date -}}
@@ -65,6 +67,12 @@
     {{- end -}}
   {{- end -}}
   {{- $summary = strings.Trim $summary "\n" -}}
+
+  {{/* Post content */}}
+  {{- $content := strings.Trim .Content "\n" -}}
+  {{- $content = printf "%s" "</small></p>" | printf "%s%s" ($siteFeedFooter | markdownify) | printf "%s%s" " " | printf "%s%s" $linkedTitle | printf "%s%s" "<p><small>" | printf "%s%s" $content | printf "%s" -}}
+  {{- $plainContent := strings.Trim .Plain "\n" -}}
+  {{- $plainContent = printf "%s" $permalink | printf "%s%s" ": " | printf "%s%s" ($siteFeedFooter | markdownify | plainify) | printf "%s%s" "” " | printf "%s%s" $title | printf "%s%s" "\n“" | printf "%s%s" $plainContent | printf "%s" -}}
 
   {{/* Post byline */}}
   {{- $author := $siteAuthor -}}
@@ -127,8 +135,8 @@
     "name" $title
     "summary" ($summary | plainify)
     "content" (dict
-      "html" .Content
-      "text" .Plain
+      "html" $content
+      "text" $plainContent
     )
     "category" $keywords
     "photo" $image
