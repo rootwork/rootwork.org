@@ -1,0 +1,13 @@
+{{/* getFeedPages:
+
+  Retrieve an array of pages to be included in feeds.
+*/}}
+
+{{- $pages := (where .RegularPages "Type" "in" site.Params.mainSections) -}}
+{{- if (eq .Kind "home") -}}
+  {{- $pages = (where site.RegularPages "Type" "in" site.Params.mainSections) -}}
+{{- end -}}
+{{- $pages = where $pages ".Params.disable_feed" "!=" true -}}
+{{- $pages = where $pages ".Params.unlisted" "!=" true -}}
+
+{{- return $pages -}}
