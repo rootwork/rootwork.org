@@ -1,0 +1,124 @@
+{{- $s := .Site.Params -}}
+{{- $p := .Params -}}
+
+{{/* Site info */}}
+
+{{- $site := (dict
+  "name"      .Site.Title
+  "url"       .Site.BaseURL
+  "lang"      (.Site.LanguageCode | default "en-us")
+  "logo"      ($s.Logo | absURL)
+  "desc"      $s.description
+  "license"   (T "license")
+  "copyright" (T "all_rights")
+  "author"    (dict
+  "name"      .Site.Data.authors.default.name
+  "image"     (.Site.Data.authors.default.image | absURL)
+  "email"     .Site.Data.authors.default.email
+  "twitter"   .Site.Data.authors.default.twitter
+  )
+  )
+-}}
+
+{{/* Post info */}}
+
+{{- $post_relpath := "" -}}
+{{- if or $s.usePageBundles $p.usePageBundles -}}
+  {{- $post_relpath = .Page.RelPermalink -}}
+{{- end -}}
+{{ if eq $p.usePageBundles false -}}
+  {{- $post_relpath = "" -}}
+{{ end -}}
+
+{{- $post_updated := .Lastmod -}}
+{{- if eq .Date $post_updated -}}
+  {{- $post_updated = "" -}}
+{{- end -}}
+
+{{- $post_summary := truncate 200 .Summary -}}
+{{- with $p.description -}}
+  {{- $post_summary = truncate 200 . -}}
+{{- end -}}
+{{- if .IsHome -}}
+  {{- $post_summary = $s.description -}}
+  {{- with $p.description -}}
+    {{- $post_summary = . -}}
+  {{- end -}}
+{{- end -}}
+{{- $post_summary = strings.Trim $post_summary "\n" -}}
+
+{{- $post_byline_authors := $site.author.name -}}
+{{- $post_byline_name    := $site.author.name -}}
+{{- $post_byline_image   := $site.author.image -}}
+{{- $post_byline_email   := $site.author.email -}}
+{{- $post_byline_twitter := $site.author.twitter -}}
+{{- with $p.author -}}
+  {{- $post_byline_authors = index $.Site.Data.authors . -}}
+  {{- $post_byline_name = $post_byline_authors.name -}}
+  {{- $post_byline_image = $post_byline_authors.image | absURL -}}
+  {{- $post_byline_email = $post_byline_authors.email -}}
+  {{- $post_byline_twitter = $post_byline_authors.twitter -}}
+{{- end -}}
+
+{{- $post_image := absURL $s.fallBackOgImage -}}
+{{- with $p.featureImage -}}
+  {{- $fullpath := ( add $post_relpath . ) -}}
+  {{- $post_image = absURL $fullpath -}}
+{{- end -}}
+{{- with $p.thumbnail -}}
+  {{- $fullpath := ( add $post_relpath . ) -}}
+  {{- $post_image = absURL $fullpath -}}
+{{- end -}}
+{{- with $p.shareImage -}}
+  {{- $fullpath := ( add $post_relpath . ) -}}
+  {{- $post_image = absURL $fullpath -}}
+{{- end -}}
+
+{{- $metaKeywords := slice -}}
+{{- with $p.categories -}}
+  {{- $metaKeywords = $metaKeywords | append . -}}
+{{- end -}}
+{{- with $p.tags -}}
+  {{- $metaKeywords = $metaKeywords | append . -}}
+{{- end -}}
+{{- with $p.keywords -}}
+  {{- $metaKeywords = $metaKeywords | append . -}}
+{{- end -}}
+{{- with $metaKeywords -}}
+  {{/* Add meta keywords based on tags and categories. */}}
+  {{- range $key, $value := $.Site.Data.terms.keywords.additional -}}
+    {{- if in $metaKeywords $key -}}
+      {{- $metaKeywords = $metaKeywords | append $value -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $metaKeywords = delimit $metaKeywords ", " -}}
+{{- end -}}
+{{- $post_keywords := "" -}}
+{{- with $.Site.Data.terms.keywords.default -}}
+  {{- $post_keywords = delimit $.Site.Data.terms.keywords.default "," -}}
+{{- end -}}
+{{- with $metaKeywords -}}
+  {{- $post_keywords = $metaKeywords -}}
+{{- end -}}
+
+{{- $post := (dict
+  "permalink" .Permalink
+  "relpath"   $post_relpath
+  "title"     .Title
+  "date"      .Date
+  "updated"   $post_updated
+  "summary"   $post_summary
+  "image"     $post_image
+  "keywords"  $post_keywords
+  "byline"    (dict
+  "authors"   $post_byline_authors
+  "name"      $post_byline_name
+  "image"     $post_byline_image
+  "email"     $post_byline_email
+  "twitter"   $post_byline_twitter
+  )
+  )
+-}}
+
+{{ $vars := merge $site $post }}
+{{ return $vars }}
