@@ -1,270 +1,156 @@
 {{/* This file has been rewritten. */}}
 
-{{ with partial "function/getVars" . }}
-  {{/* ...pending */}}
-{{ end }}
-
-{{/* This file has been substantially rewritten.
-
-  LOGIC HERE IS ALSO USED IN FEED TEMPLATES. If any of the variable construction
-  at the top changes, it needs to be propagated to these template files as well.
-
-  1. Reordering variable construction.
-  2. Increasing description length to 200 characters.
-  3. Reworking keywords section.
-  4. Adding JSON-LD schema.
-*/}}
 {{- $s := .Site.Params -}}
 {{- $p := .Params -}}
 
-{{/* Site info */}}
-{{- $siteName := .Site.Title -}}
-{{- $siteURL := .Site.BaseURL -}}
-{{- $siteLang := .Site.LanguageCode | default "en-us" -}}
-{{- $siteAuthor := .Site.Data.authors.default.name -}}
-{{- $siteAuthorImage := .Site.Data.authors.default.image | absURL -}}
-{{- $siteAuthorEmail := .Site.Data.authors.default.email -}}
-{{- $siteAuthorTwitter := .Site.Data.authors.default.twitter -}}
-{{- $siteURL := .Site.BaseURL -}}
-{{- $siteLogo := $s.Logo | absURL -}}
-{{- $siteDesc := $s.description -}}
-{{- $siteLicense := T "license" -}}
-{{- $siteCopyright := T "all_rights" -}}
-
-{{/* Post permalink */}}
-{{- $relpath := "" -}}
-{{- if or $s.usePageBundles $p.usePageBundles -}}
-  {{- $relpath = .Page.RelPermalink -}}
-{{- end -}}
-{{ if eq $p.usePageBundles false -}}
-  {{- $relpath = "" -}}
-{{ end -}}
-{{- $permalink := .Permalink -}}
-
-{{/* Post title */}}
-{{- $title := .Title -}}
-
-{{/* Post date */}}
-{{- $date := .Date -}}
-{{- $updated := .Lastmod -}}
-{{- if eq $date $updated -}}
-  {{- $updated = "" -}}
-{{- end -}}
-
-{{/* Post summary */}}
-{{- $summary := truncate 200 .Summary -}}
-{{- with $p.description -}}
-  {{- $summary = truncate 200 . -}}
-{{- end -}}
-{{- if .IsHome -}}
-  {{- $summary = $s.description -}}
-  {{- with $p.description -}}
-    {{- $summary = . -}}
-  {{- end -}}
-{{- end -}}
-{{- $summary = strings.Trim $summary "\n" -}}
-
-{{/* Post byline */}}
-{{- $author := $siteAuthor -}}
-{{- $authorName := $siteAuthor -}}
-{{- $authorImage := $siteAuthorImage -}}
-{{- $authorEmail := $siteAuthorEmail -}}
-{{- $authorTwitter := $siteAuthorTwitter -}}
-{{- with $p.author -}}
-  {{- $author = index $.Site.Data.authors . -}}
-  {{- $authorName = $author.name -}}
-  {{- $authorImage = $author.image | absURL -}}
-  {{- $authorEmail = $author.email -}}
-  {{- $authorTwitter = $author.twitter -}}
-{{- end -}}
-
-{{/* Post images */}}
-{{- $image := absURL $s.fallBackOgImage -}}
-{{- with $p.featureImage -}}
-  {{- $fullpath := ( add $relpath . ) -}}
-  {{- $image = absURL $fullpath -}}
-{{- end -}}
-{{- with $p.thumbnail -}}
-  {{- $fullpath := ( add $relpath . ) -}}
-  {{- $image = absURL $fullpath -}}
-{{- end -}}
-{{- with $p.shareImage -}}
-  {{- $fullpath := ( add $relpath . ) -}}
-  {{- $image = absURL $fullpath -}}
-{{- end -}}
-
-{{/* Post keywords */}}
-{{- $metaKeywords := slice -}}
-{{- with $p.categories -}}
-  {{- $metaKeywords = $metaKeywords | append . -}}
-{{- end -}}
-{{- with $p.tags -}}
-  {{- $metaKeywords = $metaKeywords | append . -}}
-{{- end -}}
-{{- with $p.keywords -}}
-  {{- $metaKeywords = $metaKeywords | append . -}}
-{{- end -}}
-{{- with $metaKeywords -}}
-  {{/* Add meta keywords based on tags and categories. */}}
-  {{- range $key, $value := $.Site.Data.terms.keywords.additional -}}
-    {{- if in $metaKeywords $key -}}
-      {{- $metaKeywords = $metaKeywords | append $value -}}
+{{- with partial "function/getVars" . -}}
+  <meta property="og:locale" content="{{ .site.lang }}" />
+  {{- range .page.translations }}
+    <meta property="og:locale:alternate" content="{{ .page.lang }}" />
+  {{- end }}
+  {{- if .page.ishome }}
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ .site.name }}" />
+    <meta name="twitter:title" content="{{ .site.name }}" />
+    <meta name="twitter:image" content="{{ .author.image }}" />
+  {{- else }}
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{ .page.title }}" />
+    <meta name="twitter:title" content="{{ .page.title }}" />
+    <meta name="twitter:image" content="{{ .page.image }}" />
+  {{- end }}
+  <meta name="description" content="{{ .page.summary }}" />
+  {{- with .page.keywords }}
+    <meta name="keywords" content="{{- . -}}" />
+  {{- end }}
+  <meta name="twitter:creator" content="@{{ .author.twitter }}" />
+  <meta property="og:url" content="{{ .page.permalink }}" />
+  <meta property="og:description" content="{{ .page.ummary }}" />
+  <meta property="og:image" content="{{ .page.image }}" />
+  <meta
+    name="twitter:card"
+    content="
+      {{- if $s.largeTwitterCard -}}
+      summary_large_image
+    {{- else -}}
+      summary
     {{- end -}}
-  {{- end -}}
-  {{- $metaKeywords = delimit $metaKeywords ", " -}}
-{{- end -}}
-{{- $keywords := "" -}}
-{{- with $.Site.Data.terms.keywords.default -}}
-  {{- $keywords = delimit $.Site.Data.terms.keywords.default "," -}}
-{{- end -}}
-{{- with $metaKeywords -}}
-  {{- $keywords = $metaKeywords -}}
-{{- end -}}
+    "
+  />
 
-
-<meta property="og:locale" content="{{ .Lang }}" />
-{{ range .Translations }}
-  <meta property="og:locale:alternate" content="{{ .Lang }}" />
-{{ end }}
-{{- if .IsHome }}
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="{{ $siteName }}" />
-  <meta name="twitter:title" content="{{ $siteName }}" />
-{{- else }}
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="{{ $title }}" />
-  <meta name="twitter:title" content="{{ $title }}" />
-{{- end }}
-<meta name="description" content="{{ $summary }}" />
-{{- with $keywords }}
-  <meta name="keywords" content="{{- $keywords -}}" />
-{{- end }}
-<meta property="og:url" content="{{ $permalink }}" />
-<meta property="og:description" content="{{ $summary }}" />
-<meta property="og:image" content="{{ $image }}" />
-<meta
-  name="twitter:card"
-  content="
-    {{- if $s.largeTwitterCard -}}
-    summary_large_image
-  {{- else -}}
-    summary
+  {{/* If this is a directory of posts */}}
+  {{ if eq .page.section $s.blogDir -}}
+    {{- $date := ( .page.date.Format "2006-02-01") -}}
+    {{- $date := (time .page.date) -}}
+    {{- $updated := (time .page.updated) -}}
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage":"{{ .page.permalink }}",
+        "name": "{{ .site.name }}",
+        "headline": {{ .page.title }},
+        "description": {{ .page.summary }},
+        "url": "{{ .page.permalink }}",
+        "datePublished": {{ .page.date  }},
+        {{ with $updated -}}
+        "dateModified": {{ . }},
+        {{- end }}
+        "author": {
+          "@type": "Person",
+          "name": "{{ .author.name }}",
+          "image": "{{ .author.image }}",
+          "email": "{{ .author.email }}"
+        },
+        "image":{
+          "@type":"ImageObject",
+          "url": "{{ .page.image }}"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "logo": {
+            "@type":"ImageObject",
+            "url": "{{ .site.logo }}"
+          },
+          "name": "{{ .site.name }}",
+          "license": "{{ .site.license }}"
+        }
+      }
+    </script>
   {{- end -}}
-  "
-/>
-<meta name="twitter:creator" content="@{{ $authorTwitter }}" />
-<meta name="twitter:image" content="{{ $image }}" />
-{{ if eq .Section $s.blogDir -}}
-  {{/* These dates refer to the section (list), not the individual post. */}}
-  {{- $date := ( .Date.Format "2006-02-01") -}}
-  {{- $date := (time .Date) -}}
-  {{- $updated := (time .Lastmod) -}}
+
+  {{/* If this is the home page */}}
+  {{- if .page.ishome -}}
   <script type="application/ld+json">
-    {
+  {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "{{ .site.name }}",
+      "url": "{{ .site.url }}",
+      "description": "{{ .site.desc }}",
+      "thumbnailUrl": "{{ .site.logo }}",
+      "license": "{{ .site.license }}"
+  }
+  </script> {{/* If this is an individual page or post */}}
+  {{- else -}}
+  <script type="application/ld+json">
+  {
       "@context": "http://schema.org",
       "@type": "BlogPosting",
-      "mainEntityOfPage":"{{ $permalink }}",
-      "name": "{{ $siteName }}",
-      "headline": {{ $title }},
-      "description": {{ $summary }},
-      "url": "{{ $permalink }}",
-      "datePublished": {{ $date  }},
-      {{ with $updated -}}
-      "dateModified": {{ . }},
+      "articleSection": "{{ .page.section }}",
+      "name": "{{ .page.title | safeJS }}",
+      "headline": "{{ .page.title | safeJS }}",
+      "description": "{{ .page.summary | safeJS }}",
+      "inLanguage": {{ with .page.lang }}{{ . }}{{ else }}{{ .site.lang}}{{ end }},
+      "isFamilyFriendly": "true",
+      "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "{{ .page.permalink }}"
+      },
+      "author" : {
+          "@type": "Person",
+          "name": "{{ .author.name }}",
+          "image": "{{ .author.image }}",
+          "email": "{{ .author.email }}"
+      },
+      "creator" : {
+          "@type": "Person",
+          "name": "{{ .author.name }}",
+          "image": "{{ .author.image }}",
+          "email": "{{ .author.email }}"
+      },
+      "accountablePerson" : {
+          "@type": "Person",
+          "name": "{{ .author.name }}",
+          "image": "{{ .author.image }}",
+          "email": "{{ .author.email }}"
+      },
+      "copyrightNotice" : "{{ .site.copyright }}",
+      "copyrightHolder" : "{{ .site.name }}",
+      "license": "{{ .site.license }}",
+      "copyrightYear" : "{{ .page.date.Format "2006" }}",
+      "dateCreated": "{{ .page.date.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
+      "datePublished": "{{ .page.date.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
+      {{ with .page.updated -}}
+      "dateModified": "{{ .Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
       {{- end }}
-      "author": {
-        "@type": "Person",
-        "name": "{{ $authorName }}",
-        "image": "{{ $authorImage }}",
-        "email": "{{ $authorEmail }}"
+      "publisher":{
+          "@type":"Organization",
+          "name": {{ .site.name }},
+          "url": {{ .site.url }},
+          "logo": {
+              "@type": "ImageObject",
+              "url": "{{ .site.logo }}",
+              "width": "32",
+              "height": "32"
+          }
       },
-      "image":{
-        "@type":"ImageObject",
-        "url": "{{ $image }}"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "logo": {
-          "@type":"ImageObject",
-          "url": "{{ $siteLogo }}"
-        },
-        "name": "{{ $siteName }}",
-        "license": "{{ $siteLicense }}"
-      }
-    }
+      "image": {{ with .page.image }}{{ . }}{{ else }}{{ .site.logo }}{{ end }},
+      "url" : "{{ .page.permalink }}",
+      "wordCount" : "{{ .page.wordcount }}",
+      "genre" : [ {{ .page.keywords }} ],
+      "keywords" : [ {{ .page.keywords }} ]
+  }
   </script>
-{{- end -}}
-{{- if .IsHome -}}
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "WebSite",
-    "name": "{{ $siteName }}",
-    "url": "{{ $siteURL }}",
-    "description": "{{ $siteDesc }}",
-    "thumbnailUrl": "{{ $siteLogo }}",
-    "license": "{{ $siteLicense }}"
-}
-</script>
-{{- else if .IsPage -}}
-  {{- $author :=  or (.Params.author) (.Site.Author.name) -}}
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "BlogPosting",
-    "articleSection": "{{ .Section }}",
-    "name": "{{ .Title | safeJS }}",
-    "headline": "{{ .Title | safeJS }}",
-    "description": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}{{if .IsPage}}{{ .Summary  }}{{ end }}{{ end }}",
-    "inLanguage": {{ $siteLang }},
-    "isFamilyFriendly": "true",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "{{ $permalink }}"
-    },
-    "author" : {
-        "@type": "Person",
-        "name": "{{ $authorName }}",
-        "image": "{{ $authorImage }}",
-        "email": "{{ $authorEmail }}"
-    },
-    "creator" : {
-        "@type": "Person",
-        "name": "{{ $authorName }}",
-        "image": "{{ $authorImage }}",
-        "email": "{{ $authorEmail }}"
-    },
-    "accountablePerson" : {
-        "@type": "Person",
-        "name": "{{ $authorName }}",
-        "image": "{{ $authorImage }}",
-        "email": "{{ $authorEmail }}"
-    },
-    "copyrightNotice" : "{{ $siteCopyright }}",
-    "copyrightHolder" : "{{ $siteName }}",
-    "license": "{{ $siteLicense }}",
-    "copyrightYear" : "{{ $date.Format "2006" }}",
-    "dateCreated": "{{ $date.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
-    "datePublished": "{{ $date.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
-    {{ with $updated -}}
-    "dateModified": "{{ .Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
-    {{- end }}
-    "publisher":{
-        "@type":"Organization",
-        "name": {{ $siteName }},
-        "url": {{ $siteURL }},
-        "logo": {
-            "@type": "ImageObject",
-            "url": "{{ $siteLogo }}",
-            "width": "32",
-            "height": "32"
-        }
-    },
-    "image": {{ with $image }}{{ $image }}{{ else}}{{ $siteLogo }}{{ end }},
-    "url" : "{{ $permalink }}",
-    "wordCount" : "{{ .WordCount }}",
-    "genre" : [ {{ $keywords }} ],
-    "keywords" : [ {{ $keywords }} ]
-}
-</script>
+  {{- end -}}
 {{- end -}}

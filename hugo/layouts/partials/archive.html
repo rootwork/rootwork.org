@@ -9,18 +9,6 @@
 {{ $s := .Site.Params }}
 {{ $pages := .Pages }}
 
-{{ $listTitle := .Title }}
-{{ if or (eq .Data.Plural "categories") (eq .Data.Plural "tags") }}
-  {{ $listTitle = printf "%s" "’" | printf "%s%s" $listTitle | printf "%s%s" " ‘" | printf "%s%s" .Data.Singular | printf "%s%s" "Posts with the " | printf "%s" }}
-{{ end }}
-{{ if or (eq .Data.Plural "year") (eq .Data.Plural "month") }}
-  {{ $listTitle = printf "%s"  $listTitle | printf "%s%s" "Posts from " | printf "%s" }}
-  {{ $listTitle = replace $listTitle "Archives: " "" }}
-{{ end }}
-{{ if eq .Data.Plural "series" }}
-  {{ $listTitle = printf "%s"  $listTitle | printf "%s%s" "Series: " | printf "%s" }}
-{{ end }}
-
 {{ if .IsHome }}
   {{ $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
 {{ end }}
@@ -71,7 +59,9 @@
         </div>
       </li>
     {{ else }}
-      <h1 class="list_title">{{ $listTitle }}</h1>
+      <h1 class="list_title">
+        {{- with partial "function/getVars" . -}}{{ .page.title }}{{- end -}}
+      </h1>
       {{ if gt .Paginator.PageNumber 1 }}
         <div class="list_title__pagenumber">
           Page
