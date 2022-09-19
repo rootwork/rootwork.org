@@ -1,9 +1,50 @@
+{{/* getVars:
+
+  Set commonly-used variables in a single nested map. Usage (with
+  double-braces):
+
+  { with partial "function/getVars" . }
+  { .site.lang }
+  { end }
+
+  Full listing:
+
+  site
+  - name
+  - url
+  - lang
+  - logo
+  - desc
+  - license
+  - copyright
+  page
+  - ishome
+  - permalink
+  - relpath
+  - section
+  - title
+  - date
+  - updated
+  - lang
+  - translations
+  - summary
+  - wordcount
+  - image
+  - keywords
+  author
+  - list
+  - name
+  - image
+  - email
+  - twitter
+*/}}
+
 {{- $s := .Site.Params -}}
 {{- $p := .Params -}}
 
 {{/* Site info */}}
 
-{{- $site := (dict
+{{- $site := dict "site" (dict
   "name"      .Site.Title
   "url"       .Site.BaseURL
   "lang"      (.Site.LanguageCode | default "en-us")
@@ -11,67 +52,76 @@
   "desc"      $s.description
   "license"   (T "license")
   "copyright" (T "all_rights")
-  "author"    (dict
-  "name"      .Site.Data.authors.default.name
-  "image"     (.Site.Data.authors.default.image | absURL)
-  "email"     .Site.Data.authors.default.email
-  "twitter"   .Site.Data.authors.default.twitter
-  )
   )
 -}}
 
-{{/* Post info */}}
+{{/* Page info */}}
 
-{{- $post_relpath := "" -}}
+{{- $page_relpath := "" -}}
 {{- if or $s.usePageBundles $p.usePageBundles -}}
-  {{- $post_relpath = .Page.RelPermalink -}}
+  {{- $page_relpath = .Page.RelPermalink -}}
 {{- end -}}
 {{ if eq $p.usePageBundles false -}}
-  {{- $post_relpath = "" -}}
+  {{- $page_relpath = "" -}}
 {{ end -}}
 
-{{- $post_updated := .Lastmod -}}
-{{- if eq .Date $post_updated -}}
-  {{- $post_updated = "" -}}
+{{- $page_updated := .Lastmod -}}
+{{- if eq .Date $page_updated -}}
+  {{- $page_updated = "" -}}
 {{- end -}}
 
-{{- $post_summary := truncate 200 .Summary -}}
-{{- with $p.description -}}
-  {{- $post_summary = truncate 200 . -}}
-{{- end -}}
-{{- if .IsHome -}}
-  {{- $post_summary = $s.description -}}
-  {{- with $p.description -}}
-    {{- $post_summary = . -}}
+{{- $page_title := .Title -}}
+{{- if .IsNode -}}
+  {{- if .IsHome -}}
+    {{- $page_title = .Site.Title -}}
+  {{- else -}}
+    {{- if or (eq .Data.Plural "categories") (eq .Data.Plural "tags") -}}
+      {{ $page_title = printf "%s" "’" | printf "%s%s" $page_title | printf "%s%s" " ‘" | printf "%s%s" .Data.Singular | printf "%s%s" "Posts with the " | printf "%s" }}
+    {{- end -}}
+    {{- if or (eq .Data.Plural "year") (eq .Data.Plural "month") -}}
+      {{- $page_title = printf "%s" $page_title | printf "%s%s" "Posts from " | printf "%s" -}}
+      {{- $page_title = replace $page_title "Archives: " "" -}}
+    {{- end -}}
+    {{- if eq .Data.Plural "series" -}}
+      {{- $page_title = printf "%s" $page_title | printf "%s%s" "Series: " | printf "%s" -}}
+    {{- end -}}
   {{- end -}}
 {{- end -}}
-{{- $post_summary = strings.Trim $post_summary "\n" -}}
 
-{{- $post_byline_authors := $site.author.name -}}
-{{- $post_byline_name    := $site.author.name -}}
-{{- $post_byline_image   := $site.author.image -}}
-{{- $post_byline_email   := $site.author.email -}}
-{{- $post_byline_twitter := $site.author.twitter -}}
-{{- with $p.author -}}
-  {{- $post_byline_authors = index $.Site.Data.authors . -}}
-  {{- $post_byline_name = $post_byline_authors.name -}}
-  {{- $post_byline_image = $post_byline_authors.image | absURL -}}
-  {{- $post_byline_email = $post_byline_authors.email -}}
-  {{- $post_byline_twitter = $post_byline_authors.twitter -}}
+{{- $page_summary := truncate 200 .Summary -}}
+{{- with $p.description -}}
+  {{- $page_summary = truncate 200 . -}}
 {{- end -}}
+{{- if .IsNode -}}
+  {{- if .IsHome -}}
+    {{- $page_summary = $s.description -}}
+    {{- with $p.description -}}
+      {{- $page_summary = . -}}
+    {{- end -}}
+  {{- else -}}
+    {{- if or (eq .Data.Plural "year") (eq .Data.Plural "month") -}}
+      {{- $page_summary = printf "%s" " on Rootwork.org" | printf "%s%s" $page_title | printf "%s" -}}
+    {{- else if eq .Data.Plural "series" -}}
+      {{- $page_summary = printf "%s" "’" | printf "%s%s" .Title | printf "%s%s" "Posts on Rootwork.org from the series ‘" | printf "%s" -}}
+    {{- else -}}
+      {{- $page_summary = printf "%s" .Title | printf "%s%s" "Recent posts on Rootwork.org about " | printf "%s" -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $page_summary = strings.Trim $page_summary "\n" -}}
 
-{{- $post_image := absURL $s.fallBackOgImage -}}
+{{- $page_image := absURL $s.fallBackOgImage -}}
 {{- with $p.featureImage -}}
-  {{- $fullpath := ( add $post_relpath . ) -}}
-  {{- $post_image = absURL $fullpath -}}
+  {{- $fullpath := ( add $page_relpath . ) -}}
+  {{- $page_image = absURL $fullpath -}}
 {{- end -}}
 {{- with $p.thumbnail -}}
-  {{- $fullpath := ( add $post_relpath . ) -}}
-  {{- $post_image = absURL $fullpath -}}
+  {{- $fullpath := ( add $page_relpath . ) -}}
+  {{- $page_image = absURL $fullpath -}}
 {{- end -}}
 {{- with $p.shareImage -}}
-  {{- $fullpath := ( add $post_relpath . ) -}}
-  {{- $post_image = absURL $fullpath -}}
+  {{- $fullpath := ( add $page_relpath . ) -}}
+  {{- $page_image = absURL $fullpath -}}
 {{- end -}}
 
 {{- $metaKeywords := slice -}}
@@ -93,32 +143,54 @@
   {{- end -}}
   {{- $metaKeywords = delimit $metaKeywords ", " -}}
 {{- end -}}
-{{- $post_keywords := "" -}}
+{{- $page_keywords := "" -}}
 {{- with $.Site.Data.terms.keywords.default -}}
-  {{- $post_keywords = delimit $.Site.Data.terms.keywords.default "," -}}
+  {{- $page_keywords = delimit $.Site.Data.terms.keywords.default ", " -}}
 {{- end -}}
 {{- with $metaKeywords -}}
-  {{- $post_keywords = $metaKeywords -}}
+  {{- $page_keywords = $metaKeywords -}}
 {{- end -}}
 
-{{- $post := (dict
-  "permalink" .Permalink
-  "relpath"   $post_relpath
-  "title"     .Title
-  "date"      .Date
-  "updated"   $post_updated
-  "summary"   $post_summary
-  "image"     $post_image
-  "keywords"  $post_keywords
-  "byline"    (dict
-  "authors"   $post_byline_authors
-  "name"      $post_byline_name
-  "image"     $post_byline_image
-  "email"     $post_byline_email
-  "twitter"   $post_byline_twitter
-  )
+{{- $page := dict "page" (dict
+  "ishome"       .IsHome
+  "permalink"    .Permalink
+  "relpath"      $page_relpath
+  "section"      .Section
+  "title"        $page_title
+  "date"         .Date
+  "updated"      $page_updated
+  "lang"         .Language.Lang
+  "translations" .Translations
+  "summary"      $page_summary
+  "wordcount"    .WordCount
+  "image"        $page_image
+  "keywords"     $page_keywords
   )
 -}}
 
-{{ $vars := merge $site $post }}
-{{ return $vars }}
+{{/* Author info */}}
+
+{{- $author_list    := .Site.Data.authors.default.name -}}
+{{- $author_name    := .Site.Data.authors.default.name -}}
+{{- $author_image   := (.Site.Data.authors.default.image | absURL) -}}
+{{- $author_email   := .Site.Data.authors.default.email -}}
+{{- $author_twitter := .Site.Data.authors.default.twitter -}}
+{{- with $p.author -}}
+  {{- $author_list = index $.Site.Data.authors . -}}
+  {{- $author_name = $author_list.name -}}
+  {{- $author_image = ($author_list.image | absURL) -}}
+  {{- $author_email = $author_list.email -}}
+  {{- $author_twitter = $author_list.twitter -}}
+{{- end -}}
+
+{{- $author := dict "author" (dict
+  "list"    $author_list
+  "name"    $author_name
+  "image"   $author_image
+  "email"   $author_email
+  "twitter" $author_twitter
+  )
+-}}
+
+{{- $vars := merge $site $page $author -}}
+{{- return $vars -}}
