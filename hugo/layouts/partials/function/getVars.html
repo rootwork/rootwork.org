@@ -23,11 +23,15 @@
   - relpath
   - section
   - title
+  - linkedtitle
   - date
   - updated
   - lang
   - translations
   - summary
+  - content
+  - html
+  - plain
   - wordcount
   - image
   - keywords
@@ -37,7 +41,16 @@
   - image
   - email
   - twitter
-*/}}
+  feed
+  - logo
+  - icon
+  - content
+  - html
+  - plain
+  - footer
+  - html
+  - plain
+  */}}
 
 {{- $s := .Site.Params -}}
 {{- $p := .Params -}}
@@ -88,6 +101,8 @@
   {{- end -}}
 {{- end -}}
 
+{{- $page_title_link := printf "%s" "</a>" | printf "%s%s" $page_title | printf "%s%s" "'>" | printf "%s%s" .Permalink | printf "%s%s" "<a href='" | printf "%s" -}}
+
 {{- $page_summary := truncate 200 .Summary -}}
 {{- with $p.description -}}
   {{- $page_summary = truncate 200 . -}}
@@ -109,6 +124,9 @@
   {{- end -}}
 {{- end -}}
 {{- $page_summary = strings.Trim $page_summary "\n" -}}
+
+{{- $page_content_html := strings.Trim .Content "\n" -}}
+{{- $page_content_plain := strings.Trim .Plain "\n" -}}
 
 {{- $page_image := absURL $s.fallBackOgImage -}}
 {{- with $p.featureImage -}}
@@ -157,11 +175,16 @@
   "relpath"      $page_relpath
   "section"      .Section
   "title"        $page_title
+  "linkedtitle"  $page_title_link
   "date"         .Date
   "updated"      $page_updated
   "lang"         .Language.Lang
   "translations" .Translations
   "summary"      $page_summary
+  "content"      (dict
+  "html"       $page_content_html
+  "plain"      $page_content_plain
+  )
   "wordcount"    .WordCount
   "image"        $page_image
   "keywords"     $page_keywords
@@ -192,5 +215,32 @@
   )
 -}}
 
-{{- $vars := merge $site $page $author -}}
+{{/* Feed info */}}
+
+{{- $feed_logo := $s.feedLogo | absURL -}}
+{{- $feed_icon := $s.feedIcon | absURL -}}
+
+{{- $feed_footer_html := printf "%s" "</small></p>" | printf "%s%s" ($s.feedFooter | markdownify) | printf "%s%s" " " | printf "%s%s" $page_title_link | printf "%s%s" "<hr /><p><small>" | printf "%s" -}}
+
+{{- $feed_footer_plain := printf "%s" .Permalink | printf "%s%s" ": " | printf "%s%s" ($s.feedFooter | markdownify | plainify) | printf "%s%s" "” " | printf "%s%s" $page_title | printf "%s%s" "\n\n“" | printf "%s" -}}
+
+{{- $feed_content_html := printf "%s" $feed_footer_html | printf "%s%s" $page_content_html | printf "%s" -}}
+
+{{- $feed_content_plain := printf "%s" $feed_footer_plain | printf "%s%s" $page_content_plain | printf "%s" -}}
+
+{{- $feed := dict "feed" (dict
+  "logo"    $feed_logo
+  "icon"    $feed_icon
+  "content" (dict
+  "html"  $feed_content_html
+  "plain" $feed_content_plain
+  )
+  "footer" (dict
+  "html"  $feed_footer_html
+  "plain" $feed_footer_html
+  )
+  )
+-}}
+
+{{- $vars := merge $site $page $author $feed -}}
 {{- return $vars -}}
