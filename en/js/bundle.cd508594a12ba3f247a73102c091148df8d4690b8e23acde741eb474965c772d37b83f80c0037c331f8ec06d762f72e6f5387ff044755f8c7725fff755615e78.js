@@ -1135,7 +1135,7 @@ function showDeadLink() {
     let span = createEl('span')
     link.appendChild(span)
     span.className = 'permalink'
-    span.textContent = 'Permalink'
+    span.textContent = ' Permalink'
 
     // Append URL fragment
     id = node.getAttribute('id')
