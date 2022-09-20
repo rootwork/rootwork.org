@@ -2,15 +2,16 @@
 
 {{- $s := .Site.Params -}}
 {{- $p := .Params -}}
+
 {{- $site := partial "function/vars/getSite" . -}}
 {{- $context := partial "function/vars/getContext" . -}}
+{{- $path := partial "function/vars/getPath" . -}}
 {{- $title := partial "function/vars/getTitle" . -}}
+{{- $author := partial "function/vars/getAuthor" . -}}
+{{- $date := partial "function/vars/getDate" . -}}
 {{- $image := partial "function/vars/getImage" . -}}
 {{- $summary := partial "function/vars/getSummary" . -}}
 {{- $keywords := partial "function/vars/getKeywords" . -}}
-{{- $author := partial "function/vars/getAuthor" . -}}
-{{- $path := partial "function/vars/getPath" . -}}
-{{- $date := partial "function/vars/getDate" . -}}
 {{- $content := partial "function/vars/getContent" . -}}
 
 
