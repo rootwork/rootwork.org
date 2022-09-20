@@ -1,190 +1,74 @@
 {{- $s := .Site.Params -}}
-
-{{/* Site info */}}
-{{- $siteName := .Site.Title -}}
-{{- $siteURL := .Site.BaseURL -}}
-{{- $siteLang := .Site.LanguageCode | default "en-us" -}}
-{{- $siteAuthor := .Site.Data.authors.default.name -}}
-{{- $siteAuthorImage := .Site.Data.authors.default.image | absURL -}}
-{{- $siteAuthorEmail := .Site.Data.authors.default.email -}}
-{{- $siteAuthorTwitter := .Site.Data.authors.default.twitter -}}
-{{- $siteURL := .Site.BaseURL -}}
-{{- $siteLogo := $s.Logo | absURL -}}
-{{- $siteFeedLogo := $s.feedLogo | absURL -}}
-{{- $siteFeedIcon := $s.feedIcon | absURL -}}
-{{- $siteFeedFooter := $s.feedFooter -}}
-{{- $siteDesc := $s.description -}}
-{{- $siteLicense := T "license" -}}
-{{- $siteCopyright := T "all_rights" -}}
+{{- $site := partial "function/vars/getSite" . -}}
+{{- $feed := partial "function/vars/getFeedInfo" . -}}
+{{- $author := partial "function/vars/getAuthor" . -}}
 
 {{/* Determine pages to include */}}
-{{- $pages := (where .RegularPages "Type" "in" site.Params.mainSections) -}}
-{{- if (eq .Kind "home") -}}
-  {{- $pages = (where site.RegularPages "Type" "in" site.Params.mainSections) -}}
-{{- end -}}
-{{- $pages = where $pages ".Params.disable_feed" "!=" true -}}
-{{- $pages = where $pages ".Params.unlisted" "!=" true -}}
-{{- $limit := .Site.Config.Services.RSS.Limit -}}
-{{- if ge $limit 1 -}}
-{{- $pages = $pages | first $limit -}}
-{{- end -}}
+{{- $pages := partial "function/getFeedPages" . -}}
 
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ $siteURL }}" xml:lang="{{ $siteLang }}">
-  <title>{{ $siteName }}</title>
-  {{- with $siteDesc }}
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ $site.url }}" xml:lang="{{ $site.lang }}">
+  <title>{{ $site.name }}</title>
+  {{- with $site.desc }}
   <subtitle>{{ . }}</subtitle>
   {{- end }}
-  <id>{{ $siteURL }}</id>
+  <id>{{ $site.url }}</id>
   <author>
-    <name>{{ $siteName }}</name>
-    <uri>{{ $siteURL }}</uri>
+    <name>{{ $author.site.name }}, {{ $site.name }}</name>
+    <uri>{{ $site.url }}</uri>
   </author>
   <generator>Hugo - gohugo.io</generator>
   <rights>
-    {{- T "copyright" | markdownify }}
-    {{- with $s.since }} {{ . }}&#8211;{{ end }}{{ now.Format "2006"}}, {{ $siteName }}. {{ T "all_rights" | markdownify -}}
+    {{- $site.license }}
+    {{ $site.since }}&#8211;{{ now.Format "2006"}}, {{ $site.name }}. {{ $site.copyright -}}
   </rights>
-  {{- with $siteFeedLogo }}
+  {{- with $feed.icon }}
   <icon>{{ . }}</icon>
   {{- end }}
-  {{- with $siteFeedIcon}}
+  {{- with $feed.logo }}
   <logo>{{ . }}</logo>
   {{- end }}
   <updated>{{ dateFormat "2006-01-02T15:04:05Z" now.UTC | safeHTML }}</updated>
   {{- with .OutputFormats.Get "ATOM" }}
-  {{ printf `<link rel="self" type="%s" href="%s" hreflang="%s"/>` .MediaType.Type .Permalink $siteLang | safeHTML }}
+  {{ printf `<link rel="self" type="%s" href="%s" hreflang="%s"/>` .MediaType.Type .Permalink $site.lang | safeHTML }}
   {{- end }}
   {{- range .AlternativeOutputFormats }}
-  {{ printf `<link rel="alternate" type="%s" href="%s" hreflang="%s"/>` .MediaType.Type .Permalink $siteLang | safeHTML }}
+  {{ printf `<link rel="alternate" type="%s" href="%s" hreflang="%s"/>` .MediaType.Type .Permalink $site.lang | safeHTML }}
   {{- end }}
 
   {{- range $pages -}}
     {{- $p := .Params -}}
-    {{/* Post permalink */}}
-    {{- $relpath := "" -}}
-    {{- if or $s.usePageBundles $p.usePageBundles -}}
-      {{- $relpath = .Page.RelPermalink -}}
-    {{- end -}}
-    {{ if eq $p.usePageBundles false -}}
-      {{- $relpath = "" -}}
-    {{ end -}}
-    {{- $permalink := .Permalink -}}
-
-    {{/* Post title */}}
-    {{- $title := .Title -}}
-    {{- $linkedTitle := printf "%s" "</a>" | printf "%s%s" $title | printf "%s%s" "'>" | printf "%s%s" $permalink | printf "%s%s" "<a href='" | printf "%s" -}}
-
-    {{/* Post date */}}
-    {{- $date := .Date -}}
-    {{- $updated := .Lastmod -}}
-    {{- if eq $date $updated -}}
-      {{- $updated = "" -}}
-    {{- end -}}
-
-    {{/* Post summary */}}
-    {{- $summary := truncate 200 .Summary -}}
-    {{- with $p.description -}}
-      {{- $summary = truncate 200 . -}}
-    {{- end -}}
-    {{- if .IsHome -}}
-      {{- $summary = $s.description -}}
-      {{- with $p.description -}}
-        {{- $summary = . -}}
-      {{- end -}}
-    {{- end -}}
-    {{- $summary = strings.Trim $summary "\n" -}}
-
-    {{/* Post content */}}
-    {{- $content := strings.Trim .Content "\n" -}}
-    {{- $content = printf "%s" "</small></p>" | printf "%s%s" ($siteFeedFooter | markdownify) | printf "%s%s" " " | printf "%s%s" $linkedTitle | printf "%s%s" "<hr /><p><small>" | printf "%s%s" $content | printf "%s" -}}
-    {{- $plainContent := strings.Trim .Plain "\n" -}}
-    {{- $plainContent = printf "%s" $permalink | printf "%s%s" ": " | printf "%s%s" ($siteFeedFooter | markdownify | plainify) | printf "%s%s" "” " | printf "%s%s" $title | printf "%s%s" "\n\n“" | printf "%s%s" $plainContent | printf "%s" -}}
-
-    {{/* Post byline */}}
-    {{- $author := $siteAuthor -}}
-    {{- $authorName := $siteAuthor -}}
-    {{- $authorImage := $siteAuthorImage -}}
-    {{- $authorEmail := $siteAuthorEmail -}}
-    {{- $authorTwitter := $siteAuthorTwitter -}}
-    {{- with $p.author -}}
-      {{- $author = index $.Site.Data.authors . -}}
-      {{- $authorName = $author.name -}}
-      {{- $authorImage = $author.image | absURL -}}
-      {{- $authorEmail = $author.email -}}
-      {{- $authorTwitter = $author.twitter -}}
-    {{- end -}}
-
-    {{/* Post images */}}
-    {{- $image := absURL $s.fallBackOgImage -}}
-    {{- with $p.featureImage -}}
-      {{- $fullpath := ( add $relpath . ) -}}
-      {{- $image = absURL $fullpath -}}
-    {{- end -}}
-    {{- with $p.thumbnail -}}
-      {{- $fullpath := ( add $relpath . ) -}}
-      {{- $image = absURL $fullpath -}}
-    {{- end -}}
-    {{- with $p.shareImage -}}
-      {{- $fullpath := ( add $relpath . ) -}}
-      {{- $image = absURL $fullpath -}}
-    {{- end -}}
-
-    {{/* Post keywords */}}
-    {{- $metaKeywords := slice -}}
-    {{- with $p.categories -}}
-      {{- $metaKeywords = $metaKeywords | append . -}}
-    {{- end -}}
-    {{- with $p.tags -}}
-      {{- $metaKeywords = $metaKeywords | append . -}}
-    {{- end -}}
-    {{- with $p.keywords -}}
-      {{- $metaKeywords = $metaKeywords | append . -}}
-    {{- end -}}
-    {{- with $metaKeywords -}}
-      {{/* Add meta keywords based on tags and categories. */}}
-      {{- range $key, $value := $.Site.Data.terms.keywords.additional -}}
-        {{- if in $metaKeywords $key -}}
-          {{- $metaKeywords = $metaKeywords | append $value -}}
-        {{- end -}}
-      {{- end -}}
-      {{- $metaKeywords = delimit $metaKeywords ", " -}}
-    {{- end -}}
-    {{- $keywords := "" -}}
-    {{- with $.Site.Data.terms.keywords.default -}}
-      {{- $keywords = delimit $.Site.Data.terms.keywords.default "," -}}
-    {{- end -}}
-    {{- with $metaKeywords -}}
-      {{- $keywords = $metaKeywords -}}
-    {{- end }}
+    {{- $title := partial "function/vars/getTitle" . -}}
+    {{- $path := partial "function/vars/getPath" . -}}
+    {{- $date := partial "function/vars/getDate" . -}}
+    {{- $author = partial "function/vars/getAuthor" . -}}
+    {{- $content := partial "function/vars/getContent" . -}}
   <entry>
-    <title>{{ $title }}</title>
+    <title>{{ $title.plain }}</title>
     <author>
-      <name>{{ $authorName }}</name>
-      <uri>{{ $siteURL }}</uri>
+      <name>{{ $author.page.name }}</name>
+      <uri>{{ $site.url }}</uri>
     </author>
-    <id>{{ $permalink }}</id>
-    {{- if .IsTranslated -}}
-    {{ range .Translations }}
+    <id>{{ $path.permalink }}</id>
+    {{- if $content.istranslated -}}
+    {{- range $content.translations }}
     <link rel="alternate" href="{{ .Permalink }}" hreflang="{{ .Language.Lang }}"/>
     {{- end -}}
-    {{ end }}
-    {{/* Adding a random number of seconds+millisecs to ensure no two dates are exactly the same. */}}
-    {{- if eq $updated "" -}}
-      {{- $updated = $date -}}
-    {{- end -}}
-    {{- $updated = $updated.Unix -}}
-    {{- $seed := int ( printf "0x%.8s" (md5 (readFile .File.Path))) -}}
-    {{- $rnd := mod (add (mul 13 $seed) 97) 400 -}}
-    {{- $updated = add $updated $rnd -}}
-    <updated>{{ dateFormat "2006-01-02T15:04:05Z" $updated | safeHTML }}</updated>
-    <published>{{ dateFormat "2006-01-02T15:04:05Z" $date.UTC | safeHTML }}</published>
-    {{- $content = replace $content "\n" " " -}}
-    {{/* Fix HTML entities that get mangled and invalidate the feed. */}}
-    {{- $content = replace $content "é" "&eacute;" -}}
-    {{- $content = replace $content "í" "&iacute;" -}}
-    {{- $content = replace $content "ï" "&iuml;" -}}
-    <content type="html">{{ $content }}</content>
+    {{- end }}
+    <updated>
+      {{- with $date.updated -}}
+        {{- dateFormat "2006-01-02T15:04:05Z" . | safeHTML -}}
+      {{- else -}}
+        {{- dateFormat "2006-01-02T15:04:05Z" $date.published | safeHTML -}}
+      {{- end -}}
+    </updated>
+    <published>{{ dateFormat "2006-01-02T15:04:05Z" $date.published | safeHTML }}</published>
+    <content type="html">
+      {{- $content.feed.html -}}
+      {{- htmlEscape "<hr /><p><small>" | safeHTML -}}
+      {{- htmlEscape $title.linked | safeHTML }} {{ $s.feedFooter | markdownify | htmlEscape | safeHTML -}}
+      {{- htmlEscape "</small></p>" | safeHTML -}}
+    </content>
   </entry>
   {{- end }}
 </feed>
