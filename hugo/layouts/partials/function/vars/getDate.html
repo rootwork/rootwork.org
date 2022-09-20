@@ -1,0 +1,21 @@
+{{- $title := partial "function/vars/getTitle" . -}}
+
+{{- $published := .Date -}}
+
+{{- $updated := .Lastmod -}}
+{{- if eq .Date $updated -}}
+  {{- $updated = "" -}}
+{{- else -}}
+  {{/* Adding a random number of seconds+millisecs to ensure no two dates are exactly the same, required for feed validation. */}}
+  {{- $updated = .Lastmod.Unix -}}
+  {{- $seed := int ( printf "0x%.8s" (md5 ($title.linked))) -}}
+  {{- $rnd := mod (add (mul 13 $seed) 97) 400 -}}
+  {{- $updated = add $updated $rnd -}}
+{{- end -}}
+
+{{- $date := dict
+  "published" $published
+  "updated"   $updated
+-}}
+
+{{- return $date -}}

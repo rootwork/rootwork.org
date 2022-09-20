@@ -1,0 +1,28 @@
+{{- $s := .Site.Params -}}
+
+{{- $title := .Title -}}
+{{- if .IsNode -}}
+  {{- if .IsHome -}}
+    {{- $title = .Site.Title -}}
+  {{- else -}}
+    {{- if or (eq .Data.Plural "categories") (eq .Data.Plural "tags") -}}
+      {{ $title = printf "%s" "’" | printf "%s%s" $title | printf "%s%s" " ‘" | printf "%s%s" .Data.Singular | printf "%s%s" "Posts with the " | printf "%s" }}
+    {{- end -}}
+    {{- if or (eq .Data.Plural "year") (eq .Data.Plural "month") -}}
+      {{- $title = printf "%s" $title | printf "%s%s" "Posts from " | printf "%s" -}}
+      {{- $title = replace $title "Archives: " "" -}}
+    {{- end -}}
+    {{- if eq .Data.Plural "series" -}}
+      {{- $title = printf "%s" $title | printf "%s%s" "Series: " | printf "%s" -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $title_link := printf "%s" "</a>" | printf "%s%s" $title | printf "%s%s" "'>" | printf "%s%s" .Permalink | printf "%s%s" "<a href='" | printf "%s" -}}
+
+{{- $title := dict
+  "plain"  $title
+  "linked" $title_link
+-}}
+
+{{- return $title -}}

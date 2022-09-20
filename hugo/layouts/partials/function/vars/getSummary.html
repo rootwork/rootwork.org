@@ -1,0 +1,27 @@
+{{- $s := .Site.Params -}}
+{{- $p := .Params -}}
+{{- $title := partial "function/vars/getTitle" . -}}
+
+{{- $summary := truncate 200 .Summary -}}
+{{- with $p.description -}}
+  {{- $summary = truncate 200 . -}}
+{{- end -}}
+{{- if .IsNode -}}
+  {{- if .IsHome -}}
+    {{- $summary = $s.description -}}
+    {{- with $p.description -}}
+      {{- $summary = . -}}
+    {{- end -}}
+  {{- else -}}
+    {{- if or (eq .Data.Plural "year") (eq .Data.Plural "month") -}}
+      {{- $summary = printf "%s" " on Rootwork.org" | printf "%s%s" $title.plain | printf "%s" -}}
+    {{- else if eq .Data.Plural "series" -}}
+      {{- $summary = printf "%s" "’" | printf "%s%s" .Title | printf "%s%s" "Posts on Rootwork.org from the series ‘" | printf "%s" -}}
+    {{- else -}}
+      {{- $summary = printf "%s" .Title | printf "%s%s" "Recent posts on Rootwork.org about " | printf "%s" -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $summary = strings.Trim $summary "\n" -}}
+
+{{- return $summary -}}

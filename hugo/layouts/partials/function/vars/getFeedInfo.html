@@ -1,0 +1,11 @@
+{{- $s := .Site.Params -}}
+
+{{- $feed_logo := $s.feedLogo | absURL -}}
+{{- $feed_icon := $s.feedIcon | absURL -}}
+
+{{- $feed := dict
+  "logo" $feed_logo
+  "icon" $feed_icon
+-}}
+
+{{- return $feed -}}

@@ -1,0 +1,19 @@
+{{- $s := .Site.Params -}}
+{{- $p := .Params -}}
+{{- $path := partial "function/vars/getPath" . -}}
+
+{{- $image := absURL $s.fallBackOgImage -}}
+{{- with $p.featureImage -}}
+  {{- $fullpath := ( add $path.relative . ) -}}
+  {{- $image = absURL $fullpath -}}
+{{- end -}}
+{{- with $p.thumbnail -}}
+  {{- $fullpath := ( add $path.relative . ) -}}
+  {{- $image = absURL $fullpath -}}
+{{- end -}}
+{{- with $p.shareImage -}}
+  {{- $fullpath := ( add $path.relative . ) -}}
+  {{- $image = absURL $fullpath -}}
+{{- end -}}
+
+{{- return $image -}}

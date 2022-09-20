@@ -1,0 +1,51 @@
+{{/* getContent:
+
+  Pass the .Content var through some formatters while preserving its page-
+  specific variations (such as RSS).
+*/}}
+
+{{- $s := .Site.Params -}}
+{{- $title := partial "function/vars/getTitle" . -}}
+
+{{/* Regular content */}}
+
+{{- $html := .Content -}}
+{{- $html = strings.Trim $html "\n" -}}
+
+{{- $plain := .Plain -}}
+{{- $plain := strings.Trim $plain "\n" -}}
+
+{{/* Feed content */}}
+
+{{- $feed_html := .Content -}}
+{{- $feed_html = strings.Trim $html "\n" -}}
+{{/* Fix HTML entities that get mangled and invalidate the feed. */}}
+{{- $feed_html = replace $feed_html "é" "&eacute;" -}}
+{{- $feed_html = replace $feed_html "í" "&iacute;" -}}
+{{- $feed_html = replace $feed_html "ï" "&iuml;" -}}
+
+{{- $feed_footer_html := printf "%s" "</small></p>" | printf "%s%s" ($s.feedFooter | markdownify) | printf "%s%s" " " | printf "%s%s" $title.linked | printf "%s%s" "<hr /><p><small>" | printf "%s" -}}
+
+{{- $feed_html := printf "%s" $feed_footer_html | printf "%s%s" $feed_html | printf "%s" -}}
+
+{{- $feed_plain := .Plain -}}
+{{- $feed_plain := strings.Trim $plain "\n" -}}
+
+{{- $feed_footer_plain := printf "%s" .Permalink | printf "%s%s" ": " | printf "%s%s" ($s.feedFooter | markdownify | plainify) | printf "%s%s" "” " | printf "%s%s" $title.plain | printf "%s%s" "\n\n“" | printf "%s" -}}
+
+{{- $feed_plain := printf "%s" $feed_footer_plain | printf "%s%s" $feed_plain | printf "%s" -}}
+
+{{- $content := dict
+  "lang"         .Language.Lang
+  "istranslated" .IsTranslated
+  "translations" .Translations
+  "wordcount"    .WordCount
+  "html"  $html
+  "plain" $plain
+  "feed"  (dict
+  "html"  $feed_html
+  "plain" $feed_plain
+  )
+-}}
+
+{{- return $content -}}

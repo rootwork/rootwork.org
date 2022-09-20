@@ -1,0 +1,40 @@
+{{- $p := .Params -}}
+
+{{- $site_list    := .Site.Data.authors.default.name -}}
+{{- $site_name    := .Site.Data.authors.default.name -}}
+{{- $site_image   := (.Site.Data.authors.default.image | absURL) -}}
+{{- $site_email   := .Site.Data.authors.default.email -}}
+{{- $site_twitter := .Site.Data.authors.default.twitter -}}
+
+{{- $author_list    := $site_list -}}
+{{- $author_name    := $site_name -}}
+{{- $author_image   := $site_image -}}
+{{- $author_email   := $site_email -}}
+{{- $author_twitter := $site_twitter -}}
+
+{{- with $p.author -}}
+  {{- $author_list = index $.Site.Data.authors . -}}
+  {{- $author_name = $author_list.name -}}
+  {{- $author_image = ($author_list.image | absURL) -}}
+  {{- $author_email = $author_list.email -}}
+  {{- $author_twitter = $author_list.twitter -}}
+{{- end -}}
+
+{{- $author := dict
+  "site" (dict
+  "list"    $site_list
+  "name"    $site_name
+  "image"   $site_image
+  "email"   $site_email
+  "twitter" $site_twitter
+  )
+  "page" (dict
+  "list"    $author_list
+  "name"    $author_name
+  "image"   $author_image
+  "email"   $author_email
+  "twitter" $author_twitter
+  )
+  -}}
+
+{{- return $author -}}

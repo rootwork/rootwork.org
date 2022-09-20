@@ -1,0 +1,31 @@
+{{- $s := .Site.Params -}}
+{{- $p := .Params -}}
+
+{{- $metaKeywords := slice -}}
+{{- with $p.categories -}}
+  {{- $metaKeywords = $metaKeywords | append . -}}
+{{- end -}}
+{{- with $p.tags -}}
+  {{- $metaKeywords = $metaKeywords | append . -}}
+{{- end -}}
+{{- with $p.keywords -}}
+  {{- $metaKeywords = $metaKeywords | append . -}}
+{{- end -}}
+{{- with $metaKeywords -}}
+  {{/* Add meta keywords based on tags and categories. */}}
+  {{- range $key, $value := $.Site.Data.terms.keywords.additional -}}
+    {{- if in $metaKeywords $key -}}
+      {{- $metaKeywords = $metaKeywords | append $value -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $metaKeywords = delimit $metaKeywords ", " -}}
+{{- end -}}
+{{- $keywords := "" -}}
+{{- with $.Site.Data.terms.keywords.default -}}
+  {{- $keywords = delimit $.Site.Data.terms.keywords.default ", " -}}
+{{- end -}}
+{{- with $metaKeywords -}}
+  {{- $keywords = $metaKeywords -}}
+{{- end -}}
+
+{{- return $keywords -}}

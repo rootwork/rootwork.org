@@ -1,0 +1,19 @@
+{{- $s := .Site.Params -}}
+{{- $p := .Params -}}
+
+{{- $relpath := "" -}}
+{{- if or $s.usePageBundles $p.usePageBundles -}}
+  {{- $relpath = .Page.RelPermalink -}}
+{{- end -}}
+{{ if eq $p.usePageBundles false -}}
+  {{- $relpath = "" -}}
+{{ end -}}
+
+{{- $permalink := .Permalink -}}
+
+{{- $path := dict
+  "relative"  $relpath
+  "permalink" $permalink
+-}}
+
+{{- return $path -}}

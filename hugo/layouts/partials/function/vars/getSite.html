@@ -1,0 +1,14 @@
+{{- $s := .Site.Params -}}
+
+{{- $site := dict
+  "name"      .Site.Title
+  "url"       .Site.BaseURL
+  "lang"      (.Site.LanguageCode | default "en-us")
+  "logo"      ($s.Logo | absURL)
+  "desc"      $s.description
+  "license"   (T "license")
+  "copyright" (T "all_rights")
+  "since"     $s.since
+-}}
+
+{{- return $site -}}
