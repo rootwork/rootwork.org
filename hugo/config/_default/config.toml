@@ -112,3 +112,9 @@ month = "month"
 
   [mediaTypes."application/jf2feed+json"]
     suffixes = ["json"]
+
+# Always minify, but exclude feed data
+# See: https://jdheyburn.co.uk/blog/who-goes-blogging-7-hugo-minify-rss-code-indentation-fix/
+[minify]
+  disableXML = true
+  minifyOutput = true
