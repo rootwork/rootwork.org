@@ -57,7 +57,12 @@
       <author>{{ . }}{{ with $author.page.name }} ({{.}}){{end}}</author>
       {{- end }}
       <guid>{{ $path.permalink }}</guid>
-      <description>{{ $content.html }}</description>
+      <description>
+        {{- $content.feed.html -}}
+        {{- htmlEscape "<hr /><p><small>" | safeHTML -}}
+        {{- htmlEscape $title.linked | safeHTML }} {{ $s.feedFooter | markdownify | htmlEscape | safeHTML -}}
+        {{- htmlEscape "</small></p>" | safeHTML -}}
+      </description>
     </item>
     {{ end }}
   </channel>
