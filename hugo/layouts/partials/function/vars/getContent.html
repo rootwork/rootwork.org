@@ -24,16 +24,8 @@
 {{- $feed_html = replace $feed_html "í" "&iacute;" -}}
 {{- $feed_html = replace $feed_html "ï" "&iuml;" -}}
 
-{{- $feed_footer_html := printf "%s" "</small></p>" | printf "%s%s" ($s.feedFooter | markdownify) | printf "%s%s" " " | printf "%s%s" $title.linked | printf "%s%s" "<hr /><p><small>" | printf "%s" -}}
-
-{{- $feed_html := printf "%s" $feed_footer_html | printf "%s%s" $feed_html | printf "%s" -}}
-
 {{- $feed_plain := .Plain -}}
 {{- $feed_plain := strings.Trim $plain "\n" -}}
-
-{{- $feed_footer_plain := printf "%s" .Permalink | printf "%s%s" ": " | printf "%s%s" ($s.feedFooter | markdownify | plainify) | printf "%s%s" "” " | printf "%s%s" $title.plain | printf "%s%s" "\n\n“" | printf "%s" -}}
-
-{{- $feed_plain := printf "%s" $feed_footer_plain | printf "%s%s" $feed_plain | printf "%s" -}}
 
 {{- $content := dict
   "lang"         .Language.Lang
