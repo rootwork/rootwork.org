@@ -18,7 +18,7 @@
   {{- end -}}
 {{- end -}}
 
-{{- $title_link := printf "%s" "</a>" | printf "%s%s" $title | printf "%s%s" "'>" | printf "%s%s" .Permalink | printf "%s%s" "<a href='" | printf "%s" -}}
+{{- $title_link := printf "%s" "</a>" | printf "%s%s" $title | printf "%s%s" `">` | printf "%s%s" .Permalink | printf "%s%s" `<a href="` | printf "%s" -}}
 
 {{- $title := dict
   "plain"  $title
