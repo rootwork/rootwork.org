@@ -2,18 +2,42 @@
 {{- $p := .Params -}}
 {{- $path := partial "function/vars/getPath" . -}}
 
-{{- $image := absURL $s.fallBackOgImage -}}
+{{- $image_file := $s.fallBackOgImage -}}
+{{- $image_relpath := "" -}}
+{{- $image_abspath := absURL $image_file -}}
+
 {{- with $p.featureImage -}}
-  {{- $fullpath := ( add $path.relative . ) -}}
-  {{- $image = absURL $fullpath -}}
+  {{- $image_file = . -}}
+  {{- $image_relpath = ( add $path.relative $image_file ) -}}
+  {{- $image_abspath = absURL $image_relpath -}}
 {{- end -}}
+
 {{- with $p.thumbnail -}}
-  {{- $fullpath := ( add $path.relative . ) -}}
-  {{- $image = absURL $fullpath -}}
+  {{- $image_file = . -}}
+  {{- $image_relpath = ( add $path.relative $image_file ) -}}
+  {{- $image_abspath = absURL $image_relpath -}}
 {{- end -}}
+
 {{- with $p.shareImage -}}
-  {{- $fullpath := ( add $path.relative . ) -}}
-  {{- $image = absURL $fullpath -}}
+  {{- $image_file = . -}}
+  {{- $image_relpath = ( add $path.relative $image_file ) -}}
+  {{- $image_abspath = absURL $image_relpath -}}
 {{- end -}}
+
+{{- $image_slice := split $image_file "." -}}
+{{- $image_extension := index $image_slice 1 -}}
+{{- $image_mimetype := printf "%s" $image_extension | printf "%s%s" "image/" | printf "%s" -}}
+
+{{- if eq $image_extension "jpg" -}}
+  {{- $image_mimetype = "image/jpeg" -}}
+{{- end -}}
+
+{{- $image := dict
+  "file"      $image_file
+  "abspath"   $image_abspath
+  "relpath"   $image_relpath
+  "extension" $image_extension
+  "mimetype"  $image_mimetype
+-}}
 
 {{- return $image -}}

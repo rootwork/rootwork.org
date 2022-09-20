@@ -31,7 +31,7 @@
   <meta property="og:type" content="article" />
   <meta property="og:title" content="{{ $title.plain }}" />
   <meta name="twitter:title" content="{{ $title.plain }}" />
-  <meta name="twitter:image" content="{{ $image }}" />
+  <meta name="twitter:image" content="{{ $image.abspath }}" />
   <meta name="twitter:creator" content="@{{ $author.page.twitter }}" />
 {{- end }}
 
@@ -45,7 +45,7 @@
 
 <meta property="og:url" content="{{ $path.permalink }}" />
 <meta property="og:description" content="{{ $summary }}" />
-<meta property="og:image" content="{{ $image }}" />
+<meta property="og:image" content="{{ $image.abspath }}" />
 <meta
   name="twitter:card"
   content="
@@ -85,7 +85,7 @@
       },
       "image":{
         "@type":"ImageObject",
-        "url": "{{ $image }}"
+        "url": "{{ $image.abspath }}"
       },
       "publisher": {
         "@type": "Organization",
@@ -167,7 +167,7 @@
             "height": "32"
         }
     },
-    "image": {{ with $image }}{{ . }}{{ else }}{{ $site.logo }}{{ end }},
+    "image": {{ with $image.abspath }}{{ . }}{{ else }}{{ $site.logo }}{{ end }},
     "url" : "{{ $path.permalink }}",
     "wordCount" : "{{ $content.wordcount }}",
     "genre" : [ {{ $keywords }} ],

@@ -42,6 +42,7 @@
     {{- $path := partial "function/vars/getPath" . -}}
     {{- $date := partial "function/vars/getDate" . -}}
     {{- $author = partial "function/vars/getAuthor" . -}}
+    {{- $image := partial "function/vars/getImage" . -}}
     {{- $content := partial "function/vars/getContent" . -}}
   <entry>
     <title>{{ $title.plain }}</title>
@@ -52,7 +53,7 @@
     <id>{{ $path.permalink }}</id>
     {{- if $content.istranslated -}}
     {{- range $content.translations }}
-    <link rel="alternate" href="{{ .Permalink }}" hreflang="{{ .Language.Lang }}"/>
+    <link rel="alternate" href="{{ .Permalink }}" hreflang="{{ .Language.Lang }}" />
     {{- end -}}
     {{- end }}
     <updated>
@@ -63,6 +64,7 @@
       {{- end -}}
     </updated>
     <published>{{ dateFormat "2006-01-02T15:04:05Z" $date.published | safeHTML }}</published>
+    <link rel="enclosure" href="{{ $image.abspath }}" type="image/{{ $image.extension }}" title="{{ $title.plain }}" />
     <content type="html">
       {{- $content.feed.html -}}
       {{- htmlEscape "<hr /><p><small>" | safeHTML -}}

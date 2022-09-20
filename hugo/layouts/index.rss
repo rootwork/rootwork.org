@@ -48,6 +48,7 @@
       {{- $path := partial "function/vars/getPath" . -}}
       {{- $date := partial "function/vars/getDate" . -}}
       {{- $author = partial "function/vars/getAuthor" . -}}
+      {{- $image := partial "function/vars/getImage" . -}}
       {{- $content := partial "function/vars/getContent" . -}}
     <item>
       <title>{{ $title.plain }}</title>
@@ -57,6 +58,7 @@
       <author>{{ . }}{{ with $author.page.name }} ({{.}}){{end}}</author>
       {{- end }}
       <guid>{{ $path.permalink }}</guid>
+      <enclosure url="{{ $image.abspath }}" type="{{ $image.mimetype }}" length="0" />
       <description>
         {{- $content.feed.html -}}
         {{- htmlEscape "<hr /><p><small>" | safeHTML -}}

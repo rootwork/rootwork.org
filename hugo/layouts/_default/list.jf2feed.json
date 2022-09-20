@@ -37,7 +37,7 @@
       "text" $contentPlain
     )
     "category" $keywords
-    "photo" $image
+    "photo" $image.abspath
     "author" (dict
       "type" "card"
       "url" $site.url
