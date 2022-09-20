@@ -60,7 +60,7 @@
       </li>
     {{ else }}
       <h1 class="list_title">
-        {{- with partial "function/getVars" . -}}{{ .page.title }}{{- end -}}
+        {{- with partial "function/vars/getTitle" . -}}{{ .plain }}{{- end -}}
       </h1>
       {{ if gt .Paginator.PageNumber 1 }}
         <div class="list_title__pagenumber">

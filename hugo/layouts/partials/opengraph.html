@@ -2,155 +2,175 @@
 
 {{- $s := .Site.Params -}}
 {{- $p := .Params -}}
+{{- $site := partial "function/vars/getSite" . -}}
+{{- $context := partial "function/vars/getContext" . -}}
+{{- $title := partial "function/vars/getTitle" . -}}
+{{- $image := partial "function/vars/getImage" . -}}
+{{- $summary := partial "function/vars/getSummary" . -}}
+{{- $keywords := partial "function/vars/getKeywords" . -}}
+{{- $author := partial "function/vars/getAuthor" . -}}
+{{- $path := partial "function/vars/getPath" . -}}
+{{- $date := partial "function/vars/getDate" . -}}
+{{- $content := partial "function/vars/getContent" . -}}
 
-{{- with partial "function/getVars" . -}}
-  <meta property="og:locale" content="{{ .site.lang }}" />
-  {{- range .page.translations }}
-    <meta property="og:locale:alternate" content="{{ .page.lang }}" />
-  {{- end }}
-  {{- if .page.ishome }}
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="{{ .site.name }}" />
-    <meta name="twitter:title" content="{{ .site.name }}" />
-    <meta name="twitter:image" content="{{ .author.image }}" />
-  {{- else }}
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="{{ .page.title }}" />
-    <meta name="twitter:title" content="{{ .page.title }}" />
-    <meta name="twitter:image" content="{{ .page.image }}" />
-  {{- end }}
-  <meta name="description" content="{{ .page.summary }}" />
-  {{- with .page.keywords }}
-    <meta name="keywords" content="{{- . -}}" />
-  {{- end }}
-  <meta name="twitter:creator" content="@{{ .author.twitter }}" />
-  <meta property="og:url" content="{{ .page.permalink }}" />
-  <meta property="og:description" content="{{ .page.ummary }}" />
-  <meta property="og:image" content="{{ .page.image }}" />
-  <meta
-    name="twitter:card"
-    content="
-      {{- if $s.largeTwitterCard -}}
-      summary_large_image
-    {{- else -}}
-      summary
-    {{- end -}}
-    "
-  />
 
-  {{/* If this is a directory of posts */}}
-  {{ if eq .page.section $s.blogDir -}}
-    {{- $date := ( .page.date.Format "2006-02-01") -}}
-    {{- $date := (time .page.date) -}}
-    {{- $updated := (time .page.updated) -}}
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "BlogPosting",
-        "mainEntityOfPage":"{{ .page.permalink }}",
-        "name": "{{ .site.name }}",
-        "headline": {{ .page.title }},
-        "description": {{ .page.summary }},
-        "url": "{{ .page.permalink }}",
-        "datePublished": {{ .page.date  }},
-        {{ with $updated -}}
-        "dateModified": {{ . }},
-        {{- end }}
-        "author": {
-          "@type": "Person",
-          "name": "{{ .author.name }}",
-          "image": "{{ .author.image }}",
-          "email": "{{ .author.email }}"
-        },
-        "image":{
-          "@type":"ImageObject",
-          "url": "{{ .page.image }}"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "logo": {
-            "@type":"ImageObject",
-            "url": "{{ .site.logo }}"
-          },
-          "name": "{{ .site.name }}",
-          "license": "{{ .site.license }}"
-        }
-      }
-    </script>
-  {{- end -}}
+<meta property="og:locale" content="{{ $site.lang }}" />
 
-  {{/* If this is the home page */}}
-  {{- if .page.ishome -}}
-  <script type="application/ld+json">
-  {
-      "@context": "http://schema.org",
-      "@type": "WebSite",
-      "name": "{{ .site.name }}",
-      "url": "{{ .site.url }}",
-      "description": "{{ .site.desc }}",
-      "thumbnailUrl": "{{ .site.logo }}",
-      "license": "{{ .site.license }}"
-  }
-  </script> {{/* If this is an individual page or post */}}
+{{- range .Translations }}
+  <meta property="og:locale:alternate" content="{{ .Language.Lang }}" />
+{{- end }}
+
+{{- if $context.ishome }}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ $site.name }}" />
+  <meta name="twitter:title" content="{{ $site.name }}" />
+  <meta name="twitter:image" content="{{ $site.logo }}" />
+  <meta name="twitter:creator" content="@{{ $author.site.twitter }}" />
+{{- else }}
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{ $title.plain }}" />
+  <meta name="twitter:title" content="{{ $title.plain }}" />
+  <meta name="twitter:image" content="{{ $image }}" />
+  <meta name="twitter:creator" content="@{{ $author.page.twitter }}" />
+{{- end }}
+
+
+<meta name="description" content="{{ $summary }}" />
+
+{{- with $keywords }}
+  <meta name="keywords" content="{{- . -}}" />
+{{- end }}
+
+
+<meta property="og:url" content="{{ $path.permalink }}" />
+<meta property="og:description" content="{{ $summary }}" />
+<meta property="og:image" content="{{ $image }}" />
+<meta
+  name="twitter:card"
+  content="
+    {{- if $s.largeTwitterCard -}}
+    summary_large_image
   {{- else -}}
+    summary
+  {{- end -}}
+  "
+/>
+
+{{/* If this is a directory of posts */}}
+{{ if eq $context.section $s.blogDir -}}
+  {{- $published := (time $date.published) -}}
+  {{- $updated := "" -}}
+  {{- with $date.updated -}}
+    {{- $updated := (time $date.updated) -}}
+  {{- end -}}
   <script type="application/ld+json">
-  {
+    {
       "@context": "http://schema.org",
       "@type": "BlogPosting",
-      "articleSection": "{{ .page.section }}",
-      "name": "{{ .page.title | safeJS }}",
-      "headline": "{{ .page.title | safeJS }}",
-      "description": "{{ .page.summary | safeJS }}",
-      "inLanguage": {{ with .page.lang }}{{ . }}{{ else }}{{ .site.lang}}{{ end }},
-      "isFamilyFriendly": "true",
-      "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "{{ .page.permalink }}"
-      },
-      "author" : {
-          "@type": "Person",
-          "name": "{{ .author.name }}",
-          "image": "{{ .author.image }}",
-          "email": "{{ .author.email }}"
-      },
-      "creator" : {
-          "@type": "Person",
-          "name": "{{ .author.name }}",
-          "image": "{{ .author.image }}",
-          "email": "{{ .author.email }}"
-      },
-      "accountablePerson" : {
-          "@type": "Person",
-          "name": "{{ .author.name }}",
-          "image": "{{ .author.image }}",
-          "email": "{{ .author.email }}"
-      },
-      "copyrightNotice" : "{{ .site.copyright }}",
-      "copyrightHolder" : "{{ .site.name }}",
-      "license": "{{ .site.license }}",
-      "copyrightYear" : "{{ .page.date.Format "2006" }}",
-      "dateCreated": "{{ .page.date.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
-      "datePublished": "{{ .page.date.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
-      {{ with .page.updated -}}
-      "dateModified": "{{ .Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
+      "mainEntityOfPage":"{{ $path.permalink }}",
+      "name": "{{ $site.name }}",
+      "headline": {{ $title.plain }},
+      "description": {{ $summary }},
+      "url": "{{ $path.permalink }}",
+      "datePublished": {{ $published }},
+      {{ with $updated -}}
+      "dateModified": {{ . }},
       {{- end }}
-      "publisher":{
-          "@type":"Organization",
-          "name": {{ .site.name }},
-          "url": {{ .site.url }},
-          "logo": {
-              "@type": "ImageObject",
-              "url": "{{ .site.logo }}",
-              "width": "32",
-              "height": "32"
-          }
+      "author": {
+        "@type": "Person",
+        "name": "{{ $author.page.name }}",
+        "image": "{{ $author.page.image }}",
+        "email": "{{ $author.page.email }}"
       },
-      "image": {{ with .page.image }}{{ . }}{{ else }}{{ .site.logo }}{{ end }},
-      "url" : "{{ .page.permalink }}",
-      "wordCount" : "{{ .page.wordcount }}",
-      "genre" : [ {{ .page.keywords }} ],
-      "keywords" : [ {{ .page.keywords }} ]
-  }
+      "image":{
+        "@type":"ImageObject",
+        "url": "{{ $image }}"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "logo": {
+          "@type":"ImageObject",
+          "url": "{{ $site.logo }}"
+        },
+        "name": "{{ $site.name }}",
+        "license": "{{ $site.license }}"
+      }
+    }
   </script>
-  {{- end -}}
+{{- end -}}
+
+{{/* If this is the home page */}}
+{{- if $context.ishome -}}
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "{{ $site.name }}",
+    "url": "{{ $site.url }}",
+    "description": "{{ $site.desc }}",
+    "thumbnailUrl": "{{ $site.logo }}",
+    "license": "{{ $site.license }}"
+}
+</script>
+{{- else -}}
+  {{/* If this is an individual page or post */}}
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "{{ $context.section }}",
+    "name": "{{ $title.plain | safeJS }}",
+    "headline": "{{ $title.plain | safeJS }}",
+    "description": "{{ $summary | safeJS }}",
+    "inLanguage": {{ with $content.lang }}{{ . }}{{ else }}{{ $site.lang }}{{ end }},
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ $path.permalink }}"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": "{{ $author.page.name }}",
+        "image": "{{ $author.page.image }}",
+        "email": "{{ $author.page.email }}"
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": "{{ $author.page.name }}",
+        "image": "{{ $author.page.image }}",
+        "email": "{{ $author.page.email }}"
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": "{{ $author.page.name }}",
+        "image": "{{ $author.page.image }}",
+        "email": "{{ $author.page.email }}"
+    },
+    "copyrightNotice" : "{{ $site.copyright }}",
+    "copyrightHolder" : "{{ $site.name }}",
+    "license": "{{ $site.license }}",
+    "copyrightYear" : "{{ dateFormat "2006" $date.published }}",
+    "dateCreated": "{{ dateFormat "2006-01-02T15:04:05.00Z" $date.published | safeHTML }}",
+    "datePublished": "{{ dateFormat "2006-01-02T15:04:05.00Z" $date.published | safeHTML }}",
+    {{ with $date.updated -}}
+    "dateModified": "{{ dateFormat "2006-01-02T15:04:05.00Z" . | safeHTML }}",
+    {{- end }}
+    "publisher":{
+        "@type":"Organization",
+        "name": {{ $site.name }},
+        "url": {{ $site.url }},
+        "logo": {
+            "@type": "ImageObject",
+            "url": "{{ $site.logo }}",
+            "width": "32",
+            "height": "32"
+        }
+    },
+    "image": {{ with $image }}{{ . }}{{ else }}{{ $site.logo }}{{ end }},
+    "url" : "{{ $path.permalink }}",
+    "wordCount" : "{{ $content.wordcount }}",
+    "genre" : [ {{ $keywords }} ],
+    "keywords" : [ {{ $keywords }} ]
+}
+</script>
 {{- end -}}
