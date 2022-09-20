@@ -1,7 +1,7 @@
 ---
 title: Privacy policy
 author: ivan
-date: '2000-01-01'
+date: '2022-09-01'
 effective_date: 'Sept. 1, 2022' # Used verbatim in the post
 
 slug: 'privacy'

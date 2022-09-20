@@ -1,7 +1,7 @@
 ---
 title: About Ivan Boothe & Rootwork.org
 author: ivan
-date: '2000-01-01'
+date: '2022-02-25'
 
 slug: 'about'
 aliases:
