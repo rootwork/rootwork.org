@@ -1,3 +1,9 @@
+{{/* getKeywords:
+
+  Retrieve keywords for metadata from current page based on frontmatter, site
+  settings, and related keywords set in site data.
+*/}}
+
 {{- $s := .Site.Params -}}
 {{- $p := .Params -}}
 
@@ -12,7 +18,6 @@
   {{- $metaKeywords = $metaKeywords | append . -}}
 {{- end -}}
 {{- with $metaKeywords -}}
-  {{/* Add meta keywords based on tags and categories. */}}
   {{- range $key, $value := $.Site.Data.terms.keywords.additional -}}
     {{- if in $metaKeywords $key -}}
       {{- $metaKeywords = $metaKeywords | append $value -}}

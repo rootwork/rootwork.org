@@ -1,3 +1,9 @@
+{{/* getContext:
+
+  Retrieve page information. Used primarily within ranges that otherwise would
+  lose context.
+*/}}
+
 {{- $context := dict
   "ishome"  .IsHome
   "section" .Section

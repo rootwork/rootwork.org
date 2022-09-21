@@ -1,3 +1,9 @@
+{{/* getAuthor:
+
+  Retrieve various images from the current page and/or site settings depending
+  on values and context.
+*/}}
+
 {{- $s := .Site.Params -}}
 {{- $p := .Params -}}
 {{- $path := partial "function/vars/getPath" . -}}

@@ -1,3 +1,9 @@
+{{/* getSummary:
+
+  Retrieve summary information and format it for different contexts. Summaries
+  are based on page frontmatter (if extant) and fall back to site configuration.
+*/}}
+
 {{- $s := .Site.Params -}}
 {{- $p := .Params -}}
 {{- $title := partial "function/vars/getTitle" . -}}
