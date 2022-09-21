@@ -6,6 +6,7 @@
 
 {{- $s := .Site.Params -}}
 {{- $title := partial "function/vars/getTitle" . -}}
+{{- $path := partial "function/vars/getPath" . -}}
 
 {{/* Regular content */}}
 
@@ -17,8 +18,9 @@
 
 {{/* Feed content */}}
 
-{{- $feed_html := .Content -}}
-{{- $feed_html = strings.Trim $html "\n" -}}
+{{- $feed_html := strings.Trim .Content "\n" -}}
+{{- $feed_html = partial "function/absurlify" $feed_html -}}
+
 {{/* Fix HTML entities that get mangled and invalidate the feed. */}}
 {{- $feed_html = replace $feed_html "é" "&eacute;" -}}
 {{- $feed_html = replace $feed_html "í" "&iacute;" -}}
