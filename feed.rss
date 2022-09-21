@@ -15,7 +15,7 @@
     <webMaster>info@rootwork.org (Rootwork.org)</webMaster>
     <copyright>CC-BY-NC-SA-4.0
       2008&#8211;2022, Rootwork.org. Feel free to use or republish with credit!</copyright>
-    <lastBuildDate>Tue, 20 Sep 2022 08:37:00 +0000</lastBuildDate><atom:link href="https://rootwork.github.io/rootwork.org/feed.rss" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Wed, 21 Sep 2022 23:57:54 +0000</lastBuildDate><atom:link href="https://rootwork.github.io/rootwork.org/feed.rss" rel="self" type="application/rss+xml" /><item>
       <title>Refreshing after a long absence</title>
       <link>https://rootwork.github.io/rootwork.org/blog/2022/09/refreshing-after-long-absence/</link>
       <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
@@ -23,12 +23,12 @@
       <guid>https://rootwork.github.io/rootwork.org/blog/2022/09/refreshing-after-long-absence/</guid>
       <enclosure url="https://rootwork.github.io/rootwork.org/blog/2022/09/refreshing-after-long-absence/refreshing-may_flickr-blavandmaster.jpg" type="image/jpeg" length="0" />
       <description>&lt;p&gt;It&amp;rsquo;s been
-&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2014/04/join-me-devsigner-conference-portland-may-designers-developers-join-forces/&#34;&gt;quite a while&lt;/a&gt;
+&lt;a href=&#34;https://rootwork.github.io/blog/2014/04/join-me-devsigner-conference-portland-may-designers-developers-join-forces/&#34;&gt;quite a while&lt;/a&gt;
 since I posted on this blog.&lt;/p&gt;
 &lt;p&gt;I got out of the habit of posting through a combination of factors:
 &lt;a href=&#34;https://twitter.com/rootwork&#34;&gt;social media&lt;/a&gt; (as with everyone), shifting job
 responsibilities, and adjusting my priorites to spend some of the time I used to
-devote to work and work-adjacent things — like blogging — to
+devote to work and work-adjacent things &amp;mdash; like blogging &amp;mdash; to
 &lt;a href=&#34;https://www.bellsofthecascades.org/about&#34;&gt;other pursuits&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;nonprofit-communications&#34;&gt;Nonprofit communications&lt;/h3&gt;
 &lt;p&gt;In 2014 I was primarily a freelancer working on Drupal websites. I had been
@@ -49,7 +49,7 @@ to a wider audience at the NTC.)&lt;/p&gt;
 &lt;p&gt;While my work at FOR was fulfilling, they didn&amp;rsquo;t always have the budget to
 support a full-time job for me. So in 2016 I joined
 &lt;a href=&#34;https://colab.coop/&#34;&gt;CoLab Cooperative&lt;/a&gt; as a senior Drupal developer. I had a
-great time doing styleguide–driven development and component-based design
+great time doing styleguide&amp;ndash;driven development and component-based design
 like &lt;a href=&#34;https://patternlab.io/&#34;&gt;PatternLab&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;As has been true throughout my career, I continued to center social justice as
 the framing of my work. With CoLab&amp;rsquo;s support, I spoke on &amp;ldquo;Doing good with Drupal
@@ -57,18 +57,26 @@ and beyond&amp;rdquo; at the 2018
 &lt;a href=&#34;https://pnwdrupalsummit.org&#34;&gt;Pacific Northwest Drupal Summit&lt;/a&gt;:&lt;/p&gt;
 
   
-    &lt;p
+    &lt;div
+      
+        style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow:
+        hidden;&#34;
       
     &gt;
-      &lt;a href=&#34;https://www.youtube-nocookie.com/embed/gtVmPMqnsvI&#34; title=&#34;Recording of &amp;#39;Doing good with Drupal and beyond&amp;#39; from the 2018 Pacific Northwest Drupal Summit&#34;
-        &gt;Watch this video on YouTube&lt;/a
-      &gt;
-    &lt;/p&gt;
+      &lt;iframe
+        src=&#34;https://www.youtube-nocookie.com/embed/gtVmPMqnsvI&#34;
+        
+          style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+          border:0;&#34;
+        allowfullscreen
+        title=&#34;Recording of &#39;Doing good with Drupal and beyond&#39; from the 2018 Pacific Northwest Drupal Summit&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
   
 &lt;p&gt;(You can see
-&lt;a href=&#34;https://www.linkedin.com/in/ivanboothe/details/experience/1103947024/multiple-media-viewer/?profileId=ACoAAABl33EBS2mPp7MzOR78g03Gb0rtewlEVQw&amp;amp;treasuryMediaId=1527283177501&#34;&gt;the slides on their own on LinkedIn&lt;/a&gt;.)&lt;/p&gt;
+&lt;a href=&#34;https://www.linkedin.com/in/ivanboothe/details/experience/1103947024/multiple-media-viewer/?profileId=ACoAAABl33EBS2mPp7MzOR78g03Gb0rtewlEVQw&amp;treasuryMediaId=1527283177501&#34;&gt;the slides on their own on LinkedIn&lt;/a&gt;.)&lt;/p&gt;
 &lt;h3 id=&#34;old-websites-and-new-tools&#34;&gt;Old websites and new tools&lt;/h3&gt;
-&lt;p&gt;Way back in the dark ages of the Internet — 1996! — I had built a
+&lt;p&gt;Way back in the dark ages of the Internet &amp;mdash; 1996! &amp;mdash; I had built a
 website for my parents&#39;
 &lt;a href=&#34;https://www.titaniumringsforever.com/&#34;&gt;titanium wedding ring business&lt;/a&gt;. That
 website continued to be updated, including moving onto Drupal Commerce in its
@@ -80,9 +88,9 @@ full-time as CIO. A little bit of my work involves web development, but a lot of
 it is more along the lines of customer management and communications. It&amp;rsquo;s a
 field I&amp;rsquo;ve had to learn a lot about, but it&amp;rsquo;s also given me time and tools to
 broaden my technology experience.&lt;/p&gt;
-&lt;p&gt;Consequently, while I&amp;rsquo;m still a part of the Drupal community — I
+&lt;p&gt;Consequently, while I&amp;rsquo;m still a part of the Drupal community &amp;mdash; I
 volunteered as a contribution mentor at
-&lt;a href=&#34;https://events.drupal.org/portland2022&#34;&gt;DrupalCon Portland 2022&lt;/a&gt; — I&amp;rsquo;ve
+&lt;a href=&#34;https://events.drupal.org/portland2022&#34;&gt;DrupalCon Portland 2022&lt;/a&gt; &amp;mdash; I&amp;rsquo;ve
 spent the last few years learning a whole bunch of new skills. Some of those
 include: &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; (the static site generator now powering
 rootwork.org),
@@ -94,7 +102,7 @@ Linux as my daily workstation.&lt;/p&gt;
 way, and as a result I have several projects spanning some of these areas that
 I&amp;rsquo;m excited to share in coming blog posts.&lt;/p&gt;
 &lt;h3 id=&#34;things-that-go-together&#34;&gt;Things that go together&lt;/h3&gt;
-&lt;p&gt;As my &lt;a href=&#34;https://rootwork.github.io/rootwork.org/about/&#34;&gt;about page&lt;/a&gt; (now) says, I have:&lt;/p&gt;
+&lt;p&gt;As my &lt;a href=&#34;https://rootwork.github.io/about/&#34;&gt;about page&lt;/a&gt; (now) says, I have:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;worked as a
 &lt;a href=&#34;https://web.archive.org/web/20080131080116/http://www.genocideintervention.net/&#34;&gt;human rights advocate&lt;/a&gt;,
@@ -111,7 +119,7 @@ and used
 &lt;/blockquote&gt;
 &lt;p&gt;All of that went alongside (and was often funded by) my technological work. But
 as in the past, I&amp;rsquo;ll continue to write about
-&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/&#34;&gt;the intersections between activism and technology&lt;/a&gt;,
+&lt;a href=&#34;https://rootwork.github.io/blog/2014/03/online-advocacy-learn-community-organizing/&#34;&gt;the intersections between activism and technology&lt;/a&gt;,
 both the positive and negative. I hope you&amp;rsquo;ll join me for the journey!&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2022/09/refreshing-after-long-absence/&#34;&gt;Refreshing after a long absence&lt;/a&gt; originally published on &lt;a href=&#34;https://rootwork.org&#34;&gt;Rootwork.org&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -139,9 +147,9 @@ until this Friday, May 2!&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/04/join-me-devsigner-conference-portland-may-designers-developers-join-forces/devsigner2014logo.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/04/join-me-devsigner-conference-portland-may-designers-developers-join-forces/devsigner2014logo.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/04/join-me-devsigner-conference-portland-may-designers-developers-join-forces/devsigner2014logo.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/04/join-me-devsigner-conference-portland-may-designers-developers-join-forces/devsigner2014logo.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -152,7 +160,7 @@ until this Friday, May 2!&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;454&#34;
         height=&#34;188&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/04/join-me-devsigner-conference-portland-may-designers-developers-join-forces/devsigner2014logo.png&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2014/04/join-me-devsigner-conference-portland-may-designers-developers-join-forces/devsigner2014logo.png&#34;
       
       
         title=&#34;Devsigner: Portland, OR, May 23-25&#34;
@@ -207,10 +215,10 @@ Nonprofit Technology Conference, March 13-15 in Washington, DC.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Update, March 6, 2015: Today I gave a similar presentation as part of the 2015
 Nonprofit Technology Conference&amp;rsquo;s Ignite talks. You can
 &lt;a href=&#34;https://www.slideshare.net/rootwork/the-technology-of-social-change&#34;&gt;view the Slideshare&lt;/a&gt;
-or &lt;a href=&#34;2015-03-06_technology-social-change.pdf&#34;&gt;download the PDF&lt;/a&gt;, but the slides
+or &lt;a href=&#34;https://rootwork.github.io/rootwork.org/2015-03-06_technology-social-change.pdf&#34;&gt;download the PDF&lt;/a&gt;, but the slides
 are simply images.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;In many ways this is a retelling of
-&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2010/04/what-online-activism-can-learn-from-community-organizing/&#34;&gt;an article I wrote back in 2010&lt;/a&gt;
+&lt;a href=&#34;https://rootwork.github.io/blog/2010/04/what-online-activism-can-learn-from-community-organizing/&#34;&gt;an article I wrote back in 2010&lt;/a&gt;
 about online and offline organizing, with a more visual focus. If you prefer
 words to images, the original might serve you better.&lt;/p&gt;
 &lt;h3 id=&#34;online-advocacy-and-community-organizing&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Online advocacy and community organizing&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;My background is in community organizing and social movement theory, and that&amp;rsquo;s
@@ -222,9 +230,9 @@ what I&amp;rsquo;d like to talk a little bit about today.&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0031280.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0031280.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0031280.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0031280.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -235,7 +243,7 @@ what I&amp;rsquo;d like to talk a little bit about today.&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;1000&#34;
         height=&#34;563&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0031280.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0031280.jpg&#34;
       
       
         title=&#34; &#34;
@@ -254,9 +262,9 @@ two lenses in which we view advocacy and activism.&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0041280.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0041280.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0041280.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0041280.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -267,7 +275,7 @@ two lenses in which we view advocacy and activism.&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;1000&#34;
         height=&#34;563&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0041280.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0041280.jpg&#34;
       
       
         title=&#34; &#34;
@@ -287,9 +295,9 @@ racist public policy.&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0051280.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0051280.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0051280.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0051280.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -300,7 +308,7 @@ racist public policy.&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;1000&#34;
         height=&#34;563&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0051280.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0051280.jpg&#34;
       
       
         title=&#34; &#34;
@@ -320,9 +328,9 @@ square to reclaim their democracy.&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0061280.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0061280.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0061280.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0061280.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -333,7 +341,7 @@ square to reclaim their democracy.&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;1000&#34;
         height=&#34;563&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0061280.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0061280.jpg&#34;
       
       
         title=&#34; &#34;
@@ -353,9 +361,9 @@ movement-building work that pushes change forward.&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0071280.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0071280.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0071280.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0071280.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -366,7 +374,7 @@ movement-building work that pushes change forward.&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;1000&#34;
         height=&#34;563&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0071280.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0071280.jpg&#34;
       
       
         title=&#34; &#34;
@@ -384,9 +392,9 @@ movement-building work that pushes change forward.&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0081280.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0081280.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0081280.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0081280.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -397,7 +405,7 @@ movement-building work that pushes change forward.&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;1000&#34;
         height=&#34;563&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0081280.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0081280.jpg&#34;
       
       
         title=&#34; &#34;
@@ -416,9 +424,9 @@ organizing.&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0091280.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0091280.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0091280.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0091280.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -429,7 +437,7 @@ organizing.&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;1000&#34;
         height=&#34;563&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0091280.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0091280.jpg&#34;
       
       
         title=&#34; &#34;
@@ -449,9 +457,9 @@ planning. Our work for change can draw on that history and experience.&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0101280.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0101280.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0101280.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0101280.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -462,7 +470,7 @@ planning. Our work for change can draw on that history and experience.&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;1000&#34;
         height=&#34;563&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0101280.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0101280.jpg&#34;
       
       
         title=&#34; &#34;
@@ -480,9 +488,9 @@ planning. Our work for change can draw on that history and experience.&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0111280.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0111280.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0111280.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0111280.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -493,7 +501,7 @@ planning. Our work for change can draw on that history and experience.&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;1000&#34;
         height=&#34;563&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0111280.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0111280.jpg&#34;
       
       
         title=&#34; &#34;
@@ -513,9 +521,9 @@ communications, and the campaign strategy I just mentioned.&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0121280.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0121280.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0121280.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0121280.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -526,7 +534,7 @@ communications, and the campaign strategy I just mentioned.&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;1000&#34;
         height=&#34;563&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0121280.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0121280.jpg&#34;
       
       
         title=&#34; &#34;
@@ -546,9 +554,9 @@ the radar even though it&amp;rsquo;s crucial to keeping our campaigns afloat.&lt
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0131280.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0131280.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0131280.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0131280.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -559,7 +567,7 @@ the radar even though it&amp;rsquo;s crucial to keeping our campaigns afloat.&lt
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;1000&#34;
         height=&#34;563&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0131280.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0131280.jpg&#34;
       
       
         title=&#34; &#34;
@@ -579,9 +587,9 @@ things that fertilize our movements.&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0141280.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0141280.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0141280.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0141280.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -592,7 +600,7 @@ things that fertilize our movements.&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;1000&#34;
         height=&#34;563&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0141280.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0141280.jpg&#34;
       
       
         title=&#34; &#34;
@@ -612,9 +620,9 @@ technical knowledge can be more easily measured.&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0151280.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0151280.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0151280.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0151280.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -625,7 +633,7 @@ technical knowledge can be more easily measured.&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;1000&#34;
         height=&#34;563&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0151280.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0151280.jpg&#34;
       
       
         title=&#34; &#34;
@@ -644,9 +652,9 @@ men in the &amp;ldquo;important&amp;rdquo; and visible roles.&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0161280.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0161280.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0161280.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0161280.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -657,7 +665,7 @@ men in the &amp;ldquo;important&amp;rdquo; and visible roles.&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;1000&#34;
         height=&#34;563&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0161280.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0161280.jpg&#34;
       
       
         title=&#34; &#34;
@@ -676,9 +684,9 @@ unacknowledged power through gatekeeping.&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0171280.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0171280.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0171280.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0171280.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -689,7 +697,7 @@ unacknowledged power through gatekeeping.&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;1000&#34;
         height=&#34;563&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0171280.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0171280.jpg&#34;
       
       
         title=&#34; &#34;
@@ -708,9 +716,9 @@ the website for you.&amp;rdquo;&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0181280.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0181280.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0181280.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0181280.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -721,7 +729,7 @@ the website for you.&amp;rdquo;&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;1000&#34;
         height=&#34;563&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0181280.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0181280.jpg&#34;
       
       
         title=&#34; &#34;
@@ -744,9 +752,9 @@ allow staff to unionize, or become a worker-owned collective.&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0191280.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0191280.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0191280.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0191280.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -757,7 +765,7 @@ allow staff to unionize, or become a worker-owned collective.&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;1000&#34;
         height=&#34;563&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0191280.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0191280.jpg&#34;
       
       
         title=&#34; &#34;
@@ -777,9 +785,9 @@ not expect them to work for us just because they made people some money.&lt;/p&g
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0201280.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0201280.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0201280.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0201280.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -790,7 +798,7 @@ not expect them to work for us just because they made people some money.&lt;/p&g
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;1000&#34;
         height=&#34;563&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0201280.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0201280.jpg&#34;
       
       
         title=&#34; &#34;
@@ -801,7 +809,7 @@ not expect them to work for us just because they made people some money.&lt;/p&g
 &lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;In closing, my one piece of advice is in addition to all the
-&lt;a href=&#34;https://rootwork.github.io/rootwork.org/tags/twitter/&#34;&gt;Twitter&lt;/a&gt; guides and fundraising how-tos in your tool belt,
+&lt;a href=&#34;https://rootwork.github.io/tags/twitter/&#34;&gt;Twitter&lt;/a&gt; guides and fundraising how-tos in your tool belt,
 explore some movement history. Whether it&amp;rsquo;s &lt;em&gt;Poor People&amp;rsquo;s Movements&lt;/em&gt; about work
 against economic injustice, &lt;em&gt;I&amp;rsquo;ve Got the Light of Freedom&lt;/em&gt; or &lt;em&gt;Southern Labor
 and Black Civil Rights&lt;/em&gt; about the black-led freedom struggle&lt;/p&gt;
@@ -812,9 +820,9 @@ and Black Civil Rights&lt;/em&gt; about the black-led freedom struggle&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0211280.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0211280.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0211280.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0211280.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -825,7 +833,7 @@ and Black Civil Rights&lt;/em&gt; about the black-led freedom struggle&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;1000&#34;
         height=&#34;563&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0211280.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014004-ntc-b-0211280.jpg&#34;
       
       
         title=&#34; &#34;
@@ -861,7 +869,7 @@ to tell they were related in the CSS.&lt;/p&gt;
 &lt;p&gt;My stylesheets were like that too, because strategies for writing CSS had barely
 altered since the days when it was used to change the colors of the scroll bars
 in Internet Explorer. Luckily, in the past couple of years both
-&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/ninjas-your-code-drupalcon-portland-sass-extends-placeholders&#34;&gt;CSS architecture and CSS preprocessors came into their own&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://rootwork.github.io/blog/2013/05/ninjas-your-code-drupalcon-portland-sass-extends-placeholders&#34;&gt;CSS architecture and CSS preprocessors came into their own&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;
   &lt;figure&gt;
   &lt;picture&gt;
@@ -869,9 +877,9 @@ in Internet Explorer. Luckily, in the past couple of years both
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/we-need-talk-about-your-stylesheets-interview-jonathan-snook-drupalcon-portland/jonathansnook.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/we-need-talk-about-your-stylesheets-interview-jonathan-snook-drupalcon-portland/jonathansnook.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/we-need-talk-about-your-stylesheets-interview-jonathan-snook-drupalcon-portland/jonathansnook.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/we-need-talk-about-your-stylesheets-interview-jonathan-snook-drupalcon-portland/jonathansnook.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -882,7 +890,7 @@ in Internet Explorer. Luckily, in the past couple of years both
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;66&#34;
         height=&#34;100&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/we-need-talk-about-your-stylesheets-interview-jonathan-snook-drupalcon-portland/jonathansnook.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/we-need-talk-about-your-stylesheets-interview-jonathan-snook-drupalcon-portland/jonathansnook.jpg&#34;
       
       
         title=&#34; &#34;
@@ -897,7 +905,7 @@ by &lt;strong&gt;&lt;a href=&#34;https://snook.ca/&#34;&gt;Jonathan Snook&lt;/a&
 Portland. I&amp;rsquo;m really excited to get the opportunity to have Jonathan speak, not
 only because of my personally well-dog-eared copy of &lt;em&gt;SMACSS&lt;/em&gt;, but because
 Drupal itself is
-&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/world-class-frontend-track-drupalcon-portland&#34;&gt;adopting a SMACSS approach&lt;/a&gt;
+&lt;a href=&#34;https://rootwork.github.io/blog/2013/05/world-class-frontend-track-drupalcon-portland&#34;&gt;adopting a SMACSS approach&lt;/a&gt;
 to its CSS.&lt;/p&gt;
 &lt;p&gt;I spoke with Jonathan about sustainable stylesheets and the future of SMACSS.
 For an even more detailed look,
@@ -915,9 +923,9 @@ variety of contexts and we need a development approach that complements that.&lt
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/we-need-talk-about-your-stylesheets-interview-jonathan-snook-drupalcon-portland/smacss-book.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/we-need-talk-about-your-stylesheets-interview-jonathan-snook-drupalcon-portland/smacss-book.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/we-need-talk-about-your-stylesheets-interview-jonathan-snook-drupalcon-portland/smacss-book.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/we-need-talk-about-your-stylesheets-interview-jonathan-snook-drupalcon-portland/smacss-book.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -928,7 +936,7 @@ variety of contexts and we need a development approach that complements that.&lt
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;200&#34;
         height=&#34;266&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/we-need-talk-about-your-stylesheets-interview-jonathan-snook-drupalcon-portland/smacss-book.png&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/we-need-talk-about-your-stylesheets-interview-jonathan-snook-drupalcon-portland/smacss-book.png&#34;
       
       
         title=&#34; &#34;
@@ -1123,13 +1131,13 @@ there. And some pretty sweet GIFs.&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&l
       <guid>https://rootwork.github.io/rootwork.org/blog/2013/05/drupal-8-power-twig-drupalcon-portland-featured-session/</guid>
       <enclosure url="https://rootwork.github.io/rootwork.org/blog/2013/05/drupal-8-power-twig-drupalcon-portland-featured-session/twig_flickr-cgc.jpg" type="image/jpeg" length="0" />
       <description>&lt;p&gt;A new theming engine, &lt;a href=&#34;https://twig.symfony.com/&#34;&gt;Twig&lt;/a&gt;, is coming along with
-&lt;a href=&#34;https://rootwork.github.io/rootwork.org/tags/drupal&#34;&gt;Drupal&lt;/a&gt; 8&amp;rsquo;s adoption of the Symfony framework. And it&amp;rsquo;s downright
+&lt;a href=&#34;https://rootwork.github.io/tags/drupal&#34;&gt;Drupal&lt;/a&gt; 8&amp;rsquo;s adoption of the Symfony framework. And it&amp;rsquo;s downright
 magical.&lt;/p&gt;
 &lt;p&gt;Instead of having theme functions that have to be overridden, everything becomes
 an (easy to read, easy to modify) template. Instead of having to figure out
 render arrays, themers can use consistent template variables. And instead of
 having insecure output, Twig sanitizes everything by default.&lt;/p&gt;
-&lt;p&gt;If you&amp;rsquo;ve ever worked on a &lt;a href=&#34;https://rootwork.github.io/rootwork.org/tags/wordpress&#34;&gt;WordPress&lt;/a&gt; or Tumblr theme, the
+&lt;p&gt;If you&amp;rsquo;ve ever worked on a &lt;a href=&#34;https://rootwork.github.io/tags/wordpress&#34;&gt;WordPress&lt;/a&gt; or Tumblr theme, the
 approach will feel pretty similar. Here&amp;rsquo;s what it looks like:&lt;/p&gt;
 &lt;p&gt;
   &lt;figure&gt;
@@ -1138,9 +1146,9 @@ approach will feel pretty similar. Here&amp;rsquo;s what it looks like:&lt;/p&gt
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/drupal-8-power-twig-drupalcon-portland-featured-session/twig-sample.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/drupal-8-power-twig-drupalcon-portland-featured-session/twig-sample.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/drupal-8-power-twig-drupalcon-portland-featured-session/twig-sample.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/drupal-8-power-twig-drupalcon-portland-featured-session/twig-sample.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -1151,7 +1159,7 @@ approach will feel pretty similar. Here&amp;rsquo;s what it looks like:&lt;/p&gt
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;675&#34;
         height=&#34;375&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/drupal-8-power-twig-drupalcon-portland-featured-session/twig-sample.png&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/drupal-8-power-twig-drupalcon-portland-featured-session/twig-sample.png&#34;
       
       
     /&gt;
@@ -1227,20 +1235,20 @@ everyone.&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/drupal-8-aural-interfaces-groundbreaking-accessibility-drupalcon-portland/mobile-friendly-toolbar.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/drupal-8-aural-interfaces-groundbreaking-accessibility-drupalcon-portland/mobile-friendly-toolbar.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/drupal-8-aural-interfaces-groundbreaking-accessibility-drupalcon-portland/mobile-friendly-toolbar.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/drupal-8-aural-interfaces-groundbreaking-accessibility-drupalcon-portland/mobile-friendly-toolbar.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
       loading=&#34;lazy&#34;
       decoding=&#34;async&#34;
-      alt=&#34;Drupal&amp;amp;amp;rsquo;s new mobile-friendly toolbar ::align-right&#34;
+      alt=&#34;Drupal&amp;rsquo;s new mobile-friendly toolbar ::align-right&#34;
       
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;250&#34;
         height=&#34;223&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/drupal-8-aural-interfaces-groundbreaking-accessibility-drupalcon-portland/mobile-friendly-toolbar.png&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/drupal-8-aural-interfaces-groundbreaking-accessibility-drupalcon-portland/mobile-friendly-toolbar.png&#34;
       
       
         title=&#34; &#34;
@@ -1268,20 +1276,20 @@ priority, and one of the most exciting developments is a new aural interface.&lt
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/drupal-8-aural-interfaces-groundbreaking-accessibility-drupalcon-portland/drupal-announce-log.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/drupal-8-aural-interfaces-groundbreaking-accessibility-drupalcon-portland/drupal-announce-log.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/drupal-8-aural-interfaces-groundbreaking-accessibility-drupalcon-portland/drupal-announce-log.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/drupal-8-aural-interfaces-groundbreaking-accessibility-drupalcon-portland/drupal-announce-log.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
       loading=&#34;lazy&#34;
       decoding=&#34;async&#34;
-      alt=&#34;Drupal announce log showing three &amp;amp;amp;ldquo;polite Drupal announcements&amp;amp;amp;rdquo;&#34;
+      alt=&#34;Drupal announce log showing three &amp;ldquo;polite Drupal announcements&amp;rdquo;&#34;
       
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;675&#34;
         height=&#34;48&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/drupal-8-aural-interfaces-groundbreaking-accessibility-drupalcon-portland/drupal-announce-log.png&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/drupal-8-aural-interfaces-groundbreaking-accessibility-drupalcon-portland/drupal-announce-log.png&#34;
       
       
     /&gt;
@@ -1457,20 +1465,20 @@ share those with you, but you&amp;rsquo;ll just have to come and see for yoursel
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/ninjas-your-code-drupalcon-portland-sass-extends-placeholders/dsande-oocss.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/ninjas-your-code-drupalcon-portland-sass-extends-placeholders/dsande-oocss.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/ninjas-your-code-drupalcon-portland-sass-extends-placeholders/dsande-oocss.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/ninjas-your-code-drupalcon-portland-sass-extends-placeholders/dsande-oocss.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
       loading=&#34;lazy&#34;
       decoding=&#34;async&#34;
-      alt=&#34;I&amp;amp;amp;rsquo;ve decided to update all the buttons&#34;
+      alt=&#34;I&amp;rsquo;ve decided to update all the buttons&#34;
       
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;720&#34;
         height=&#34;279&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/ninjas-your-code-drupalcon-portland-sass-extends-placeholders/dsande-oocss.png&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/ninjas-your-code-drupalcon-portland-sass-extends-placeholders/dsande-oocss.png&#34;
       
       
         title=&#34; &#34;
@@ -1495,7 +1503,7 @@ screenshot from
 and organizes the
 &lt;a
   data-dead-link=&#34;https://www.meetup.com/SASSlang/&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=https%3A%2F%2Fwww.meetup.com%2FSASSlang%2F&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
   title=&#34;https://www.meetup.com/SASSlang/ [dead link]&#34;
   &gt;Seattle Sass meetup&lt;/a
 &gt;, is
@@ -1506,7 +1514,7 @@ exploring more maintainable frontend development and CSS architecture through
 ideas/acronyms like &lt;strong&gt;OOCSS&lt;/strong&gt;, &lt;strong&gt;SMACSS&lt;/strong&gt; and &lt;strong&gt;BEM&lt;/strong&gt;, and folks like
 &lt;a href=&#34;https://github.com/stubbornella/oocss/wiki&#34;&gt;Nicole Sullivan&lt;/a&gt;,
 &lt;a href=&#34;http://smacss.com/&#34;&gt;Jonathan Snook&lt;/a&gt; (a
-&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/world-class-frontend-track-drupalcon-portland&#34;&gt;Drupalcon featured speaker!&lt;/a&gt;),
+&lt;a href=&#34;https://rootwork.github.io/blog/2013/05/world-class-frontend-track-drupalcon-portland&#34;&gt;Drupalcon featured speaker!&lt;/a&gt;),
 &lt;a href=&#34;https://nicolasgallagher.com/about-html-semantics-front-end-architecture/&#34;&gt;Nicolas Gallagher&lt;/a&gt;,
 and &lt;a href=&#34;https://cssguidelin.es/&#34;&gt;Harry Roberts&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I spoke with Dale about Sass, object-oriented CSS and some the things he&amp;rsquo;ll be
@@ -1546,9 +1554,9 @@ anything.&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/ninjas-your-code-drupalcon-portland-sass-extends-placeholders/dsande-oocss2.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/ninjas-your-code-drupalcon-portland-sass-extends-placeholders/dsande-oocss2.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/ninjas-your-code-drupalcon-portland-sass-extends-placeholders/dsande-oocss2.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/ninjas-your-code-drupalcon-portland-sass-extends-placeholders/dsande-oocss2.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -1559,7 +1567,7 @@ anything.&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;350&#34;
         height=&#34;258&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/ninjas-your-code-drupalcon-portland-sass-extends-placeholders/dsande-oocss2.png&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/ninjas-your-code-drupalcon-portland-sass-extends-placeholders/dsande-oocss2.png&#34;
       
       
     /&gt;
@@ -1597,9 +1605,9 @@ excited about what we&amp;rsquo;ve ended up with!&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/world-class-frontend-track-drupalcon-portland/jonathansnook.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/world-class-frontend-track-drupalcon-portland/jonathansnook.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/world-class-frontend-track-drupalcon-portland/jonathansnook.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/world-class-frontend-track-drupalcon-portland/jonathansnook.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -1610,7 +1618,7 @@ excited about what we&amp;rsquo;ve ended up with!&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;66&#34;
         height=&#34;100&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/world-class-frontend-track-drupalcon-portland/jonathansnook.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/world-class-frontend-track-drupalcon-portland/jonathansnook.jpg&#34;
       
       
         title=&#34; &#34;
@@ -1629,9 +1637,9 @@ course, we have &lt;strong&gt;Jonathan Snook&lt;/strong&gt; presenting on his co
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/world-class-frontend-track-drupalcon-portland/MASS-mortendk-crop.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/world-class-frontend-track-drupalcon-portland/MASS-mortendk-crop.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/world-class-frontend-track-drupalcon-portland/MASS-mortendk-crop.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/world-class-frontend-track-drupalcon-portland/MASS-mortendk-crop.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -1642,7 +1650,7 @@ course, we have &lt;strong&gt;Jonathan Snook&lt;/strong&gt; presenting on his co
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;390&#34;
         height=&#34;262&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/05/world-class-frontend-track-drupalcon-portland/MASS-mortendk-crop.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2013/05/world-class-frontend-track-drupalcon-portland/MASS-mortendk-crop.jpg&#34;
       
       
     /&gt;
@@ -1728,18 +1736,18 @@ Charity Navigator&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;The entire approach is based on the scarcity-model, zero-sum game that people
 like to play with charities.&lt;/strong&gt; In the past I&amp;rsquo;ve referred to this as
-&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2010/12/google-chrome-cause-or-nonprofit-deathmatch-strikes-again&#34;&gt;nonprofit deathmatch&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://rootwork.github.io/blog/2010/12/google-chrome-cause-or-nonprofit-deathmatch-strikes-again&#34;&gt;nonprofit deathmatch&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Yet lots of research has shown people who donate once are
 &lt;a href=&#34;https://web.archive.org/web/20150911224753/http://www.articlesbase.com/non-profit-organizations-articles/the-16-principles-of-personal-fundraising-influence-5204143.html&#34;&gt;more likely&lt;/a&gt;
 to &lt;a
   data-dead-link=&#34;http://groups.yahoo.com/group/NARCDC/message/5757&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Fgroups.yahoo.com%2Fgroup%2FNARCDC%2Fmessage%2F5757&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
   title=&#34;http://groups.yahoo.com/group/NARCDC/message/5757 [dead link]&#34;
   &gt;donate&lt;/a
 &gt;
 &lt;a
   data-dead-link=&#34;https://twitter.com/MollyZerener/status/121363610214739968&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=https%3A%2F%2Ftwitter.com%2FMollyZerener%2Fstatus%2F121363610214739968&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
   title=&#34;https://twitter.com/MollyZerener/status/121363610214739968 [dead link]&#34;
   &gt;again&lt;/a
 &gt;,
@@ -1789,7 +1797,7 @@ sector in which to advertise.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;.@&lt;a href=&#34;https://twitter.com/danpalotta&#34;&gt;danpalotta&lt;/a&gt; The ? I have is, &lt;strong&gt;why should
 NPOs be more like biz&lt;/strong&gt;? Isn&amp;rsquo;t what&amp;rsquo;s necessary to change the game, not make
-more of the same? &lt;a href=&#34;https://twitter.com/search?q=%252313NTC&amp;amp;f=live&#34;&gt;#13NTC&lt;/a&gt;&lt;/p&gt;
+more of the same? &lt;a href=&#34;https://twitter.com/search?q=%252313NTC&amp;f=live&#34;&gt;#13NTC&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&amp;ndash; Jenn Yoo (@jooy8)
 &lt;a href=&#34;https://twitter.com/jooy8/status/322734500226412544&#34;&gt;April 12, 2013&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1806,7 +1814,7 @@ comparing the &amp;lsquo;movement&amp;rsquo; he seeks to lead to the civil-right
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Capitalism created inequalities&lt;/strong&gt;, but we won&amp;rsquo;t let NPOs use capitalist
 tools to address them&amp;ndash;missing a logical step?
-&lt;a href=&#34;https://twitter.com/search?q=%252313NTC&amp;amp;f=live&#34;&gt;#13ntc&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://twitter.com/search?q=%252313NTC&amp;f=live&#34;&gt;#13ntc&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&amp;ndash; Jenn Yoo (@jooy8)
 &lt;a href=&#34;https://twitter.com/jooy8/status/322715055185592320&#34;&gt;April 12, 2013&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1819,7 +1827,7 @@ motive of personal gain.&amp;rdquo;&lt;/p&gt;
 Charity Navigator&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/search?q=%252313NTC&amp;amp;f=live&#34;&gt;#13NTC&lt;/a&gt; Lots to agree with in
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/search?q=%252313NTC&amp;f=live&#34;&gt;#13NTC&lt;/a&gt; Lots to agree with in
 Dan Palotta&amp;rsquo;s plenary, but &lt;strong&gt;as an anti-capitalist I want to destroy the
 system&lt;/strong&gt;, not compete w/it.&lt;/p&gt;
 &lt;p&gt;&amp;ndash; Laura Shapiro (@laurajshapiro)
@@ -1850,12 +1858,12 @@ for them.&lt;/strong&gt;&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&lt;a href=&
       <enclosure url="https://rootwork.github.io/rootwork.org/blog/2013/02/free-drupal-qa-call-nonprofits-social-change-tomorrow-feb-28/drupal-nonprofit-summit_flickr-sillygwailo_header.jpg" type="image/jpeg" length="0" />
       <description>&lt;p&gt;Tomorrow at 1PM Eastern/10AM Pacific,
 &lt;a href=&#34;https://devcollaborative.com/about-us&#34;&gt;Johanna Bates&lt;/a&gt; and I will be co-hosting
-the monthly Nonprofit Drupal Community of Practice discussion and Q&amp;amp;A call.&lt;/p&gt;
+the monthly Nonprofit Drupal Community of Practice discussion and Q&amp;A call.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;This is a free conference call, sponsored by the Nonprofit Technology Network
 (NTEN) but open to anyone.
 &lt;a href=&#34;https://groups.drupal.org/node/283848&#34;&gt;Please join us!&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&#34;what-will-we-talk-about&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;What will we talk about?&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;This is a time to chat informally with other nonprofit-tech Drupalists &amp;ndash; an
-open Q&amp;amp;A discussion for anyone with or in nonprofits or social change groups
+open Q&amp;A discussion for anyone with or in nonprofits or social change groups
 using Drupal. But generally speaking:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Stuck on something? Have a question? Drupal experts will be on hand to answer
@@ -1888,9 +1896,9 @@ so if you can&amp;rsquo;t make it just let us know if you&amp;rsquo;d like a lin
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/02/domain-registry-america-scam-dont-let-your-nonprofit-get-fooled/domain-registry-america_header.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2013/02/domain-registry-america-scam-dont-let-your-nonprofit-get-fooled/domain-registry-america_header.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/02/domain-registry-america-scam-dont-let-your-nonprofit-get-fooled/domain-registry-america_header.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2013/02/domain-registry-america-scam-dont-let-your-nonprofit-get-fooled/domain-registry-america_header.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -1901,7 +1909,7 @@ so if you can&amp;rsquo;t make it just let us know if you&amp;rsquo;d like a lin
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;720&#34;
         height=&#34;257&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/02/domain-registry-america-scam-dont-let-your-nonprofit-get-fooled/domain-registry-america_header.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2013/02/domain-registry-america-scam-dont-let-your-nonprofit-get-fooled/domain-registry-america_header.jpg&#34;
       
       
     /&gt;
@@ -1931,9 +1939,9 @@ single &amp;ldquo;tech person&amp;rdquo; on staff is away at a conference.&lt;/p
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/02/domain-registry-america-scam-dont-let-your-nonprofit-get-fooled/domain-registry-america_annotated.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2013/02/domain-registry-america-scam-dont-let-your-nonprofit-get-fooled/domain-registry-america_annotated.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/02/domain-registry-america-scam-dont-let-your-nonprofit-get-fooled/domain-registry-america_annotated.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2013/02/domain-registry-america-scam-dont-let-your-nonprofit-get-fooled/domain-registry-america_annotated.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -1944,10 +1952,10 @@ single &amp;ldquo;tech person&amp;rdquo; on staff is away at a conference.&lt;/p
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;589&#34;
         height=&#34;768&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2013/02/domain-registry-america-scam-dont-let-your-nonprofit-get-fooled/domain-registry-america_annotated.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2013/02/domain-registry-america-scam-dont-let-your-nonprofit-get-fooled/domain-registry-america_annotated.jpg&#34;
       
       
-        title=&#34;Domain Registry of America &amp;#34;notice&amp;#34;&#34;
+        title=&#34;Domain Registry of America &#34;notice&#34;&#34;
       
     /&gt;
 
@@ -2111,7 +2119,7 @@ travel figured out to my (new) hometown of Portland for the
       <enclosure url="https://rootwork.github.io/rootwork.org/blog/2011/09/two-click-button-foils-facebook-tracking-new-tool-privacy-concerned-nonprofits/security-camera_flickr-therontrowbridge.jpg" type="image/jpeg" length="0" />
       <description>&lt;p&gt;Last month, the privacy commissioner for the German state Schleswig-Holstein,
 Thilo Weichert, announced that he would
-&lt;a href=&#34;https://www.dw.com/en/german-privacy-watchdog-declares-facebooks-like-button-illegal/a-15331909&#34;&gt;fine websites in his state €50,000 if they included Facebook&amp;rsquo;s &amp;ldquo;Like&amp;rdquo; button&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://www.dw.com/en/german-privacy-watchdog-declares-facebooks-like-button-illegal/a-15331909&#34;&gt;fine websites in his state &amp;euro;50,000 if they included Facebook&amp;rsquo;s &amp;ldquo;Like&amp;rdquo; button&lt;/a&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Weichert argues that this popular function breaches privacy by making it
 possible for the social networking giant to guess user preferences and
@@ -2171,9 +2179,9 @@ disables social networking buttons by default.&lt;/strong&gt;&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/09/two-click-button-foils-facebook-tracking-new-tool-privacy-concerned-nonprofits/two-click-sns-buttons.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2011/09/two-click-button-foils-facebook-tracking-new-tool-privacy-concerned-nonprofits/two-click-sns-buttons.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/09/two-click-button-foils-facebook-tracking-new-tool-privacy-concerned-nonprofits/two-click-sns-buttons.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2011/09/two-click-button-foils-facebook-tracking-new-tool-privacy-concerned-nonprofits/two-click-sns-buttons.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -2184,7 +2192,7 @@ disables social networking buttons by default.&lt;/strong&gt;&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;516&#34;
         height=&#34;62&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/09/two-click-button-foils-facebook-tracking-new-tool-privacy-concerned-nonprofits/two-click-sns-buttons.png&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2011/09/two-click-button-foils-facebook-tracking-new-tool-privacy-concerned-nonprofits/two-click-sns-buttons.png&#34;
       
       
         title=&#34;The two stages of the social networking buttons (each operates independently). Note the Facebook button is localized in German.&#34;
@@ -2213,7 +2221,7 @@ at the bottom of the post where they announce it.&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;
       <enclosure url="https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/google-plus_flickr-west-m.jpg" type="image/jpeg" length="0" />
       <description>&lt;p&gt;Tonight at Philly NetSquared I gave a short presentation on Google Plus and its
 implications for nonprofits and social change work. You can
-&lt;a href=&#34;2011-08-05_phlnet2_google-plus.pdf&#34;&gt;download a PDF of the slides&lt;/a&gt; or
+&lt;a href=&#34;https://rootwork.github.io/rootwork.org/2011-08-05_phlnet2_google-plus.pdf&#34;&gt;download a PDF of the slides&lt;/a&gt; or
 &lt;a href=&#34;https://www.slideshare.net/rootwork/google-plus-nonprofit-and-social-change-implications&#34;&gt;view the presentation on Slideshare&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;(Google insists on referring to its system as &amp;ldquo;Google&#43;&amp;rdquo; but that wreaks havoc on
 search engines, so throughout this post I&amp;rsquo;ll be referring to it as &amp;ldquo;Google Plus&amp;rdquo;
@@ -2225,9 +2233,9 @@ instead.)&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-02.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-02.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-02.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-02.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -2238,7 +2246,7 @@ instead.)&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;792&#34;
         height=&#34;612&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-02.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-02.jpg&#34;
       
       
         title=&#34; &#34;
@@ -2266,7 +2274,7 @@ conceivably find each one who has a Google Plus profile relatively easily.
 Google Plus, requires an account in order to see profiles &amp;ndash; so at best they are
 only semi-public.)&lt;/p&gt;
 &lt;h3 id=&#34;professionalizing-communications&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Professionalizing communications&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;If you&amp;rsquo;re familiar with
-&lt;em&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar&#34;&gt;The Cathedral &amp;amp; the Bazaar&lt;/a&gt;&lt;/em&gt;
+&lt;em&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar&#34;&gt;The Cathedral &amp; the Bazaar&lt;/a&gt;&lt;/em&gt;
 you&amp;rsquo;ll recognize the concepts of formal and informal communication. Unlike
 communication among friends, Google Plus is designed to formalize
 communications.&lt;/p&gt;
@@ -2279,9 +2287,9 @@ supporters&amp;hellip;&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-05.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-05.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-05.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-05.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -2292,7 +2300,7 @@ supporters&amp;hellip;&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;792&#34;
         height=&#34;612&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-05.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-05.jpg&#34;
       
       
         title=&#34; &#34;
@@ -2310,9 +2318,9 @@ supporters&amp;hellip;&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-06.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-06.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-06.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-06.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -2323,7 +2331,7 @@ supporters&amp;hellip;&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;792&#34;
         height=&#34;612&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-06.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-06.jpg&#34;
       
       
         title=&#34; &#34;
@@ -2343,9 +2351,9 @@ hashtags, and blogging circles &amp;ndash; is more difficult.&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-07.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-07.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-07.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-07.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -2356,7 +2364,7 @@ hashtags, and blogging circles &amp;ndash; is more difficult.&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;792&#34;
         height=&#34;612&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-07.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-07.jpg&#34;
       
       
         title=&#34; &#34;
@@ -2379,9 +2387,9 @@ around a &amp;ldquo;multi-hub small world&amp;rdquo; concept.
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-08.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-08.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-08.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-08.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -2392,7 +2400,7 @@ around a &amp;ldquo;multi-hub small world&amp;rdquo; concept.
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;792&#34;
         height=&#34;612&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-08.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-08.jpg&#34;
       
       
         title=&#34; &#34;
@@ -2414,9 +2422,9 @@ chaos of Twitter or MySpace this might seem like a welcome shift.&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-09.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-09.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-09.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-09.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -2427,7 +2435,7 @@ chaos of Twitter or MySpace this might seem like a welcome shift.&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;792&#34;
         height=&#34;612&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-09.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-09.jpg&#34;
       
       
         title=&#34; &#34;
@@ -2443,7 +2451,7 @@ chaos of Twitter or MySpace this might seem like a welcome shift.&lt;/p&gt;
 &lt;p&gt;One of the errors that the Internet made a long time ago is that there was not
 an accurate and non-revocable identity-management service. &amp;hellip; And the best
 example of an identity-management service today that&amp;rsquo;s reasonably reliable is
-Facebook.&amp;quot;&lt;/p&gt;
+Facebook.&#34;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;However it&amp;rsquo;s important to remember what gets left behind when we require real
 names in a social network.&lt;/p&gt;
@@ -2500,9 +2508,9 @@ offers a welcome no-cost alternative to platforms like WebEx or GoToMeeting.&lt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-12.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-12.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-12.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-12.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -2513,7 +2521,7 @@ offers a welcome no-cost alternative to platforms like WebEx or GoToMeeting.&lt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;792&#34;
         height=&#34;612&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-12.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-12.jpg&#34;
       
       
         title=&#34; &#34;
@@ -2532,9 +2540,9 @@ where your people are&lt;/strong&gt;.&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-13.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-13.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-13.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-13.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -2545,7 +2553,7 @@ where your people are&lt;/strong&gt;.&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;792&#34;
         height=&#34;612&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-13.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/2011-08-05_phlnet2_google-plus-13.jpg&#34;
       
       
         title=&#34; &#34;
@@ -2646,9 +2654,9 @@ you may have some useful new language to talk about what you do!&lt;/p&gt;&lt;hr
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2010/12/google-chrome-cause-nonprofit-deathmatch-strikes-again/chrome-cause.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2010/12/google-chrome-cause-nonprofit-deathmatch-strikes-again/chrome-cause.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2010/12/google-chrome-cause-nonprofit-deathmatch-strikes-again/chrome-cause.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2010/12/google-chrome-cause-nonprofit-deathmatch-strikes-again/chrome-cause.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -2659,7 +2667,7 @@ you may have some useful new language to talk about what you do!&lt;/p&gt;&lt;hr
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;720&#34;
         height=&#34;301&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2010/12/google-chrome-cause-nonprofit-deathmatch-strikes-again/chrome-cause.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2010/12/google-chrome-cause-nonprofit-deathmatch-strikes-again/chrome-cause.jpg&#34;
       
       
         title=&#34; &#34;
@@ -2678,7 +2686,7 @@ water, Doctors Without Borders, Un Techo para mi Pa&amp;iacute;s, and Room to Re
 will donate a
 &lt;a
   data-dead-link=&#34;http://www.google.com/chrome/intl/en/p/cause/tos/&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Fwww.google.com%2Fchrome%2Fintl%2Fen%2Fp%2Fcause%2Ftos%2F&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
   title=&#34;http://www.google.com/chrome/intl/en/p/cause/tos/ [dead link]&#34;
   &gt;combined total of up to $1 million&lt;/a
 &gt;
@@ -2688,7 +2696,7 @@ copy of Chrome. There&amp;rsquo;s a maximum of 250 tabs per day, and one tab per
 that count toward your cause. You also
 &lt;a
   data-dead-link=&#34;http://www.google.com/chrome/intl/en/p/cause/privacy/&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Fwww.google.com%2Fchrome%2Fintl%2Fen%2Fp%2Fcause%2Fprivacy%2F&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
   title=&#34;http://www.google.com/chrome/intl/en/p/cause/privacy/ [dead link]&#34;
   &gt;must have a Google account&lt;/a
 &gt;
@@ -2785,9 +2793,9 @@ but also give its far more lucrative asset: attention.&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2010/12/facebook-removes-default-landing-tab-new-nonprofit-pages/fb-no-default-tabs.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2010/12/facebook-removes-default-landing-tab-new-nonprofit-pages/fb-no-default-tabs.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2010/12/facebook-removes-default-landing-tab-new-nonprofit-pages/fb-no-default-tabs.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2010/12/facebook-removes-default-landing-tab-new-nonprofit-pages/fb-no-default-tabs.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -2798,7 +2806,7 @@ but also give its far more lucrative asset: attention.&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;720&#34;
         height=&#34;216&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2010/12/facebook-removes-default-landing-tab-new-nonprofit-pages/fb-no-default-tabs.png&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2010/12/facebook-removes-default-landing-tab-new-nonprofit-pages/fb-no-default-tabs.png&#34;
       
       
         title=&#34; &#34;
@@ -2831,9 +2839,9 @@ companies) could create custom tabs, welcoming new visitors, introducing them to
 the organization, and encouraging them to &amp;ldquo;Like&amp;rdquo; the nonprofit.&lt;/p&gt;
 &lt;p&gt;Earlier this year, Facebook announced they were
 &lt;a
-  data-dead-link=&#34;http://www.facebook.com/posted.php?id=212577490407&amp;amp;share_id=112272642162634&amp;amp;comments=1#s112272642162634&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Fwww.facebook.com%2Fposted.php%3Fid%3D212577490407%26share_id%3D112272642162634%26comments%3D1%23s112272642162634&#34;
-  title=&#34;Read Beth Kanter&amp;#39;s discussion about this change on Facebook [dead link]&#34;
+  data-dead-link=&#34;http://www.facebook.com/posted.php?id=212577490407&amp;share_id=112272642162634&amp;comments=1#s112272642162634&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
+  title=&#34;Read Beth Kanter&#39;s discussion about this change on Facebook [dead link]&#34;
   &gt;dropping support for new custom tabs that used Facebook Markup Language (FBML)&lt;/a
 &gt;,
 although you could still specify a particular application tab as your landing
@@ -2857,8 +2865,8 @@ nonprofits but not companies; I don&amp;rsquo;t have access to any company Faceb
 to investigate this on. It appears a default landing tab has
 &lt;a
   data-dead-link=&#34;http://www.facebook.com/help/#%21/help/?question=87334&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Fwww.facebook.com%2Fhelp%2F%23%2521%2Fhelp%2F%3Fquestion%3D87334&#34;
-  title=&#34;Read Facebook&amp;#39;s help topic on default landing tabs and Community Pages [dead link]&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
+  title=&#34;Read Facebook&#39;s help topic on default landing tabs and Community Pages [dead link]&#34;
   &gt;never been available&lt;/a
 &gt;
 on things categorized as Community Pages &amp;ndash; initially auto-generated from
@@ -3055,7 +3063,7 @@ Harmon and I are proposing a session on just this topic at next year&amp;rsquo;s
 Technology Conference:
 &lt;a href=&#34;https://web.archive.org/web/20100902160446/http://www.nten.org/node/10318&#34;&gt;To Diversity and Beyond! Engagement, Accountability and Nonprofits&lt;/a&gt;.
 We hosted a
-&lt;a href=&#34;https://web.archive.org/web/20100713111521/https://www.ntenonline.org/eweb/DynamicPage.aspx?webcode=SessionDetails&amp;amp;ses_key=f4b88cff-ccf8-436d-8a0d-3eed2593fe87&#34;&gt;similar discussion&lt;/a&gt;
+&lt;a href=&#34;https://web.archive.org/web/20100713111521/https://www.ntenonline.org/eweb/DynamicPage.aspx?webcode=SessionDetails&amp;ses_key=f4b88cff-ccf8-436d-8a0d-3eed2593fe87&#34;&gt;similar discussion&lt;/a&gt;
 earlier this year.&lt;/em&gt;&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2010/08/too-few-women-tech-blame-sexism/&#34;&gt;Too few women in tech? Blame sexism.&lt;/a&gt; originally published on &lt;a href=&#34;https://rootwork.org&#34;&gt;Rootwork.org&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -3076,7 +3084,7 @@ and community-based social change. And that&amp;rsquo;s what I&amp;rsquo;m cover
 &lt;a href=&#34;https://www.nten.org/ntc/&#34;&gt;2010 Nonprofit Technology Conference&lt;/a&gt;, along with
 &lt;a href=&#34;https://web.archive.org/web/20120204213748/http://www.communityorganizer20.com/&#34;&gt;Debra Askanase&lt;/a&gt;
 and &lt;a href=&#34;https://amysampleward.org/&#34;&gt;Amy Sample Ward&lt;/a&gt;, in a session called
-&lt;a href=&#34;https://web.archive.org/web/20100713125922/https://www.ntenonline.org/eweb/DynamicPage.aspx?webcode=SessionDetails&amp;amp;ses_key=9e27f6a5-1720-4ad1-8ee0-058a2260bcbb&#34;&gt;Bringing Community Organizing Into Online Campaigns&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://web.archive.org/web/20100713125922/https://www.ntenonline.org/eweb/DynamicPage.aspx?webcode=SessionDetails&amp;ses_key=9e27f6a5-1720-4ad1-8ee0-058a2260bcbb&#34;&gt;Bringing Community Organizing Into Online Campaigns&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;what-i-mean-by-community-organizing&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;What I mean by community organizing&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;The idea of community organizing has always been weighted with both political
 implications and social context, and so one person&amp;rsquo;s interpretation of what
 &amp;ldquo;counts&amp;rdquo; as community organizing &amp;ndash; and what its implications are &amp;ndash; will vary
@@ -3086,7 +3094,7 @@ individuals have more power to create change by coming together than by acting
 alone. Community organizing empowers these individuals, creates long-term change
 and challenges the structure of power.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Previously I&amp;rsquo;ve argued that with the rise of &amp;ldquo;web 2.0,&amp;rdquo;
-&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2009/09/gurus-are-not-enough-call-organizers-organizing-social-media&#34;&gt;everybody is learning how to be a community organizer&lt;/a&gt;.
+&lt;a href=&#34;https://rootwork.github.io/blog/2009/09/gurus-are-not-enough-call-organizers-organizing-social-media&#34;&gt;everybody is learning how to be a community organizer&lt;/a&gt;.
 The principles of how to mobilize friends and neighbors around a particular
 issue &amp;ndash; whether it&amp;rsquo;s a social cause or a hot party &amp;ndash; are being learned every
 time someone creates a Facebook event.&lt;/p&gt;
@@ -3110,7 +3118,7 @@ individuals so they see their action as part of a long-term campaign is
 something that takes&amp;hellip;&lt;/p&gt;
 &lt;h4 id=&#34;strategy-strategy-strategy&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Strategy, strategy, strategy&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;I&amp;rsquo;ve written before about the fact that social media isn&amp;rsquo;t about doing &lt;em&gt;less&lt;/em&gt;
 organizing, it&amp;rsquo;s about
-&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2009/05/social-change-takes-more-social-media&#34;&gt;doing it better&lt;/a&gt;. A theory
+&lt;a href=&#34;https://rootwork.github.io/blog/2009/05/social-change-takes-more-social-media&#34;&gt;doing it better&lt;/a&gt;. A theory
 of social change is critical to an individual or organization engaging in online
 activism. Will signing this petition against the war put pressure on elected
 leaders to alter policies? Will this upcoming rally (or &amp;ldquo;virtual march&amp;rdquo;)
@@ -3129,13 +3137,13 @@ be a new law, but, for instance, 10 vocal new supporters in Congress.&lt;/p&gt;
 professional activists who dupe people into following them. But true community
 organizing isn&amp;rsquo;t about swooping in and ginning up outrage by telling the locals
 to fight the man. It&amp;rsquo;s generally approached as much more
-&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2009/10/finding-movements-voice-online-social-networks-social-change&#34;&gt;Freirian&lt;/a&gt;
+&lt;a href=&#34;https://rootwork.github.io/blog/2009/10/finding-movements-voice-online-social-networks-social-change&#34;&gt;Freirian&lt;/a&gt;
 &amp;ndash; taking direction from and being accountable to the local community.
 Organizers bring their experience of tactics and strategy, and may serve to
 inspire people that they &lt;em&gt;do&lt;/em&gt; have the power to make change. But the causes
 around which communities organize should come from the community itself.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;How this relates to online activism:&lt;/em&gt; Technology is
-&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2009/04/fire-food-why-theres-no-such-thing-twitter-revolution&#34;&gt;too often seen as a strategy in and of itself&lt;/a&gt;.
+&lt;a href=&#34;https://rootwork.github.io/blog/2009/04/fire-food-why-theres-no-such-thing-twitter-revolution&#34;&gt;too often seen as a strategy in and of itself&lt;/a&gt;.
 But the Internet and social media &amp;ndash; like fax machines, phone trees and the
 printing press before them &amp;ndash; are simply tools, able to be used tactically to
 great effect, but only when part of a larger strategy. Focusing on the tech
@@ -3155,7 +3163,7 @@ this fact.&lt;/p&gt;
 private &amp;ldquo;walled garden&amp;rdquo; social network that you have to convince people to join
 and become active on.&lt;/strong&gt; Different communities are on different social networks
 online &amp;ndash; and
-&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2008/10/using-social-networks-social-change-facebook-myspace-more#weaving&#34;&gt;it&amp;rsquo;s important to know where your constituencies are&lt;/a&gt;
+&lt;a href=&#34;https://rootwork.github.io/blog/2008/10/using-social-networks-social-change-facebook-myspace-more&#34;&gt;it&amp;rsquo;s important to know where your constituencies are&lt;/a&gt;
 &amp;ndash; on Facebook, MySpace, Twitter or somewhere else. The places where a community
 is most active socially are most likely to be the places where it&amp;rsquo;s most
 effective to organize. If you&amp;rsquo;re organizing in a sensitive environment, you may
@@ -3186,7 +3194,7 @@ will build the identity of a long-term movement, rather than a limited
 &lt;h3 id=&#34;help-continue-this-conversation&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Help continue this conversation&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Below, I&amp;rsquo;ve embedded the slides of our presentation, which goes beyond the
 things I&amp;rsquo;ve discussed above and includes an exciting interactive workshop
 component &amp;ndash; so if you&amp;rsquo;re at NTC,
-&lt;a href=&#34;https://web.archive.org/web/20120202003828/https://www.ntenonline.org/eweb/DynamicPage.aspx?webcode=SessionDetails&amp;amp;ses_key=9e27f6a5-1720-4ad1-8ee0-058a2260bcbb&#34; title=&#34;View time, location and other information on this session&#34;&gt;please do stop by&lt;/a&gt;!&lt;/p&gt;
+&lt;a href=&#34;https://web.archive.org/web/20120202003828/https://www.ntenonline.org/eweb/DynamicPage.aspx?webcode=SessionDetails&amp;ses_key=9e27f6a5-1720-4ad1-8ee0-058a2260bcbb&#34; title=&#34;View time, location and other information on this session&#34;&gt;please do stop by&lt;/a&gt;!&lt;/p&gt;
 &lt;p&gt;And as I wrote awhile back
 &lt;a href=&#34;https://beth.typepad.com/beths_blog/2009/06/listening-leads-to-engagement-relationship-models.html&#34;&gt;in a similar discussion on Beth Kanter&amp;rsquo;s blog&lt;/a&gt;:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -3231,9 +3239,9 @@ change the world.&lt;/em&gt;&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&lt;a hr
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2009/11/government-accountability-through-web-20-case-study/scott-gration-samantha-power_flickr-savedarfur.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2009/11/government-accountability-through-web-20-case-study/scott-gration-samantha-power_flickr-savedarfur.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2009/11/government-accountability-through-web-20-case-study/scott-gration-samantha-power_flickr-savedarfur.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2009/11/government-accountability-through-web-20-case-study/scott-gration-samantha-power_flickr-savedarfur.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -3244,7 +3252,7 @@ change the world.&lt;/em&gt;&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&lt;a hr
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;720&#34;
         height=&#34;324&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2009/11/government-accountability-through-web-20-case-study/scott-gration-samantha-power_flickr-savedarfur.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2009/11/government-accountability-through-web-20-case-study/scott-gration-samantha-power_flickr-savedarfur.jpg&#34;
       
       
     /&gt;
@@ -3258,7 +3266,7 @@ change the world.&lt;/em&gt;&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&lt;a hr
 representatives from
 &lt;a href=&#34;https://web.archive.org/web/20120201194307/http://savedarfur.org/&#34;&gt;Save Darfur&lt;/a&gt;
 and the student network &lt;a href=&#34;https://standnow.org/&#34;&gt;STAND&lt;/a&gt; for an unprecedented live
-Q&amp;amp;A, webcast directly from the White House website.&lt;/p&gt;
+Q&amp;A, webcast directly from the White House website.&lt;/p&gt;
 &lt;p&gt;The event served as the launch of an initiative the White House is calling
 &lt;a href=&#34;https://obamawhitehouse.archives.gov/blog/2009/11/04/%e2%80%9cask-us%e2%80%9d-engaging-sudan-strategy&#34; title=&#34;White House: Ask U.S., Engaging on Sudan Strategy&#34;&gt;Ask U.S.&lt;/a&gt;,
 &amp;ldquo;an effort to reach out to the advocacy communities and to solicit questions on
@@ -3293,7 +3301,7 @@ the chat via Twitter and Facebook.&lt;/strong&gt; &amp;ldquo;In his opening rema
 owe you answers&amp;rsquo; &amp;ndash; you still do,&amp;rdquo; said
 &lt;a
   data-dead-link=&#34;http://twitter.com/willcfischer/statuses/5599271449&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Ftwitter.com%2Fwillcfischer%2Fstatuses%2F5599271449&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
   title=&#34;http://twitter.com/willcfischer/statuses/5599271449 [dead link]&#34;
   &gt;Will Fischer&lt;/a
 &gt;.
@@ -3328,7 +3336,7 @@ can give us, they will do, without compromising their policy,&amp;rdquo; she tol
 wasn&amp;rsquo;t able to disclose as much information as we asked, which is going to
 happen in these sorts of things. &amp;hellip; It&amp;rsquo;s a very delicate line, so engaging
 policy behind the scenes will still be necessary.&amp;rdquo;&lt;/p&gt;
-&lt;h3 id=&#34;making-the-online-qa-possible&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Making the online Q&amp;amp;A possible&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Andrea Clarke, director of communications for the Save Darfur Coalition, pitched
+&lt;h3 id=&#34;making-the-online-qa-possible&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Making the online Q&amp;A possible&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Andrea Clarke, director of communications for the Save Darfur Coalition, pitched
 the idea of a &amp;ldquo;live online town hall&amp;rdquo; to Gration&amp;rsquo;s communications director in
 August. &amp;ldquo;We thought it would be something beneficial for activists to be
 directly engaged around the [Sudan] policy,&amp;rdquo; Clarke said.&lt;/p&gt;
@@ -3382,7 +3390,7 @@ was a definite advantage to making the webcast happen, Clarke said, as was
 President Obama&amp;rsquo;s stated support on the campaign trail for resolving the crises
 in Sudan.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Gration&amp;rsquo;s willingness to engage activists on the issue, however, may have been
-the most critical element&lt;/strong&gt; &amp;ndash; it&amp;rsquo;s hard to imagine a live Q&amp;amp;A happening without
+the most critical element&lt;/strong&gt; &amp;ndash; it&amp;rsquo;s hard to imagine a live Q&amp;A happening without
 a public official&amp;rsquo;s support. &amp;ldquo;Gration appears to be working very hard to get
 feedback,&amp;rdquo; Clarke said.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Engaging more than one organization made the proposal more attractive to
@@ -3412,7 +3420,7 @@ webchat, 44 members of Congress signed a
 &lt;a href=&#34;https://web.archive.org/web/20121114034243/http://allafrica.com/stories/200911130892.html&#34; title=&#34;AllAfrica: Letter from U.S. Members of Congress to the President on China&#39;s Involvement in Sudan&#34;&gt;letter to President Obama&lt;/a&gt;
 ahead of his visit to China, a major trading partner of Sudan&amp;rsquo;s, urging the
 president to make Sudan a priority in his discussions there.&lt;/p&gt;
-&lt;p&gt;Clarke said if a second online Q&amp;amp;A occurs, Save Darfur &amp;ldquo;will be pushing for
+&lt;p&gt;Clarke said if a second online Q&amp;A occurs, Save Darfur &amp;ldquo;will be pushing for
 questions that are extremely direct from those who are suffering on the ground,&amp;rdquo;
 suggesting the event can not only be a chance to connect activists to the
 administration, but survivors of the genocide and wars in Sudan as well.&lt;/p&gt;
@@ -3474,7 +3482,7 @@ their Causes supporters on Facebook &amp;ndash; something not possible using Fan
 Facebook Groups over 2,000 people. On MySpace, probably due to the limitations
 of the network itself, there was no such functionality.&lt;/p&gt;
 &lt;p&gt;In fact, in one of my first write-ups on
-&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2008/10/using-social-networks-social-change-facebook-myspace-more#keys&#34;&gt;using social networks for fundraising and advocacy&lt;/a&gt;,
+&lt;a href=&#34;https://rootwork.github.io/blog/2008/10/using-social-networks-social-change-facebook-myspace-more&#34;&gt;using social networks for fundraising and advocacy&lt;/a&gt;,
 &lt;strong&gt;I highlighted Causes not as a great way to fundraise but as a great way to
 engage members&lt;/strong&gt;. There was less chance for engagement on MySpace; though
 supporters could still put up a badge demonstrating their support and make
@@ -3522,7 +3530,7 @@ certainly those organizations left in the lurch on MySpace feel otherwise.&lt;/p
 &lt;p&gt;I think Rebecca Leaman
 &lt;a
   data-dead-link=&#34;http://twitter.com/rjleaman/status/5430851340&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Ftwitter.com%2Frjleaman%2Fstatus%2F5430851340&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
   title=&#34;http://twitter.com/rjleaman/status/5430851340 [dead link]&#34;
   &gt;said it best&lt;/a
 &gt; &amp;ndash;
@@ -3557,7 +3565,7 @@ to
 &lt;a href=&#34;https://amysampleward.org/2009/11/06/new-on-ssir-letting-technology-lead/&#34;&gt;take the lead on technology&lt;/a&gt;
 by pushing for more openness and transparency. I&amp;rsquo;ve written before, for
 instance, that
-&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2009/01/community-blogs-run-better-open-source-software&#34;&gt;community blogs run better on open-source software&lt;/a&gt;,
+&lt;a href=&#34;https://rootwork.github.io/blog/2009/01/community-blogs-run-better-open-source-software&#34;&gt;community blogs run better on open-source software&lt;/a&gt;,
 and I think in principle the same is true for social networks.&lt;/p&gt;
 &lt;p&gt;But nonprofits and social change movements will always have to go where the
 supporters are &amp;ndash; and in many cases that will mean closed, proprietary,
@@ -3596,9 +3604,9 @@ they widgets like Causes or networks like Facebook and MySpace.&lt;/p&gt;&lt;hr 
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2009/10/finding-movements-voice-online-social-networks-social-change/pjsa-twfbhead.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2009/10/finding-movements-voice-online-social-networks-social-change/pjsa-twfbhead.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2009/10/finding-movements-voice-online-social-networks-social-change/pjsa-twfbhead.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2009/10/finding-movements-voice-online-social-networks-social-change/pjsa-twfbhead.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -3609,7 +3617,7 @@ they widgets like Causes or networks like Facebook and MySpace.&lt;/p&gt;&lt;hr 
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;720&#34;
         height=&#34;373&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2009/10/finding-movements-voice-online-social-networks-social-change/pjsa-twfbhead.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2009/10/finding-movements-voice-online-social-networks-social-change/pjsa-twfbhead.jpg&#34;
       
       
     /&gt;
@@ -3635,16 +3643,16 @@ they&amp;rsquo;re probably not worth posting otherwise.&lt;/p&gt;
 social change and want to engage folks online. In addition, much of my
 presentation was drawn on earlier presentations and writing, including:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2009/09/gurus-are-not-enough-call-organizers-organizing-social-media&#34;&gt;Gurus Are Not Enough: A Call for Organizers and Organizing in Social Media&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2009/05/social-change-takes-more-social-media&#34;&gt;Social change takes more than social media&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2008/10/using-social-networks-social-change-facebook-myspace-more&#34;&gt;Using Social Networks for Social Change: Facebook, MySpace and More&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2009/01/community-blogs-run-better-open-source-software&#34;&gt;Community blogs run better on open-source software&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rootwork.github.io/blog/2009/09/gurus-are-not-enough-call-organizers-organizing-social-media&#34;&gt;Gurus Are Not Enough: A Call for Organizers and Organizing in Social Media&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rootwork.github.io/blog/2009/05/social-change-takes-more-social-media&#34;&gt;Social change takes more than social media&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rootwork.github.io/blog/2008/10/using-social-networks-social-change-facebook-myspace-more&#34;&gt;Using Social Networks for Social Change: Facebook, MySpace and More&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rootwork.github.io/blog/2009/01/community-blogs-run-better-open-source-software&#34;&gt;Community blogs run better on open-source software&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You may also be interested in some of my earlier academic work on
 &lt;a href=&#34;https://web.archive.org/web/20100129053652/http://quixoticlife.net/topics/tpni&#34;&gt;third-party nonviolent intervention and unarmed peacekeeping&lt;/a&gt;,
 including a presentation from the 2005 PJSA conference and some of my analysis
-published in the journal &lt;em&gt;Peace &amp;amp; Change&lt;/em&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;resources-related-to-technology-and-social-change&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Resources related to technology and social change&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&lt;em&gt;You can &lt;a href=&#34;socialchangetechresources.pdf&#34;&gt;download a PDF&lt;/a&gt; of a shorter version of
+published in the journal &lt;em&gt;Peace &amp; Change&lt;/em&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;resources-related-to-technology-and-social-change&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Resources related to technology and social change&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&lt;em&gt;You can &lt;a href=&#34;https://rootwork.github.io/rootwork.org/socialchangetechresources.pdf&#34;&gt;download a PDF&lt;/a&gt; of a shorter version of
 this list; feel free to use or distribute as you like.&lt;/em&gt;&lt;/p&gt;
 &lt;h4 id=&#34;guides-case-studies-and-places-for-inspiration&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Guides, case studies and places for inspiration&lt;/span&gt;&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://bethkanter.org&#34;&gt;Beth&amp;rsquo;s Blog: How Nonprofits Can Use Social Media&lt;/a&gt; &amp;ndash;
@@ -3713,7 +3721,7 @@ $60? Flickr accounts for $3/year? It&amp;rsquo;s all in TechSoup&amp;rsquo;s sto
 TechSoup has a vibrant forum community and blog postings relating to the use
 of technology by nonprofits.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20091001051945/http://idealware.org/&#34;&gt;Idealware&lt;/a&gt;
-&amp;ndash; Provides candid Consumer Reports–style reviews and articles about software
+&amp;ndash; Provides candid Consumer Reports&amp;ndash;style reviews and articles about software
 of interest to nonprofits. Through product comparisons, recommendations, case
 studies, and software news, Idealware allows nonprofits to make the software
 decisions that will help them be more effective.&lt;/li&gt;
@@ -3786,7 +3794,7 @@ transformation. On the contrary, I see it as a much more grassroots bubbling-up
 of organizing skills. Everyone has the ability to organize and inspire others;
 the current tools are simply making those skills more visible.&lt;/p&gt;
 &lt;h3 id=&#34;fewer-leaders-more-leadership&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Fewer Leaders, More Leadership&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&amp;ldquo;Organizations and societies,&amp;rdquo; wrote Bruce Kokopeli and George Lakey, &amp;ldquo;&lt;em&gt;do need
-leadership&lt;/em&gt;, but they &lt;em&gt;do not need leaders&lt;/em&gt;.&amp;rdquo;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; They argued for a shared value
+leadership&lt;/em&gt;, but they &lt;em&gt;do not need leaders&lt;/em&gt;.&amp;rdquo;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; They argued for a shared value
 of leadership, in which many individuals took responsibility for the direction
 of a group, but didn&amp;rsquo;t invest the institutional power in a single person to call
 the shots. A critical part of this feminist approach relies on cultivating
@@ -3812,7 +3820,7 @@ the act of liberation is to treat them as objects which must be saved from a
 burning building; it is to lead them into the populist pitfall and transform
 them into masses which can be manipulated. &amp;hellip; [T]he oppressed must see
 themselves as women and men engaged in the &amp;hellip; vocation of becoming more fully
-human.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+human.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;This may seem like heavy or strident language in the context of online petition
 drives or peer-to-peer fundraising campaigns. But my goal is to push social
@@ -3853,7 +3861,7 @@ from, and it doesn&amp;rsquo;t mean that everyone involved is a charlatan simply
 make a buck. But selling people an identity, even a &amp;ldquo;good&amp;rdquo; one, is fundamentally
 different from organizing for social change. Freire again: &amp;ldquo;Conviction cannot be
 packaged and sold; it is reached, rather, by means of a totality of reflection
-and action.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+and action.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Movement building also goes beyond electoral organizing.&lt;/strong&gt; Folks working for
 social change often form common cause with those organizing around a political
 candidate, and there is of course much to be learned and shared between the two
@@ -3892,14 +3900,14 @@ information above.)&lt;/p&gt;
 &lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;Kokopeli, Bruce and George Lakey. &lt;em&gt;Leadership for Change: Toward a Feminist
 Model&lt;/em&gt;. New Society Publishers, Santa Cruz, Calif., 1985. Available from
-&lt;a href=&#34;https://web.archive.org/web/20130617163615/http://www.trainingforchange.org/leadership_for_change&#34;&gt;Training for Change&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://web.archive.org/web/20130617163615/http://www.trainingforchange.org/leadership_for_change&#34;&gt;Training for Change&lt;/a&gt;. &lt;a href=&#34;https://rootwork.github.io/rootwork.org&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34;&gt;
 &lt;p&gt;Freire, Paulo. &lt;em&gt;Pedagogy of the Oppressed&lt;/em&gt;. Continuum International
-Publishing Group, New York, 2004, pp. 65–66.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+Publishing Group, New York, 2004, pp. 65&amp;ndash;66. &lt;a href=&#34;https://rootwork.github.io/rootwork.org&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:3&#34;&gt;
-&lt;p&gt;Freire, p. 67.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Freire, p. 67. &lt;a href=&#34;https://rootwork.github.io/rootwork.org&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2009/09/gurus-are-not-enough-call-organizers-organizing-social-media/&#34;&gt;Gurus are not enough: A call for organizers and organizing in social media&lt;/a&gt; originally published on &lt;a href=&#34;https://rootwork.org&#34;&gt;Rootwork.org&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;</description>
@@ -3977,14 +3985,14 @@ social justice campaigns.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;I entirely share the author&amp;rsquo;s frustration with &amp;ldquo;tech for social change&amp;rdquo;
 discussions that fawn over the technology and don&amp;rsquo;t engage on the level of
 strategic change.&lt;/strong&gt; I saw this happening in particular during the
-&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2009/04/fire-food-why-theres-no-such-thing-twitter-revolution&#34;&gt;Moldovan &amp;ldquo;Twitter revolution&amp;rdquo; discussion&lt;/a&gt;
+&lt;a href=&#34;https://rootwork.github.io/blog/2009/04/fire-food-why-theres-no-such-thing-twitter-revolution&#34;&gt;Moldovan &amp;ldquo;Twitter revolution&amp;rdquo; discussion&lt;/a&gt;
 (which Joe linked to in his post). This &amp;ldquo;revolution&amp;rdquo; seemed to captivate a lot
 of armchair activists on Twitter, mostly because it involved Twitter. They
 seemed to miss the fact that a) Twitter wasn&amp;rsquo;t actually a big part of the
 organizing strategy, and b) the campaign itself didn&amp;rsquo;t end up seriously
 threatening the regime; at best it was a mild skirmish and it certainly wasn&amp;rsquo;t a
 &amp;ldquo;revolution&amp;rdquo; of any kind.
-(&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2009/04/fire-food-why-theres-no-such-thing-twitter-revolution#comment-46&#34;&gt;Which is not to diminish the hard work of social justice organizers in Moldova.&lt;/a&gt;
+(&lt;a href=&#34;https://rootwork.github.io/blog/2009/04/fire-food-why-theres-no-such-thing-twitter-revolution&#34;&gt;Which is not to diminish the hard work of social justice organizers in Moldova.&lt;/a&gt;
 Mad props to them.)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The author&amp;rsquo;s point about social media providing an outlet for people&amp;rsquo;s
 activism that sucks away people&amp;rsquo;s time for real social change is an excellent
@@ -4004,7 +4012,7 @@ And when those groups get their hands on social media, they do incredibly
 un-strategic things with them.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The fact that social media can be used unstrategically, however, doesn&amp;rsquo;t mean
 it has to be.&lt;/strong&gt; To pull a line from my
-&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2009/04/fire-food-why-theres-no-such-thing-twitter-revolution&#34;&gt;earlier post on Twitter&lt;/a&gt;,
+&lt;a href=&#34;https://rootwork.github.io/blog/2009/04/fire-food-why-theres-no-such-thing-twitter-revolution&#34;&gt;earlier post on Twitter&lt;/a&gt;,
 political pamphlets, phone trees and jam-the-faxes must have seemed like
 strategies in and of themselves when each technology first came out. But smart
 social justice organizers recognized them as tactics, and such tactics were only
@@ -4032,7 +4040,7 @@ Thanks for the invitation, Beth!&lt;/em&gt;&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;sm
       <guid>https://rootwork.github.io/rootwork.org/blog/2009/04/fire-food-why-theres-no-such-thing-twitter-revolution/</guid>
       <enclosure url="https://rootwork.github.io/rootwork.org/blog/2009/04/fire-food-why-theres-no-such-thing-twitter-revolution/fire-teapot_flickr-susanneanette.jpg" type="image/jpeg" length="0" />
       <description>&lt;p&gt;In the past two days, posts began popping up on Twitter with the tag
-&amp;ldquo;&lt;a href=&#34;https://twitter.com/search?q=%23pman&amp;amp;f=live&#34; title=&#34;View recent Twitter posts with this tag&#34;&gt;#pman&lt;/a&gt;&amp;rdquo;
+&amp;ldquo;&lt;a href=&#34;https://twitter.com/search?q=%23pman&amp;f=live&#34; title=&#34;View recent Twitter posts with this tag&#34;&gt;#pman&lt;/a&gt;&amp;rdquo;
 &amp;ndash; short for Piata Marii Adunari Nationale, the largest city square in the
 capital of Moldova. Students were
 &lt;a href=&#34;https://foreignpolicy.com/2009/04/07/moldovas-twitter-revolution/&#34; title=&#34;&#39;Moldova&#39;s Twitter Revolution&#39; on Foreign Policy&#39;s net.effect&#34;&gt;organizing&lt;/a&gt;:&lt;/p&gt;
@@ -4165,20 +4173,20 @@ which also excerpts part of the article above.&lt;/em&gt;&lt;/p&gt;&lt;hr /&gt;&
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2009/02/using-facebook-social-change-webinar/facebook-prohibited_flickr-avlxyz.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2009/02/using-facebook-social-change-webinar/facebook-prohibited_flickr-avlxyz.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2009/02/using-facebook-social-change-webinar/facebook-prohibited_flickr-avlxyz.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2009/02/using-facebook-social-change-webinar/facebook-prohibited_flickr-avlxyz.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
       loading=&#34;lazy&#34;
       decoding=&#34;async&#34;
-      alt=&#34;Talking about &amp;amp;amp;lsquo;Facebook&amp;amp;amp;rsquo; is strictly prohibited on these premises&#34;
+      alt=&#34;Talking about &amp;lsquo;Facebook&amp;rsquo; is strictly prohibited on these premises&#34;
       
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;720&#34;
         height=&#34;331&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2009/02/using-facebook-social-change-webinar/facebook-prohibited_flickr-avlxyz.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2009/02/using-facebook-social-change-webinar/facebook-prohibited_flickr-avlxyz.jpg&#34;
       
       
         title=&#34;Image credit Flickr user avlxyz&#34;
@@ -4315,7 +4323,7 @@ WordPress, Joomla or Plone &amp;ndash; or, if Soapblox takes that route, Soapblo
 &lt;a href=&#34;https://web.archive.org/web/20130217190830/http://salsa.democracyinaction.org/o/103/t/6267/content.jsp?content_KEY=4035&#34;&gt;2008 Democracy in Action Community Conference&lt;/a&gt;
 about the Genocide Intervention Network&amp;rsquo;s use of social networking and social
 media to achieve our goals in advocacy, fundraising and membership development.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;2008_dia_social-networks-social-change.pdf&#34;&gt;Download a PDF of the presentation slides.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org/2008_dia_social-networks-social-change.pdf&#34;&gt;Download a PDF of the presentation slides.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Update, Nov. 12, 2008: Beth Kanter has
 &lt;a href=&#34;https://beth.typepad.com/beths_blog/2008/11/social-networks-for-social-change-ivan-boothe-knows-what-he-is-talking-about.html&#34;&gt;written up a summary of this presentation over on her blog&lt;/a&gt;.
 Thanks, Beth! Be sure to check out her
@@ -4335,20 +4343,20 @@ this site; I&amp;rsquo;ve linked to some of these articles in the body of the pr
 below.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Jump directly to the success stories:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#success-story-1-using-online-student-pressure-to-pass-legislation&#34;&gt;Using Online Student Pressure to Pass Legislation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#success-story-2-a-photo-petition-puts-students-at-the-heart-of-a-congressional-briefing&#34;&gt;A Photo Petition Puts Students at the Heart of a Congressional Briefing&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#success-story-3-how-social-networks-can-coordinate-a-fundraising-drive&#34;&gt;How Social Networks Can Coordinate a Fundraising Drive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org&#34;&gt;Using Online Student Pressure to Pass Legislation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org&#34;&gt;A Photo Petition Puts Students at the Heart of a Congressional Briefing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org&#34;&gt;How Social Networks Can Coordinate a Fundraising Drive&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;a-mission-to-empower&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;A Mission to Empower&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;The
 &lt;a href=&#34;https://web.archive.org/web/20090217095953/http://genocideintervention.net/&#34;&gt;Genocide Intervention Network&lt;/a&gt;
 is an organization that I helped form in college, and where I worked as director
-of communications and Internet strategy coordinator from 2004–2008. The mission
+of communications and Internet strategy coordinator from 2004&amp;ndash;2008. The mission
 of the organization is to empower members with tools to prevent and stop
 genocide.&lt;/p&gt;
 &lt;p&gt;The idea of &amp;ldquo;&lt;strong&gt;empowerment&lt;/strong&gt;&amp;rdquo; is key to the organization&amp;rsquo;s mission, and
 undergirds our approach to social networks and social media. GI-Net wants
 members who can
-&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2007/10/organizing-rather-mobilizing-using-social-networks-constituency-building&#34; title=&#34;Read &#39;Organizing Rather than Mobilizing: Using Social Networks for Constituency-Building&#39;&#34;&gt;think for themselves&lt;/a&gt;,
+&lt;a href=&#34;https://rootwork.github.io/blog/2007/10/organizing-rather-mobilizing-using-social-networks-constituency-building&#34; title=&#34;Read &#39;Organizing Rather than Mobilizing: Using Social Networks for Constituency-Building&#39;&#34;&gt;think for themselves&lt;/a&gt;,
 and consequently social networking is a key method by which the organization
 helps train supporters to speak for themselves, for us, and for an anti-genocide
 movement.&lt;/p&gt;
@@ -4359,7 +4367,7 @@ who can motivate others.&lt;/p&gt;
 &lt;p&gt;When we first arrived on
 &lt;a
   data-dead-link=&#34;http://www.facebook.com/group.php?gid=2204803189&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Fwww.facebook.com%2Fgroup.php%3Fgid%3D2204803189&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
   title=&#34;The Facebook Group for the Genocide Intervention Network [dead link]&#34;
   &gt;Facebook&lt;/a
 &gt;
@@ -4407,7 +4415,7 @@ we were getting one or two friend requests a day, and that&amp;rsquo;s not too b
 just starting off. As soon as we put up a short video about the organization &amp;ndash;
 posted via &lt;a href=&#34;https://www.youtube.com/user/genocideintervention&#34;&gt;YouTube&lt;/a&gt;, in the
 hopes of drawing in people from that site as well &amp;ndash; our friend requests went up
-to 10–15 per day. Supporters could embed the videos in their own profiles
+to 10&amp;ndash;15 per day. Supporters could embed the videos in their own profiles
 themselves. That&amp;rsquo;s the advantage of social media in social networks: &lt;strong&gt;People
 are drawn to photos and video, and the nature of social networking allows them
 to easily share them with friends.&lt;/strong&gt;&lt;/p&gt;
@@ -4444,7 +4452,7 @@ our supporters while still recognizing their own creativity.&lt;/p&gt;
 friend.&amp;rdquo; Forcing your members to send out only board-approved talking points
 won&amp;rsquo;t inspire much loyalty, and probably won&amp;rsquo;t be very persuasive to their
 friends. &lt;strong&gt;Nonprofits have to be willing to
-&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2008/05/just-what-kind-social-change-are-you-interested&#34; title=&#34;Read &#39;Just what kind of social change are you interested in?&#39;&#34;&gt;lose some of their message&lt;/a&gt;
+&lt;a href=&#34;https://rootwork.github.io/blog/2008/05/just-what-kind-social-change-are-you-interested&#34; title=&#34;Read &#39;Just what kind of social change are you interested in?&#39;&#34;&gt;lose some of their message&lt;/a&gt;
 control in exchange for member loyalty.&lt;/strong&gt; Trust me &amp;ndash; it&amp;rsquo;s worth the trade-off.&lt;/p&gt;
 &lt;h3 id=&#34;and-then-listen-to-what-they-say&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;&amp;hellip;And Then Listen to What They Say&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;On our MySpace profile, we have a prominent newsletter-signup form at the top of
 the screen. But we don&amp;rsquo;t simply cut-and-paste our blast emails directly to the
@@ -4547,7 +4555,7 @@ directions, with your supporters.&lt;/li&gt;
 &lt;p&gt;Feedback in the comments below is welcome! And once again, let me encourage you
 to take a look at the
 &lt;a href=&#34;https://www.slideshare.net/rootwork/using-social-networks-for-social-change-facebook-myspace-and-more-presentation&#34;&gt;Slideshare version&lt;/a&gt;
-(or &lt;a href=&#34;2008_dia_social-networks-social-change.pdf&#34;&gt;PDF&lt;/a&gt;) for illustrations of
+(or &lt;a href=&#34;https://rootwork.github.io/rootwork.org/2008_dia_social-networks-social-change.pdf&#34;&gt;PDF&lt;/a&gt;) for illustrations of
 what&amp;rsquo;s been discussed. Thanks for reading!&lt;/p&gt;
 &lt;h3 id=&#34;additional-resources&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Additional Resources&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Check out these writers for great ideas on how nonprofits can use social
 networks to their greatest potential:&lt;/p&gt;
@@ -4575,7 +4583,7 @@ busily collecting information for
 &lt;a href=&#34;https://web.archive.org/web/20160709185617/http://netsquared.meetup.com/16/calendar/7890323/&#34;&gt;next Tuesday&amp;rsquo;s Philly NetSquared event&lt;/a&gt;.&lt;/p&gt;
 &lt;a
   data-dead-link=&#34;http://www.flickr.com/photos/schipulites/2528919057/&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Fwww.flickr.com%2Fphotos%2Fschipulites%2F2528919057%2F&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
   title=&#34;http://www.flickr.com/photos/schipulites/2528919057/ [dead link]&#34;
   &gt;View photo from the conference.&lt;/a
 &gt;
@@ -4586,7 +4594,7 @@ footage available. Enables participants to search who said what when, blog
 clips, improve transcripts and edit sequences.&amp;rdquo;&lt;/p&gt;
 &lt;a
   data-dead-link=&#34;http://blip.tv/file/get/Netsquared-N2Y3InterviewWithAbramSternMetaVid675.MOV&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Fblip.tv%2Ffile%2Fget%2FNetsquared-N2Y3InterviewWithAbramSternMetaVid675.MOV&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
   title=&#34;http://blip.tv/file/get/Netsquared-N2Y3InterviewWithAbramSternMetaVid675.MOV [dead link]&#34;
   &gt;Video interview with Abram Stern.&lt;/a
 &gt;
@@ -4602,9 +4610,9 @@ email and the web.&amp;rdquo;&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2008/05/netsquared-project-interviews-session-notes/Erik-Hersman.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2008/05/netsquared-project-interviews-session-notes/Erik-Hersman.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2008/05/netsquared-project-interviews-session-notes/Erik-Hersman.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2008/05/netsquared-project-interviews-session-notes/Erik-Hersman.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -4615,7 +4623,7 @@ email and the web.&amp;rdquo;&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;320&#34;
         height=&#34;240&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2008/05/netsquared-project-interviews-session-notes/Erik-Hersman.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2008/05/netsquared-project-interviews-session-notes/Erik-Hersman.jpg&#34;
       
       
     /&gt;
@@ -4625,7 +4633,7 @@ email and the web.&amp;rdquo;&lt;/p&gt;
 
 &lt;a
   data-dead-link=&#34;http://blip.tv/file/get/Netsquared-N2Y3InterviewWithErikHersmanFromUshahidi381.MOV&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Fblip.tv%2Ffile%2Fget%2FNetsquared-N2Y3InterviewWithErikHersmanFromUshahidi381.MOV&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
   title=&#34;http://blip.tv/file/get/Netsquared-N2Y3InterviewWithErikHersmanFromUshahidi381.MOV [dead link]&#34;
   &gt;Video interview with Erik Hersman.&lt;/a
 &gt;&lt;/p&gt;
@@ -4637,7 +4645,7 @@ anti-genocide legislation their state governments or elected representatives can
 play key roles in passing.&amp;rdquo;&lt;/p&gt;
 &lt;a
   data-dead-link=&#34;http://blip.tv/file/get/Netsquared-N2Y3InterviewWithJanessaGoldbeckAntiGenocideActionTracker726.MOV&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Fblip.tv%2Ffile%2Fget%2FNetsquared-N2Y3InterviewWithJanessaGoldbeckAntiGenocideActionTracker726.MOV&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
   title=&#34;http://blip.tv/file/get/Netsquared-N2Y3InterviewWithJanessaGoldbeckAntiGenocideActionTracker726.MOV [dead link]&#34;
   &gt;Video interview with Janessa Goldbeck.&lt;/a
 &gt;
@@ -4648,26 +4656,26 @@ share via &amp;lsquo;grabbable&amp;rsquo; widgets customizable by issue/location
 capitols and town halls with social networking and APIs.&amp;rdquo;&lt;/p&gt;
 &lt;a
   data-dead-link=&#34;http://blip.tv/file/get/Netsquared-N2Y3AskYourLawmaker749.flv&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Fblip.tv%2Ffile%2Fget%2FNetsquared-N2Y3AskYourLawmaker749.flv&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
   title=&#34;http://blip.tv/file/get/Netsquared-N2Y3AskYourLawmaker749.flv [dead link]&#34;
   &gt;Video interview with Melinda Wittstock.&lt;/a
 &gt;
 &lt;p&gt;More photos:
 &lt;a
   data-dead-link=&#34;http://www.flickr.com/photos/schipulites/2528909201/&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Fwww.flickr.com%2Fphotos%2Fschipulites%2F2528909201%2F&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
   title=&#34;http://www.flickr.com/photos/schipulites/2528909201/ [dead link]&#34;
   &gt;Knowmore.org&lt;/a
 &gt;,
 &lt;a
   data-dead-link=&#34;http://www.flickr.com/photos/schipulites/2529723670/&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Fwww.flickr.com%2Fphotos%2Fschipulites%2F2529723670%2F&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
   title=&#34;http://www.flickr.com/photos/schipulites/2529723670/ [dead link]&#34;
   &gt;NetSquared conference schwag&lt;/a
 &gt;,
 &lt;a
   data-dead-link=&#34;http://www.flickr.com/photos/schipulites/2528906941/&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Fwww.flickr.com%2Fphotos%2Fschipulites%2F2528906941%2F&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
   title=&#34;http://www.flickr.com/photos/schipulites/2528906941/ [dead link]&#34;
   &gt;Genocide Intervention Network&lt;/a
 &gt;&lt;/p&gt;
@@ -4743,9 +4751,9 @@ is a great place to follow along as well. Some images from the NetSquared
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/green-map_flickr-thewhiteheads.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/green-map_flickr-thewhiteheads.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/green-map_flickr-thewhiteheads.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/green-map_flickr-thewhiteheads.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -4756,7 +4764,7 @@ is a great place to follow along as well. Some images from the NetSquared
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;1000&#34;
         height=&#34;1333&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/green-map_flickr-thewhiteheads.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/green-map_flickr-thewhiteheads.jpg&#34;
       
       
     /&gt;
@@ -4771,9 +4779,9 @@ is a great place to follow along as well. Some images from the NetSquared
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/maplight_flickr-happykatie.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/maplight_flickr-happykatie.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/maplight_flickr-happykatie.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/maplight_flickr-happykatie.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -4784,7 +4792,7 @@ is a great place to follow along as well. Some images from the NetSquared
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;240&#34;
         height=&#34;360&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/maplight_flickr-happykatie.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/maplight_flickr-happykatie.jpg&#34;
       
       
     /&gt;
@@ -4799,9 +4807,9 @@ is a great place to follow along as well. Some images from the NetSquared
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/knowmore_flickr-happykatie.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/knowmore_flickr-happykatie.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/knowmore_flickr-happykatie.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/knowmore_flickr-happykatie.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -4812,7 +4820,7 @@ is a great place to follow along as well. Some images from the NetSquared
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;240&#34;
         height=&#34;360&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/knowmore_flickr-happykatie.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/knowmore_flickr-happykatie.jpg&#34;
       
       
     /&gt;
@@ -4827,20 +4835,20 @@ is a great place to follow along as well. Some images from the NetSquared
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/genocide-intervention-network_flickr-maintainitproject.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/genocide-intervention-network_flickr-maintainitproject.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/genocide-intervention-network_flickr-maintainitproject.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/genocide-intervention-network_flickr-maintainitproject.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
       loading=&#34;lazy&#34;
       decoding=&#34;async&#34;
-      alt=&#34;Genocide Intervention Network&amp;amp;amp;rsquo;s anti-genocide legislation tracker (Flickr: TechSoup for Libraries)&#34;
+      alt=&#34;Genocide Intervention Network&amp;rsquo;s anti-genocide legislation tracker (Flickr: TechSoup for Libraries)&#34;
       
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;448&#34;
         height=&#34;336&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/genocide-intervention-network_flickr-maintainitproject.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/genocide-intervention-network_flickr-maintainitproject.jpg&#34;
       
       
     /&gt;
@@ -4873,7 +4881,7 @@ the effective scaling for causes?&lt;/p&gt;
 change &amp;ndash; but what kind of social change?&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Many nonprofits use social networks and online activism as a way to boost their
 membership rolls and donation levels. As I&amp;rsquo;ve
-&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2007/10/organizing-rather-mobilizing-using-social-networks-constituency-building&#34;&gt;written before&lt;/a&gt;,
+&lt;a href=&#34;https://rootwork.github.io/blog/2007/10/organizing-rather-mobilizing-using-social-networks-constituency-building&#34;&gt;written before&lt;/a&gt;,
 that seems less useful to me than focusing on empowering an effective movement
 &amp;ndash; whether or not people donate to your organization or sign up for your
 newsletter. This isn&amp;rsquo;t to minimize the challenges everyone faces on how to
@@ -4888,7 +4896,7 @@ outcome; it has to be the primary concern. And that&amp;rsquo;s true, in my opin
 whether you&amp;rsquo;re talking about online or offline social change.&lt;/p&gt;
 &lt;p&gt;More than thirty years ago, sociologists Frances Fox Piven and Richard Cloward
 wrote in the introduction to
-&lt;a href=&#34;https://books.google.com/books?id=cAlHAAAAMAAJ&amp;amp;q=poor&#43;people%27s&#43;movements&amp;amp;dq=poor&#43;people%27s&#43;movements&amp;amp;pgis=1&#34;&gt;&lt;em&gt;Poor People&amp;rsquo;s Movements: Why They Succeed, How They Fail&lt;/em&gt;&lt;/a&gt;
+&lt;a href=&#34;https://books.google.com/books?id=cAlHAAAAMAAJ&amp;q=poor&#43;people%27s&#43;movements&amp;dq=poor&#43;people%27s&#43;movements&amp;pgis=1&#34;&gt;&lt;em&gt;Poor People&amp;rsquo;s Movements: Why They Succeed, How They Fail&lt;/em&gt;&lt;/a&gt;
 (1977):&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;[D]uring those brief moments when lower-class groups exert some force against
@@ -5014,9 +5022,9 @@ structured.&lt;/strong&gt;&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&lt;a href
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2008/03/genocide-intervention-network-nominated-netsquared-mashup-award/darfurscores.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2008/03/genocide-intervention-network-nominated-netsquared-mashup-award/darfurscores.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2008/03/genocide-intervention-network-nominated-netsquared-mashup-award/darfurscores.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2008/03/genocide-intervention-network-nominated-netsquared-mashup-award/darfurscores.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -5027,7 +5035,7 @@ structured.&lt;/strong&gt;&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&lt;a href
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;1000&#34;
         height=&#34;361&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2008/03/genocide-intervention-network-nominated-netsquared-mashup-award/darfurscores.png&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2008/03/genocide-intervention-network-nominated-netsquared-mashup-award/darfurscores.png&#34;
       
       
     /&gt;
@@ -5053,9 +5061,9 @@ tentatively named GenocideScores.org.&lt;/p&gt;
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2008/03/genocide-intervention-network-nominated-netsquared-mashup-award/n2y3-featured-project.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2008/03/genocide-intervention-network-nominated-netsquared-mashup-award/n2y3-featured-project.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2008/03/genocide-intervention-network-nominated-netsquared-mashup-award/n2y3-featured-project.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2008/03/genocide-intervention-network-nominated-netsquared-mashup-award/n2y3-featured-project.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -5066,7 +5074,7 @@ tentatively named GenocideScores.org.&lt;/p&gt;
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;144&#34;
         height=&#34;55&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2008/03/genocide-intervention-network-nominated-netsquared-mashup-award/n2y3-featured-project.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2008/03/genocide-intervention-network-nominated-netsquared-mashup-award/n2y3-featured-project.jpg&#34;
       
       
     /&gt;
@@ -5135,7 +5143,7 @@ change.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a
   data-dead-link=&#34;http://www.askthecandidates.org&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Fwww.askthecandidates.org&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
   title=&#34;http://www.askthecandidates.org [dead link]&#34;
   &gt;Ask the Candidates&lt;/a
 &gt; (Drupal
@@ -5146,7 +5154,7 @@ version 5)&lt;/li&gt;
 (v4.7)&lt;/li&gt;
 &lt;li&gt;&lt;a
   data-dead-link=&#34;http://www.powertoprotect.org&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Fwww.powertoprotect.org&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
   title=&#34;http://www.powertoprotect.org [dead link]&#34;
   &gt;Power to Protect&lt;/a
 &gt; (v4.6)&lt;/li&gt;
@@ -5283,7 +5291,7 @@ Drupal-centered site for nonprofit and charitable discussions. (For the
 mischievous, there&amp;rsquo;s also
 &lt;a href=&#34;https://groups.drupal.org/drupal-for-evil&#34;&gt;Drupal for Evil&lt;/a&gt;.) There are plenty
 of
-&lt;a href=&#34;https://groups.drupal.org/og/all?filter0=&amp;amp;filter1=141&amp;amp;filter2=**ALL**&#34;&gt;geographically-based Drupal groups&lt;/a&gt;
+&lt;a href=&#34;https://groups.drupal.org/og/all?filter0=&amp;filter1=141&amp;filter2=**ALL**&#34;&gt;geographically-based Drupal groups&lt;/a&gt;
 &amp;ndash; see if there&amp;rsquo;s one near you!&lt;/p&gt;
 &lt;p&gt;There&amp;rsquo;s lots of general Drupal support out there, including the
 &lt;a href=&#34;https://web.archive.org/web/20080629032329/http://drupal.org/handbooks&#34;&gt;handbook documentation&lt;/a&gt;,
@@ -5339,13 +5347,13 @@ focusing on these types of networks, in which we were able to supply members
 with knowledge but they were also empowered to speak for themselves, could be a
 powerful way to grow our impact exponentially.&lt;/p&gt;
 &lt;p&gt;In fact, effective social movements have
-&lt;a href=&#34;https://www.worldcat.org/title/origins-of-the-civil-rights-movement-black-communities-organizing-for-change/oclc/932325537&amp;amp;referer=brief_results&#34; title=&#34;Aldon Morris: The Origins of the Civil Rights Movement&#34;&gt;always&lt;/a&gt;
+&lt;a href=&#34;https://www.worldcat.org/title/origins-of-the-civil-rights-movement-black-communities-organizing-for-change/oclc/932325537&amp;referer=brief_results&#34; title=&#34;Aldon Morris: The Origins of the Civil Rights Movement&#34;&gt;always&lt;/a&gt;
 been
-&lt;a href=&#34;https://www.worldcat.org/title/poor-peoples-movements-why-they-succeed-how-they-fail/oclc/1031967436&amp;amp;referer=brief_results&#34; title=&#34;Frances Fox Piven and Richard Cloward: Poor People&#39;s Movements&#34;&gt;based&lt;/a&gt;
+&lt;a href=&#34;https://www.worldcat.org/title/poor-peoples-movements-why-they-succeed-how-they-fail/oclc/1031967436&amp;referer=brief_results&#34; title=&#34;Frances Fox Piven and Richard Cloward: Poor People&#39;s Movements&#34;&gt;based&lt;/a&gt;
 on affective
-&lt;a href=&#34;https://www.worldcat.org/title/race-rebels-culture-politics-and-the-black-working-class/oclc/925010414&amp;amp;referer=brief_results&#34; title=&#34;Robin D.G. Kelley: Race Rebels&#34;&gt;social ties&lt;/a&gt;,
+&lt;a href=&#34;https://www.worldcat.org/title/race-rebels-culture-politics-and-the-black-working-class/oclc/925010414&amp;referer=brief_results&#34; title=&#34;Robin D.G. Kelley: Race Rebels&#34;&gt;social ties&lt;/a&gt;,
 and fears of
-&lt;a href=&#34;https://www.worldcat.org/title/bowling-alone-the-collapse-and-revival-of-american-community/oclc/1225886940&amp;amp;referer=brief_results&#34; title=&#34;Robert Putnam: Bowling Alone&#34;&gt;postmodern atomization&lt;/a&gt;
+&lt;a href=&#34;https://www.worldcat.org/title/bowling-alone-the-collapse-and-revival-of-american-community/oclc/1225886940&amp;referer=brief_results&#34; title=&#34;Robert Putnam: Bowling Alone&#34;&gt;postmodern atomization&lt;/a&gt;
 aside, twenty-first century movements won&amp;rsquo;t be any different.&lt;/p&gt;
 &lt;p&gt;When I
 &lt;a href=&#34;https://web.archive.org/web/20080618234425/http://www.idealware.org/articles/social_networking_genocide.php&#34;&gt;first started writing about this&lt;/a&gt;,
@@ -5393,7 +5401,7 @@ more lasting change.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20080726053628/http://myspace.com/genocideintervention&#34;&gt;MySpace&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a
   data-dead-link=&#34;http://www.facebook.com/group.php?gid=2204803189&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Fwww.facebook.com%2Fgroup.php%3Fgid%3D2204803189&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
   title=&#34;http://www.facebook.com/group.php?gid=2204803189 [dead link]&#34;
   &gt;Facebook&lt;/a
 &gt;&lt;/li&gt;
@@ -5406,14 +5414,14 @@ more lasting change.&lt;/p&gt;
 &lt;h3 id=&#34;previous-articles&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Previous Articles&lt;/span&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20070612180331/http://www.idealware.org/articles/social_networking_genocide.php&#34;&gt;Using Social Networking to Stop Genocide&lt;/a&gt;
 (Idealware), on the origins of GI-Net&amp;rsquo;s approach.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2006/12/theory-bottom-social-networking&#34;&gt;Bottom-up social networking interview&lt;/a&gt;,
+&lt;li&gt;&lt;a href=&#34;https://rootwork.github.io/blog/2006/12/theory-bottom-social-networking&#34;&gt;Bottom-up social networking interview&lt;/a&gt;,
 on why MySpace isn&amp;rsquo;t like banner ads (see the second half).&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20080724202531/http://www.americanprogressaction.org/events/2007/noi.html&#34;&gt;Leveraging Social Networks for Progressive Organizing&lt;/a&gt;
 (New Organizing Institute), a panel discussion I was on talking about the
 possibilities for nonprofits using social networks. Sadly the video is no
 longer online, but you can read
 &lt;a href=&#34;http://www.ddmcd.com/managing-technology/nonprofits-and-the-future-of-social-networking.html&#34;&gt;this write-up of the panel&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2007/04/notes-ntc-participatory-media-future-online-outreach&#34;&gt;Notes from NTC: Leveraging the power of participatory media and the future of online outreach&lt;/a&gt;,
+&lt;li&gt;&lt;a href=&#34;https://rootwork.github.io/blog/2007/04/notes-ntc-participatory-media-future-online-outreach&#34;&gt;Notes from NTC: Leveraging the power of participatory media and the future of online outreach&lt;/a&gt;,
 on the related topic of user-generated media campaigns.&lt;/li&gt;
 &lt;/ul&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2007/10/organizing-rather-mobilizing-using-social-networks-constituency-building/&#34;&gt;Organizing rather than mobilizing: Using social networks for constituency-building&lt;/a&gt; originally published on &lt;a href=&#34;https://rootwork.org&#34;&gt;Rootwork.org&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;</description>
     </item>
@@ -5432,7 +5440,7 @@ stories and websites to larger audiences. You can see our action in the message
 below, or by going to:&lt;/p&gt;
 &lt;a
   data-dead-link=&#34;http://www.GenocideIntervention.net/OneMinute&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Fwww.GenocideIntervention.net%2FOneMinute&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
   title=&#34;http://www.GenocideIntervention.net/OneMinute [dead link]&#34;
   &gt;GenocideIntervention.net/OneMinute&lt;/a
 &gt;
@@ -5458,9 +5466,9 @@ more about these successes in
     
       
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2007/07/one-minute-1-800-genocide/1800genocide.avif&#34; type=&#34;image/avif&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2007/07/one-minute-1-800-genocide/1800genocide.avif %!s(&lt;nil&gt;)&#34; type=&#34;image/avif&#34;&gt;
         
-        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2007/07/one-minute-1-800-genocide/1800genocide.webp&#34; type=&#34;image/webp&#34;&gt;
+        &lt;source srcset=&#34;https://rootwork.github.io/rootwork.org/blog/2007/07/one-minute-1-800-genocide/1800genocide.webp %!s(&lt;nil&gt;)&#34; type=&#34;image/webp&#34;&gt;
         
         
     &lt;img
@@ -5471,7 +5479,7 @@ more about these successes in
         class=&#34;image_figure image_internal image_processed&#34;
         width=&#34;486&#34;
         height=&#34;140&#34;
-        src=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/blog/2007/07/one-minute-1-800-genocide/1800genocide.jpg&#34;
+        src=&#34;https://rootwork.github.io/rootwork.org/blog/2007/07/one-minute-1-800-genocide/1800genocide.jpg&#34;
       
       
         title=&#34; &#34;
@@ -5686,7 +5694,7 @@ that I wrote as an introduction to the NetSquared national conference last May
 (see also a
 &lt;a
   data-dead-link=&#34;http://genocideintervention.net/members/docs/netact.pdf&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Fgenocideintervention.net%2Fmembers%2Fdocs%2Fnetact.pdf&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
   title=&#34;http://genocideintervention.net/members/docs/netact.pdf [dead link]&#34;
   &gt;PDF of the brochure&lt;/a
 &gt;
@@ -5734,7 +5742,7 @@ in a constructive way.&lt;/p&gt;
 &lt;p&gt;Many of the
 &lt;a
   data-dead-link=&#34;http://www.associatedcontent.com/article/79084/myspace_brings_humanitarian_organization.html&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Fwww.associatedcontent.com%2Farticle%2F79084%2Fmyspace_brings_humanitarian_organization.html&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
   title=&#34;http://www.associatedcontent.com/article/79084/myspace_brings_humanitarian_organization.html [dead link]&#34;
   &gt;approaches to social networking&lt;/a
 &gt;
@@ -5762,7 +5770,7 @@ Enthusiastic supporters are great, but sometimes you have to channel them in the
 right direction.&lt;/p&gt;
 &lt;p&gt;Finally, even if online organizing dovetails well with community organizing, the
 mobilizing of third-party advocates only effects change if that mobilization is
-directed in a useful direction.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; You might get a lot of people to sign a
+directed in a useful direction.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; You might get a lot of people to sign a
 petition, but does that actually aid the community you supposedly help? You
 might attract a lot of donations, but does that actually support the people you
 say you represent? &lt;strong&gt;These are classic nonprofit challenges that don&amp;rsquo;t go away
@@ -5778,13 +5786,13 @@ framework for real-world action.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20070302163843/http://myspace.com/genocideintervention&#34;&gt;MySpace&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a
   data-dead-link=&#34;http://www.facebook.com/group.php?gid=2204803189&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Fwww.facebook.com%2Fgroup.php%3Fgid%3D2204803189&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
   title=&#34;http://www.facebook.com/group.php?gid=2204803189 [dead link]&#34;
   &gt;Facebook&lt;/a
 &gt;&lt;/li&gt;
 &lt;li&gt;&lt;a
   data-dead-link=&#34;http://del.icio.us/antigenocide&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Fdel.icio.us%2Fantigenocide&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
   title=&#34;http://del.icio.us/antigenocide [dead link]&#34;
   &gt;del.icio.us&lt;/a
 &gt; and
@@ -5808,7 +5816,7 @@ not the Internet. And when social networking did come into play, such as the
 &lt;a href=&#34;https://www.washingtonpost.com/wp-dyn/content/article/2006/03/28/AR2006032800982.html&#34;&gt;student walkouts&lt;/a&gt;
 in Virginia and Maryland, they were largely decentralized, with no
 organization pointing the way or setting up MySpace profiles to encourage
-the movement.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+the movement. &lt;a href=&#34;https://rootwork.github.io/rootwork.org&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2006/12/theory-bottom-up-social-networking/&#34;&gt;The theory of bottom-up social networking&lt;/a&gt; originally published on &lt;a href=&#34;https://rootwork.org&#34;&gt;Rootwork.org&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;</description>
@@ -5901,7 +5909,7 @@ I had written out my introduction earlier this week, but due to a browser mishap
 lost nearly all of it and haven&amp;rsquo;t had time to re-write it until now.&lt;/p&gt;
 &lt;p&gt;GI-Net is a nonprofit based in DC that is a little more than two years old. We
 began as a student group at Swarthmore College with an idea: to change the way
-the world responds to genocide. In her groundbreaking and Pulitzer Prize–winning
+the world responds to genocide. In her groundbreaking and Pulitzer Prize&amp;ndash;winning
 book, &lt;em&gt;&amp;lsquo;A Problem From Hell&amp;rsquo;: America and the Age of Genocide&lt;/em&gt;,
 &lt;a href=&#34;https://www.thenation.com/article/archive/why-cant-we/&#34; title=&#34;Read a recent commencement speech by Samantha Power&#34;&gt;Samantha Power&lt;/a&gt;
 surveys the U.S. response to genocides in the twentieth century and discovers
@@ -5938,7 +5946,7 @@ thesis on
 &lt;p&gt;While at Swarthmore I was involved with a number of campaigns, most notably
 &lt;a href=&#34;https://web.archive.org/web/20040113040820/http://why-war.com/&#34; title=&#34;Visit Why War?&#34;&gt;Why War?&lt;/a&gt;.
 Why War? was a prominent site for news and analysis against the war (first
-Afghanistan, and then Iraq). Its database from 2001–2004 is the most
+Afghanistan, and then Iraq). Its database from 2001&amp;ndash;2004 is the most
 comprehensive accounting of articles and opinions on the war, resistance to it
 and the movements that arose on each side. We are most well-known, however, for
 a campaign that had little to do with the war.&lt;/p&gt;
@@ -6006,8 +6014,8 @@ at the state level. In April, we brought more than 850 students to Washington,
 D.C. as part of the
 &lt;a
   data-dead-link=&#34;http://www.powertoprotect.org/&#34;
-  href=&#34;https://rootwork.github.io/rootwork.org/rootwork.org/dead-link/?url=http%3A%2F%2Fwww.powertoprotect.org%2F&#34;
-  title=&#34;Learn more about &amp;#39;P2P&amp;#39; [dead link]&#34;
+  href=&#34;https://rootwork.github.io/rootwork.org/dead-link/&#34;
+  title=&#34;Learn more about &#39;P2P&#39; [dead link]&#34;
   &gt;Power to Protect: D.C. to Darfur&lt;/a
 &gt;
 weekend. The P2P website, which uses the
@@ -6037,7 +6045,7 @@ but this post is already mighty long, so I&amp;rsquo;ll stop here. Thanks again 
 allowing me to come, and I&amp;rsquo;m looking forward to seeing everyone!&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Update, Sept. 12, 2007: This blog post has been adapted into a chapter of the
 book&lt;/em&gt;
-&lt;a href=&#34;https://www.worldcat.org/title/online-social-networking/oclc/731757535&amp;amp;referer=brief_results&#34;&gt;Online social networking&lt;/a&gt;
+&lt;a href=&#34;https://www.worldcat.org/title/online-social-networking/oclc/731757535&amp;referer=brief_results&#34;&gt;Online social networking&lt;/a&gt;
 &lt;em&gt;(2008), edited by Sylvia Engdahl, under the title &amp;ldquo;Online social networking is
 being used to oppose genocide.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2006/05/can-blogging-stop-genocide/&#34;&gt;Can blogging stop genocide?&lt;/a&gt; originally published on &lt;a href=&#34;https://rootwork.org&#34;&gt;Rootwork.org&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;</description>
     </item>
