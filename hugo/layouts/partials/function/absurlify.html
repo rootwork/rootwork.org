@@ -2,6 +2,9 @@
 
   Run `absURL` functions on relative links (href, src, srcset) within content,
   without destroying existing absolute links.
+
+  Source:
+  https://discourse.gohugo.io/t/absolute-urls-in-rss-feeds/25971
 */}}
 
 {{- $html := htmlUnescape . | safeHTML -}}
