@@ -10,8 +10,10 @@
 
   a {
     opacity: 0.8;
-    transition: opacity;
-    transition-duration: 500ms;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0s;
+    @include motion(transition-duration, 500ms);
     @include focus-line(map-get($color, white));
 
     .jsopen & {
@@ -21,8 +23,8 @@
     .icon {
       width: 1.25rem;
       height: 1.25rem;
-      transition: transform opacity;
-      transition-duration: 0;
+      transition-property: transform opacity;
+      transition-duration: 0s;
       fill: var(--white);
 
       .jsopen & {

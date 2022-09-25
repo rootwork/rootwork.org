@@ -24,7 +24,9 @@
 
     .roots {
       pointer-events: none;
-      transition: transform fill;
+      transition-property: transform fill;
+      transition-timing-function: ease-in-out;
+      transition-duration: 0s;
       transform-origin: 0 50%;
       @include motion(transition-duration, 750ms);
     }
@@ -66,15 +68,18 @@
     .leaf {
       fill: var(--light-green);
       padding-top: 25px;
-      transition: transform fill;
+      transition-property: transform fill;
+      transition-timing-function: ease-in-out;
+      transition-duration: 0s;
       transform-origin: 50% 15%;
       @include motion(transition-duration, 750ms);
     }
 
     #logo_line {
       width: 0;
-      transition: fill width;
+      transition-property: fill width;
       transition-timing-function: ease-in-out;
+      transition-duration: 0s;
       @include motion(transition-duration, 500ms);
     }
 

@@ -15,7 +15,8 @@
     @include is-on {
       background-color: var(--medium-light);
       text-shadow: 0px 0px 1px var(--hazy-white);
-      transition: background-color text-shadow;
+      transition-property: background-color text-shadow;
+      transition-timing-function: ease-in-out;
       @include motion(transition-duration, 500ms);
     }
 

@@ -3,7 +3,10 @@
 // Turn on the lights!
 
 @mixin lights {
-  transition: box-shadow 1s ease-in-out;
+  transition-property: box-shadow;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0s;
+  @include motion(transition-duration, 1s);
 
   @include is-on {
     box-shadow: inset 0 0 25px #fff, inset 10px 0 40px var(--bright-green),

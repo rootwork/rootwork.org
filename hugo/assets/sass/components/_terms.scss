@@ -13,7 +13,8 @@
   color: var(--fg-color);
   background-color: var(--bg-color);
   user-select: none;
-  transition: all;
+  transition: background-color 0s ease-in-out;
+  transition: color 0.25s ease-in-out;
 
   @include focus(text-decoration, underline);
 
@@ -83,7 +84,9 @@
       border-radius: 1rem;
       color: var(--white);
       text-shadow: 0.05rem 0.05rem 0.25rem var(--dark-shade);
-      transition-property: all;
+      transition-property: background-color, background-size, box-shadow,
+        --bg-hover-color;
+      transition-timing-function: ease-in-out;
       @include motion(transition-duration, 500ms);
 
       @include is-on {
@@ -130,7 +133,7 @@
 
   .term_name {
     border-bottom: 1px var(--bg-color) solid;
-    transition: border-bottom-color;
+    transition-property: border-bottom-color;
     @include motion(transition-duration, 500ms);
   }
 
@@ -168,7 +171,8 @@
     border-radius: 0.5rem;
     @include switch(color, var(--blue));
     @include switch(background-color, transparent);
-    transition: all;
+    transition-property: border-color, color, background-color;
+    transition-timing-function: ease-in-out;
     @include motion(transition-duration, 500ms);
 
     @include is-on {

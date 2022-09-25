@@ -68,7 +68,7 @@
           width: 100%;
           height: 100%;
           border-radius: 0.5rem;
-          transition: background-color;
+          transition-property: background-color;
           @include motion(transition-duration, 500ms);
 
           &--none {
@@ -87,7 +87,7 @@
               left: 0;
               right: 0;
               border-radius: 0.5rem;
-              transition: background-color;
+              transition-property: background-color;
               @include switch(
                 background-color,
                 var(--shade),
@@ -113,7 +113,9 @@
                 var(--dark-green)
               );
               @include switch(mix-blend-mode, hard-light, hard-light);
-              transition: all 0 ease-in-out;
+              transition-property: transform;
+              transition-timing-function: ease-in-out;
+              transition-duration: 0s;
               @include motion(transition-duration, 750ms);
             }
           }
@@ -123,8 +125,11 @@
           position: relative;
           margin: 1rem;
           border-radius: 0.5rem;
-          transition: all 0.5s ease-in-out;
           z-index: 10;
+          transition-property: background-color, box-shadow;
+          transition-timing-function: ease-in-out;
+          transition-duration: 0s;
+          @include motion(transition-duration, 0.5s);
 
           &::before,
           &::after {
@@ -132,7 +137,9 @@
             display: block;
             position: absolute;
             border-radius: 0.7rem;
-            transition: all 0 ease-in-out;
+            transition-property: top, bottom, left, right;
+            transition-timing-function: ease-in-out;
+            transition-duration: 0s;
             @include motion(transition-duration, 750ms);
             z-index: -1;
           }
@@ -191,8 +198,11 @@
               right: 1.5rem;
               border-bottom: 2px solid currentColor;
               opacity: 0.8;
-              transition: all 0.25s ease-in-out;
               z-index: 2;
+              transition-property: left, right, opacity, box-shadow;
+              transition-timing-function: ease-in-out;
+              transition-duration: 0s;
+              @include motion(transition-duration, 0.25s);
             }
 
             &::after {
@@ -204,8 +214,11 @@
               right: -0.25rem;
               border: 3px transparent solid;
               background-color: transparent;
-              transition: all 0.5s ease-in-out;
               z-index: -1;
+              transition-property: background-color, border-color, box-shadow;
+              transition-timing-function: ease-in-out;
+              transition-duration: 0s;
+              @include motion(transition-duration, 0.5s);
             }
 
             @include is-on {

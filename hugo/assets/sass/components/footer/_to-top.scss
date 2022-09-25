@@ -19,7 +19,7 @@
     svg.icon {
       opacity: 1;
       @include switch(fill, var(--white), var(--dark-green));
-      transition: fill;
+      transition-property: fill;
       @include motion(transition-duration, 500ms);
     }
 

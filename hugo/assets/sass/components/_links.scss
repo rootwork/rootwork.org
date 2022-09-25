@@ -1,6 +1,8 @@
 // General link styles
 
 a {
-  transition: color background-color opacity text-decoration border-bottom-width;
+  transition-property: color background-color opacity text-decoration
+    border-bottom-width;
+  transition-timing-function: ease-in-out;
   @include motion(transition-duration, 500ms);
 }
