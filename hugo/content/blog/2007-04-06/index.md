@@ -78,8 +78,8 @@ I thought that they related so well that I'd present them together.
 - Marty Kearns and Ruby Sinreich,
   [Green Media Toolshed](https://web.archive.org/web/20070701171633/http://www.greenmediatoolshed.org/)
   (closely-related
-  [essay](https://activist.blogs.com/networkcentricadvocacypaper.pdf) available
-  on
+  [essay](https://web.archive.org/web/20220128034821/https://activist.blogs.com/networkcentricadvocacypaper.pdf)
+  available on
   [Netcentric Campaigns](https://web.archive.org/web/20080124154123/http://www.netcentriccampaigns.org/))
 
 Participatory media is a campaign that utilizes content created by the
