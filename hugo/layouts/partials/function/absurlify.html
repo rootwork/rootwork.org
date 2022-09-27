@@ -3,7 +3,7 @@
   Run `absURL` functions on relative links (href, src, srcset) within content,
   without destroying existing absolute links.
 
-  Source:
+  Expanded from:
   https://discourse.gohugo.io/t/absolute-urls-in-rss-feeds/25971
 */}}
 
@@ -41,6 +41,15 @@
 {{- range $src := $srcs -}}
   {{- $absSrc := strings.TrimPrefix "src=\"" $src -}}
   {{- $absSrc = strings.TrimSuffix "\"" $absSrc -}}
+
+  {{- $urlStart := substr $absSrc 0 4 -}}
+  {{- if ne $urlStart "http" -}}
+    {{- $urlStart = substr $absSrc 0 1 -}}
+    {{ if ne $urlStart "/" }}
+      {{- $absSrc = printf $absSrc | printf "%s%s" $path.relative | printf "%s" -}}
+    {{- end -}}
+  {{- end -}}
+
   {{- $absSrc = printf "src=\"%s\"" ($absSrc | absURL) -}}
   {{- $html = replace $html $src $absSrc -}}
 {{- end -}}
@@ -54,7 +63,17 @@
   {{- range $part := $parts -}}
     {{- $part = $part | replaceRE "^\\s*(.*)\\s*$" "$1" -}}
     {{- $lg := split $part " " -}}
-    {{- $href := index $lg 0 | absURL -}}
+
+    {{- $href := index $lg 0 -}}
+    {{- $urlStart := substr $href 0 4 -}}
+    {{- if ne $urlStart "http" -}}
+      {{- $urlStart = substr $href 0 1 -}}
+      {{ if ne $urlStart "/" }}
+        {{- $href = printf $href | printf "%s%s" $path.relative | printf "%s" -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $href = $href | absURL -}}
+
     {{- $size := index $lg 1 -}}
     {{- $newSrcset = $newSrcset | append (printf "%s %s" $href $size) -}}
   {{- end -}}
