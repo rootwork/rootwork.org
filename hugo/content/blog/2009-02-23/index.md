@@ -88,7 +88,7 @@ The webinar is part of Social Actions'
 [Change the Web Conversation Series](https://web.archive.org/web/20130720173600/http://my.socialactions.com/profiles/blogs/change-the-web-conversation).
 
 I'll be talking about some of the
-[successes the Genocide Intervention Network has had](//blog/2008/10/using-social-networks-social-change-facebook-myspace-more 'Read about some of the successes')
+[successes the Genocide Intervention Network has had](/blog/2008/10/using-social-networks-social-change-facebook-myspace-more 'Read about some of the successes')
 in using Facebook and Causes to engage its member base, increase the impact of
 advocacy campaigns, and raise (a little) money.
 
