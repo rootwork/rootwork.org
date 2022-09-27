@@ -57,13 +57,13 @@
     {{- end -}}
     {{- end }}
     <updated>
-      {{- with $date.updated -}}
+      {{- with $date.updatedExact -}}
         {{- dateFormat "2006-01-02T15:04:05Z" . | safeHTML -}}
       {{- else -}}
-        {{- dateFormat "2006-01-02T15:04:05Z" $date.published | safeHTML -}}
+        {{- dateFormat "2006-01-02T15:04:05Z" $date.publishedExact | safeHTML -}}
       {{- end -}}
     </updated>
-    <published>{{ dateFormat "2006-01-02T15:04:05Z" $date.published | safeHTML }}</published>
+    <published>{{ dateFormat "2006-01-02T15:04:05Z" $date.publishedExact | safeHTML }}</published>
     <link rel="enclosure" href="{{ $image.abspath }}" type="image/{{ $image.extension }}" title="{{ $title.plain }}" />
     <content type="html">
       {{- $content.feed.html -}}
