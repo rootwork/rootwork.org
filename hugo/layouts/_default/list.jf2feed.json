@@ -28,8 +28,8 @@
   {{- $.Scratch.Add "jf2feed" (dict
     "type" "entry"
     "url" $path.permalink
-    "published" $date.published
-    "updated" $date.updated
+    "published" $date.publishedTime
+    "updated" $date.updatedTime
     "name" $title.plain
     "summary" ($summary | plainify)
     "content" (dict
