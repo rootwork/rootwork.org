@@ -3,12 +3,8 @@
   Retrieve published date and, if modified, updated date.
 */}}
 
-{{/* Because we only use dates, with no times, listings in e.g. feeds come out
-  as 12 midnight. This adds 12 hours to each date to at least have them
-  listed as 12 noon.
-*/}}
-{{- $published := (.Date.Add (time.ParseDuration "12h")).Format (string .Date) -}}
-{{- $updated := (.Date.Add (time.ParseDuration "12h")).Format (string .Lastmod) -}}
+{{- $published := .Date -}}
+{{- $updated := .Lastmod -}}
 
 {{/* Creating a random number of seconds+millisecs to ensure no two dates are
   exactly the same, required for feed validation.
@@ -19,6 +15,7 @@
 
 {{- $publishedExact := $published.Unix -}}
 {{- $publishedExact = add $publishedExact $rnd -}}
+{{- $publishedExact = $publishedExact | time.AsTime -}}
 
 {{- $updatedExact := $updated -}}
 
@@ -28,6 +25,17 @@
 {{- else -}}
   {{- $updatedExact = .Lastmod.Unix -}}
   {{- $updatedExact = add $updatedExact $rnd -}}
+  {{- $updatedExact = $updatedExact | time.AsTime -}}
+{{- end -}}
+
+{{/* Because we only use dates, with no times, listings in e.g. feeds come out
+  as 12 midnight. This adds 12 hours to each date to at least have them
+  listed as 12 noon.
+*/}}
+
+{{- $publishedExact = ($publishedExact.Add (time.ParseDuration "12h")) -}}
+{{- with $updatedExact -}}
+  {{- $updatedExact = ($updatedExact.Add (time.ParseDuration "12h")) -}}
 {{- end -}}
 
 {{- $date := dict
