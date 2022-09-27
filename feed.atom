@@ -12,7 +12,7 @@
     2008&#8211;2022, Rootwork.org. Feel free to use or republish with credit!</rights>
   <icon>https://rootwork.github.io/rootwork.org/icons/android-chrome-512x512.png</icon>
   <logo>https://rootwork.github.io/rootwork.org/logos/rootwork-share.png</logo>
-  <updated>2022-09-27T04:19:06Z</updated>
+  <updated>2022-09-27T22:07:47+00:00</updated>
   <link rel="self" type="application/atom+xml" href="https://rootwork.github.io/rootwork.org/feed.atom" hreflang="en-US"/>
   <link rel="alternate" type="text/html" href="https://rootwork.github.io/rootwork.org/" hreflang="en-US"/>
   <link rel="alternate" type="application/json" href="https://rootwork.github.io/rootwork.org/index.json" hreflang="en-US"/>
@@ -24,17 +24,10 @@
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2022/09/refreshing-after-long-absence/</id>
-    <updated>2022-09-19T00:00:00Z</updated>
-    <published>2022-09-19T00:00:00Z</published>
+    <updated>2022-09-19T19:03:06+00:00</updated>
+    <published>2022-09-19T19:03:06+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2022/09/refreshing-after-long-absence/refreshing-may_flickr-blavandmaster.jpg" type="image/jpg" title="Refreshing after a long absence" />
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://google.com&#34;&gt;Full URL&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://rootwork.github.io/blog/2022/09/refreshing-after-long-absence/&#34;&gt;This post&amp;rsquo;s relative site URL&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/blog/2022/09/refreshing-after-long-absence/&#34;&gt;This post&amp;rsquo;s full site URL&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2022/09/refreshing-after-long-absence/refreshing-may_flickr-blavandmaster.jpg&#34;&gt;This post&amp;rsquo;s page bundle link&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://rootwork.github.io/blog/2014/03/online-advocacy-learn-community-organizing/&#34;&gt;Other relative site URL&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;http://localhost:1313/blog/2013/04/uncharitable-how-businesses-co-opt-nonprofits-undermine-their-potential/&#34;&gt;Other full site URL&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;It&amp;rsquo;s been
+    <content type="html">&lt;p&gt;It&amp;rsquo;s been
 &lt;a href=&#34;https://rootwork.github.io/blog/2014/04/join-me-devsigner-conference-portland-may-designers-developers-join-forces/&#34;&gt;quite a while&lt;/a&gt;
 since I posted on this blog.&lt;/p&gt;
 &lt;p&gt;I got out of the habit of posting through a combination of factors:
@@ -140,8 +133,8 @@ both the positive and negative. I hope you&amp;rsquo;ll join me for the journey!
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2014/04/join-me-devsigner-conference-portland-may-designers-developers-join-forces/</id>
-    <updated>2014-04-29T00:00:00Z</updated>
-    <published>2014-04-29T00:00:00Z</published>
+    <updated>2014-04-29T19:02:34+00:00</updated>
+    <published>2014-04-29T19:02:34+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2014/04/join-me-devsigner-conference-portland-may-designers-developers-join-forces/devsigner-thumbnail.jpg" type="image/jpg" title="Join me at the Devsigner conference in Portland this May: Designers and developers join forces!" />
     <content type="html">&lt;p&gt;&lt;strong&gt;Devsigner is celebrating the cross-overs, the multi-disciplinarians, the
 coders who paint and the designers who send pull requests &amp;mdash; and those who want
@@ -221,8 +214,8 @@ children&lt;/li&gt;
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/</id>
-    <updated>2015-03-06T00:06:25Z</updated>
-    <published>2014-03-15T00:00:00Z</published>
+    <updated>2015-03-06T20:06:25+00:00</updated>
+    <published>2014-03-15T19:06:25+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2014/03/online-advocacy-learn-community-organizing/2014-04-ntc-b.jpg" type="image/jpg" title="What online advocacy can learn from community organizing" />
     <content type="html">&lt;p&gt;A transcript from my portion of the
 &amp;ldquo;&lt;a href=&#34;https://14ntc.sched.com/event/10981233f5dfb1e3ca5a325d9bd19f81&#34;&gt;Big Idea&lt;/a&gt;&amp;rdquo;
@@ -870,8 +863,8 @@ be closer to effecting change in the future.&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;s
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2013/05/we-need-talk-about-your-stylesheets-interview-jonathan-snook-drupalcon-portland/</id>
-    <updated>2013-05-21T00:00:00Z</updated>
-    <published>2013-05-21T00:00:00Z</published>
+    <updated>2013-05-21T19:02:12+00:00</updated>
+    <published>2013-05-21T19:02:12+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2013/05/we-need-talk-about-your-stylesheets-interview-jonathan-snook-drupalcon-portland/spaghetti-light_flickr-stevensnodgrass.jpg" type="image/jpg" title="We need to talk about your stylesheets: An interview with Jonathan Snook at Drupalcon Portland" />
     <content type="html">&lt;p&gt;&lt;strong&gt;This is an intervention.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;CSS is pretty simple. Classes, IDs, elements and pseudo-elements, with style
@@ -999,8 +992,8 @@ it!&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&lt;a href=&#34;https://rootwork.
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2013/05/drupalcon-portland-responsive-web-design-snap-breakpoint-sass/</id>
-    <updated>2013-05-17T00:00:00Z</updated>
-    <published>2013-05-17T00:00:00Z</published>
+    <updated>2013-05-17T19:03:02+00:00</updated>
+    <published>2013-05-17T19:03:02+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2013/05/drupalcon-portland-responsive-web-design-snap-breakpoint-sass/snap-squares_flickr-missnita.jpg" type="image/jpg" title="Drupalcon Portland: Responsive web design in a snap with Breakpoint and Sass" />
     <content type="html">&lt;p&gt;&lt;strong&gt;Media queries&lt;/strong&gt; are a key part of responsive web design, because they control
 at what width (among other things) different CSS rules kick in.&lt;/p&gt;
@@ -1149,8 +1142,8 @@ there. And some pretty sweet GIFs.&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&l
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2013/05/drupal-8-power-twig-drupalcon-portland-featured-session/</id>
-    <updated>2013-05-16T00:00:00Z</updated>
-    <published>2013-05-16T00:00:00Z</published>
+    <updated>2013-05-16T19:02:50+00:00</updated>
+    <published>2013-05-16T19:02:50+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2013/05/drupal-8-power-twig-drupalcon-portland-featured-session/twig_flickr-cgc.jpg" type="image/jpg" title="Drupal 8 and the power of Twig: A Drupalcon Portland featured session" />
     <content type="html">&lt;p&gt;A new theming engine, &lt;a href=&#34;https://twig.symfony.com/&#34;&gt;Twig&lt;/a&gt;, is coming along with
 &lt;a href=&#34;https://rootwork.github.io/tags/drupal&#34;&gt;Drupal&lt;/a&gt; 8&amp;rsquo;s adoption of the Symfony framework. And it&amp;rsquo;s downright
@@ -1244,8 +1237,8 @@ help us!&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&lt;a href=&#34;https://root
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2013/05/drupal-8-aural-interfaces-groundbreaking-accessibility-drupalcon-portland/</id>
-    <updated>2013-05-16T00:00:00Z</updated>
-    <published>2013-05-16T00:00:00Z</published>
+    <updated>2013-05-16T19:06:05+00:00</updated>
+    <published>2013-05-16T19:06:05+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2013/05/drupal-8-aural-interfaces-groundbreaking-accessibility-drupalcon-portland/switchboard-publicdomain.jpg" type="image/jpg" title="Drupal 8, aural interfaces and groundbreaking accessibility at Drupalcon Portland" />
     <content type="html">&lt;p&gt;I&amp;rsquo;m a millennial, but even I remember the experience of calling the telephone
 operator and getting a live human to look up the number of a business or place a
@@ -1415,8 +1408,8 @@ presenting
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2013/05/grow-your-own-learning-custom-base-themes-drupalcon-portland/</id>
-    <updated>2013-05-15T00:00:00Z</updated>
-    <published>2013-05-15T00:00:00Z</published>
+    <updated>2013-05-15T19:02:26+00:00</updated>
+    <published>2013-05-15T19:02:26+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2013/05/grow-your-own-learning-custom-base-themes-drupalcon-portland/growyourown-themes.jpg" type="image/jpg" title="Grow your own: Learning custom base themes at Drupalcon Portland" />
     <content type="html">&lt;p&gt;&lt;strong&gt;Ah, base themes.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;If there&amp;rsquo;s an analogue to the Windows/Mac/Linux battle in Drupal land, it&amp;rsquo;s
@@ -1483,8 +1476,8 @@ share those with you, but you&amp;rsquo;ll just have to come and see for yoursel
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2013/05/ninjas-your-code-drupalcon-portland-sass-extends-placeholders/</id>
-    <updated>2013-05-14T00:00:00Z</updated>
-    <published>2013-05-14T00:00:00Z</published>
+    <updated>2013-05-14T19:01:03+00:00</updated>
+    <published>2013-05-14T19:01:03+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2013/05/ninjas-your-code-drupalcon-portland-sass-extends-placeholders/qDG7XKJLKbs_unsplash-lazycreekimages.jpg" type="image/jpg" title="Ninjas in your code at Drupalcon Portland: Sass with extends and placeholders" />
     <content type="html">&lt;p&gt;
   &lt;figure&gt;
@@ -1618,8 +1611,8 @@ of control over the many parts.&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&lt;a
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2013/05/world-class-frontend-track-drupalcon-portland/</id>
-    <updated>2013-05-13T00:00:00Z</updated>
-    <published>2013-05-13T00:00:00Z</published>
+    <updated>2013-05-13T19:02:00+00:00</updated>
+    <published>2013-05-13T19:02:00+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2013/05/world-class-frontend-track-drupalcon-portland/portland-drupalcon.jpg" type="image/jpg" title="A world-class frontend track at Drupalcon Portland" />
     <content type="html">&lt;p&gt;The big news at Drupalcon Portland is that, for the first time at a Drupalcon,
 we&amp;rsquo;re having separate
@@ -1726,8 +1719,8 @@ and start planning to attend your favorites! (Don&amp;rsquo;t forget
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2013/04/uncharitable-how-businesses-co-opt-nonprofits-undermine-their-potential/</id>
-    <updated>2013-04-12T00:00:00Z</updated>
-    <published>2013-04-12T00:00:00Z</published>
+    <updated>2013-04-12T19:00:03+00:00</updated>
+    <published>2013-04-12T19:00:03+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2013/04/uncharitable-how-businesses-co-opt-nonprofits-undermine-their-potential/capitalism-crisis_flickr-beckytappin.jpg" type="image/jpg" title="Uncharitable: How businesses co-opt nonprofits and undermine their potential" />
     <content type="html">&lt;p&gt;Dan Pallotta, who presented the TED talk,
 &amp;ldquo;&lt;a href=&#34;https://www.ted.com/talks/dan_pallotta_the_way_we_think_about_charity_is_dead_wrong&#34;&gt;The way we think about charity is dead wrong&lt;/a&gt;,&amp;rdquo;
@@ -1887,8 +1880,8 @@ for them.&lt;/strong&gt;&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&lt;a href=&
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2013/02/free-drupal-qa-call-nonprofits-social-change-tomorrow-feb-28/</id>
-    <updated>2013-02-27T00:00:00Z</updated>
-    <published>2013-02-27T00:00:00Z</published>
+    <updated>2013-02-27T20:01:04+00:00</updated>
+    <published>2013-02-27T20:01:04+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2013/02/free-drupal-qa-call-nonprofits-social-change-tomorrow-feb-28/drupal-nonprofit-summit_flickr-sillygwailo_header.jpg" type="image/jpg" title="Free Drupal Q&amp;A call for nonprofits and social change tomorrow, Feb. 28" />
     <content type="html">&lt;p&gt;Tomorrow at 1PM Eastern/10AM Pacific,
 &lt;a href=&#34;https://devcollaborative.com/about-us&#34;&gt;Johanna Bates&lt;/a&gt; and I will be co-hosting
@@ -1922,8 +1915,8 @@ so if you can&amp;rsquo;t make it just let us know if you&amp;rsquo;d like a lin
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2013/02/domain-registry-america-scam-dont-let-your-nonprofit-get-fooled/</id>
-    <updated>2022-07-12T00:03:02Z</updated>
-    <published>2013-02-26T00:00:00Z</published>
+    <updated>2022-07-12T19:03:02+00:00</updated>
+    <published>2013-02-26T20:03:02+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2013/02/domain-registry-america-scam-dont-let-your-nonprofit-get-fooled/scam-truck_flickr-jepoirrier.jpg" type="image/jpg" title="Domain Registry of America is a scam. Don&#39;t let your nonprofit get fooled." />
     <content type="html">&lt;p&gt;
   &lt;figure&gt;
@@ -2063,8 +2056,8 @@ by The Naming Dude&lt;/li&gt;
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2013/02/frontend-session-proposals-portland-drupalcon-due-today/</id>
-    <updated>2013-02-15T00:00:00Z</updated>
-    <published>2013-02-15T00:00:00Z</published>
+    <updated>2013-02-15T20:06:18+00:00</updated>
+    <published>2013-02-15T20:06:18+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2013/02/frontend-session-proposals-portland-drupalcon-due-today/portland-drupalcon.jpg" type="image/jpg" title="Frontend session proposals to Portland Drupalcon due today!" />
     <content type="html">&lt;p&gt;As the local track chair for the frontend track, I&amp;rsquo;m posting this to encourage
 any last-minute session proposals bouncing around in your head to get typed out
@@ -2154,8 +2147,8 @@ travel figured out to my (new) hometown of Portland for the
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2011/09/two-click-button-foils-facebook-tracking-new-tool-privacy-concerned-nonprofits/</id>
-    <updated>2011-09-06T00:00:00Z</updated>
-    <published>2011-09-06T00:00:00Z</published>
+    <updated>2011-09-06T19:02:13+00:00</updated>
+    <published>2011-09-06T19:02:13+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2011/09/two-click-button-foils-facebook-tracking-new-tool-privacy-concerned-nonprofits/security-camera_flickr-therontrowbridge.jpg" type="image/jpg" title="Two-click button foils Facebook tracking, a new tool for privacy-concerned nonprofits" />
     <content type="html">&lt;p&gt;Last month, the privacy commissioner for the German state Schleswig-Holstein,
 Thilo Weichert, announced that he would
@@ -2258,8 +2251,8 @@ at the bottom of the post where they announce it.&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/</id>
-    <updated>2015-10-05T00:05:47Z</updated>
-    <published>2011-08-05T00:00:00Z</published>
+    <updated>2015-10-05T19:05:47+00:00</updated>
+    <published>2011-08-05T19:05:47+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2011/08/google-plus-nonprofit-social-change-implications/google-plus_flickr-west-m.jpg" type="image/jpg" title="Google Plus: Nonprofit and social change implications" />
     <content type="html">&lt;p&gt;Tonight at Philly NetSquared I gave a short presentation on Google Plus and its
 implications for nonprofits and social change work. You can
@@ -2660,8 +2653,8 @@ Geek Feminism Wiki&lt;/li&gt;
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2011/03/grant-your-mission-poem/</id>
-    <updated>2011-03-01T00:00:00Z</updated>
-    <published>2011-03-01T00:00:00Z</published>
+    <updated>2011-03-01T20:00:04+00:00</updated>
+    <published>2011-03-01T20:00:04+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/logos/rootwork-share.png" type="image/png" title="A grant for your mission, as a poem" />
     <content type="html">&lt;p&gt;The
 &lt;a href=&#34;https://web.archive.org/web/20150910223614/http://communitytech.net/&#34;&gt;Community TechKnowledge Foundation&lt;/a&gt;
@@ -2690,8 +2683,8 @@ you may have some useful new language to talk about what you do!&lt;/p&gt;&lt;hr
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2010/12/google-chrome-cause-nonprofit-deathmatch-strikes-again/</id>
-    <updated>2010-12-17T00:00:00Z</updated>
-    <published>2010-12-17T00:00:00Z</published>
+    <updated>2010-12-17T20:04:49+00:00</updated>
+    <published>2010-12-17T20:04:49+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2010/12/google-chrome-cause-nonprofit-deathmatch-strikes-again/duel_flickr-uwdigitalcollections.jpg" type="image/jpg" title="Google Chrome for a cause, or, nonprofit deathmatch strikes again" />
     <content type="html">&lt;p&gt;
   &lt;figure&gt;
@@ -2831,8 +2824,8 @@ but also give its far more lucrative asset: attention.&lt;/p&gt;
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2010/12/facebook-removes-default-landing-tab-new-nonprofit-pages/</id>
-    <updated>2010-12-09T00:00:00Z</updated>
-    <published>2010-12-09T00:00:00Z</published>
+    <updated>2010-12-09T20:04:25+00:00</updated>
+    <published>2010-12-09T20:04:25+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2010/12/facebook-removes-default-landing-tab-new-nonprofit-pages/helipad-sunset_flickr-sbszine.jpg" type="image/jpg" title="Facebook removes default landing tab for new nonprofit pages" />
     <content type="html">&lt;p&gt;
   &lt;figure&gt;
@@ -2943,8 +2936,8 @@ It, like everything of mine on this site, is licensed under
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2010/08/too-few-women-tech-blame-sexism/</id>
-    <updated>2010-08-30T00:00:00Z</updated>
-    <published>2010-08-30T00:00:00Z</published>
+    <updated>2010-08-30T19:03:47+00:00</updated>
+    <published>2010-08-30T19:03:47+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2010/08/too-few-women-tech-blame-sexism/blogher_sfist.jpg" type="image/jpg" title="Too few women in tech? Blame sexism." />
     <content type="html">&lt;p&gt;Michael Arrington has a
 &lt;a href=&#34;https://techcrunch.com/2010/08/28/women-in-tech-stop-blaming-me/&#34;&gt;tedious post on TechCrunch&lt;/a&gt;
@@ -3122,8 +3115,8 @@ earlier this year.&lt;/em&gt;&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&lt;a h
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2010/04/what-online-activism-can-learn-community-organizing/</id>
-    <updated>2010-04-09T00:00:00Z</updated>
-    <published>2010-04-09T00:00:00Z</published>
+    <updated>2010-04-09T19:06:29+00:00</updated>
+    <published>2010-04-09T19:06:29+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2010/04/what-online-activism-can-learn-community-organizing/crowd_flickr-povertyinitiative.jpg" type="image/jpg" title="What online activism can learn from community organizing" />
     <content type="html">&lt;p&gt;&lt;strong&gt;Online activism didn&amp;rsquo;t come out of nowhere.&lt;/strong&gt; The methods and tactics of
 online activists &amp;ndash; be they individuals or international nonprofits with
@@ -3283,8 +3276,8 @@ change the world.&lt;/em&gt;&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&lt;a hr
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2009/11/government-accountability-through-web-20-case-study/</id>
-    <updated>2009-11-13T00:00:00Z</updated>
-    <published>2009-11-13T00:00:00Z</published>
+    <updated>2009-11-13T20:01:10+00:00</updated>
+    <published>2009-11-13T20:01:10+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2009/11/government-accountability-through-web-20-case-study/meeting-feet_flickr-mripp.jpg" type="image/jpg" title="Government accountability through web 2.0: A case study" />
     <content type="html">&lt;p&gt;
   &lt;figure&gt;
@@ -3490,8 +3483,8 @@ officials; it&amp;rsquo;s been corrected in the text above.&lt;/p&gt;&lt;hr /&gt
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2009/11/causes-abandons-184674-nonprofit-supporters-myspace/</id>
-    <updated>2009-11-06T00:00:00Z</updated>
-    <published>2009-11-06T00:00:00Z</published>
+    <updated>2009-11-06T20:04:30+00:00</updated>
+    <published>2009-11-06T20:04:30+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2009/11/causes-abandons-184674-nonprofit-supporters-myspace/abandoned-train_flickr-cindy47452.jpg" type="image/jpg" title="Causes abandons 184,674 nonprofit supporters on MySpace" />
     <content type="html">&lt;p&gt;This morning, the fundraising application
 &lt;a href=&#34;https://web.archive.org/web/20120201194319/http://www.causes.com/&#34;&gt;Causes&lt;/a&gt;
@@ -3652,8 +3645,8 @@ they widgets like Causes or networks like Facebook and MySpace.&lt;/p&gt;&lt;hr 
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2009/10/finding-movements-voice-online-social-networks-social-change/</id>
-    <updated>2009-10-09T00:00:00Z</updated>
-    <published>2009-10-09T00:00:00Z</published>
+    <updated>2009-10-09T19:02:31+00:00</updated>
+    <published>2009-10-09T19:02:31+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2009/10/finding-movements-voice-online-social-networks-social-change/microphone_flickr-_ambrown.jpg" type="image/jpg" title="Finding the movement&#39;s voice: Online social networks and social change" />
     <content type="html">&lt;p&gt;
   &lt;figure&gt;
@@ -3811,8 +3804,8 @@ social change groups including &lt;a href=&#34;https://soulforce.org/&#34;&gt;So
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2009/09/gurus-are-not-enough-call-organizers-organizing-social-media/</id>
-    <updated>2009-09-03T00:00:00Z</updated>
-    <published>2009-09-03T00:00:00Z</published>
+    <updated>2009-09-03T19:03:41+00:00</updated>
+    <published>2009-09-03T19:03:41+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2009/09/gurus-are-not-enough-call-organizers-organizing-social-media/tarkovsky-stalker-sculpture_flickr-uqbar.jpg" type="image/jpg" title="Gurus are not enough: A call for organizers and organizing in social media" />
     <content type="html">&lt;p&gt;Gurus, mavens and experts convey information &amp;ndash; they tell you &lt;strong&gt;the way things
 are&lt;/strong&gt;.&lt;/p&gt;
@@ -3978,8 +3971,8 @@ Publishing Group, New York, 2004, pp. 65&amp;ndash;66. &lt;a href=&#34;https://
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2009/05/social-change-takes-more-social-media/</id>
-    <updated>2009-07-05T00:03:45Z</updated>
-    <published>2009-05-25T00:00:00Z</published>
+    <updated>2009-07-05T19:03:45+00:00</updated>
+    <published>2009-05-25T19:03:45+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2009/05/social-change-takes-more-social-media/construction-work_flickr-foreversouls.jpg" type="image/jpg" title="Social change takes more than social media" />
     <content type="html">&lt;p&gt;Over at the NetSquared blog, Joe Solomon
 &lt;a href=&#34;https://web.archive.org/web/20090525121410/http://www.netsquared.org:80/jaded-about-social-media-for-change-lets-talk-about-it&#34;&gt;provided a great roundup&lt;/a&gt;
@@ -4100,8 +4093,8 @@ Thanks for the invitation, Beth!&lt;/em&gt;&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;sm
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2009/04/fire-food-why-theres-no-such-thing-twitter-revolution/</id>
-    <updated>2009-04-13T00:01:05Z</updated>
-    <published>2009-04-08T00:00:00Z</published>
+    <updated>2009-04-13T19:01:05+00:00</updated>
+    <published>2009-04-08T19:01:05+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2009/04/fire-food-why-theres-no-such-thing-twitter-revolution/fire-teapot_flickr-susanneanette.jpg" type="image/jpg" title="The fire and the food: Why there&#39;s no such thing as a Twitter revolution" />
     <content type="html">&lt;p&gt;In the past two days, posts began popping up on Twitter with the tag
 &amp;ldquo;&lt;a href=&#34;https://twitter.com/search?q=%23pman&amp;f=live&#34; title=&#34;View recent Twitter posts with this tag&#34;&gt;#pman&lt;/a&gt;&amp;rdquo;
@@ -4229,8 +4222,8 @@ which also excerpts part of the article above.&lt;/em&gt;&lt;/p&gt;&lt;hr /&gt;&
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2009/02/using-facebook-social-change-webinar/</id>
-    <updated>2009-02-23T00:00:00Z</updated>
-    <published>2009-02-23T00:00:00Z</published>
+    <updated>2009-02-23T20:00:10+00:00</updated>
+    <published>2009-02-23T20:00:10+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2009/02/using-facebook-social-change-webinar/facebook-homepage_flickr-chriscorneschi.jpg" type="image/jpg" title="Using Facebook for social change: The webinar" />
     <content type="html">&lt;p&gt;
   &lt;figure&gt;
@@ -4281,7 +4274,7 @@ fund raise on the Facebook network.&lt;/p&gt;
 &lt;p&gt;The webinar is part of Social Actions&amp;rsquo;
 &lt;a href=&#34;https://web.archive.org/web/20130720173600/http://my.socialactions.com/profiles/blogs/change-the-web-conversation&#34;&gt;Change the Web Conversation Series&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ll be talking about some of the
-&lt;a href=&#34;//blog/2008/10/using-social-networks-social-change-facebook-myspace-more&#34; title=&#34;Read about some of the successes&#34;&gt;successes the Genocide Intervention Network has had&lt;/a&gt;
+&lt;a href=&#34;https://rootwork.github.io/blog/2008/10/using-social-networks-social-change-facebook-myspace-more&#34; title=&#34;Read about some of the successes&#34;&gt;successes the Genocide Intervention Network has had&lt;/a&gt;
 in using Facebook and Causes to engage its member base, increase the impact of
 advocacy campaigns, and raise (a little) money.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://web.archive.org/web/20090225112746/http://my.socialactions.com/events/using-facebook-for-social&#34;&gt;RSVP for the event, happening Thursday, Feb. 26, at 11 AM PST/2 PM EST.&lt;/a&gt;&lt;/strong&gt;
@@ -4299,8 +4292,8 @@ will also be speaking!&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&lt;a href=&#3
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2009/01/community-blogs-run-better-open-source-software/</id>
-    <updated>2009-01-20T00:00:00Z</updated>
-    <published>2009-01-20T00:00:00Z</published>
+    <updated>2009-01-20T20:02:38+00:00</updated>
+    <published>2009-01-20T20:02:38+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2009/01/community-blogs-run-better-open-source-software/open-person_flickr-opensourceway.jpg" type="image/jpg" title="Community blogs run better on open-source software" />
     <content type="html">&lt;p&gt;Earlier this month,
 &lt;a href=&#34;https://web.archive.org/web/20090119044552/http://www.soapblox.net/blog&#34;&gt;Soapblox&lt;/a&gt;,
@@ -4386,8 +4379,8 @@ WordPress, Joomla or Plone &amp;ndash; or, if Soapblox takes that route, Soapblo
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2008/10/using-social-networks-social-change-facebook-myspace-more/</id>
-    <updated>2022-07-14T00:03:54Z</updated>
-    <published>2008-10-24T00:00:00Z</published>
+    <updated>2022-07-14T19:03:54+00:00</updated>
+    <published>2008-10-24T19:03:54+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2008/10/using-social-networks-social-change-facebook-myspace-more/2008_dia_social-networks-social-change_header.jpg" type="image/jpg" title="Using social networks for social change: Facebook, MySpace and more" />
     <content type="html">&lt;p&gt;I spoke at the
 &lt;a href=&#34;https://web.archive.org/web/20130217190830/http://salsa.democracyinaction.org/o/103/t/6267/content.jsp?content_KEY=4035&#34;&gt;2008 Democracy in Action Community Conference&lt;/a&gt;
@@ -4645,8 +4638,8 @@ social networks&lt;/li&gt;
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2008/05/netsquared-project-interviews-session-notes/</id>
-    <updated>2008-05-28T00:00:00Z</updated>
-    <published>2008-05-28T00:00:00Z</published>
+    <updated>2008-05-28T19:02:28+00:00</updated>
+    <published>2008-05-28T19:02:28+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2008/05/netsquared-project-interviews-session-notes/n2y3.jpg" type="image/jpg" title="NetSquared project interviews and session notes" />
     <content type="html">&lt;p&gt;Some really incredible presentations here at the
 &lt;a href=&#34;https://web.archive.org/web/20080710111814/http://www.netsquared.org/conference&#34;&gt;NetSquared conference&lt;/a&gt;,
@@ -4778,8 +4771,8 @@ created through
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/</id>
-    <updated>2008-05-27T00:00:00Z</updated>
-    <published>2008-05-27T00:00:00Z</published>
+    <updated>2008-05-27T19:02:51+00:00</updated>
+    <published>2008-05-27T19:02:51+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2008/05/hundreds-gather-social-change-tech-netsquared-year-three/n2y3-crowd_flickr.jpg" type="image/jpg" title="Hundreds gather for social change tech at NetSquared Year Three" />
     <content type="html">&lt;p&gt;The
 &lt;a href=&#34;https://web.archive.org/web/20080710195249/http://www.netsquared.org/mashup&#34; title=&#34;NetSquared Mashup Challenge&#34;&gt;NetSquared Year Three&lt;/a&gt;
@@ -4937,8 +4930,8 @@ is a great place to follow along as well. Some images from the NetSquared
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2008/05/just-what-kind-social-change-are-you-interested/</id>
-    <updated>2008-05-21T00:04:02Z</updated>
-    <published>2008-05-14T00:00:00Z</published>
+    <updated>2008-05-21T19:04:02+00:00</updated>
+    <published>2008-05-14T19:04:02+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2008/05/just-what-kind-social-change-are-you-interested/wood-toys_flickr-fred_v.jpg" type="image/jpg" title="Just what kind of social change are you interested in?" />
     <content type="html">&lt;p&gt;This month&amp;rsquo;s &amp;ldquo;Net2ThinkTank&amp;rdquo; question:
 &amp;ldquo;&lt;a href=&#34;https://web.archive.org/web/20080724112756/http://www.netsquared.org/blog/britt-bravo/join-net2thinktank-what-if-anything-does-all-clicking-blogging-and-friending-add-end&#34;&gt;Is Online Activism Good for Social Change?&lt;/a&gt;&amp;rdquo;&lt;/p&gt;
@@ -5090,8 +5083,8 @@ structured.&lt;/strong&gt;&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&lt;a href
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2008/03/genocide-intervention-network-nominated-netsquared-mashup-award/</id>
-    <updated>2008-03-28T00:00:00Z</updated>
-    <published>2008-03-28T00:00:00Z</published>
+    <updated>2008-03-28T19:04:59+00:00</updated>
+    <published>2008-03-28T19:04:59+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2008/03/genocide-intervention-network-nominated-netsquared-mashup-award/capitol_flickr-kevin_burkett.jpg" type="image/jpg" title="Genocide Intervention Network nominated for NetSquared mashup award" />
     <content type="html">&lt;p&gt;
   &lt;figure&gt;
@@ -5200,8 +5193,8 @@ your input!&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&lt;a href=&#34;https://r
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2008/01/drupal-nonprofits-how-build-social-networks-change/</id>
-    <updated>2008-01-01T00:00:00Z</updated>
-    <published>2008-01-01T00:00:00Z</published>
+    <updated>2008-01-01T20:00:52+00:00</updated>
+    <published>2008-01-01T20:00:52+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2008/01/drupal-nonprofits-how-build-social-networks-change/drupal-wallpaper_flickr-matt_farina.jpg" type="image/jpg" title="Drupal for nonprofits, or, how to build social networks for change" />
     <content type="html">&lt;p&gt;&lt;em&gt;Cross-posted to
 &lt;a href=&#34;https://web.archive.org/web/20080531044257/http://www.netsquared.org/blog/quixotic/drupal-nonprofits-or-how-build-social-networks-change&#34;&gt;NetSquared&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
@@ -5399,8 +5392,8 @@ resources, please add them in the comments!&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;sm
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2007/10/organizing-rather-mobilizing-using-social-networks-constituency-building/</id>
-    <updated>2007-10-11T00:00:00Z</updated>
-    <published>2007-10-11T00:00:00Z</published>
+    <updated>2007-10-11T19:03:06+00:00</updated>
+    <published>2007-10-11T19:03:06+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2007/10/organizing-rather-mobilizing-using-social-networks-constituency-building/bokeh-remix_flickr-kevin_dooley.jpg" type="image/jpg" title="Organizing rather than mobilizing: Using social networks for constituency-building" />
     <content type="html">&lt;p&gt;Britt Bravo from
 &lt;a href=&#34;https://web.archive.org/web/20070920094210/http://www.netsquared.org/&#34;&gt;NetSquared&lt;/a&gt;
@@ -5513,8 +5506,8 @@ on the related topic of user-generated media campaigns.&lt;/li&gt;
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2007/07/one-minute-1-800-genocide/</id>
-    <updated>2007-07-08T00:00:00Z</updated>
-    <published>2007-07-08T00:00:00Z</published>
+    <updated>2007-07-08T19:06:33+00:00</updated>
+    <published>2007-07-08T19:06:33+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/logos/rootwork-share.png" type="image/png" title="One minute for 1-800-GENOCIDE" />
     <content type="html">&lt;p&gt;Just wanted to highlight a small initiative the Genocide Intervention Network
 sent out today using
@@ -5594,8 +5587,8 @@ of leaving messages for elected officials &amp;ndash; you can
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2007/04/notes-ntc-participatory-media-future-online-outreach/</id>
-    <updated>2007-04-06T00:00:00Z</updated>
-    <published>2007-04-06T00:00:00Z</published>
+    <updated>2007-04-06T19:05:44+00:00</updated>
+    <published>2007-04-06T19:05:44+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2007/04/notes-ntc-participatory-media-future-online-outreach/perth-run_flickr-ianhun2009.jpg" type="image/jpg" title="Notes from NTC: Participatory media and the future of online outreach" />
     <content type="html">&lt;p&gt;Although these two panels were held separately at the
 &lt;a href=&#34;https://web.archive.org/web/20070308071728/http://www.nten.org/ntc&#34;&gt;Nonprofit Technology Conference 2007&lt;/a&gt;,
@@ -5760,8 +5753,8 @@ leader&lt;em&gt;ful&lt;/em&gt; and boss&lt;em&gt;less&lt;/em&gt;.&amp;rdquo;&lt;
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2006/12/theory-bottom-up-social-networking/</id>
-    <updated>2006-12-04T00:00:00Z</updated>
-    <published>2006-12-04T00:00:00Z</published>
+    <updated>2006-12-04T20:05:09+00:00</updated>
+    <published>2006-12-04T20:05:09+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2006/12/theory-bottom-up-social-networking/grass-gutter_flickr-dustpuppy72.jpg" type="image/jpg" title="The theory of bottom-up social networking" />
     <content type="html">&lt;p&gt;Recently, the
 &lt;a href=&#34;https://web.archive.org/web/20061229164737/http://www.genocideintervention.net/index.php&#34;&gt;Genocide Intervention Network&lt;/a&gt;&amp;rsquo;s
@@ -5915,8 +5908,8 @@ the movement. &lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2006
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2006/05/different-kinds-elites-different-kinds-elitism/</id>
-    <updated>2006-05-30T00:00:00Z</updated>
-    <published>2006-05-30T00:00:00Z</published>
+    <updated>2006-05-30T19:02:22+00:00</updated>
+    <published>2006-05-30T19:02:22+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2006/05/different-kinds-elites-different-kinds-elitism/787-first-class_flickr-john_pozadzides.jpg" type="image/jpg" title="Different kinds of elites (and different kinds of elitism)" />
     <content type="html">&lt;p&gt;In his
 &lt;a href=&#34;https://web.archive.org/web/20061009224506/http://www.netsquared.org/conference/conference-sessions/making-the-most-of-disruption&#34;&gt;NetSquared presentation&lt;/a&gt;
@@ -5988,8 +5981,8 @@ Point.&amp;rdquo;&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&lt;a href=&#34;htt
       <uri>https://rootwork.github.io/rootwork.org/</uri>
     </author>
     <id>https://rootwork.github.io/rootwork.org/blog/2006/05/can-blogging-stop-genocide/</id>
-    <updated>2007-09-12T00:00:17Z</updated>
-    <published>2006-05-28T00:00:00Z</published>
+    <updated>2007-09-12T19:00:17+00:00</updated>
+    <published>2006-05-28T19:00:17+00:00</published>
     <link rel="enclosure" href="https://rootwork.github.io/rootwork.org/blog/2006/05/can-blogging-stop-genocide/pen-paper_flickr-maria_reyes-mcdavis.jpg" type="image/jpg" title="Can blogging stop genocide?" />
     <content type="html">&lt;p&gt;&lt;em&gt;Cross-posted to the
 &lt;a href=&#34;https://web.archive.org/web/20070419182635/http://netsquared.org/blog/quixotic/can-blogging-stop-genocide&#34;&gt;NetSquared blog&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;

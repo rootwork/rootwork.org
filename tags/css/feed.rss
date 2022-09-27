@@ -6,11 +6,11 @@
     <description>Recent content in CSS on Rootwork.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 21 May 2013 00:00:00 +0000</lastBuildDate><atom:link href="https://rootwork.github.io/rootwork.org/tags/css/feed.rss" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 May 2013 00:00:00 -0700</lastBuildDate><atom:link href="https://rootwork.github.io/rootwork.org/tags/css/feed.rss" rel="self" type="application/rss+xml" />
     <item>
       <title>We need to talk about your stylesheets: An interview with Jonathan Snook at Drupalcon Portland</title>
       <link>https://rootwork.github.io/rootwork.org/blog/2013/05/we-need-talk-about-your-stylesheets-interview-jonathan-snook-drupalcon-portland/</link>
-      <pubDate>Tue, 21 May 2013 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 21 May 2013 00:00:00 -0700</pubDate>
       
       <guid>https://rootwork.github.io/rootwork.org/blog/2013/05/we-need-talk-about-your-stylesheets-interview-jonathan-snook-drupalcon-portland/</guid>
       <description>SMACSS, or Scalable and Modular Architecture for CSS, was developed by Jonathan Snook, a featured speaker at Drupalcon Portland. I&amp;rsquo;m really excited to get the opportunity to have Jonathan speak, not only because of my personally well-dog-eared copy of SMACSS, but because Drupal itself is adopting a SMACSS approach to its CSS.</description>
@@ -19,7 +19,7 @@
     <item>
       <title>Drupalcon Portland: Responsive web design in a snap with Breakpoint and Sass</title>
       <link>https://rootwork.github.io/rootwork.org/blog/2013/05/drupalcon-portland-responsive-web-design-snap-breakpoint-sass/</link>
-      <pubDate>Fri, 17 May 2013 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 17 May 2013 00:00:00 -0700</pubDate>
       
       <guid>https://rootwork.github.io/rootwork.org/blog/2013/05/drupalcon-portland-responsive-web-design-snap-breakpoint-sass/</guid>
       <description>Media queries are a key part of responsive web design, because they control at what width (among other things) different CSS rules kick in. &amp;ldquo;Breakpoint makes writing media queries in Sass super simple,&amp;rdquo; say Mason Wendell and Sam Richard, creators of the extension to Compass, and they&amp;rsquo;re right. It&amp;rsquo;s not surprising that we&amp;rsquo;d want them to present at Drupalcon, since design in Drupal, like web design everywhere, has been embracing responsive web design as a fundamental principle.</description>
@@ -28,7 +28,7 @@
     <item>
       <title>Ninjas in your code at Drupalcon Portland: Sass with extends and placeholders</title>
       <link>https://rootwork.github.io/rootwork.org/blog/2013/05/ninjas-your-code-drupalcon-portland-sass-extends-placeholders/</link>
-      <pubDate>Tue, 14 May 2013 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 14 May 2013 00:00:00 -0700</pubDate>
       
       <guid>https://rootwork.github.io/rootwork.org/blog/2013/05/ninjas-your-code-drupalcon-portland-sass-extends-placeholders/</guid>
       <description>Dale Sande captures the revolution in efficiency that Sass brings, and at Drupalcon Portland he&amp;rsquo;s taking us way past Sass basics.</description>
