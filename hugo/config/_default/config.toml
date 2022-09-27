@@ -4,6 +4,7 @@ author = "Ivan Boothe" # Note in many places this is overridden by the data/auth
 
 defaultContentLanguage = "en"
 languageCode = "en-US"
+timeZone = "America/Los_Angeles"
 # [languages]
 # config/_default/languages.toml
 
