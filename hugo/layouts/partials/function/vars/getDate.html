@@ -3,16 +3,23 @@
   Retrieve published date and, if modified, updated date.
 */}}
 
-{{/* Adding a random number of seconds+millisecs to ensure no two dates are exactly the same, required for feed validation. */}}
+{{/* Because we only use dates, with no times, listings in e.g. feeds come out
+  as 12 midnight. This adds 12 hours to each date to at least have them
+  listed as 12 noon.
+*/}}
+{{- $published := (.Date.Add (time.ParseDuration "12h")).Format (string .Date) -}}
+{{- $updated := (.Date.Add (time.ParseDuration "12h")).Format (string .Lastmod) -}}
+
+{{/* Creating a random number of seconds+millisecs to ensure no two dates are
+  exactly the same, required for feed validation.
+*/}}
 {{- $title := partial "function/vars/getTitle" . -}}
 {{- $seed := int ( printf "0x%.8s" (md5 ($title.linked))) -}}
 {{- $rnd := mod (add (mul 13 $seed) 97) 400 -}}
 
-{{- $published := .Date -}}
 {{- $publishedExact := $published.Unix -}}
 {{- $publishedExact = add $publishedExact $rnd -}}
 
-{{- $updated := .Lastmod -}}
 {{- $updatedExact := $updated -}}
 
 {{- if eq .Date .Lastmod -}}
