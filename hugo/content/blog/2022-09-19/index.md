@@ -57,6 +57,20 @@ year: '2022'
 month: '2022-09'
 ---
 
+[Full URL](https://google.com)
+
+[This post's relative site URL](/blog/2022/09/refreshing-after-long-absence/)
+
+[This post's full site URL](http://localhost:1313/blog/2022/09/refreshing-after-long-absence/)
+
+[This post's page bundle link](refreshing-may_flickr-blavandmaster.jpg)
+
+[Other relative site URL](/blog/2014/03/online-advocacy-learn-community-organizing/)
+
+[Other full site URL](http://localhost:1313/blog/2013/04/uncharitable-how-businesses-co-opt-nonprofits-undermine-their-potential/)
+
+---
+
 It's been
 [quite a while](/blog/2014/04/join-me-devsigner-conference-portland-may-designers-developers-join-forces/)
 since I posted on this blog.
