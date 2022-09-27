@@ -9,16 +9,16 @@
     border-bottom: 2px currentColor solid;
     @include fancy-highlight(
       $light_bottom: var(--pale-green),
-      $light_top: var(--light),
+      $light_top: var(--pale-green),
       $dark_bottom: var(--light),
       $dark_top: var(--light),
-      $light_height: 50%,
+      $light_height: 0.3333rem,
       $dark_height: 100%
     );
 
     @include is-on {
       @include switch(color, var(--dark-green), var(--dark-green));
-      @include switch(border-bottom-color, var(--themedark), var(--light));
+      @include switch(border-bottom-color, var(--themedark), var(--themedark));
     }
   }
 
