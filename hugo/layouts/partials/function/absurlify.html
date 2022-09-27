@@ -7,12 +7,32 @@
   https://discourse.gohugo.io/t/absolute-urls-in-rss-feeds/25971
 */}}
 
-{{- $html := htmlUnescape . | safeHTML -}}
+{{- $path := partial "function/vars/getPath" .ctx -}}
+
+{{- $html := htmlUnescape .content | safeHTML -}}
 
 {{- $hrefs := findRE "href=\"([^\"]*)\"" $html -}}
 {{- range $href := $hrefs -}}
+
+  {{/* Extract the URL alone */}}
   {{- $absHref := strings.TrimPrefix "href=\"" $href -}}
   {{- $absHref = strings.TrimSuffix "\"" $absHref -}}
+
+  {{/* If the URL does not begin with 'http', and does not begin with '/', then
+    it is relative to the current page bundle and needs to have the current
+    page's relative path prefixed to it.
+  */}}
+  {{- $urlStart := substr $absHref 0 4 -}}
+  {{- if ne $urlStart "http" -}}
+    {{- $urlStart = substr $absHref 0 1 -}}
+    {{ if ne $urlStart "/" }}
+      {{- $absHref = printf $absHref | printf "%s%s" $path.relative | printf "%s" -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{/* Now replace the URL with itself, run through absURL, and wrap it back in
+    the href.
+  */}}
   {{- $absHref = printf "href=\"%s\"" ($absHref | absURL) -}}
   {{- $html = replace $html $href $absHref -}}
 {{- end -}}

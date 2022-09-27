@@ -19,7 +19,7 @@
 {{/* Feed content */}}
 
 {{- $feed_html := strings.Trim .Content "\n" -}}
-{{- $feed_html = partial "function/absurlify" $feed_html -}}
+{{- $feed_html = partial "function/absurlify" (dict "ctx" . "content" $feed_html) -}}
 {{- $feed_html = partial "function/entify" $feed_html -}}
 
 {{- $feed_plain := .Plain -}}
