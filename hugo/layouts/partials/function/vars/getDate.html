@@ -13,19 +13,19 @@
 {{- $seed := int ( printf "0x%.8s" (md5 ($title.linked))) -}}
 {{- $rnd := mod (add (mul 13 $seed) 97) 400 -}}
 
-{{- $publishedExact := $published.Unix -}}
-{{- $publishedExact = add $publishedExact $rnd -}}
-{{- $publishedExact = $publishedExact | time.AsTime -}}
+{{- $publishedTime := $published.Unix -}}
+{{- $publishedTime = add $publishedTime $rnd -}}
+{{- $publishedTime = $publishedTime | time.AsTime -}}
 
-{{- $updatedExact := $updated -}}
+{{- $updatedTime := $updated -}}
 
 {{- if eq .Date .Lastmod -}}
   {{- $updated = "" -}}
-  {{- $updatedExact = "" -}}
+  {{- $updatedTime = "" -}}
 {{- else -}}
-  {{- $updatedExact = .Lastmod.Unix -}}
-  {{- $updatedExact = add $updatedExact $rnd -}}
-  {{- $updatedExact = $updatedExact | time.AsTime -}}
+  {{- $updatedTime = .Lastmod.Unix -}}
+  {{- $updatedTime = add $updatedTime $rnd -}}
+  {{- $updatedTime = $updatedTime | time.AsTime -}}
 {{- end -}}
 
 {{/* Because we only use dates, with no times, listings in e.g. feeds come out
@@ -33,16 +33,26 @@
   listed as 12 noon.
 */}}
 
-{{- $publishedExact = ($publishedExact.Add (time.ParseDuration "12h")) -}}
-{{- with $updatedExact -}}
-  {{- $updatedExact = ($updatedExact.Add (time.ParseDuration "12h")) -}}
+{{- $publishedTime = ($publishedTime.Add (time.ParseDuration "12h")).Format "2006-01-02T15:04:05-07:00" -}}
+{{- with $updatedTime -}}
+  {{- $updatedTime = ($updatedTime.Add (time.ParseDuration "12h")).Format "2006-01-02T15:04:05-07:00" -}}
+{{- end -}}
+
+{{- $updatedRSS := $updatedTime -}}
+{{- $publishedRSS := dateFormat "Mon, 02 Jan 2006 15:04:00 -0700" $publishedTime -}}
+{{- with $updatedTime -}}
+  {{- $updatedRSS = dateFormat "Mon, 02 Jan 2006 15:04:00 -0700" $updatedTime -}}
 {{- end -}}
 
 {{- $date := dict
-  "published"      $published
-  "updated"        $updated
-  "publishedExact" $publishedExact
-  "updatedExact"   $updatedExact
+  "published"     $published
+  "updated"       $updated
+  "publishedTime" $publishedTime
+  "updatedTime"   $updatedTime
+  "publishedAtom" $publishedTime
+  "updatedAtom"   $updatedTime
+  "publishedRSS"  $publishedRSS
+  "updatedRSS"    $updatedRSS
 -}}
 
 {{- return $date -}}
