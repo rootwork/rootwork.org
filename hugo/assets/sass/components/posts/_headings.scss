@@ -19,6 +19,16 @@
       font-style: normal;
     }
 
+    &.end {
+      text-align: right;
+    }
+
+    &.no-perm {
+      .link {
+        display: none;
+      }
+    }
+
     // Labeling automated subheading links
     .link.icon {
       position: relative;
