@@ -1,0 +1,79 @@
+{{/* USAGE: video "path" "attributes" "ratio" "YouTube link"
+
+  - src: Relative to the site root, NOT Page Bundles.
+  - attrs: Note if "controls" is not used, the video can't be manually started or stopped. If "autoplay" is set, "muted" must also be set or the video won't autoplay in most browsers. For a full list of attributes, see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video
+  - ratio: Optional; accepts 1x1 | 4x3 | 16x9 | 21x9. Omitting ratio will result in a 100vw video and may cause overflow.
+  - width: Set a constraining width in % of the parent container.
+  - align: Position the video to the left or right of content. Only effective when combined with a width less than 100%.
+  - cover: Provide an image to use while the video is paused; otherwise the first frame of the video is used.
+  - link: Include a link to a hosted version of this video.
+  - caps: Indicate that the hosted link has captions available.
+
+  Basic video (no controls visible):
+  < video src="videos/myvideo.mp4" >
+
+  Basic video (with browser controls):
+  < video src="videos/myvideo.mp4" attrs="controls" >
+
+  Video with autoplay on mute at 16x9 ratio and 50% width:
+  < video src="videos/myvideo.mp4" attrs="controls autoplay muted" ratio="16x9" width="50%" >
+
+  Video with autoplay at 1x1 ratio, a custom cover image, and a link to a YouTube version with captions:
+  < video src="videos/myvideo.mp4" cover="videos/myvideo_cover.jpg" attrs="controls autoplay mute" ratio="1x1" link="https://www.youtube.com/watch?v=aabbcc" caps="true">
+*/}}
+{{- $src := .Get "src" }}
+{{- $attrs := .Get "attrs" }}
+{{- $ratio := .Get "ratio" }}
+{{- $width := .Get "width" }}
+{{- $align := .Get "align" }}
+{{- $cover := .Get "cover" }}
+{{- $link := .Get "link" }}
+{{- $caps := .Get "caps" }}
+<div
+  class="
+  video
+  {{- with $width }}
+    video--constrained
+  {{- end -}}
+  {{- with $align }}
+    video--aligned
+    video--aligned-{{ . }}
+  {{- end -}}
+"
+  {{ with $width -}}
+    style="--width: {{ . }}"
+  {{- end }}
+>
+  <div
+    {{- with $ratio }}
+      class="ratio ratio-{{ . }}"
+    {{- end -}}
+  >
+    <video
+      preload="metadata"
+      {{- with $cover }}
+        poster="{{ . | relURL }}"
+      {{- end }}
+      {{- with $attrs }}
+        {{ . | safeHTMLAttr }}
+      {{- end }}
+    >
+      <source
+        src="{{ $src }}"
+        {{- if in $src ".webm" }}type="video/webm"{{ end -}}
+        {{- if in $src ".mp4" }}type="video/mp4"{{ end -}}
+      />
+      <p>
+        Sorry, your browser doesn't support embedded videos.
+        <a href="{{ $src }}">Download this video.</a>
+      </p>
+    </video>
+  </div>
+  {{- with $link }}
+    <p class="link-text">
+      <a href="{{ . }}"
+        >Watch this video {{ with $caps }}with captions{{ end }} on YouTube.</a
+      >
+    </p>
+  {{- end }}
+</div>
