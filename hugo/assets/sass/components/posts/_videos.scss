@@ -1,0 +1,19 @@
+.video.video {
+  position: static;
+  height: auto;
+  padding: 0;
+  line-height: 0;
+
+  video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  &.video--constrained {
+    video {
+      width: var(--width);
+      margin: 0 auto;
+    }
+  }
+}
