@@ -1,0 +1,123 @@
+.form {
+  * {
+    appearance: auto;
+    -webkit-appearance: auto;
+  }
+
+  h4 {
+    font-weight: bold;
+  }
+
+  label {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-weight: bold;
+    vertical-align: baseline;
+
+    &.email {
+      font-size: 1.25rem;
+      font-weight: normal;
+      font-style: italic;
+    }
+  }
+
+  input,
+  optgroup,
+  select,
+  textarea {
+    margin: 0;
+    padding: 0.5rem;
+    max-width: 100%;
+    background-color: var(--pale-green);
+    border: 2px var(--bright-green) solid;
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: clamp(1.125rem, calc(0.3214rem + 2.5714vw), 2.25rem);
+    line-height: 1.15;
+
+    &:focus {
+      background-color: var(--white);
+    }
+  }
+
+  input {
+    overflow: visible;
+  }
+
+  select {
+    text-transform: none;
+  }
+
+  [type='reset'],
+  [type='submit'] {
+    -webkit-appearance: button;
+    background-color: var(--bright-green);
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
+
+    @include is-on {
+      background-color: var(--pale-green);
+      color: var(--black);
+    }
+
+    &::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    &::-moz-focusring {
+      outline: 1px dotted ButtonText;
+    }
+  }
+
+  textarea {
+    overflow: auto;
+    white-space: revert;
+  }
+
+  [type='checkbox'],
+  [type='radio'] {
+    margin-right: 0.5rem;
+    padding: 0;
+    min-width: 1rem;
+    min-height: 1rem;
+    border-radius: 0.1rem;
+    background-color: var(--white);
+    border-color: var(--text);
+  }
+
+  [type='number']::-webkit-inner-spin-button,
+  [type='number']::-webkit-outer-spin-button {
+    height: auto;
+  }
+
+  [type='search'] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+  }
+
+  [type='search']::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+  }
+
+  &__checkboxes {
+    display: inline-block;
+    margin-left: 2rem;
+    font-size: 1rem;
+
+    li {
+      padding-top: 0;
+      list-style-type: none;
+    }
+  }
+}
