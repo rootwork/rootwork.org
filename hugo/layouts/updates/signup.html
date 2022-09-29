@@ -1,0 +1,161 @@
+{{/* Entirely the same as layouts/_default/single.html except adding
+  partial "form_updates" .
+  after the content.
+*/}}
+{{- define "main" }}
+  {{- $s := .Site.Params }}
+  {{- $p := .Params }}
+  {{- $scratch := newScratch }}
+  {{- if isset $p "image" }}
+    {{- $scratch.Set "image" $p.image }}
+  {{- else }}
+    {{ $scratch.Set "image" $s.fallBackOgImage }}
+  {{- end }}
+  {{- $image := $scratch.Get "image" }}
+  {{- $bg := absLangURL (path.Join "images" $image) }}
+  <div
+    class="
+      {{ if ne $p.singleColumn true }}grid-inverse{{ end }}
+      wrap
+      content
+    "
+  >
+    <article class="post_content h-entry" id="content">
+      {{- $t := .Title }}
+      <h1 class="post_title p-name" itemprop="name headline">
+        {{- with $p.featureImage -}}
+          <div class="post_featured">
+            <span
+              class="post_featured__bg"
+              style="background-image: url('{{ $p.featureImage }}');"
+            ></span>
+            {{- partial "image" (dict "file" $p.featureImage "alt" $p.featureImageAlt "cap" $p.featureImageCap "type" "featured" "Page" $.Page) }}
+          </div>
+        {{- else -}}
+          <div class="post_featured post_featured--none"></div>
+        {{- end -}}
+        <span
+          class="
+          post_title__text
+          {{ if or (not $p.featureImage) (eq $p.featureImageShade true) -}}
+            shaded
+          {{- end -}}
+        "
+        >
+          {{ $t | markdownify }}
+        </span>
+      </h1>
+      {{- partial "post-meta" . }}
+      {{ if $p.toc }}
+        <div class="post_toc">
+          <h2>{{ T "overview" }}</h2>
+          {{ .TableOfContents }}
+        </div>
+      {{ end }}
+      <div class="post_body e-content" itemprop="articleBody">
+        {{- .Content }}
+
+        {{- partial "form_updates" . }}
+
+        {{ with $p.featureImageCreditFlickr }}
+          <div class="featured_image_credit">
+            Top image credit Flickr user
+            <a
+              href="https://www.flickr.com/photos/{{ . }}"
+              title="View this person's Flickr stream"
+              >{{ . }}</a
+            >.
+          </div>
+        {{ end }}
+        {{ with $p.featureImageCreditCustom }}
+          <div class="featured_image_credit">
+            {{ . | markdownify }}
+          </div>
+        {{ end }}
+      </div>
+
+      {{- $showRelatedInArticle := true }}
+      {{- if eq $s.showRelatedInArticle true }}
+        {{- $showRelatedInArticle = true }}
+      {{- else if eq $p.showRelatedInArticle true }}
+        {{- $showRelatedInArticle = true }}
+      {{- end }}
+      {{- if ne $showRelatedInArticle false }}
+        {{- partial "related" . }}
+      {{- end }}
+
+      {{ $shortalias := "false" }}
+      {{ range $p.aliases }}
+        {{ if in . "/p/" }}
+          {{ $shortalias = "true" }}
+        {{ end }}
+      {{ end }}
+
+
+      <div
+        class="
+        post_body_footer
+        {{ if or .Params.categories .Params.tags }}
+          post_body_footer--terms
+        {{ end }}
+        {{ if eq $shortalias "true" }}post_body_footer--alias{{ end }}
+      "
+      >
+        {{ if or .Params.categories .Params.tags }}
+          <div class="post_terms_section">
+            <h5 class="post_terms_section__title">View more posts about:</h5>
+
+            {{- with .Params.categories -}}
+              <span class="post_terms post_terms--cat">
+                {{- range . }}
+                  {{- $termName := . -}}
+                  {{- $termPath := urlize $termName -}}
+                  <a
+                    href="{{ absLangURL (printf "categories/%s/" $termPath) }}"
+                    title="View content related to {{ $termName }}"
+                    class="post_term post_term--cat"
+                    >{{- $termName -}}</a
+                  >
+                {{- end }}
+              </span>
+            {{- end }}
+            {{- with .Params.tags -}}
+              <span class="post_terms post_terms--tag">
+                {{- range . }}
+                  {{- $termName := . -}}
+                  {{- $termPath := urlize $termName -}}
+                  <a
+                    href="{{ absLangURL (printf "tags/%s/" $termPath) }}"
+                    title="View content related to {{ $termName }}"
+                    class="post_term post_term--tag"
+                    >{{- $termName -}}</a
+                  >
+                {{- end }}
+              </span>
+            {{- end }}
+          </div>
+        {{ end }}
+
+        {{ if eq $shortalias "true" }}
+          {{ range $p.aliases }}
+            {{ if in . "/p/" }}
+              <div class="short_link">
+                <h6 class="short_link__title">Short link to this post:</h6>
+                <a class="short_link__link" href="{{ . }}"
+                  ><span class="short_link__linktitle"></span
+                  >https://rootwork.org{{ . }}</a
+                >
+              </div>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
+      </div>
+      {{- partial "i18nlist" . }}
+      {{- partial "tree" (dict "display" "roots") }}
+    </article>
+    {{- if ( ne $p.sidebar false ) }}
+      {{- partial "sidebar" . }}
+    {{ end }}
+  </div>
+{{- end }}

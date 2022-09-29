@@ -1,0 +1,91 @@
+<h3>Sign up for email updates</h3>
+
+<form
+  action="https://buttondown.email/api/emails/embed-subscribe/rootwork"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.email/rootwork', 'popupwindow')"
+  class="form embeddable-buttondown-form"
+>
+  <p>
+    <input type="email" name="email" id="bd-email" /><br />
+    <label for="bd-email" class="email"
+      >your beautiful email address goes right here</label
+    >
+  </p>
+
+  <h4>Optionally, select types of updates you want to receive</h4>
+
+  <ul class="form__checkboxes">
+    <li>
+      <label
+        ><input
+          type="checkbox"
+          name="tag"
+          value="Frontend Development"
+          checked
+        />
+        Frontend Development</label
+      >
+    </li>
+    <li>
+      <label
+        ><input type="checkbox" name="tag" value="Accessibility" checked />
+        Accessibility</label
+      >
+    </li>
+    <li>
+      <label
+        ><input
+          type="checkbox"
+          name="tag"
+          value="Nonprofit Technology"
+          checked
+        />
+        Nonprofit Technology (nptech)</label
+      >
+    </li>
+    <li>
+      <label
+        ><input
+          type="checkbox"
+          name="tag"
+          value="Advocacy & Activism"
+          checked
+        />
+        Advocacy & Activism</label
+      >
+    </li>
+  </ul>
+  <ul class="form__checkboxes">
+    <li>
+      <label
+        ><input type="checkbox" name="tag" value="Drupal" checked />
+        Drupal</label
+      >
+    </li>
+    <li>
+      <label
+        ><input type="checkbox" name="tag" value="Hugo" checked /> Hugo</label
+      >
+    </li>
+    <li>
+      <label
+        ><input type="checkbox" name="tag" value="Email coding" checked /> Email
+        coding</label
+      >
+    </li>
+    <li>
+      <label
+        ><input type="checkbox" name="tag" value="Bash scripting" checked />
+        Bash scripting</label
+      >
+    </li>
+  </ul>
+
+  <p><input type="submit" value="Subscribe to updates" /></p>
+
+  <p>
+    After subscribing, be sure to check your email and confirm your intention.
+  </p>
+</form>
