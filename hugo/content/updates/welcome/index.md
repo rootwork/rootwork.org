@@ -46,8 +46,7 @@ figurePositionShow: false # Override global value for showing the figure label.
 **Please check your email now for a confirmation message.**
 
 To ensure all your updates get delivered, I suggest adding
-**updates&#64;rootwork.org** to your contacts or address book. (You can write to
-me at that address too!)
+**updates&#64;mail.rootwork.org** to your contacts or address book.
 
 <!-- Not sure what to do next? Take a look at my featured posts. -->
 
