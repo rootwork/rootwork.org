@@ -12,7 +12,7 @@
     2008&#8211;2022, Rootwork.org. Feel free to use or republish with credit!</rights>
   <icon>https://rootwork.github.io/rootwork.org/icons/android-chrome-512x512.png</icon>
   <logo>https://rootwork.github.io/rootwork.org/logos/rootwork-share.png</logo>
-  <updated>2022-09-27T22:27:43+00:00</updated>
+  <updated>2022-09-29T01:12:50+00:00</updated>
   <link rel="self" type="application/atom+xml" href="https://rootwork.github.io/rootwork.org/feed.atom" hreflang="en-US"/>
   <link rel="alternate" type="text/html" href="https://rootwork.github.io/rootwork.org/" hreflang="en-US"/>
   <link rel="alternate" type="application/json" href="https://rootwork.github.io/rootwork.org/index.json" hreflang="en-US"/>
@@ -169,7 +169,7 @@ until this Friday, May 2!&lt;/p&gt;
     &lt;figcaption class=&#34;caption_figure caption_internal&#34;&gt;Devsigner: Portland, OR, May 23-25&lt;/figcaption&gt;&lt;/picture&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
-&lt;h3 id=&#34;sessions-will-include-things-like&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Sessions will include things like:&lt;/span&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;h3 id=&#34;sessions-will-include-things-like&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Sessions will include things like:&lt;/span&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;responsive web development for graphic designers&lt;/li&gt;
 &lt;li&gt;color theory for coders&lt;/li&gt;
 &lt;li&gt;industrial design for web apps&lt;/li&gt;
@@ -180,7 +180,7 @@ until this Friday, May 2!&lt;/p&gt;
 &lt;a href=&#34;https://web.archive.org/web/20140719090242/http://devsignercon.com/&#34; title=&#34;Submit your session!&#34;&gt;submit a session&lt;/a&gt;
 now!&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;were-going-to-mix-it-up-with-a-variety-of-session-formats&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;We&amp;rsquo;re going to mix it up with a variety of session formats:&lt;/span&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;h3 id=&#34;were-going-to-mix-it-up-with-a-variety-of-session-formats&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;We&amp;rsquo;re going to mix it up with a variety of session formats:&lt;/span&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;Traditional presentations (45&amp;ndash;60 minutes)&lt;/li&gt;
 &lt;li&gt;Panel and roundtable discussions (45&amp;ndash;60 minutes)&lt;/li&gt;
 &lt;li&gt;Hands-on, deep-dive workshops (2 hours Friday, 3 hours Saturday and Sunday)&lt;/li&gt;
@@ -188,7 +188,7 @@ now!&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;We&amp;rsquo;re also kicking off the event with a keynote presentation from a surprise
 guest!&lt;/p&gt;
-&lt;h3 id=&#34;who-should-attend&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Who should attend?&lt;/span&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;h3 id=&#34;who-should-attend&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Who should attend?&lt;/span&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;graphic designers who want to hone their web design chops&lt;/li&gt;
 &lt;li&gt;developers who want to the beauty of their projects to match the beauty of
 their code&lt;/li&gt;
@@ -222,7 +222,7 @@ are simply images.&lt;/em&gt;&lt;/p&gt;
 &lt;a href=&#34;https://rootwork.github.io/blog/2010/04/what-online-activism-can-learn-from-community-organizing/&#34;&gt;an article I wrote back in 2010&lt;/a&gt;
 about online and offline organizing, with a more visual focus. If you prefer
 words to images, the original might serve you better.&lt;/p&gt;
-&lt;h3 id=&#34;online-advocacy-and-community-organizing&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Online advocacy and community organizing&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;My background is in community organizing and social movement theory, and that&amp;rsquo;s
+&lt;h3 id=&#34;online-advocacy-and-community-organizing&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Online advocacy and community organizing&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;My background is in community organizing and social movement theory, and that&amp;rsquo;s
 what I&amp;rsquo;d like to talk a little bit about today.&lt;/p&gt;
 &lt;p&gt;
   &lt;figure&gt;
@@ -1613,7 +1613,7 @@ we&amp;rsquo;re having separate
 tracks. That means we were able to offer even more sessions targeted directly at
 frontend developers, and as the local track chair for frontend, I&amp;rsquo;m really
 excited about what we&amp;rsquo;ve ended up with!&lt;/p&gt;
-&lt;h3 id=&#34;groundbreaking-frontend-featured-speakers&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Groundbreaking frontend featured speakers&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;
+&lt;h3 id=&#34;groundbreaking-frontend-featured-speakers&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Groundbreaking frontend featured speakers&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;
   &lt;figure&gt;
   &lt;picture&gt;
 
@@ -1682,7 +1682,7 @@ theme out there, has
 &lt;a href=&#34;https://www.drupal.org/node/1921610#comment-7096746&#34;&gt;a re-organization of its CSS&lt;/a&gt;
 in the upcoming Drupal 8 release.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://portland2013.drupal.org/session/scalable-and-modular-architecture-css.html&#34;&gt;&lt;strong&gt;Join Jonathan Snook at Drupalcon Portland on Tuesday, May 21 at 4:30 PM.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;drupal-8-and-twig&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Drupal 8 and Twig&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Oh yeah, so there&amp;rsquo;s this new version of Drupal coming out pretty soon.&lt;/p&gt;
+&lt;h3 id=&#34;drupal-8-and-twig&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Drupal 8 and Twig&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Oh yeah, so there&amp;rsquo;s this new version of Drupal coming out pretty soon.&lt;/p&gt;
 &lt;p&gt;Among the
 &lt;a href=&#34;https://groups.drupal.org/drupal-initiatives&#34;&gt;many, many awesome things happening with Drupal 8&lt;/a&gt;,
 one of the most relevant to frontend developers is the adoption (with a little
@@ -1696,7 +1696,7 @@ developers to simplify the theming components of their modules.&lt;/p&gt;
 there were literally gasps in the audience as we all saw how cool it was. If
 you&amp;rsquo;re a themer or a frontend developer, don&amp;rsquo;t miss this!&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://portland2013.drupal.org/session/using-twig-new-template-engine-drupal-8.html&#34;&gt;&lt;strong&gt;Join Jen Lampton, Fabian Franz and John Albin Wilkins presenting Twig on Wednesday, May 22 at 3:45 PM.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;and-so-much-more&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;And so much more!&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;I&amp;rsquo;ve just touched on two of the featured sessions at Drupalcon Portland. In the
+&lt;h3 id=&#34;and-so-much-more&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;And so much more!&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;I&amp;rsquo;ve just touched on two of the featured sessions at Drupalcon Portland. In the
 coming week I&amp;rsquo;ll be posting more about some of the other sessions, but you can
 &lt;a href=&#34;https://portland2013.drupal.org/program/sessions.html&#34;&gt;browse the frontend sessions right now&lt;/a&gt;
 and start planning to attend your favorites! (Don&amp;rsquo;t forget
@@ -1881,7 +1881,7 @@ the monthly Nonprofit Drupal Community of Practice discussion and Q&amp;A call.&
 &lt;p&gt;&lt;strong&gt;This is a free conference call, sponsored by the Nonprofit Technology Network
 (NTEN) but open to anyone.
 &lt;a href=&#34;https://groups.drupal.org/node/283848&#34;&gt;Please join us!&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&#34;what-will-we-talk-about&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;What will we talk about?&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;This is a time to chat informally with other nonprofit-tech Drupalists &amp;ndash; an
+&lt;h3 id=&#34;what-will-we-talk-about&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;What will we talk about?&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;This is a time to chat informally with other nonprofit-tech Drupalists &amp;ndash; an
 open Q&amp;A discussion for anyone with or in nonprofits or social change groups
 using Drupal. But generally speaking:&lt;/p&gt;
 &lt;ul&gt;
@@ -1897,7 +1897,7 @@ comment below or message me on Twitter
 &lt;p&gt;Johanna and I will take collaborative notes on the call
 (&lt;a href=&#34;https://docs.google.com/document/d/1_D3_YPJv1tMFzicfgnM6N0xTn86wGGSe5cxmSEbnLdg/edit&#34;&gt;notes from January&amp;rsquo;s discussion are here&lt;/a&gt;)
 so if you can&amp;rsquo;t make it just let us know if you&amp;rsquo;d like a link to the notes.&lt;/p&gt;
-&lt;h3 id=&#34;join-the-call&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Join the call!&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;On Thursday, Feb. 28 at 1PM Eastern/10AM Pacfic, just &lt;strong&gt;dial in to (866)
+&lt;h3 id=&#34;join-the-call&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Join the call!&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;On Thursday, Feb. 28 at 1PM Eastern/10AM Pacfic, just &lt;strong&gt;dial in to (866)
 740-1260 and enter the access code 3979222&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Talk to you soon!&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;&lt;small&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2013/02/free-drupal-qa-call-nonprofits-social-change-tomorrow-feb-28/&#34;&gt;Free Drupal Q&amp;A call for nonprofits and social change tomorrow, Feb. 28&lt;/a&gt; originally published on &lt;a href=&#34;https://rootwork.org&#34;&gt;Rootwork.org&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;</content>
   </entry><entry>
@@ -2022,7 +2022,7 @@ least two nonprofits nearly go through with the switch before they realized what
 was happening.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Don&amp;rsquo;t let it happen to your nonprofit. Just say no to Domain Registry of
 America!&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&#34;other-resources-on-domain-registry-of-america&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Other resources on Domain Registry of America&lt;/span&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;h3 id=&#34;other-resources-on-domain-registry-of-america&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Other resources on Domain Registry of America&lt;/span&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&amp;ldquo;&lt;a href=&#34;https://web.archive.org/web/20130828012117/http://en.wikipedia.org/wiki/Domain_name_scams&#34;&gt;Domain name scams&lt;/a&gt;,&amp;rdquo;
 from Wikipedia&lt;/li&gt;
 &lt;li&gt;&amp;ldquo;&lt;a href=&#34;https://web.archive.org/web/20130828012117/http://blog.forret.com/projects/domain-registry-of-america/&#34;&gt;Domain Registry of America&lt;/a&gt;,&amp;rdquo;
@@ -2061,7 +2061,7 @@ and proposed today.&lt;/p&gt;
 so you can be even more specific in your proposals. Here are the descriptions
 for both tracks:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;h3 id=&#34;frontend-connecting-new-tools-and-techniques-to-create-an-effective-drupal-frontend-experiencehttpsportland2013drupalorgprogramtracksfrontend&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;&lt;a href=&#34;https://portland2013.drupal.org/program/tracks/#frontend&#34;&gt;Frontend: Connecting new tools and techniques to create an effective Drupal frontend experience&lt;/a&gt;&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;The frontend experience of a website is crucial to its success. Though the
+&lt;h3 id=&#34;frontend-connecting-new-tools-and-techniques-to-create-an-effective-drupal-frontend-experiencehttpsportland2013drupalorgprogramtracksfrontend&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;&lt;a href=&#34;https://portland2013.drupal.org/program/tracks/#frontend&#34;&gt;Frontend: Connecting new tools and techniques to create an effective Drupal frontend experience&lt;/a&gt;&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;The frontend experience of a website is crucial to its success. Though the
 backend of a site may be impeccable, the frontend experience gives the user
 the first impression of an organization or company. Without a good frontend
 experience, a site can turn users away. Let&amp;rsquo;s discover ways in which we can
@@ -2086,7 +2086,7 @@ UX, Content Strategists&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;h3 id=&#34;user-experience-uxhttpsportland2013drupalorgprogramtracksux&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;&lt;a href=&#34;https://portland2013.drupal.org/program/tracks/#UX&#34;&gt;User Experience (UX)&lt;/a&gt;&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;The User Experience process is key to the success of the development of
+&lt;h3 id=&#34;user-experience-uxhttpsportland2013drupalorgprogramtracksux&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;&lt;a href=&#34;https://portland2013.drupal.org/program/tracks/#UX&#34;&gt;User Experience (UX)&lt;/a&gt;&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;The User Experience process is key to the success of the development of
 websites and web applications. From user research, interviews and analytics,
 we learn what the user actually wants and needs; not what we assume they want.
 At this year&amp;rsquo;s DrupalCon we present a new User Experience track to show our
@@ -2113,7 +2113,7 @@ jQuery and JavaScript; and Drupal 8&amp;rsquo;s new template engine, Twig. There
 topics that span those areas, such as frontend mobile development (including
 responsiveness) and multilingual frontend development.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://portland2013.drupal.org/program/submit-session.html&#34;&gt;&lt;strong&gt;If you&amp;rsquo;re wondering whether you should submit a session proposal, as track chair let me clear it up for you: You should!&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;awesome-frontend-speakers&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Awesome frontend speakers&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Drupalcon has some exciting keynote speakers, such as
+&lt;h3 id=&#34;awesome-frontend-speakers&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Awesome frontend speakers&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Drupalcon has some exciting keynote speakers, such as
 &lt;a href=&#34;https://portland2013.drupal.org/node/798.html&#34;&gt;Karen McGrane&lt;/a&gt;. But the frontend
 track has some special guests we&amp;rsquo;re really looking forward to:&lt;/p&gt;
 &lt;ul&gt;
@@ -2158,7 +2158,7 @@ you click the button) and serve you or your friends particular ads on Facebook
 as a result. For those who are not on Facebook, or who aren&amp;rsquo;t logged in, it can
 still tie the profile to your IP address, and could theoretically link that
 information to you, should you subsequently show up on Facebook.&lt;/p&gt;
-&lt;h3 id=&#34;this-isnt-unique-to-facebook&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;This isn&amp;rsquo;t unique to Facebook&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Most &amp;ldquo;free&amp;rdquo; third-party apps do exactly the same thing, although few have the
+&lt;h3 id=&#34;this-isnt-unique-to-facebook&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;This isn&amp;rsquo;t unique to Facebook&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Most &amp;ldquo;free&amp;rdquo; third-party apps do exactly the same thing, although few have the
 reach of Facebook. The other big player is &lt;strong&gt;Google&lt;/strong&gt;, who tracks you (by IP
 address) using Google Analytics, which many websites have installed in exchange
 for free website statistics, and tracks you (by Google profile) using Google&amp;rsquo;s
@@ -2190,7 +2190,7 @@ on using Tor for anonymous blogging. There are also
 &lt;a href=&#34;https://addons.mozilla.org/en-US/firefox/addon/ghostery/&#34;&gt;plugins&lt;/a&gt; that
 anonymize your browsing. Any of these methods would defeat tracking by social
 networking widgets.&lt;/p&gt;
-&lt;h3 id=&#34;a-two-click-solution-for-websites&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;A two-click solution for websites&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;For organizations that want to ensure their users are only tracked by social
+&lt;h3 id=&#34;a-two-click-solution-for-websites&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;A two-click solution for websites&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;For organizations that want to ensure their users are only tracked by social
 networking websites if they explicitly opt-in, there&amp;rsquo;s an exciting new
 development.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Last week, as a response to the German privacy commissioner&amp;rsquo;s declaration
@@ -2253,7 +2253,7 @@ implications for nonprofits and social change work. You can
 &lt;p&gt;(Google insists on referring to its system as &amp;ldquo;Google&#43;&amp;rdquo; but that wreaks havoc on
 search engines, so throughout this post I&amp;rsquo;ll be referring to it as &amp;ldquo;Google Plus&amp;rdquo;
 instead.)&lt;/p&gt;
-&lt;h3 id=&#34;designed-for-personal-profiles&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Designed for personal profiles&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;
+&lt;h3 id=&#34;designed-for-personal-profiles&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Designed for personal profiles&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;
   &lt;figure&gt;
   &lt;picture&gt;
 
@@ -2300,7 +2300,7 @@ conceivably find each one who has a Google Plus profile relatively easily.
 (LinkedIn has a similar setup, but is largely used for job-seeking and, unlike
 Google Plus, requires an account in order to see profiles &amp;ndash; so at best they are
 only semi-public.)&lt;/p&gt;
-&lt;h3 id=&#34;professionalizing-communications&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Professionalizing communications&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;If you&amp;rsquo;re familiar with
+&lt;h3 id=&#34;professionalizing-communications&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Professionalizing communications&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;If you&amp;rsquo;re familiar with
 &lt;em&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar&#34;&gt;The Cathedral &amp; the Bazaar&lt;/a&gt;&lt;/em&gt;
 you&amp;rsquo;ll recognize the concepts of formal and informal communication. Unlike
 communication among friends, Google Plus is designed to formalize
@@ -2368,7 +2368,7 @@ supporters&amp;hellip;&lt;/p&gt;
     &lt;/picture&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
-&lt;h3 id=&#34;community-organizing&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;(Community) organizing&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;While this is helpful for one-to-one communications, it means organizing in a
+&lt;h3 id=&#34;community-organizing&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;(Community) organizing&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;While this is helpful for one-to-one communications, it means organizing in a
 group or collective voice &amp;ndash; common in spaces like Facebook Groups, Twitter
 hashtags, and blogging circles &amp;ndash; is more difficult.&lt;/p&gt;
 &lt;p&gt;
@@ -2437,7 +2437,7 @@ around a &amp;ldquo;multi-hub small world&amp;rdquo; concept.
     &lt;/picture&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
-&lt;h3 id=&#34;on-requiring-real-names&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;On requiring real names&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Google Plus, like Facebook before it, has taken the position that all profiles
+&lt;h3 id=&#34;on-requiring-real-names&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;On requiring real names&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Google Plus, like Facebook before it, has taken the position that all profiles
 must be linked to a single actual human person. No pseudonyms, no fictional
 characters, no group identities, no profiles of pets or inanimate objects, no
 creative or destructive bots. For some online organizers, in contrast to the
@@ -2523,7 +2523,7 @@ cases, circumvent these policies.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Update, Oct. 5, 2015: The EFF has launched an initiative called
 &lt;a href=&#34;https://www.eff.org/deeplinks/2015/10/global-coalition-facebook-authentic-names-are-authentically-dangerous-your-users&#34;&gt;The Nameless Coalition&lt;/a&gt;,
 calling on all social networks to step back from &amp;ldquo;real name&amp;rdquo; policies.&lt;/em&gt;&lt;/p&gt;
-&lt;h3 id=&#34;google-plus-hangouts&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Google Plus Hangouts&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;In addition to Google Plus profiles, Google has launched a new video-chatting
+&lt;h3 id=&#34;google-plus-hangouts&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Google Plus Hangouts&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;In addition to Google Plus profiles, Google has launched a new video-chatting
 system called Google&#43; Hangouts. This could be useful to online organizers both
 for quick collaboration with colleagues and for impromptu webinars with
 supporters. Although there are participation limits, for small groups this
@@ -2558,7 +2558,7 @@ offers a welcome no-cost alternative to platforms like WebEx or GoToMeeting.&lt;
     &lt;/picture&gt;
 &lt;/figure&gt;
 &lt;/p&gt;
-&lt;h3 id=&#34;conclusion&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Conclusion&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Whenever I talk about online organizing, I emphasize that it&amp;rsquo;s important to &lt;strong&gt;go
+&lt;h3 id=&#34;conclusion&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Conclusion&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Whenever I talk about online organizing, I emphasize that it&amp;rsquo;s important to &lt;strong&gt;go
 where your people are&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;
   &lt;figure&gt;
@@ -2602,7 +2602,7 @@ hang out but because that&amp;rsquo;s where the people are.&lt;/p&gt;
 activists, or sympathetic communities aren&amp;rsquo;t showing up on Google Plus, there&amp;rsquo;s
 no reason for you to prioritize it. As with any online platform, your organizing
 strategy should come first, technology second.&lt;/p&gt;
-&lt;h3 id=&#34;resources&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Resources&lt;/span&gt;&lt;/h3&gt;&lt;h4 id=&#34;google-plus-and-nonprofitsactivism&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Google Plus and nonprofits/activism&lt;/span&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;h3 id=&#34;resources&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Resources&lt;/span&gt;&lt;/h3&gt;&lt;h4 id=&#34;google-plus-and-nonprofitsactivism&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Google Plus and nonprofits/activism&lt;/span&gt;&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://nonprofitorgs.wordpress.com/2011/07/08/google-and-nonprofits-no-worries-if-you-have-yet-to-be-invited/&#34;&gt;Google&#43; and Nonprofits&lt;/a&gt;,
 Nonprofit Tech 2.0&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://amysampleward.org/2011/06/30/security-and-control-early-thoughts-on-google/&#34;&gt;Security and Control: Early thoughts on Google&#43;&lt;/a&gt;,
@@ -2618,7 +2618,7 @@ Adam Jack, National Wildlife Federation&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.alevin.com/?p=2616&#34;&gt;The promise of Google&#43; for organizing&lt;/a&gt;, Adina
 Levin&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;general-google-plus-resources&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;General Google Plus resources&lt;/span&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;h4 id=&#34;general-google-plus-resources&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;General Google Plus resources&lt;/span&gt;&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://readwrite.com/how_to_start_with_google_plus/&#34;&gt;How to Use Google Plus&lt;/a&gt;,
 ReadWriteWeb&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20111125044917/http://www.mediabistro.com/alltwitter/how-is-google-like-twitter-and-facebook-infographic_b11782&#34;&gt;How Is Google&#43; Like Twitter And Facebook?&lt;/a&gt;,
@@ -2628,7 +2628,7 @@ Lifehacker&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20120117145155/http://causepl.us/&#34;&gt;Doing Good on Google Plus&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20111010025435/http://www.group.as/np%20tech/&#34;&gt;Nonprofit Tech folks on Google Plus&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;nymwars-real-name-debate&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;&amp;lsquo;Nymwars&amp;rsquo; real-name debate&lt;/span&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;h4 id=&#34;nymwars-real-name-debate&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;&amp;lsquo;Nymwars&amp;rsquo; real-name debate&lt;/span&gt;&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.zephoria.org/thoughts/archives/2011/08/04/real-names.html&#34;&gt;Real Name Policies Are an Abuse of Power&lt;/a&gt;,
 danah boyd&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.eff.org/deeplinks/2011/07/case-pseudonyms&#34;&gt;A Case for Pseudonyms&lt;/a&gt;,
@@ -2732,14 +2732,14 @@ that count toward your cause. You also
   &gt;must have a Google account&lt;/a
 &gt;
 to submit your totals.&lt;/p&gt;
-&lt;h3 id=&#34;what-i-like-about-it&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;What I like about it&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;It&amp;rsquo;s great that Google is directing money to nonprofits, and not the usual
+&lt;h3 id=&#34;what-i-like-about-it&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;What I like about it&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;It&amp;rsquo;s great that Google is directing money to nonprofits, and not the usual
 milquetoast public awareness charities, but organizations that do good, concrete
 things. And it&amp;rsquo;s nice that on the Chrome for a Cause page, they have links to
 &amp;ldquo;donate directly&amp;rdquo; under the description of each organization.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s also nice that people who participate in Chrome for a Cause get to choose
 &amp;ndash; from Google&amp;rsquo;s list of five charities &amp;ndash; where they want their portion of the
 money generated to go.&lt;/p&gt;
-&lt;h3 id=&#34;what-im-less-thrilled-about&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;What I&amp;rsquo;m less thrilled about&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;The cleverness of it is lost on me.&lt;/strong&gt; &amp;ldquo;We&amp;rsquo;ll donate money for every tab you
+&lt;h3 id=&#34;what-im-less-thrilled-about&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;What I&amp;rsquo;m less thrilled about&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;The cleverness of it is lost on me.&lt;/strong&gt; &amp;ldquo;We&amp;rsquo;ll donate money for every tab you
 open, if you download an extension for it,&amp;rdquo; seems like if a car dealer said,
 &amp;ldquo;Hey, for the month of December, every time you open the back left door of your
 car, I&amp;rsquo;ll donate 10 cents to a charity that you choose. (But you have to come in
@@ -2779,7 +2779,7 @@ certain they will reach that amount given their reach, what participants are
 really voting for is allocation. &amp;ldquo;We&amp;rsquo;ve got a million dollars; vote with your
 tabs on what percentage should go to The Nature Conservancy,&amp;rdquo; they&amp;rsquo;re saying. So
 every vote to one organization takes money away from another.&lt;/p&gt;
-&lt;h3 id=&#34;how-it-could-be-better&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;How it could be better&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Be transparent about what the impact is.&lt;/strong&gt; Google should say, on the Chrome
+&lt;h3 id=&#34;how-it-could-be-better&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;How it could be better&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Be transparent about what the impact is.&lt;/strong&gt; Google should say, on the Chrome
 for Cause page itself, how many tabs you have to open to plant a tree (for
 instance).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Integrate concrete actions from the charities.&lt;/strong&gt; Doctors Without Borders
@@ -3122,7 +3122,7 @@ and community-based social change. And that&amp;rsquo;s what I&amp;rsquo;m cover
 &lt;a href=&#34;https://web.archive.org/web/20120204213748/http://www.communityorganizer20.com/&#34;&gt;Debra Askanase&lt;/a&gt;
 and &lt;a href=&#34;https://amysampleward.org/&#34;&gt;Amy Sample Ward&lt;/a&gt;, in a session called
 &lt;a href=&#34;https://web.archive.org/web/20100713125922/https://www.ntenonline.org/eweb/DynamicPage.aspx?webcode=SessionDetails&amp;ses_key=9e27f6a5-1720-4ad1-8ee0-058a2260bcbb&#34;&gt;Bringing Community Organizing Into Online Campaigns&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;what-i-mean-by-community-organizing&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;What I mean by community organizing&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;The idea of community organizing has always been weighted with both political
+&lt;h3 id=&#34;what-i-mean-by-community-organizing&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;What I mean by community organizing&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;The idea of community organizing has always been weighted with both political
 implications and social context, and so one person&amp;rsquo;s interpretation of what
 &amp;ldquo;counts&amp;rdquo; as community organizing &amp;ndash; and what its implications are &amp;ndash; will vary
 from the next.&lt;/p&gt;
@@ -3140,12 +3140,12 @@ organizing can inform purposeful online activism. Once we move beyond the &amp;l
 all your friends with a link to a petition&amp;rdquo; phase, there are concrete
 &lt;em&gt;strategies&lt;/em&gt; to which we can turn. And many of those strategies are drawn
 directly from a century or more of social mobilization.&lt;/p&gt;
-&lt;h3 id=&#34;principles-of-community-organizing&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Principles of community organizing&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;There are five primary ideas in which traditional community organizing is
+&lt;h3 id=&#34;principles-of-community-organizing&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Principles of community organizing&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;There are five primary ideas in which traditional community organizing is
 rooted: &lt;strong&gt;movement-building, strategy, community accountability, going where the
 people are, and cultivating leadership&lt;/strong&gt;. There are more principles and
 strategies to be sure (and you may disagree whether these five are at the top),
 but I see these as having the most to say to online activism.&lt;/p&gt;
-&lt;h4 id=&#34;organizing-for-a-movement&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Organizing for a movement&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Community organizing is based on long-term strategy. &amp;ldquo;Empowerment&amp;rdquo; &amp;ndash; that is,
+&lt;h4 id=&#34;organizing-for-a-movement&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Organizing for a movement&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Community organizing is based on long-term strategy. &amp;ldquo;Empowerment&amp;rdquo; &amp;ndash; that is,
 facilitating the realization among individuals and communities that they have
 the power to effect change &amp;ndash; is not something you expect to occur overnight.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;How this relates to online activism:&lt;/em&gt; &lt;strong&gt;Every action should be pointing people
@@ -3153,7 +3153,7 @@ toward a greater goal.&lt;/strong&gt; It&amp;rsquo;s straightfoward enough to ge
 single event, or taking a single online action. But cultivating those
 individuals so they see their action as part of a long-term campaign is
 something that takes&amp;hellip;&lt;/p&gt;
-&lt;h4 id=&#34;strategy-strategy-strategy&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Strategy, strategy, strategy&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;I&amp;rsquo;ve written before about the fact that social media isn&amp;rsquo;t about doing &lt;em&gt;less&lt;/em&gt;
+&lt;h4 id=&#34;strategy-strategy-strategy&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Strategy, strategy, strategy&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;I&amp;rsquo;ve written before about the fact that social media isn&amp;rsquo;t about doing &lt;em&gt;less&lt;/em&gt;
 organizing, it&amp;rsquo;s about
 &lt;a href=&#34;https://rootwork.github.io/blog/2009/05/social-change-takes-more-social-media&#34;&gt;doing it better&lt;/a&gt;. A theory
 of social change is critical to an individual or organization engaging in online
@@ -3170,7 +3170,7 @@ chance the bill will actually pass? If not, there could be other legitimate
 strategy to build public support for it &amp;ndash; things are long-term, remember? &amp;ndash;
 but organizations must be clear to supporters that &amp;ldquo;victory&amp;rdquo; in this case won&amp;rsquo;t
 be a new law, but, for instance, 10 vocal new supporters in Congress.&lt;/p&gt;
-&lt;h4 id=&#34;being-accountable-to-a-real-world-community&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Being accountable to a real-world community&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Community organizers are often derided as rabble-rousers, troublemakers, or
+&lt;h4 id=&#34;being-accountable-to-a-real-world-community&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Being accountable to a real-world community&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Community organizers are often derided as rabble-rousers, troublemakers, or
 professional activists who dupe people into following them. But true community
 organizing isn&amp;rsquo;t about swooping in and ginning up outrage by telling the locals
 to fight the man. It&amp;rsquo;s generally approached as much more
@@ -3191,7 +3191,7 @@ of a campaign.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Remembering that the community&amp;rsquo;s long-term strategy is paramount &amp;ndash; and being
 willing to listen, discern and collaborate with that community &amp;ndash; will help keep
 the people whose lives and livelihoods are on the line actually in charge.&lt;/strong&gt;&lt;/p&gt;
-&lt;h4 id=&#34;go-where-the-people-are&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Go where the people are&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Social change happens in communal spaces &amp;ndash; not always public, but nearly always
+&lt;h4 id=&#34;go-where-the-people-are&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Go where the people are&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Social change happens in communal spaces &amp;ndash; not always public, but nearly always
 intimate to the community as it exists. Workers&amp;rsquo; homes and pubs in the labor
 movement, black churches in the US civil rights movement, gay bars in the gay
 rights movement, and college campuses in numerous student movements attest to
@@ -3206,7 +3206,7 @@ is most active socially are most likely to be the places where it&amp;rsquo;s mo
 effective to organize. If you&amp;rsquo;re organizing in a sensitive environment, you may
 have to establish some level of privacy around your campaign, but only &lt;em&gt;after&lt;/em&gt;
 you&amp;rsquo;ve already engaged people where they are.&lt;/p&gt;
-&lt;h4 id=&#34;cultivating-sustainable-leadership&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Cultivating sustainable leadership&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;This is an area to which traditional community organizing aspires, but doesn&amp;rsquo;t
+&lt;h4 id=&#34;cultivating-sustainable-leadership&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Cultivating sustainable leadership&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;This is an area to which traditional community organizing aspires, but doesn&amp;rsquo;t
 always succeed. The temptation for a &amp;ldquo;charismatic leader&amp;rdquo; to emerge and
 indefinitely control the direction of a social change campaign can be strong.
 Participants may initially be relieved that they don&amp;rsquo;t have to &amp;ldquo;take the heat&amp;rdquo;
@@ -3228,7 +3228,7 @@ become active in allied groups and consider working in coalitions early and
 often. Not only will this cement your supporters&amp;rsquo; dedication to the cause, it
 will build the identity of a long-term movement, rather than a limited
 &amp;ldquo;card-carrying member&amp;rdquo; view of participation.&lt;/p&gt;
-&lt;h3 id=&#34;help-continue-this-conversation&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Help continue this conversation&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Below, I&amp;rsquo;ve embedded the slides of our presentation, which goes beyond the
+&lt;h3 id=&#34;help-continue-this-conversation&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Help continue this conversation&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Below, I&amp;rsquo;ve embedded the slides of our presentation, which goes beyond the
 things I&amp;rsquo;ve discussed above and includes an exciting interactive workshop
 component &amp;ndash; so if you&amp;rsquo;re at NTC,
 &lt;a href=&#34;https://web.archive.org/web/20120202003828/https://www.ntenonline.org/eweb/DynamicPage.aspx?webcode=SessionDetails&amp;ses_key=9e27f6a5-1720-4ad1-8ee0-058a2260bcbb&#34; title=&#34;View time, location and other information on this session&#34;&gt;please do stop by&lt;/a&gt;!&lt;/p&gt;
@@ -3321,7 +3321,7 @@ herself was an inspiration for many of the anti-genocide organizations which
 exist today, including the two that participated in this online exchange.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Full disclosure: I was a co-founder of the Genocide Intervention Network,
 STAND&amp;rsquo;s parent organization, and worked there until 2008.&lt;/em&gt;&lt;/p&gt;
-&lt;h3 id=&#34;calling-for-transparency-pushing-for-accountability&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Calling for transparency, pushing for accountability&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;The webcast was notable not just for its interactivity &amp;ndash; members of both
+&lt;h3 id=&#34;calling-for-transparency-pushing-for-accountability&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Calling for transparency, pushing for accountability&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;The webcast was notable not just for its interactivity &amp;ndash; members of both
 STAND and Save Darfur were encouraged to
 &lt;a href=&#34;https://web.archive.org/web/20121114043828/http://standnow.org/node/2503&#34; title=&#34;STAND: What questions would you like Layla to ask Gration and Power?&#34;&gt;submit questions&lt;/a&gt;,
 which were then asked directly of Gration on air &amp;ndash; but for its
@@ -3375,7 +3375,7 @@ can give us, they will do, without compromising their policy,&amp;rdquo; she tol
 wasn&amp;rsquo;t able to disclose as much information as we asked, which is going to
 happen in these sorts of things. &amp;hellip; It&amp;rsquo;s a very delicate line, so engaging
 policy behind the scenes will still be necessary.&amp;rdquo;&lt;/p&gt;
-&lt;h3 id=&#34;making-the-online-qa-possible&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Making the online Q&amp;A possible&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Andrea Clarke, director of communications for the Save Darfur Coalition, pitched
+&lt;h3 id=&#34;making-the-online-qa-possible&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Making the online Q&amp;A possible&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Andrea Clarke, director of communications for the Save Darfur Coalition, pitched
 the idea of a &amp;ldquo;live online town hall&amp;rdquo; to Gration&amp;rsquo;s communications director in
 August. &amp;ldquo;We thought it would be something beneficial for activists to be
 directly engaged around the [Sudan] policy,&amp;rdquo; Clarke said.&lt;/p&gt;
@@ -3418,7 +3418,7 @@ questions are answered by the administration,&amp;rdquo; said Diamond-Falk. &amp
 [Gration] engaged the Save Darfur Coalition and the student movement &amp;hellip;
 proves that activists have to have a voice on this issue and in this
 administration.&amp;rdquo;&lt;/p&gt;
-&lt;h3 id=&#34;the-future-of-high-level-advocacy&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;The future of high-level advocacy?&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&amp;ldquo;We certainly hope that this can be one tactic that other advocacy groups can
+&lt;h3 id=&#34;the-future-of-high-level-advocacy&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;The future of high-level advocacy?&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&amp;ldquo;We certainly hope that this can be one tactic that other advocacy groups can
 use to demand accountability of the administration,&amp;rdquo; Clarke said. &amp;ldquo;I hope this
 is something that&amp;rsquo;s taken on board by communications departments of other
 advocacy groups.&amp;rdquo;&lt;/p&gt;
@@ -3511,7 +3511,7 @@ message saying it&amp;rsquo;s &amp;ldquo;temporarily unavailable.&amp;rdquo;)&lt
 Susan Gordon, the Senior Nonprofit Coordinator of Causes, said in an email to
 me, &amp;ldquo;We didn&amp;rsquo;t put the announcement on the blog before because the number of
 people using the MySpace app is so small.&amp;rdquo;&lt;/p&gt;
-&lt;h3 id=&#34;why-causes-on-myspace-failed-lack-of-engagement&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Why Causes on MySpace failed: Lack of engagement&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;It&amp;rsquo;s not clear from either email when Causes decided to shut down the MySpace
+&lt;h3 id=&#34;why-causes-on-myspace-failed-lack-of-engagement&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Why Causes on MySpace failed: Lack of engagement&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;It&amp;rsquo;s not clear from either email when Causes decided to shut down the MySpace
 side of its operation, or why it chose to do so within just a few days. Causes
 began on Facebook and has always had more users on there (currently 35.2
 &lt;em&gt;million&lt;/em&gt;). From Causes&amp;rsquo; point of view, MySpace was probably more trouble than
@@ -3546,7 +3546,7 @@ widget is not enough of a draw&lt;/strong&gt;. The chance for engaging supporter
 in things like one-way email blasts but in things like leaderboards showing the
 top fundraisers among supporter-created Causes &amp;ndash; is, in the end, the &amp;ldquo;killer&amp;rdquo;
 part of this app.&lt;/p&gt;
-&lt;h3 id=&#34;what-this-means-for-nonprofits-on-myspace&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;What this means for nonprofits on MySpace&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Despite repeated claims that MySpace is &amp;ldquo;dead,&amp;rdquo; I continue to think it&amp;rsquo;s a
+&lt;h3 id=&#34;what-this-means-for-nonprofits-on-myspace&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;What this means for nonprofits on MySpace&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Despite repeated claims that MySpace is &amp;ldquo;dead,&amp;rdquo; I continue to think it&amp;rsquo;s a
 smart move for many nonprofits to have a presence there.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Sociologist danah boyd has documented the clear
 &lt;a href=&#34;https://www.danah.org/papers/talks/PDF2009.html&#34; title=&#34;The Not-So-Hidden Politics of Class Online&#34;&gt;socioeconomic&lt;/a&gt;
@@ -3564,7 +3564,7 @@ widgets like
 available for that purpose. They won&amp;rsquo;t have the &amp;ldquo;built-in&amp;rdquo; feel that Causes on
 MySpace did, but they&amp;rsquo;re fairly easy to guide people through with a quick
 training or video.&lt;/p&gt;
-&lt;h3 id=&#34;what-this-means-for-nonprofit-fundraising-on-social-networks&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;What this means for nonprofit fundraising on social networks&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;The bigger lesson here is that you can&amp;rsquo;t rely on third-party, often for-profit
+&lt;h3 id=&#34;what-this-means-for-nonprofit-fundraising-on-social-networks&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;What this means for nonprofit fundraising on social networks&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;The bigger lesson here is that you can&amp;rsquo;t rely on third-party, often for-profit
 services to support your organization&amp;rsquo;s interests.&lt;/strong&gt; To Causes, leaving MySpace
 to focus on its core community on Facebook made good business sense, but
 certainly those organizations left in the lurch on MySpace feel otherwise.&lt;/p&gt;
@@ -3578,7 +3578,7 @@ certainly those organizations left in the lurch on MySpace feel otherwise.&lt;/p
 don&amp;rsquo;t put &amp;ldquo;all fundraising eggs in one third-party basket!&amp;rdquo; These services are
 useful, and can help your organization advance its mission, but it&amp;rsquo;s not
 accountable to you &amp;ndash; and you need to have other options.&lt;/p&gt;
-&lt;h3 id=&#34;letting-go-of-your-message-holding-on-to-your-relationships&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Letting go of your message, holding on to your relationships&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;I (and many others) have often said that in order to be successful in social
+&lt;h3 id=&#34;letting-go-of-your-message-holding-on-to-your-relationships&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Letting go of your message, holding on to your relationships&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;I (and many others) have often said that in order to be successful in social
 media, nonprofits need to be willing to give up some control over their message
 &amp;ndash; to let supporters speak in their own voice. What Causes&amp;rsquo; move has exposed,
 though, is that while it&amp;rsquo;s important to let go of your message, you still need
@@ -3601,7 +3601,7 @@ supporters and to continually try to
 &lt;a href=&#34;http://orgnet.com/sna.html&#34;&gt;move people toward the center&lt;/a&gt; of your organization
 by deepening involvement, so that if you lose them in one space they don&amp;rsquo;t
 simply fade off into the ether.&lt;/p&gt;
-&lt;h3 id=&#34;open-source-open-data-open-networks&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Open-source, open data, open networks&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Amy Sample Ward makes some great points that social change communities may have
+&lt;h3 id=&#34;open-source-open-data-open-networks&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Open-source, open data, open networks&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Amy Sample Ward makes some great points that social change communities may have
 to
 &lt;a href=&#34;https://amysampleward.org/2009/11/06/new-on-ssir-letting-technology-lead/&#34;&gt;take the lead on technology&lt;/a&gt;
 by pushing for more openness and transparency. I&amp;rsquo;ve written before, for
@@ -3695,9 +3695,9 @@ presentation was drawn on earlier presentations and writing, including:&lt;/p&gt
 &lt;a href=&#34;https://web.archive.org/web/20100129053652/http://quixoticlife.net/topics/tpni&#34;&gt;third-party nonviolent intervention and unarmed peacekeeping&lt;/a&gt;,
 including a presentation from the 2005 PJSA conference and some of my analysis
 published in the journal &lt;em&gt;Peace &amp; Change&lt;/em&gt;.&lt;/p&gt;
-&lt;h3 id=&#34;resources-related-to-technology-and-social-change&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Resources related to technology and social change&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&lt;em&gt;You can &lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2009/10/finding-movements-voice-online-social-networks-social-change/socialchangetechresources.pdf&#34;&gt;download a PDF&lt;/a&gt; of a shorter version of
+&lt;h3 id=&#34;resources-related-to-technology-and-social-change&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Resources related to technology and social change&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&lt;em&gt;You can &lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2009/10/finding-movements-voice-online-social-networks-social-change/socialchangetechresources.pdf&#34;&gt;download a PDF&lt;/a&gt; of a shorter version of
 this list; feel free to use or distribute as you like.&lt;/em&gt;&lt;/p&gt;
-&lt;h4 id=&#34;guides-case-studies-and-places-for-inspiration&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Guides, case studies and places for inspiration&lt;/span&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;h4 id=&#34;guides-case-studies-and-places-for-inspiration&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Guides, case studies and places for inspiration&lt;/span&gt;&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://bethkanter.org&#34;&gt;Beth&amp;rsquo;s Blog: How Nonprofits Can Use Social Media&lt;/a&gt; &amp;ndash;
 &amp;ldquo;A place to capture and share ideas, experiment with and exchange links and
 resources about the adoption challenges, strategy, and ROI of nonprofits and
@@ -3756,7 +3756,7 @@ nonprofits and international NGOs.&lt;/li&gt;
 large-scale projects like the World Social Forum and local grassroots
 community groups.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;tools-and-services&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Tools and services&lt;/span&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;h4 id=&#34;tools-and-services&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Tools and services&lt;/span&gt;&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.techsoup.org/&#34;&gt;TechSoup&lt;/a&gt; &amp;ndash; TechSoup is a nonprofit that helps
 other nonprofits in the United States and Canada acquire deeply-discounted
 software and online services. Microsoft Office for $16? Adobe InDesign for
@@ -3777,7 +3777,7 @@ organization of nonprofit professionals who put technology to use for their
 causes. NTEN sponsors online &amp;ldquo;webinars&amp;rdquo; and the annual Nonprofit Technology
 Conference.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;my-background&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;My background&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;I am the creative director of Rootwork.org, working with nonprofits and social
+&lt;h4 id=&#34;my-background&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;My background&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;I am the creative director of Rootwork.org, working with nonprofits and social
 change groups, developing websites and doing online strategy around advocacy,
 fundraising and member engagement. I helped found the
 &lt;a href=&#34;https://web.archive.org/web/20091012093907/http://www.genocideintervention.net/&#34;&gt;Genocide Intervention Network&lt;/a&gt;
@@ -3810,7 +3810,7 @@ it against our own experience and knowledge. But folks involved in social change
 &amp;ndash; online or offline &amp;ndash; can&amp;rsquo;t stay there. We have to be willing to step up and
 do the difficult organizing work that leverages our knowledge and experts&amp;rsquo; data
 into something larger: a movement.&lt;/p&gt;
-&lt;h3 id=&#34;everybody-organizing-everybody&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Everybody Organizing Everybody&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Community organizers are a natural fit for &amp;ldquo;web 2.0&amp;rdquo; &amp;ndash; the movement from
+&lt;h3 id=&#34;everybody-organizing-everybody&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Everybody Organizing Everybody&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Community organizers are a natural fit for &amp;ldquo;web 2.0&amp;rdquo; &amp;ndash; the movement from
 one-way broadcasting on the web to two-way coversation and connection. I want to
 expand the definition a little bit, however, and suggest that online organizing
 goes far beyond the professional, experienced organizers.&lt;/p&gt;
@@ -3838,7 +3838,7 @@ organizers.&lt;/strong&gt;&lt;/p&gt;
 transformation. On the contrary, I see it as a much more grassroots bubbling-up
 of organizing skills. Everyone has the ability to organize and inspire others;
 the current tools are simply making those skills more visible.&lt;/p&gt;
-&lt;h3 id=&#34;fewer-leaders-more-leadership&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Fewer Leaders, More Leadership&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&amp;ldquo;Organizations and societies,&amp;rdquo; wrote Bruce Kokopeli and George Lakey, &amp;ldquo;&lt;em&gt;do need
+&lt;h3 id=&#34;fewer-leaders-more-leadership&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Fewer Leaders, More Leadership&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&amp;ldquo;Organizations and societies,&amp;rdquo; wrote Bruce Kokopeli and George Lakey, &amp;ldquo;&lt;em&gt;do need
 leadership&lt;/em&gt;, but they &lt;em&gt;do not need leaders&lt;/em&gt;.&amp;rdquo;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2009/09/gurus-are-not-enough-call-organizers-organizing-social-media/&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; They argued for a shared value
 of leadership, in which many individuals took responsibility for the direction
 of a group, but didn&amp;rsquo;t invest the institutional power in a single person to call
@@ -3873,7 +3873,7 @@ change organizers to look toward the larger picture. What sort of movement do
 you want to build in the long-term? What role do people play in that movement &amp;ndash;
 is it a passive one of letter-signing and donation-giving, or an active one of
 working from the ground up for lasting change?&lt;/p&gt;
-&lt;h3 id=&#34;selling-giving-and-cultivating&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Selling, Giving and Cultivating&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Want to support online organizing? Help promote a panel at SXSW 2010: Vote for
+&lt;h3 id=&#34;selling-giving-and-cultivating&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Selling, Giving and Cultivating&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Want to support online organizing? Help promote a panel at SXSW 2010: Vote for
 us by the end of Friday!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Ivan Boothe is part of a proposed panel for the South by Southwest Interactive
 conference,
@@ -3919,7 +3919,7 @@ are involved in cultivation.&lt;/strong&gt; There are pieces of both social mark
 electoral organizing present in online organizing, of course, and experts in
 these fields can be a useful source of data, but we should be wary of
 replicating these other models when it comes to leadership.&lt;/p&gt;
-&lt;h3 id=&#34;network-wisdom&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Network Wisdom&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;There is a developing praxis being explored by numerous thinkers and strategists
+&lt;h3 id=&#34;network-wisdom&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Network Wisdom&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;There is a developing praxis being explored by numerous thinkers and strategists
 in online organizing. For sociological analyses &amp;ndash; stories and experiences &amp;ndash;
 &lt;a href=&#34;https://www.danah.org/papers/&#34;&gt;danah boyd&lt;/a&gt; is indispensible.
 &lt;a href=&#34;https://web.archive.org/web/20150305052211/http://www.shirky.com/&#34;&gt;Clay Shirky&lt;/a&gt;,
@@ -4384,7 +4384,7 @@ media to achieve our goals in advocacy, fundraising and membership development.&
 Thanks, Beth! Be sure to check out her
 &lt;a href=&#34;https://web.archive.org/web/20090220142359/https://www.wearemedia.org/Tactical&#43;Track&#43;Module&#43;5&#34;&gt;We Are Media wiki&lt;/a&gt;
 for more resources and stories like this.&lt;/em&gt;&lt;/p&gt;
-&lt;h3 id=&#34;using-social-networks-for-social-change-facebook-myspace-and-more&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Using Social Networks for Social Change: Facebook, MySpace and More&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;I had planned to present a slideshow along with my talk, but in fact, technical
+&lt;h3 id=&#34;using-social-networks-for-social-change-facebook-myspace-and-more&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Using Social Networks for Social Change: Facebook, MySpace and More&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;I had planned to present a slideshow along with my talk, but in fact, technical
 difficulties prevented me from doing so. The
 &lt;a href=&#34;https://www.slideshare.net/rootwork/using-social-networks-for-social-change-facebook-myspace-and-more-presentation&#34;&gt;presentation posted on Slideshare&lt;/a&gt;
 is thus a recreation of that talk, with the audio keyed to the slides. &lt;em&gt;(Update
@@ -4402,7 +4402,7 @@ below.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2008/10/using-social-networks-social-change-facebook-myspace-more/&#34;&gt;A Photo Petition Puts Students at the Heart of a Congressional Briefing&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2008/10/using-social-networks-social-change-facebook-myspace-more/&#34;&gt;How Social Networks Can Coordinate a Fundraising Drive&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;a-mission-to-empower&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;A Mission to Empower&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;The
+&lt;h3 id=&#34;a-mission-to-empower&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;A Mission to Empower&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;The
 &lt;a href=&#34;https://web.archive.org/web/20090217095953/http://genocideintervention.net/&#34;&gt;Genocide Intervention Network&lt;/a&gt;
 is an organization that I helped form in college, and where I worked as director
 of communications and Internet strategy coordinator from 2004&amp;ndash;2008. The mission
@@ -4431,7 +4431,7 @@ Darfur, Sudan. So it was much more about giving supporters tools to take
 effective action than it was about convincing people to join our cause. &lt;strong&gt;Social
 networks are an integral part of an organizing strategy, because communication
 and engagement are what they&amp;rsquo;re all about.&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&#34;weaving-your-social-web&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Weaving Your Social Web&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;The dynamics and demographics of each social network are different &amp;ndash; what may
+&lt;h3 id=&#34;weaving-your-social-web&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Weaving Your Social Web&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;The dynamics and demographics of each social network are different &amp;ndash; what may
 make sense on MySpace could be seen as annoying on Facebook. If you have a
 specific niche, you might try focused networks like
 &lt;a href=&#34;https://blackplanet.com/&#34;&gt;BlackPlanet&lt;/a&gt;,
@@ -4457,14 +4457,14 @@ approaches, and become thoughtfully engaged with your community of supporters
 there. You need to make a commitment to each network you join; there&amp;rsquo;s nothing
 worse (or more unprofessional looking) than a clearly-abandoned organizational
 profile, where messages go unanswered and spam comments go unmoderated.&lt;/p&gt;
-&lt;h3 id=&#34;social-media-and-social-networks&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Social Media and Social Networks&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Social media (e.g. YouTube and Flickr) often integrate particularly well with
+&lt;h3 id=&#34;social-media-and-social-networks&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Social Media and Social Networks&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Social media (e.g. YouTube and Flickr) often integrate particularly well with
 social networks (e.g. Facebook and MySpace), as a way to help engage members and
 heighten interest. Why not simply upload your own images and host your own
 videos? The &amp;ldquo;social&amp;rdquo; in social media ensures that, if you post your media with
 useful titles, descriptions and keywords, other people may well discover you who
 wouldn&amp;rsquo;t otherwise have encountered you &amp;ndash; and you&amp;rsquo;ll draw them further into
 your social web.&lt;/p&gt;
-&lt;h4 id=&#34;using-videos-on-myspace&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Using Videos on MySpace&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;When we first put our profile up on
+&lt;h4 id=&#34;using-videos-on-myspace&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Using Videos on MySpace&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;When we first put our profile up on
 &lt;a href=&#34;https://web.archive.org/web/20090225024644/http://www.myspace.com/genocideintervention&#34;&gt;MySpace&lt;/a&gt;,
 we were getting one or two friend requests a day, and that&amp;rsquo;s not too bad for
 just starting off. As soon as we put up a short video about the organization &amp;ndash;
@@ -4474,7 +4474,7 @@ to 10&amp;ndash;15 per day. Supporters could embed the videos in their own profi
 themselves. That&amp;rsquo;s the advantage of social media in social networks: &lt;strong&gt;People
 are drawn to photos and video, and the nature of social networking allows them
 to easily share them with friends.&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&#34;keys-to-success-on-social-networks&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Keys to Success on Social Networks&lt;/span&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;h3 id=&#34;keys-to-success-on-social-networks&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Keys to Success on Social Networks&lt;/span&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;It&amp;rsquo;s about member engagement.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You might notice there&amp;rsquo;s only one key: Facilitating conversations &lt;em&gt;between&lt;/em&gt; and
@@ -4483,7 +4483,7 @@ begins with having them talk to each other about what they&amp;rsquo;re doing ar
 issue.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;It&amp;rsquo;s really not a billboard.&lt;/strong&gt; You need to cultivate relationships with your
 supporters.&lt;/p&gt;
-&lt;h4 id=&#34;the-money-thing&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;The Money Thing&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Social networks are not going to replace your development director. Even when
+&lt;h4 id=&#34;the-money-thing&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;The Money Thing&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Social networks are not going to replace your development director. Even when
 you do raise money, it&amp;rsquo;s usually more about member engagement than it is about a
 significant revenue stream. GI-Net&amp;rsquo;s experience with Causes, a platform on
 Facebook and MySpace, was that &amp;ldquo;fundraisers&amp;rdquo; were actually a great way to give
@@ -4496,7 +4496,7 @@ only raised about $50,000; the vast majority of nonprofits using Causes hadn&amp
 raised more than a few hundred dollars. Innovative fundraising campaigns using
 social networks may bear fruit financially, but member engagement is almost
 always going to be the primary goal in the end.&lt;/p&gt;
-&lt;h3 id=&#34;let-your-people-speak&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Let Your People Speak&amp;hellip;&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Causes is also a good illustration of another point: &lt;strong&gt;You need to let your
+&lt;h3 id=&#34;let-your-people-speak&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Let Your People Speak&amp;hellip;&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Causes is also a good illustration of another point: &lt;strong&gt;You need to let your
 supporters speak for you on social networks.&lt;/strong&gt; GI-Net set up an &amp;ldquo;official&amp;rdquo; Cause
 on Facebook, but a member-created Cause benefiting us has more than twice the
 number of supporters. We could have tried to shut down the unofficial group in
@@ -4509,7 +4509,7 @@ won&amp;rsquo;t inspire much loyalty, and probably won&amp;rsquo;t be very persu
 friends. &lt;strong&gt;Nonprofits have to be willing to
 &lt;a href=&#34;https://rootwork.github.io/blog/2008/05/just-what-kind-social-change-are-you-interested&#34; title=&#34;Read &#39;Just what kind of social change are you interested in?&#39;&#34;&gt;lose some of their message&lt;/a&gt;
 control in exchange for member loyalty.&lt;/strong&gt; Trust me &amp;ndash; it&amp;rsquo;s worth the trade-off.&lt;/p&gt;
-&lt;h3 id=&#34;and-then-listen-to-what-they-say&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;&amp;hellip;And Then Listen to What They Say&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;On our MySpace profile, we have a prominent newsletter-signup form at the top of
+&lt;h3 id=&#34;and-then-listen-to-what-they-say&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;&amp;hellip;And Then Listen to What They Say&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;On our MySpace profile, we have a prominent newsletter-signup form at the top of
 the screen. But we don&amp;rsquo;t simply cut-and-paste our blast emails directly to the
 MySpace crowd. For one of our MySpace blogs, we said the following:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -4534,7 +4534,7 @@ all of that content. You&amp;rsquo;ll end up with more dedicated members who are
 to take the next step; after having been engaged on a small issue (&amp;ldquo;take a
 picture of your fundraiser for Darfur&amp;rdquo;) they&amp;rsquo;ll be willing to lead on a larger
 one (&amp;ldquo;help organize a local visit to your member of Congress&amp;rdquo;).&lt;/p&gt;
-&lt;h3 id=&#34;success-story-1-using-online-student-pressure-to-pass-legislation&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Success Story 1: Using Online Student Pressure to Pass Legislation&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;In 2005, there was an anti-genocide bill that was being held up by a Senate
+&lt;h3 id=&#34;success-story-1-using-online-student-pressure-to-pass-legislation&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Success Story 1: Using Online Student Pressure to Pass Legislation&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;In 2005, there was an anti-genocide bill that was being held up by a Senate
 committee chair. Using Facebook, GI-Net identified and reached out to students
 in that senator&amp;rsquo;s home state.&lt;/p&gt;
 &lt;p&gt;Instead of having the students contact the senator directly, we guided the
@@ -4545,7 +4545,7 @@ the senator and say that standing up against genocide is a moral imperative, and
 that the senator should move the bill.&lt;/p&gt;
 &lt;p&gt;The result: Two weeks later, the bill was passed by the committee, was approved
 by the full Senate, and eventually was signed into law.&lt;/p&gt;
-&lt;h3 id=&#34;success-story-2-a-photo-petition-puts-students-at-the-heart-of-a-congressional-briefing&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Success Story 2: A Photo Petition Puts Students at the Heart of a Congressional Briefing&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;GI-Net&amp;rsquo;s student division, &lt;a href=&#34;https://standnow.org/&#34;&gt;STAND&lt;/a&gt;, initiated a campaign
+&lt;h3 id=&#34;success-story-2-a-photo-petition-puts-students-at-the-heart-of-a-congressional-briefing&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Success Story 2: A Photo Petition Puts Students at the Heart of a Congressional Briefing&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;GI-Net&amp;rsquo;s student division, &lt;a href=&#34;https://standnow.org/&#34;&gt;STAND&lt;/a&gt;, initiated a campaign
 called &amp;ldquo;Picture a World Without Genocide,&amp;rdquo; in which they encouraged high school
 students to submit photos via Facebook and MySpace of their activism on Darfur.
 Hundreds of pictures were collected and compiled into a large poster spelling
@@ -4562,7 +4562,7 @@ able to claim part of the victory&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;In fact, even if no new co-sponsors had signed on, the action still would have
 been a great way to activate supporters, so it was really a no-lose campaign for
 us.&lt;/p&gt;
-&lt;h4 id=&#34;a-worldwide-photo-gallery-in-24-hours&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;A Worldwide Photo Gallery in 24 Hours&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;When coordinated rallies focusing on Darfur were set up by the
+&lt;h4 id=&#34;a-worldwide-photo-gallery-in-24-hours&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;A Worldwide Photo Gallery in 24 Hours&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;When coordinated rallies focusing on Darfur were set up by the
 &lt;a href=&#34;https://web.archive.org/web/20120202182016/http://www.savedarfur.org/&#34;&gt;Save Darfur Coalition&lt;/a&gt;
 (of which GI-Net is a part), we encouraged our members to take part &amp;ndash; and take
 pictures. Then we had them upload their images to the photosharing site
@@ -4572,7 +4572,7 @@ images with that tag onto GI-Net&amp;rsquo;s website in a constantly-updated, ro
 gallery of Darfur activism the day after the event.&lt;/p&gt;
 &lt;p&gt;Total time on our part? About 15 minutes to write the email to our members, and
 10 minutes to put the gallery on our website.&lt;/p&gt;
-&lt;h3 id=&#34;success-story-3-how-social-networks-can-coordinate-a-fundraising-drive&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Success Story 3: How Social Networks Can Coordinate a Fundraising Drive&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;STAND&amp;rsquo;s annual &amp;ldquo;DarfurFast&amp;rdquo; encourages students on one day to refrain from one
+&lt;h3 id=&#34;success-story-3-how-social-networks-can-coordinate-a-fundraising-drive&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Success Story 3: How Social Networks Can Coordinate a Fundraising Drive&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;STAND&amp;rsquo;s annual &amp;ldquo;DarfurFast&amp;rdquo; encourages students on one day to refrain from one
 luxury item, and donate the proceeds to GI-Net&amp;rsquo;s Darfur protection program. We
 engage people around the campaign on several different channels, including
 Facebook, MySpace, &lt;a href=&#34;https://endgenocide.livejournal.com/&#34;&gt;LiveJournal&lt;/a&gt; and
@@ -4600,7 +4600,7 @@ education and various kinds of &amp;ldquo;marginalized&amp;rdquo; groups interac
 networks very differently, often because of stronger real-world social networks.
 The best organizing strategy activates people through all their social
 connections, whether online or offline.&lt;/p&gt;
-&lt;h3 id=&#34;final-thoughts&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Final Thoughts&lt;/span&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;h3 id=&#34;final-thoughts&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Final Thoughts&lt;/span&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Engaging supporters on social networks is long-term.&lt;/strong&gt; Don&amp;rsquo;t expect
 immediate results.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;It takes effort.&lt;/strong&gt; You need to be willing to communicate, in both
@@ -4612,7 +4612,7 @@ to take a look at the
 &lt;a href=&#34;https://www.slideshare.net/rootwork/using-social-networks-for-social-change-facebook-myspace-and-more-presentation&#34;&gt;Slideshare version&lt;/a&gt;
 (or &lt;a href=&#34;https://rootwork.github.io/rootwork.org/blog/2008/10/using-social-networks-social-change-facebook-myspace-more/2008_dia_social-networks-social-change.pdf&#34;&gt;PDF&lt;/a&gt;) for illustrations of
 what&amp;rsquo;s been discussed. Thanks for reading!&lt;/p&gt;
-&lt;h3 id=&#34;additional-resources&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Additional Resources&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Check out these writers for great ideas on how nonprofits can use social
+&lt;h3 id=&#34;additional-resources&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Additional Resources&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Check out these writers for great ideas on how nonprofits can use social
 networks to their greatest potential:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20130423124410/http://diosacommunications.blogspot.com/&#34;&gt;Heather Mansfield&lt;/a&gt;
@@ -5203,7 +5203,7 @@ Drupal development, has a
 thinking about using Drupal for their sites. I&amp;rsquo;m convinced that, under most
 circumstances, Drupal can be a powerful resource for online advocacy and social
 change.&lt;/p&gt;
-&lt;h3 id=&#34;background&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Background&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;To date, I have built four full-fledged sites with Drupal for the
+&lt;h3 id=&#34;background&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Background&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;To date, I have built four full-fledged sites with Drupal for the
 &lt;a href=&#34;https://web.archive.org/web/20080804233456/http://www.genocideintervention.net/&#34;&gt;Genocide Intervention Network&lt;/a&gt;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a
@@ -5237,7 +5237,7 @@ work primarily is in HTML and CSS &amp;ndash; for the majority of things our sit
 to do, it&amp;rsquo;s mainly a matter of finding the right modules (plugins) and then
 themeing (designing) the site to look the way we want. By and large you don&amp;rsquo;t
 need to have a lot of programming knowledge to create effective sites in Drupal.&lt;/p&gt;
-&lt;h3 id=&#34;when-to-use-drupal----and-when-not-to-use-it&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;When to Use Drupal &amp;ndash; and When Not to Use it&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Drupal has a number of strengths:&lt;/p&gt;
+&lt;h3 id=&#34;when-to-use-drupal----and-when-not-to-use-it&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;When to Use Drupal &amp;ndash; and When Not to Use it&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Drupal has a number of strengths:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Once you understand the terminology and basic structure of Drupal, it&amp;rsquo;s easy
 to set up sites relatively quickly, with advanced functionality simply
@@ -5351,7 +5351,7 @@ others, Drupal&amp;rsquo;s open-source nature makes it easy to find and squash t
 yourself as they occur &amp;ndash; no waiting on Kintera or Convio to get around to
 fixing your pet peeve with the software.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;drupal-resources-for-nonprofits&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Drupal Resources for Nonprofits&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://groups.drupal.org/drupal-for-good&#34;&gt;Drupal for Good&lt;/a&gt; is the primary
+&lt;h3 id=&#34;drupal-resources-for-nonprofits&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Drupal Resources for Nonprofits&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://groups.drupal.org/drupal-for-good&#34;&gt;Drupal for Good&lt;/a&gt; is the primary
 Drupal-centered site for nonprofit and charitable discussions. (For the
 mischievous, there&amp;rsquo;s also
 &lt;a href=&#34;https://groups.drupal.org/drupal-for-evil&#34;&gt;Drupal for Evil&lt;/a&gt;.) There are plenty
@@ -5464,7 +5464,7 @@ on a petition or donations in your coffers, &lt;strong&gt;mobilizing&lt;/strong&
 means will work great. But if you need an active, educated and effective
 movement, &lt;strong&gt;organizing&lt;/strong&gt; through social webs has the potential to create much
 more lasting change.&lt;/p&gt;
-&lt;h3 id=&#34;the-genocide-intervention-network-on-the-social-web&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;The Genocide Intervention Network on the Social Web&lt;/span&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;h3 id=&#34;the-genocide-intervention-network-on-the-social-web&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;The Genocide Intervention Network on the Social Web&lt;/span&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20080726053628/http://myspace.com/genocideintervention&#34;&gt;MySpace&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a
   data-dead-link=&#34;http://www.facebook.com/group.php?gid=2204803189&#34;
@@ -5478,7 +5478,7 @@ more lasting change.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://flickr.com/photos/genocideintervention&#34;&gt;Flickr&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/user/genocideintervention&#34;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;previous-articles&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Previous Articles&lt;/span&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;h3 id=&#34;previous-articles&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Previous Articles&lt;/span&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20070612180331/http://www.idealware.org/articles/social_networking_genocide.php&#34;&gt;Using Social Networking to Stop Genocide&lt;/a&gt;
 (Idealware), on the origins of GI-Net&amp;rsquo;s approach.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://rootwork.github.io/blog/2006/12/theory-bottom-social-networking&#34;&gt;Bottom-up social networking interview&lt;/a&gt;,
@@ -5686,7 +5686,7 @@ and the
 &lt;a href=&#34;https://web.archive.org/web/20070706210219/http://www.care2.com/&#34;&gt;Care2&lt;/a&gt; had
 done a study demonstrating that people who participated in discussion fora were
 74% more likely to take action.&lt;/p&gt;
-&lt;h3 id=&#34;on-to-the-second-session&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;On to the second session!&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Marty&lt;/strong&gt; began by making the argument that the differences in social networks
+&lt;h3 id=&#34;on-to-the-second-session&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;On to the second session!&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Marty&lt;/strong&gt; began by making the argument that the differences in social networks
 (connections) today &amp;ndash; aptly covered by
 &lt;a href=&#34;https://web.archive.org/web/20081205054343/netsquared.org/blog/britt-bravo/notes-ntc-keynote-david-weinberger&#34;&gt;David Weinberger&lt;/a&gt;
 earlier in the day &amp;ndash; should necessarily change the way we go about social
@@ -5854,7 +5854,7 @@ empowerment. (This is actually one of my concerns with the
 but that&amp;rsquo;s for another post.) Action online only matters if it can be translated
 into the real world, or if it can develop social bonds that provide the
 framework for real-world action.&lt;/p&gt;
-&lt;h3 id=&#34;social-networking-to-stop-genocide&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Social Networking to Stop Genocide&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Some of GI-Net&amp;rsquo;s social networking campaigns online:&lt;/p&gt;
+&lt;h3 id=&#34;social-networking-to-stop-genocide&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Social Networking to Stop Genocide&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;Some of GI-Net&amp;rsquo;s social networking campaigns online:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://web.archive.org/web/20070302163843/http://myspace.com/genocideintervention&#34;&gt;MySpace&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a
@@ -6013,7 +6013,7 @@ and similar movements.&lt;/p&gt;
 &lt;p&gt;How can online activism build a movement that prevents and stops genocide? Read
 on&amp;hellip;&lt;/p&gt;
 &lt;p&gt;This might get a bit long, so:&lt;/p&gt;
-&lt;h3 id=&#34;first-a-little-background&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;First, a little background&amp;hellip;&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;I am a self-taught
+&lt;h3 id=&#34;first-a-little-background&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;First, a little background&amp;hellip;&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;I am a self-taught
 &lt;a href=&#34;https://web.archive.org/web/20070207093051/http://quixotic1.com/&#34; title=&#34;My website, quixotic1.com&#34;&gt;web developer&lt;/a&gt;
 and artist (digitally and otherwise) with a strong interest in peacebuilding,
 community organizing and empowerment. My major at Swarthmore was not
@@ -6056,7 +6056,7 @@ Within two months, Diebold backed down from their legal threats and resigned
 themselves to the damaging information about them now in the public domain.
 Suspicion of Diebold and other electronic voting machine manufacturers &amp;ndash; and,
 thus, consistent investigation into their practices &amp;ndash; remains high.&lt;/p&gt;
-&lt;h3 id=&#34;back-to-genocide&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Back to genocide&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;So how does the Genocide Intervention Network use the Internet to effect social
+&lt;h3 id=&#34;back-to-genocide&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Back to genocide&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;So how does the Genocide Intervention Network use the Internet to effect social
 change? There are three primary ways.&lt;/p&gt;
 &lt;p&gt;First, we
 &lt;a href=&#34;https://web.archive.org/web/20060118220930/http://www.genocideintervention.net/donate/&#34; title=&#34;Learn more about donating to GI-Net&#34;&gt;raise money online&lt;/a&gt;
@@ -6099,7 +6099,7 @@ weekend. The P2P website, which uses the
 &lt;a href=&#34;https://drupal.org/&#34; title=&#34;Drupal.org&#34;&gt;Drupal&lt;/a&gt; open-source community platform, is
 key to sustaining these activists through the summer, when they will act as the
 catalysts for local anti-genocide groups in their hometowns.&lt;/p&gt;
-&lt;h3 id=&#34;coming-up-next&#34; class=&#34;link_owner&#34;&gt;&lt;span&gt;Coming up next&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;We are in the planning stages of a number of exciting online campaigns to
+&lt;h3 id=&#34;coming-up-next&#34; class=&#34;link_owner &#34;&gt;&lt;span&gt;Coming up next&lt;/span&gt;&lt;/h3&gt;&lt;p&gt;We are in the planning stages of a number of exciting online campaigns to
 further support the emerging anti-genocide movement. Our main website will be
 moved to Drupal to allow our members to connect with local leaders and
 organizations, and concretely affect the direction of the national campaigns.&lt;/p&gt;

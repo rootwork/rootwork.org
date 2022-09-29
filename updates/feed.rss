@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Updates on Rootwork.org</title>
+    <link>https://rootwork.github.io/rootwork.org/updates/</link>
+    <description>Recent content in Updates on Rootwork.org</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 28 Sep 2022 00:00:00 -0700</lastBuildDate><atom:link href="https://rootwork.github.io/rootwork.org/updates/feed.rss" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Farewell: You&#39;ve been unsubscribed from email updates</title>
+      <link>https://rootwork.github.io/rootwork.org/updates/farewell/</link>
+      <pubDate>Wed, 28 Sep 2022 00:00:00 -0700</pubDate>
+      
+      <guid>https://rootwork.github.io/rootwork.org/updates/farewell/</guid>
+      <description>I&amp;rsquo;ve removed your email address from the Rootwork.org email updates list, per your request.
+No hard feelings! If you have a moment, please reach out on social media and let me know why you decided to go.</description>
+    </item>
+    
+    <item>
+      <title>Thanks for subscribing to Rootwork.org email updates!</title>
+      <link>https://rootwork.github.io/rootwork.org/updates/welcome/</link>
+      <pubDate>Wed, 28 Sep 2022 00:00:00 -0700</pubDate>
+      
+      <guid>https://rootwork.github.io/rootwork.org/updates/welcome/</guid>
+      <description>Please check your email now for a confirmation message.
+To ensure all your updates get delivered, I suggest adding updates@mail.rootwork.org to your contacts or address book.</description>
+    </item>
+    
+  </channel>
+</rss>
