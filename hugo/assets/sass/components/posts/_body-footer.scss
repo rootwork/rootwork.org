@@ -43,6 +43,34 @@
     }
   }
 
+  // Email updates signup link
+  .email_updates {
+    margin: 1rem;
+
+    &__title {
+      display: inline-block;
+      margin: 0 1rem 0.25rem 0;
+      font-family: var(--content-font);
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    &__link:not(.button) {
+      padding: 0.25rem 0.5rem;
+      background-color: var(--bright-green);
+      color: var(--white);
+      border-radius: 0.25rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: color 500ms ease-in-out, background-color 500ms ease-in-out;
+
+      @include is-on {
+        background-color: var(--pale-green);
+        color: var(--black);
+      }
+    }
+  }
+
   // Shortlinks
   .short_link {
     margin: 0 1rem;

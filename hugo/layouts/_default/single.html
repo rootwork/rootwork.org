@@ -144,6 +144,15 @@
           </div>
         {{ end }}
 
+
+        <div class="email_updates">
+          <h5 class="email_updates__title">
+            <a class="email_updates__link" href="/updates/signup/"
+              >🖄 Get updates from my blog by email</a
+            >
+          </h5>
+        </div>
+
         {{ if eq $shortalias "true" }}
           {{ range $p.aliases }}
             {{ if in . "/p/" }}
