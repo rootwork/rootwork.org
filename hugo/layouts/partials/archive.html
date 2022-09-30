@@ -19,8 +19,7 @@
         {{- $author := $s.Author }}
         <a
           href="{{ absLangURL (default "about/" $s.introURL) }}"
-          class="p-name u-url url author metatag"
-          rel="me"
+          class="url author metatag"
           ><span class="img_wrap"
             ><svg
               width="0"
@@ -42,15 +41,20 @@
               alt="{{ $author.name }}" /></span
         ></a>
         <div>
-          <h1>Hello, I&#8217;m <span>{{ $author.name }}</span></h1>
+          <h1>
+            Hello, I&#8217;m <span class="p-name">{{ $author.name }}</span>
+          </h1>
           <div class="author_bio">
-            {{ markdownify $s.IntroDescription }}
+            <span class="p-note">
+              {{ markdownify $s.IntroDescription }}
+            </span>
             {{- if ( ne $s.introURL false ) }}
               {{- $r := T "read_more" }}
               <a
                 href="{{ absLangURL (default "about/" $s.introURL) }}"
-                class="button button_translucent"
+                class="button button_translucent u-url"
                 role="button"
+                rel="me"
                 title="{{ $r }} about me"
                 >{{ $r }}<span class="hidden-visually"> about me</span></a
               >

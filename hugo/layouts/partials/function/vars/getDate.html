@@ -44,15 +44,23 @@
   {{- $updatedRSS = dateFormat "Mon, 02 Jan 2006 15:04:00 -0700" $updatedTime -}}
 {{- end -}}
 
+{{- $updatedMicroformat := $updatedTime -}}
+{{- $publishedMicroformat := dateFormat "2006-01-02T15:04:05Z0700" $publishedTime -}}
+{{- with $updatedTime -}}
+  {{- $updatedMicroformat = dateFormat "2006-01-02T15:04:05Z0700" $updatedTime -}}
+{{- end -}}
+
 {{- $date := dict
-  "published"     $published
-  "updated"       $updated
-  "publishedTime" $publishedTime
-  "updatedTime"   $updatedTime
-  "publishedAtom" $publishedTime
-  "updatedAtom"   $updatedTime
-  "publishedRSS"  $publishedRSS
-  "updatedRSS"    $updatedRSS
+  "published"            $published
+  "updated"              $updated
+  "publishedTime"        $publishedTime
+  "updatedTime"          $updatedTime
+  "publishedMicroformat" $publishedMicroformat
+  "updatedMicroformat"   $updatedMicroformat
+  "publishedAtom"        $publishedTime
+  "updatedAtom"          $updatedTime
+  "publishedRSS"         $publishedRSS
+  "updatedRSS"           $updatedRSS
 -}}
 
 {{- return $date -}}
