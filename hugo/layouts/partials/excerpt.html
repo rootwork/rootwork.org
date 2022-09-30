@@ -7,6 +7,12 @@
   - Adding visually-hidden titles to "read more" links
   - Restructuring 'with .Params.thumbnail' so linters won't complain
 */}}
+{{- $thumbnail := .Params.featureImage -}}
+{{- with .Params.thumbnail -}}
+  {{- $thumbnail = . -}}
+{{- end -}}
+
+
 <li class="post_item">
   <div class="excerpt">
     <div class="excerpt_header">
@@ -26,13 +32,19 @@
       <div
         class="
         excerpt_footer
-        {{ with .Params.thumbnail }}partition{{ end }}
+        {{ with $thumbnail }}partition{{ end }}
       "
       >
         <div class="excerpt_summary">
-          {{- with .Params.thumbnail -}}
+          {{- with $thumbnail -}}
             <div class="excerpt_thumbnail">
-              {{- partial "image" (dict "file" . "alt" $.Title "type" "thumbnail" "Page" $.Page ) }}
+              {{- partial "image" (dict
+                "file" .
+                "alt" $.Title
+                "type" "thumbnail"
+                "Page" $.Page
+                )
+              }}
             </div>
           {{- else -}}
             <div class="excerpt_thumbnail excerpt_thumbnail--none"></div>
