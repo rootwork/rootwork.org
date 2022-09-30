@@ -58,7 +58,7 @@ jobs:
         # them only in the public site.
         run: |
           ./scripts/image_optimize.sh
-          npm run p -- --baseUrl https://rootwork.github.io/rootwork.org/
+          npm run p -- --baseUrl https://rootwork.org/
           git restore hugo/content
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
