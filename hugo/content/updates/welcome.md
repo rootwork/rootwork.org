@@ -39,7 +39,7 @@ figurePositionShow: false # Override global value for showing the figure label.
 # keywords: # Pages do not have tags or categories; add keywords here to include them in metadata for SEO.
 ---
 
-<img style="margin-top: 1rem;" loading="lazy" decoding="async" alt="You did it!" class="image_figure image_internal image_unprocessed" src="yeah2.gif" title=" ">
+<img style="margin-top: 1rem;" loading="lazy" decoding="async" alt="You did it!" class="image_figure image_internal image_unprocessed" src="/updates/yeah2.gif" title=" ">
 
 To ensure all your updates get delivered, I suggest adding
 **updates&#64;rootwork.org** to your contacts or address book. (You can write to
