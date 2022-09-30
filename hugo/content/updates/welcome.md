@@ -45,6 +45,6 @@ To ensure all your updates get delivered, I suggest adding
 **updates&#64;rootwork.org** to your contacts or address book. (You can write to
 me at that address too!)
 
-<!-- Not sure what to do next? Take a look at my featured posts. -->
+Not sure what to do next? [Take a look at my featured posts.](/featured/)
 
 ### --Ivan {.end .no-perm}
