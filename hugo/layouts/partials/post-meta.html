@@ -33,17 +33,21 @@
   <div class="post_meta {{ $metaClass }}">
     <span class="post_byline"
       >By
-      <span class="p-author"
+      <span class="p-author h-card"
         >{{ .Params.author | default .Site.Author.name }}</span
       ></span
     >
     {{- if $showDate }}
+      {{- $getDate := partial "function/vars/getDate" . -}}
       <span class="post_date_icon"
         >{{ partial "sprite" (dict "icon" "calendar") }}</span
       >
       <a class="post_date u-url" href="{{ .Permalink }}" title="Permalink">
-        <time class="dt-published">
+        <time datetime="{{ $getDate.publishedMicroformat }}">
           {{ .Date.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) -}}
+        </time>
+        <time class="hidden-all dt-published">
+          {{ $getDate.publishedMicroformat -}}
         </time>
       </a>
       {{- if eq $edited true }}
