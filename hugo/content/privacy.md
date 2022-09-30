@@ -2,7 +2,7 @@
 title: Privacy policy
 author: ivan
 date: '2022-09-01'
-effective_date: 'Sept. 1, 2022' # Used verbatim in the post
+effective_date: 'Sept. 29, 2022' # Used verbatim in the post
 
 slug: 'privacy'
 aliases:
@@ -75,6 +75,11 @@ the next section for options on blocking these sites.
 
 If you click on social media icons to share content from this site or follow
 Rootwork.org, you may be tracked by these services as well.
+
+Rootwork.org uses [Buttondown](https://buttondown.email/) for the
+[email updates newsletter](/updates/signup/). We do not include tracking codes
+or pixels in these emails. You can also track updates to the blog with
+[RSS](/feed.rss), [Atom](/feed.atom), or [JF2 (JSON)](/jf2feed.json) feeds.
 
 ### Protecting your privacy
 
