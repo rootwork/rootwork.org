@@ -1,0 +1,18 @@
+{{/* Custom template, based on archive.html. */}}
+{{ define "main" }}
+  {{ $pages := where site.RegularPages "Type" "blog" }}
+
+
+  <div class="grid-inverse wrap content" id="content">
+    <ul class="posts" id="posts">
+      <h1 class="list_title">
+        {{- with partial "function/vars/getTitle" . -}}{{ .plain }}{{- end -}}
+      </h1>
+      {{ range where ($pages) "Params.featured" true }}
+        {{ .Scratch.Set "withinRangeLoop" true }}
+        {{ partial "excerpt" . }}
+      {{ end }}
+    </ul>
+    {{- partial "sidebar" . }}
+  </div>
+{{ end }}
