@@ -1,12 +1,12 @@
 ---
 title: 'Refreshing after a long absence'
 author: ivan
-date: '2022-09-19'
+date: '2022-09-29'
 # lastmod: '2022-09-18' # Appends 'edited on' to the publish date
 
 slug: 'refreshing-after-long-absence' # Recommended length is 3 to 5 words.
 aliases:
-  - /p/220919
+  - /p/220929
 
 # For the post as it appears in lists.
 summary: >
