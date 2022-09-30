@@ -17,26 +17,32 @@
 
 [[main]]
   parent = "feeds"
-  name = "RSS"
+  name = "via email"
   weight = 1
+  url = "updates/signup/"
+
+[[main]]
+  parent = "feeds"
+  name = "RSS"
+  weight = 2
   url = "feed.rss"
 
 [[main]]
   parent = "feeds"
   name = "Atom"
-  weight = 2
+  weight = 3
   url = "feed.atom"
 
 # [[main]]
 #   parent = "feeds"
 #   name = "JSON feed"
-#   weight = 3
+#   weight = 4
 #   url = "index.json"
 
 [[main]]
   parent = "feeds"
   name = "JF2 feed"
-  weight = 4
+  weight = 5
   url = "jf2feed.json"
 
 # social menu links
