@@ -69,6 +69,7 @@
         </div>
       {{ end }}
     {{ end }}
+    {{- $pages = where $pages ".Params.unlisted" "!=" true -}}
     {{- range (.Paginate $pages).Pages }}
       {{ .Scratch.Set "withinRangeLoop" true }}
       {{ partial "excerpt" . }}
