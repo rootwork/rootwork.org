@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>WordPress on Rootwork.org</title>
-    <link>https://rootwork.github.io/rootwork.org/tags/wordpress/</link>
+    <link>https://rootwork.org/tags/wordpress/</link>
     <description>Recent content in WordPress on Rootwork.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 20 Jan 2009 00:00:00 -0800</lastBuildDate><atom:link href="https://rootwork.github.io/rootwork.org/tags/wordpress/feed.rss" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Jan 2009 00:00:00 -0800</lastBuildDate><atom:link href="https://rootwork.org/tags/wordpress/feed.rss" rel="self" type="application/rss+xml" />
     <item>
       <title>Community blogs run better on open-source software</title>
-      <link>https://rootwork.github.io/rootwork.org/blog/2009/01/community-blogs-run-better-open-source-software/</link>
+      <link>https://rootwork.org/blog/2009/01/community-blogs-run-better-open-source-software/</link>
       <pubDate>Tue, 20 Jan 2009 00:00:00 -0800</pubDate>
       
-      <guid>https://rootwork.github.io/rootwork.org/blog/2009/01/community-blogs-run-better-open-source-software/</guid>
+      <guid>https://rootwork.org/blog/2009/01/community-blogs-run-better-open-source-software/</guid>
       <description>Even if Bryght/Acquia/May First went out of business tomorrow, virtually all of its customers could find another vendor to take their system completely intact and get them up and running in an hour or two.</description>
     </item>
     

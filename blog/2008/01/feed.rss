@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Archives: January 2008 on Rootwork.org</title>
-    <link>https://rootwork.github.io/rootwork.org/blog/2008/01/</link>
+    <link>https://rootwork.org/blog/2008/01/</link>
     <description>Recent content in Archives: January 2008 on Rootwork.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Tue, 01 Jan 2008 00:00:00 -0800</lastBuildDate><atom:link href="https://rootwork.github.io/rootwork.org/blog/2008/01/feed.rss" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Jan 2008 00:00:00 -0800</lastBuildDate><atom:link href="https://rootwork.org/blog/2008/01/feed.rss" rel="self" type="application/rss+xml" />
     <item>
       <title>Drupal for nonprofits, or, how to build social networks for change</title>
-      <link>https://rootwork.github.io/rootwork.org/blog/2008/01/drupal-nonprofits-how-build-social-networks-change/</link>
+      <link>https://rootwork.org/blog/2008/01/drupal-nonprofits-how-build-social-networks-change/</link>
       <pubDate>Tue, 01 Jan 2008 00:00:00 -0800</pubDate>
       
-      <guid>https://rootwork.github.io/rootwork.org/blog/2008/01/drupal-nonprofits-how-build-social-networks-change/</guid>
+      <guid>https://rootwork.org/blog/2008/01/drupal-nonprofits-how-build-social-networks-change/</guid>
       <description>In return for NetSquared&amp;rsquo;s generosity, I wanted to post some tips for nonprofits thinking about using Drupal for their sites &amp;ndash; when to use it and when not to use it, as well as a few useful tidbits from a recent workshop.</description>
     </item>
     
