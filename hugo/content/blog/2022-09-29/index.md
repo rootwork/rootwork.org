@@ -35,8 +35,8 @@ featureImage: 'refreshing-may_flickr-blavandmaster.jpg' # Top image on post.
 featureImageAlt: 'Refreshing May' # Alternative text for featured image.
 featureImageCreditFlickr: 'blavandmaster'
 # featureImageCreditCustom: 'Top image credit Flickr user [username](https://www.flickr.com/photos/username).'
-thumbnail: 'refreshing-may_flickr-blavandmaster.jpg' # Image in lists of posts.
-shareImage: 'refreshing-may_flickr-blavandmaster.jpg' # For SEO and social media snippets. Falls back to thumbnail (if set) or featureImage.
+# thumbnail: 'thumbnail.jpg' # Image in lists of posts.
+# shareImage: 'share.jpg' # For SEO and social media snippets. Falls back to thumbnail (if set) or featureImage.
 
 codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
 codeLineNumbers: false # Override global value for showing of line numbers within code block.
