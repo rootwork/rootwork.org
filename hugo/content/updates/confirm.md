@@ -1,5 +1,5 @@
 ---
-title: "Farewell: You've been unsubscribed from email updates"
+title: 'Confirm your subscription'
 author: ivan
 date: '2022-09-28'
 
@@ -7,7 +7,8 @@ date: '2022-09-28'
 
 # For SEO and social media snippets (recommended 150-200 characters).
 description: >
-  You are no longer subscribed to email updates from Rootwork.org
+  Please check your email now for a confirmation message about your
+  subscription.
 
 draft: false # Change to 'false' to publish this post.
 disable_feed: true # Change to 'true' to exclude from RSS etc.
@@ -23,13 +24,11 @@ showShare: false
 
 # menu: main
 
-featureImage: 'leaves_unsplash-nahil-naseer.jpg' # Top image on post.
+# featureImage: 'feature.jpg' # Top image on post.
 # featureImageShade: true # Add a translucent shade to the image to make overlaid text easier to read.
 # featureImageAlt: 'Description of image' # Alternative text for featured image.
 # featureImageCreditFlickr: 'username'
-featureImageCreditCustom:
-  'Top image credit Unsplash user [Nahil
-  Naseer](https://unsplash.com/photos/xljtGZ2-P3Y).'
+# featureImageCreditCustom: 'Top image credit Flickr user [username](https://www.flickr.com/photos/username).'
 # thumbnail: 'thumbnail.jpg' # Image in lists of posts.
 # shareImage: 'share.jpg' # For SEO and social media snippets. Falls back to thumbnail (if set) or featureImage.
 
@@ -40,12 +39,13 @@ figurePositionShow: false # Override global value for showing the figure label.
 # keywords: # Pages do not have tags or categories; add keywords here to include them in metadata for SEO.
 ---
 
-**I've removed your email address from the Rootwork.org email updates list, per
-your request.**
+<img style="margin-top: 1rem;" loading="lazy" decoding="async" alt="Almost there!" class="image_figure image_internal image_unprocessed" src="/updates/hang-in-there_unsplash-annie-spratt.jpg" title=" ">
 
-<!-- Unsubscribed by mistake, or want to sign up with a different email address? Head on over to the signup form. -->
+You're almost there...
 
-No hard feelings! If you have a moment, please reach out on social media and let
-me know why you decided to go.
+**Please check your email now for a confirmation message.**
 
 ### --Ivan {.end .no-perm}
+
+<small><em>Top image credit Unsplash user
+<a href="https://unsplash.com/photos/OUu7NOkgmXw">Annie Spratt</a>.</em></small>
