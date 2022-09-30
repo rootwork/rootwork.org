@@ -28,6 +28,6 @@
     {{- end -}}
   {{- end -}}
 {{- end -}}
-{{- $summary = strings.Trim $summary "\n" -}}
+{{- $summary = strings.Trim $summary "\n" | safeHTML -}}
 
 {{- return $summary -}}
