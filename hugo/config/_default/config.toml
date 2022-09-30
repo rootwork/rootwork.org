@@ -1,4 +1,4 @@
-baseurl = "https://rootwork.github.io/rootwork.org/" # Include trailing slash
+baseurl = "https://rootwork.org/" # Include trailing slash
 title = "Rootwork.org"
 author = "Ivan Boothe" # Note in many places this is overridden by the data/authors.yml file
 
