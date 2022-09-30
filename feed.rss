@@ -15,7 +15,7 @@
     <webMaster>info@rootwork.org (Rootwork.org)</webMaster>
     <copyright>CC-BY-NC-SA-4.0
       2008&#8211;2022, Rootwork.org. Feel free to use or republish with credit!</copyright>
-    <lastBuildDate>Thu, 29 Sep 2022 01:12:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Sep 2022 01:58:00 +0000</lastBuildDate>
     <atom:link href="https://rootwork.github.io/rootwork.org/feed.rss" rel="self" type="application/rss+xml" />
     <item>
       <title>Refreshing after a long absence</title>
@@ -59,13 +59,21 @@ and beyond&amp;rdquo; at the 2018
 &lt;a href=&#34;https://pnwdrupalsummit.org&#34;&gt;Pacific Northwest Drupal Summit&lt;/a&gt;:&lt;/p&gt;
 
   
-    &lt;p
+    &lt;div
+      
+        style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow:
+        hidden;&#34;
       
     &gt;
-      &lt;a href=&#34;https://www.youtube-nocookie.com/embed/gtVmPMqnsvI&#34; title=&#34;Recording of &#39;Doing good with Drupal and beyond&#39; from the 2018 Pacific Northwest Drupal Summit&#34;
-        &gt;Watch this video on YouTube&lt;/a
-      &gt;
-    &lt;/p&gt;
+      &lt;iframe
+        src=&#34;https://www.youtube-nocookie.com/embed/gtVmPMqnsvI&#34;
+        
+          style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+          border:0;&#34;
+        allowfullscreen
+        title=&#34;Recording of &#39;Doing good with Drupal and beyond&#39; from the 2018 Pacific Northwest Drupal Summit&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
   
 &lt;p&gt;(You can see
 &lt;a href=&#34;https://www.linkedin.com/in/ivanboothe/details/experience/1103947024/multiple-media-viewer/?profileId=ACoAAABl33EBS2mPp7MzOR78g03Gb0rtewlEVQw&amp;treasuryMediaId=1527283177501&#34;&gt;the slides on their own on LinkedIn&lt;/a&gt;.)&lt;/p&gt;
