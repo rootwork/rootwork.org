@@ -52,7 +52,9 @@
   }
 
   [type='reset'],
-  [type='submit'] {
+  [type='submit'],
+  input[type='reset'],
+  input[type='submit'] {
     -webkit-appearance: button;
     background-color: var(--bright-green);
     color: var(--white);
