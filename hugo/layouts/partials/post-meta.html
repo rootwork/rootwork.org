@@ -55,6 +55,9 @@
           >&nbsp;Edited on
           {{ .Lastmod.Format (default "Jan 2, 2006" $.Site.Params.dateFormat) }}&nbsp;</span
         >
+        <time class="hidden-all dt-updated">
+          {{ $getDate.updatedMicroformat -}}
+        </time>
       {{- end }}
     {{- end }}
     {{- if $showReadTime }}

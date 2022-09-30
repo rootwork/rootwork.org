@@ -63,6 +63,15 @@
           {{ .TableOfContents }}
         </div>
       {{ end }}
+
+      {{/* Summary for indieweb microformat */}}
+      {{- with partial "function/vars/getSummary" . -}}
+        <h3 class="hidden-all">Summary</h3>
+        <p class="hidden-all p-summary">{{ . }}</p>
+        <hr class="hidden-all" />
+      {{- end -}}
+
+
       <div class="post_body e-content" itemprop="articleBody">
         {{- .Content }}
 
