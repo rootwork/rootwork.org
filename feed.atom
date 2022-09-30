@@ -12,7 +12,7 @@
     2008&#8211;2022, Rootwork.org. Feel free to use or republish with credit!</rights>
   <icon>https://rootwork.org/icons/android-chrome-512x512.png</icon>
   <logo>https://rootwork.org/logos/rootwork-share.png</logo>
-  <updated>2022-09-30T03:31:30+00:00</updated>
+  <updated>2022-09-30T07:52:32+00:00</updated>
   <link rel="self" type="application/atom+xml" href="https://rootwork.org/feed.atom" hreflang="en-US"/>
   <link rel="alternate" type="text/html" href="https://rootwork.org/" hreflang="en-US"/>
   <link rel="alternate" type="application/json" href="https://rootwork.org/index.json" hreflang="en-US"/>
@@ -62,21 +62,13 @@ and beyond&amp;rdquo; at the 2018
 &lt;a href=&#34;https://pnwdrupalsummit.org&#34;&gt;Pacific Northwest Drupal Summit&lt;/a&gt;:&lt;/p&gt;
 
   
-    &lt;div
-      
-        style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow:
-        hidden;&#34;
+    &lt;p
       
     &gt;
-      &lt;iframe
-        src=&#34;https://www.youtube-nocookie.com/embed/gtVmPMqnsvI&#34;
-        
-          style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-          border:0;&#34;
-        allowfullscreen
-        title=&#34;Recording of &#39;Doing good with Drupal and beyond&#39; from the 2018 Pacific Northwest Drupal Summit&#34;
-      &gt;&lt;/iframe&gt;
-    &lt;/div&gt;
+      &lt;a href=&#34;https://www.youtube-nocookie.com/embed/gtVmPMqnsvI&#34; title=&#34;Recording of &#39;Doing good with Drupal and beyond&#39; from the 2018 Pacific Northwest Drupal Summit&#34;
+        &gt;Watch this video on YouTube&lt;/a
+      &gt;
+    &lt;/p&gt;
   
 &lt;p&gt;(You can see
 &lt;a href=&#34;https://www.linkedin.com/in/ivanboothe/details/experience/1103947024/multiple-media-viewer/?profileId=ACoAAABl33EBS2mPp7MzOR78g03Gb0rtewlEVQw&amp;treasuryMediaId=1527283177501&#34;&gt;the slides on their own on LinkedIn&lt;/a&gt;.)&lt;/p&gt;
