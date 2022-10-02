@@ -10,35 +10,42 @@
     <loc>https://rootwork.org/blog/2022/</loc>
     <lastmod>2022-09-29T00:00:00-07:00</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url><url>
     <loc>https://rootwork.org/blog/2022/09/</loc>
     <lastmod>2022-09-29T00:00:00-07:00</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url><url>
     <loc>https://rootwork.org/tags/communications/</loc>
     <lastmod>2022-09-29T00:00:00-07:00</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url><url>
     <loc>https://rootwork.org/tags/drupal/</loc>
     <lastmod>2022-09-29T00:00:00-07:00</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url><url>
     <loc>https://rootwork.org/categories/frontend-development/</loc>
     <lastmod>2022-09-29T00:00:00-07:00</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url><url>
     <loc>https://rootwork.org/blog/2022/09/refreshing-after-long-absence/</loc>
     <lastmod>2022-09-29T00:00:00-07:00</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url><url>
     <loc>https://rootwork.org/updates/signup/</loc>
     <lastmod>2022-09-29T00:00:00-07:00</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url><url>
     <loc>https://rootwork.org/updates/</loc>
     <lastmod>2022-09-29T00:00:00-07:00</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url><url>
     <loc>https://rootwork.org/about/</loc>
     <lastmod>2022-02-25T00:00:00-08:00</lastmod>
