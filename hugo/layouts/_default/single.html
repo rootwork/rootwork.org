@@ -181,24 +181,24 @@
         {{ if eq .Type "blog" }}
           <nav class="post-nav">
             <div class="post-nav__dir newer-post">
-              {{ if and (.NextPage) (eq .NextPage.Type "blog") }}
+              {{- with .NextInSection }}
                 <a
                   class="post-nav__link"
-                  href="{{ .NextPage.Permalink }}"
-                  title="{{ .NextPage.Title }}"
+                  href="{{ .Permalink }}"
+                  title="{{ .Title }}"
                   >« Newer post</a
                 >
-              {{ end }}
+              {{- end }}
             </div>
             <div class="post-nav__dir older-post">
-              {{ if and (.PrevPage) (eq .PrevPage.Type "blog") }}
+              {{- with .PrevInSection }}
                 <a
                   class="post-nav__link"
-                  href="{{ .PrevPage.Permalink }}"
-                  title="{{ .PrevPage.Title }}"
+                  href="{{ .Permalink }}"
+                  title="{{ .Title }}"
                   >Older post »</a
                 >
-              {{ end }}
+              {{- end }}
             </div>
           </nav>
         {{ end }}
