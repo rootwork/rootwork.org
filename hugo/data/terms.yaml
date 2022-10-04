@@ -8,8 +8,10 @@ categories:
   - online advocacy
   - open source
   - social media
+  - web development
 
 tags:
+  - Bash scripting
   - communications
   - community
   - CSS
@@ -17,6 +19,7 @@ tags:
   - Facebook
   - Flickr
   - Google Plus
+  - Hugo
   - MySpace
   - privacy
   - social change
@@ -38,6 +41,7 @@ keywords:
 
   additional:
     accessibility: a11y
+    Bash scripting: Bash
     communications: online communications
     community: communities
     Drupal: Planet Drupal
@@ -47,3 +51,4 @@ keywords:
     online advocacy: advocacy
     open source: F/LOSS
     social change: social justice
+    web development: webdev
