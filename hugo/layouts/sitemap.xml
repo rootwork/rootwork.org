@@ -5,26 +5,26 @@
 {{- $pages = where $pages ".Params.unlisted" "!=" true -}}
 
 {{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   {{ range $pages }}
+    {{- $date := partial "function/vars/getDate" . -}}
     {{- $listingDate := "" -}}
-    {{- $listingDateFormat := "" -}}
-    {{- if not .Date.IsZero -}}
-      {{- if not .Lastmod.IsZero -}}
-        {{- $listingDate = .Lastmod -}}
+    {{- $listingYM := "" -}}
+    {{- if $date.published -}}
+      {{- if $date.updated -}}
+        {{- $listingDate = $date.updatedTime -}}
+        {{- $listingYM = dateFormat "2006-01" $date.updated -}}
       {{- else -}}
-        {{- $listingDate = .Date -}}
+        {{- $listingDate = $date.publishedTime -}}
+        {{- $listingYM = dateFormat "2006-01" $date.published -}}
       {{- end -}}
-      {{- $listingDateFormat = safeHTML ($listingDate.Format "2006-01-02T15:04:05-07:00") }}
     {{- end }}
     {{- if .Permalink -}}
   <url>
     <loc>{{ .Permalink }}</loc>
-    <lastmod>{{ $listingDateFormat }}</lastmod>
-    {{- with .Sitemap.ChangeFreq }}
-    <changefreq>{{ . }}</changefreq>
-    {{- end }}
+    <lastmod>{{ $listingDate }}</lastmod>
     {{- with .Params.Priority }}
     <priority>{{ . }}</priority>
     {{- else }}
@@ -32,12 +32,12 @@
     {{- if (eq .Kind "home") -}}
     {{/* 1.0 priority for home page */}}
     <priority>1.0</priority>
-    {{- else if eq ($listingDate.Format "2006-01") ( now.Format "2006-01") -}}
+    {{- else if eq $listingYM (now.Format "2006-01") -}}
       {{- if eq .Type "blog" -}}
       {{/* 0.9 priority for posts (up)dated this month */}}
     <priority>0.9</priority>
       {{- end -}}
-    {{- else if eq ($listingDate.Format "2006") ( now.Format "2006") -}}
+    {{- else if eq $listingYM (now.Format "2006") -}}
       {{- if eq .Type "blog" -}}
       {{/* 0.8 priority for posts (up)dated this year */}}
     <priority>0.8</priority>
@@ -53,6 +53,9 @@
     <priority>{{ .Sitemap.Priority }}</priority>
     {{- end -}}
     {{- end -}}
+    {{- end }}
+    {{- with .Sitemap.ChangeFreq }}
+    <changefreq>{{ . }}</changefreq>
     {{- end }}
     {{- if .IsTranslated }}
     {{- range .Translations }}
