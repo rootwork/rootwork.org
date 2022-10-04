@@ -18,28 +18,27 @@ They are user-configurable and meant to be easy to fork.
   this section. -->
 
 <!--ts-->
-
-- [Rootwork.org publishing system](#rootworkorg-publishing-system)
-- [Local development](#local-development)
-  - [Creating a new post](#creating-a-new-post)
-  - [Editing site variables](#editing-site-variables)
-  - [Hugo modules](#hugo-modules)
-  - [Editing the theme](#editing-the-theme)
-- [Generating the site for production](#generating-the-site-for-production)
-- [Fresh installation](#fresh-installation)
-  - [Go](#go)
-  - [Hugo](#hugo)
-  - [This repo](#this-repo)
-  - [Node/npm](#nodenpm)
-- [Updating dependencies](#updating-dependencies)
-  - [Go](#go-1)
-  - [Hugo](#hugo-1)
-  - [Hugo modules](#hugo-modules-1)
-  - [Node modules](#node-modules)
-- [Licenses](#licenses)
+* [Rootwork.org publishing system](#rootworkorg-publishing-system)
+* [Local development](#local-development)
+   * [Creating a new post](#creating-a-new-post)
+   * [Editing site variables](#editing-site-variables)
+   * [Hugo modules](#hugo-modules)
+   * [Editing the theme](#editing-the-theme)
+* [Generating the site for production](#generating-the-site-for-production)
+* [Fresh installation](#fresh-installation)
+   * [Go](#go)
+   * [Hugo](#hugo)
+   * [This repo](#this-repo)
+   * [Node/npm](#nodenpm)
+* [Updating dependencies](#updating-dependencies)
+   * [Go](#go-1)
+   * [Hugo](#hugo-1)
+   * [Hugo modules](#hugo-modules-1)
+   * [Node modules](#node-modules)
+* [Licenses](#licenses)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Fri Sep 30 02:32:06 UTC 2022 -->
+<!-- Added by: runner, at: Tue Oct  4 00:29:17 UTC 2022 -->
 
 <!--te-->
 
