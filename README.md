@@ -38,7 +38,7 @@ They are user-configurable and meant to be easy to fork.
 * [Licenses](#licenses)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: runner, at: Fri Sep 30 02:32:06 UTC 2022 -->
+<!-- Added by: runner, at: Tue Oct  4 00:29:17 UTC 2022 -->
 
 <!--te-->
 
@@ -138,10 +138,9 @@ should be run from a GitHub Action or other CI to build the site.
 
 ## Hugo
 
-- Get the `hugo_extended_VERSION_OS-64bit.*`
+- Get the `hugo_extended_VERSION_OS-ARCH.*`
   [package from GitHub releases](https://github.com/gohugoio/hugo/releases)
-  (e.g. `hugo_extended_0.81.0_Linux-64bit.deb`). On Debian-based Linux systems,
-  ignore the alert that
+  (e.g. `hugo_extended_0.100.0_linux-amd64.deb`). Ignore any Debian alerts that
   [an older package is available in the channel](https://gohugo.io/getting-started/installing#debian-and-ubuntu).
 - Install the package, which will place it in `/usr/local/bin/hugo`.
 
@@ -168,9 +167,9 @@ and npm 6.x and 8.x.
 
 - Check version: `hugo version`
 - `sudo rm -rf /usr/local/bin/hugo`
-- Get the `hugo_extended_VERSION_OS-64bit.*`
+- Get the `hugo_extended_VERSION_OS-ARCH.*`
   [package from GitHub releases](https://github.com/gohugoio/hugo/releases)
-  (e.g. `hugo_extended_0.81.0_Linux-64bit.deb`) and install.
+  (e.g. `hugo_extended_0.100.0_linux-amd64.deb`) and install.
 
 ## Hugo modules
 
