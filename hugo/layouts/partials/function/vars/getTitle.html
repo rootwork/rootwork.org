@@ -23,7 +23,7 @@
   {{- end -}}
 {{- end -}}
 
-{{- $title := $title | safeHTML -}}
+{{- $title := (htmlEscape $title) | safeHTML -}}
 
 {{- $title_link := printf "%s" "</a>" | printf "%s%s" $title | printf "%s%s" `">` | printf "%s%s" .Permalink | printf "%s%s" `<a href="` | printf "%s" -}}
 
