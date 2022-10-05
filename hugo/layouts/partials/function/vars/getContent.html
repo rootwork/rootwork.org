@@ -5,8 +5,6 @@
 */}}
 
 {{- $s := .Site.Params -}}
-{{- $title := partial "function/vars/getTitle" . -}}
-{{- $path := partial "function/vars/getPath" . -}}
 
 {{/* Regular content */}}
 
@@ -21,9 +19,11 @@
 {{- $feed_html := strings.Trim .Content "\n" -}}
 {{- $feed_html = partial "function/absurlify" (dict "ctx" . "content" $feed_html) -}}
 {{- $feed_html = partial "function/entify" $feed_html -}}
+{{- $feed_html = replace $feed_html "\n" " " -}}
 
 {{- $feed_plain := .Plain -}}
 {{- $feed_plain := strings.Trim $plain "\n" -}}
+{{- $feed_plain = replace $feed_plain "\n" " " -}}
 
 {{- $content := dict
   "lang"         .Language.Lang
